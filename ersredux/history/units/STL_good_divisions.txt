@@ -1,0 +1,15 @@
+﻿
+units = {
+	division = {
+		name = "Equality Division"
+		location = 3335
+		division_template = "Equality Militia"
+		start_experience_factor = 0.7
+	}
+	division = {
+		name = "Equality Division"
+		location = 3335
+		division_template = "Equality Division"
+		start_experience_factor = 0.7
+	}
+}

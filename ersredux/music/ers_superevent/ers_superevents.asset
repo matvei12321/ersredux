@@ -1,0 +1,116 @@
+
+
+music = {
+	name = "argynnis_unification"
+	file = "argynnis_unification.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "the_great_war"
+	file = "the_great_war.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "hrd_full_sin_party"
+	file = "hrd_full_sin_party.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "second_north_zebrican_war"
+	file = "second_north_zebrican_war.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "armed_sage_thestralia"
+	file = "armed_sage_thestralia.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "red_sun_se"
+	file = "red_sun_se.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "aurantia_unification"
+	file = "aurantia_unification.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "Equus_Unification_Marks"
+	file = "Equus_Unification_Marks.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "olenians_extinction"
+	file = "olenians_extinction.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "chrysalis_unifiaction"
+	file = "chrysalis_unifiaction.ogg"
+	volume = 0.9
+}
+
+
+music = {
+	name = "anarchy"
+	file = "anarchy.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "soldat"
+	file = "soldat.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "dwtd"
+	file = "dwtd.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "frost_is_here"
+	file = "frost_is_here.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "warkhan_war"
+	file = "warkhan_war.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "dodge_city_collapse_1"
+	file = "dodge_city_collapse_1.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "lyc_ole_war"
+	file = "lyc_ole_war.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "red_changelings_rise"
+	file = "red_changelings_rise.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "changeling_hehemony_collapse"
+	file = "changeling_hehemony_collapse.ogg"
+	volume = 0.9
+}

@@ -1,0 +1,34 @@
+WIG_bop_beakolini_category = {
+	icon = generic_formable_nations
+    priority = 10
+	allowed = {
+		original_tag = WIG
+
+	}
+}
+WIG_for_alpha = {
+	icon = generic_formable_nations
+    priority = 1000
+	allowed = {
+
+		has_country_flag = WIG_for_alpha_flag
+	}
+}
+WIG_south_attempt = {
+	icon = generic_formable_nations
+	priority = 1000
+	allowed = {
+		always = yes
+	} 
+	visible = { 
+		has_country_flag = WIG_south_attempt_decision_flag
+	}
+	scripted_gui = WIG_cats_menu
+}
+FLC_zaglushka_start = { 
+	icon = generic_formable_nations
+	priority = 1000
+	allowed = {
+		tag = FLC
+		530 = { owner = FLC }
+	}

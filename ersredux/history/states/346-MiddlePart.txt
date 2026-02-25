@@ -1,0 +1,31 @@
+state={
+	id=346
+	name="STATE_346"
+
+	provinces={
+		274 275 335 3322 5085 6343 6358 9033 9339 11158 11227 11258 11275 11369
+	}
+
+	manpower=1465549
+	state_category=rural
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = JAK
+		add_core_of = JAK
+		add_claim_by = YAK
+		add_claim_by = YAC
+		add_claim_by = NAK
+		add_claim_by = BAD
+		add_claim_by = SHA
+		add_claim_by = MNT
+		buildings = {
+			infrastructure = 1
+
+		}
+		victory_points = { 9339 1 }
+	}
+	resources={
+		steel=5
+	}
+}

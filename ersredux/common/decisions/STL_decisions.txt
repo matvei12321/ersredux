@@ -1,0 +1,737 @@
+STL_unification_cat = {
+
+	STL_annex_STG = {
+		icon = GFX_decision_equalistdec
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = stl_has_more_5_influence 
+				check_variable = {
+					stl_annex_stg_var > 5
+				}
+			}
+			
+		}
+		visible = {
+			NOT = {
+				owns_state = 153
+			}
+		}
+		ai_will_do = {
+			factor = 2000
+		}
+		
+		fire_only_once = yes
+		
+		cost = 100
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision STL_unify_with_communists_decision"
+			annex_country = { target = STG transfer_troops = yes  }	
+		}
+	}
+	
+	STL_unify_with_communists_decision = {
+		icon = GFX_decision_equalistdec
+		available = {
+			owns_state = 334
+			owns_state = 165
+			owns_state = 153
+			owns_state = 235
+			owns_state = 225
+			owns_state = 161
+			owns_state = 163
+			owns_state = 237
+			owns_state = 164
+			owns_state = 160
+			owns_state = 326
+			owns_state = 162
+		}
+		visible = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 2000
+		}
+		
+		fire_only_once = yes
+		
+		cost = 100
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision STL_unify_with_communists_decision"
+			add_war_support = 0.2
+			add_stability = 0.1
+			hidden_effect = {
+				every_owned_state = {
+					limit = {
+						is_core_of = STG
+					}
+					add_core_of = STL
+				}
+			}
+			custom_effect_tooltip = stl_unification_tt
+			news_event = ers_news.20
+		}
+	}
+	
+	STL_influence_zayatsk = {
+		icon = onmap_recruit_operative
+		available = {
+			has_completed_focus = ers_STL_social_equalism_zayatsk
+		}
+		visible = {
+			#has_completed_focus = ers_STL_social_equalism
+			NOT = {
+				OR = {
+					has_completed_focus = ers_STL_military_equalism
+					owns_state = 334 
+				}
+			}
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 2000
+		}
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 334
+			}
+		}
+		days_re_enable = 35
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision STL_influence_zayatsk"
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = stl_zayatsk_2_flag
+					}
+				}
+				hidden_effect = {
+					334 = {
+						remove_province_modifier = {
+							static_modifiers = { stl_state_debuff_i }
+							province = {
+								all_provinces = yes
+							}
+						}
+					}
+				}	
+				334 = {
+					add_province_modifier = {
+					static_modifiers = { stl_state_debuff_ii }
+						province = {
+							all_provinces = yes
+						}
+					}	
+				}
+				set_country_flag = stl_zayatsk_2_flag		
+			}	
+			else_if = {
+				limit = {
+					has_country_flag = stl_zayatsk_2_flag
+					NOT = {
+						has_country_flag = stl_zayatsk_3_flag	
+					}
+				}
+				hidden_effect = {
+					334 = {
+						remove_province_modifier = {
+							static_modifiers = { stl_state_debuff_ii }
+							province = {
+								all_provinces = yes
+							}
+						}
+					}
+				}	
+				334 = {
+					add_province_modifier = {
+					static_modifiers = { stl_state_debuff_iii }
+						province = {
+							all_provinces = yes
+						}	
+					}
+				}					
+				set_country_flag = stl_zayatsk_3_flag
+			}
+			else_if = {
+				limit = {
+					has_country_flag = stl_zayatsk_3_flag
+					NOT = {
+						has_country_flag = stl_zayatsk_4_flag	
+					}
+				}
+				hidden_effect = {
+					334 = {
+						remove_province_modifier = {
+							static_modifiers = { stl_state_debuff_iii }
+							province = {
+								all_provinces = yes
+							}	
+						}
+					}
+				}	
+				334 = {
+					add_province_modifier = {
+					static_modifiers = { stl_state_debuff_iv }
+						province = {
+							all_provinces = yes
+						}	
+					}						
+				}
+				set_country_flag = stl_zayatsk_4_flag
+			}
+			else_if = {
+				limit = {
+					has_country_flag = stl_zayatsk_4_flag
+					NOT = {
+						has_country_flag = stl_zayatsk_5_flag	
+					}
+				}
+				hidden_effect = {
+					334 = {
+						remove_province_modifier = {
+							static_modifiers = { stl_state_debuff_iv }
+							province = {
+								all_provinces = yes
+							}
+						}
+					}
+				}	
+				334 = {
+					add_province_modifier = {
+					static_modifiers = { stl_state_debuff_v }
+						province = {
+							all_provinces = yes
+						}
+					}
+				}	
+				set_country_flag = stl_zayatsk_5_flag					
+			}
+		}
+	
+	}
+	
+	STL_annex_zayatsk = {
+		icon = GFX_decision_zayatsk
+		available = {
+			has_country_flag = stl_zayatsk_5_flag
+		}
+		visible = {
+			NOT = {
+				OR = {
+					has_completed_focus = ers_STL_military_equalism
+					owns_state = 334 
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 2000
+		}
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 334
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 100
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision STL_unify_with_communists_decision"
+			transfer_state = 334
+			add_to_variable = {
+				stl_annex_stg_var = 1
+			}
+			custom_effect_tooltip = stl_add_1_to_annex_var_tt
+			hidden_effect = {
+				334 = {
+					remove_province_modifier = {
+						static_modifiers = { stl_state_debuff_v }
+						province = {
+							all_provinces = yes
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	STL_influence_zlatocvet = {
+		icon = GFX_decision_fire
+		available = {
+			has_completed_focus = ers_STL_social_equalism_zlatocvet
+		}
+		visible = {
+			# has_completed_focus = ers_STL_social_equalism
+			NOT = {
+				OR = {
+					has_completed_focus = ers_STL_military_equalism
+					owns_state = 165
+				}
+			}
+		}
+		cost = 50
+		
+		ai_will_do = {
+			factor = 200
+		}
+		
+		days_re_enable = 165
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 165
+			}
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision STL_influence_zlatocvet"
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = stl_zlatocvet_2_flag
+					}
+				}
+				hidden_effect = {
+					165 = {
+						remove_province_modifier = {
+							static_modifiers = { stl_state_debuff_i }
+							province = {
+								all_provinces = yes
+							}
+						}
+					}
+				}	
+				165 = {
+					add_province_modifier = {
+					static_modifiers = { stl_state_debuff_ii }
+						province = {
+							all_provinces = yes
+						}
+					}	
+				}
+				set_country_flag = stl_zlatocvet_2_flag		
+			}	
+			else_if = {
+				limit = {
+					has_country_flag = stl_zlatocvet_2_flag
+					NOT = {
+						has_country_flag = stl_zlatocvet_3_flag	
+					}
+				}
+				hidden_effect = {
+					165 = {
+						remove_province_modifier = {
+							static_modifiers = { stl_state_debuff_ii }
+							province = {
+								all_provinces = yes
+							}
+						}
+					}
+				}	
+				165 = {
+					add_province_modifier = {
+					static_modifiers = { stl_state_debuff_iii }
+						province = {
+							all_provinces = yes
+						}	
+					}	
+				}
+				set_country_flag = stl_zlatocvet_3_flag	
+			}
+			else_if = {
+				limit = {
+					has_country_flag = stl_zlatocvet_3_flag
+					NOT = {
+						has_country_flag = stl_zlatocvet_4_flag	
+					}
+				}
+				hidden_effect = {
+					165 = {
+						remove_province_modifier = {
+							static_modifiers = { stl_state_debuff_iii }
+							province = {
+								all_provinces = yes
+							}	
+						}
+					}
+				}	
+				165 = {
+					add_province_modifier = {
+					static_modifiers = { stl_state_debuff_iv }
+						province = {
+							all_provinces = yes
+						}
+					}	
+				}
+				set_country_flag = stl_zlatocvet_4_flag	
+			}
+			else_if = {
+				limit = {
+					has_country_flag = stl_zlatocvet_4_flag
+					NOT = {
+						has_country_flag = stl_zlatocvet_5_flag	
+					}
+				}
+				hidden_effect = {
+					165 = {
+						remove_province_modifier = {
+							static_modifiers = { stl_state_debuff_iv }
+							province = {
+								all_provinces = yes
+							}
+						}
+					}
+				}	
+				165 = {
+					add_province_modifier = {
+					static_modifiers = { stl_state_debuff_v }
+						province = {
+							all_provinces = yes
+						}
+					}
+				}	
+				set_country_flag = stl_zlatocvet_5_flag					
+			}
+		}
+	
+	}
+	
+	STL_annex_zlatocvet = {
+		icon = GFX_decision_zlatocvet
+		available = {
+			has_country_flag = stl_zlatocvet_5_flag
+		}
+		visible = {
+			NOT = {
+				OR = {
+					has_completed_focus = ers_STL_military_equalism
+					owns_state = 165
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 2000
+		}
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 165
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 100
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision STL_unify_with_communists_decision"
+			transfer_state = 165
+			add_to_variable = {
+				stl_annex_stg_var = 1
+			}
+			custom_effect_tooltip = stl_add_1_to_annex_var_tt
+			hidden_effect = {
+				165 = {
+					remove_province_modifier = {
+						static_modifiers = { stl_state_debuff_v }
+						province = {
+							all_provinces = yes
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	STL_influence_princessin = {
+		icon = GFX_decision_daggers
+		available = {
+			has_completed_focus = ers_STL_social_equalism_princessin
+		}
+		visible = {
+			NOT = {
+				OR = {
+					has_completed_focus = ers_STL_military_equalism
+					has_country_flag = stl_princessin_5_flag
+					owns_state = 153
+				}
+			}
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 2000
+		}
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 153
+			}
+		}
+		
+		days_re_enable = 35
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision STL_influence_princessin"
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = stl_princessin_2_flag
+					}
+				}
+				hidden_effect = {
+					153 = {
+						remove_province_modifier = {
+							static_modifiers = { stl_state_debuff_i }
+							province = {
+								all_provinces = yes
+							}
+						}
+					}
+				}	
+				153 = {
+					add_province_modifier = {
+					static_modifiers = { stl_state_debuff_ii }
+						province = {
+							all_provinces = yes
+						}
+					}	
+				}
+				set_country_flag = stl_princessin_2_flag		
+			}	
+			else_if = {
+				limit = {
+					has_country_flag = stl_zlatocvet_2_flag
+					NOT = {
+						has_country_flag = stl_zlatocvet_3_flag	
+					}
+				}
+				hidden_effect = {
+					165 = {
+						remove_province_modifier = {
+							static_modifiers = { stl_state_debuff_ii }
+							province = {
+								all_provinces = yes
+							}
+						}
+					}
+				}	
+				165 = {
+					add_province_modifier = {
+					static_modifiers = { stl_state_debuff_iii }
+						province = {
+							all_provinces = yes
+						}	
+					}	
+				}
+				set_country_flag = stl_zlatocvet_3_flag	
+			}
+			else_if = {
+				limit = {
+					has_country_flag = stl_princessin_3_flag
+					NOT = {
+						has_country_flag = stl_princessin_4_flag	
+					}
+				}
+				hidden_effect = {
+					153 = {
+						remove_province_modifier = {
+							static_modifiers = { stl_state_debuff_iii }
+							province = {
+								all_provinces = yes
+							}	
+						}
+					}
+				}	
+				153 = {
+					add_province_modifier = {
+					static_modifiers = { stl_state_debuff_iv }
+						province = {
+							all_provinces = yes
+						}
+					}	
+				}
+				set_country_flag = stl_princessin_4_flag	
+			}
+			else_if = {
+				limit = {
+					has_country_flag = stl_princessin_4_flag
+					NOT = {
+						has_country_flag = stl_princessin_5_flag	
+					}
+				}
+				hidden_effect = {
+					153 = {
+						remove_province_modifier = {
+							static_modifiers = { stl_state_debuff_iv }
+							province = {
+								all_provinces = yes
+							}
+						}
+					}
+				}	
+				153 = {
+					add_province_modifier = {
+					static_modifiers = { stl_state_debuff_v }
+						province = {
+							all_provinces = yes
+						}
+					}
+				}	
+				set_country_flag = stl_princessin_5_flag					
+			}
+		}
+	
+	}
+	
+	
+}
+
+STL_economic_politics_cat = {
+
+	STL_war_taxes = {
+		icon = GFX_decision_rifles
+		available = {
+			has_completed_focus = ers_STL_military_factory_right_1
+			has_war = yes
+		}
+		visible = {
+		}
+		ai_will_do = {
+			factor = 1200
+		}
+		cost = 25
+		modifier = {
+			consumer_goods_factor = -0.15
+			war_support_factor = -0.05
+			stability_factor = -0.05
+		}
+		days_re_enable = 3
+
+		days_remove = 365
+		
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision PGS_propaganda_decision"
+		}
+	}
+	
+	STL_war_polozh = {
+		icon = GFX_decision_rifles
+		available = {
+			has_completed_focus = ers_STL_military_factory_right_1
+			has_war = yes
+		}
+		visible = {
+		}
+		ai_will_do = {
+			factor = 1200
+		}
+		cost = 25
+		modifier = {
+			conscription = 0.1
+			TRAINING_TIME_FACTOR = -0.05
+			war_support_factor = -0.05
+			stability_factor = -0.05
+		}
+		days_re_enable = 3
+
+		days_remove = 365
+		
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision PGS_propaganda_decision"
+		}
+	}
+}
+
+
+
+STL_fight_STG_resistance_cat = {
+	STL_reduce_resistance_in_state = {
+		icon = fire
+		available = {
+			NOT = {
+				has_country_flag = stl_fighting_resistance_flag
+			}
+			FROM = {
+				is_owned_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+				}
+			}
+		}
+		visible = {
+			FROM = {
+				is_owned_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+				}
+			}
+		}
+		state_target = yes
+
+		target_array = STG.original_cores
+		
+		on_map_mode = map_and_decisions_view
+	
+		cost = 40
+		days_remove = 15
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision start YAC_search_marks_corpse_decision"
+			add_manpower = -2000
+			set_country_flag = stl_fighting_resistance_flag
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision finish YAC_search_marks_corpse_decision"
+			clr_country_flag = stl_fighting_resistance_flag
+			FROM = { 
+				add_resistance = -5
+			}
+		}
+	}
+	STL_increace_compliance_in_state = {
+		icon = generic_form_nation
+		available = {
+			NOT = {
+				has_country_flag = stl_compliying_flag
+			}
+			FROM = {
+				is_owned_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+				}
+			}
+		}
+		visible = {
+			FROM = {
+				is_owned_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+				}
+			}
+		}
+		state_target = yes
+
+		target_array = STG.original_cores
+		
+		on_map_mode = map_and_decisions_view
+	
+		cost = 40
+		days_remove = 15
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision start YAC_search_marks_corpse_decision"
+			add_manpower = -2000
+			set_country_flag = stl_compliying_flag
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision finish YAC_search_marks_corpse_decision"
+			clr_country_flag = stl_compliying_flag
+			FROM = { 
+				add_compliance = 5
+			}
+		}
+	}
+}

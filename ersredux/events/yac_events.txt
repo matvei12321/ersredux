@@ -1,0 +1,410 @@
+﻿add_namespace = yac
+add_namespace = yac_flavour
+
+
+
+### Deindustrialisation
+country_event = {
+	id = yac_flavour.1 
+	immediate = {log = "[Root.GetName]: event yac_flavour.1"}
+	title = yac_flavour.1.t
+	desc = yac_flavour.1.d
+
+	picture = GFX_event_eqs_communists
+	
+	is_triggered_only = yes
+
+	option = {
+		name = yac_flavour.1.a
+		11 = {
+			add_extra_state_shared_building_slots = 3
+			remove_building = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+		add_political_power = 5
+	}
+}
+
+### No Rich and No Poor
+country_event = {
+	id = yac_flavour.2
+	immediate = {log = "[Root.GetName]: event yac_flavour.2"}
+	title = yac_flavour.2.t
+	desc = yac_flavour.2.d
+
+	picture = GFX_event_eqs_communists
+	
+	is_triggered_only = yes
+
+	option = {
+		name = yac_flavour.2.a
+		add_political_power = -5
+		custom_effect_tooltip = yac_flavour_2_tt
+		257 = {
+			add_manpower = -3
+		}
+	}
+}
+
+### Love the One who does not exists
+country_event = {
+	id = yac_flavour.3
+	immediate = {log = "[Root.GetName]: event yac_flavour.3"}
+	title = yac_flavour.3.t
+	desc = yac_flavour.3.d
+
+	picture = GFX_event_eqs_communists
+	
+	is_triggered_only = yes
+
+	option = {
+		name = yac_flavour.3.a
+		add_political_power = 5
+	}
+}
+
+### Safety
+country_event = {
+	id = yac_flavour.4
+	immediate = {log = "[Root.GetName]: event yac_flavour.4"}
+	title = yac_flavour.4.t
+	desc = yac_flavour.4.d
+
+	picture = GFX_event_eqs_communists
+	
+	is_triggered_only = yes
+
+	option = {
+		name = yac_flavour.4.a
+		add_political_power = 5
+	}
+}
+
+### Portrait Everywhere
+country_event = {
+	id = yac_flavour.5
+	immediate = {log = "[Root.GetName]: event yac_flavour.5"}
+	title = yac_flavour.5.t
+	desc = yac_flavour.5.d
+
+	picture = GFX_event_eqs_communists
+	
+	is_triggered_only = yes
+
+	option = {
+		name = yac_flavour.5.a
+	}
+}
+
+### Yac Comissars
+country_event = {
+	id = yac_flavour.6
+	immediate = {log = "[Root.GetName]: event yac_flavour.6"}
+	title = yac_flavour.6.t
+	desc = yac_flavour.6.d
+
+	picture = GFX_event_eqs_communists
+	
+	is_triggered_only = yes
+
+	option = {
+		name = yac_flavour.6.a
+	}
+}
+
+
+
+
+country_event = {
+	id = yac.1 
+	immediate = {log = "[Root.GetName]: event yac.1"}
+	title = yac.1.t
+	desc = yac.1.d
+
+	picture = GFX_event_eqs_communists
+	
+	is_triggered_only = yes
+
+	option = {
+		name = yac.1.a
+		
+	}
+}
+
+country_event = {
+	id = yac.2 
+	immediate = {log = "[Root.GetName]: event yac.2"}
+	title = yac.2.t
+	desc = yac.2.d
+
+	picture = GFX_event_eqs_communists
+	
+	is_triggered_only = yes
+
+	option = {
+		name = yac.2.a
+		hidden_effect = {
+			country_event = { id = yac.8 days = 150 }
+		}
+	}
+}
+
+country_event = {			### Flavour event 1
+	id = yac.3
+	immediate = {log = "[Root.GetName]: event yac.3"}
+	title = yac.3.t
+	desc = yac.3.d
+
+	picture = GFX_event_eqs_communists
+	
+	is_triggered_only = yes
+
+	option = {
+		name = yac.3.a
+		hidden_effect = { id = yac.4 days = 70  }
+	}
+}
+
+country_event = {			### Flavour event 2
+	id = yac.4
+	immediate = {log = "[Root.GetName]: event yac.4"}
+	title = yac.4.t
+	desc = yac.4.d
+
+	picture = GFX_event_eqs_communists
+	
+	is_triggered_only = yes
+
+	option = {
+		name = yac.4.a
+		hidden_effect = { id = yac.5 days = 70  }
+	}
+}
+
+country_event = {			### Flavour event 3
+	id = yac.5
+	immediate = {log = "[Root.GetName]: event yac.5"}
+	title = yac.5.t
+	desc = yac.5.d
+
+	picture = GFX_event_eqs_communists
+	
+	is_triggered_only = yes
+
+	option = {
+		name = yac.5.a
+	}
+}
+
+country_event = {			### SEARCH OF CARAMEL - FAIL
+	id = yac.6
+	immediate = {log = "[Root.GetName]: event yac.5"}
+	title = yac.6.t
+	desc = yac.6.d
+
+	picture = GFX_event_ancient_skeleton
+	
+	is_triggered_only = yes
+
+	option = {
+		name = yac.6.a
+		add_political_power = -10
+	}
+}
+
+country_event = {			### SEARCH OF CARAMEL - SUCCES
+	id = yac.7
+	immediate = {log = "[Root.GetName]: event yac.5"}
+	title = yac.7.t
+	desc = yac.7.d
+
+	picture = GFX_event_blessing
+	
+	is_triggered_only = yes
+
+	option = {
+		name = yac.7.a
+		country_event = { id = yac.9 days = 2 }
+		custom_effect_tooltip = yac_add_holy_corpse_tt
+		set_country_flag = yac_has_holy_corpse
+		add_political_power = 10
+		add_stability = 0.01
+		add_war_support = 0.01
+	}
+}
+
+country_event = {			### Explaining Revival 
+	id = yac.8
+	immediate = {log = "[Root.GetName]: event yac.8"}
+	title = yac.8.t
+	desc = yac.8.d
+
+	picture = GFX_event_ancient_skeleton
+	
+	is_triggered_only = yes
+
+	option = {
+		name = yac.8.a
+		custom_effect_tooltip = yac_search_for_marx_event_tt
+		set_country_flag = yac_can_start_revival
+	}
+}
+
+country_event = {			### Chieftess gets the Holy Corpse
+	id = yac.9
+	immediate = {log = "[Root.GetName]: event yac.9"}
+	title = yac.9.t
+	desc = yac.9.d
+
+	picture = GFX_event_ancient_skeleton
+	
+	is_triggered_only = yes
+
+	option = {
+		name = yac.9.a
+		hidden_effect = {
+			country_event = { id = yac.10 days = 10 }
+		}
+	}
+}
+
+country_event = {			### MARKS GETS REVIVED 1
+	id = yac.10
+	immediate = {log = "[Root.GetName]: event yac.10"}
+	title = yac.10.t
+	desc = yac.10.d
+	
+	picture = GFX_event_marks
+	
+	is_triggered_only = yes
+
+	option = {
+		name = yac.10.a
+		custom_effect_tooltip = yac_event_10_tt
+		hidden_effect = {
+			country_event = { id = yac.11 days = 7 }
+		}
+	}
+}
+
+country_event = {			### MARKS GETS REVIVED 2
+	id = yac.11
+	immediate = {log = "[Root.GetName]: event yac.11"}
+	title = yac.11.t
+	desc = yac.11.d	
+	
+	picture = GFX_event_marks
+
+	is_triggered_only = yes
+
+	option = {
+		name = yac.11.a
+		hidden_effect = {
+			country_event = { id = yac.12 days = 7 }
+		}
+	}
+}
+
+country_event = {			### MARKS GETS REVIVED 3
+	id = yac.12
+	immediate = {log = "[Root.GetName]: event yac.13"}
+	title = yac.12.t
+	desc = yac.12.d
+
+	picture = GFX_event_marks
+
+	is_triggered_only = yes
+
+	option = {
+		name = yac.12.a
+		hidden_effect = {
+			country_event = { id = yac.13 days = 7 }
+		}
+	}
+}
+
+country_event = {			### MARKS GETS REVIVED 3
+	id = yac.13
+	immediate = {log = "[Root.GetName]: event yac.13"}
+	title = yac.13.t
+	desc = yac.13.d
+	
+	picture = GFX_event_marks
+
+	is_triggered_only = yes
+
+	option = {
+		name = yac.13.a
+		hidden_effect = {
+			country_event = { id = yac.14 days = 5 }
+		}
+	}
+}
+
+country_event = {			### MARKS TAKES POWER
+	id = yac.14
+	immediate = {log = "[Root.GetName]: event yac.14"}
+	title = yac.14.t
+	desc = yac.14.d
+	
+	picture = GFX_event_marks
+
+	is_triggered_only = yes
+
+	option = {
+		name = yac.14.a
+		add_country_leader_role = {
+			character = YAC_marx_leader
+			promote_leader = yes
+			country_leader = {
+				expire = "1965.1.1"
+				desc = ""
+				ideology = religious_socialism
+				traits = {  }
+			}
+		}
+	}
+}
+
+country_event = {			### Eye Hurts
+	id = yac.15
+	immediate = {log = "[Root.GetName]: event yac.14"}
+	title = yac.15.t
+	desc = yac.15.d
+	
+	picture = GFX_event_marks
+
+	is_triggered_only = yes
+
+	option = {
+		name = yac.15.a
+		hidden_effect = {
+			country_event = { id = yac.16 days = 2 }
+		}
+	}
+}
+
+country_event = {			### Eye Hurts - Part 2
+	id = yac.16
+	immediate = {log = "[Root.GetName]: event yac.14"}
+	title = yac.16.t
+	desc = yac.16.d
+	
+	picture = GFX_event_marks
+
+	is_triggered_only = yes
+
+	option = {
+		name = yac.16.a
+		set_country_leader_portrait = {
+			ideology = communism
+			portrait = GFX_YAC_marks_leader
+		}
+		set_country_flag = yac_marks_changable_portrait_flag
+		custom_effect_tooltip = yac_marks_changable_portrait_tt
+	}
+}
+
+

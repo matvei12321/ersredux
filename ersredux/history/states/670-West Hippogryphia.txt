@@ -1,0 +1,30 @@
+state={
+	id=670
+	name="STATE_670"
+
+	provinces={
+		  5179   10987  12930 
+	}
+
+	manpower=807132
+	state_category=city
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = NCH
+		add_core_of = NCH  
+		
+		victory_points = { 12930 5 }
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 2
+
+		}
+	}
+
+	resources={
+		steel=10.000
+	}
+}

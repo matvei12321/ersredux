@@ -1,0 +1,63 @@
+capital = 170
+
+oob = "PGV_1007"
+
+set_research_slots = 3
+starting_train_buffer = 3
+
+save_global_event_target_as = ponyold_target
+
+add_ideas = { 
+
+	no_lack_of_scientists
+	outdated_industry
+	no_poverty
+	
+	PGV_minorities
+	PGV_legends_of_wind
+	PGV_olenian_industrial_methods
+}
+
+set_technology = {
+	 
+	pegasi_race = 1
+	tech_pegasi = 1
+	melee_weapons = 1
+	melee_weapons1 = 1
+	pre_gw_artillery = 1
+	infantry_weapons = 1
+	gw_artillery = 1
+	tech_support = 1
+	tech_mountaineers = 1
+	tech_recon = 1
+	fuel_silos = 1
+	basic_train = 1
+	motorised_infantry = 1
+}
+actually_fix_weapon_techs = yes #THIS HAS TO BE CALLED IN EVERY HISTORY FILE RIGHT AFTER MAIN set_technology!
+
+recruit_character = PGV_burevestnitsa
+
+add_equipment_to_stockpile = {
+	type = melee_equipment_1
+	amount = 50000
+	producer = PGS
+}
+
+
+set_convoys = 0
+set_popularities = {
+
+	neutrality = 51
+	fascism = 27
+	communism = 22
+}
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1.10.10"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+set_stability = 0.5
+set_war_support = 0.45

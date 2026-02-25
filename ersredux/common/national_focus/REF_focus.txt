@@ -1,0 +1,15 @@
+focus_tree = {
+	id = REF_focus1
+	continuous_focus_position = { x = 10000 y = 10 }
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = REF
+		}
+	}
+	shared_focus = REF_focus1
+	shared_focus = REF_step2
+	shared_focus = REF_step3
+}
+

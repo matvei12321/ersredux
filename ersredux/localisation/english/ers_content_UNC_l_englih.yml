@@ -1,0 +1,283 @@
+﻿l_english:
+
+ ##### PARTIES
+
+ ##### CHARACTERS
+ UNC_king_platinum:0 "King Ernest Platinum"
+ KING_PLATINUM_DESC:0 ""Why change something if it's already working properly? Progress can wait."\n\nThe Platinum Dynasty is one of the oldest in the world. For thousands of years, even before the formation of the first Griffin Empire, Unicorns lived and developed under a single banner of the Platinum family.pSam King Platinum is currently very old, although he uses magic to maintain his body at a relatively young age. He is very conservative and believes that Unicorn has reached the peak of stability and power. But it remains to be seen how the merchants of Manehattan, the commissars of Philadelphia, and the revolutionaries of Stalliongrad will behave in the future..."
+ UNC_unknown_leader_of_unp:0 "Unknown leader of the NDF"
+ UNC_rarity:0 "Rarity Maidens"
+ UNC_twilight:0 "Twilight Sparks"
+ UNC_twilight_desc:0 ""I'm sure magic won't be able to save us when the war starts. But automatons and new weapons will be able to."\n\Ptwight Sparks is a materialistic unicorn who despises magic. She had once tried to learn magic, but had failed catastrophically in her last exam, realizing that years of studying magic had been wasted. Now she's trying to find herself in another field of science, and she seems to be doing well. She is Tesla Charm's junior assistant, and sometimes does some errands for him."
+ UNC_tesla:0 "Tesla Charm"
+ UNC_tesla_desc:0 ""One day, I swear that one day I will create a perpetual motion machine. And I will not know sleep and rest until I have an epiphany of how to make this dream come true.""
+ UNC_trixie:0 "Trixis Le la moon"
+ UNC_trixie_desc:0 ""It's not a good idea to bother the Great Trixis, the heiress of the mighty Le la Moon family. But if that's the king's will, then so be it, I'll do a couple of things for him.""
+ UNC_victoria_ouren:0 "Victoria Ouren"
+ 
+ UNC_field_marshal_1:0 "Shining Armor"
+ UNC_field_marshal_2:0 "Marie Greytalon"
+ UNC_corps_commander_1:0 "Otto de Carey"
+ UNC_corps_commander_2:0 "Irene Stormhorn"
+ UNC_corps_commander_3:0 "Albrecht Jaurese"
+ UNC_corps_commander_4:0 "Gerhart Sanhoof"
+ UNC_corps_commander_5:0 "Sarah of Midland"
+ UNC_corps_commander_6:0 "Eva d'Orleans"
+ UNC_corps_commander_7:0 "Rickard Weber"
+ UNC_corps_commander_8:0 "Heinz Hamelin"
+ UNC_corps_commander_9:0 "Adol Schmitler"
+ UNC_corps_commander_10:0 "Julien Graf-Antonin-Hamelin-Berglen"
+
+ fucking_griffith:0 "Griffith"
+ 
+ 
+ ##### NATIONAL FOCUS
+ UNC_royal_busyness:0 "United Kingdom"
+ UNC_royal_busyness_desc:0 "Unicorns have been living in stability and conducting a passive foreign policy for many years. Let's keep this course."
+ UNC_people_busyness:0 "And his happy people"
+ UNC_people_busyness_desc:0 "Satiety, stability and universal prosperity - that's what Unicornia means." UNC_look_around
+ UNC_look_around:0 "Attend to the affairs of the Kingdom"
+ UNC_look_around_desc:0 "We are at the peak of our power, but this does not mean that the work is over. Our king is a wise ruler, and he will maintain the greatness of the Kingdom."
+ UNC_problem_moments:0 "Problematic moments"
+ UNC_problem_moments_desc:0 "Maybe there are a few... Undesirable elements in our Kingdom: insubordinate vassals, terrorists, and the plague. But none of this poses a real threat."
+ UNC_STG_problem:0 "Children of the Revolution"
+ UNC_STG_problem_desc:0 "There is absolutely no logic or selfless aspirations in their actions. The Communists just wanted to destroy our centuries-old kingdom in one revolution! But that's never going to happen. And now we will decide their fate."
+ UNC_STG_no:0 "Our greatest mistake"
+ UNC_baycall_reintegration:0 "Reintegration"
+ UNC_baycall_reintegration_desc:0 "Initially, the Baikal region was dominated by Northerners. But under her control, the rebels got it! The Northerners government has failed in its tasks, so now Baikal will be managed directly from Bales."
+ UNC_STG_no_desc:0 "The revolutionaries must be destroyed! It is necessary to prepare forces to invade Baikal and advance deep into Krasnaya Severyana. Although such a step is quite radical and will be condemned by our society, we are ready to make sacrifices to regain our rightful lands."UNC_STG_yes:0 "Recognize communes"
+ UNC_STG_yes_desc:0 "Our forces are insufficient to suppress the revolutionaries. And we basically don't want unicorns to die in the war, so we recognize the Northern Communes as an independent state. The Northerners loyal to us will condemn this, but what you can't do for the sake of peace on the borders."
+ finish_war_faster_tt:0 "\n§Rthe war needs to be completed in 35 days.§!\n§If successful:§!\n We are annexing the borderlands§! communes.\n§In case of defeat:§!\n     §R-5%§! stability.\n     §R-10%§! war support."
+ UNC_our_puppets:0 "How are the vassals?"
+ UNC_our_puppets_desc:0 "Our largest possessions are the Northerners and Prancia. They constantly want to slip out of our sphere of influence, but we will tighten our grip and put an end to the Northern communists and the French nationalists."
+ can_influence_puppets_tt:0 "Unlocks £decision_icon_small §Solutions§! that eliminate §R Threats§! in the oldest vassal lands.§!"
+ UNC_SVR_problem:0 "Star of the North"
+ UNC_SVR_problem_desc:0 "There has been something going on in the North lately besides the fight against the Red revolutionaries. But we don't think it deserves much attention... All we demand from Northerners is loyalty and subordination to us."
+ UNC_prance_problem:0 "To suppress French nationalism"
+ UNC_prance_problem_desc:0 "The damned revenge guards are unlikely to calm down any time soon. But, in fact, the Prance is weakened so much that it will not be able to pose any serious threat. There can be no restoration of the "Great Prance".\n\n It's better they continue to export their wine to us!"
+ UNC_northern_puppets:0 "Status of the Northern lands"
+ UNC_MNH_problem:0 "Independent Merchant Guilds" 
+ UNC_MNH_problem_desc:0 "Our king has sold some lands to the management of influential merchant guilds. It would seem that this solution is perfect and has no disadvantages, but these guilds, as before, did not depend on the Crown, and now they are completely independent.The Manehattan Federation should be our vassal, and it's time to remind them of this."
+ UNC_plague_focus:0 "A dying city"
+ UNC_plague_focus_desc:0 "Death reports in Philadelphia do not sparkle with good forecasts. We need to send some humanitarian aid to the exclusion zone."
+ UNC_hide_plague_info:0 "No panic"
+ UNC_hide_plague_info_desc:0 "Until now, we have not disclosed the fact that the plague is raging in Philadelphia. But just keeping quiet about it is not a very effective way to maintain stability, so we will stop all rumors that something bad is happening in the big city."
+ UNC_alliance:0 "To consolidate the unity of our lands"
+ UNC_alliance_desc:0 "The best way to ensure the loyalty of our puppets to us is to form a full-fledged alliance with them. Closer ties will ensure our prosperity for many years to come."
+ UNC_inside:0 "Internal situation"
+ UNC_inside_desc:0 "How nice it is to have officials and feudal lords who show complete obedience and obedience. They effectively manage our lands and don't even think about participating in corruption.There is simply no corruption in Unicorn, thanks to our King."
+ UNC_check_the_industry:0 "Just look at our industry!"
+ UNC_industry_researches:0 "Truly, the workshop of peace"
+ UNC_our_neibghours:0 "Relations in foreign policy"
+ UNC_our_neibghours_desc:0 "Although unicorns are superior to all other races, we cannot simply isolate ourselves from other states, no matter how wild they may be."
+ UNC_wild_pegasi:0 "These... Savages"
+ UNC_wild_pegasi_desc:0 "We have always seen Pegasi as bloodthirsty, dirty and uneducated creatures, otherwise nothing has changed over the years. There is peace and order in our kingdom, and the Pegasi are always solving some problems. This means that our society surpasses Pegasus at times."
+ UNC_support_los:0 "Rather an exception"
+ UNC_support_los_desc:0 "Las Pegasus is a real miracle. Where else can you see educated and intelligent Pegasi who not only can read and write, but also do not fight with everyone? We will make an exception by paying attention to them."
+ UNC_wild_thestrals:0 "And more savages"
+ UNC_ERP:0 "Not so great, but loyal friends"
+ UNC_crystal_ponies:0 "Crystal Ponies"
+ UNC_griffons:0 "Resume gryphon diplomacy"
+ UNC_olenians:0 "The Great Western Kingdom"
+ UNC_changelings_threat:0 "Nasty bugs"
+ UNC_changelings_threat_desc:0 "We do not have and do not want to deal with changelings. There is one simple reason for this: they are nasty bugs. If anyone finds this offensive towards changelings, have you seen them yourself? It's like meeting a cockroach that is a hundred times bigger than its relatives. It's disgusting! Unicorns will never stoop to communicate with such creatures."
+ unc_no_effect:0 "§At the moment, this focus thread has no practical effects, but you can run through it to learn a little about Laura Unicorn and her relationship to other countries through cosmetic events.§!"
+ UNC_aristocrats:0 "Nobles and feudal lords"
+ UNC_more_aristocrats:0 "Give them more privileges"
+ UNC_more_aristocrats_desc:0 "Let our beloved feudal lords bathe in money and throw it into the sea."
+ UNC_young_princess:0 "The Young Heiress"
+ UNC_young_princess_desc:0 "The monarchy in Unicorn is a complex system, according to which the children of the monarch are considered heirs only from the age of 18. Until then, they are just princes and princesses, and in the event of the sudden death of the current king, they will not receive the rights to the throne until they come of age. Such a time-tested system definitely does not need reforms."
+ princess_in_3_years:0 "§The Princess§! He will receive the rights to the throne upon reaching the age of majority in the year C1011.§!\n\n§R If something happens to the king and this trick is not performed, expect the consequences.§!"
+ UNC_party:0 "For our unity!"
+ UNC_party_desc:0 "The Grand Galloping Gala is a grand festival that has been held since the founding of the Kingdom. It is held in order to show the society that Unicornia is stable no matter what the trials. It also allows you to consolidate feudal unity - aristocrats who come from all over the country will swear allegiance to the Crown over a glass of French wine."
+ UNC_party_good:0 "For our excellence"
+ UNC_party_good_desc:0 "Everything went well. What could possibly go wrong?"
+ UNC_party_good_2:0 "High society"
+ UNC_party_bad:0 "Sometimes something doesn't go according to plan..."
+ UNC_party_bad_desc:0 "Damn terrorists!"
+ UNC_party_bad_2:0 "Strengthen security measures"
+ UNC_party_bad_2_desc:0 "Due to the recent incident, we will strengthen police control in our lands... until the society calms down."
+ UNC_fin:0 "Light in the midst of ignorance"
+ UNC_fin_desc:0 "As we expected, the Kingdom is still standing strong. Only occasionally do non-fatal trials occur, which simply harden us."
+ UNC_servants_of_god:0 "Servants of God"
+ UNC_servants_of_god_desc:0 "The Church has supported our dynasty in all its endeavors for centuries. In addition, the clergy in Castelvania are engaged in protecting the whole world from universal evil. They definitely deserve a special status in our society."
+ UNC_lower_army:0 "New summoning order"
+ UNC_lower_army_desc:0 "In the next few decades, our competent politicians do not predict any wars - none of our neighbors have any reason to attack us. Then why do we need to develop an army? Even now it is considered one of the largest in the world, besides, we have invincible tank cars. We should reduce the rate of conscription into our army and generally give some soldiers a break from service. The period of peace and prosperity continues!"
+ UNC_international_council:0 "Shield of a stable world"
+ UNC_peasants:0 "Think about the problems of the lower classes"
+ UNC_lower_training:0 "Reduce military spending"
+ 
+ mojet_osudit_pegasov_flag:0 "If §Y[PGS.getname]§! If it attacks our friendly neighbors (§G[ERP.getname]§!, §G[PRG.getname]§!, §G[MNH.getname]§!, §G[SVR.getname]§!, §G[CRY.getname]§!), we can §Ship§! them."
+ los_will_join_faction:0 "If the state is Y[LOS.getname]! If they agree, they will join our alliance when we fulfill the focus of consolidating the unity of our lands!"
+ 
+
+
+ ##### DECISIONS 
+ 
+ 
+ ##### IDEAS
+ UNC_monarchy:0 "An established monarchy"
+ UNC_monarchy_desc:0 "For many years, Unicornia lived under the glorious rule of the Platinum family, developing rapidly and making great strides forward. No peasant revolutions or even the invasions of strangers from the south could shake the eternal regime of the monarchy.Gods save the King, Queen and their children!"
+ UNC_monarchy_1:0 "The established monarchy"
+ UNC_monarchy_1_desc:0 "Even though our blessed monarch is not feeling at his best, the country is still as stable as ever. We hope Platinum gets better."
+ UNC_corrupted_aristocrats_idea_1:0 "Loyal Aristocracy"
+ UNC_intelligents:0 "The state of society: §Gintelligence dominates§!"
+ UNC_intelligents_desc:0 "If you are not an ordinary worker in Unicorn, then you are a noble who owns a worker. It was this situation that led to the uprising of peasants in St. Petersburg, but it does not seem that the events of many years ago worried anyone.The intelligentsia - the nobles and various feudal lords - are a rich, cultured and highly intelligent caste in our society. They advance science and art, but drag down military development, believing that this way they can prevent the onset of war, which would deprive them of their noble status."
+ UNC_workers:0 "Decadent"
+ UNC_workers_desc:0 "Aristocratic unicorns prefer to offload hard work on others, be they servants or less influential unicorns. Some peasant owners go too far in their management, which causes protests in small towns."
+ UNC_closed_from_griffonia:0 "Careful trading"
+ UNC_closed_from_griffonia_desc:0 "Once upon a time, open trade with griffins has already brought us misfortune. We try our best not to repeat past mistakes again."
+ UNC_rainbow_factory_effect:0 "§Negative effect§! from the Weather Factory"
+ UNC_timed_trade_with_MNH:0 "Goods from loyal Manehattan"
+ UNC_closed_politics_idea:0 "Frozen Foreign Policy"
+ UNC_closed_politics_idea_desc:0 "Despite the loud statements that Unicorn preserves stability and order on the continent, unicorns have not intervened in any conflict that took place in Equus in recent decades, unless it directly threatened the stability of the country."
+ UNC_closed_politics_idea_1:0 "Frozen foreign policy"
+ UNC_closed_politics_idea_1_desc:0 "Despite the loud statements that Unicorn preserves stability and order on the continent, unicorns have not intervened in any conflict that took place in Equus in recent decades, unless it directly threatened the stability of the country."
+ UNC_think_about_people_idea:0 "Minor concessions to peasants"
+ UNC_less_trainings:0 "Reduced military budget"
+ UNC_little_conscription:0 "Mitigation of terms of service"
+ UNC_sell_lands_for_UNC:0 "Sale of land"
+ UNC_sell_lands_for_MNH:0 "Pay for the land"
+ UNC_unp_rising:0 "SNO is on the rise"
+
+ #### OOB
+ 
+ 
+ 
+ #### COSMETIC TAGS
+ 
+ 
+ 
+ #### TOOLTIPS
+ 
+ accepted_griffith_flag_tt:0 "Hire a general: §UGriffit§!"
+ 
+ 
+ 
+ #### EVENTS
+ 
+ 
+ unc.1.t:0 "The life of a simple pony"
+ unc.1.d:0 ""Our aristocrats are, without exaggeration, in bliss. They have dozens of privileges, the Crown protects their honor and property, and military service is not provided for them at all. But what about simple ponies? Let's look at the Northerners. Indeed, the region is cold and not the most developed: it is not surprising that some workers live on the verge of poverty. But when you see a similar picture here, in the capital of civilization Equus-\n\n- Uh, where did you go? Are you writing a report for the King or a plaintive memoir? Let's do it like a tutorial: everyone is happy, but the peasants are throwing up rainbows.\n\n- Actually, we clerks have to write truthful reports...\n\n- So you'll write the truth! And you'll miss a couple of moments about the peasants.\n\Parwrest is already used to this state of affairs. Perhaps he would give up trying to convey the unpleasant truth to the Crown.The workers are happy and completely loyal to their ruler. And they certainly haven't staged strikes lately."
+ unc.1.a:0 "Who cares about them?"
+
+ unc.2.t:0 "Big possessions are a big responsibility"
+ unc.2.d:0 "Once upon a time, Henrich Grimmler sold us a significant part of Prance, and so the whole kingdom disappeared. Now Prance is just a duchy, and it is unlikely that the French will forget and forgive us for this. But as long as Prantia is ruled by a loyal Unicorn aristocrat, everything should be in relative order.\n\The confusion is one big misunderstanding. Everyone in Unicorn is loyal to their King, and the unicorns of the cold lands cannot resolve their social conflict in any way. The leaders of the Northerners loyal to us claim that it was despotism that led to the revolution, but they themselves should have kept order on their land better.\n\Manhattan... What's wrong with it? As long as these merchants act in our interests, we can call them dependent on us. They obey us, don't they?\n\pA Fillydelphia... The reports of hundreds and thousands of deaths sent from there are simply nightmarish. We will pray for Philadelphia and its people."
+ unc.2.a:0 "But all problems always resolve themselves, right?"
+
+ unc.3.t:0 "Unicorn demands submission"
+
+ unc.4.t:0 "Partial agreement"
+ unc.4.d:0 "The merchants of Manehattan have heard our demands, but they have informed us that there are certain circumstances that will not allow the Guild to become completely dependent on the Crown. But Flim and Flem, the leaders of the Guild, agree to supply more goods produced and purchased by Manehattan."
+ unc.4.a:0 "Oh, these capitalists."
+
+ unc.5.t:0 "Merchants' refusal"
+ unc.5.d:0 "It seems that the Merchant Guild does not want to strengthen ties between Unicorn and Manehattan, referring to the fact that under the Manehattan land sale agreement, the Guild has every right to conduct any activity regardless of the will of the Crown. This has undermined our credibility."
+ unc.5.a:0 "Damn!"
+
+ unc.6.t:0 "Successful campaign against communism"
+ unc.6.d:0 ""The recently launched operation to decommunize the Baikal part of Severyan turned out to be successful! No one doubted its outcome. Our officers plan to move further into the territory of the revolutionaries all the way to Princessin. Victory will be ours!"\n\This message was received by the King from the General Military Staff at 15:00. But already at 15:46 a similar telegram arrived... But not with such rosy forecasts anymore.\n\n"Our troops cannot continue advancing. Our forces conducted Operation Bullseye, which consisted of crossing Lake Baikal directly to launch a surprise attack by enemy forces on the other shore. But because of... not the most competent command and inadequate equipment, many soldiers drowned without ever reaching land. This is not taking into account other failures at the front. We may have advanced in the offensive, but our losses are simply absurd. The Supreme military Command of Unicorn announces the end of the operation to decommunize the Northerners.""
+ unc.6.a:0 "But it's still a success, right?"
+
+ unc.7.t:0 "Failure of the campaign"
+ unc.7.d:0 "It's a nightmare. Our forces turned out to be insufficient to at least move forward in the front line! The King officially announced that this campaign would be completed in less than 70 days and with absolutely no casualties.. It seems like he underestimated the rebel forces a bit. Besides the fact that the peasant army held back our attack, the partisan detachments went on the offensive and sabotaged the supply in our camps. The PARTISANS have gone on the offensive!\n\n This campaign should not be continued. After all, Unicornia has more important things to do than the Northern "socialists"."
+ unc.7.a:0" Ahem."
+
+ unc.8.t:0 "Wine is pouring"
+ unc.8.d:0 "The Grand Galloping Gala is not just a wonderful night where rich and famous unicorns from all over the country can meet and have a good time. This is the culmination of our journey. Every year, since the founding of the Kingdom, we have been holding this celebration, and it has always been great: the best wines are served, the best fireworks sparkle in the air, and the latest masterpieces by Unicorn composers are played on stage. It is this luxury that means that the unicorn can afford everything, unlike other, less great races. For example, is it possible to imagine something like this in dirty Pegasopolis?\n\n— Le Patron, really, a stable and peaceful period awaits us this year, so say the astronomers-stargazers.\n— And do you believe in this astronomical nonsense? Ho, if I were the king of Platinum, I would allocate more finances for snacks at the table than for this pseudo-science. There are always not enough lobsters!But two people stood out suspiciously among the crowd. They did not communicate with each other, did not cross eyes with anyone and sought to be closer to large gathering places of guests. In addition, one of them carried a rather strange box with meticulous care.Meanwhile, the event continued."
+ unc.8.a:0 "To your health!"
+ 
+ unc.9.t:0 "Tick."
+ unc.9.d:0 "The atmosphere of celebration lasted all night. The aristocrats had a cultural rest, talked, and closer to midnight they began to talk about the fact that the king himself would soon come out with an address.\n\n"So, how many minutes are we going to set?"\n\n"The devil doesn't know when this grandfather will show up. But he's going to talk for a long time. We set the timer for fifteen minutes. During this time, we'll have time to slip away, and the king will bring his croup here."\n\n12:13. So.\n\n"This year has been difficult, including for me personally. The tragedy claimed the life of my only and beloved wife Ernessa. The damn terrorists took her life, but her memory will never be forgotten. That is why I dedicate today's fireworks in her honor, and may she see from heaven that she is still loved!"\n\Bird-like."
+ unc.9.a:0"Boom."
+
+ unc.10.t:0 "Great time"
+ unc.10.d:0 "— Damn, where is Mr. Le Patron?\n"Look! I think I've found him!" After making their way through a small crowd, two unicorn deliverymen appeared in front of Count le Patron.\n\n"Your lobsters are delivered, the temperature should not have changed if the temporary spell has not lost its effect yet."\n"Great! This is truly going to be a perfect night."\n\That's how it went. As the clock struck midnight, King Platinum himself appeared on the main stage with his only daughter and guards. The Queen's seat was empty, but that didn't dampen his high spirits at all.The king made a promising appeal to all the gathered aristocrats and said that the fireworks that night would be dedicated in memory of his deceased wife. A bright explosive show in the sky depicted Ernessa Platinum herself and her life path. After honoring the memory of his beloved and only wife, Platinum and his daughter and retinue retired to the palace."
+ unc.10.a:0 "Who will finish yesterday's salads?" 
+
+ unc.12.t:0 "Party with nobles"
+ unc.12.d:0 "The King has gathered his courtiers for a gathering. He announced that he was ready to play a chess game with three of the smartest unicorns among his entourage. And there were some. And so, the start of the chess game was announced."
+ unc.12.a:0 "May this battle of wits be fair!"
+
+ unc.13.t:0 "Disappointment"
+ unc.13.d:0 "— Everything is fixed! These are the worst parties of my life!It would seem that the king should rejoice at the victory, because he smashed his rivals to smithereens. But still, he was extremely displeased.\n\n— And you think THIS is a fair game? You don't want to win, no you don't want to resist, so as not to ruin your image in my eyes. This easy victory means absolutely nothing to me when the opponents deliberately give in. What a humiliation!"
+ unc.13.a:0 "I need better opponents."
+
+ unc.14.t:0 "The Last Battle of Baravia"
+ unc.14.d:0 "Duke Frederick of Baravia is known among all Unicorn vassals for his ability to play chess. However, he was very surprised when he received a letter from the King himself inviting him to play a game. The Duke of Varavia thought about this proposal - after all, Baravia, conquered by Unicornia a thousand years ago, gets a chance to defend its honor at least in a game like chess. There was a question about the honor of his ancestors. In the end, Griderich decided to fight.Upon arriving at the Bales Palace, Friedrich only exchanged a few words with Ernest to comply with formalities. He came here with one goal."
+ unc.14.a:0 "Your move, missier."
+
+ unc.15.t:0 "Choice of move"
+ unc.15.d:0 "The game was intense. Ernest saw strength in his opponent, but he was far from a novice himself. And so, in one move, he saw an opportunity. By moving the rook into the opponent's field of control, he will open the way for a grand attack. This could be a combination that chess history has never seen before. But if Gridrich understands Platinum's train of thought... this means total defeat. On the other hand, he can make a move with the queen, making a check. This move will be trivial, but time-tested. However, the chess layout on the board allowed both players to gain an advantage in the event of such a move."
+ unc.15.a:0 "I will make a risky move!"
+ unc.15.b:0 "Let it be a measured game without impertinence."
+
+ unc.16.t:0 "Victory "
+ unc.16.d:0 "— Ha, perhaps this is a historical pattern, don't you think so, Gridrich?  Platinum turned to his opponent with a grin.\n\n— Yes. It's witty.\n\This is all that the Duke of Barawa replied. After this sentence, he confidently walked out of the hall and the palace, just as confidently as he entered it. But muddy and hurtful thoughts were spinning in his head. Another defeat of the Bararv kingdom... It looks like he really has the historical stigma of defeat."
+ unc.16.a:0 "No one doubted."
+
+ unc.17.t:0 "Surprise"
+ unc.17.d:0 "— Checkmate! Black wins!\n\pArnest couldn't believe his eyes and ears. Had some upstart from Baravia defeated him? Some duke of a defeated kingdom was able to defeat a Unicorn monarch in a fair chess match? That was probably the reality. Griderich, despite his good manners and restraint, could not help but hide the smile on his face. The joy of such a small thing for others... But such a disappointment for Ernest.After the party, Frederick stayed at the palace for a short while to annoy the monarch. He was chatting with local ladies and gentlemen, and was clearly in high spirits.The evening before, at the end of the same day, the news reached the king that fireworks were being launched in the Baravian lands at the expense of the duke's treasury. It's unlikely that Friedrich celebrated an ordinary non-holiday like this."
+ unc.17.a:0 "We'll see you again..."
+
+ unc.18.t:0 "Revenge"
+ unc.18.d:0 "King Platinum couldn't accept that the Duke of Barawa beat him. Revenge is the only right decision.\n\n- Miss Platinum, - Gridrich began his speech maliciously, - do you know that before the fall of Baravia, Unicornia tried to make more than ten military campaigns against it, and three of them did not even begin because of the incompetence of the army? Personally, I find it funny.This time, he even took several nobles from his entourage with him. And, of course, they let out an unpleasant laugh, which annoyed the king. And this fool dares to mock Unicornia itself?! Well, he definitely won't win this time."
+ unc.18.a:0 ">"
+
+ unc.21.t:0 "The baron's request"
+ unc.21.d:0 "One influential baron from the lands stated that he needed to get his peasants back. He once gave a huge number of serf "volunteers" to the army, for which he found great favor with the king. However, now he thinks it's time to return the property to its rightful owner. Otherwise, he threatens to turn several major nobles against the crown."
+ unc.21.a:0 "Return the peasants to the baron."
+ unc.21.b:0 "They will remain in the army."
+
+ unc.22.t:0 "Delegation to Crystal City"
+ unc.22.d:0 "No one among the unicorns of Unicornia can defeat the King in chess, which means that we need to think more broadly, beyond Unicornia. He thought for a long time. Would [ERP.getleader] be a good opponent? Doubtful. Earth ponies are always digging in the ground, they haven't seen chess. Maybe [OLE.getleader]? Deer are graceful and proud creatures. Surely they can become rivals to the King. But the trip to [OLE.getname] will take too long.\n\n And then he remembered the ideal option. A unicorn that has lived for hundreds of years. Unicorn, who played the first chess game with one of the Unicorn kings. One of the wisest rulers of the past and modern times. Exactly. The trip to [CRY.getname] should not be too long.\n\n---------\ n-Somewhere near the borders of Unicorn and Princessstate-\n---------\ n\n— Hey, Helen, look! It's a diplomatic convoy with a royal carriage.  The border guard soldier seemed cheered up. You can't always see the royal convoy.\n\n— Really? It's a miracle. The king hadn't left the capital's Bales for decades, and now he decided to go abroad? It's like that... It's boring.\n\n— This means that it is a matter of national importance. Perhaps global issues will be resolved soon...Two guards saluted the convoy and silently let them through the border. After losing sight of the convoy with the royal carriage, they prayed for the safe return of the King."
+ unc.22.a:0 "Who knows what might happen to him on the way."
+
+
+ unc.24.t:0 "In the Crystal Palace"
+ unc.24.d:0 "— Oh, Ernest Platinum? I was told that a delegation from Unicorn was heading to Princessstate, but I didn't expect to meet you in person... in times like these.\n\n— What are you talking about, Princess Amore?\n\n— I heard that the plague has come to the Kingdom. Some terrorists are constantly committing atrocities, vassals are arbitrary...\n\n— Ah, that. Don't pay attention to these rumors. The ridiculous ignoramuses just want to sow panic. The kingdom is thriving like never before... I am sure the same can be said about your country.\n\n— In my... yes. So, the purpose of your visit...\n\n— A game of chess.\n\n— Hmm. You probably know the stories that the first game of chess was played by me and the Unicorn king. It's true. The two of us came up with the rules and worked out the pieces and their moves... Don't think that you will get this victory so easily. Even though I'm a decent number of years old, I still remember ways to get into a winning situation for me from any situation.\n\n— Of course, Princess. But don't get your hopes up that an elderly stallion like me can't be a worthy rival.\n\n"Eh? Elderly? You don't look older than 40-50..."\n\nThe crystal chess table has been installed, and there are places for players too. Time has passed."
+ unc.24.a:0 ">"
+
+
+ unc.25.t:0 "Move selection"
+ unc.25.d:0 "The game started badly for the king. The situation on the board was developing rapidly and clearly not in his favor. Several pawns of one pony have already been knocked out of the game, while Platinum has not been able to deprive Amore of a single piece. Not one, damn it!\n\n Now, a curious picture has formed on the board. Ernest had three possible paths open to him. He can aim his forces at the enemy queen and destroy her in one move - a powerful piece will be eliminated. However, at the same time, he saw that he risked losing the rook with his next move. Not that he regarded the loss of his rook and the enemy's queen as equivalent... In the end, he could have refrained from such actions, because the situation on the board allows him to organize his personal combination: the Unicorn Gambit. Amore doesn't know exactly about this combination, and he's unlikely to be able to counter it."
+ unc.25.a:0 "Attack the queen!"
+ unc.25.b:0 "Defend the rook!"
+ unc.25.c:0 "Prepare the best positions for a perfect gambit!"
+
+ unc.26.t:0 "Move selection"
+ unc.26.d:0 "The decision to leave the rook now literally saved the king's position. During the game, the queens of both sides collided and were knocked out. Both Amore and Platinum didn't have many pieces left, so they had to contrive to gain an advantage.Now, the black king of Platinum is surrounded. No, it wasn't a checkmate, but the situation was critical. Besides, the minute was about to end... He couldn't afford a draw because of some kind of timer! He is the King! So let time itself be subject to him! In that short period of time, Ernest immediately came up with three options. He could checkmate the white king, save his king, or make a desperate attack. Platinum pushed the last thought away from himself, because in the course of such an adventure he would lose his already insignificant remnants of pieces..."
+ unc.26.a:0 "Cut off enemy escape routes!"
+ unc.26.b:0 "Get out of the encirclement and counterattack later!"
+ unc.26.c:0 "Everything that I have, I'll just give it away!"
+ 
+ 
+ 
+ unc.27.t:0 "Defeat"
+ unc.27.d:0 "WIP"
+ unc.27.a:0 "WIP"
+
+ unc.28.t:0 "Victory"
+ unc.28.d:0 "WIP"
+ unc.28.a:0 "WIP"
+
+ unc.29.t:0 "Revenge"
+ unc.29.d:0 "Unwilling to accept his defeat, Ernest Platinum ordered the carriage to be re-equipped in the crystal lands."
+ unc.29.a:0 "Revenge"
+
+ unc.31.t:0 "White Hawk"
+ unc.31.d:0 "It's no secret that terrorists from the ultranationalist organization Union of National Purification are trying to destroy our country. We're trying our best to destroy them, but it looks like we're not alone in this fight.The so-called "Hawk Gang" has long been very popular. This band of mercenaries has performed very well in the battles against terrorist groups in the Midland, without losing a single battle and destroying countless of our enemies. The gang consists of representatives of different races, and is led by Pegasus Griffith, known as the "White Hawk". It is reported that his strategic skills exceed any of our generals, and the King had the thought that such a skilled leader would be useful to the great Unicorn army..."
+ unc.31.a:0 "Send him an offer to join the royal army as a commander."
+ unc.31.b:0 "PEGASUS??? He cannot even dream of being an equal among our unicorn soldiers!"
+
+ unc.32.t:0 ""
+ unc.32.d:0 "Two nobles were leisurely strolling through the royal garden in Bales. Very few people are allowed here, but these two were powerful enough to allow themselves such a walk.\n\n— This young heiress is a thorn in our side. She's so young and she's already causing so many problems. Imagine what she would do if she ascended to the throne?\n\n— "If?" Pf, she will definitely become a ruler. The king won't rule forever. I bet he'll spit on all our ancient traditions and declare her the heir before she's eighteen!\n\n— What a shame! It would have been better if Baravia had declared its independence from Unicornia by then.\n\n— And why is that?\n\n— I have connections with the relatives of the Duke of Barawa. I can leave here. Just to get away from the damn Platinum family. And from that splinter in particular.\n\n— AHA! So that's what the nobles think of me!Literally out of nowhere, a young unicorn appeared behind the nobles. She was wearing a student's uniform, but she looked at them as if they were just her subjects. Suddenly, the pony stood up in a menacing, victorious pose and pathetically pointed her hoof at the two nobles.\n\n— Guards! Execute them!\n\n— Charlotte!An older unicorn pony came panting to the place. Everyone knew her as Ferneza, the nanny of a young fourteen-year-old princess. After all, her mother is dead, and her father is too busy with royal affairs to devote more time to her.\n\n— Please forgive Charlotte, Your Excellency...Phernese apologized to the nobles for a long time and pointlessly, to which they only snorted and left.\n\n— Charlotte... I could still forgive you for running away from arithmetic lessons, but what you said to them... Were you going to "execute" them?\n\n— Yes, yes! I'm a princess! Well, the king's daughter. So I'll be the queen. And I read in a book that kings can execute anyone they want!\n\n— What... Where did you read about it?\n\n— In the history book. I liked the moment when Unicornia was on the verge of collapse because of the then ruler Julian. He was so short-tempered and clueless that he executed anyone who even looked askance at his bizarre hairstyle...\n\n— It was the wrong book. You should stop reading it. It was probably written by some French. Now, please be kind enough to return to class."
+ unc.32.a:0 "Whatever you say, Ferneza!"
+ 
+ unc.33.t:0 "Rumors of Philadelphia"
+ unc.33.d:0 "WIP"
+ unc.33.a:0 "WIP"
+
+ unc.34.t:0 "Meeting"
+ unc.34.d:0 "— Ferneza! Ferneza! I saw a pony with wings in our castle!The young princess rushed to the teacher almost in tears.\n\n— Well, calm down. Does this pony happen to have a snow-white color and blue eyes?\n\n— Sort of. What a horror! Why hasn't he been caught yet?\n\n— You see... This pegasus's name is Griffith. And even though he's a Pegasus, he can... to benefit our country. Which is what he's been doing lately, ever since the king accepted him into the army.\n\n— Nonsense! He's just a pegasus! He doesn't have any horn, which means there's no magic! He can't be useful!The Princess turned around and saw the same Griffith walking through the halls of the palace with some of his subordinates. One of them, an unpleasant-looking griffin, heard Charlotte's claims.\n\n— Oh, you little one! How dare you say that about Griffith?! I'm not going to look at you for blue blood or any other nonsense, I'm going to-\n\n— Calm down, Corkas. Keep up appearances.\n\pSam the leader of the squad intervened in the conversation. The griffin fell silent, and Griffith looked at Charlotte in such a way that the young princess froze in place. There was something in his gaze... No, it wasn't fear, but some other feeling. The feeling that brought Charlotte to a standstill.\n\n— And you take care of yourself, Your Majesty. And I ask you to forgive the ignorance of my comrade-in-arms.\n\n— U-gum...  That was all she could say.\n\Pegasus just smiled sincerely in response. Then the squad left, and the rumble of armor continued to echo through the halls of the castle. It seems they were on their way to a war council. And Charlotte was just thinking: what was that? How did this pegasus affect her so much with just one glance? There was no malice, arrogance, kindness, or any other emotion known to Charlotte in his eyes. But it was as if his mere presence solved the situation the way he needed to."
+ unc.34.a:0""Well, no... he definitely has magic!""

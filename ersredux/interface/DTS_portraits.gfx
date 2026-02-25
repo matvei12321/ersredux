@@ -1,0 +1,11 @@
+spriteTypes = {
+	####################################################################
+	#################### GENERIC #######################################
+	####################################################################
+	##### Generic Pony #####
+	### Leaders ###
+	spriteType = {
+		name = "GFX_portrait_DTS-yaria_queen"
+		textureFile = "gfx/interface/ideas/advisors/DTS/DTS-yaria_queen.dds"
+	}
+	

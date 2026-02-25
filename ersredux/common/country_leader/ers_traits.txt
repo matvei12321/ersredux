@@ -1,0 +1,731 @@
+@tier1 = 30
+@tier2 = 20
+@tier3 = 10
+
+leader_traits = {
+
+	other_races_acceptance_idea = { random = no }
+	
+	ers_ambiguous = {
+		random = no
+		political_power_factor = -0.05
+		justify_war_goal_time = -0.1
+	}
+	
+	little_not_ok = {
+		random = no
+		stability_factor = -0.02
+	}
+	weak_sight = {
+		random = no
+		political_power_factor = -0.01
+	}
+	
+	
+	
+	religion_idea = { random = no }
+	
+	ers_devourer = {
+		random = no
+		non_core_manpower = -0.05
+		stability_factor = -0.025
+		resistance_damage_to_garrison = -0.15
+		resistance_growth = -0.1
+		resistance_decay = 0.1
+		resistance_target = -0.1
+	}
+	
+	erp_vozhd = {
+		random = no
+		resistance_growth = -0.05
+		ai_focus_aggressive_factor = 0.2
+		ai_desired_divisions_factor = 0.05
+		weekly_casualties_war_support = 0.001
+	}
+	
+	erp_no_ruling_power_trait = {
+		random = no
+		political_power_factor = -1.0
+		stability_factor = -0.05
+	}
+	
+	ers_heretic = {
+		random = no
+		stability_factor = -0.05
+		war_support_factor = -0.05
+	}
+	
+	old_king  = {
+		random = no	
+		political_power_factor = -0.25
+	}
+
+	timed_kommissar = {
+		random = no
+	}
+
+	brothers_capitalists = {
+		random = no
+		consumer_goods_factor = -0.05
+		political_power_gain = 0.25
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	red_flame = {
+		random = no
+		war_support_factor = 0.1
+		drift_defence_factor = 0.15
+		ai_focus_aggressive_factor = 0.25
+	}
+	
+	princess_of_red_terror = {
+		resistance_damage_to_garrison = -0.25 
+		foreign_subversive_activites = -0.25
+		non_core_manpower = 0.05
+		communism_drift = 0.01
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	peacemaker = {
+		random = no
+
+		stability_factor = 0.05
+		democratic_drift = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	esoterist = {
+		random = no
+
+		stability_factor = -0.05
+		army_intel_to_others = -15
+		civilian_intel_to_others = -15
+		navy_intel_to_others = -15
+		airforce_intel_to_others = -15
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	NCH_royal_dictator = {
+		random = no
+		stability_factor = -0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	NCH_Advice_NC = {
+		random = no
+		stability_factor = -0.05
+
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ers_talanted_researcher = {
+		random = no
+		research_speed_factor = 0.05
+	}
+	
+	ers_agressive_industrialist = {
+		random = no
+		production_speed_buildings_factor = 0.1
+		industrial_capacity_factory = 0.05
+		political_power_gain = -0.25
+		stability_factor = -0.05
+	}
+	
+	ers_rose_necromancer_trait = {
+		random = no
+		
+		casualty_trickleback = 0.25
+		experience_loss_factor = -0.25
+	}
+	
+	ers_anti_prigressivist = {
+		research_speed_factor = -0.25
+	}
+	NGC_Ric = {
+		alocal_resources_factor = 2.0
+				war_support_factor = 2.0
+				stability_factor = 2.0
+				training_time_factor = -0.5
+				justify_war_goal_time = -0.5
+				weekly_manpower = 5000
+				PRODUCTION_SPEED_BUILDINGS_FACTOR = 2.0
+				conscription = 2.0
+				ARMY_SPEED_FACTOR = 2.0
+				ARMY_ATTACK_FACTOR = 2.0
+				ARMY_DEFENCE_FACTOR = 2.0
+				INDUSTRIAL_CAPACITY_FACTORY = 2.0
+				industrial_capacity_dockyard = 2.0
+				RESEARCH_SPEED_FACTOR = 0.5
+				political_power_factor = 2.0
+	}
+		NGC_Ric1 = {
+		alocal_resources_factor = 2.0
+				war_support_factor = 2.0
+				stability_factor = 2.0
+				training_time_factor = -0.5
+				justify_war_goal_time = -0.5
+				weekly_manpower = 5000
+				PRODUCTION_SPEED_BUILDINGS_FACTOR = 2.0
+				conscription = 2.0
+				ARMY_SPEED_FACTOR = 2.0
+				ARMY_ATTACK_FACTOR = 2.0
+				ARMY_DEFENCE_FACTOR = 2.0
+				INDUSTRIAL_CAPACITY_FACTORY = 2.0
+				industrial_capacity_dockyard = 2.0
+				RESEARCH_SPEED_FACTOR = 0.5
+				political_power_factor = 2.0
+	}
+
+	NCH_intelligence_officer = { #Unlocks Expand Covert Operations  
+		random = no
+		agency_upgrade_time = -0.15
+		decryption_factor = 0.1
+		army_intel_factor = 0.3
+		operative_slot = 1
+	}
+	NCN_travel_enthusiast = { 
+		random = no 
+		custom_modifier_tooltip = ICE_travel_enthusiast_tt
+		send_volunteers_tension = -0.05
+		send_volunteer_divisions_required = -0.05
+	}
+	NCH_soviet_economist = {
+		random = no
+		sprite = 13
+		consumer_goods_factor = -0.10
+		war_support_factor = 0.05
+		production_speed_synthetic_refinery_factor = 0.15
+		subversive_activites_upkeep = -0.05
+	}
+	NCH_baron_of_terror = {
+		resistance_damage_to_garrison = -0.15
+		foreign_subversive_activites = -0.15
+		non_core_manpower = 0.01
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	NCH_coffee_king = {
+		random = no
+		production_speed_rail_way_factor = 0.05
+		production_speed_buildings_factor = 0.1
+		industrial_capacity_factory = 0.1
+		research_speed_factor = -0.05
+	}
+	NGC_Selfring_von_Othos_trai = {
+		random = no
+		political_power_factor = 0.1
+		conscription_factor = 0.15
+		army_morale_factor = 0.05
+		stability_factor = -0.05
+		compliance_growth = -0.05
+	}
+	NGC_mussolini_minister_of_education = {
+		random = no
+		sprite = 13
+		research_speed_factor = 0.01
+		stability_factor = 0.02
+	}
+	NGC_Kommisar = { 
+		random = no 
+
+		equipment_capture = 0.25
+		equipment_capture_factor = 0.25
+		opinion_gain_monthly_factor = 0.05
+	}
+	NGC_pacifist_diplomat = { 
+		random = no 
+
+		war_support_factor = -0.1 
+		political_power_gain = 0.15
+		opinion_gain_monthly_factor = 0.25
+	}
+	NGC_pacifist_diplomat = { 
+		random = no 
+
+		war_support_factor = -0.1 
+		political_power_gain = 0.15
+		opinion_gain_monthly_factor = 0.25
+	}
+	NGC_expansionist_policies = {
+		random = no
+		generate_wargoal_tension = -0.25
+		justify_war_goal_time = -0.25
+	}
+	NGC_minister_of_defense= {
+		random = no
+		production_speed_bunker_factor = 0.1
+		production_speed_synthetic_refinery_factor = 0.1
+		production_speed_coastal_bunker_factor = 0.1
+		production_speed_anti_air_building_factor = 0.1
+		production_speed_arms_factory_factor = 0.1
+	}
+	NGC_rearmament_proponent = {
+		random = no
+		war_support_factor = 0.1
+		conscription = 0.015
+		mobilization_laws_cost_factor = -0.15
+		conversion_cost_civ_to_mil_factor = -0.1
+	}
+	NGC_modernist_architect = {
+		random = no
+		research_speed_factor = 0.02
+		production_speed_buildings_factor = 0.05
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	NGC_head_of_political_police = {
+		random = no
+		intel_network_gain_factor = 0.2
+		agency_upgrade_time = -0.2
+		operative_slot = 1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	NGC_Gaz_consul = {
+		random = no
+		
+		fascism_acceptance = 50
+		opinion_gain_monthly_same_ideology_factor = 0.15
+		research_speed_factor = 0.05
+		weekly_manpower = 50
+	}
+	NGC_Taras_king = {
+		random = no
+		weekly_manpower = 1
+	}
+	NCH_ambassador = {
+		random = no
+		stability_factor = -0.1
+		political_power_factor = -0.20
+		political_advisor_cost_factor = -0.25
+	}
+	NCH_economist = {
+		sprite = 10
+		random = yes
+		production_factory_max_efficiency_factor = 0.05
+		political_power_factor = 0.05
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	NCH_minister_of_defense= {
+		random = no
+		sprite = 13
+		production_speed_bunker_factor = 0.1
+		production_speed_synthetic_refinery_factor = 0.1
+		production_speed_coastal_bunker_factor = 0.1
+		production_speed_anti_air_building_factor = 0.1
+		production_speed_arms_factory_factor = 0.1
+	}
+	NCH_armaments_organizer = {
+		sprite = 10
+		random = yes
+		conversion_cost_civ_to_mil_factor = -0.2
+		production_speed_supply_node_factor = 0.1
+		# civ_to_mil_industry_conversion_rate = -1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ers_shaman_militarist = {
+		army_org_factor = -0.03
+		ai_focus_aggressive_factor = 0.25
+		war_support_factor = 0.025
+		ai_desired_divisions_factor = 0.25
+	}
+	
+	defensive_master = {
+		random = no
+		
+		army_defence_factor = 0.1
+		army_attack_factor = -0.045
+		ai_focus_defense_factor = 0.3
+
+	}
+	
+	fifth_vessel = {
+		random = no
+		political_power_gain = 0.2
+		WAR_SUPPORT_WEEKLY_FACTOR = 0.01
+		SURRENDER_LIMIT = 0.05
+		army_chief_cost_factor = -0.05
+		navy_chief_cost_factor = -0.05
+		air_chief_cost_factor = -0.05
+	}
+	
+	ers_lost_trait = {
+		random = no
+		stability_factor = -0.05
+		war_support_factor = -0.05
+		production_speed_arms_factory_factor = 0.1
+		production_speed_bunker_factor = 0.05
+		ARMY_INFANTRY_ATTACK_FACTOR = 0.05
+		ARMY_INFANTRY_DEFENCE_FACTOR = 0.05
+	}
+	
+	
+	ers_endostasis_trait = {
+		random = no
+		weekly_manpower = -100
+		war_support_factor = 0.2
+		political_power_gain = 0.5
+	}
+	
+	krieger_country_leader_trait = {
+		random = no
+		stability_factor = -0.1
+		fascism_drift = 0.02
+		weekly_manpower = -83
+	}
+	
+	hurricane_militarist = {
+		random = no
+		war_support_factor = 0.025
+	}
+	
+	ers_commander = {
+		random = no
+		experience_gain_army = 0.05
+		political_power_gain = -0.1
+	}
+	
+	hurricane_child_of_war = {
+		random = no
+		stability_factor = -0.025
+	}
+	
+	yharia_pragmatic = {
+		random = no
+		consumer_goods_factor = -0.01
+	}
+	
+	yharia_no_principes = {
+		random = no
+		stability_factor = -0.015
+		political_power_gain = 0.1
+	}
+	
+	uyaruli_killer = {
+		random = no
+	}
+	
+	
+	shores_hedonist = {
+		random = no
+	}
+	shores_alcocholic = {
+		random = no
+	}
+	
+	helvia_peaceful_life = {
+		random = no
+		stability_factor = 0.05
+		war_support_factor = -0.1
+	}
+	
+	ers_cannibal = {
+		random = no
+		weekly_manpower = -100
+	}
+	
+	ers_crystal_princess = {
+		random = no
+		stability_factor = 0.025
+		local_resources_factor = 0.05
+		political_power_factor = 0.05
+		democratic_acceptance = 50
+		ai_focus_peaceful_factor = 0.25
+	}
+	
+	ROK_people_sherif = {	
+		random = no
+		political_power_factor = 0.1
+		army_core_defence_factor = 0.1
+		army_core_attack_factor = 0.1
+	}
+	
+	ROK_iron_hoof_trait = {
+		random = no
+		LAND_DOCTRINE_COST_FACTOR = -0.15
+	}
+	
+	ers_windigo_queen = {
+	random = no
+		weekly_manpower = 10000
+		war_support_factor = 0.3
+		war_stability_factor = 0.3
+		ai_focus_aggressive_factor = 0.75
+		equipment_bonus = {
+			magical_equipment = {
+				build_cost_ic = -0.35
+				instant = yes
+			}
+		}
+	}
+	
+	last_scum = {
+		random = no
+		stability_factor = -0.05
+		political_power_gain = -0.025
+	}
+	
+	royal_canselarist = {
+		random = no
+		research_speed_factor = 0.025
+		political_power_gain = 0.25
+	}
+	
+	vesalipolis_queen = {
+		random = no
+		political_power_factor = 0.1
+		stability_factor = 0.05
+	}
+	
+	beast_of_the_west = {
+		random = no
+		political_power_factor = 0.05
+		war_support_factor = 0.05
+		army_org_factor = 0.05
+		stability_factor = -0.0.25
+	}
+	
+	LYC_unique_tank_designer_trait = {
+		random = no
+		equipment_bonus = {
+			armor = {
+				build_cost_ic = -0.125
+				reliability = 0.1
+				instant = yes
+			}
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	
+	governor_of_zebica = {
+		compliance_growth = 0.05
+		justify_war_goal_time = -0.05
+		war_support_factor = 0.025
+	}
+	governor_of_Zona = {
+				targeted_modifier = {
+				tag = NGC
+				cic_to_target_factor = 0.25
+				mic_to_target_factor = 0.25
+				extra_trade_to_target_factor = 0.5
+				trade_cost_for_target_factor = -0.5
+			}
+	}
+	governor_of_Vrax = {
+				targeted_modifier = {
+				tag = VRX
+				cic_to_target_factor = 0.25
+				mic_to_target_factor = 0.25
+				extra_trade_to_target_factor = 0.5
+				trade_cost_for_target_factor = -0.5
+			}
+	}
+	Laiv_Riba = {
+	    consumer_goods_factor = -0.05
+		war_support_factor = 0.025
+	}
+	
+	ers_queen_of_changelings = {
+		political_power_factor = 0.1
+		stability_factor = 0.05
+		justify_war_goal_time = -0.25
+		offensive_war_stability_factor = 0.1
+		industrial_capacity_dockyard = 0.1
+		amphibious_invasion = 0.10
+		production_speed_infrastructure_factor = 0.05
+		production_speed_rail_way_factor = 0.05
+		production_speed_industrial_complex_factor = 0.025
+		industry_repair_factor = 0.05
+		production_speed_arms_factory_factor = 0.025
+		line_change_production_efficiency_factor = 0.05
+		conversion_cost_civ_to_mil_factor = -0.05
+		research_speed_factor = 0.05
+	}
+	
+	queen_yaria_dts = {
+		random = no
+		research_speed_factor = 0.05
+		equipment_bonus = {
+			magical_equipment = {
+				reliability = 0.05
+				instant = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	queen_chrysalis_dts = {
+		random = no
+		political_power_factor = 0.10
+		stability_factor = 0.05
+		war_support_factor = 0.05
+		resistance_target = -0.05
+		resistance_damage_to_garrison = -0.05
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	quiet_pony_trait = {
+		random = no
+		political_power_factor = 0.05
+		stability_factor = 0.05
+	}
+
+
+	yac_priest_advisor1_trait = {
+		random = no
+		drift_defence_factor = -0.075
+		democratic_drift = 0.01
+		political_power_gain = 0.5
+		stability_factor = 0.05
+	}
+	yac_priest_advisor2_trait = {
+		random = no
+		drift_defence_factor = -0.075
+		democratic_drift = 0.01
+		consumer_goods_factor = -0.03
+		production_speed_industrial_complex_factor = 0.05
+		production_speed_infrastructure_factor = 0.05
+	}
+	yac_priest_advisor3_trait = {
+		random = no
+		drift_defence_factor = -0.075
+		democratic_drift = 0.01
+		war_support_factor = 0.05
+		weekly_manpower = 500
+		army_org_factor = 0.02
+	}
+	yac_priest_advisor4_trait = {
+		random = no
+		drift_defence_factor = -0.075
+		democratic_drift = 0.01
+		resistance_growth = -0.05
+		resistance_decay = 0.025
+		resistance_damage_to_garrison = -0.05
+		compliance_growth = 0.1
+	}
+	ZAU_alhocolic = {
+		random = no
+		political_power_factor = -0.20
+		stability_factor = -0.075
+		war_support_factor = -0.05
+	}
+	VRX_Alstrig_traits = {
+		random = no
+		consumer_goods_factor = -0.10
+		production_speed_arms_factory_factor = 0.05
+		production_speed_dockyard_factor = 0.1
+		production_speed_fuel_silo_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	VRX_Zogus_traits = {
+		random = no
+		production_speed_arms_factory_factor = 0.05
+		encryption_factor = 0.10
+		decryption_factor = 0.10
+		drift_defence_factor = 0.15
+		subversive_activites_upkeep = -0.30
+		political_power_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	VRX_El_Asunus_traits = {
+	random = no
+	stability_factor = -0.05
+	war_support_factor = 0.1
+	conscription = 0.015
+	mobilization_laws_cost_factor = -0.15
+	conversion_cost_civ_to_mil_factor = -0.1
+	production_speed_arms_factory_factor = 0.05
+	
+	ai_will_do = {
+		factor = 1
+	}
+	}
+	VRX_Cherchers_traits = {
+	random = no 
+	production_speed_arms_factory_factor = 0.05
+	fascism_drift = 0.1
+	drift_defence_factor = 0.35
+	resistance_damage_to_garrison = -0.25
+	foreign_subversive_activites = -0.3
+	non_core_manpower = 0.02
+
+		ai_will_do = {
+		factor = 1
+	}
+	}
+	REF_corruption_traits = {
+	random = no 
+	political_power_factor = -0.15
+	consumer_goods_factor = 0.2
+	production_factory_max_efficiency_factor = -0.1
+	production_speed_buildings_factor = 0.1
+
+		ai_will_do = {
+		factor = 1
+	}
+	}
+	REF_teacher_traits = {
+	random = no 
+	research_speed_factor = 0.1
+	democratic_drift = 0.03
+
+		ai_will_do = {
+		factor = 1
+	}
+	}
+	REF_police_general_traits = {
+	random = no 
+	resistance_damage_to_garrison = -0.15
+	stability_factor = 0.1
+	army_org_factor = 0.05
+	resistance_activity = -0.05
+
+		ai_will_do = {
+		factor = 1
+	}
+	}
+
+
+}
+}
+}

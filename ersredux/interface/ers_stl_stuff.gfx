@@ -1,0 +1,10 @@
+spriteTypes = {
+
+	spriteType = {
+			name = "GFX_modifiers_stl_state_debuff_i_icon"
+			texturefile = "gfx/interface/bar/barrad_climate.dds"
+		}
+		
+	
+}
+

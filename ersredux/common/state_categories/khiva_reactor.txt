@@ -1,0 +1,6 @@
+state_categories={
+	khiva = {
+		local_building_slots = 15
+		color = { 167 170 116 }
+	}
+}

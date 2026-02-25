@@ -1,0 +1,43 @@
+
+state={
+	id=47
+	name="STATE_47"
+	resources={
+		chromium=14
+	}
+
+	history={
+		owner = NGC
+		add_core_of = NGC
+		add_dynamic_modifier = { modifier = NGC_Ferma_modifier }
+		
+		victory_points = { 3937 5 }
+		victory_points = { 11868 1 }
+		victory_points = { 11657 1 }
+		
+		buildings = {
+			industrial_complex = 3
+			arms_factory = 4
+			infrastructure = 1
+			
+			3908 = {
+				bunker = 1
+			}
+		9537 = {
+				bunker = 1
+		    }
+		11657 = {
+				bunker = 1
+		    }
+		}
+
+	}
+
+	provinces={
+		699 730 3908 3937 6953 9537 9821 9890 9906 11657 11832 11857 11868
+	}
+	manpower=434064
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

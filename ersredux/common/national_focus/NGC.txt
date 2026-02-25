@@ -1,0 +1,3036 @@
+﻿#НАЧАЛО
+shared_focus = {
+    id = NGC_focuss_Z
+    icon = GFX_goal_Fate 
+    x = 15 
+    y = 0
+    cost = 1  
+     completion_reward = {
+	 country_event =  ngc.1
+	} 
+}
+
+
+shared_focus = { 
+        id = NGC_focuss_V 
+        icon = GFX_goal_Abandoned
+	prerequisite = { focus = NGC_focuss_Z } ##Наследование от Focus_Number_1
+        x = 0 #По горизонтали
+        y = 1 #По вертикали
+	relative_position_id = NGC_focuss_Z ##Наследование позиции
+	cost = 1
+		
+	available_if_capitulated = yes
+		
+        completion_reward = {
+		custom_effect_tooltip = NGC_Dogovor
+		country_event = ngc.2
+		add_country_leader_trait = NGC_krigerS_trait
+		}
+}		
+    
+   shared_focus = { 
+        id = NGC_focuss_S
+        icon = GFX_goal_Getting_ready
+	prerequisite = { focus = NGC_focuss_Z } ##Наследование от Focus_Number_1
+        x = 2 #По горизонтали
+        y = 1 #По вертикали
+	relative_position_id = NGC_focuss_Z ##Наследование позиции
+	cost = 1 
+		
+	available_if_capitulated = yes
+		
+        completion_reward = {
+		army_experience = 30
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.25
+			uses = 2
+			category = land_doctrine
+		}
+		add_manpower = -15000
+		add_political_power = -50
+		49 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				instant_build = yes
+				province = 3630
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = 676
+			}
+			add_building_construction = {
+				type = bunker
+				level = 2
+				instant_build = yes
+				province = 11608 
+			}
+	}
+}	
+}
+
+	shared_focus = { 
+        id = NGC_focuss_X
+        icon = GFX_goal_Protects
+	prerequisite = { focus = NGC_focuss_Z } ##Наследование от Focus_Number_1
+        x = -2 #По горизонтали
+        y = 1 #По вертикали
+	relative_position_id = NGC_focuss_Z ##Наследование позиции
+	cost = 1
+		
+	available_if_capitulated = yes
+		
+        completion_reward = {
+		1242 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+				instant_build = yes
+			}
+		}
+		add_political_power = -150
+		CHN = {
+			add_political_power = 50
+		}
+	}
+}		
+shared_focus = { 
+        id = NGC_focuss_Skam
+        icon = GFX_goal_Waiting_ahead
+	prerequisite = { focus = NGC_focuss_V } 
+    prerequisite = { focus = NGC_focuss_S }
+    prerequisite = { focus = NGC_focuss_X }	
+        x = 0 #По горизонтали
+        y = 1 #По вертикали
+	relative_position_id = NGC_focuss_V
+	cost = 7
+		
+	available_if_capitulated = yes
+		
+        completion_reward = {
+		custom_effect_tooltip = NGC_Fegerast
+		country_event = ngc.5
+		}
+   }		
+  
+  
+  shared_focus = { 
+        id = NGC_focuss_U
+        icon = GFX_goal_Waiting_ahead
+        x = 15 #По горизонтали
+        y = 0 #По вертикали
+	cost = 7
+		
+	available_if_capitulated = yes
+		
+        completion_reward = {
+		}
+   }		
+   
+############################################
+############################################
+############################################
+
+#ПОКРАС ЮГО-Запада
+shared_focus = {                                                              #Поход
+        id = NGC_focuss_CN
+        icon = GFX_goal_Walk_through_garden
+	prerequisite = { focus = NGC_focuss_U }
+    
+        x = 0 #По горизонтали
+        y = 1#По вертикали
+	relative_position_id = NGC_focuss_U
+	cost = 3
+		
+	available_if_capitulated = yes
+	 completion_reward = {
+	 country_event = ngc.900
+	 annex_country = {
+			target = EMP
+		}
+		
+ }
+}
+
+
+
+    shared_focus = {                                                             
+        id = NGC_focuss_CN1
+        icon = GFX_goal_Find_losers
+	prerequisite = { focus = NGC_focuss_CN }
+	prerequisite = { focus = NGC_focuss_CNA }
+    
+        x = 1 #По горизонтали
+        y = 1#По вертикали
+	relative_position_id = NGC_focuss_CN
+	cost = 3 
+		
+	available_if_capitulated = yes
+	available = {
+		owns_state = 42
+	}
+		
+       completion_reward = {
+		
+		add_ideas = NGC_genocide_Koll
+   }
+  }
+  shared_focus = {                                                             
+        id = NGC_focuss_CN2
+        icon = GFX_goal_Southern_Jerk
+	prerequisite = { focus = NGC_focuss_CNG2 }
+	prerequisite = { focus = NGC_focuss_CN1 }
+    
+        x = -1 #По горизонтали
+        y = 1 #По вертикали
+	relative_position_id = NGC_focuss_CN1
+	cost = 3
+		
+	available_if_capitulated = yes
+		
+       available_if_capitulated = yes
+	   available = {
+		owns_state = 42
+	}
+	 completion_reward = {
+	 add_war_support = 0.030
+		add_stability = -0.010
+       declare_war_on = {
+			target = HOR
+			type = annex_everything
+		}
+	}
+		
+}
+   
+shared_focus = {                                                         #Армия
+        id = NGC_focuss_CNA
+        icon = GFX_goal_Everything_is_bullshit
+	prerequisite = { focus = NGC_focuss_U }
+    
+        x = 3#По горизонтали
+        y = 1#По вертикали
+	relative_position_id = NGC_focuss_U
+	cost = 3
+		
+	available_if_capitulated = yes
+		
+       completion_reward = {
+			custom_effect_tooltip = NGC_Armi
+			set_country_flag = WIG_economic_bureau_flag
+			swap_ideas = {
+				remove_idea = NGC_genocide_Z
+				add_idea = NGC_genocide_Z1
+			}
+			 hidden_effect = {
+			add_power_balance_value = {
+				id = NGC_balance_of_power
+				value = 0.20
+			}
+			swap_ideas = {
+				remove_idea = NGC_Bancs1
+				add_idea = NGC_Bancs2
+			}
+			}
+		}
+	}
+ 
+shared_focus = {                                                         
+        id = NGC_focuss_CNA1
+        icon = GFX_goal_northern_exercises
+		available = {
+		has_completed_focus = NGC_focuss_CN14
+	}
+	prerequisite = { focus = NGC_focuss_CN2}
+    prerequisite = { focus = NGC_focuss_CNA5}
+        x = 2#По горизонтали
+        y = 1#По вертикали
+	relative_position_id = NGC_focuss_CN2
+	cost = 3
+		
+	available_if_capitulated = yes
+		
+        completion_reward = {
+		army_experience = 60
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.25
+			uses = 2
+			category = land_doctrine
+		}
+		add_manpower = 15000
+	}
+}
+shared_focus = {                                                         
+        id = NGC_focuss_CN14
+        icon = GFX_goal_On_rails
+	prerequisite = { focus = NGC_focuss_CN2}
+	available = {
+		owns_state = 43
+	}
+	
+    
+        x = 0горизонтали
+        y = 1#По вертикали
+	relative_position_id = NGC_focuss_CN2
+	cost = 3 
+		
+	available_if_capitulated = yes
+		
+        completion_reward = {
+		 hidden_effect = {
+		 ROK = {
+			country_event = ngc.11 
+		} 
+			add_power_balance_value = {
+				id = NGC_balance_of_power
+				value = 0.20
+			}
+			swap_ideas = {
+				remove_idea = NGC_Bancs2
+				add_idea = NGC_Bancs3
+			}
+			}
+		hidden_effect = {
+			load_oob = "NGC_Rooook_War"
+		}
+		add_timed_idea = {
+			idea = NGC_Mobulizasia_idea
+			days = 80
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_0
+			amount = 1500
+		}
+		if = {
+			limit = {
+				has_idea = civilian_economy
+			}
+			swap_ideas = {
+				remove_idea = civilian_economy
+				add_idea = partial_economic_mobilisation
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = low_economic_mobilisation
+			}
+			swap_ideas = {
+				remove_idea = low_economic_mobilisation
+				add_idea = partial_economic_mobilisation
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = partial_economic_mobilisation
+			}
+			add_political_power = 150
+			custom_effect_tooltip = lyc_agressive_mobilisation_extra_tt
+		} 
+	}
+} 
+
+shared_focus = {                                                         
+        id = NGC_focuss_CN15
+        icon = GFX_goal_BAT_The_Foal_Scouts_Of_Chiropterra
+	prerequisite = { focus = NGC_focuss_CN14}
+		mutually_exclusive = { focus = NGC_focuss_CN16 } 
+
+        x = -1#По горизонтали
+        y = 1#По вертикали
+	relative_position_id = NGC_focuss_CN14
+	cost = 3
+		
+	available_if_capitulated = yes
+		 
+         completion_reward = {
+		 swap_ideas = {
+				remove_idea = NGC_genocide_Koll
+				add_idea = NGC_genocide_Koll1
+			}
+		 
+			}
+}
+shared_focus = {                                                         
+        id = NGC_focuss_CN16
+        icon = GFX_goal_tst_ultra_gun
+	prerequisite = { focus = NGC_focuss_CN14}
+	mutually_exclusive = { focus = NGC_focuss_CN15 } 
+    
+        x = 1#По горизонтали
+        y = 1#По вертикали
+	relative_position_id = NGC_focuss_CN14
+	cost = 3
+		
+	available_if_capitulated = yes
+		 
+         completion_reward = {
+		add_ideas = NGC_remember_idea
+		}
+}
+
+
+
+shared_focus = {                                                         
+        id = NGC_focuss_CNA5
+        icon = GFX_goal_madhouse
+	prerequisite = { focus = NGC_focuss_CNA}
+    
+        x = 1#По горизонтали
+        y = 1#По вертикали
+	relative_position_id = NGC_focuss_CNA
+	cost = 3
+		
+	available_if_capitulated = yes
+		 
+         completion_reward = {
+			swap_ideas = {
+				remove_idea = NGC_genocide_Z1 
+				add_idea = NGC_genocide_Z2
+			}
+		}
+} 
+shared_focus = {                                                         
+        id = NGC_focuss_CNA6
+        icon = GFX_goal_by_gun
+	prerequisite = { focus = NGC_focuss_CNA5}
+    
+        x = 0#По горизонтали
+        y = 1#По вертикали
+	relative_position_id = NGC_focuss_CNA5
+	cost = 3 
+		
+	available_if_capitulated = yes
+		
+      completion_reward = {
+		
+		add_stability = -0.15
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 10
+			producer = NGC
+			
+		}
+		1230 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+		
+shared_focus = {                                                         
+        id = NGC_focuss_CNA7
+        icon = GFX_goal_Elite_Elite
+	prerequisite = { focus = NGC_focuss_CNA5}
+    
+        x = 3#По горизонтали
+        y = 2#По вертикали
+	relative_position_id = NGC_focuss_CNA
+	cost = 3
+		
+	available_if_capitulated = yes
+		
+        completion_reward = {
+			add_ideas = NGC_jagers_of_NGC
+	}
+}
+
+shared_focus = {                                                         
+        id = NGC_focuss_CNA8
+        icon = GFX_goal_Bespectacled
+	prerequisite = { focus = NGC_focuss_CNA6}
+    
+        x = 2#По горизонтали
+        y = 1#По вертикали
+	relative_position_id = NGC_focuss_CNA6
+	cost = 3 
+		
+	available_if_capitulated = yes
+		
+        completion_reward = {
+		   add_ideas = NGC_genocide_Iskra
+			custom_effect_tooltip = NGC_VooZ
+			set_country_flag = WIG_economic_bureau_flag
+			
+			
+		}
+	}
+	
+shared_focus = {                                                         
+        id = NGC_focuss_CNA9
+        icon = GFX_goal_The_Gunners
+	prerequisite = { focus = NGC_focuss_CNA6}
+    
+        x = 0#По горизонтали
+        y = 1#По вертикали
+	relative_position_id = NGC_focuss_CNA6
+	cost = 3 
+		
+	available_if_capitulated = yes
+		
+        completion_reward = {
+			swap_ideas = {
+				remove_idea = NGC_genocide_Z2
+				add_idea = NGC_genocide_Z3
+			}
+		}
+} 
+                                          ##Чейнджлинги
+
+ 
+  shared_focus = {                                                   
+        id = NGC_focuss_CNG
+        icon = GFX_goal_Good_time_for_deals
+	prerequisite = { focus = NGC_focuss_U }
+    
+        x = -3     
+        y = 1
+	relative_position_id = NGC_focuss_U
+	cost = 3
+		
+	available_if_capitulated = yes
+		
+       completion_reward = {
+	    hidden_effect = {
+			add_power_balance_value = {
+				id = NGC_balance_of_power
+				value = 0.20
+			}
+			}
+			swap_ideas = {
+				remove_idea = NGC_genocide_V
+				add_idea = NGC_genocide_V1
+			}
+			give_resource_rights = {
+				receiver = CHN
+				state = 49
+			}
+			give_resource_rights = {
+				receiver = CHN
+				state = 47
+			}
+			}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+ shared_focus = {                                                  
+        id = NGC_focuss_CNG1
+        icon = GFX_goal_take_advantage
+	prerequisite = { focus = NGC_focuss_CNG }
+    
+        x = -1     
+        y = 1
+	relative_position_id = NGC_focuss_CNG
+	cost = 3 
+		
+	available_if_capitulated = yes
+		
+        completion_reward = {
+		 country_event = ngc.58
+		   swap_ideas = {
+				remove_idea = NGC_genocide_V1
+				add_idea = NGC_genocide_V2
+			
+   }
+}
+}
+
+shared_focus = {                                                   
+        id = NGC_focuss_CNG3
+        icon = GFX_goal_Steal_technology
+	prerequisite = { focus = NGC_focuss_CNG1 }
+    
+        x = -1    
+        y = 2
+	relative_position_id = NGC_focuss_CNG
+	cost = 3 
+		
+	available_if_capitulated = yes
+		
+        completion_reward = {
+			add_tech_bonus = {
+				name = infantry_bonus
+				bonus = 1.0
+				uses = 2
+				category = infantry_weapons
+			}
+			add_tech_bonus = {
+				name = artillery_bonus
+				bonus = 1.0
+				uses = 2
+				category = artillery
+			}
+		}
+}
+shared_focus = {                                                   
+        id = NGC_focuss_CNG7
+        icon = GFX_goal_Heavenly_Nightmare
+	prerequisite = { focus = NGC_focuss_CNG3 }
+    
+        x = -1    
+        y = 3
+	relative_position_id = NGC_focuss_CNG
+	cost = 3
+		
+	available_if_capitulated = yes
+		
+        completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_air_upgrade"
+		add_political_power = -150
+		CHN = {
+			add_political_power = 50
+		}
+		air_experience = 20
+		if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+					has_tech = iw_large_airframe
+				}
+				add_tech_bonus = {
+					name = bomber_bonus
+					bonus = 1.0
+					uses = 1
+					category = heavy_air
+				}
+				set_technology = {
+					early_bombs = 1
+					aa_lmg = 1
+					
+				}
+				generic_early_strat_bomber = yes
+				add_equipment_to_stockpile = {
+					type = large_plane_airframe_0
+					variant_name = "Early Strategic Bomber"
+					amount = 100
+				}
+			}
+			else_if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+					NOT = {
+						has_tech = iw_large_airframe
+					}
+				}
+				set_technology = {
+					iw_large_airframe = 1
+					early_bombs = 1
+					aa_lmg = 1
+				}
+				generic_early_strat_bomber = yes
+				add_equipment_to_stockpile = {
+					type = large_plane_airframe_0
+					variant_name = "Early Strategic Bomber"
+					amount = 100
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = early_bomber
+				}
+				add_tech_bonus = {
+					name = bomber_bonus
+					bonus = 1.0
+					uses = 1
+					category = cat_strategic_bomber
+				}
+				add_equipment_to_stockpile = {
+					type = large_plane_airframe
+					producer = LYC
+					amount = 200
+				}
+			}
+			else = {
+				set_technology = {
+					early_bomber = 1
+					early_fighter = 1
+				}
+				add_equipment_to_stockpile = {
+					type = large_plane_airframe
+					producer = EQC
+					amount = 100
+				}
+			}
+			if = {
+    	        limit = {
+    	            has_dlc = "By Blood Alone"
+    	        }
+				add_tech_bonus = {
+					name = EQC_MARE_bombers
+					bonus = 1.0
+					uses = 1
+					category = heavy_air
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = EQC_MARE_bombers
+					bonus = 1.0
+					uses = 1
+					category = cat_strategic_bomber
+				}
+			}
+				}
+				}
+shared_focus = {                                                   
+        id = NGC_focuss_CNG8
+        icon = GFX_goal_WasSS
+	prerequisite = { focus = NGC_focuss_CNG3 }
+    
+        x = -3  
+        y = 3
+	relative_position_id = NGC_focuss_CNG
+	cost = 3
+		
+	completion_reward = {
+		add_political_power = -150
+		CHN = {
+			add_political_power = 50
+		}
+		add_ideas = LYC_motorized_attack
+		49 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {                                                   
+        id = NGC_focuss_CNG5
+        icon = GFX_goal_Southern_Teachings
+	prerequisite = { focus = NGC_focuss_CNG1 } 
+    prerequisite = { focus = NGC_focuss_CN2 }
+        x = 1    
+        y = 3
+	relative_position_id = NGC_focuss_CNG
+	cost = 3
+	available = {
+		has_completed_focus =  NGC_focuss_CN14
+	}
+		
+	available_if_capitulated = yes
+		
+       completion_reward = {
+		add_tech_bonus = {
+			name = DMT_subs
+			bonus = 1.0
+			uses = 1
+			category = ss_tech
+		}
+		NGC = {
+			navy_experience = 41
+			add_doctrine_cost_reduction = {
+				name = naval_doc_bonus
+				cost_reduction = 0.50
+				uses = 1
+				category = naval_doctrine
+			}
+		}
+		CHN = {
+			navy_experience = 25
+			add_doctrine_cost_reduction = {
+				name = naval_doc_bonus
+				cost_reduction = 0.25
+				uses = 1
+				category = naval_doctrine
+			}
+		}
+	}
+}
+shared_focus = {                                                   
+        id = NGC_focuss_CNG4
+        icon = GFX_goal_Look_into_the_forgotten
+	prerequisite = { focus = NGC_focuss_CNG1 }
+    
+        x = -3    
+        y = 2
+	relative_position_id = NGC_focuss_CNG
+	cost = 3 
+		
+	available_if_capitulated = yes
+		
+       completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_professional_army"
+		add_tech_bonus = {
+			name = secret_bonus
+			bonus = 0.1
+			uses = 1
+			category = nuclear
+		}
+	}
+}
+
+
+shared_focus = {                                                   
+        id = NGC_focuss_CNG2
+        icon = GFX_goal_Expansion
+	prerequisite = { focus = NGC_focuss_CNG }
+	prerequisite =  { focus = NGC_focuss_CN}
+    
+        x = 2
+        y = 1
+	relative_position_id = NGC_focuss_CNG 
+	cost = 3 
+		
+	available_if_capitulated = yes
+	available = {
+		owns_state = 42
+	}
+		
+        completion_reward = {	
+		country_event = ngc.68
+			give_resource_rights = {
+				receiver = CHN
+				state = 20
+			}
+			give_resource_rights = {
+				receiver = CHN
+				state = 42
+			}
+			
+			
+		}
+		
+	} 
+	   			
+shared_focus = {                                                         
+        id = NGC_focuss_Buuuun
+        icon = GFX_goal_HIP_f_seizing_power
+		available = {
+		threat > 0.70
+		}
+	prerequisite = { focus = NGC_focuss_CN15}
+	mutually_exclusive = { focus = NGC_focuss_CNGP focus = NGC_focuss_Betpons} 
+        x = -1
+        y = 1
+	relative_position_id = NGC_focuss_CN15
+	cost = 3
+		
+	available_if_capitulated = yes
+		 
+         completion_reward = {
+		 custom_effect_tooltip = NGC_Wibor1
+			add_ideas = neutrality_idea
+		}
+	}
+shared_focus = {                                                         
+        id = NGC_focuss_Buuuun1
+        icon = GFX_goal_GRI_reichswaffen
+	prerequisite = { focus = NGC_focuss_CNGP}
+	allow_branch = { 
+			has_completed_focus = NGC_focuss_CNGP
+		}
+        x = -3
+        y = 1
+	relative_position_id = NGC_focuss_CNGP
+	cost = 3
+		
+	available_if_capitulated = yes
+		 
+         completion_reward = {
+		 		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 5000
+			producer = VRX
+		}
+		add_equipment_to_stockpile = { 
+			type = motorized_equipment 
+			amount = 1000
+			producer = VRX
+		}
+		add_equipment_to_stockpile = { 
+			type = light_tank_chassis 
+			amount = 250
+		}
+		add_equipment_to_stockpile = { 
+			type = medium_tank_chassis 
+			amount = 100
+		}
+		}
+	}
+shared_focus = {                                                         
+        id = NGC_focuss_Buuuun2
+        icon = GFX_goal_Something_went_wrong
+	prerequisite = { focus = NGC_focuss_Buuuun1}
+        x = 1
+        y = 1
+	relative_position_id = NGC_focuss_Buuuun1
+	cost = 3
+		
+	available_if_capitulated = yes
+		 
+         completion_reward = {
+		  add_timed_idea = {
+			idea = NGC_isolatsia
+			days = 360
+		}
+		}
+	}
+	
+	
+	shared_focus = {                                           #Восток                             
+        id = NGC_focuss_Betpons
+        icon = GFX_goal_Armed_Sage_27
+	prerequisite = { focus = NGC_focuss_CN16}
+	mutually_exclusive = { focus = NGC_focuss_CNGP focus = NGC_focuss_Buuuun} 
+	available = {
+			TST = {
+				exists = yes
+				has_government = communism
+			}
+			ROK = {
+				exists = yes
+				has_government = neutrality
+			}
+		}
+        x = 1
+        y = 1
+	relative_position_id = NGC_focuss_CN16
+	cost = 3
+		
+	available_if_capitulated = yes
+		 
+         completion_reward = {
+		 custom_effect_tooltip = NGC_Wibor3
+		  ROK = {
+			country_event = ngc.82
+		}
+		}
+	}
+	shared_focus = {                                                                    
+        id = NGC_focuss_Betpons1
+        icon = GFX_goal_GRI_mechfarming
+	prerequisite = { focus = NGC_focuss_CNGP}
+	allow_branch = { 
+			has_completed_focus = NGC_focuss_CNGP
+		}
+        x = 3
+        y = 1
+	relative_position_id = NGC_focuss_CNGP
+	cost = 3
+		
+	available_if_capitulated = yes
+		 
+         completion_reward = {
+		 49 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		}
+		42 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		}
+		20 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		}
+	}
+	shared_focus = {                                                                    
+        id = NGC_focuss_Betpons2
+        icon = GFX_goal_Final_blow
+	prerequisite = { focus = NGC_focuss_Betpons1}
+        x = -1
+        y = 1
+	relative_position_id = NGC_focuss_Betpons1
+	cost = 3
+		
+	available_if_capitulated = yes
+		 
+         completion_reward = {
+		 add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+			}
+		}
+	}
+		 
+
+
+
+ shared_focus = {                                                             #ПОХОД НА РОК                                      
+        id = NGC_focuss_CNGP
+        icon = GFX_goal_Die_is_cast
+	prerequisite = { focus = NGC_focuss_CN15 focus = NGC_focuss_CN16 }
+	mutually_exclusive = { focus = NGC_focuss_Betpons focus = NGC_focuss_Buuuun} 
+        x = 1 
+        y = 1
+	relative_position_id = NGC_focuss_CN15
+	cost = 2 
+		
+	available_if_capitulated = yes
+        completion_reward = {
+		create_faction = NGC_faction
+		mark_focus_tree_layout_dirty = yes
+		custom_effect_tooltip = NGC_Wibor2
+		49 = {
+			add_building_construction = {
+				type = supply_node
+				province = 3630
+				level = 1
+				instant_build = yes
+			}
+		}
+		}
+	search_filters = { FOCUS_FILTER_ANNEXATION }
+	ai_will_do = { factor = 40 }
+}
+ shared_focus = {                                                   
+        id = NGC_focuss_CNGP1
+        icon = GFX_goal_Operation_leave
+	prerequisite = { focus = NGC_focuss_CNGP}
+	allow_branch = { 
+			has_completed_focus = NGC_focuss_CNGP 
+		}
+    
+        x = 1  
+        y = 1
+	relative_position_id = NGC_focuss_CNGP
+	cost = 2
+		
+	available_if_capitulated = yes
+		
+       completion_reward = {
+               start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 44
+					num_provinces = 4
+					on_win = ngc.44
+					on_lose = ngc.9
+					on_cancel = ngc.9
+				}
+				
+				defender = {
+					state = 78
+					num_provinces = 4
+					on_win = ngc.10
+					on_lose = ngc.10
+					on_cancel = ngc.10
+				}
+			}
+   }
+ }
+  
+shared_focus = {                                                   
+        id = NGC_focuss_CNGP2
+        icon = GFX_goal_Operation_Ether
+	prerequisite = { focus = NGC_focuss_CNGP}
+	allow_branch = { 
+			has_completed_focus = NGC_focuss_CNGP
+		}
+    
+        x = -1  
+        y = 1
+	relative_position_id = NGC_focuss_CNGP
+	cost = 2  
+		
+	available_if_capitulated = yes
+        completion_reward = {
+               start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 49
+					num_provinces = 4
+					on_win = ngc.8
+					on_lose = ngc.9
+					on_cancel = ngc.9
+				}
+				
+				defender = {
+					state = 94
+					num_provinces = 4
+					on_win = ngc.10
+					on_lose = ngc.10
+					on_cancel = ngc.10
+				}
+			}
+   }
+ }
+
+		
+		shared_focus = {                                                   
+        id = NGC_focuss_CNGPVi
+        icon = GFX_goal_Was2
+	prerequisite = { focus = NGC_focuss_CNGP1 focus = NGC_focuss_CNGP2 } 
+        x = 1
+        y = 1
+	relative_position_id = NGC_focuss_CNGP2
+	cost = 2 
+		
+	available_if_capitulated = yes
+		
+     completion_reward = {
+	 add_timed_idea = {
+			idea = NGC_W_Rok_idea
+			days = 120
+		}
+	   declare_war_on = {
+			target = ROK
+			type = annex_everything
+		}
+		 hidden_effect = {
+		 country_event =   { id = ngc.83 days = 90 }
+		 country_event =   { id = ngc.69 days = 30 }
+	     
+	     }
+		}
+ }
+ 
+		shared_focus = {                                                   
+        id = NGC_focuss_CNGPVin
+        icon = GFX_goal_Was
+	prerequisite = { focus = NGC_focuss_CNGPVi } 
+        x = 0
+        y = 1
+	relative_position_id = NGC_focuss_CNGPVi
+	cost = 2 
+		
+	available_if_capitulated = yes
+	available = {
+		owns_state = 38
+	}
+		
+     completion_reward = {
+	   declare_war_on = {
+			target = MIN
+			type = annex_everything
+		}
+	  declare_war_on = {
+			target = APL
+			type = annex_everything
+		}
+	  declare_war_on = {
+			target = BUF
+			type = annex_everything
+		}
+	   
+		}
+ }
+
+shared_focus = {                                                   
+        id = NGC_focuss_CNGP3
+        icon = GFX_goal_south
+	prerequisite = { focus = NGC_focuss_CNGPVin } 
+        x = 0
+        y = 1
+	relative_position_id = NGC_focuss_CNGPVin
+	cost = 2 
+		
+	available_if_capitulated = yes
+	available = {
+		owns_state = 38
+	}
+	available = {
+		owns_state = 87
+	}
+	available = {
+		owns_state = 21
+	}
+		
+     completion_reward = {
+	 country_event =   ngc.21
+	 	 hidden_effect = {
+		}
+ }
+}
+shared_focus = {                                                   
+        id = NGC_focuss_CNGP4
+        icon = GFX_goal_proposal
+	prerequisite = { focus = NGC_focuss_CNGP3 }
+        x = 1
+        y = 1
+	relative_position_id = NGC_focuss_CNGP3
+	cost = 2 
+		
+	available_if_capitulated = yes
+
+		
+     completion_reward = {
+	declare_war_on = {
+			target = GUA
+			type = annex_everything
+		}
+ }
+}
+shared_focus = {                                                   
+        id = NGC_focuss_CNGP10
+        icon = GFX_goal_Was1
+	prerequisite = { focus = NGC_focuss_CNGP7 focus = NGC_focuss_CNGP5 focus = NGC_focuss_CNGP8 } 
+        x = 0
+        y = 1
+	relative_position_id = NGC_focuss_CNGP5
+	cost = 2 
+		
+	available_if_capitulated = yes	
+     completion_reward = {
+	 country_event = ngc.7   
+	 	add_timed_idea = { 
+			idea = ers_CHN_prepare_inner_invasion_idea
+			days = 365
+		}
+ }
+}
+shared_focus = {                                                   
+        id = NGC_focuss_CNGP8
+        icon = GFX_goal_Zones
+	prerequisite = { focus = NGC_focuss_CNGP4 }
+        x = 1
+        y = 1
+	relative_position_id = NGC_focuss_CNGP4
+	cost = 2 
+		
+	available_if_capitulated = yes
+	available = {
+				OR = {
+			 GUA = {
+				is_subject_of = NGC
+		        
+			}
+			owns_state = 19
+		}
+	}
+	
+		
+     completion_reward = {
+	 custom_effect_tooltip = NGC_Zona_Osv_tt 
+	 hidden_effect = {
+	 country_event = ngc.87 
+	}
+}
+}
+shared_focus = {                                                   
+        id = NGC_focuss_CNGP5
+        icon = GFX_goal_radion
+	prerequisite = { focus = NGC_focuss_CNGP3 }
+        x = 0
+        y = 2
+	relative_position_id = NGC_focuss_CNGP3
+	cost = 2 
+		
+	available_if_capitulated = yes
+	
+		
+      completion_reward = {
+		94 = {
+			add_resistance = -10
+			add_compliance = 10
+		}
+		20 = {
+			add_resistance = -10
+			add_compliance = 10
+		}
+		89 = {
+			add_resistance = -10
+			add_compliance = 10
+		}
+		21 = {
+			add_resistance = -10
+			add_compliance = 10
+		}
+		38 = {
+			add_resistance = -10
+			add_compliance = 10
+		}
+		87 = {
+			add_resistance = -10
+			add_compliance = 10
+		}
+		1232 = {
+			add_resistance = -10
+			add_compliance = 10
+		}
+		1223 = {
+			add_resistance = -10
+			add_compliance = 10
+		}
+		100 = {
+			add_resistance = -10
+			add_compliance = 10
+		}
+		1224 = {
+			add_resistance = -10
+			add_compliance = 10
+		}
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+shared_focus = {                                                   
+        id = NGC_focuss_CNGP6
+        icon = GFX_goal_In_hell
+	prerequisite = { focus = NGC_focuss_CNGP3 }
+        x = -1
+        y = 1
+	relative_position_id = NGC_focuss_CNGP3
+	cost = 2 
+		
+	available_if_capitulated = yes
+	
+		
+     completion_reward = {
+	 declare_war_on = {
+			target = CLT
+			type = annex_everything
+		}
+}
+}
+shared_focus = {                                                   
+        id = NGC_focuss_CNGP7
+        icon = GFX_goal_Broadcast
+	prerequisite = { focus = NGC_focuss_CNGP6 }
+        x = -1
+        y = 1
+	relative_position_id = NGC_focuss_CNGP6
+	cost = 2 
+		
+	available_if_capitulated = yes
+	available = {
+				OR = {
+			 CLT = {
+				is_subject_of = NGC
+		        
+			}
+			owns_state = 1213
+		}
+	}
+	
+		
+     completion_reward = {
+	 custom_effect_tooltip =  NGC_Dzo_Dzo_tt 
+	 hidden_effect = {  
+			ROK = {
+			    transfer_state  = 87
+				transfer_state  = 85
+				transfer_state  = 22
+				transfer_state  = 1213
+				
+				set_state_controller = 87
+				set_state_controller = 85
+				set_state_controller = 22
+				set_state_controller = 1213
+				
+					87 = {
+		set_demilitarized_zone = yes
+		}
+			85 = {
+		set_demilitarized_zone = yes
+		}
+			22 = {
+		set_demilitarized_zone = yes
+		}
+			1213 = {
+		set_demilitarized_zone = yes
+		}
+				
+	}
+}
+}
+}
+
+
+
+##########################################
+##########################################
+##########################################
+#ЮГО-Запад развитие
+shared_focus = {                                                   
+        id = NGC_focuss_WAS
+        icon = GFX_goal_Was
+        x = 32
+        y = 3
+	cost = 5
+	available = {
+		has_completed_focus = NGC_focuss_CNGP10
+	}
+		
+	available_if_capitulated = yes
+		
+     completion_reward = {
+	   
+		
+ }
+ }
+ shared_focus = {                                                   
+        id = NGC_focuss_WAS3
+		icon = GFX_goal_Was3
+        prerequisite = { focus = NGC_focuss_WAS }
+        x = -3 #По горизонтали
+        y = 1 #По вертикали
+	relative_position_id = NGC_focuss_WAS
+	cost = 2 
+		
+	available_if_capitulated = yes
+		
+     completion_reward = {
+	 49 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+						}
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			
+			94 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+						}
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			
+			build_railway = {
+				level = 2
+				build_only_on_allied = yes
+			controller_priority = {
+				base = 1
+				modifier = {
+				tag = NGC
+				add = 2
+				}
+			}
+			fallback = yes
+			path = {6913 6940 11583 11586 9602 5998 662 11644 3645 6697 3696 }
+			start_province = 1643
+			target_province = 6679
+			}
+ }
+ }
+ shared_focus = {                                                   
+        id = NGC_focuss_WAS4
+		icon = GFX_goal_Was4
+        prerequisite = { focus = NGC_focuss_WAS3 }
+        x = -1 #По горизонтали
+        y = 1 #По вертикали
+	relative_position_id = NGC_focuss_WAS3
+	cost = 2 
+		
+	available_if_capitulated = yes
+		
+     completion_reward = {
+		49 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 2
+			}
+		}
+	}
+}
+ shared_focus = {                                                   
+        id = NGC_focuss_WAS5
+		icon = GFX_goal_Was6
+        prerequisite = { focus = NGC_focuss_WAS }
+        x = 3 #По горизонтали
+        y = 1 #По вертикали
+	relative_position_id = NGC_focuss_WAS
+	cost = 2 
+		
+	available_if_capitulated = yes
+		
+    completion_reward = {
+	 93 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+						}
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+	 92 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+						}
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			
+			91 = {
+				if = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+						}
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			build_railway = {
+				level = 2
+				build_only_on_allied = yes
+			controller_priority = {
+				base = 1
+				modifier = {
+				tag = NGC
+				add = 2
+				}
+			}
+			fallback = yes
+			path = {3663 9608 3627 6790 3617 11580 10472 9621 6700 679 9606 }
+			start_province = 3663
+			target_province = 9606
+			}
+ }
+ }
+ shared_focus = {                                                   
+        id = NGC_focuss_WAS6
+		icon = GFX_goal_Was12
+        prerequisite = { focus = NGC_focuss_WAS5 }
+        x = 1 #По горизонтали
+        y = 1 #По вертикали
+	relative_position_id = NGC_focuss_WAS5
+	cost = 2 
+		
+	available_if_capitulated = yes
+		
+    completion_reward = {
+		GUA = {
+			country_event = { id = ngc.42 days = 2 }
+		}
+		19 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+ shared_focus = {                                                   
+        id = NGC_focuss_WAS1
+		icon = GFX_goal_Was1
+        prerequisite = { focus = NGC_focuss_WAS }
+        x = 0 #По горизонтали
+        y = 1 #По вертикали
+	relative_position_id = NGC_focuss_WAS
+	cost = 2 
+		
+	available_if_capitulated = yes
+		
+    completion_reward = {
+	   country_event =   ngc.36
+		
+ }
+}
+ 
+ shared_focus = {                                                   
+        id = NGC_focuss_WAS2
+        icon = GFX_goal_Was2
+       prerequisite = { focus = NGC_focuss_WAS1}
+        x = 0 #По горизонтали
+        y = 1 #По вертикали
+	relative_position_id = NGC_focuss_WAS1
+	cost = 3
+		
+	available_if_capitulated = yes
+		 
+     completion_reward = {
+	 remove_ideas = wild_south_west 
+	  add_manpower = -20000
+	  94 = {
+			add_manpower = -2891
+		}
+		38 = {
+			add_manpower = -610
+		}
+		87 = {
+			add_manpower = -1
+		}
+		
+ }
+ }
+  shared_focus = {                                                   
+        id = NGC_focuss_WAS7
+        icon = GFX_goal_Was8
+       prerequisite = { focus = NGC_focuss_WAS1}
+        x = 2 #По горизонтали
+        y = 1 #По вертикали
+	relative_position_id = NGC_focuss_WAS1
+	cost = 3
+		
+	available_if_capitulated = yes
+		
+    completion_reward = {
+	add_tech_bonus = {
+			name = arty_bonus
+			bonus = 1.0
+			uses = 1
+			category = artillery
+		}
+		94 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+				instant_build = yes
+			}
+		}
+		100 = {
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = 3414
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = 13012
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = 6346
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = 9103
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = 13210
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = 9174
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = 3094
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = 6151
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = 3188
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = 11037
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = 6306
+			}
+		}
+	}
+}
+
+  shared_focus = {                                                   
+        id = NGC_focuss_WAS8
+        icon = GFX_goal_Was10
+       prerequisite = { focus = NGC_focuss_WAS1}
+        x = -2 #По горизонтали
+        y = 1 #По вертикали
+	relative_position_id = NGC_focuss_WAS1
+	cost = 3
+		
+	available_if_capitulated = yes
+		
+     completion_reward = {
+	  NOZ = {
+			country_event = { id = ngc.42 days = 2 }
+		}
+		94 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+   shared_focus = {                                                   
+        id = NGC_focuss_WAS11
+        icon = GFX_goal_Was11
+       prerequisite = { focus = NGC_focuss_WAS2}
+        x = 0 #По горизонтали
+        y = 1 #По вертикали
+	relative_position_id = NGC_focuss_WAS2
+	cost = 3
+		
+	available_if_capitulated = yes
+		
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus VRX_develop_volistad"
+		78 = {
+			add_resource = {
+				type = steel
+				amount = 10
+			}
+			add_resource = {
+				type = oil
+				amount = 8
+			}
+		}
+		add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+	}
+}
+  shared_focus = {                                                   
+        id = NGC_focuss_WAS12
+        icon = GFX_goal_Was9
+      prerequisite = { focus = NGC_focuss_WAS9 }
+	  prerequisite = { focus = NGC_focuss_WAS10 }
+    prerequisite = { focus = NGC_focuss_WAS11 }
+        x = 0 #По горизонтали
+        y = 1 #По вертикали
+		cost = 10000
+	relative_position_id = NGC_focuss_WAS11
+		
+	available_if_capitulated = yes
+		
+     completion_reward = {
+		
+ }
+ }
+   shared_focus = {                                                   
+        id = NGC_focuss_WAS9
+        icon = GFX_goal_Was5
+       prerequisite = { focus = NGC_focuss_WAS4}
+        x = 1 #По горизонтали
+        y = 1 #По вертикали
+	relative_position_id = NGC_focuss_WAS4
+	cost = 5
+		
+	available_if_capitulated = yes
+		
+     completion_reward = {
+	 49 = { 
+			add_extra_state_shared_building_slots = 2
+		}
+		49 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	   49 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+			}
+		}
+  }
+ }
+  shared_focus = {                                                   
+        id = NGC_focuss_WAS10
+        icon = GFX_goal_Was7
+       prerequisite = { focus = NGC_focuss_WAS6}
+        x = -1 #По горизонтали
+        y = 1 #По вертикали
+	relative_position_id = NGC_focuss_WAS6
+	cost = 5
+		
+	available_if_capitulated = yes
+		
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus HRZ_AUR_army_training"
+		NGC = {
+			army_experience = 25
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.25
+				uses = 1
+				category = land_doctrine
+			}
+		}
+		GUA = {
+			army_experience = 25
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.25
+				uses = 3
+				category = land_doctrine
+			}
+		}
+	}
+ }
+ 
+##############################################
+##############################################
+##############################################
+#МММ ТЕХНОЛОГИИ
+shared_focus = {                                                   
+        id = NGC_focuss_MMM_Eco
+        icon = GFX_goal_GRI_miracle
+
+        x = 5
+        y = 0 
+		cost = 8
+		
+	available_if_capitulated = yes
+		
+     completion_reward = {
+	 custom_effect_tooltip = NGC_MMM_decs
+	 }
+	}
+	shared_focus = {                                                   
+        id = NGC_focuss_MMM_Eco1
+        icon = GFX_goal_hindia_blue
+		prerequisite = { focus = NGC_focuss_MMM_Eco }
+		x = 5
+        y = 1
+		cost = 8
+		
+	available_if_capitulated = yes
+	available = {
+		owns_state = 43
+	}
+		
+     completion_reward = {
+ add_research_slot = 1
+		
+ }
+ }
+ shared_focus = {                                                   
+        id = NGC_focuss_MMM_Eco_problem
+        icon =  GFX_breadgrain
+		prerequisite = { focus = NGC_focuss_MMM_Eco1 }
+		x = 5
+        y = 3
+		cost = 8
+		available = {has_war = yes }
+	available_if_capitulated = yes
+		
+     completion_reward = {
+	 set_victory_points = {
+			province = 3937
+			value = 35
+		}
+		add_political_power = 250
+		47 = {
+			add_extra_state_shared_building_slots = 5
+			add_manpower = 350000
+		}	
+	}
+ }
+  shared_focus = {                                                   
+        id = NGC_focuss_MMM_Eco_problem1
+        icon = GFX_goal_AF24_the_sieger_project
+		prerequisite = { focus = NGC_focuss_MMM_Eco_problem }
+		mutually_exclusive = { focus = NGC_focuss_MMM_Eco_problem2} 
+		x = 4
+        y = 4
+		cost = 8
+		
+	available_if_capitulated = yes
+		
+     completion_reward = {
+	 add_tech_bonus = {
+			name = chemical_warfare_category
+			bonus = 0.25
+			uses = 4
+			category = chemical_warfare_category
+		}
+	 if = {
+        	    limit = {
+        	        has_dlc = "By Blood Alone"
+        	    }
+				add_tech_bonus = {
+					name = rocketry
+					bonus = 1.0
+					uses = 1
+					category = rocketry
+				}
+				add_tech_bonus = {
+					name = cat_anti_tank
+					bonus = 1.0
+					uses = 1
+					category = cat_anti_tank
+				}
+			}	
+ }
+ }
+  shared_focus = {                                                   
+        id = NGC_focuss_MMM_Eco_problem2
+        icon = GFX_focus_generic_army_tanks2
+		prerequisite = { focus = NGC_focuss_MMM_Eco_problem }
+		mutually_exclusive = { focus = NGC_focuss_MMM_Eco_problem1} 
+		x = 6
+        y = 4
+		cost = 8
+		
+	available_if_capitulated = yes
+		
+     completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				category = armor
+				bonus = 0.50
+				uses = 3
+			}
+		}
+		
+ }
+  shared_focus = {                                                   
+        id = NGC_focuss_MMM_Eco2
+        icon = GFX_viira_bigguns
+		prerequisite = { focus = NGC_focuss_MMM_Eco }
+		x = 3
+        y = 1
+		cost = 8
+		
+	available_if_capitulated = yes
+		
+     completion_reward = {
+	 add_tech_bonus = {
+				name = mech_bonus
+				bonus = 1.0
+				uses = 2
+				category = motorized_equipment
+			}
+		
+ }
+ }
+  shared_focus = {                                                   
+        id = NGC_focuss_MMM_Eco3
+        icon = GFX_viira_arms
+		prerequisite = { focus = NGC_focuss_MMM_Eco2 }
+		x = 2
+        y = 2
+		cost = 8
+		
+	available_if_capitulated = yes
+		
+     completion_reward = {
+	 	add_tech_bonus = {
+				name = infantry_bonus
+				bonus = 1.0
+				uses = 2
+				category = support_tech
+			}
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 1.0
+				uses = 2
+				category = artillery
+			}
+		
+ }
+ }
+   shared_focus = {                                                   
+        id = NGC_focuss_MMM_Eco4
+        icon = GFX_viira_infantry
+		prerequisite = { focus = NGC_focuss_MMM_Eco2 }
+		x = 4
+        y = 2
+		cost = 8
+		
+	available_if_capitulated = yes
+		
+     completion_reward = {
+add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 1
+				uses = 2
+				category = infantry_weapons
+			}
+		
+ }
+ }
+ shared_focus = {                                                   
+        id = NGC_focuss_MMM_Eco5
+        icon = GFX_goal_ELF_industry
+		prerequisite = { focus = NGC_focuss_MMM_Eco }
+		x = 7
+        y = 1
+		cost = 8
+		
+	available_if_capitulated = yes
+		
+     completion_reward = {
+	 add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		 add_tech_bonus = {
+			name = secret_bonus
+			bonus = 1.0
+			uses = 1
+			category = electronics
+		}
+		
+ }
+ }
+  shared_focus = {                                                   
+        id = NGC_focuss_MMM_Eco6
+        icon = GFX_goal_ELF_construction
+		prerequisite = { focus = NGC_focuss_MMM_Eco5 }
+		x = 8
+        y = 2
+		cost = 8
+		
+	available_if_capitulated = yes
+		
+     completion_reward = {
+	 add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 2
+				category = industry
+			}
+		
+ }
+ }
+   shared_focus = {                                                   
+        id = NGC_focuss_MMM_Eco7
+        icon = GFX_goal_ELF_factory
+		prerequisite = { focus = NGC_focuss_MMM_Eco5 }
+		x = 6
+        y = 2
+		cost = 8
+		
+	available_if_capitulated = yes
+		
+     completion_reward = {
+	 add_tech_bonus = {
+			name = secret_bonus
+			bonus = 1.0
+			uses = 2
+			category = electronics
+		}
+		
+ }
+ }
+ 
+ 
+ 
+ 
+##############################################
+##############################################
+##############################################
+#МММ АВИАЦИЯ
+ shared_focus = {                                                   
+        id = NGC_focuss_Democratia
+        icon = GFX_goal_KIR_continuous_air
+
+        x = 25
+        y = 0 
+		cost = 8
+		
+	available_if_capitulated = yes
+		
+     completion_reward = {
+	  custom_effect_tooltip = NGC_Samolet
+	  add_research_slot = 1
+		add_political_power = -100
+	 hidden_effect = {
+	 swap_ideas = {
+				remove_idea = NGC_Aviasia
+				add_idea = NGC_Aviasia_Baza
+			}
+	 air_experience = 25
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+					has_tech = iw_small_airframe
+				}
+				set_technology = {
+					aa_lmg = 1
+					engines_1 = 1
+				}
+				add_tech_bonus = {
+					name = fighter_bonus
+					bonus = 1.0
+					uses = 1
+					category = light_air
+				}
+				add_equipment_to_stockpile = {
+					type = small_plane_airframe_1
+					variant_name = "Sv.109"
+					amount = 100
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = great_war_ai_buffs
+							option = CHN_AI_GW_BUFFS
+						}
+					}
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_1
+						variant_name = "Sv.109"
+						amount = 100
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+					NOT = {
+						has_tech = iw_small_airframe
+					}
+				}
+				set_technology = {
+					iw_small_airframe = 1
+					aa_lmg = 1
+					engines_1 = 1
+				}
+				generic_early_fighter = yes
+				add_equipment_to_stockpile = {
+					type = small_plane_airframe_1
+					variant_name = "Early Fighter"
+					amount = 100
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = early_fighter
+				}
+				add_tech_bonus = {
+					name = fighter_bonus
+					bonus = 1.0
+					uses = 1
+					category = light_fighter
+				}
+				add_equipment_to_stockpile = {
+					type = fighter_equipment_0
+					amount = 100
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = great_war_ai_buffs
+							option = CHN_AI_GW_BUFFS
+						}
+					}
+					add_equipment_to_stockpile = {
+						type = fighter_equipment_0
+						amount = 100
+					}
+				}
+			}
+			else = {
+				set_technology = {
+					early_fighter = 1
+				}
+				add_equipment_to_stockpile = {
+					type = fighter_equipment_0
+					amount = 100
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+					has_tech = iw_medium_airframe
+				}
+				set_technology = {
+					early_bombs = 1
+					engines_1 = 1
+				}
+				add_tech_bonus = {
+					name = bomber_bonus
+					bonus = 1.0
+					uses = 1
+					category = medium_air
+				}
+				add_equipment_to_stockpile = {
+					type = medium_plane_airframe_1
+					variant_name = "UWA.111"
+					amount = 50
+				}
+			}
+			else_if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+					NOT = {
+						has_tech = iw_medium_airframe
+					}
+				}
+				set_technology = {
+					iw_medium_airframe = 1
+					early_bombs = 1
+					engines_1 = 1
+				}
+				generic_early_tac_bomber = yes
+				add_equipment_to_stockpile = {
+					type = medium_plane_airframe_0
+					variant_name = "Early Tactical Bomber"
+					amount = 30
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = early_bomber
+				}
+				add_tech_bonus = {
+					name = bomber_bonus
+					bonus = 1.0
+					uses = 1
+					category = tactical_bomber
+				}
+				add_equipment_to_stockpile = {
+					type = tac_bomber_equipment_0
+					amount = 30
+				}
+			}
+			else = {
+				set_technology = {
+					early_bomber = 1
+				}
+				add_equipment_to_stockpile = {
+					type = tac_bomber_equipment_0
+					amount = 30
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+					has_tech = basic_small_airframe
+				}
+				add_equipment_to_stockpile = {
+					type = small_plane_cas_airframe_1
+					variant_name = "Vs.87"
+					amount = 100
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = great_war_ai_buffs
+							option = CHN_AI_GW_BUFFS
+						}
+					}
+					add_equipment_to_stockpile = {
+						type = small_plane_cas_airframe_1
+						variant_name = "Vs.87"
+						amount = 100
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = CAS1
+				}
+				add_equipment_to_stockpile = {
+					type = CAS_equipment_1
+					amount = 100
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = great_war_ai_buffs
+							option = CHN_AI_GW_BUFFS
+						}
+					}
+					add_equipment_to_stockpile = {
+						type = CAS_equipment_1
+						amount = 100
+					}
+				}
+			}
+       }
+    }
+ }
+ shared_focus = {                                                   
+        id = NGC_focuss_Democratia1
+        icon = GFX_TBK_ales_goods
+		prerequisite = { focus = NGC_focuss_Democratia }
+		x = 25
+        y = 1
+		cost = 8
+		
+	available_if_capitulated = yes
+	available = {
+		owns_state = 43
+	}
+		
+     completion_reward = {
+	 swap_ideas = {
+				remove_idea = NGC_Aviasia_Baza
+				add_idea = NGC_Aviasia_Baza1
+			}
+		
+ }
+ }
+ shared_focus = {                                                   
+        id = NGC_focuss_Democratia_problem
+        icon =  GFX_goal_TRO_The_Republican_Bomber_Fleet
+		prerequisite = { focus = NGC_focuss_Democratia1 }
+		x = 25
+        y = 3
+		cost = 8
+		available = {has_war = yes }
+	available_if_capitulated = yes
+		
+     completion_reward = {
+	 1242 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 3
+					instant_build = yes
+				}
+			}
+	 49 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+		47 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+		
+ }
+ }
+  shared_focus = {                                                   
+        id = NGC_focuss_Democratia_problem1
+        icon = GFX_nuke_gen
+		prerequisite = { focus = NGC_focuss_Democratia_problem }
+		mutually_exclusive = { focus = NGC_focuss_Democratia_problem2} 
+		x = 24
+        y = 4
+		cost = 8
+		
+	available_if_capitulated = yes
+		
+     completion_reward = {
+	 add_tech_bonus = {
+			name = chemical_warfare_category
+			bonus = 0.25
+			uses = 4
+			category = chemical_warfare_category
+		}
+	 if = {
+        	    limit = {
+        	        has_dlc = "By Blood Alone"
+        	    }
+				add_tech_bonus = {
+					name = rocketry
+					bonus = 1.0
+					uses = 1
+					category = rocketry
+				}
+				add_tech_bonus = {
+					name = cat_anti_tank
+					bonus = 1.0
+					uses = 1
+					category = cat_anti_tank
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = bomber_bonus
+					bonus = 1.0
+					uses = 2
+					category = cas_bomber
+				}
+			}
+		
+ }
+ }
+  shared_focus = {                                                   
+        id = NGC_focuss_Democratia_problem2
+        icon = GFX_goal_Focus_Military_Mobilisation
+		prerequisite = { focus = NGC_focuss_Democratia_problem }
+		mutually_exclusive = { focus = NGC_focuss_Democratia_problem1} 
+		x = 26
+        y = 4
+		cost = 8
+		
+	available_if_capitulated = yes
+		
+     completion_reward = {
+	 remove_ideas =  NGC_Aviasia_Baza1
+	 add_ideas = ERP_equipment_idea
+		
+ }
+ }
+  shared_focus = {                                                   
+        id = NGC_focuss_Democratia2
+        icon = GFX_goal_Black_State_Rising_2
+		prerequisite = { focus = NGC_focuss_Democratia }
+		x = 23
+        y = 1
+		cost = 8
+		
+	available_if_capitulated = yes
+		
+     completion_reward = {
+	 random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	 random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		 random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		
+ }
+ }
+  shared_focus = {                                                   
+        id = NGC_focuss_Democratia3
+        icon = GFX_goal_KIR_resources
+		prerequisite = { focus = NGC_focuss_Democratia2 }
+		x = 22
+        y = 2
+		cost = 8
+		
+	available_if_capitulated = yes
+		
+     completion_reward = {
+	 random_owned_controlled_state = {
+					add_resource = {
+						type = steel
+						amount = 10
+					}
+				}
+				random_owned_controlled_state = {
+					add_resource = {
+						type = oil
+						amount = 5
+					}
+				}
+				random_owned_controlled_state = {
+					add_resource = {
+						type = aluminium
+						amount = 5
+					}
+				}
+		
+ }
+ } 
+   shared_focus = {                                                   
+        id = NGC_focuss_Democratia4
+        icon = GFX_All_resource
+		prerequisite = { focus = NGC_focuss_Democratia2 }
+		x = 24
+        y = 2
+		cost = 8
+		
+	available_if_capitulated = yes
+		
+     completion_reward = {
+	  random_owned_controlled_state = {
+					add_resource = {
+						type = steel
+						amount = 10
+					}
+				}
+				random_owned_controlled_state = { 
+					add_resource = {
+						type = oil
+						amount = 5
+					}
+				}
+				random_owned_controlled_state = {
+					add_resource = {
+						type = aluminium
+						amount = 15
+					}
+				}
+		
+ }
+ }
+ shared_focus = {                                                   
+        id = NGC_focuss_Democratia5
+        icon = GFX_TBK_alessword
+		prerequisite = { focus = NGC_focuss_Democratia }
+		x = 27
+        y = 1
+		cost = 8
+		
+	available_if_capitulated = yes
+		
+     completion_reward = {
+	 add_doctrine_cost_reduction = {
+				name = air_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = air_doctrine
+			}
+		
+ }
+ }
+  shared_focus = {                                                   
+        id = NGC_focuss_Democratia6
+        icon = GFX_goal_CTL_A_f1
+		prerequisite = { focus = NGC_focuss_Democratia5 }
+		x = 26
+        y = 2
+		cost = 8
+		
+	available_if_capitulated = yes
+		
+     completion_reward = {
+	 if = {
+            	limit = {
+            	    has_dlc = "By Blood Alone"
+            	}
+				add_tech_bonus = {
+					name = fighter_bonus
+					bonus = 1.0
+					uses = 2
+					category = light_air
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = fighter_bonus
+					bonus = 1.0
+					uses = 2
+					category = light_fighter
+				}
+			}
+		
+ }
+ }
+   shared_focus = {                                                   
+        id = NGC_focuss_Democratia7
+        icon = GFX_goal_CTL_A_f5
+		prerequisite = { focus = NGC_focuss_Democratia5 }
+		x = 28
+        y = 2
+		cost = 8
+		
+	available_if_capitulated = yes
+		
+     completion_reward = {
+	 if = {
+            	limit = {
+            	    has_dlc = "By Blood Alone"
+            	}
+				add_tech_bonus = {
+					name = fighter_bonus
+					bonus = 1.0
+					uses = 2
+					category = light_air
+				}
+			}
+		
+ }
+ }
+ 
+##############################################
+##############################################
+##############################################
+
+shared_focus = {       #Дивизии Каина
+    id = NGC_focuss_Penal_battalion
+    icon = GFX_goal_Fine 
+    x = 20
+    y = 0
+    cost = 1  
+     completion_reward = {
+	 set_technology = { penal_infantry = 1 }
+	} 
+}
+
+##############################################
+##############################################
+##############################################
+
+shared_focus = {       #Мото дивизии
+    id = NGC_focuss_motorization_battalion
+    icon = GFX_goal_motors
+    x = 10
+    y = 0
+    cost = 1  
+     completion_reward = {
+	 set_technology = {motorcycle_tech = 1 }
+	} 
+}
+
+##############################################
+##############################################
+##############################################
+
+shared_focus = {       #Novofenstein
+    id = NGC_focuss_Novofenstein
+    icon = GFX_posadaspace
+    x = 20
+    y = 7
+    cost = 1  
+     completion_reward = {
+	 set_technology = {
+			JER_magical_artillery_tech = 1
+		}
+	} 
+}
+
+shared_focus = { 
+        id = NGC_focuss_Novofenstein1
+        icon = GFX_goal_HIP_ppost
+	prerequisite = { focus = NGC_focuss_Novofenstein } 
+        x = 0 
+        y = 1 
+	relative_position_id = NGC_focuss_Novofenstein
+	cost = 7
+		
+	available_if_capitulated = yes
+		
+        completion_reward = {
+		}
+   }
+shared_focus = { 
+        id = NGC_focuss_Novofenstein2
+        icon = GFX_goal_HIP_purge_rev
+	prerequisite = { focus = NGC_focuss_Novofenstein } 
+        x = -2 
+        y = 1 
+	relative_position_id = NGC_focuss_Novofenstein
+	cost = 7
+		
+	available_if_capitulated = yes
+		
+        completion_reward = {
+		}
+   }
+shared_focus = { 
+        id = NGC_focuss_Novofenstein3
+        icon = GFX_goal_HIP_purge_mod
+	prerequisite = { focus = NGC_focuss_Novofenstein2 } 
+        x = -1
+        y = 1 
+	relative_position_id = NGC_focuss_Novofenstein2
+	cost = 7
+		
+	available_if_capitulated = yes
+		
+        completion_reward = {
+		}
+   }
+shared_focus = { 
+        id = NGC_focuss_Novofenstein4
+        icon = GFX_goal_HIP_posreason
+	prerequisite = { focus = NGC_focuss_Novofenstein2 } 
+        x = 1
+        y = 1 
+	relative_position_id = NGC_focuss_Novofenstein2
+	cost = 7
+		
+	available_if_capitulated = yes
+		
+        completion_reward = {
+		}
+   }
+shared_focus = { 
+        id = NGC_focuss_Novofenstein5
+        icon = GFX_goal_HIP_first_therm_weapon
+	prerequisite = { focus = NGC_focuss_Novofenstein4 } 
+        x = -1
+        y = 1 
+	relative_position_id = NGC_focuss_Novofenstein4
+	cost = 7
+		
+	available_if_capitulated = yes
+		
+        completion_reward = {
+		}
+   }
+shared_focus = { 
+        id = NGC_focuss_Novofenstein6 
+        icon = GFX_goal_HIP_phipv
+	prerequisite = { focus = NGC_focuss_Novofenstein } 
+        x = 2 
+        y = 1 
+	relative_position_id = NGC_focuss_Novofenstein
+	cost = 7
+		
+	available_if_capitulated = yes
+		
+        completion_reward = {
+		}
+   }
+shared_focus = { 
+        id = NGC_focuss_Novofenstein7
+        icon = GFX_goal_HIP_reparations
+	prerequisite = { focus = NGC_focuss_Novofenstein6 } 
+        x = -1
+        y = 1 
+	relative_position_id = NGC_focuss_Novofenstein6
+	cost = 7
+		
+	available_if_capitulated = yes
+		
+        completion_reward = {
+		}
+   }
+shared_focus = { 
+        id = NGC_focuss_Novofenstein8
+        icon = GFX_luxpos
+	prerequisite = { focus = NGC_focuss_Novofenstein6 } 
+        x = 1
+        y = 1 
+	relative_position_id = NGC_focuss_Novofenstein6
+	cost = 7
+		
+	available_if_capitulated = yes
+		
+        completion_reward = {
+		}
+   }
+shared_focus = { 
+        id = NGC_focuss_Novofenstein9
+        icon = GFX_goal_HIP_brighter_future
+	prerequisite = { focus = NGC_focuss_Novofenstein8 } 
+        x = -1
+        y = 1 
+	relative_position_id = NGC_focuss_Novofenstein8
+	cost = 7
+		
+	available_if_capitulated = yes
+		
+        completion_reward = {
+		}
+   }
+ shared_focus = {       #Novofenstein
+    id = NGC_focuss_Novofenstein_War   
+    icon = GFX_goal_HIP_searchalien
+    x = 20
+    y = 10
+    cost = 1  
+     completion_reward = {
+	 set_technology = {
+			JER_magical_artillery_tech = 1
+		}
+	} 
+}
+
+
+
+
+
+
+
+
+
+##############################################
+############################################## 
+##############################################
+
+shared_focus = {       #Дристал насдристал################
+    id = NGC_Plan_Alpha
+    icon = GFX_goal_FAT_Behold_The_World_To_Maar
+    x = 25
+    y = 7
+    cost = 1  
+     completion_reward = {
+	 set_technology = {
+			JER_magical_artillery_tech = 1
+		}
+	} 
+}
+shared_focus = { 
+        id = NGC_Plan_Alpha1
+        icon = GFX_CTL_V_SPY
+	prerequisite = { focus = NGC_Plan_Alpha } 
+        x = 0
+        y = 1 
+	relative_position_id = NGC_Plan_Alpha
+	cost = 7
+		
+	available_if_capitulated = yes
+		
+        completion_reward = {
+		}
+   }
+shared_focus = { 
+        id = NGC_Plan_Alpha2
+        icon = GFX_CTL_V_HIRA
+	prerequisite = { focus = NGC_Plan_Alpha1 } 
+        x = 0
+        y = 2
+	relative_position_id = NGC_Plan_Alpha1
+	cost = 7
+		
+	available_if_capitulated = yes
+		
+        completion_reward = {
+		}
+   }
+   shared_focus = { 
+        id = NGC_Plan_Alpha3
+        icon = GFX_CTL_V_NOOSE
+	prerequisite = { focus = NGC_Plan_Alpha2 } 
+        x = -2
+        y = 1
+	relative_position_id = NGC_Plan_Alpha2
+	cost = 7
+		
+	available_if_capitulated = yes
+		
+        completion_reward = {
+		}
+   }
+     shared_focus = { 
+        id = NGC_Plan_Alpha4
+        icon = GFX_CTL_V_L1
+	prerequisite = { focus = NGC_Plan_Alpha2 } 
+        x = 2
+        y = 1
+	relative_position_id = NGC_Plan_Alpha2
+	cost = 7
+		
+	available_if_capitulated = yes
+		
+        completion_reward = {
+		}
+   }
+   shared_focus = { 
+        id = NGC_Plan_Alpha5
+        icon = GFX_goal_CTL_h_home
+	prerequisite = { focus = NGC_Plan_Alpha2 } 
+        x = 0
+        y = 2
+	relative_position_id = NGC_Plan_Alpha2
+	cost = 7
+		
+	available_if_capitulated = yes
+		
+        completion_reward = {
+		}
+   }
+   shared_focus = { 
+        id = NGC_Plan_Alpha6
+        icon = GFX_goal_Was5
+	prerequisite = { focus = NGC_Plan_Alpha } 
+        x = 3
+        y = 1 
+	relative_position_id = NGC_Plan_Alpha
+	cost = 7
+		
+	available_if_capitulated = yes
+		
+        completion_reward = {
+		}
+   }
+    shared_focus = { 
+        id = NGC_Plan_Alpha7
+        icon = GFX_goal_Was3
+	prerequisite = { focus = NGC_Plan_Alpha6 } 
+        x = -2
+        y = 1 
+	relative_position_id = NGC_Plan_Alpha6
+	cost = 7
+		
+	available_if_capitulated = yes
+		
+        completion_reward = {
+		}
+   }
+   shared_focus = { 
+        id = NGC_Plan_Alpha8
+        icon = GFX_goal_Was10
+	prerequisite = { focus = NGC_Plan_Alpha6 } 
+        x = 0
+        y = 1 
+	relative_position_id = NGC_Plan_Alpha6
+	cost = 7
+		
+	available_if_capitulated = yes
+		
+        completion_reward = {
+		}
+   }
+   shared_focus = { 
+        id = NGC_Plans_Alpha8  
+        icon = GFX_goal_Was6
+	prerequisite = { focus = NGC_Plan_Alpha6 } 
+        x = 2
+        y = 1 
+	relative_position_id = NGC_Plan_Alpha6
+	cost = 7
+		
+	available_if_capitulated = yes
+		
+        completion_reward = {
+		}
+   }
+   shared_focus = {   
+        id = NGC_Plan_Alpha9
+        icon = GFX_HIE_arty
+	prerequisite = { focus = NGC_Plan_Alpha8 } 
+        x = 0
+        y = 1 
+	relative_position_id = NGC_Plan_Alpha8
+	cost = 7
+		
+	available_if_capitulated = yes
+		
+        completion_reward = {
+		}
+   }
+   
+   shared_focus = { 
+        id = NGC_Plan_Alpha10
+        icon = GFX_goal_Was8
+	prerequisite = { focus = NGC_Plan_Alpha } 
+        x = -3
+        y = 1 
+	relative_position_id = NGC_Plan_Alpha
+	cost = 7
+		
+	available_if_capitulated = yes
+		
+        completion_reward = {
+		}
+   }
+    shared_focus = { 
+        id = NGC_Plan_Alpha11
+        icon = GFX_HIE_bombs
+	prerequisite = { focus = NGC_Plan_Alpha10 } 
+        x = -2
+        y = 1 
+	relative_position_id = NGC_Plan_Alpha10
+	cost = 7
+		
+	available_if_capitulated = yes
+		
+        completion_reward = {
+		}
+   }
+   shared_focus = { 
+        id = NGC_Plan_Alpha12
+        icon = GFX_goal_Was7
+	prerequisite = { focus = NGC_Plan_Alpha10 } 
+        x = 0
+        y = 1 
+	relative_position_id = NGC_Plan_Alpha10
+	cost = 7
+		
+	available_if_capitulated = yes
+		
+        completion_reward = {
+		}
+   }
+   shared_focus = { 
+        id = NGC_Plan_Alpha13
+        icon = GFX_goal_Mobuliz
+	prerequisite = { focus = NGC_Plan_Alpha10 } 
+        x = 2
+        y = 1 
+	relative_position_id = NGC_Plan_Alpha10
+	cost = 7
+		
+	available_if_capitulated = yes
+		
+        completion_reward = {
+		}
+   }
+   shared_focus = { 
+        id = NGC_Plan_Alpha14
+        icon = GFX_HIE_armored2
+	prerequisite = { focus = NGC_Plan_Alpha12} 
+        x = 0
+        y = 1 
+	relative_position_id = NGC_Plan_Alpha12
+	cost = 7
+		
+	available_if_capitulated = yes
+		
+        completion_reward = {
+		}
+   }
+   

@@ -1,0 +1,33 @@
+state={
+	id=121
+	name="STATE_121"
+
+	provinces={
+		548 3434 3482 6401 6499 9400 9452 9508 11399 11507 11532 12562
+	}
+
+	manpower=3330420
+	state_category = large_city
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = ERP
+		add_core_of = ERP
+
+		victory_points = { 11399 20 }
+		victory_points = { 3434 5 }
+		victory_points = { 6499 5 }
+
+		buildings = {
+			infrastructure = 2
+			arms_factory = 4
+			industrial_complex = 2
+			548 = {
+				bunker = 1
+			}
+			9452 = {
+				bunker = 1
+			}
+		}
+	}
+}

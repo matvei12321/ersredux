@@ -1,0 +1,26 @@
+state={
+	id=154
+	name="STATE_154"
+
+	provinces={
+		6152 9095 9134 9175 11069
+	}
+
+	manpower=36071
+	state_category = wasteland
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = UNC
+		add_core_of = UNC
+		add_core_of = KZK
+
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	
+	resources = {
+		steel = 5
+	}
+}

@@ -1,0 +1,74 @@
+ideas= {
+	country = {
+		bad_rainbow_factory_effect = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+				OR = {
+					PGS = {
+						has_idea = idea_rainbow_factory
+					}
+					LOS = {
+						has_idea = idea_rainbow_factory
+					}
+					ANR = {
+						has_idea = idea_rainbow_factory
+					}
+				}
+			}
+
+			picture = idea_rainbow_factory
+
+			modifier = {
+				supply_consumption_factor = 0.05
+				army_defence_factor = -0.05
+				navy_weather_penalty = 0.15
+				WINTER_ATTRITION_FACTOR = 0.15
+				HEAT_ATTRITION_FACTOR = 0.15
+			}
+		}
+		
+		good_rainbow_factory_effect = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = idea_rainbow_factory
+			
+			available = {
+				OR = {
+					PGS = {
+						has_idea = idea_rainbow_factory
+					}
+					LOS = {
+						has_idea = idea_rainbow_factory
+					}
+					ANR = {
+						has_idea = idea_rainbow_factory
+					}
+				}
+			}
+
+			modifier = {
+				supply_consumption_factor = -0.05
+				production_lack_of_resource_penalty_factor = -0.1
+				navy_weather_penalty = -0.15
+				WINTER_ATTRITION_FACTOR = -0.15
+				HEAT_ATTRITION_FACTOR = -0.15
+			}
+			
+		}
+	}
+}

@@ -1,0 +1,68 @@
+is_chn_hehemony_hive = {
+	custom_trigger_tooltip = {
+		tooltip = is_chn_hehemony_hive_tt
+		OR = {
+			has_idea = changelings_no_puppet
+			has_idea = changelings_low_puppet
+			has_idea = changelings_medium_puppet
+			has_idea = changelings_high_puppet
+			has_idea = changelings_leader
+		}
+	}
+}
+
+is_chn_hehemony_hive_controled = {
+	custom_trigger_tooltip = {
+		tooltip = is_chn_hehemony_hive_controled_tt
+		OR = {
+			has_idea = changelings_low_puppet
+			has_idea = changelings_medium_puppet
+			has_idea = changelings_high_puppet
+		}
+	}
+}	
+
+is_endgame_crysis_country = {
+	custom_trigger_tooltip = {
+		tooltip = is_endgame_crysis_country_tt
+		OR = {
+			original_tag = DED
+			original_tag = EWI
+			original_tag = CLD
+			original_tag = HMD
+		}
+	}
+}
+
+is_hive_uniter = {
+	custom_trigger_tooltip = {
+		tooltip = is_hive_uniter_tt
+		AND = {
+			AND = {
+				owns_state = 251
+				owns_state = 309
+				owns_state = 252
+				owns_state = 259
+				owns_state = 262
+				owns_state = 316
+			}
+			OR = {
+				tag = CHN
+				tag = LYC
+				tag = VRX
+				tag = VST
+				tag = DTS
+				tag = SRF
+			}
+		}
+	}
+}
+
+is_equestria_uniter = {
+	custom_trigger_tooltip = {
+		tooltip = is_equestria_uniter_tt
+		OR = {
+			TST_equestria_united = yes
+		}
+	}
+}

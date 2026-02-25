@@ -1,0 +1,51 @@
+﻿air_wings = {
+	49 = {
+		small_plane_airframe_0 = {
+			owner = "NGC"
+			amount = 50
+			version_name = "KH/5"
+		}
+		ace={ # Order is important. Ace will be assigned to the wing above (fighter_equipment_0).
+			modifier="fighter_unique"
+			name="Ainoa"
+			surname="Viisi"
+			callsign="Ichigo"
+			# Pick random index here, or make special GFX_GER_ace_Erich_Hartmann to override.
+		}
+	}
+	49 = {
+		medium_plane_airframe_0 = {
+			owner = "NGC"
+			amount = 30
+			version_name = "PP/4"
+		}
+	}
+	49 = {
+		small_plane_airframe_0 = {
+			owner = "NGC"
+			amount = 25
+			version_name = "KH/5"
+		}
+		ace={ # Order is important. Ace will be assigned to the wing above (fighter_equipment_0).
+			modifier="fighter_unique"
+			name="Nolla"
+			surname="Kakkonen"
+			callsign="Zero Two"
+			# Pick random index here, or make special GFX_GER_ace_Erich_Hartmann to override.
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = small_plane_airframe_0
+			creator = "NGC"
+			version_name = "KH/5"
+		}
+		requested_factories = 1
+		progress = 0.2
+		efficiency = 50
+		industrial_manufacturer = mio:NGC_kunikaallinen_aeronautics_organization
+	}
+}

@@ -1,0 +1,100 @@
+disable_zebrica = {
+	every_state = {
+		limit = {
+			AND = {
+				is_on_continent = africa
+				NOT = {
+					is_core_of = MCW
+					is_core_of = HRV
+					is_core_of = MER
+				}
+			}
+		}		
+		T01 = {
+			transfer_state = PREV
+		}
+			set_building_level = {
+				type = infrastructure
+					level = 0
+			}
+			set_building_level = {
+				type = industrial_complex
+				level = 0
+			}
+			set_building_level = {
+				type = arms_factory
+				level = 0
+			}
+			set_building_level = {
+				type = dockyard
+				level = 0
+			}
+			set_state_category = wasteland
+			add_manpower = -500000
+			add_manpower = -500000
+			add_manpower = -500000
+			add_manpower = -500000
+			add_manpower = -500000
+			add_manpower = -500000
+			add_manpower = -500000
+			add_manpower = -500000
+			add_manpower = -500000
+			add_manpower = -500000
+	}							
+			
+	if = {
+		limit = { T01 = exists }
+		T01 = { load_focus_tree = BAR_empty_tree }
+	}
+}
+
+disable_griffonia = {
+	every_state = {
+		limit = {
+			AND = {
+				is_on_continent = asia
+				NOT = {
+					is_core_of = HAU
+				}
+			}
+		}
+				
+		T01 = {
+			transfer_state = PREV		
+		}
+					set_building_level = {
+				type = infrastructure
+					level = 0
+			}
+			set_building_level = {
+				type = industrial_complex
+				level = 0
+			}
+			set_building_level = {
+				type = arms_factory
+				level = 0
+			}
+			set_building_level = {
+				type = dockyard
+				level = 0
+			}
+			set_state_category = wasteland
+			add_manpower = -500000
+			add_manpower = -500000
+			add_manpower = -500000
+			add_manpower = -500000
+			add_manpower = -500000
+			add_manpower = -500000
+			add_manpower = -500000
+			add_manpower = -500000
+			add_manpower = -500000
+			add_manpower = -500000
+					
+			if = {
+				limit = { ABY = { exists = yes } }
+				ABY = { transfer_state = 1200 }
+				ABY = { transfer_state = 784 }
+			}
+	}				
+				
+}

@@ -1,0 +1,18 @@
+characters = {
+	NIG_leader={
+		name=NIG_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/NIG/NIG_leader.tga"
+			}
+		}
+		country_leader={
+			desc=""
+			ideology=raidism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		gender = female
+	}
+}

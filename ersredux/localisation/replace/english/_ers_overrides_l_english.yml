@@ -1,0 +1,83 @@
+﻿l_english:
+ #loading text replacement
+ 
+ LOADING_GUI:0 "§CEvolving§!"
+ LOADING_MAP_SPRITES:0 "Losing the §OIdol of Boreas§!"
+ LOADING_DATABASES:0 "Forgetting §PFriendship Lessons§!"
+ INIT_MAP_LOGIC:0 "Deleting Celestia and Luna"
+ LOADING_HISTORY:0 "Attaining Heaven"
+ LOAD_EVENTS:0 "Going for Fluttershy"
+ LOAD_INIT:0 "Destroying Yakyakistan"
+ LOAD_FLAGS:0 "Raising the tricolour"
+ INIT_GAMESTATE:0 "Losing english localisation"
+ CREATING_CHKSUM:0 "Adding §RDiscord§!"
+ GENERATING_GRADIENT_BORDERS:0 "Writing Twinkle Sprinkle's guide"
+ LOAD_GFX:0 "Making sure of the superiority of unicorns"
+ CREATING_PROVINCE:0 "Burying the children of the Civil War"
+ LOAD_GFX_PDXMAP_SHADERS:0 "Building the mirror portal"
+ LOAD_GFX_PDXMAP_TERRAIN:0 "Colonsing Southwest"
+ LOAD_GFX_PDXMAP_BORDERS:0 "Creating national-communism"
+ LOAD_GFX_PDXMAP_TEXTURES:0 "Moving the capital from Canterlot"
+ LOAD_GFX_PDXMAP_TREES:0 "Listening to Valentine"
+ LOAD_GFX_PDXMAP_RIVERS:0 "Building the imperial railway"
+ LOAD_GFX_PDXMAP_STATIC_OBJECTS:0 "Summoning the Windigo"
+ PRECALC_NAVAL_DIST:0 "Promoting Hurricane"
+ 
+ ---_democratic:0 "any utopian country"
+ FE_DIFFICULTY_VERY_EASY_TOOLTIP:0 "§L"I dream I shall be purer and nicer...§!"
+ FE_DIFFICULTY_EASY_TOOLTIP:0 "§L...and I’ll never leave my friend without help.§!"
+ FE_DIFFICULTY_NORMAL_TOOLTIP:0 "§L...I hear that voice and I’m heading to it quickly...§!"
+ FE_DIFFICULTY_HARD_TOOLTIP:1 "§L...to the melody of crystal heaven bells.."§!"
+ FE_DIFFICULTY_VERY_HARD_TOOLTIP:1 "§RMY FINE AND DISTANT FUTURE, PLEASE DON'T BE SO CRUEL.§!"
+ democratic_leanings_good:0 "Utopian Leanings"
+ democratic_leanings_bad:0 "Utopian Leanings"
+ DR_US_DEMOCRATIC:1 "§Y$US|U$§! is a utopy: "
+ DR_OFFENSIVE_WAR:0 "Utopia is being called for an offensive war: "
+ DIPLOMACY_DEM_NO_THREAT_JUSTIFYING_WAR:0 "УUtopian nations and members of an alliance led by a utopian nation cannot justify the wargoal with a state that did not create world tensions." 
+ democratic_influence:0 "Utopianism Inflience"
+ democratic_influence_desc:0 "The pressure from Utopianism has made democracy very popular and the country is ready to cooperate with other Utopians."
+ democratic_revolutionaries:0 "Utopian Revolutionaries"
+ democratic_revolutionaries_desc:0 "If support for Utopianism rises above 70%, the nation will be plunged into civil war. If support for Utopianism drops below 30%, revolutionary activity will stop."
+ 
+ ### TRAITS
+ democratic_reformer:0 "Utopian Reformator"
+ 
+ ### DECISIONS
+ ban_democratic_party:1 "Ban Utopian and Democratic Parties"
+ ban_democratic_party_desc:1 "Utopian and democratic parties have been putting sticks in the wheels of our government for too long. Their insistence on the "rights" of beings undermines our efforts to create a better nation for our entire population."
+ anti_democratic_raids:0 "Anti-Utopian Raids"
+
+ EXITING_TO_FRONTEND:0 "Breaking the Timeline"
+ 
+ ### CUSTOM RULES
+ RULE_OPTION_DEMOCRATIC:0 "Utopian"
+ RULE_OPTION_DEMOCRATIC_HISTORICAL:0 "Utopian - Historical"
+ RULE_OPTION_DEMOCRATIC_ALTERNATE:0 "Utopian - Alternate"
+ 
+ DR_US_DEMOCRATIC:1 "§Y$US|U$§! is a Utopianist: "
+ 
+ ERS_MENU_VK:0 "ERS в ВК"
+ 
+ democratic_drift:0 "Daily §CUtopianism§! Support"
+ democratic_acceptance:0 "Acceptance of §CUtopian§! Diplomacy"
+ fascism_drift:1 "Daily §1Supremacy§! Support"
+ fascism_acceptance:1 "Acceptance of §1Supremacist§! Diplomacy"
+ communism_drift:1 "Daily §RCommunism§! Support"
+ communism_acceptance:1 "Acceptance of §RCommunist§! Diplomacy"
+ neutrality_drift:1 "Daily §gNon-Aligned§! Support"
+ neutrality_acceptance:1 "Acceptance of §gNon-Aligned§! Diplomacy"
+ 
+ best_baker_in_town:0 "Food Dispenser"
+ party_maker:0 "The Model Cell of Society"
+ 
+ political_divisions:0 "Political Differences"
+ political_divisions_desc:0 "Changelings are fragmented: they lack common goals, and the Hegemony is cracking every day."
+
+ queen_argynnis:0 "Queen of Vraks\n- §LТитул правителя Вракса передаётся по наследству старшей дочери предыдущего монарха, то есть, во Враксе матриархальная монархия. Королева Вракса считается главнокомандующей армии и единственным авторитарным правителем. Примечательно, что в большинстве своём королевы Вракса были воинственны и амбициозны, что, скорее всего, передаётся по наследству§!."
+ queen_helvia:0 "Queen of Ditrysium\n- §LThe monarchy in Ditrysium is arranged... in an unusual way. Instead of transferring power by inheritance, power is transferred to the daughter or son of the monarch who has accumulated more capital and is considered the richest. But if the monarch of Ditrysium has only one offspring, then he will get the throne anyway. Because of such subtleties, the monarchy of Ditrysium is often called a §Yplutocracy§!.§!"
+ queen_aurantia:0 "Queen of Lyctida\n- §LThe monarchy in Lyctida does not seem to be distinguished by special subtleties. After the death of the previous ruler, power is transferred to the eldest offspring, regardless of his or her gender§!."
+ queen_yaria:0 "Queen of Soryth\n- §LВозможно, получить титул монарха Сорифа - самая тяжелая задача для чейнджлинга. Даже если будущая королева родилась в королевской семье, она должна пройти ряд испытаний, чтобы доказать свою готовность к правлению. В эти испытания входят проверка знаний в области математических, физических, юридических и социологических наук, знание основ философии и управления, а также базовые знания эзотерики. Только тот отпрыск из выводка королевской династии, который безупречно прошёл всё это, будет править.§!"
+ 
+ pony_race:0 "All-Pony Race"
+ 
+ pegasi_desc:0 "Pegasi."

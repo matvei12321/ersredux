@@ -1,0 +1,80 @@
+﻿l_english:
+    ###Countries###
+    CLO:0 "Governorship Cloudbury"
+    CLO_DEF:0"Governorship Cloudbury"
+    CLO_ADJ:0"Cloudby."
+    
+    
+    ###Personal###
+    CLO_adler_kippler:0"Adler Kippler"
+    
+    
+    ###Focus###
+    CLO_renewal_of_cloudbury:0"Land renewal"
+    CLO_renewal_of_cloudbury_desc:0"To reform land use, improve irrigation and fertilizers."
+    
+    CLO_development_of_craft_guilds:0"Development of craft guilds"
+    CLO_development_of_craft_guilds_desc:0"Support and expansion of craft associations to improve the quality of goods."
+    
+    CLO_construction_of_defensive_bastions:0"Construction of defensive bastions"
+    CLO_construction_of_defensive_bastions_desc:0"Construction of new fortresses and strengthening of existing fortifications."
+    
+    CLO_formation_of_militia:0"Cloudbury Militia Formation"
+    CLO_formation_of_militia_desc:0"Mobilisation and training of local militia to support the regular army."
+    
+    CLO_creation_of_patrol_fleet:0"Creation of a patrol fleet"
+    CLO_creation_of_patrol_fleet_desc:0"Construction of a small fleet to patrol coastal waters and protect trade routes."
+    
+    CLO_noble_councils_and_alliances:0"Noble councils and alliances"
+    CLO_noble_councils_and_alliances_desc:0"Holding meetings with local nobility to strengthen power and loyalty."
+    
+    CLO_investment_in_education_and_culture:0"Investments in education and culture"
+    CLO_investment_in_education_and_culture_desc:0"Creation of schools, libraries and cultural centers to improve literacy and morale."
+    
+    CLO_expansion_of_diplomatic_relations:0"Expansion of diplomatic relations"
+    CLO_expansion_of_diplomatic_relations_desc:0"Active establishment of alliances and trade agreements with neighboring dominions."
+    
+    CLO_great_fair_of_cloudbury:0 "The Great Cloudbury Fair"
+    CLO_great_fair_of_cloudbury_desc:0"Organization of a major fair to attract merchants and investors."
+    
+    
+    ###Events###
+    CLO.1.t:0"Land reform"
+    CLO.1.d:0"We have successfully implemented land use reform, improving yields."
+    CLO.1.a:0"Excellent!"
+    
+    CLO.2.t:0"Support for craft guilds"
+    CLO.2.d:0"Craft guilds have received new support, the production of materials has increased."
+    CLO.2.a:0"We continue in the same spirit"
+    
+    CLO.3.t:0"Organization of trade caravans"
+    CLO.3.d:0"Trade caravans are now better protected, the income from trade has increased."
+    CLO.3.a:0"Profitable and safe"
+    
+    CLO.4.t:0"Construction of bastions"
+    CLO.4.d:0"New defensive bastions have strengthened our positions."
+    CLO.4.a:0"Reliable"
+    
+    CLO.5.t:0"Militia formation"
+    CLO.5.d:0"The militia has been trained and is ready to support the army."
+    CLO.5.a:0"Ready to defend"
+    
+    CLO.6.t:0"Creation of a patrol fleet"
+    CLO.6.d:0"The patrol fleet has started guarding sea lanes, reducing piracy."
+    CLO.6.a:0"Safety first"
+    
+    CLO.7.t:0"Noble councils"
+    CLO.7.d:0"The nobles are now more closely connected with the government, loyalty has increased."
+    CLO.7.a:0"Unity is power"
+    
+    CLO.8.t:0"Investments in education"
+    CLO.8.d:0"Educational programs have improved morale and production efficiency."
+    CLO.8.a:0"Knowledge is power"
+    
+    CLO.9.t:0"Expanding Diplomacy"
+    CLO.9.d:0"New diplomatic ties have opened up trade and military opportunities."
+    CLO.9.a:0"Diplomacy is our way"
+    
+    CLO.10.t:0"The Great Fair"
+    CLO.10.d:0"The large fair attracted investors and raised the reputation of the dominion."
+    CLO.10.a:0"Celebrating success"

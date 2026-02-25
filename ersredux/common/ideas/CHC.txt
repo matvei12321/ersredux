@@ -1,0 +1,33 @@
+ideas = {
+
+	country = {
+		CHC_red_front_idea = {
+			allowed = {
+				always = no
+			}
+			remove_cost = -1
+			picture = red_strasserism_idea
+			targeted_modifier = {
+				tag = CHN
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = VRX
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = DTS
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = SRF
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = LYC
+				attack_bonus_against = 0.1
+			}
+		}
+	}
+}
+

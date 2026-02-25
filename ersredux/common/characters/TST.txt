@@ -1,0 +1,106 @@
+characters = {
+
+	TST_Miron={
+		name=TST_Miron
+		portraits={
+			civilian={
+				large="gfx/leaders/TST/TST_Miron.tga"
+			}
+		}
+		country_leader={
+			desc="TST_Miron_desc"
+			ideology=theocracy_subideology
+			traits={ TST_regent_leader }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		gender = male
+	}
+	
+	TST_ayakina={
+		name=TST_ayakina
+		portraits={
+			civilian={
+				large="gfx/leaders/TST/ayakina.tga"
+			}
+		}
+
+		gender = female
+	}
+	
+	TST_Armed_Sage={
+		name= TST_Armed_Sage
+		portraits={
+			civilian={
+				large="gfx/leaders/TST/TST_Armed_Sage.tga"
+			}
+		}
+		country_leader={
+			desc="TST_Armed_Sage_DESC"
+			ideology = marxism
+			traits = { TST_progressive_leader }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		gender = male
+	}
+	TST_masha_norushkina={
+		name= STG_masha_norushkina ####"Masha Norushkina"
+		portraits={
+			army={
+				large="gfx/leaders/TST/Vampirenok.tga"
+				small="gfx/leaders/TST/Vampirenok_idea.tga"
+			}
+		}
+		country_leader={
+			ideology = stalinism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = masha_norushkina
+			ledger = army
+			cost = 100
+
+			allowed = {
+				original_tag = TST
+			}
+			available = {
+				OR = {
+					has_government = communism
+				}
+			}
+			###desc = "STG_NESTOR_DESC"
+			traits = { army_chief_offensive_2 }
+			ai_will_do = {
+				factor = 3.0
+			}
+		}
+		corps_commander={
+			traits={ brilliant_strategist harsh_leader infantry_officer thestral_race_trait trait_mountaineer }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	TST_Stul ={
+		name= TST_Stul
+		portraits={
+			civilian={
+				large="gfx/leaders/TST/TST_Stul.tga"
+			}
+		}
+		country_leader={
+			desc="TST_Stul_DESC"
+			ideology = esotericism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		gender = male
+	}
+	
+}

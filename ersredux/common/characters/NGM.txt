@@ -1,0 +1,19 @@
+characters = {
+
+  NGM_maar_herald={
+    name=NGM_maar_herald
+    portraits={
+      civilian={
+        large="gfx/leaders/NGM/maar_herald.tga"
+      }
+    }
+    country_leader={
+      ###desc="kriger_desc"
+      ideology=maarite_minion
+      traits={ }
+      expire="1965.1.1.1"
+      id=-1
+    }
+    gender = male
+  }
+}

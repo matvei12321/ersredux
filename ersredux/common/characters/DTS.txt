@@ -1,0 +1,90 @@
+characters = {
+	DTS_queen_helvia = {
+		name=chn_queen_helvia
+		portraits={
+			army={
+				small="gfx/interface/ideas/chn_queen_helvia.dds"
+			}
+			civilian={
+				large="gfx/leaders/DTS/queen_helvia.dds"
+			}
+		}
+		allowed_civil_war = {
+			has_government = fascism
+		}	
+		
+		country_leader={
+			desc="POLITICS_HELVIA_DESC"
+			ideology=plutocracy
+			traits={ queen_helvia helvia_peaceful_life }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	DTS_queen_yaria = {
+		name = DTS_queen_yaria
+		portraits={
+				army={
+					small = "gfx/interface/ideas/advisors/DTS/DTS-yaria_queen.dds"
+				}
+		}		
+		advisor={
+			slot = political_advisor
+			idea_token = DTS_queen_yaria
+			ledger = civilian
+			allowed = {
+				AND = {
+						original_tag = DTS
+						has_completed_focus = DTS_peace.43
+				}
+			}
+			available = {
+				AND = {
+					has_country_leader = { character = DTS_queen_helvia ruling_only = yes }
+					has_completed_focus = DTS_peace.43
+				}
+			}
+			research_bonus = {
+				magical_tech = 0.07
+			}
+			traits = {
+				queen_yaria_dts
+			}
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	}
+	DTS_chrysalis_queen = {
+		name = DTS_Chrysalis_queen
+		portraits={
+				army={
+					small = "gfx/interface/ideas/advisors/DTS/DTS-Chrysalis_queen.dds"
+				}
+		}		
+		advisor={
+			slot = political_advisor
+			idea_token = DTS_chrysalis_queen
+			ledger = civilian
+			allowed = {
+				AND = {
+						original_tag = DTS
+						has_completed_focus = DTS_peace.52
+				}
+			}
+			available = {
+				AND = {
+					has_country_leader = { character = DTS_queen_helvia ruling_only = yes }
+					has_completed_focus = DTS_peace.52
+				}
+			}
+			traits = {
+				queen_chrysalis_dts
+			}
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	}
+}

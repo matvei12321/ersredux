@@ -1,0 +1,33 @@
+LYC_war_against_olenians = {
+	
+	allowed = {
+		tag = LYC
+		# has_country_flag = LYC_can_gass_all_over_olenia_flag
+	}
+	
+	visible = {
+		OLE = {
+			exists = yes
+		}
+	}
+	visible_when_empty = yes
+	priority = 200
+}
+
+LYC_social_reformists_actions = {
+	icon = GFX_decision_category_generic_propaganda
+	visible = {
+		has_idea = LYC_afterwar_protests
+	}
+	visible_when_empty = yes
+	priority = 250
+}
+
+LYC_upgrade_nuclear_category = {
+	icon = GFX_decision_category_generic_propaganda
+	visible = {
+		has_country_flag = lyc_can_improve_nuclear_tech_flag
+	}
+	visible_when_empty = yes
+	priority = 125
+}

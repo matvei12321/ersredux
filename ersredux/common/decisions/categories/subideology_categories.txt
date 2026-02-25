@@ -1,0 +1,17 @@
+subidieology_cat = {
+	
+	allowed = {
+		NOT = {
+			tag = CLT
+			tag = CLD
+			tag = EMP
+			has_country_flag = extermination_flag
+		}
+	}
+	icon = GFX_decision_category_generic_politics
+	visible = {
+	
+	}
+	priority = 60
+	visible_when_empty = no
+}

@@ -1,0 +1,59 @@
+scripted_gui = {
+	change_marks_container = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "change_marks_container"
+		visible = {
+			tag = YAC
+			has_government = communism
+            has_country_flag = yac_marks_changable_portrait_flag
+		}
+		effects = {
+			change_marks_container_button_click = {
+				random_list = {
+                    98 = {
+                        if = {
+                            limit = {
+                                check_variable = { yac_marks_portrait_variable < 1 }
+                            }
+                            add_to_variable = {
+                                yac_marks_portrait_variable = 1
+                            }
+                            YAC_marx_leader = {
+                                set_portraits = {
+                                    civilian = {
+                                        large = "gfx/leaders/YAC/marx_leader_hat.tga"
+                                    }
+                                }
+                            }
+                        }
+                    
+                        else_if = {
+                            limit = {
+                                check_variable = { yac_marks_portrait_variable = 1 }
+                            }
+                            clear_variable = yac_marks_portrait_variable
+                            YAC_marx_leader = {
+                                set_portraits = {
+                                    civilian = {
+                                        large = "gfx/leaders/YAC/marx_leader.tga"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    2 = {
+                        YAC_marx_leader = {
+                            set_portraits = {
+                                civilian = {
+                                    large = "gfx/leaders/YAC/marks_sus.tga"
+                                }
+                            }
+                         }
+                    }
+                }
+			}
+		}
+	}
+			
+}

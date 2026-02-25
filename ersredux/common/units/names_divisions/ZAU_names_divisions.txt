@@ -1,0 +1,211 @@
+ZAU_Inf_01 = { 
+	name = "Zauberstaat truppen"
+
+	for_countries = { ZAU }
+
+	can_use = { has_government = fascism }
+
+	division_types = { "infantry" "magical_infantry" }
+
+	fallback_name = "%d. Zauberstaat truppen"
+
+	##link_numbering_with = {  }
+
+	ordered = {
+		1 = { "%d. Zauberstaat truppen 'Andrealphus'" }
+		2 = { "%d. Zauberstaat truppen 'Asmodeus'" }
+		3 = { "%d. Zauberstaat truppen 'Purson'" }
+		4 = { "%d. Zauberstaat truppen 'Vine'" }
+		5 = { "%d. Zauberstaat truppen 'Balam'" }
+		6 = { "%d. Zauberstaat truppen 'Zagan'" }
+		7 = { "%d. Zauberstaat truppen 'Belial'" }
+		8 = { "%d. Zauberstaat truppen 'Agares'" }
+		9 = { "%d. Zauberstaat truppen 'Eligos'" }
+		10 = { "%d. Zauberstaat truppen 'Zepar'" }
+		11 = { "%d. Zauberstaat truppen 'Bathin'" }
+		12 = { "%d. Zauberstaat truppen 'Saleos'" }
+		13 = { "%d. Zauberstaat truppen 'Aim'" }
+		14 = { "%d. Zauberstaat truppen 'Bune'" }
+		15 = { "%d. Zauberstaat truppen 'Berith'" }
+		16 = { "%d. Zauberstaat truppen 'Astaroth'" }
+		17 = { "%d. Zauberstaat truppen 'Focator'" }
+		18 = { "%d. Zauberstaat truppen 'Vepar'" }
+		19 = { "%d. Zauberstaat truppen 'Vual'" }
+		20 = { "%d. Zauberstaat truppen 'Crocell'" }
+		21 = { "%d. Zauberstaat truppen 'Alaster'" }
+		22 = { "%d. Zauberstaat truppen 'Lusiferus'" }
+		23 = { "%d. Zauberstaat truppen 'Allocer'" }
+		24 = { "%d. Zauberstaat truppen 'Lilith'" }
+		25 = { "%d. Zauberstaat truppen 'Murmut'" }
+		26 = { "%d. Zauberstaat truppen 'Gremory'" }
+		27 = { "%d. Zauberstaat truppen 'Vapula'" }
+		28 = { "%d. Zauberstaat truppen 'Flauros'" }
+		29 = { "%d. Zauberstaat truppen 'Dantalion'" }
+		30 = { "%d. Zauberstaat truppen 'Vassdgo'" }
+		31 = { "%d. Zauberstaat truppen 'Sitri'" }
+		32 = { "%d. Zauberstaat truppen 'Ipos'" }
+	}
+}
+ZAU_MOT_01 = { 
+	name = "Zauberstaat motorisierte truppen"
+
+	for_countries = { ZAU }
+
+	# can_use = { always = yes } # don't use at all if all you have is always = yes -> better performance
+
+	division_types = { "motorized"  }
+
+	fallback_name = "%d. Zauberstaat motorisierte truppen"
+
+	link_numbering_with = { ZAU_MEC_01 ZAU_PAZ_01 }
+
+	ordered = { 
+		1 = { "%d. Zauberstaat Panzer Spezialeinheit 'Paimon'" }
+		2 = { "%d. Zauberstaat Panzer Spezialeinheit 'Baal'" }
+		3 = { "%d. Zauberstaat Panzer Spezialeinheit 'Rumpel'" }
+		4 = { "%d. Zauberstaat Panzer Spezialeinheit 'Gaap'" }
+		5 = { "%d. Zauberstaat Panzer Spezialeinheit 'Charly'" }
+		6 = { "%d. Zauberstaat Panzer Spezialeinheit 'Stolas'" }
+		7 = { "%d. Zauberstaat Panzer Spezialeinheit 'Stella'" }
+		8 = { "%d. Zauberstaat Panzer Spezialeinheit 'Orobas'" }
+		9 = { "%d. Zauberstaat Panzer Spezialeinheit 'Seir'" }
+		10 = { "%d. Zauberstaat Panzer Spezialeinheit 'Mammon'" }
+		11 = { "%d. Zauberstaat Panzer Spezialeinheit 'Blitzo'" }
+		12 = { "%d. Zauberstaat Panzer Spezialeinheit 'Aamon'" }
+		13 = { "%d. Zauberstaat Panzer Spezialeinheit 'Leraje'" }
+		14 = { "%d. Zauberstaat Panzer Spezialeinheit 'Vaggy'" }
+		15 = { "%d. Zauberstaat Panzer Spezialeinheit 'Nibiru'" }
+		16 = { "%d. Zauberstaat Panzer Spezialeinheit 'Naberius'" }
+		17 = { "%d. Zauberstaat Panzer Spezialeinheit 'Dremes'" }
+		18 = { "%d. Zauberstaat Panzer Spezialeinheit 'Ronove'" }
+		19 = { "%d. Zauberstaat Panzer Spezialeinheit 'Forneus'" }
+		20 = { "%d. Zauberstaat Panzer Spezialeinheit 'Marchosias'" }
+		21 = { "%d. Zauberstaat Panzer Spezialeinheit 'Phenex'" }
+		22 = { "%d. Zauberstaat Panzer Spezialeinheit 'Sabnock'" }
+		23 = { "%d. Zauberstaat Panzer Spezialeinheit 'Shax'" }
+		24 = { "%d. Zauberstaat Panzer Spezialeinheit 'Orias'" }
+	}
+}
+ZAU_MEC_01 = { 
+	name = "Zauberstaat mechanisierte truppen"
+
+	for_countries = { ZAU }
+
+	can_use = { has_government = fascism }
+
+	division_types = { "mechanized"  }
+
+	fallback_name = "%d. Zauberstaat mechanisierte truppen"
+
+	link_numbering_with = { ZAU_MOT_01 ZAU_PAZ_01 }
+	
+	
+	ordered = {
+		1 = { "%d. Zauberstaat Panzer Spezialeinheit 'Paimon'" }
+		2 = { "%d. Zauberstaat Panzer Spezialeinheit 'Baal'" }
+		3 = { "%d. Zauberstaat Panzer Spezialeinheit 'Rumpel'" }
+		4 = { "%d. Zauberstaat Panzer Spezialeinheit 'Gaap'" }
+		5 = { "%d. Zauberstaat Panzer Spezialeinheit 'Charly'" }
+		6 = { "%d. Zauberstaat Panzer Spezialeinheit 'Stolas'" }
+		7 = { "%d. Zauberstaat Panzer Spezialeinheit 'Stella'" }
+		8 = { "%d. Zauberstaat Panzer Spezialeinheit 'Orobas'" }
+		9 = { "%d. Zauberstaat Panzer Spezialeinheit 'Seir'" }
+		10 = { "%d. Zauberstaat Panzer Spezialeinheit 'Mammon'" }
+		11 = { "%d. Zauberstaat Panzer Spezialeinheit 'Blitzo'" }
+		12 = { "%d. Zauberstaat Panzer Spezialeinheit 'Aamon'" }
+		13 = { "%d. Zauberstaat Panzer Spezialeinheit 'Leraje'" }
+		14 = { "%d. Zauberstaat Panzer Spezialeinheit 'Vaggy'" }
+		15 = { "%d. Zauberstaat Panzer Spezialeinheit 'Nibiru'" }
+		16 = { "%d. Zauberstaat Panzer Spezialeinheit 'Naberius'" }
+		17 = { "%d. Zauberstaat Panzer Spezialeinheit 'Dremes'" }
+		18 = { "%d. Zauberstaat Panzer Spezialeinheit 'Ronove'" }
+		19 = { "%d. Zauberstaat Panzer Spezialeinheit 'Forneus'" }
+		20 = { "%d. Zauberstaat Panzer Spezialeinheit 'Marchosias'" }
+		21 = { "%d. Zauberstaat Panzer Spezialeinheit 'Phenex'" }
+		22 = { "%d. Zauberstaat Panzer Spezialeinheit 'Sabnock'" }
+		23 = { "%d. Zauberstaat Panzer Spezialeinheit 'Shax'" }
+		24 = { "%d. Zauberstaat Panzer Spezialeinheit 'Orias'" }
+	}
+}
+ZAU_PAZ_01 = { 
+	name = "Zauberstaat Panzer Spezialeinheit"
+
+	for_countries = { ZAU }
+
+	can_use = { has_government = fascism }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	fallback_name = "%d. Zauberstaat Panzer Spezialeinheit"
+
+	link_numbering_with = { ZAU_MEC_01 ZAU_MOT_01 }
+	
+
+	
+	ordered = { 
+		1 = { "%d. Zauberstaat Panzer Spezialeinheit 'Paimon'" }
+		2 = { "%d. Zauberstaat Panzer Spezialeinheit 'Baal'" }
+		3 = { "%d. Zauberstaat Panzer Spezialeinheit 'Rumpel'" }
+		4 = { "%d. Zauberstaat Panzer Spezialeinheit 'Gaap'" }
+		5 = { "%d. Zauberstaat Panzer Spezialeinheit 'Charly'" }
+		6 = { "%d. Zauberstaat Panzer Spezialeinheit 'Stolas'" }
+		7 = { "%d. Zauberstaat Panzer Spezialeinheit 'Stella'" }
+		8 = { "%d. Zauberstaat Panzer Spezialeinheit 'Orobas'" }
+		9 = { "%d. Zauberstaat Panzer Spezialeinheit 'Seir'" }
+		10 = { "%d. Zauberstaat Panzer Spezialeinheit 'Mammon'" }
+		11 = { "%d. Zauberstaat Panzer Spezialeinheit 'Blitzo'" }
+		12 = { "%d. Zauberstaat Panzer Spezialeinheit 'Aamon'" }
+		13 = { "%d. Zauberstaat Panzer Spezialeinheit 'Leraje'" }
+		14 = { "%d. Zauberstaat Panzer Spezialeinheit 'Vaggy'" }
+		15 = { "%d. Zauberstaat Panzer Spezialeinheit 'Nibiru'" }
+		16 = { "%d. Zauberstaat Panzer Spezialeinheit 'Naberius'" }
+		17 = { "%d. Zauberstaat Panzer Spezialeinheit 'Dremes'" }
+		18 = { "%d. Zauberstaat Panzer Spezialeinheit 'Ronove'" }
+		19 = { "%d. Zauberstaat Panzer Spezialeinheit 'Forneus'" }
+		20 = { "%d. Zauberstaat Panzer Spezialeinheit 'Marchosias'" }
+		21 = { "%d. Zauberstaat Panzer Spezialeinheit 'Phenex'" }
+		22 = { "%d. Zauberstaat Panzer Spezialeinheit 'Sabnock'" }
+		23 = { "%d. Zauberstaat Panzer Spezialeinheit 'Shax'" }
+		24 = { "%d. Zauberstaat Panzer Spezialeinheit 'Orias'" }
+	}
+}
+ZAU_Mnt_01 = { 
+	name = "Spezialgebirgstruppen"
+
+	for_countries = { ZAU }
+
+	# can_use = { always = yes } # don't use at all if all you have is always = yes -> better performance
+
+	division_types = { "mountaineers"  }
+
+	fallback_name = "%d. Spezialgebirgstruppen"
+
+	link_numbering_with = {  }
+
+	ordered = { 
+		1 = { "%d. Spezialgebirgstruppen 'Marbas'" }
+		2 = { "%d. Spezialgebirgstruppen 'Beleth'" }
+		3 = { "%d. Spezialgebirgstruppen 'Octavia'" }
+		4 = { "%d. Spezialgebirgstruppen 'Andras'" }
+		5 = { "%d. Spezialgebirgstruppen 'Kimaris'" }
+		6 = { "%d. Spezialgebirgstruppen 'Haagenti'" }
+		7 = { "%d. Spezialgebirgstruppen 'Decarabia'" }
+		8 = { "%d. Spezialgebirgstruppen 'Earls'" }
+		9 = { "%d. Spezialgebirgstruppen 'Furfur'" }
+		10 = { "%d. Spezialgebirgstruppen 'Malthus'" }
+	}
+}
+ZAU_ZBV_01 = { 
+	name = "Special Deployment Divisions"
+
+	for_countries = { ZAU }
+
+	# can_use = { always = yes } # don't use at all if all you have is always = yes -> better performance
+
+	division_types = { "infantry" }
+
+	fallback_name = "Division z.b.V %d"
+
+
+	
+}

@@ -1,0 +1,35 @@
+state={
+	id=110
+	name="STATE_110"
+
+	provinces={
+		809 874 875 877 920 977 7153 7945 8668 9881 10009 10094
+	}
+
+	manpower=674200
+	state_category = large_city
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = UNC
+		add_core_of = UNC
+
+		victory_points = { 874 3 }
+		victory_points = { 920 10 }
+		
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			dockyard = 6
+			
+			920 = {
+				naval_base = 2
+			}
+		}
+	}
+	
+	resources = {
+		steel = 7
+		oil = 12
+	}
+}

@@ -1,0 +1,252 @@
+on_actions = {
+	
+	on_monthly = {
+		effect = {
+			
+			
+
+
+
+
+			if = {
+				limit = {
+					has_war = yes
+					NOT = {
+						OR = {
+							has_global_flag = warcrimes_disabled
+						}
+					}
+				}
+				log = "[GetDateText]: [Root.GetName] warcrimes_monthly"
+				set_variable = {
+					warcrimes_from_chem_units = num_battalions_with_type@chem_infantry_unit
+				}
+				add_to_variable = {
+					ROOT_warcrimes_count = ROOT_warcrimes_increasing_var
+				}
+				add_to_variable = {
+					ROOT_warcrimes_count = warcrimes_from_chem_units
+				}
+				divide_variable = { warcrimes_from_chem_units = 2 }
+				if = {
+					limit = {
+						has_government = democratic
+					}
+					set_variable_to_random = {
+						variable = ROOT_warcrimes_increasing_var 
+						min = 0 
+						max = 20
+					}
+				}
+				
+				if = {
+					limit = {
+						has_government = fascism
+					}
+					set_variable_to_random = {
+						variable = ROOT_warcrimes_increasing_var 
+						min = 0 
+						max = 60
+					}
+				}
+				
+				if = {
+					limit = {
+						NOT = {
+							OR = {
+								has_government = democratic
+								has_government = fascism
+							}
+						}
+					}
+					set_variable_to_random = {
+						variable = ROOT_warcrimes_increasing_var 
+						min = 0 
+						max = 45
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							has_global_flag = warcrimes_influence_disabled
+							has_global_flag = warcrimes_disabled
+						}
+					}
+				}
+				
+				if = {
+					limit = {
+						check_variable = {
+							ROOT_warcrimes_count > 199
+						}
+					}
+					add_dynamic_modifier = {
+						modifier = fascism_warcrimes_count_low
+					}
+					every_other_country = {
+						limit = { NOT = { has_government = fascism } }
+						add_ai_strategy = {
+							type = antagonize
+							id = ROOT
+							value = 2
+						}
+					}
+				}
+				
+				if = {
+					limit = {
+						check_variable = {
+							ROOT_warcrimes_count > 499
+						}
+					}
+					remove_dynamic_modifier = {
+						modifier = warcrimes_count_low						
+					}
+					add_dynamic_modifier = {
+						modifier = warcrimes_count_medium
+					}
+					every_other_country = {
+						limit = { NOT = { has_government = fascism } }
+						add_ai_strategy = {
+							type = antagonize
+							id = ROOT
+							value = 5
+						}
+					}
+				}
+					
+				if = {
+					limit = {
+						check_variable = {
+							ROOT_warcrimes_count > 999
+						}
+					}
+					remove_dynamic_modifier = {
+						modifier = fascism_warcrimes_count_low				
+					}
+					remove_dynamic_modifier = {
+						modifier = fascism_warcrimes_count_medium					
+					}
+					add_dynamic_modifier = {
+						modifier = fascism_warcrimes_count_high
+					}
+					every_other_country = {
+						limit = { NOT = { has_government = fascism } }
+						add_ai_strategy = {
+							type = antagonize
+							id = ROOT
+							value = 10
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_monthly_ANR = {
+		effect = {
+			log = "[GetDateText]: ROOT: [Root.GetName] on_monthly_CHN"
+			if = {
+				limit = {
+					has_country_flag = now_drink_beer_flag 
+				}
+				add_to_variable = { ANR.beer_variable = ANR.beer_variable_production_var }
+			}
+			if = {
+				limit = {
+					check_variable = {
+						ANR.beer_variable < 1
+					}
+					has_completed_focus = ANR_civil_war_finale
+				}
+				add_stability = -0.05
+				add_war_support = -0.05
+			}
+		}
+	}
+	
+	on_monthly_HIP = {
+		effect = {
+			log = "[GetDateText]: ROOT: [Root.GetName] on_monthly_HIP"
+			hip_calculate_incident_chance = yes
+		}
+	}
+	
+	on_monthly_CLD = {
+		effect = {
+			log = "[GetDateText]: ROOT: [Root.GetName] on_monthly_CLD"
+			if = {
+				lmimt = {
+					has_war = yes
+				}
+				load_oob = "cold_army_monthly_oob"
+			}
+		}
+	}
+	
+	
+	
+	on_monthly_HRD = {
+		effect = {
+			log = "[GetDateText]: ROOT: [Root.GetName] on_monthly_HRD"
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				random_list = {
+					45 = { country_event = hrd.2 }
+					45 = { country_event = hrd.3 }
+					10 = {  }
+				}
+			}
+		}
+	}
+	
+	on_weekly_CHN = {
+		effect = {
+			log = "[GetDateText]: ROOT: [Root.GetName] on_weekly_CHN"
+			add_to_variable = { global.ers_chn_unity_var = global.chn_unity_weekly_var }
+			clamp_variable = {
+				var = global.ers_chn_unity_var
+				min = 0
+				max = 100
+			}
+		}
+	}
+	
+	on_weekly_OLE = {
+		effect = {
+			log = "[GetDateText]: ROOT: [Root.GetName] on_weekly_OLE"
+			if = {
+				limit = {
+					has_idea = OLE_always_gasing_idea
+				}
+				add_to_variable = {
+					global.extermination_var = 1
+				}
+			}
+			if = {
+				limit = {
+					has_idea = EZ_squad_731
+				}
+				add_to_variable = {
+					global.extermination_var = 0.5
+				}	
+			}
+		}
+	}
+	
+	on_weekly_HIP = {
+		effect = {
+			add_to_variable = { HIP_days_until_khiva_project_is_finished = -7 }
+			clamp_variable = {
+				var = HIP_days_until_khiva_project_is_finished
+				min = 0
+			}
+		}
+	}
+	
+}

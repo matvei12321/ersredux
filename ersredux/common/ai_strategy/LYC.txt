@@ -1,0 +1,53 @@
+lyc_destroy_olenians_strategy = {
+	allowed = {
+		tag = LYC
+	}
+	enable = {
+		always = yes
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = conquer
+		id = "OLE"
+		value = 200
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "OLE"
+		value = 200
+	}
+}
+stretegic_bombers_strategy = {
+	allowed = {
+		tag = LYC
+	}
+	enable = {
+		always = yes
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = unit_ratio
+		id = strategic_bomber
+		value = 80
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = fighter
+		value = 40
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = tactical_bomber
+		value = 5
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = cas
+		value = 5
+	}
+	
+}
+	
+	

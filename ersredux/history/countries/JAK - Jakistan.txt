@@ -1,0 +1,71 @@
+﻿capital = 274
+
+oob = "JAK_1007"
+
+set_research_slots = 2
+
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	melee_weapons = 1
+	melee_weapons1 = 1
+	pre_gw_artillery = 1
+	tech_recon = 1
+	tech_support = 1
+	tech_mountaineers = 1
+	yak_race = 1
+}
+actually_fix_weapon_techs = yes #THIS HAS TO BE CALLED IN EVERY HISTORY FILE RIGHT AFTER MAIN set_technology!
+
+add_opinion_modifier = { target = NAK modifier = yak_warkhan_opinion }
+add_opinion_modifier = { target = YAK modifier = yak_warkhan_opinion }
+add_opinion_modifier = { target = YAC modifier = yak_warkhan_opinion }
+add_opinion_modifier = { target = BAD modifier = yak_warkhan_opinion }
+add_opinion_modifier = { target = SHA modifier = yak_warkhan_opinion }
+add_opinion_modifier = { target = MNT modifier = yak_warkhan_opinion }
+
+
+set_popularities = {
+	fascism = 78
+	communism = 2
+	neutrality = 20
+}
+set_politics = {
+	ruling_party = fascism
+	last_election = "1000.10.10"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+add_ideas = {
+	agrarian_society
+	YAK_resilience
+	lack_of_scientists2
+	JAK_angry_jaks
+	poverty5
+	ers_yak_religion
+	better_science_base
+}
+
+set_stability = 0.5
+
+recruit_character = JAK_prince_bradford
+recruit_character = JAK_khan_bradford
+recruit_character = JAK_chairyak_bradford
+recruit_character = JAK_garrin_korai
+recruit_character = JAK_maihov_kerz
+recruit_character = JAK_khan_ainsley
+recruit_character = JAK_alastair
+recruit_character = JAK_prince_rutherford
+recruit_character = JAK_archibald
+recruit_character = JAK_not_a_jak
+recruit_character = JAK_dougal_khan
+recruit_character = JAK_irvine
+recruit_character = JAK_heroi
+recruit_character = JAK_skychief_agnes
+recruit_character = JAK_finbar
+recruit_character = JAK_boomer
+
+set_rule = {
+	can_generate_female_aces = yes
+}

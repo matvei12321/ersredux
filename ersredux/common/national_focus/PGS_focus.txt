@@ -1,0 +1,58 @@
+focus_tree = {
+	id = PGS_start_focus_tree
+	continuous_focus_position = { x = 1 y = 1750 }
+	country = {
+		factor = 0
+		modifier = {
+			add = 5
+			tag = PGS
+		}
+	}
+	shared_focus = PGS_warriors_first
+}
+
+focus_tree = {
+
+	id = pegasi_civil_war_1_focus_tree
+
+	continuous_focus_position = { x = 1 y = 1750 }
+	
+	country = {
+		factor = 0
+	}
+	
+	shared_focus = PGS_carnage
+}
+
+focus_tree = {
+
+	id = pegasi_civil_war_2_focus_tree
+
+	continuous_focus_position = { x = 1 y = 1750 }
+	
+	country = {
+		factor = 0
+	}
+	
+	shared_focus = PGS_carnage
+	shared_focus = PGS_civil_war_focus_started
+}
+
+focus_tree = {
+
+	id = pegasi_after_ciwil_war_hurricane
+
+	continuous_focus_position = { x = 1 y = 1750 }
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 0
+			tag = PGS
+		}
+	}
+	
+	shared_focus = PGS_economic_recovery
+	shared_focus = PGS_hurricane_political_aftermath
+	shared_focus = PGS_army_reforms
+}

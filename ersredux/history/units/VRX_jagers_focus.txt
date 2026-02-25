@@ -1,0 +1,58 @@
+﻿
+units = {
+	
+	division = {
+		#name = "Jager 4th Brigade"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 80
+		}
+		location = 722
+		division_template = "Jager Division"
+		start_experience_factor = 0.4
+	}
+		
+	division = {
+		#name = "Jager 3rd Brigade"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 86
+		}
+		location = 3880
+		division_template = "Jager Division"
+		start_experience_factor = 0.4
+		}
+		
+	division = {
+		#name = "Jager 3rd Brigade"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 86
+		}
+		location = 9711
+		division_template = "Jager Division"
+		start_experience_factor = 0.4
+		}
+		
+	division = {
+		#name = "Jager 3rd Brigade"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 86
+		}
+		location = 11690
+		division_template = "Jager Division"
+		start_experience_factor = 0.4
+		}
+		
+	division = {
+		#name = "Jager 3rd Brigade"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 86
+		}
+		location = 3777
+		division_template = "Jager Division"
+		start_experience_factor = 0.4
+		}
+}

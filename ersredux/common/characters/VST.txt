@@ -1,0 +1,22 @@
+characters={
+	VST_neptun_herbst= {
+		name=VST_neptun_herbst
+		portraits={
+			civilian={
+				large="gfx/leaders/VST/VST_neptun_herbst.tga"
+			}
+		}
+		
+		country_leader={
+			desc="Neptun_Herbst_desc"
+			ideology=neutrality_regency_council
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	
+	
+
+}

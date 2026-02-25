@@ -1,0 +1,11 @@
+scripted_gui = {
+	changeling_hehemony_info_container = {
+		window_name = "changeling_hehemony_info_container"
+		context_type = decision_category
+		
+		effects = {
+			
+		}
+	}
+			
+}

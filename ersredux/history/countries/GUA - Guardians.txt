@@ -1,0 +1,160 @@
+
+capital = 80
+
+set_research_slots = 1
+starting_train_buffer = 1
+
+save_global_event_target_as = guardians_target
+
+oob = "GUA_1007"
+
+add_ideas = { 	
+
+	tribal_society
+	civilian_economy
+	lack_of_scientists2
+	better_science_base
+	GUA_Pizdec_V_Pravitelstve
+	GUA_Pizdec_V_School
+	GUA_Pizdec_V_promke_infrastrukture
+	GUA_Nedolnie_voennie
+	GUA_Nedolnie_communisti
+	poverty4
+	astralotheology
+}
+
+recruit_character = GUA_leader
+recruit_character = GUA_Communistka
+recruit_character = GUA_Fascist
+recruit_character = GUA_democrat
+recruit_character = NGC_quisling
+recruit_character = GUA_Sovet
+recruit_character = GUA_Sovet1
+recruit_character = GUA_Sovet2
+
+
+set_technology = {
+	 
+	thestral_race = 1
+	melee_weapons = 1
+	melee_weapons1 = 1
+	infantry_weapons = 1
+	pre_gw_artillery = 1
+	tech_support = 1
+	tech_thestrals = 1
+}
+
+actually_fix_weapon_techs = yes #THIS HAS TO BE CALLED IN EVERY HISTORY FILE RIGHT AFTER MAIN set_technology!
+
+add_equipment_to_stockpile = {
+	type = melee_equipment_1
+	amount = 1000
+	producer = GUA
+}
+
+set_convoys = 6
+set_popularities = {
+    democratic = 1
+	communism = 33
+	fascism = 33
+	neutrality = 33
+}
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1.10.10"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+set_party_name = { 
+    ideology = neutrality 
+    long_name = GER_MY_NEW_PARTY_NAME_LONG1
+    name = GER_MY_NEW_PARTY_NAME_SHORT1
+  }
+  set_party_name = { 
+    ideology = fascism
+    long_name = GER_MY_NEW_PARTY_NAME_LONGQ
+    name = GER_MY_NEW_PARTY_NAME_SHORTQ
+  }
+  set_party_name = { 
+    ideology = communism
+    long_name = GER_MY_NEW_PARTY_NAME_LONGW
+    name = GER_MY_NEW_PARTY_NAME_SHORTW
+  }
+  set_party_name = { 
+    ideology = democratic
+    long_name = GER_MY_NEW_PARTY_NAME_LONGE
+    name = GER_MY_NEW_PARTY_NAME_SHORTE
+  }
+
+set_stability = 0.55
+set_war_support = 0.16
+
+	GUA_Fascist={
+		name=GUA_Fascist
+		portraits = {
+			civilian = {
+				large="gfx/leaders/GUA/GUA_Fascist.tga"
+			}
+}	 
+		country_leader = {
+			desc = "GUA_Fascist_desc"
+			ideology = raidism
+			traits = { }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		gender = male
+	}
+	
+	GUA_leader={
+		name=GUA_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/GUA/Ikskacin.tga"
+			}
+		}
+		country_leader={
+			desc="GUA_leader_desc"
+			ideology=tribal_council
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		gender = male
+	}
+}
+
+	GUA_Communistka={
+		name= GUA_Communistka
+		portraits={
+			civilian={
+				large="gfx/leaders/GUA/GUA_Communistka.tga"
+			}
+		}
+		country_leader={
+			desc=" GUA_Communistka_desc"
+			ideology=capital_communism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		gender = female
+	}
+
+	NGC_quisling={
+		name=NGC_quisling
+		portraits={
+			civilian={
+				large="gfx/leaders/GUA/NGC_quisling.tga"
+			}
+		}
+		country_leader={
+			desc="NGC_quisling_desc"
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		gender = male
+	}

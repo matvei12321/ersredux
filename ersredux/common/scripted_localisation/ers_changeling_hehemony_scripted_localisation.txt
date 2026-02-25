@@ -1,0 +1,318 @@
+
+defined_text = {
+	name = CHN_influence_on_hehemony
+	text = {
+		trigger = { 
+			AND = {
+				CHN = { exists = yes }
+				CHN = { has_idea = changelings_leader }
+			}
+		}
+		localization_key = CHN_leader_influence_tt
+	}
+	text = {
+		trigger = { 
+			AND = {
+				CHN = { exists = yes }
+				CHN = { has_idea = changelings_high_puppet }
+			}
+		}
+		localization_key = CHN_high_puppet_influence_tt
+	}
+	text = {
+		trigger = { 
+			AND = {
+				CHN = { exists = yes }
+				CHN = { has_idea = changelings_medium_puppet } 
+			}
+		}
+		localization_key = CHN_medium_puppet_influence_tt
+	}
+	text = {
+		trigger = { 
+			AND = {
+				CHN = { exists = yes }
+				CHN = { has_idea = changelings_low_puppet }
+			}
+		}
+		localization_key = CHN_low_puppet_influence_tt
+	}
+	text = {
+		trigger = { 
+			AND = {
+				CHN = { exists = yes }
+				CHN = { has_idea = changelings_no_puppet } 
+			}
+		}
+		localization_key = CHN_no_puppet_influence_tt
+	}
+	text = {
+		trigger = { CHN = { exists = no } }
+		localization_key = CHN_does_not_exist_tt
+	}
+}
+
+defined_text = {
+	name = VRX_influence_on_hehemony
+	text = {
+		trigger = { 
+			AND = {
+				VRX = { exists = yes }
+				VRX = { has_idea = changelings_leader }
+			}
+		}
+		localization_key = VRX_leader_influence_tt
+	}
+	text = {
+		trigger = { 
+			AND = {
+				VRX = { exists = yes }
+				VRX = { has_idea = changelings_high_puppet }
+			}
+		}
+		localization_key = VRX_high_puppet_influence_tt
+	}
+	text = {
+		trigger = { 
+			AND = {
+				VRX = { exists = yes }
+				VRX = { has_idea = changelings_medium_puppet } 
+			}
+		}
+		localization_key = VRX_medium_puppet_influence_tt
+	}
+	text = {
+		trigger = { 
+			AND = {
+				VRX = { exists = yes }
+				VRX = { has_idea = changelings_low_puppet }
+			}
+		}
+		localization_key = VRX_low_puppet_influence_tt
+	}
+	text = {
+		trigger = { 
+			AND = {
+				VRX = { exists = yes }
+				VRX = { has_idea = changelings_no_puppet } 
+			}
+		}
+		localization_key = VRX_no_puppet_influence_tt
+	}
+	text = {
+		trigger = { VRX = { exists = no } }
+		localization_key = VRX_does_not_exist_tt
+	}
+}
+
+defined_text = {
+	name = DTS_influence_on_hehemony
+	text = {
+		trigger = { 
+			AND = {
+				DTS = { exists = yes }
+				DTS = { has_idea = changelings_leader }
+			}
+		}
+		localization_key = DTS_leader_influence_tt
+	}
+	text = {
+		trigger = { 
+			AND = {
+				DTS = { exists = yes }
+				DTS = { has_idea = changelings_high_puppet }
+			}
+		}
+		localization_key = DTS_high_puppet_influence_tt
+	}
+	text = {
+		trigger = { 
+			AND = {
+				DTS = { exists = yes }
+				DTS = { has_idea = changelings_medium_puppet } 
+			}
+		}
+		localization_key = DTS_medium_puppet_influence_tt
+	}
+	text = {
+		trigger = { 
+			AND = {
+				DTS = { exists = yes }
+				DTS = { has_idea = changelings_low_puppet }
+			}
+		}
+		localization_key = DTS_low_puppet_influence_tt
+	}
+	text = {
+		trigger = { 
+			AND = {
+				DTS = { exists = yes }
+				DTS = { has_idea = changelings_no_puppet } 
+			}
+		}
+		localization_key = DTS_no_puppet_influence_tt
+	}
+	text = {
+		trigger = { DTS = { exists = no } }
+		localization_key = DTS_does_not_exist_tt
+	}
+}
+
+defined_text = {
+	name = LYC_influence_on_hehemony
+	text = {
+		trigger = { 
+			AND = {
+				LYC = { exists = yes }
+				LYC = { has_idea = changelings_leader }
+			}
+		}
+		localization_key = LYC_leader_influence_tt
+	}
+	text = {
+		trigger = { 
+			AND = {
+				LYC = { exists = yes }
+				LYC = { has_idea = changelings_high_puppet }
+			}
+		}
+		localization_key = LYC_high_puppet_influence_tt
+	}
+	text = {
+		trigger = { 
+			AND = {
+				LYC = { exists = yes }
+				LYC = { has_idea = changelings_medium_puppet } 
+			}
+		}
+		localization_key = LYC_medium_puppet_influence_tt
+	}
+	text = {
+		trigger = { 
+			AND = {
+				LYC = { exists = yes }
+				LYC = { has_idea = changelings_low_puppet }
+			}
+		}
+		localization_key = LYC_low_puppet_influence_tt
+	}
+	text = {
+		trigger = { 
+			AND = {
+				LYC = { exists = yes }
+				LYC = { has_idea = changelings_no_puppet } 
+			}
+		}
+		localization_key = LYC_no_puppet_influence_tt
+	}
+	text = {
+		trigger = { LYC = { exists = no } }
+		localization_key = LYC_does_not_exist_tt
+	}
+}
+
+defined_text = {
+	name = SRF_influence_on_hehemony
+	text = {
+		trigger = { 
+			AND = {
+				SRF = { exists = yes }
+				SRF = { has_idea = changelings_leader }
+			}
+		}
+		localization_key = SRF_leader_influence_tt
+	}
+	text = {
+		trigger = { 
+			AND = {
+				SRF = { exists = yes }
+				SRF = { has_idea = changelings_high_puppet }
+			}
+		}
+		localization_key = SRF_high_puppet_influence_tt
+	}
+	text = {
+		trigger = { 
+			AND = {
+				SRF = { exists = yes }
+				SRF = { has_idea = changelings_medium_puppet } 
+			}
+		}
+		localization_key = SRF_medium_puppet_influence_tt
+	}
+	text = {
+		trigger = { 
+			AND = {
+				SRF = { exists = yes }
+				SRF = { has_idea = changelings_low_puppet }
+			}
+		}
+		localization_key = SRF_low_puppet_influence_tt
+	}
+	text = {
+		trigger = { 
+			AND = {
+				SRF = { exists = yes }
+				SRF = { has_idea = changelings_no_puppet } 
+			}
+		}
+		localization_key = SRF_no_puppet_influence_tt
+	}
+	text = {
+		trigger = { SRF = { exists = no } }
+		localization_key = SRF_does_not_exist_tt
+	}
+}
+
+defined_text = {
+	name = VST_influence_on_hehemony
+	text = {
+		trigger = { 
+			AND = {
+				VST = { exists = yes }
+				VST = { has_idea = changelings_leader }
+			}
+		}
+		localization_key = VST_leader_influence_tt
+	}
+	text = {
+		trigger = { 
+			AND = {
+				VST = { exists = yes }
+				VST = { has_idea = changelings_high_puppet }
+			}
+		}
+		localization_key = VST_high_puppet_influence_tt
+	}
+	text = {
+		trigger = { 
+			AND = {
+				VST = { exists = yes }
+				VST = { has_idea = changelings_medium_puppet } 
+			}
+		}
+		localization_key = VST_medium_puppet_influence_tt
+	}
+	text = {
+		trigger = { 
+			AND = {
+				VST = { exists = yes }
+				VST = { has_idea = changelings_low_puppet }
+			}
+		}
+		localization_key = VST_low_puppet_influence_tt
+	}
+	text = {
+		trigger = { 
+			AND = {
+				VST = { exists = yes }
+				VST = { has_idea = changelings_no_puppet } 
+			}
+		}
+		localization_key = VST_no_puppet_influence_tt
+	}
+	text = {
+		trigger = { VST = { exists = no } }
+		localization_key = VST_does_not_exist_tt
+	}
+}

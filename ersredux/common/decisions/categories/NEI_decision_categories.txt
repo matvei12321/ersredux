@@ -1,0 +1,13 @@
+NEI_category_cat = {
+	icon = celestia_cat
+	allowed = {
+		tag = NEI
+		
+	}
+	
+	visible_when_empty = yes
+	visible = {
+	
+	}
+	priority = 1000
+}

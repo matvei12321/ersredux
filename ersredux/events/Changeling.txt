@@ -1,0 +1,451 @@
+﻿add_namespace = chn
+
+country_event = {   #### Talk to Helvia
+	id = chn.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event chn.1"}
+	title = chn.1.t
+	desc = chn.1.d
+	picture = GFX_event_swarm
+
+	is_triggered_only = yes
+
+	option = {
+		name = chn.1.a
+		add_political_power = 10
+	}
+}
+
+country_event = {   #### Talk to Argynnis
+	id = chn.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event chn.2"}
+	title = chn.2.t
+	desc = chn.2.d
+	picture = GFX_event_swarm
+
+	is_triggered_only = yes
+
+	option = {
+		name = chn.2.a
+		add_political_power = 10
+	}
+}
+
+country_event = {   #### Talk to Yharia
+	id = chn.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event chn.3"}
+	title = chn.3.t
+	desc = chn.3.d
+	picture = GFX_event_swarm
+
+	is_triggered_only = yes
+
+	option = {
+		name = chn.3.a
+		add_political_power = 10
+	}
+}
+
+country_event = {   #### Talk to Aurantia
+	id = chn.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event chn.4"}
+	title = chn.4.t
+	desc = chn.4.d
+	picture = GFX_event_swarm
+
+	is_triggered_only = yes
+
+	option = {
+		name = chn.4.a
+		add_political_power = 10
+	}
+}
+
+country_event = {   #### Sinovial Does Something
+	id = chn.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event chn.5"}
+	title = chn.5.t
+	desc = chn.5.d
+	picture = GFX_event_swarm
+
+	is_triggered_only = yes
+
+	option = {
+		name = chn.5.a
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.055
+		}
+		SRF = {
+			add_manpower = -8
+		}
+	}
+}
+
+country_event = {   #### Sinovial Does Something
+	id = chn.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event chn.6"}
+	title = chn.6.t
+	desc = chn.6.d
+	picture = GFX_event_swarm
+
+	is_triggered_only = yes
+
+	option = {
+		name = chn.6.a
+		army_experience = -5
+		custom_effect_tooltip = event_chn_6_tt
+		
+	}
+	option = {
+		name = chn.6.b
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.05
+		}
+		retire_character = CHN_trimmel
+	}
+}
+country_event = {   #### Synovial takes over {CIVIL WAR ONLY}
+	id = chn.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event chn.7"}
+	title = chn.7.t
+	desc = chn.7.d
+	picture = GFX_event_swarm
+
+	is_triggered_only = yes
+
+	option = {
+		name = chn.7.a
+		ai_chance = { factor = 2 }
+		add_war_support = -0.02
+	}
+	option = {
+		name = chn.7.b
+		ai_chance = { factor = 3 }
+		set_politics = {
+			ruling_party = neutrality
+		}
+		add_stability = -0.05
+		add_war_support = 0.15
+		custom_effect_tooltip = chn_7_tt
+		hidden_effect = {
+			load_oob = "CHN_synovial_divisions"
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.2
+		}
+		add_ideas = tot_economic_mobilisation
+		add_ideas = scraping_the_barrel
+	}
+}
+
+country_event = {   #### royal dinner
+	id = chn.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event chn.8"}
+	title = chn.8.t
+	desc = chn.8.d
+	picture = GFX_event_chrysalis_vs_argynnis
+
+	is_triggered_only = yes
+
+	option = {
+		name = chn.8.a
+		add_stability = -0.005
+		country_event = chn.9
+	}
+	
+}
+
+country_event = {   #### royal dinner = part 2
+	id = chn.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event chn.9"}
+	title = chn.9.t
+	desc = chn.9.d
+	picture = GFX_event_changeling_crystaller
+
+	is_triggered_only = yes
+
+	option = {
+		name = chn.9.a
+		ai_chance = { factor = 10 }
+		complete_national_focus = CHN_light_ruling
+		trigger = {
+			tag = CHN
+		}
+	}
+	option = {
+		name = chn.9.b
+		ai_chance = { factor = 0 }
+		complete_national_focus = CHN_heavy_ruling
+		trigger = {
+			tag = CHN
+		}
+	}
+	option = {
+		name = chn.9.c
+		ai_chance = { factor = 0 }
+		complete_national_focus = CHN_evolution_revolution
+		trigger = {
+			tag = CHN
+		}
+	}
+	option = {
+		name = chn.9.e
+		ai_chance = { factor = 0 }
+		trigger = {
+			NOT = {
+				tag = CHN
+			}
+		}
+	}
+}
+
+country_event = {		### Removing Argynnis
+	id = chn.10	
+	immediate = {log = "[Root.GetName]: event ers_chn.10"}
+	title = chn.10.t
+	desc = chn.10.d
+	
+	is_triggered_only = yes
+
+	option = {
+		name = chn.10.a
+		VRX = {
+			swap_ideas = { 
+				remove_idea = changelings_low_puppet
+				add_idea = changelings_medium_puppet
+			}
+		}
+		add_country_leader_role = {
+			character = VRX_queen_arantida
+				promote_leader = yes
+				
+			country_leader = {
+					expire = "1965.1.1"
+					ideology = nazism
+				traits = { }
+			}
+		}
+	}
+}
+
+country_event = {		### Heavy ruling - Wermacht choise
+	id = chn.11	
+	immediate = {log = "[Root.GetName]: event ers_chn.11"}
+	title = chn.11.t
+	desc = chn.11.d
+	
+	is_triggered_only = yes
+
+	option = {
+		name = chn.11.a
+		add_ideas = ers_CHN_army_influence_low
+	}
+	
+	option = {
+		name = chn.11.b
+		add_ideas = ers_CHN_army_influence_medium
+		add_political_power = -50
+	}
+	
+	option = {
+		name = chn.11.c
+		add_ideas = ers_CHN_army_influence_high
+		add_political_power = -100
+	}
+}
+
+country_event = {   #### intervention in Vraks
+	id = chn.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event chn.12"}
+	title = chn.12.t
+	desc = chn.12.d
+	picture = GFX_event_changeling_crystaller
+
+	is_triggered_only = yes
+
+	option = {
+		name = chn.12.a
+		ai_chance = { factor = 4 }
+		VRX = {
+			leave_faction = yes
+			end_puppet_this = yes
+		}
+		hidden_effect = { 
+			VRX = { scoped_sound_effect = "soundeffect_march" }
+			CHN = { scoped_sound_effect = "soundeffect_march" }
+		}
+		CHN = {
+			create_wargoal = { type = annex_everything target = VRX }
+		}
+	}
+	option = {
+		name = chn.12.b
+		ai_chance = { factor = 0 }
+		CHN = {
+			annex_country = {
+				target = VRX
+			}
+		}
+	}
+}
+
+country_event = {   #### Vesalipolis attacks us
+	id = chn.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event chn.9"}
+	title = chn.13.t
+	desc = chn.13.d
+	picture = GFX_event_changeling_crystaller
+
+	is_triggered_only = yes
+
+	option = {
+		name = chn.13.a
+		ai_chance = { factor = 2 }
+		ROOT = {
+			leave_faction = yes
+			end_puppet_this = yes
+		}
+		CHN = {
+			add_war_support = 0.01
+			create_wargoal = {
+				target = ROOT
+				type = annex_everything
+				expire = 0
+			}
+		}
+		
+	}
+	option = {
+		name = chn.13.b
+		ai_chance = { factor = 1 }
+		CHN = {
+			annex_country = {
+				target = ROOT
+			}
+		}
+	}
+	option = {
+		name = chn.13.c
+		ai_chance = { factor = 1 }
+		CHN = {
+			if = {
+				limit = {
+					has_dlc = "Together for Victory"
+				}
+				set_autonomy = {
+					target = ROOT
+					autonomy_state = autonomy_reichsprotectorate
+				}
+			}
+			else = {
+				puppet = ROOT
+			}
+
+		}
+	}
+}
+
+country_event = {				### Chrizzalis B-Day - Part 1
+	id = chn.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event chn.14"}
+	title = chn.14.t
+	desc = chn.14.d
+	picture = GFX_event_swarm
+
+	trigger = {
+		tag = CHN
+		has_war = no
+	}
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 100
+	}
+
+	option = {
+		name = chn.14.a
+		country_event = chn.15
+	}
+}
+country_event = {				### Chrizzalis B-Day - Part 2
+	id = chn.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event chn.15"}
+	title = chn.15.t
+	desc = chn.15.d
+	picture = GFX_event_swarm
+
+	is_triggered_only = yes
+
+	option = {
+		name = chn.15.a
+		add_political_power = -5
+	}
+}
+
+country_event = {				### Offer to unify from peaceful Chrizzalis
+	id = chn.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event chn.15"}
+	title = chn.16.t
+	desc = chn.16.d
+	picture = GFX_event_chrysalis_dreams
+
+	is_triggered_only = yes
+
+	option = {
+		name = chn.16.a
+		ai_chance = { factor = 10 }
+		add_dynamic_modifier = { modifier = CHN_unification_commite_modifier }
+		custom_effect_tooltip = chn_unification_commite_bonus_for_puppets_tt
+		add_to_variable = { CHN_unification_commite_consumer_goods_var = -0.05}
+		add_to_variable = { CHN_unification_commite_production_speed_buildings_factor_var = 0.05 }
+		add_to_variable = { CHN_unification_commite_civilian_factory_use_var = -3 }
+		add_to_variable = { CHN_unification_commite_political_power_factor_var = 0.05 }
+		
+		CHN = {
+			add_to_variable = { CHN_unification_commite_consumer_goods_var = 0.05 }
+			add_to_variable = { CHN_unification_commite_production_speed_buildings_factor_var = -0.05 }
+			add_to_variable = {	CHN_unification_commite_civilian_factory_use_var = 3 }
+			add_to_variable = { CHN_unification_commite_political_power_factor_var = -0.05 }
+			if = {
+				limit = {
+					has_dlc = "Together for Victory"
+				}
+				set_autonomy = {
+					target = ROOT
+					autonomy_state = autonomy_reichskommissariat
+				}
+				else = {
+					puppet = ROOT
+				}
+			}
+		}
+	}
+
+	option = {
+		name = chn.16.b
+		ai_chance = { factor = 0 }
+		CHN = {
+			country_event = {
+				id = chn.17 days = 5
+			}
+		}
+	}
+}
+
+country_event = {				### 
+	id = chn.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event chn.15"}
+	title = chn.17.t
+	desc = chn.17.d
+	picture = GFX_event_swarm
+
+	is_triggered_only = yes
+
+	option = {
+		name = chn.17.a
+		add_political_power = -50
+	}
+}

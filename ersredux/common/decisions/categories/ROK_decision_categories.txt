@@ -1,0 +1,29 @@
+ROK_politics = {
+	
+	icon = GFX_decision_cat_rok_star
+	
+	allowed = {
+		tag = ROK
+	}
+	visible = {
+		tag = ROK
+		has_government = democratic
+	}
+	visible_when_empty = yes
+	priority = 200
+}
+
+ROK_special_democratic_decisions = {
+	
+	icon = GFX_decision_category_generic_political_actions
+
+	allowed = {
+		tag = ROK
+	}
+	visible = {
+		tag = ROK
+		has_government = democratic
+	}
+	visible_when_empty = yes
+	priority = 199
+}

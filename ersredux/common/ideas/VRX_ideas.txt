@@ -1,0 +1,298 @@
+ideas = {
+
+	country = {
+	VRX_synthetic_armament = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			picture = WRX_oblig
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = 0.15
+			}
+		}
+	VRX_banksus = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			picture = WRX_zoloto
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = 0.25
+			}
+		}
+	VRX_GAZi = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = biohazard
+			removal_cost = -1
+			modifier = {
+			civilian_factory_use = -5
+			}
+			
+		}
+	VRX_Arms_race = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = WRX_gonca
+			removal_cost = -1
+			modifier = {
+			civilian_factory_use = 3
+			MONTHLY_POPULATION = -0.5
+			}
+			research_bonus = {
+				infantry_weapons = 0.1
+				chemical_warfare_category = 0.10
+				artillery = 0.1
+			}
+			
+		}
+	VRX_Opiym = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = VRX_warrior_code
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.15
+				MONTHLY_POPULATION = -0.1
+			}
+			
+		}
+	 	VRX_Zatmenie = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = VRX_warrior_code
+			removal_cost = -1
+			modifier ={
+				war_support_factor = 0.50
+			}
+			targeted_modifier = {
+				tag = CHN
+				attack_bonus_against = 0.50
+			}
+			
+		}
+		
+		VRX_Tixo = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = VRX_warrior_code
+			removal_cost = -1
+			modifier ={
+
+				ai_call_ally_desire_factor = -2500
+				ai_join_ally_desire_factor = -2500
+			}
+			
+		}
+		
+		VRX_military_hive = {
+
+			allowed = {
+				always = no
+			}
+
+			picture = VRX_military_hive
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier ={
+			    ai_call_ally_desire_factor = -2500
+				ai_join_ally_desire_factor = -2500
+				industrial_capacity_factory = 0.2
+				surrender_limit = 0.45
+				weekly_casualties_war_support = 0.001
+				weekly_convoys_war_support= 0.001
+				weekly_bombing_war_support= 0.001
+			}
+			
+			targeted_modifier = {
+				tag = LYC
+				mic_to_target_factor = 0.075
+			}
+			targeted_modifier = {
+				tag = CHN
+				mic_to_target_factor = 0.075
+			}
+			targeted_modifier = {
+				tag = DTS
+				mic_to_target_factor = 0.075
+			}
+			targeted_modifier = {
+				tag = SRF
+				mic_to_target_factor = 0.075
+			}
+		}
+		VRX_military_hive1 = {
+
+			allowed = {
+				always = no
+			}
+
+			picture = VRX_military_hive
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier ={
+			    ai_call_ally_desire_factor = -2500
+				ai_join_ally_desire_factor = -2500
+				industrial_capacity_factory = 0.2
+				surrender_limit = 0.45
+				weekly_casualties_war_support = 0.001
+				weekly_convoys_war_support= 0.001
+				weekly_bombing_war_support= 0.001
+			}
+		}
+		
+		VRX_superiority = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = VRX_warrior_code
+			removal_cost = -1
+			modifier ={
+				war_support_factor = 0.05
+				ai_call_ally_desire_factor = -2500
+				ai_join_ally_desire_factor = -2500
+			}
+			
+		}
+		
+		VRX_no_local_business = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+				tag = VRX
+			}
+			
+			picture = WRX_bisnes
+			
+			modifier ={
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = -0.1
+				stability_factor = -0.05
+				consumer_goods_factor = -0.02
+				production_factory_start_efficiency_factor = 0.1
+			}
+			
+		}
+		
+		VRX_army_org = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+				tag = VRX
+			}
+
+			picture = WRX_top
+			
+			modifier ={
+				LOCAL_ORG_REGAIN = 0.05
+				ARMY_ORG_FACTOR = 0.1
+				ARMY_LEADER_COST_FACTOR = 0.1
+				COMMAND_POWER_GAIN = 0.5
+				ARMY_CORE_DEFENCE_FACTOR = 0.1
+			}
+			
+		}
+		
+		VRX_jagers_of_vraks = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+				tag = VRX
+			}
+
+			picture = WRX_egers
+			
+			modifier ={
+				special_forces_min = 24
+				SPECIAL_FORCES_NO_SUPPLY_GRACE = 48
+				SPECIAL_FORCES_ATTACK_FACTOR = 0.1
+				SPECIAL_FORCES_DEFENCE_FACTOR = 0.1
+				political_power_gain = -0.45
+				SPECIAL_FORCES_CAP = 0.1
+				SPECIAL_FORCES_TRAINING_TIME_FACTOR = 0.1
+			}
+			
+		}
+		
+		VRX_losers = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+				tag = VRX
+			}
+
+			picture = CHN_changeling_school_of_war
+			
+			modifier ={
+				stability_factor = -0.2
+				war_support_factor = -0.5
+				political_power_factor - 0.5
+			}
+			
+		}
+	}
+}

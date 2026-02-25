@@ -1,0 +1,116 @@
+﻿l_english:
+    ###Country###
+    REF:0 "River Federation"
+    REF_DEF:0"River Federation"
+    REF_ADJ:0"River.Fed."
+    
+    ###Alliance###
+    river_coalition_union:0 "River Coalition"
+    
+    ###Characters###
+    REF_Pumpkin_swirl:0"President Pumpkin Swirl"
+    REF_Zeren:0"Zeren"
+    REF_Zeren_desc:0"A merchant, businessman and the Minister of Economy of the River Federation. The origin of this zebra is not exactly known, but the first mentions of him appeared in 950, as a merchant from the little-known lands of Zebrika. In 959, Zeren settled in the relatively independent part of the River Federation, Kaza. In the city of Firport, he founded his company and began a rapid and successful expansion of his business throughout the River Federation. In 967, Zeren was known as the president of Kaza, but it is still not known for sure how he won the presidential election. In 969, the people of Kaza felt all the pain of having a merchant-industrialist president. In 975, Zeren is known among the people of the River Federation as unprincipled industrialist and corrupt official in the same year he becomes the Minister of the River Federation. Further his history does not shine with anything except constant sieges in the courts and eternal battles with communist elements (including those arriving from the Imperial Federation) in the River Federation. In 1007 Zeren is also the Minister of Economy of the River Federation, and his company "Zeren-Industries" also continues its expansion in all conceivable and inconceivable ways." REF_Estern:0"Estern"
+    REF_Estern_desc:0"A pony who grew up in the poor areas of a large city of the River Federation, Svetigrad. Born in 970, he did not know his relatives and grew up in an orphanage. In 980, he ran away from the orphanage in search of knowledge (Estern always envied ponies and not only them, since they knew how to write and count correctly). In the same year, Estern comes to a kind old griffin who took him under his wing, he noted his ability to study and assimilate knowledge. In 985, Estern, under the wing of the old man, finishes the entire school program of the River Federation, and immediately enters the University of Rechnokgrad in the political science department. In 990, he successfully completes the university program and also enters a second education as a teacher, which he finishes externally in 986. After that, he works for the next 5 years in educational institutions, constantly noting that education in the River Federation is at an extremely low level. In 992, he joins the ruling party of utopianism of the River Federation. Since 1000, he has been the Minister of Education of the River Federation."
+    REF_Ulf_Indor:0"Ulf Indor"
+    REF_Ulf_Indor_desc:0"Born in 960, Rechkograd. Comes from a family of hereditary military men. In 980, he joins the armed forces of the River Republic, participated in the suppression of the rebellions in the Grifian Sich of 984. Not corrupt. In 990, he ends his service with the rank of major general. In 994, he founded the UfA party - Union for All. This party also adheres to the ideals of Karfin democracy, with some amendments. Did not win the presidential elections. "
+    
+    ###National spirits###
+    unstable_federation:0"Unstable Federation"
+    unstable_federation_desc:0"Although the River Federation was formed in 925 with the mediation of the Imperial Federation, it was united only in the center and in the east, and otherwise only on paper. In the outer regions of the Federation, separatist sentiments are gaining."
+    unstable_federation1:0"Unstable Federation"
+    unstable_federation1_desc:0"Although the River Federation was formed in 925 with the mediation of the Imperial Federation, it was united only in the center and in the east, and otherwise only on paper. In the outer regions of the Federation, separatist sentiments are gaining."
+    unstable_federation2:0"Unstable Federation"
+    unstable_federation2_desc:0"Although the River Federation was formed in 925 with the mediation of the Imperial Federation, it was only united in the center and east, and otherwise only on paper. In the outer regions of the Federation, separatist sentiments are gaining."
+    unstable_federation3:0"Unstable Federation"
+    unstable_federation3_desc:0"Although the River Federation was formed in 925 with the mediation of the Imperial Federation, it was only united in the center and east, and otherwise only on paper. In the outer regions of the Federation, separatist sentiments are gaining."
+    unstable_federation4:0"Unstable Federation"
+    unstable_federation4_desc:0"Although the River Federation was formed in 925 with the mediation of the Imperial Federation, it was united only in the center and in the east, and otherwise only on paper. In the outer regions of the Federation, separatist sentiments are gaining."
+    unstable_federation5:0"Unstable Federation"
+    unstable_federation5_desc:0"Although the River Federation was formed in 925 with the mediation of the Imperial Federation, it was united only in the center and in the east, and otherwise only on paper. In the outer regions of the Federation, separatist sentiments are gaining."
+    bad_industry:0"Underdeveloped regions"
+    bad_industry_desc:0"Almost all of the industry of the River Federation is concentrated in the center - the River Republic, while the industry in the outer regions leaves much to be desired."
+    beacon_utopism:0"Beacon of Utopianism"
+    beacon_utopism_desc:0"The River Federation is the only major country that adheres to Utopian ideas, or more precisely, the Karfinian democracy."army_republic:0"Армия республики - децентрализовано"
+    army_republic_desc:0"The River Federation does not have a centralized army. Since the unification in 925, it was established that the defense of each region that joined the Federation would be handled by the army of the state that joined the Federation."
+    guardians_federation:0"Guardians of the Federation"
+    guardians_federation_desc:0"Nimbusia is one of the first countries that wanted to found the River Federation, and the first to stand up for the defense of the Federation as a whole, and the Karfin democracy in particular. Nimbusia has always been famous for the professionalism of its combat units and has never let the Federation down."
+    fleet_federation:0"Federation Fleet"
+    fleet_federation_desc:0"The Federation Fleet is made up of the small ships of Nimbusia and the large fleet of Bacara, but the government of Bacara, which joined the Federation, never gave up control of the fleet to the single government of the Federation. This is explained by the fact that in the Bacarian military structure, the fleet is part of the army."
+    corruption_kaza_ref:0"SEZ"
+    corruption_kaza_ref_desc:0"The Kaza Special Economic Zone provides a pleasant addition to the budget, the other side of this coin is that we have to tolerate this old man Zeren."
+    corruption_kaza:0"SEZ"
+    corruption_kaza_desc:0"Kaza is a special economic zone. All trade between the River Federation and the continent of Zebrika passes through it. It is under the control of the zebra Zeren, a merchant from Zebrika."
+    bespredel_oleny:0"Civil Unrest"
+    bespredel_oleny_desc:0"The lands of Eystrland have been peaceful for many years. However, some time ago, refugees from the continent of Zebrika began arriving en masse. This eventually led to massive civil clashes between the natives and the refugees."
+    proletariat_problem:0"Workers' Communist Rallies"
+    proletariat_problem_desc:0"Full-scale workers' rallies and strikes are taking place throughout the industrial zone of the River Federation."
+    finance_police:0"Increased Police Funding"
+    finance_police_desc:0"Desperate times, call for serious measures!"
+    ###Events###
+    REF.1.t:0"Summary, Part 1 - River Federation"
+    REF.1.d:0"At the moment, the Federation is showing clear signs of separatist sentiment in the outer regions. Details will be provided in subsequent information bulletins."
+    REF.1.a:0"So it's not all that bad?"
+    
+    REF.2.t:0"Summary, Part 2 - Wittenland"
+    REF.2.d:0"In the lands of the Republic of Wittenland, our police forces have noted the obvious activity of an opposition party, according to local rumors, it is sponsored by the royal family of Wittenland"
+    REF.2.a:0"A small thing, though not pleasant"
+    
+    REF.3.t:0"Summary, Part 3 - North"
+    REF.3.d:0"In the north, the River Federation - the Republic of Bakara, still resists political, economic and naval integration into the single River Federation system. Minor activity of island bugs has also been noticed."
+    REF.3.a:0"Heh, sooner or later they will understand the full power of Friendship!"
+    
+    REF.4.t:0"Summary, Part 4 - West"
+    REF.4.d:0"An unnatural force has been detected in the lands of the Republics of Ozergrad and Deponia. However, at the moment, nothing illegal has been noticed. In the lands of the Republic of Dogs, everything is calm at the moment."
+    REF.4.a:0"Serious news, but what if it's a gathering of old friends?"
+    
+    REF.5.t:0"Summary, part 5 - Southwest"
+    REF.5.d:0"Everything is calm in the lands of Lyusha, although there are occasional rallies. In contrast to this, the lands of the Kaiv Republic have been experiencing rallies, uprisings and other separatist actions for several years now. Troop movements have also been noticed on the border with Griffus."
+    REF.5.a:0"The situation is serious, I will definitely raise this issue at the congress!"
+    
+    REF.6.t:0"Summary, part 6 - South"
+    REF.6.d:0"In the SEZK (Special Economic Zone of Kaza) everything is unchanged, corruption and the company of that damned zebra Zeren are still thriving there. In Barrada, everything is calm, although it is frankly unclear what these magicians are doing and this makes you tense. In the Deer Protectorate, all the same hell is going on."
+    REF.6.a:0"How can I finish them all!?
+    
+    REF.7.t:0"URGENT MESSAGE!!"
+    REF.7.d:0"President Pamkin! Urgent information! What happened? - Almost all factories in the central part of the Federation have been engulfed in mass riots, rallies, and it has already reached the point of bloodshed! Sooner or later, it was bound to happen. It is time to call an emergency meeting of the council!"
+    REF.7.a:0"It is time to act!"
+    
+    REF.8.t:0"ASSASSINATION ATTEMPT ON MINISTER OF INDUSTRY"
+    REF.8.d:0"Today in the suburbs of Rechkograd there was an assassination attempt on the Minister of Industry, Zebra Zeren, during his inspection of the factory district! According to eyewitnesses, the assassination attempt was carried out by an inconspicuous pony in the uniform of a factory worker. The police refuse to give any comments, except that the attacker is most likely a member of the Communist-Workers' Party. According to the official representative of Mr. Zeren, the Minister was not hurt."
+    REF.8.a:0"Serves him right!"
+    
+    REF.9.t:0"Sudden Letter"
+    REF.9.d:0"Madam President Pamkin Swirl, I inform you that I, Minister of Industry Zebra Zeren, am resigning from the powers entrusted to me since the year 975. I also inform you that I will remain in the post of President of the SEZK."
+    REF.9.a:0"One less problem!"
+    
+    REF.10.t:0"Sudden meeting"
+    REF.10.d:0"Rechkograd. In the evening, at the home of the Minister of Education Esterna. \n\n-Greetings, Mr. Esterna," said the Unknown. \n\n-Who? How did you break into my home? And what do you want!? - said Esterna. \n\n-Who am I? It's not that important. Breaking into my home is my specialty, but that's not important either. I was asked to tell you, Mr. Minister of Education, that you shouldn't show up at the next meeting of parliament. \n\n-And why? - asked Esterna menacingly. \n\n-Oh, it's simple. You will be killed, but they don't want to kill you - you're a good pony, so I repeat, leave the post of Minister of Education or it could lead to sad consequences for you. And now have a nice evening," said the Unknown, standing up and leaving the house. \n\n-What a bad situation.."
+    REF.10.a:0"I'll sit down and write a letter.."
+    
+    REF.11.t:0"Another resignation"
+    REF.11.d:0"Mrs. President Pamkin Swirl, I inform you that I, the Minister of Education of the earth pony Estern, am resigning from my duties. This decision was provoked by the country's unstable internal political situation."
+    REF.11.a:0"This is bad. Very, very bad!"
+    
+    
+    ###Tricks (Gypsy)###
+    REF_focus1:0"Federation Review"
+    REF_focus1_desc:0"The latest parliament session went terribly. Ehh, I'll ask for another summary of the situation within the Federation."
+    REF_focus2:0"The Federation Review Continues"
+    REF_focus2_desc:0"I'll Take a Look at Our North, Hee-Hee"
+    REF_focus3:0"The Review Continues - West"
+    REF_focus3_desc:0"In the West of the Federation are such republics as: Ozergrad, Deponia, and the Republic of Dogs"
+    REF_focus4:0"The Review Continues - Southwest"
+    REF_focus4_desc:0"In the Southwest of the Federation are such countries as: Lyushi and the Kaiv Republic"
+    REF_focus5:0"The Review Continues - South"
+    REF_focus5_desc:0"In the South are the SEZK (Special Economic Zone of Kaza), the Eystyurland Protectorate, and the Magocratic Republic of Barrad."
+    REF_focus6:0"The only thing missing!"
+    REF_focus6_desc:0"Unexpected news: mass workers' rallies have begun at factories all over the central part!!"
+    REF_step2:0"Property inspection"
+    REF_step2_desc:0"You should always keep an eye on your property, otherwise you won't know when it's gone missing."
+    REF_step3:0"Backstage games"
+    REF_step3_desc:0"???-???"
+    REF_step4:0"We need him!"
+    REF_step4_desc:0"Time to invite the sergeant general"
+    REF_step5:0"Urgent parliamentary meeting"
+    REF_step5_desc:0"On the agenda: what should we do and what should we do?"

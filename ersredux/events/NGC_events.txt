@@ -1,0 +1,2169 @@
+add_namespace = NGC
+country_event = {		
+	id = ngc.80
+	title = ngc.80.t
+	desc = ngc.80.d
+    picture = GFX_event_NGC_Sve
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.80.a
+		add_ideas = NGC_inflatsia
+	}
+	
+}
+country_event = {		
+	id = ngc.81
+	title = ngc.81.t
+	desc = ngc.81.d
+    picture = GFX_event_NGC_inflasia
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.81.a
+		add_ideas = NGC_No_energia
+	}
+	
+}
+country_event = {		
+	id = ngc.82
+	title = ngc.82.t
+	desc = ngc.82.d
+    picture = GFX_event_NGC_inflasia
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.82.a
+		country_event = ers_news.49
+		add_to_faction = NGC
+		
+	}
+	
+}
+country_event = {		
+	id = ngc.83
+	title = ngc.83.t
+	desc = ngc.83.d
+    picture = GFX_event_film_propoganda
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.83.a
+		swap_ideas = {
+				remove_idea = NGC_genocide_Z3
+				add_idea = NGC_genocide_Z4
+			}
+		
+	}
+	
+}
+country_event = {		
+	id = ngc.84
+	title = ngc.84.t
+	desc = ngc.84.d
+    picture = GFX_event_tyman
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.84.a
+		country_event = { id = ngc.85 days = 5 }
+		
+	}
+	
+}
+country_event = {		
+	id = ngc.85
+	title = ngc.85.t
+	desc = ngc.85.d
+    picture = GFX_event_tyman
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.85.a
+		country_event = { id = ngc.86 days = 15 }
+	}
+	
+}
+country_event = {		
+	id = ngc.86
+	title = ngc.86.t
+	desc = ngc.86.d
+    picture = GFX_event_tyman
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.85.a
+		country_event = ers_news.50
+		add_ideas = NGC_Konez_Nwa
+		EMP = {
+		annex_country = {
+			target = NGC
+		}
+		set_province_name = {
+		id = 1643
+		name = Victory_Points_1643_Smert
+		}
+		set_province_name = {
+		id = 11754
+		name = Victory_Points_11754_Smert
+		}
+		set_province_name = {
+		id = 3937
+		name = Victory_Points_3937_Smert
+		}
+		49 = {
+			add_manpower = -2000000
+		}
+		49 = {
+			remove_core_of = NGC
+		}
+		47 = {
+			add_manpower = -2000000
+		}
+		47 = {
+			remove_core_of = NGC
+		}
+		1230 = {
+			add_manpower = -2000000
+		}
+		1230 = {
+			remove_core_of = NGC
+		}
+		1242 = {
+			add_manpower = -2000000
+		}
+		1242 = {
+			remove_core_of = NGC
+		}
+		annex_country = {
+			target = NCN
+		}
+		42 = {
+		set_demilitarized_zone = yes
+		}
+		20 = {
+		set_demilitarized_zone = yes
+		}
+		49 = {
+		set_demilitarized_zone = yes
+		}
+		47 = {
+		set_demilitarized_zone = yes
+		}
+		1230 = {
+		set_demilitarized_zone = yes
+		}
+		1242 = {
+		set_demilitarized_zone = yes
+		}
+		add_ideas = NGC_Konez
+				set_cosmetic_tag = NGC_Ux_Konez
+				load_focus_tree = 
+				 set_party_name = {
+      ideology = neutrality 
+      long_name =  NGC_Ux_Konez_party_long
+      name =  NGC_Ux_Konez_party_long
+    }
+				
+				create_country_leader = {
+					name = "NGC_Tyman"
+					desc = ""   
+					picture = "gfx/leaders/NGC/WATA.tga"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {  }
+				}
+			}
+		}
+	}
+country_event = {		
+	id = ngc.87
+	title = ngc.87.t
+	desc = ngc.87.d
+    picture = GFX_San_pyst
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.87.a
+		GUA = {
+		set_state_controller = 80
+		set_state_controller = 19
+		set_state_controller = 1229
+		transfer_state = 80
+			transfer_state = 19
+			transfer_state = 1229
+				NGC = {
+					puppet = PREV
+					if = {
+						limit = {
+							NOT = { has_dlc = "Death or Dishonor" }
+						}
+						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet end_wars = no end_civil_wars = no }
+					}
+					else = {
+						set_autonomy = { target = PREV autonomy_state = autonomy_reichskommissariat  end_wars = no end_civil_wars = no }
+					}
+				}
+              
+				set_cosmetic_tag = NGC_Zona_V
+				load_focus_tree = NGC_Vtorzenie
+				 set_party_name = {
+      ideology = neutrality 
+      long_name =  NGC_hive_Garnizon_party_long
+      name =  NGC_hive_Garnizon_party_long
+    }
+				
+				create_country_leader = {
+					name = "NGC_quisling"
+					desc = ""   
+					picture = "gfx/leaders/NGC/portrait_NOR_vidkun_quisling_2.tga"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = { governor_of_Zona }
+				}
+			}
+		}
+	option = {
+		name = ngc.87.b
+		GUA = { change_tag_from = ROOT	}
+		GUA = {
+					set_state_controller = 80
+		set_state_controller = 19
+		set_state_controller = 1229
+		transfer_state = 80
+			transfer_state = 19
+			transfer_state = 1229
+				NGC = {
+					puppet = PREV
+					if = {
+						limit = {
+							NOT = { has_dlc = "Death or Dishonor" }
+						}
+						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet end_wars = no end_civil_wars = no }
+					}
+					else = {
+						set_autonomy = { target = PREV autonomy_state = autonomy_reichskommissariat  end_wars = no end_civil_wars = no }
+					}
+				}
+              
+				set_cosmetic_tag = NGC_Zona_V
+				load_focus_tree = NGC_Vtorzenie
+				 set_party_name = {
+      ideology = neutrality 
+      long_name =  NGC_hive_Garnizon_party_long
+      name =  NGC_hive_Garnizon_party_long
+    }
+				
+				create_country_leader = {
+					name = "NGC_quisling"
+					desc = ""   
+					picture = "gfx/leaders/NGC/portrait_NOR_vidkun_quisling_2.tga"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = { governor_of_Zona }
+				}
+			}
+		}
+	}
+country_event = {		
+	id = ngc.88
+	title = ngc.88.t
+	desc = ngc.88.d
+    picture = GFX_San_pyst
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.87.a
+				set_cosmetic_tag = NGC_commisoriate
+				load_focus_tree = NGC_YGY
+				 set_party_name = {
+      ideology = fascism 
+      long_name =  NGC_hive_Commisar_long
+      name =  NGC_hive_Commisar_long
+    }
+				
+				create_country_leader = {
+					name = "NGC_Commissioner_Cain"
+					desc = ""   
+					picture = "gfx/leaders/NGC/Kain.tga"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = { NGC_Cain NGC_Cain1 NGC_Cain2 }
+				}
+				set_province_name = {
+		id = 3937
+		name = Victory_Points_3937_Cain
+		}
+			}
+		}
+		
+		
+		country_event = {		
+	id = ngc.90
+	title = ngc.90.t
+	desc = ngc.90.d
+    picture = GFX_event_NGC_SOS
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.90.a
+		set_cosmetic_tag = NGC_ERORD
+		load_focus_tree = NGC_Eroooor
+				 set_party_name = {
+      ideology = neutrality 
+      long_name =  NGC_EROR_party_long
+      name =  NGC_EROR_party_long
+    }
+				
+				create_country_leader = {
+					name = "NGC_Saaaaraa"
+					desc = ""   
+					picture = "gfx/leaders/NGC/Kraiger.tga"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {  }
+				}
+			}
+		}
+		
+		country_event = {		
+	id = ngc.91
+	title = ngc.91.t
+	desc = ngc.91.d
+    picture = GFX_event_NGC_SOS
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.91.a
+		set_cosmetic_tag = NGC_FIN
+				 set_party_name = {
+      ideology = neutrality 
+      long_name =  NGC_EROR_party_long
+      name =  NGC_EROR_party_long
+    }
+				
+				create_country_leader = {
+					name = "???"
+					desc = ""   
+					picture = "gfx/leaders/NGC/SOS_ONO_NAS_Pogubit.tga"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {  }
+				}
+			}
+		}
+		country_event = {		
+	id = ngc.93
+	title = ngc.93.t
+	desc = ngc.93.d
+    picture = GFX_event_NGC_SOS
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.93.a
+				NCN = {
+				set_cosmetic_tag = NGC_ZOM
+				end_puppet = NGC
+transfer_technology = yes
+transfer_state = 49
+transfer_state = 1242
+transfer_state = 91
+transfer_state = 51
+			transfer_state = 92
+			transfer_state = 93
+			load_oob = "NGC_Civil_War_Dresler" 
+load_oob = NGC_Civil_War_Interven
+declare_war_on = {
+target = NGC
+type = annex_everything
+}
+declare_war_on = {
+target = ROK
+type = annex_everything
+}
+declare_war_on = {
+target = GUA
+type = annex_everything
+}
+declare_war_on = {
+target = BUF
+type = annex_everything
+}
+				
+				create_country_leader = {
+					name = "???"
+					desc = ""   
+					picture = "gfx/leaders/NGC/NGC_Zombu.tga"
+					expire = "1965.1.1"
+					ideology = nazism
+					traits = {  }
+				}
+			}
+		}
+	}
+	country_event = {		
+	id = ngc.92
+	title = ngc.92.t
+	desc = ngc.92.d
+    picture = GFX_event_NGC_SOS
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.92.a
+		annex_country = {
+			target = NCN
+		}
+			add_ideas = HRD_god_go_beyond
+		set_cosmetic_tag = NGC_FIN
+				 set_party_name = {
+      ideology = neutrality 
+      long_name =  NGC_EROR_V_party_long
+      name =  NGC_EROR_V_party_long
+    }
+				
+				create_country_leader = {
+					name = "NGC_RIC_VLA"
+					desc = ""   
+					picture = "gfx/leaders/NGC/Vlad.tga"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {NGC_Ric NGC_Ric1  }
+				}
+			}
+		}
+		country_event = {		
+	id = ngc.94
+	title = ngc.94.t
+	desc = ngc.94.d
+    picture = GFX_San_pyst
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.94.a
+	}
+	
+}
+country_event = {		
+	id = ngc.95
+	title = ngc.95.t
+	desc = ngc.95.d
+    picture = GFX_San_pyst
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.95.a
+	}
+	
+}
+country_event = {		
+	id = ngc.96
+	title = ngc.96.t
+	desc = ngc.96.d
+    picture = GFX_San_pyst
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.96.a
+	}
+	
+}
+country_event = {		
+	id = ngc.97
+	title = ngc.97.t
+	desc = ngc.97.d
+    picture = GFX_San_pyst
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.97.a
+	}
+	
+}
+
+country_event = {		
+	id = ngc.1
+	title = ngc.1.t
+	desc = ngc.1.d
+    picture = GFX_San_pyst
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.1.a
+	}
+	
+}
+country_event = {		
+	id = ngc.2
+	title = ngc.2.t
+	desc = ngc.2.d
+	picture = GFX_taim_nam
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.2.a
+	}
+	
+}
+country_event = {		
+	id = ngc.3
+	title = ngc.3.t
+	desc = ngc.3.d
+	picture = GFX_event_af23_cultist
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.3.a
+		country_event = { id = ngc.4 days = 2 }
+	}
+	
+}
+country_event = {		
+	id = ngc.4
+	title = ngc.4.t
+	desc = ngc.4.d
+ 
+ 
+     picture = GFX_event_af23_cultist
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.4.a
+		complete_national_focus = NGC_focuss_U
+		load_focus_tree = NGC_War_Sos
+	}
+}
+
+country_event = {		
+	id = ngc.5
+	title = ngc.5.t
+	desc = ngc.5.d
+	picture =  GFX_event_desert
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.5.a
+		country_event = { id = ngc.3 days = 7 }
+	}
+}
+country_event = {		
+	id = ngc.6
+	title = ngc.6.t
+	desc = ngc.6.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.6.a
+	}
+}
+
+country_event = {		
+	id = ngc.7
+	title = ngc.7.t
+	desc = ngc.7.d
+	  picture = GFX_event_af23_cultist
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.7.a
+		custom_effect_tooltip = NGC_Isabell
+		
+			add_manpower = -1
+	remove_advisor_role = {
+  character = "NGC_isabella"
+  slot = political_advisor
+	}
+}
+}
+country_event = {		
+	id = ngc.8
+	title = ngc.8.t
+	desc = ngc.8.d
+	picture =  GFX_event_desert_pony
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.8.a
+		NGC = { transfer_state = 94 }
+	}
+}
+country_event = {		
+	id = ngc.9
+	title = ngc.9.t
+	desc = ngc.9.d
+	picture =  GFX_event_desert_pony
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.9.a
+	}
+}
+country_event = {		
+	id = ngc.10
+	title = ngc.10.t
+	desc = ngc.10.d
+	picture =  GFX_event_desert_pony
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.10.a
+	}
+}
+country_event = {		
+	id = ngc.11
+	title = ngc.11.t
+	desc = ngc.11.d
+	picture =  GFX_event_desert_pony
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.11.a
+		country_event = ers_news.42
+	create_faction = ROK_faction
+		add_to_faction = ROK
+		add_to_faction = APL
+		add_to_faction = BUF
+		}
+	}
+		
+country_event = {		
+	id = ngc.12
+	title = ngc.12.t
+	desc = ngc.12.d
+	picture = GFX_HRZ_event_writen_mail
+
+	is_triggered_only = yes
+
+	option = {
+	country_event = { id = ngc.13 days = 15 }
+	name = ngc.12.a	
+		hidden_effect = {
+		YGY = {
+			transfer_technology = yes
+			transfer_state = 91
+			transfer_state = 92
+			transfer_state = 93
+			load_oob = "NGC_Civil_War_Dresler" 
+			
+		}
+		NGC = {
+			load_oob = "NGC_Civil_War_Kraiger" 
+			}
+		transfer_units_fraction = {
+				target = YGY
+				target_organization = 1
+				source_organization = 1
+				keep_unit_leaders_trigger = { always = yes }
+				size = 0.10
+				navy_ratio = 0
+			}
+		YGY = {
+			declare_war_on = { target = NGC type = civil_war }
+		}
+		NOZ = {
+			 end_puppet = NGC
+		}
+		GUA = {
+			 end_puppet = NGC
+		}
+		MIN = {
+		 country_event = NGC_Zona_Z.1   
+			 end_puppet = NGC
+			 load_oob = NGC_Zona_Z_Civil_War
+		}
+	}
+}
+}
+country_event = {		
+	id = ngc.14
+	title = ngc.14.t
+	desc = ngc.14.d
+	picture = GFX_report_event_ace_died
+
+	is_triggered_only = yes
+
+	option = {       
+	add_manpower = -4
+	remove_advisor_role = {
+  character = "NGC_Dressler"
+  slot = political_advisor
+}
+	country_event = { id = ngc.15 days = 140 }	
+	load_focus_tree =  NGC_Kraiger
+		name = ngc.14.a
+		add_stability = -0.010
+		swap_ideas = {
+			remove_idea = NGC_genocide_Z4
+			add_idea = NGC_Wera_YGY 
+		}
+	}
+}
+		
+country_event = {		
+	id = ngc.15
+	title = ngc.15.t
+	desc = ngc.15.d
+	picture = GFX_event_democratic_protest
+
+	is_triggered_only = yes
+
+	option = {
+	country_event = { id = ngc.12 days = 140  }	
+		name = ngc.15.a
+		add_stability = -0.010
+		}
+	}
+
+country_event = {		
+	id = ngc.13
+	title = ngc.13.t
+	desc = ngc.13.d
+	picture = GFX_event_swarm
+
+	is_triggered_only = yes
+
+	option = {
+	country_event = ngc.38
+	 CHN = {
+	country_event = { id = ngc.70 days = 3 }
+	}
+	end_puppet = NCN
+}
+}
+
+	
+country_event = {		
+	id = ngc.38
+	title = ngc.38.t
+	desc = ngc.38.d
+	picture = GFX_event_swarm
+
+	is_triggered_only = yes
+
+	option = {
+	remove_advisor_role = {
+  character = "NGC_Dremes"
+  slot = theorist
+          }
+	country_event =  ers_news.41
+	load_focus_tree = NGC_WAR_WAR
+		hidden_effect = {
+			remove_ideas =   NGC_puppet_economic_control
+			remove_ideas =  NGC_changeling_advisors_idea
+		NCN = {
+		    end_puppet = NGC
+			transfer_technology = yes
+			transfer_state = 49
+			transfer_state = 1242
+			load_oob = NGC_Civil_War_Interven
+			declare_war_on = {
+			target = YGY
+			type = annex_everything
+		}
+		}
+		NCN = {
+			declare_war_on = { target = NGC type = civil_war }
+		}
+		remove_ideas =   NGC_changeling_advisors_idea
+		remove_ideas =    NGC_puppet_economic_control
+		
+	}
+}
+}
+
+country_event = {		
+	id = ngc.20
+	title = ngc.20.t
+	desc = ngc.20.d
+	picture = GFX_Nywa_Flag
+
+	is_triggered_only = yes
+
+	 option = {
+        name = ngc.20.a
+        add_political_power = -1
+   set_cosmetic_tag = NGC_USAA
+   set_country_leader_portrait = {
+       portrait = "gfx/leaders/NGC/Cenatop.tga"
+   }
+     }
+  }
+  
+  country_event = {		
+	id = ngc.21
+	title = ngc.21.t 
+	desc = ngc.21.d
+	picture = GFX_event_Map_Nywa
+
+	is_triggered_only = yes
+
+	 option = {
+	 name = ngc.21.b
+        hidden_effect = {
+		annex_country = {
+			target = EMP
+		}
+		ROK = {
+		set_cosmetic_tag = NGC_Zona_Z
+		load_focus_tree = NOZ_Plan
+			transfer_technology = yes
+			transfer_state = 94
+			transfer_state = 1224
+			transfer_state = 1232
+			transfer_state = 1223
+			transfer_state = 100
+			transfer_state = 38
+			transfer_state = 20
+			transfer_state = 21
+			transfer_state = 89
+			transfer_state = 87
+				87 = {
+			add_core_of = ROK
+		    }
+			
+			94 = {
+			add_core_of = ROK
+		    }
+			1224 = {
+			add_core_of = ROK
+		    }
+			1232 = {
+			add_core_of = ROK
+		    }
+			1223 = {
+			add_core_of = ROK
+		    }
+			100 = {
+			add_core_of = ROK
+		    }
+			38 = {
+			add_core_of = ROK
+		    }
+			20 = {
+			add_core_of = ROK
+		    }
+			21 = {
+			add_core_of = ROK
+		    }
+			89 = {
+			add_core_of = ROK
+		    }
+			set_politics = {
+      ruling_party = neutrality
+      elections_allowed = no
+    }
+			 set_party_name = {
+      ideology = neutrality 
+      long_name =  NGC_hive_Garnizon_party_long
+      name =  NGC_hive_Garnizon_party_long
+    }
+			create_country_leader = {
+					name = "NGC_Gar_Niz"
+					desc = ""   
+					picture = "gfx/leaders/NGC/NGC_Chair.tga"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = { governor_of_Zona }
+				}
+			
+		}
+		set_autonomy = {
+					target = ROK
+					autonomy_state = autonomy_reichsprotectorate
+				}
+		}
+		}
+   }
+  
+
+ 
+ 
+ country_event = {		
+	id = ngc.22
+	title = ngc.22.t
+	desc = ngc.22.d
+	picture = GFX_event_democratic_protest
+
+	is_triggered_only = yes
+	option = {
+		name = ngc.22.a
+		ai_chance = { factor = 1 }
+		set_cosmetic_tag = NGC_GUA
+		add_country_leader_trait = governor_of_Zona
+		NGC = {
+			if = {
+				limit = {
+					has_dlc = "Together for Victory"
+				}
+				set_autonomy = {
+					target = GUA 
+					autonomy_state = autonomy_reichsprotectorate
+				}
+	}
+}
+			else = {
+				puppet = GUA 
+			}
+		NGC = {
+			country_event = ngc.24
+		}
+	}
+    option = {
+		name = ngc.22.c
+		ai_chance = { factor = 2 }
+		GUA  = {
+			leave_faction = yes
+			end_puppet_this = yes
+		}
+		NGC = {
+			country_event = ngc.23
+		}
+    }
+ }
+
+
+ country_event = {		
+	id = ngc.23
+	title = ngc.23.t
+	desc = ngc.23.d
+	picture = GFX_event_democratic_protest
+
+	is_triggered_only = yes
+
+	option = {
+		NGC = {
+			add_war_support = 0.01
+			create_wargoal = {
+				target = GUA 
+				type = annex_everything
+				expire = 0
+			}
+		}
+}
+}
+country_event = {		
+	id = ngc.24
+	title = ngc.24.t
+	desc = ngc.24.d
+	picture = GFX_event_bat_soldier
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.24.a
+		add_war_support = 0.01
+	}
+}
+country_event = {		
+	id = ngc.900
+	title = ngc.900.t
+	desc = ngc.900.d
+	picture = GFX_event_kylt
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.900.a
+		custom_effect_tooltip = NGC_Kylt_sitat
+	   set_country_flag = NGC_Kylt_sovet
+	     country_event = { id = ngc.901 days = 100 }	
+	}
+	option = {
+		name = ngc.900.s
+add_political_power = -1
+	}
+}
+country_event = {		
+	id = ngc.901
+	title = ngc.901.t
+	desc = ngc.901.d
+	picture = GFX_event_bat_soldier
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.901.a
+		custom_effect_tooltip = NGC_Kylt_sitat
+		 set_country_flag = NGC_Kylt_sovet1
+		 country_event = { id = ngc.902 days = 100 }	
+	}
+	option = {
+		name = ngc.901.s
+		add_war_support = 0.01
+	}
+}
+country_event = {		
+	id = ngc.902
+	title = ngc.902.t
+	desc = ngc.902.d
+	picture = GFX_event_bat_soldier
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.902.a
+		custom_effect_tooltip = NGC_Kylt_sitat
+		 set_country_flag = NGC_Kylt_sovet2
+	}
+	option = {
+		name = ngc.902.s
+		add_war_support = 0.01
+	}
+}
+country_event = {		
+	id = ngc.26
+	title = ngc.26.t
+	desc = ngc.26.d
+	picture = GFX_event_polar_military_base
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.26.a
+		add_war_support = -0.01
+		NGC = {
+			add_offsite_building = { type = industrial_complex level = -1 }
+		}
+	}
+}
+country_event = {		
+	id = ngc.27
+	title = ngc.27.t
+	desc = ngc.27.d
+	picture = GFX_event_dont_clop
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.27.a
+		swap_ideas = {
+				remove_idea = NGC_Don_idea
+				add_idea = NGC_Don1_idea
+			}
+	}
+}
+
+
+country_event = {		
+	id = ngc.28
+	title = ngc.28.t
+	desc = ngc.28.d
+	picture = GFX_event_autumn_forest
+
+	is_triggered_only = yes
+
+	option = {
+	country_event = { id = ngc.29 days = 14 }	
+		name = ngc.28.a
+		add_stability = -0.010
+		}
+	}
+country_event = {		
+	id = ngc.29
+	title = ngc.29.t
+	desc = ngc.29.d
+	picture = GFX_event_medieval_city_2
+
+	is_triggered_only = yes
+
+	option = {
+	country_event = { id = ngc.30 days = 2 }	
+		name = ngc.29.a
+		add_stability = +0.010
+		}
+	}
+	
+	country_event = {		
+	id = ngc.30
+	title = ngc.30.t
+	desc = ngc.30.d
+	picture = GFX_event_cabin
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.30.a
+		add_stability = -0.010
+		}
+	}
+	
+	country_event = {		
+	id = ngc.36
+	title = ngc.36.t
+	desc = ngc.36.d
+	picture = GFX_event_canterlonian_octavia
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.36.a
+		add_stability = -0.010
+		country_event = { id = ngc.32 days = 1 }	
+		}
+	option = {
+		name = ngc.36.b
+		add_stability = -0.010
+		country_event = { id = ngc.34 days = 1 }	
+		}
+	option = {
+		name = ngc.36.s
+		add_stability = -0.010
+		country_event = { id = ngc.33 days = 8 }	
+		}
+	}
+	
+	country_event = {		
+	id = ngc.32
+	title = ngc.32.t
+	desc = ngc.32.d
+	picture = GFX_Wolf
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.32.a
+		add_stability = -0.010
+		}
+	}
+
+country_event = {		
+	id = ngc.34
+	title = ngc.34.t
+	desc = ngc.34.d
+	picture = GFX_event_boat_in_runined_dock
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.34.a	
+		add_stability = -0.100
+		}
+	}
+	
+country_event = {		
+	id = ngc.35
+	title = ngc.35.t
+	desc = ngc.35.d
+	picture = GFX_event_Walkir_dreams
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.35.a
+		add_stability = -0.010
+		}
+	}
+	
+
+country_event = {		
+	id = ngc.33
+	title = ngc.33.t
+	desc = ngc.33.d
+	picture = GFX_event_octavia_performing
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.33.a
+		country_event = { id = ngc.35 days = 1 }
+		add_stability = -0.010
+		}
+	}
+	
+	country_event = {		
+	id = ngc.31
+	title = ngc.31.t
+	desc = ngc.31.d
+	picture = GFX_Nywa-Grifoninsk
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.31.a	
+		 add_manpower = -200
+		remove_advisor_role = {
+  character = "NGC_YCY"
+  slot = theorist
+          }
+		  remove_advisor_role = {
+  character = "NGC_Fanatic"
+  slot = theorist
+          }
+		  remove_advisor_role = {
+  character = "NGC_walther_funk"
+  slot = political_advisor
+          }
+		  remove_advisor_role = {
+  character = "NGC_Komisar"
+  slot = army_chief
+          }
+		}
+	}
+	
+	country_event = {		
+	id = ngc.37
+	title = ngc.37.t
+	desc = ngc.37.d
+	picture = GFX_Camolet
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.37.a	
+		add_stability = -0.100
+		}
+	}
+	
+	country_event = {		
+	id = ngc.44
+	title = ngc.44.t
+	desc = ngc.44.d
+	picture =  GFX_event_desert_pony
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.44.a
+		NGC = { transfer_state = 78 }
+	}
+}
+country_event = {		
+	id = ngc.45
+	title = ngc.45.t
+	desc = ngc.45.d
+	picture =  GFX_Railway
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.45.a
+			build_railway = {
+				level = 2
+				build_only_on_allied = yes
+			controller_priority = {
+				base = 1
+				modifier = {
+				tag = NGC
+				add = 2
+				}
+			}
+			fallback = yes
+			path = {1643 6913 6940 11583 6634 9756  676 }
+			start_province = 1643
+			target_province = 676
+			}
+			49 = {
+			add_extra_state_shared_building_slots = 4
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+			}
+			1242 = {
+			add_extra_state_shared_building_slots = 4
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+			}
+		}
+		swap_ideas = {
+			remove_idea = pre_industrial_society
+			add_idea = outdated_industry
+		}
+	}
+}
+}
+
+
+country_event = {		
+	id = ngc.42
+	title = ngc.42.t
+	desc = ngc.42.d
+	picture = GFX_event_Walkir_dreams
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.42.a
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 10000
+			producer = NGC
+			
+		}
+		}
+	}
+country_event = {		
+	id = ngc.50
+	title = ngc.50.t
+	desc = ngc.50.d
+	picture = GFX_event_Zebra
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.50.a
+		add_political_power = 1
+		}
+	}
+country_event = {		
+	id = ngc.53
+	title = ngc.53.t
+	desc = ngc.53.d
+	picture = GFX_event_Zebra
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.53.a
+		add_political_power = 1
+		}
+	}
+country_event = {		
+	id = ngc.54
+	title = ngc.54.t
+	desc = ngc.54.d
+	picture = GFX_event_Zebra
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.54.a
+		add_political_power = 1
+		}
+	}
+	
+country_event = {		
+	id = ngc.55
+	title = ngc.55.t
+	desc = ngc.55.d
+	picture = GFX_event_Zebra
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.55.a
+		add_political_power = 1
+		}
+	}
+
+	
+	country_event = {		
+	id = ngc.57
+	title = ngc.57.t
+	desc = ngc.57.d
+	picture = GFX_event_Zebra
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.57.a
+		create_faction = NGC_faction
+		add_to_faction = GUA
+		}
+	 }
+	 
+	 country_event = {		
+	id = ngc.58
+	title = ngc.58.t
+	desc = ngc.58.d
+	picture = GFX_Zimmerit
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.58.a
+		add_political_power = 1
+		add_timed_idea = {
+			idea = NGC_Skam_idea
+			days = 80
+		}
+		}
+	option = {
+		name = ngc.58.b
+		add_political_power = 1
+		}
+	 }
+	
+	
+	country_event = {		
+	id = ngc.43
+	title = ngc.43.t
+	desc = ngc.43.d
+	picture = GFX_event_Time
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.43.a
+		}
+	}
+	country_event = {		
+	id = ngc.51
+	title = ngc.51.t
+	desc = ngc.51.d
+	picture = GFX_Oboi_Sara
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.51.a
+		country_event = { id = ngc.14 days = 10 }	
+		}
+	option = {
+		name = ngc.51.b
+		country_event = { id = ngc.60  }	
+		}
+	option = {
+		name = ngc.51.s
+		load_focus_tree =  NGC_Dermocrat
+		}
+	}
+	country_event = {		
+	id = ngc.52
+	title = ngc.52.t
+	desc = ngc.52.d
+	picture = GFX_Oboi_Sara_to
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.52.a
+		}
+	}
+	
+	country_event = {		
+	id = ngc.60
+	title = ngc.60.t
+	desc = ngc.60.d
+	picture = GFX_aces
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.60.a
+		country_event = { id = ngc.65 }	
+		}
+	option = {
+		name = ngc.60.b
+		country_event = { id = ngc.14 days = 10 }	
+		}
+	}
+	country_event = {		
+	id = ngc.61
+	title = ngc.61.t
+	desc = ngc.61.d
+	picture = GFX_Room_Sar
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.61.a
+		country_event = { id = ngc.62 days = 10}	
+		}
+	}
+		
+	country_event = {		
+	id = ngc.62
+	title = ngc.62.t
+	desc = ngc.62.d
+	picture = GFX_cat_and_moon
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.62.a
+		country_event = { id = ngc.63 days = 3}	
+		create_country_leader = {
+					name = "NGC_iasabela"
+					desc = ""
+					picture = "gfx/leaders/NGC/isabella.tga"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = { helvia_peaceful_life  }
+				}
+		}
+	}
+		
+	country_event = {		
+	id = ngc.63
+	title = ngc.63.t
+	desc = ngc.63.d
+	picture = GFX_crow
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.63.a
+		add_political_power = 1
+		}
+}	
+
+country_event = {		
+	id = ngc.65
+	title = ngc.65.t
+	desc = ngc.65.d
+	picture = GFX_aces
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.65.a
+		country_event = { id = ngc.14 days = 10 }	
+		add_political_power = 1
+		}
+	option = {
+		name = ngc.65.s
+		country_event = { id = ngc.14 days = 10 }	
+		add_political_power = 1
+		}
+	option = {
+		name = ngc.65.v
+		country_event = { id = ngc.66 }	
+		add_political_power = 1
+		}
+}
+country_event = {		
+	id = ngc.66
+	title = ngc.66.t
+	desc = ngc.66.d
+	picture = GFX_aces
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.66.a
+		add_political_power = 1
+       country_event = { id = ngc.61 days = 5 }	
+		}
+	}
+country_event = {		
+	id = ngc.67
+	title = ngc.67.t
+	desc = ngc.67.d
+	picture = GFX_event_Zebra1
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.67.a
+		add_political_power = 1
+		remove_advisor_role = {
+  character = "NGC_Zebra_Syd"
+  slot = political_advisor
+}
+		}
+	}
+	
+country_event = {		
+	id = ngc.68
+	title = ngc.68.t
+	desc = ngc.68.d
+	picture = GFX_event_Pystina
+
+	is_triggered_only = yes
+
+	option = {
+	name = ngc.68.a
+        hidden_effect = {
+	 EMP = {
+	 add_ideas = NGC_deserttribes
+				set_state_controller = 20
+				set_state_controller = 42
+				42 = {
+		set_demilitarized_zone = yes
+		}
+		20 = {
+		set_demilitarized_zone = yes
+		}
+				NGC = {
+					puppet = PREV
+					if = {
+						limit = {
+							NOT = { has_dlc = "Death or Dishonor" }
+						}
+						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet end_wars = no end_civil_wars = no }
+					}
+					else = {
+						set_autonomy = { target = PREV autonomy_state = autonomy_reichskommissariat  end_wars = no end_civil_wars = no }
+					}
+				}
+              
+				set_cosmetic_tag = NGC_Garnizon_pus
+				load_focus_tree = 
+				 set_party_name = {
+      ideology = neutrality 
+      long_name =  NGC_hive_Garnizon_party_long
+      name =  NGC_hive_Garnizon_party_long
+    }
+				
+				create_country_leader = {
+					name = "NGC_Pystina"
+					desc = "NGC_Pystina"   
+					picture = "gfx/leaders/leader_unknown.dds"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = { governor_of_Zona }
+				}
+			}
+		}
+	}
+}
+
+
+country_event = {		
+	id = ngc.69
+	title = ngc.69.t
+	desc = ngc.69.d
+	picture = GFX_event_Pystina1
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.69.a
+			add_timed_idea = {
+			idea = NGC_Dobrovolez
+			days = 360
+		}
+	}
+}
+
+country_event = {		
+	id = ngc.70
+	title = ngc.70.t
+	desc = ngc.70.d
+	picture = GFX_event_changeling_approved_stamp
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.70.a
+		add_manpower = -2038
+	remove_advisor_role = {
+  character = "Dremes"
+  slot = political_advisor
+   }
+}
+	option = {
+		name = ngc.70.b
+		 hidden_effect = {
+		country_event = { id = ngc.71 days = 140 }
+	}
+ }
+}
+country_event = {		
+	id = ngc.71
+	title = ngc.71.t
+	desc = ngc.71.d
+	picture = GFX_event_changeling_approved_stamp
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.71.a
+		add_ideas = NGC_Woor
+		remove_advisor_role = {
+  character = "Dremes"
+  slot = political_advisor
+   }
+	}
+}
+
+country_event = {		
+	id = ngc.72
+	title = ngc.72.t
+	desc = ngc.72.d
+	picture = GFX_event_Time
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.72.a
+		add_political_power = 1
+	}
+}
+
+country_event = {		
+	id = ngc.73
+	title = ngc.73.t
+	desc = ngc.73.d
+	picture = GFX_event_Mynal
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.73.a
+		add_political_power = 1
+		country_event = { id = ngc.74 days = 7 }
+	}
+}
+
+country_event = {		
+	id = ngc.74
+	title = ngc.74.t
+	desc = ngc.74.d
+	picture = GFX_event_Mynal
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.74.a
+		add_political_power = 1
+		country_event = { id = ngc.75 days = 7 }
+	}
+}
+country_event = {		
+	id = ngc.75
+	title = ngc.75.t
+	desc = ngc.75.d
+	picture = GFX_event_Mynal
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.75.a
+		add_political_power = 1
+		country_event = { id = ngc.76 days = 7 }
+	}
+}
+country_event = {		
+	id = ngc.76
+	title = ngc.76.t
+	desc = ngc.76.d
+	picture = GFX_event_Mynal
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.76.a
+		add_political_power = 1
+		country_event = { id = ngc.56 days = 20}
+	}
+}
+country_event = {		
+	id = ngc.77
+	title = ngc.77.t
+	desc = ngc.77.d
+	picture = GFX_event_chess_game
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngc.77.a
+		add_political_power = 1
+	}
+}
+
+country_event = {		
+	id = ngc.56
+	title = ngc.56.t
+	desc = ngc.56.d
+	picture = GFX_event_smer
+
+	is_triggered_only = yes
+
+	option = {
+	country_event = { id = ending.1 hours = 6 }
+		name = ngc.56.a
+		 set_cosmetic_tag = NGC_Kndr
+		load_focus_tree = NGC_Sara_Dobra
+		 NGC_Sara = {
+        add_country_leader_role = {
+          Promote_leader = yes
+          Country_leader = {
+              desc=""
+            ideology = khakistocracy
+            expire = "1066.1.1.1"
+            traits = {harsh_leader ers_ambiguous }
+          }
+        }
+      }
+      set_country_leader_portrait = {
+        ideology = neutrality
+        portrait = "gfx/leaders/NGC/Sara.tga"
+      }
+    }
+       
+    }
+	
+	
+
+
+
+
+country_event = {
+  id = ngc.100
+  title = ngc.100.t
+  desc = ngc.100.d
+  picture = GFX_event_Walkir_dreams
+    is_triggered_only = yes
+   fire_only_once = yes
+    option = {
+	set_cosmetic_tag = NGC_YGYgy
+	 load_focus_tree = NGC_YGY
+        name = ngc.100.a
+        add_political_power = -150
+        set_popularities = {
+      democratic = 100
+      neutrality = 0
+      fascism = 0
+      communism = 0
+    }
+    set_politics = {
+      ruling_party = democratic
+      elections_allowed = no
+    }
+    set_party_name = {
+      ideology = democratic 
+      long_name =  NGC_hive_YGY_party_long
+      name =  NGC_hive_YGY_party_long
+    }
+	set_party_name = {
+      ideology = communism
+      long_name =  NGC_hive_KyltS_party_long
+      name =  NGC_hive_KyltS_party_long
+    }
+	set_party_name = {
+      ideology = neutrality
+      long_name =  NGC_hive_KyltS_party_long
+      name =  NGC_hive_KyltS_party_long
+    }
+	set_party_name = {
+      ideology = fascism
+      long_name =  NGC_hive_KyltS_party_long
+      name =  NGC_hive_KyltS_party_long
+	  }
+	 }
+ }
+ country_event = {		
+	id = ngc.50
+	title = ngc.50.t
+	desc = ngc.50.d
+	picture = GFX_Nywa_Flag
+
+	is_triggered_only = yes
+
+	 option = {
+        name = ngc.50.a
+CLT = {
+				set_state_controller = 85
+				set_state_controller = 22
+				set_state_controller = 1213
+				NGC = {
+					puppet = PREV
+					if = {
+						limit = {
+							NOT = { has_dlc = "Death or Dishonor" }
+						}
+						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet end_wars = no end_civil_wars = no }
+					}
+					else = {
+						set_autonomy = { target = PREV autonomy_state = autonomy_reichskommissariat  end_wars = no end_civil_wars = no }
+					}
+				}
+              
+				set_cosmetic_tag = NGC_Zona_Z
+				load_focus_tree = { tree = generic here keep_completed = yes }
+				 set_party_name = {
+      ideology = neutrality 
+      long_name =  NGC_hive_Garnizon_party_long
+      name =  NGC_hive_Garnizon_party_long
+    }
+				
+				create_country_leader = {
+					name = "NGC_Commissioner_Cain"
+					desc = ""
+					picture = "gfx/leaders/NGC/Kain.tga"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = { governor_of_Zona }
+				}
+			}
+		}
+	}
+
+
+country_event = {
+  id = ngc.666
+  immediate = {log = "[GetDateText]: [Root.GetName]: event ngc.666"}
+  title = ngc.666.t
+  desc = ngc.666.d
+  picture = GFX_event_equestria_fail
+    is_triggered_only = yes
+   fire_only_once = yes
+
+    option = {
+        name = ngc.666.a
+        add_political_power = -150
+        set_popularities = {
+      democratic = 100
+      neutrality = 0
+      fascism = 0
+      communism = 0
+	  
+    }
+    set_politics = {
+      ruling_party = democratic
+      elections_allowed = no
+    }
+    set_party_name = {
+      ideology = democratic 
+      long_name =  NGC_hive_ZKylt_party_long
+      name =  NGC_hive_ZKylt_party_long
+    }
+	set_party_name = {
+      ideology = communism
+      long_name =  NGC_hive_KyltS_party_long
+      name =  NGC_hive_KyltS_party_long
+    }
+	set_party_name = {
+      ideology = neutrality
+      long_name =  NGC_hive_KyltS_party_long
+      name =  NGC_hive_KyltS_party_long
+    }
+	set_party_name = {
+      ideology = fascism
+      long_name =  NGC_hive_KyltS_party_long
+      name =  NGC_hive_KyltS_party_long
+    }
+   country_event = ngc.667
+}
+}
+
+country_event = {
+  id = ngc.667
+  immediate = {log = "[GetDateText]: [Root.GetName]: event ngc.667"}
+  title = ngc.667.t
+  desc =ngc.667.d
+  picture = GFX_event_equestria_fail
+    is_triggered_only = yes
+   fire_only_once = yes
+
+    option = {
+	remove_ideas =  NGC_left_alone
+	remove_ideas =  NGC_genocide_idea_Dom_V
+	remove_ideas =  wild_south_west
+	remove_ideas =  NGC_genocide_V
+	add_ideas = GC_Kult_EV
+	swap_ideas = {
+				remove_idea = NGC_genocide_Z
+				add_idea = NGC_Kult_Z
+			}
+	 set_cosmetic_tag = NGC_CULTARTEM
+        name = ngc.667.a
+		load_focus_tree = NGC_started
+    NGC = {
+      NGC_Fanatic = {
+        add_country_leader_role = {
+          Promote_leader = yes
+          Country_leader = {
+              desc="POLITICS_FANATIC_DESC"
+            ideology = alicornrule
+            expire = "1066.1.1.1"
+            traits = {
+            }
+          }
+        }
+      }
+      set_country_leader_portrait = {
+        ideology = democratic
+        portrait = "gfx/leaders/NGC/NGC_Fanatic_Leg.tga"
+      }
+    }
+       
+    }
+  
+}
+
+country_event = {
+  id = ngc.668
+  immediate = {log = "[GetDateText]: [Root.GetName]: event ngc.667"}
+  title = ngc.668.t
+  desc =ngc.668.d
+  picture = GFX_event_equestria_fail
+    is_triggered_only = yes
+   fire_only_once = yes
+
+    option = {
+	 set_cosmetic_tag = NGC_CULTARTEM
+        name = ngc.668.a
+		
+    NGC = {
+      NGC_Twailait = {
+        add_country_leader_role = {
+          Promote_leader = yes
+          Country_leader = {
+              desc="NGC_Twailait"
+            ideology = alicornrule
+            expire = "1066.1.1.1"
+            traits = {
+            }
+          }
+        }
+      }
+      set_country_leader_portrait = {
+        ideology = democratic
+        portrait = "gfx/leaders/NGC/Twai.tga"
+      }
+    }
+       
+    }
+  
+}
+
+
+
+#Зона
+country_event = {		
+	id = ngc.40
+	title = ngc.40.t
+	desc = ngc.40.d
+	picture = GFX_Nywa_Flag
+
+	is_triggered_only = yes
+
+	 option = {
+        name = ngc.40.a
+        add_political_power = -1
+   set_cosmetic_tag = NOZ_UMPERIYM
+   set_country_leader_portrait = {
+       portrait = "gfx/leaders/NGC/Ybrix.tga"
+   }
+     }
+  }
+  country_event = {		
+	id = ngc.41
+	title = ngc.41.t
+	desc = ngc.41.d
+	picture = GFX_Nywa_Flag
+
+	is_triggered_only = yes
+
+	 option = {
+        name = ngc.41.a
+        add_political_power = -1
+   set_cosmetic_tag = ROK_Z0NA_A
+   set_country_leader_portrait = {
+       portrait = "gfx/leaders/NGC/Oktavua.tga"
+   }
+   ROK = {
+            set_cosmetic_tag = ROK_SYD
+			set_stability = 0.1
+			set_war_support = 0
+            }
+     }
+  }
+    country_event = {		
+	id = ngc.46
+	title = ngc.46.t
+	desc = ngc.46.d
+	picture = GFX_Nywa_Flag
+
+	is_triggered_only = yes
+
+	 option = {
+        name = ngc.46.a
+			MIN= {
+				set_state_controller = 87
+				set_cosmetic_tag = NGC_Sablin
+				load_focus_tree = { tree = generic here keep_completed = yes }
+				 set_party_name = {
+      ideology = neutrality 
+      long_name =  NGC_hive_Garnizon_party_long
+      name =  NGC_hive_Garnizon_party_long
+    }
+				
+				create_country_leader = {
+					name = "NGC_Commissioner_Cain"
+					desc = ""
+					picture = "gfx/leaders/NGC/portrait_NOR_vidkun_quisling_2.tga"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {  }
+				}
+			}
+     }
+  }
+ 
+   country_event = {		
+	id = ngc.48
+	title = ngc.48.t
+	desc = ngc.48.d
+	picture = GFX_Nywa_Flag
+
+	is_triggered_only = yes
+
+	 option = {
+        name = ngc.48.a
+		BUF = {
+				set_state_controller = 20
+				set_state_controller = 21
+				set_state_controller = 89
+				set_cosmetic_tag = NGC_BangalsPOK
+				load_focus_tree = { tree = generic here keep_completed = yes }
+				 set_party_name = {
+      ideology = neutrality 
+      long_name =  NGC_hive_Garnizon_party_long
+      name =  NGC_hive_Garnizon_party_long
+    }
+				
+				create_country_leader = {
+					name = "NGC_Commissioner_Can"
+					desc = ""
+					picture = "gfx/leaders/NGC/portrait_NOR_vidkun_quisling_2.tga"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {  }
+				}
+			}
+			 ROK = {
+				set_state_controller = 100
+				set_state_controller = 1223
+				set_state_controller = 1232
+				set_cosmetic_tag = NGC_SopPOK
+				load_focus_tree = { tree = generic here keep_completed = yes }
+				 set_party_name = {
+      ideology = neutrality 
+      long_name =  NGC_hive_Garnizon_party_long
+      name =  NGC_hive_Garnizon_party_long
+    }
+				
+				create_country_leader = {
+					name = "NGC_Commissioner_Can"
+					desc = ""
+					picture = "gfx/leaders/NGC/portrait_NOR_vidkun_quisling_2.tga"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {  }
+				}
+     }
+	}
+  }
+ 
+
+  

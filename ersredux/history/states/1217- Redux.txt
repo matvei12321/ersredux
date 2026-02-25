@@ -1,0 +1,29 @@
+state={
+	id=1217
+	name="STATE_1217"
+
+	provinces={
+		527 3589 6786 9710 11716
+	}
+
+	manpower=254512
+	state_category=town
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = ERP
+		add_core_of = ERP
+
+		victory_points = { 6786 3 }
+
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+	}
+	
+	
+	resources={
+		steel=2
+	}
+}

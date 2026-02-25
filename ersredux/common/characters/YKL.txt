@@ -1,0 +1,24 @@
+characters={
+	YKL_leader={
+		name=YKL_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/YKL/SIR_sister.tga"
+			}
+		}
+		corps_commander={
+			traits={ thestral_race_trait commando }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+		country_leader={
+			ideology=primitive_communism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

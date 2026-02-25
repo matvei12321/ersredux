@@ -1,0 +1,114 @@
+characters = {
+	YAC_chieftess = {
+		name=YAC_chieftess
+		portraits={
+			civilian={
+				large="gfx/leaders/YAK/ChieftessSheyak.tga"
+			}
+		}
+		
+		country_leader={
+			desc="YAC_chieftess_desc"
+			ideology=anti_revisionism
+			traits={ occultist }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	### Necrocommunist Milf	
+	YAC_marx_leader = {
+		name=YAC_marx_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/YAC/marx_leader_normal.tga"
+			}
+		}	
+	}
+
+	YAC_priest_advisor1={
+		name=YAC_priest_advisor1
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/YAC/yac_religious_advisor.tga"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = YAC_priest_advisor1
+			allowed = {
+				original_tag = YAC
+			}
+			available = {
+				has_completed_focus = YAC_support_churches
+			}
+			traits = {
+				yac_priest_advisor1_trait
+			}
+		}
+	}
+	YAC_priest_advisor2={
+		name=YAC_priest_advisor2
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/YAC/yac_religious_advisor.tga"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = YAC_priest_advisor2
+			allowed = {
+				original_tag = YAC
+			}
+			available = {
+				has_completed_focus = YAC_support_churches
+			}
+			traits = {
+				yac_priest_advisor2_trait
+			}
+		}
+	}
+	YAC_priest_advisor3={
+		name=YAC_priest_advisor3
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/YAC/yac_religious_advisor.tga"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = YAC_priest_advisor3
+			allowed = {
+				original_tag = YAC
+			}
+			available = {
+				has_completed_focus = YAC_support_churches
+			}
+			traits = {
+				yac_priest_advisor3_trait
+			}
+		}
+	}
+	YAC_priest_advisor4={
+		name=YAC_priest_advisor4
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/YAC/yac_religious_advisor.tga"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = YAC_priest_advisor4
+			allowed = {
+				original_tag = YAC
+			}
+			available = {
+				has_completed_focus = YAC_support_churches
+			}
+			traits = {
+				yac_priest_advisor4_trait
+			}
+		}
+	}
+
+}

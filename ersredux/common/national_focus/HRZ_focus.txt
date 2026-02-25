@@ -1,0 +1,12 @@
+focus_tree = {
+	id = HRZ_proba
+	continuous_focus_position = { x = 10000 y = 10 }
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = HRZ
+		}
+	}
+	shared_focus = HRZ_raut
+}

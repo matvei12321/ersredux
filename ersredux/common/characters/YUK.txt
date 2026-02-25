@@ -1,0 +1,18 @@
+characters = {
+	YUK_irikital={
+		name=YUK_irikital
+		portraits={
+			civilian={
+				large="gfx/leaders/YUK/irikital.tga"
+			}
+		}
+		country_leader={
+			desc="YUK_irikital_desc"
+			ideology=tribal_council
+			traits={ esoterist }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		gender = male
+	}
+}

@@ -1,0 +1,201 @@
+ideas = {
+
+	country = {
+	
+		LOS_regency_council_1 = {
+
+			allowed = {
+				always = no
+			}
+			
+			picture = Generic_Feudalism
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+			}
+
+			modifier = {
+				political_advisor_cost_factor = -0.05
+				political_power_factor = 0.1
+			}
+		}
+	}
+	
+	country = {
+	
+		LOS_monarch_1 = {
+
+			picture = pgs_kris_advisor
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+			}
+
+			modifier = {
+				political_power_factor = -0.15
+				stability_factor = -0.05
+				war_support_factor = -0.05
+			}
+		}
+	}
+	
+	
+	country = {
+	
+		LOS_knights = {
+
+			allowed = {
+				always = no
+			}
+			
+			picture = Generic_Feudalism
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+			}
+
+			modifier = {
+				army_attack_factor = 0.02
+				army_org_factor = 0.05
+				army_leader_cost_factor = -0.05
+				stability_weekly = 0.005
+			}
+		}
+	}
+	
+	country = {
+		LOS_PONY_RIGHT_IDEA = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = Generic_Democratisation
+			
+			available = {
+			}
+
+			modifier = {
+				democratic_drift = 0.015
+				stability_factor = 0.1
+				democratic_acceptance = 150
+			}
+		}
+	}
+	
+	country= {
+		LOS_against_PGS_idea = { 
+
+			removal_cost = -1
+				
+			allowed = {
+				original_tag = LOS
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+			
+
+			targeted_modifier = {
+				tag = PGS
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+			
+		}
+	}
+	
+	country= {
+		LOS_migrants = { 
+
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = LOS
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+			
+
+			modifier = {
+				weekly_manpower = 250
+			}
+			
+		}
+	}
+	
+	country= {
+		LOS_petty_army = { 
+
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = LOS
+			}
+			
+			picture = pony_army
+
+			modifier = {
+				army_org_factor = -0.05
+				conscription_factor = -0.1
+				political_power_factor = -0.1
+				experience_gain_army_factor = -0.5
+			}
+		}
+		
+		LOS_national_republicans = { 
+
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = LOS
+			}
+			
+			picture = ast_abandon_the_westminster_system_fascism
+			
+			modifier = {
+				stability_factor = -0.1
+				fascism_drift = 0.02
+			}
+		}
+		
+		LOS_food_problem = { 
+
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = LOS
+			}
+			
+			picture = great_depression
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+				supply_consumption_factor = 0.2
+			}
+		}
+	}
+		
+		
+
+}

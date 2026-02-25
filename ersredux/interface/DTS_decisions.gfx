@@ -1,0 +1,10 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_decision_repression"
+		texturefile = "gfx/interface/decisions/decision_repression.tga"
+	}
+	spriteType = {
+		name = "GFX_decision_category_mafia"
+		texturefile = "gfx/interface/decisions/decision_category_mafia.tga"
+	}
+}

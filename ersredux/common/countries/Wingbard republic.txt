@@ -1,0 +1,4 @@
+graphical_culture = weastern_european_gfx
+graphical_culture_2d = wingbardy_2d
+
+color = rgb { 151 110 255 }

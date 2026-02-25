@@ -1,0 +1,18 @@
+characters = {
+	SIR_leader={
+		name=SIR_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/SIR/SIR_leader.tga"
+			}
+		}
+		country_leader={
+			desc="loli_desc"
+			ideology=harmonic_theocracy
+			traits={ peacemaker }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		gender = female
+	}
+}

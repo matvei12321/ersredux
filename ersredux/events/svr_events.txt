@@ -1,0 +1,67 @@
+﻿add_namespace = svr
+
+country_event = { # Колцок приглашён на экстренное совещание
+	id = svr.1 
+	immediate = {log = "[Root.GetName]: event svr.1"}
+	title = svr.1.t
+	desc = svr.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = svr.1.a
+	}
+}
+
+country_event = { # успешное экстренное совещание
+	id = svr.2
+	immediate = {log = "[Root.GetName]: event svr.2"}
+	title = svr.2.t
+	desc = svr.2.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = svr.2.a
+		add_war_support = 0.02
+		army_experience = 15
+		add_political_power = 50
+	}
+}
+
+country_event = { # спор Елены и Колцока
+	id = svr.3
+	immediate = {log = "[Root.GetName]: event svr.3"}
+	title = svr.3.t
+	desc = svr.3.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = svr.3.a
+		set_country_flag = anastasia_first_tree_flag
+	}
+	
+	option = {
+		name = svr.3.b
+		set_country_flag = elena_first_tree_flag
+	}
+}
+
+country_event = { # Рюрикович
+	id = svr.4
+	immediate = {log = "[Root.GetName]: event svr.4"}
+	title = svr.4.t
+	desc = svr.4.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = svr.4.a
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.01
+		}
+	}
+
+}

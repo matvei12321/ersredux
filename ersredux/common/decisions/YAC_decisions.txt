@@ -1,0 +1,413 @@
+YAC_decisions_cat = {
+	YAC_create_mining_villages = {
+		icon = GFX_decision_pickaxe
+		available = {
+			has_completed_focus = YAC_miners_villages
+			FROM = {
+				is_owned_by = ROOT
+			}
+			NOT = {
+				has_country_flag = yac_creating_mines_flag
+			}
+		}
+		priority = 9
+		visible = {
+			#has_completed_focus = YAC_crusade
+			FROM = {
+				is_owned_by = ROOT
+				NOT = {
+					has_state_flag = YAC_miners_village_state
+				}
+			}
+		}
+		state_target = yes
+
+		target_array = ROOT.owned_states
+		
+		on_map_mode = map_and_decisions_view
+		ai_will_do = {
+			factor = 1000
+		}
+		cost = 50
+		days_remove = 25
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision start YAC_create_mining_villages"
+			FROM = {
+				add_manpower = -1000
+			}
+			set_country_flag = yac_creating_mines_flag
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision finish YAC_create_mining_villages"
+			FROM = {
+				add_province_modifier = {
+					static_modifiers = { yac_miners_region }
+					province = {
+						all_provinces = yes
+					}
+				}
+				set_state_flag = YAC_miners_village_state
+			}
+			clr_country_flag = yac_creating_mines_flag
+		}
+	}
+					
+					
+					
+	YAC_economic_development = {
+		icon = GFX_decision_gear
+		available = {
+			has_completed_focus = YAC_nationalisation
+			FROM = {
+				is_owned_by = ROOT
+			}
+			NOT = {
+				has_country_flag = yac_nationalising_factory_flag
+			}
+		}
+		priority = 10
+		visible = {
+			#has_completed_focus = YAC_crusade
+			FROM = {
+				is_owned_by = ROOT
+				NOT = {
+					has_state_flag = YAC_nationalised_industry_state
+				}
+			}
+		}
+		state_target = yes
+
+		target_array = ROOT.owned_states
+		
+		on_map_mode = map_and_decisions_view
+		ai_will_do = {
+			factor = 1000
+		}
+		
+		cost = 50
+		days_remove = 25
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision start YYAC_economic_development"
+			FROM = {
+				add_manpower = -1000
+			}
+			set_country_flag = yac_nationalising_factory_flag
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision finish YAC_search_marks_corpse_decision"
+			FROM = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+				set_state_flag = YAC_nationalised_industry_state
+			}
+			clr_country_flag = yac_nationalising_factory_flag
+		}
+	}
+	
+	
+	
+	YAC_purify_JAK = {
+		icon = GFX_decision_anti_fascist
+		available = {
+			has_completed_focus = YAC_basis_of_new_society
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		cost = 50
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 273
+			}
+		}
+		days_remove = 35
+		modifier = {
+			political_power_gain = -0.5
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision YAC_purify_JAK"
+			273 = {
+				add_manpower = -35000
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.01
+			}
+			add_stability = -0.025
+			add_war_support =  -0.025
+			every_state = {
+				limit = {
+					is_core_of = JAK
+				}
+				remove_core_of = JAK
+			}
+		}
+	}
+	
+	YAC_purify_MNT = {
+		icon = GFX_decision_megaphone
+		available = {
+			has_completed_focus = YAC_basis_of_new_society
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		cost = 50
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 77
+			}
+		}
+		days_remove = 35
+		modifier = {
+			political_power_gain = -0.5
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision YAC_purify_MNT"
+			77 = {
+				add_manpower = -35000
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.01
+			}
+			add_stability = -0.025
+			add_war_support =  -0.025
+			every_state = {
+				limit = {
+					is_core_of = MNT
+				}
+				remove_core_of = MNT
+			}
+		}
+	}
+	
+	YAC_purify_YAK = {
+		icon = GFX_decision_statue
+		available = {
+			has_completed_focus = YAC_basis_of_new_society
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		cost = 50
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 11
+			}
+		}
+		days_remove = 35
+		modifier = {
+			political_power_gain = -0.5
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision YAC_purify_YAK"
+			11 = {
+				add_manpower = -35000
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.01
+			}
+			add_stability = -0.025
+			add_war_support =  -0.025
+			every_state = {
+				limit = {
+					is_core_of = YAK
+				}
+				remove_core_of = YAK
+			}
+		}
+	}
+	
+	YAC_purify_NAK = {
+		icon = GFX_decision_statue
+		available = {
+			has_completed_focus = YAC_basis_of_new_society
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		cost = 50
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 254
+			}
+		}
+		days_remove = 35
+		modifier = {
+			political_power_gain = -0.5
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision YAC_purify_MNT"
+			254 = {
+				add_manpower = -35000
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.01
+			}
+			add_stability = -0.025
+			add_war_support =  -0.025
+			every_state = {
+				limit = {
+					is_core_of = NAK
+				}
+				remove_core_of = NAK
+			}
+		}
+	}
+	
+	YAC_purify_BAD = {
+		icon = GFX_decision_fire
+		available = {
+			has_completed_focus = YAC_basis_of_new_society
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		cost = 50
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 276
+			}
+		}
+		days_remove = 35
+		modifier = {
+			political_power_gain = -0.5
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision YAC_purify_MNT"
+			276 = {
+				add_manpower = -35000
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.01
+			}
+			add_stability = -0.025
+			add_war_support =  -0.025
+			every_state = {
+				limit = {
+					is_core_of = BAD
+				}
+				remove_core_of = BAD
+			}
+		}
+	}
+}
+
+YAC_marks_revival_cat = {
+	YAC_search_marks_corpse_decision = {
+		icon = GFX_decision_communism_magnifying_glass
+		available = {
+			has_completed_focus = YAC_crusade
+			NOT = {
+				has_country_flag = yac_is_searching_marx_corpse
+			}
+		}
+		visible = {
+			has_completed_focus = YAC_crusade
+			NOT = {
+				has_country_flag = yac_has_holy_corpse
+			}
+			FROM = {
+				NOT = {
+					has_state_flag = YAC_state_searched
+				}
+				NOT = {
+					OR = {
+						state = 157
+						state = 156
+					}
+				}
+			}
+		}
+		state_target = yes
+
+		target_array = STG.original_cores
+		
+		on_map_mode = map_and_decisions_view
+		ai_will_do = {
+			factor = 1000
+		}
+		
+		cost = 25
+		days_remove = 40
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision start YAC_search_marks_corpse_decision"
+			custom_effect_tooltip = yac_marx_search_tt
+			set_country_flag = yac_is_searching_marx_corpse
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision finish YAC_search_marks_corpse_decision"
+			clr_country_flag = yac_is_searching_marx_corpse
+			yac_search_for_marx_corpse = yes
+			custom_effect_tooltip = yac_state_is_researched_tt 
+			FROM = { 
+				set_state_flag = YAC_state_searched
+			}
+		}
+	}
+
+	YAC_ritual_decision = {
+		icon = soljudge
+		available = {
+			has_country_flag = yac_has_holy_corpse
+		}
+		visible = {
+			has_completed_focus = YAC_crusade
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 5
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision UNC_strike_prance_nationalisits"
+			custom_effect_tooltip = give_marks_corpse_to_shamans_tt
+			hidden_effect = {
+				country_event = { id = yac.10 days = 2 }
+			}
+		}
+	}
+
+	YAC_MARKS = {
+		icon = GFX_decision_fire
+		available = {
+			has_completed_focus = YAC_crusade
+		}
+		visible = {
+			always = no
+			#has_completed_focus = YAC_crusade
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		cost = 50
+		fire_only_once = yes
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision UNC_strike_prance_nationalisits"
+			custom_effect_tooltip = YAC_MARKS_tt
+			add_country_leader_role = {
+				character = YAC_marx_leader
+				promote_leader = yes
+				country_leader = {
+					expire = "1965.1.1"
+					desc = ""
+					ideology = religious_socialism
+					traits = {  }
+				}
+			}
+		}
+	}
+}

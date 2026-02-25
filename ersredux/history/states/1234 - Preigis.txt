@@ -1,0 +1,21 @@
+state={
+	id=1234
+	name="STATE_1234"
+
+	provinces={
+		467 3230 9468
+	}
+
+	manpower=60545
+	state_category=pastoral
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = ERP
+		add_core_of = ERP
+		
+		buildings = {
+		
+		}
+	}
+}

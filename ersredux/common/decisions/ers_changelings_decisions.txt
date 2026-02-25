@@ -1,0 +1,798 @@
+	
+ers_changelings_category = { # LEADER DECISIONS
+	
+	ers_changelings_destroy_hehemony_beta = {
+		available = {
+			
+		}
+		
+		fire_only_once = yes
+		
+		cost = 0
+		
+		available = {
+			OR = {
+				is_ai = no
+				AND = {
+					is_ai = yes
+					date > 1010.1.1
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 2000
+		}
+		visible = {
+			always = no
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision ers_changelings_destroy_hehemony_beta"
+			add_to_variable = {
+				global.ers_chn_unity_var = -100.0
+			}
+			custom_effect_tooltip = destroy_hehemony_beta_tt
+		}
+	}
+	
+	ers_changelings_quit_hehemony = {
+		available = {
+			has_idea = changelings_no_puppet
+			is_chn_hehemony_hive = yes
+		}
+		visible = {
+			is_subject = yes
+			is_chn_hehemony_hive = yes
+		}
+		
+		fire_only_once = yes
+		
+		cost = 100
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision ers_changelings_quit_hehemony"
+			set_autonomy = { target = ROOT autonomy_state = autonomy_free }
+			leave_faction = yes
+			minus_5_hehemony_unity = yes
+		}
+	}
+	
+	ers_stabilize_hehemony = {
+		icon = GFX_decision_upgrade_hehemony
+		available = {
+			is_chn_hehemony_hive = yes
+		}
+		visible = {
+			is_chn_hehemony_hive = yes
+		}
+		
+		
+		cost = 50
+		
+		ai_will_do = {
+			factor = 10
+				modifier = {
+					factor = 0
+					tag = VRX
+				}
+		}
+		
+		days_re_enable = 35
+		days_remove = 5
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision ers_stabilize_hehemony"
+			plus_5_hehemony_unity = yes
+		}
+	}
+	
+	ers_destabilize_hehemony = {
+		icon = GFX_decision_decrease_hehemony
+		available = {
+			is_chn_hehemony_hive = yes
+			NOT = {
+				has_idea = changelings_medium_puppet
+				has_idea = changelings_high_puppet
+				has_idea = changelings_leader
+			}	
+		}
+		visible = {
+		}
+		
+		cost = 50
+		
+		ai_will_do = {
+			factor = 1
+				modifier = {
+					factor = 40
+					tag = VRX
+				}
+		}
+		days_re_enable = 60
+		days_remove = 15
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision ers_destabilize_hehemony"
+			minus_5_hehemony_unity = yes
+		}
+	}
+	
+	ers_changelings_annex_sotyrh = {
+		icon = GFX_chibi_yahria_crown
+		available = {
+			ROOT = {
+				has_idea = changelings_leader
+			}
+			SRF = {
+				has_idea = changelings_high_puppet
+			}
+		}
+		visible = {
+			NOT = {
+				tag = SRF
+			}
+			has_idea = changelings_leader
+		}
+		
+		cancel_if_invalid = yes
+		fire_only_once = yes
+		
+		cost = 100
+		
+		days_remove = 100
+		modifier = {
+			political_power_factor = -0.1
+			production_speed_buildings_factor = -0.05
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision ers_changelings_annex_sotyrh"
+			annex_country = { target = SRF }
+		}
+	}
+	
+	ers_changelings_annex_vraks = {
+		icon = GFX_chibi_argynnis_crown
+		available = {
+			ROOT = {
+				has_idea = changelings_leader
+			}
+			VRX = {
+				has_idea = changelings_high_puppet
+				NOT = {
+					has_completed_focus = VRX_talk_to_vesalipolis_queen
+				}
+			}
+		}
+		visible = {
+			NOT = {
+				tag = VRX
+			}
+			has_idea = changelings_leader
+		}
+		
+		fire_only_once = yes
+		
+		cost = 100
+		
+		days_remove = 100
+		modifier = {
+			political_power_factor = -0.1
+			production_speed_buildings_factor = -0.05
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision ers_changelings_annex_vraks"
+			annex_country = { target = VRX }
+		}
+	}
+	
+	ers_changelings_annex_lyctida = {
+		icon = GFX_chibi_aurantia_crown
+		available = {
+			ROOT = {
+				has_idea = changelings_leader
+			}
+			LYC = {
+				has_idea = changelings_high_puppet
+			}
+		}
+		visible = {
+			NOT = {
+				tag = LYC
+			}
+			has_idea = changelings_leader
+		}
+		
+		fire_only_once = yes
+		
+		cost = 100
+		
+		days_remove = 100
+		modifier = {
+			political_power_factor = -0.1
+			production_speed_buildings_factor = -0.05
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision ers_changelings_annex_lyctida"
+			annex_country = { target = LYC }
+			LYC = {
+				transfer_navy = { target = ROOT }
+			}
+		}
+	}
+	
+	ers_changelings_annex_ditrisium = {
+		icon = GFX_chibi_helvia_crown
+		available = {
+			ROOT = {
+				has_idea = changelings_leader
+			}
+			DTS = {
+				has_idea = changelings_high_puppet
+			}
+		}
+		visible = {
+			NOT = {
+				tag = DTS
+			}
+			has_idea = changelings_leader
+		}
+		
+		fire_only_once = yes
+		
+		cost = 100
+		
+		days_remove = 100
+		modifier = {
+			political_power_factor = -0.1
+			production_speed_buildings_factor = -0.05
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision ers_changelings_annex_ditrisium"
+			annex_country = { target = DTS }
+			DTS = {
+				transfer_navy = { target = ROOT }
+			}
+		}
+	}
+	
+	ers_changelings_annex_vesapipolis = {
+		icon = GFX_chibi_chrysalis_crown
+		available = {
+			ROOT = {
+				has_idea = changelings_leader
+			}
+			CHN = {
+				has_idea = changelings_high_puppet
+			}
+		}
+		visible = {
+			NOT = {
+				tag = CHN
+			}
+			has_idea = changelings_leader
+		}
+		
+		fire_only_once = yes
+		
+		cost = 100
+		
+		days_remove = 100
+		modifier = {
+			political_power_factor = -0.1
+			production_speed_buildings_factor = -0.05
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: ers_changelings_annex_vesapipolis"
+			annex_country = { target = CHN }
+		}
+	}
+	
+	############################### LYCTIDA
+	
+	lyc_develop_vesalipolis_industry = {
+		available = {
+			ROOT = {
+				has_idea = LYC_industrial_hive
+			}
+			num_of_civilian_factories_available_for_projects > 1
+		}
+		visible = {
+			has_idea = LYC_industrial_hive
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		days_re_enable = 70
+		
+		cost = 25
+		
+		days_remove = 70
+		
+		modifier = {
+			civilian_factory_use = 1
+		}
+		
+		remove_effect = {
+		
+			log = "[GetDateText]: [Root.GetName]: Decision lyc_develop_vesalipolis_industry"
+			plus_2_hehemony_unity = yes
+			251 = {
+				add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	lyc_develop_vraks_industry = {
+		available = {
+			ROOT = {
+				has_idea = LYC_industrial_hive
+			}
+			num_of_civilian_factories_available_for_projects > 1
+		}
+		visible = {
+			has_idea = LYC_industrial_hive
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		days_re_enable = 70
+		
+		cost = 25
+		
+		days_remove = 70
+		
+		modifier = {
+			civilian_factory_use = 1
+		}
+		
+		remove_effect = {
+		
+			log = "[GetDateText]: [Root.GetName]: Decision lyc_develop_vraks_industry"
+			plus_2_hehemony_unity = yes
+			259 = {
+				add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	lyc_develop_ditrisium_industry = {
+		available = {
+			ROOT = {
+				has_idea = LYC_industrial_hive
+			}
+			num_of_civilian_factories_available_for_projects > 1
+		}
+		visible = {
+			has_idea = LYC_industrial_hive
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		days_re_enable = 70
+		
+		cost = 25
+		
+		days_remove = 70
+		
+		modifier = {
+			civilian_factory_use = 1
+		}
+		
+		remove_effect = {
+		
+			log = "[GetDateText]: [Root.GetName]: Decision lyc_develop_ditrisium_industry"
+			plus_2_hehemony_unity = yes
+			252 = {
+				add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	lyc_develop_soryth_industry = {
+		available = {
+			ROOT = {
+				has_idea = LYC_industrial_hive
+			}
+			num_of_civilian_factories_available_for_projects > 1
+		}
+		visible = {
+			has_idea = LYC_industrial_hive
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		
+		days_re_enable = 70
+		
+		cost = 25
+		
+		days_remove = 70
+		
+		modifier = {
+			civilian_factory_use = 1
+		}
+		
+		remove_effect = {
+		
+			log = "[GetDateText]: [Root.GetName]: Decision lyc_develop_soryth_industry"
+			plus_2_hehemony_unity = yes
+			262 = {
+				add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	############################### VRAKS
+	
+	vrx_develop_vesalipolis_industry = {
+		available = {
+			ROOT = {
+				has_idea = VRX_military_hive
+				is_chn_hehemony_hive = yes
+			}
+			CHN = {
+				is_chn_hehemony_hive = yes
+			}
+		}
+		icon = GFX_decision_ger_military_buildup
+		visible = {
+			has_idea = VRX_military_hive
+		}
+		
+		ai_will_do = {
+			factor = 5
+			modifier = {	
+				factor = 0
+				tag = VRX
+			}
+		}
+		
+		days_re_enable = 70
+		
+		cost = 25
+		
+		days_remove = 70
+		
+		modifier = {
+			civilian_factory_use = 2
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 251
+			}
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision vrx_develop_vesalipolis_industry"
+			plus_2_hehemony_unity = yes
+			251 = {
+				add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	vrx_develop_lyctida_industry = {
+		available = {
+			ROOT = {
+				has_idea = VRX_military_hive
+				is_chn_hehemony_hive = yes
+			}
+			LYC = {
+				is_chn_hehemony_hive = yes
+			}
+		}
+		icon = GFX_decision_ger_military_buildup
+		visible = {
+			has_idea = VRX_military_hive
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		days_re_enable = 70
+		
+		cost = 25
+		
+		days_remove = 70
+		
+		modifier = {
+			civilian_factory_use = 2
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 309
+			}
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision vrx_develop_lyctida_industry"
+			plus_2_hehemony_unity = yes
+			309 = {
+				add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	vrx_develop_ditrisium_industry = {
+		available = {
+			ROOT = {
+				has_idea = VRX_military_hive
+				is_chn_hehemony_hive = yes
+			}
+			DTS = {
+				is_chn_hehemony_hive = yes
+			}
+		}
+		icon = GFX_decision_ger_military_buildup
+		visible = {
+			has_idea = VRX_military_hive
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		days_re_enable = 70
+		
+		cost = 25
+		
+		days_remove = 70
+		
+		modifier = {
+			civilian_factory_use = 2
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 252
+			}
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision vrx_develop_ditrisium_industry"
+			plus_2_hehemony_unity = yes
+			252 = {
+				add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	vrx_develop_soryth_industry = {
+		available = {
+			ROOT = {
+				has_idea = VRX_military_hive
+				is_chn_hehemony_hive = yes
+			}
+			SRF = {
+				is_chn_hehemony_hive = yes
+			}
+		}
+		icon = GFX_decision_ger_military_buildup
+		visible = {
+			has_idea = VRX_military_hive
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		
+		days_re_enable = 70
+		
+		cost = 25
+		
+		days_remove = 70
+		modifier = {
+			civilian_factory_use = 2
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 262
+			}
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision vrx_develop_soryth_industry"
+			plus_2_hehemony_unity = yes
+			262 = {
+				add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	
+	
+	
+	############################### SORYTH
+	
+	srf_develop_vesalipolis_science = {
+		available = {
+			ROOT = {
+				has_idea = SRF_science_hive
+			}
+		}
+		visible = {
+			has_idea = SRF_science_hive
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		days_re_enable = 70
+		
+		cost = 25
+		
+		days_remove = 70
+		
+		modifier = {
+			research_speed_factor = -0.02
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision srf_develop_vesalipolis_science"
+			plus_2_hehemony_unity = yes
+			CHN = { 
+				add_timed_idea = { 
+					idea = timed_science_support_from_soryth
+					days = 70 
+				}
+			}
+		}
+	}
+	
+	srf_develop_lyctida_science = {
+		available = {
+			ROOT = {
+				has_idea = SRF_science_hive
+			}
+		}
+		visible = {
+			has_idea = SRF_science_hive
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		days_re_enable = 70
+		
+		cost = 25
+		
+		days_remove = 70
+		
+		modifier = {
+			research_speed_factor = -0.02
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision srf_develop_lyctida_science"
+			plus_2_hehemony_unity = yes
+			LYC = { 
+				add_timed_idea = { 
+					idea = timed_science_support_from_soryth
+					days = 70 
+				}
+			}
+		}
+	}
+	
+	srf_develop_ditrysium_science = {
+		available = {
+			ROOT = {
+				has_idea = SRF_science_hive
+			}
+		}
+		visible = {
+			has_idea = SRF_science_hive
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		days_re_enable = 70
+		
+		cost = 25
+		
+		days_remove = 70
+		
+		modifier = {
+			research_speed_factor = -0.02
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision srf_develop_ditrysium_science"
+			plus_2_hehemony_unity = yes
+			DTS = { 
+				add_timed_idea = { 
+					idea = timed_science_support_from_soryth
+					days = 70 
+				}
+			}
+		}
+	}
+	
+	srf_develop_vraks_science = {
+		available = {
+			ROOT = {
+				has_idea = SRF_science_hive
+			}
+		}
+		visible = {
+			has_idea = SRF_science_hive
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		days_re_enable = 70
+		
+		cost = 25
+		
+		days_remove = 70
+		
+		modifier = {
+			research_speed_factor = -0.02
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision srf_develop_vraks_science"
+			plus_2_hehemony_unity = yes
+			VRX = { 
+				add_timed_idea = { 
+					idea = timed_science_support_from_soryth
+					days = 70 
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,279 @@
+ideas = {
+	race_pointer = {
+		law = yes
+		use_list_view = yes
+		
+		generic_race_idea = {
+			allowed = {
+				has_tech = generic_race
+			}
+			visible = {
+				has_idea = generic_race_idea
+			}
+
+			removal_cost = -1
+			default = yes
+
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		pony_race = {
+			default = yes
+			allowed = {
+				is_pony_race = yes
+			}
+			visible = {
+				has_idea = pony_race
+			}
+			removal_cost = -1
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		ers_thestral_race = {
+			default = yes
+			allowed = {
+				is_ers_thestral_race = yes
+			}
+			visible = {
+				has_idea = ers_thestral_race
+			}
+			removal_cost = -1
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		pegasi_race = {
+			default = yes
+			allowed = {
+				is_pegasi_race = yes
+			}
+			visible = {
+				has_idea = pegasi_race
+			}
+			removal_cost = -1
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		unicorns_race = {
+			default = yes
+			allowed = {
+				is_unicorns_race = yes
+			}
+			visible = {
+				has_idea = unicorns_race
+			}
+			removal_cost = -1
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		earthponies_race = {
+			default = yes
+			allowed = {
+				is_earthponies_race = yes
+			}
+			visible = {
+				has_idea = earthponies_race
+			}
+			removal_cost = -1
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+
+
+		changeling_race = {
+			default = yes
+			allowed = {
+				is_changeling_race = yes
+			}
+			visible = {
+				has_idea = changeling_race
+			}
+			removal_cost = -1
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		deer_race = {
+			default = yes
+			allowed = {
+				is_deer_race = yes
+			}
+			visible = {
+				has_idea = deer_race
+			}
+			removal_cost = -1
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		griffon_race = {
+			default = yes
+			allowed = {
+				is_griffon_race = yes
+			}
+			visible = {
+				has_idea = griffon_race
+			}
+			removal_cost = -1
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		diamond_dog_race = {
+			default = yes
+			allowed = {
+				is_diamond_dog_race = yes
+			}
+			visible = {
+				has_idea = diamond_dog_race
+			}
+			removal_cost = -1
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		minotaur_race = {
+			default = yes
+			allowed = {
+				is_minotaur_race = yes
+			}
+			visible = {
+				has_idea = minotaur_race
+			}
+			removal_cost = -1
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		penguin_race = {
+			default = yes
+			allowed = {
+				is_penguin_race = yes
+			}
+			visible = {
+				has_idea = penguin_race
+			}
+			removal_cost = -1
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		dragon_race = {
+			default = yes
+			allowed = {
+				is_dragon_race = yes
+			}
+			visible = {
+				has_idea = dragon_race
+			}
+			removal_cost = -1
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		undead_race = {
+			default = yes
+			allowed = {
+				is_undead_race = yes
+			}
+			visible = {
+				has_idea = undead_race
+			}
+			removal_cost = -1
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		buffalo_race = {
+			default = yes
+			allowed = {
+				is_buffalo_race = yes
+			}
+			visible = {
+				has_idea = buffalo_race
+			}
+			removal_cost = -1
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		yak_race = {
+			default = yes
+			allowed = {
+				is_yak_race = yes
+			}
+			visible = {
+				has_idea = yak_race
+			}
+			removal_cost = -1
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		polar_race = {
+			default = yes
+			allowed = {
+				is_polar_race = yes
+			}
+			visible = {
+				has_idea = polar_race
+			}
+			removal_cost = -1
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		
+		
+		
+		###########################################
+		################# ZEBRICA #################
+		###########################################
+		
+		
+		hippogriff_race = {
+			default = yes
+			allowed = {
+				is_hippogriff_race = yes
+			}
+			visible = {
+				has_idea = hippogriff_race
+			}
+			removal_cost = -1
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+}

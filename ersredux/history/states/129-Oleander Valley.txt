@@ -1,0 +1,26 @@
+
+state={
+	id=129
+	name="STATE_129"
+
+	history={
+		owner = PGS
+		add_core_of = PGS
+		victory_points = {
+			3893 2 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+
+	}
+
+	provinces={
+		841 914 966 974 3448 3884 3893 3980 4430 6900 6930 9157 9805 9837 11786 11856 11895 11767
+	}
+	manpower=189371
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

@@ -1,0 +1,109 @@
+yac_search_for_marx_corpse = {
+	if = {
+		limit = {
+			NOT = {
+                has_country_flag = yac_corpse_search_1
+            }
+		}
+		set_country_flag = yac_corpse_search_1
+        custom_effect_tooltip = yac_marx_search_finish_tt
+
+            random_list = {
+                90 = {
+                    country_event = { id = yac.6 hours = 12 }
+                }
+                10 = {
+                    country_event = { id = yac.7 hours = 12 }
+                }
+            }
+	}
+    else_if = {
+		limit = {
+            has_country_flag = yac_corpse_search_1
+		}
+		clr_country_flag = yac_corpse_search_1
+        set_country_flag = yac_corpse_search_2
+        custom_effect_tooltip = yac_marx_search_finish_tt
+
+            random_list = {
+                80 = {
+                    country_event = { id = yac.6 hours = 12 }
+                }
+                20 = {
+                    country_event = { id = yac.7 hours = 12 }
+                }
+            }
+
+	}
+    else_if = {
+		limit = {
+            has_country_flag = yac_corpse_search_2
+		}
+		clr_country_flag = yac_corpse_search_2
+        set_country_flag = yac_corpse_search_3
+        custom_effect_tooltip =yac_marx_search_finish_tt
+
+            random_list = {
+                60 = {
+                    country_event = { id = yac.6 hours = 12 }
+                }
+                40 = {
+                    country_event = { id = yac.7 hours = 12 }
+                }
+            }
+
+	}
+    else_if = {
+		limit = {
+            has_country_flag = yac_corpse_search_3
+		}
+		clr_country_flag = yac_corpse_search_3
+        set_country_flag = yac_corpse_search_4
+        custom_effect_tooltip = yac_marx_search_finish_tt
+   
+            random_list = {
+                50 = {
+                    country_event = { id = yac.6 hours = 12 }
+                }
+                50 = {
+                    country_event = { id = yac.7 hours = 12 }
+                }
+            }
+
+	}
+    else_if = {
+		limit = {
+            has_country_flag = yac_corpse_search_4
+		}
+		clr_country_flag = yac_corpse_search_4
+        set_country_flag = yac_corpse_search_5
+        custom_effect_tooltip = yac_marx_search_finish_tt
+
+            random_list = {
+                80 = {
+                    country_event = { id = yac.6 hours = 12 }
+                }
+                20 = {
+                    country_event = { id = yac.7 hours = 12 }
+                }
+            }
+
+	}
+    else_if = {
+		limit = {
+            has_country_flag = yac_corpse_search_5
+		}
+		clr_country_flag = yac_corpse_search_5
+        custom_effect_tooltip = yac_marx_search_finish_tt
+
+            random_list = {
+                10 = {
+                    country_event = { id = yac.6 hours = 12 }
+                }
+                90 = {
+                    country_event = { id = yac.7 hours = 12 }
+                }
+            }
+
+	}
+}

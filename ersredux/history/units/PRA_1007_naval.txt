@@ -1,0 +1,20 @@
+﻿
+units = {
+	fleet = {
+		name = "Prench Hunting Fleet"
+		naval_base = 11684
+		task_force = {
+			name = "Prench Hunting Fleet"
+			location = 11684
+
+			#Destroyers
+			ship = { name = "Destroyer-1" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = PRA version_name = "Destroyer Class"} } }
+			ship = { name = "Destroyer-2" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = PRA version_name = "Destroyer Class"} } }
+			ship = { name = "Destroyer-3" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = PRA version_name = "Destroyer Class"} } }
+			ship = { name = "Destroyer-4" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = PRA version_name = "Destroyer Class"} } }
+			ship = { name = "Destroyer-5" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = PRA version_name = "Destroyer Class"} } }
+			ship = { name = "Destroyer-6" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = PRA version_name = "Destroyer Class"} } }
+			ship = { name = "Destroyer-7" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = PRA version_name = "Destroyer Class"} } }
+		}
+	}
+}

@@ -1,0 +1,346 @@
+ideas = {
+
+	country = {
+		UNC_monarchy = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+				tag = UNC
+			}
+
+			picture = LIT_crown_4
+
+			modifier = {
+				stability_factor = 0.1
+				political_power_factor = 0.05
+			}
+		}
+		
+		UNC_monarchy_1 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+				tag = UNC
+			}
+
+			picture = LIT_crown_3
+
+			modifier = {
+				political_power_factor = 0.025
+			}
+		}
+		
+		UNC_less_trainings = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+				tag = UNC
+			}
+
+
+			modifier = {
+				consumer_goods_factor = -0.075
+				experience_gain_army = -0.05
+				max_command_power = -75
+			}
+		}
+		
+		UNC_little_conscription = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+				tag = UNC
+			}
+
+			modifier = {
+				conscription = -0.04
+				ARMY_ORG_FACTOR = -0.1
+				political_power_gain = 0.05
+			}
+		}
+		
+		UNC_closed_politics_idea = {
+
+			allowed = {
+				always = no
+			}
+			
+			picture = CVA_zarpeace
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+				tag = UNC
+			}
+
+			modifier = {
+				GENERATE_WARGOAL_TENSION = 0.45
+				justify_war_goal_time = 0.25
+				war_stability_factor = -0.30	
+			}
+		}
+		
+		UNC_closed_politics_idea_1 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+				tag = UNC
+			}
+
+			modifier = {
+				GENERATE_WARGOAL_TENSION = 0.4
+				justify_war_goal_time = 0.2
+				war_stability_factor = -0.30	
+			}
+		}
+		
+		UNC_think_about_people_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+				tag = UNC
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.2
+				stability_weekly = 0.01
+				MONTHLY_POPULATION = 0.05
+				political_power_gain = 0.05
+			}
+		}
+		
+		
+		UNC_prance_defence = { 
+
+			removal_cost = -1
+				
+			allowed = {
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+
+			targeted_modifier = {
+				tag = TST
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		
+	}
+	
+	country = {
+		UNC_intelligents = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+				tag = UNC
+			}
+
+			picture = ROM_king_carol_ii_hedonist
+
+			modifier = {
+				war_support_factor = -0.05
+				mobilization_laws_cost = 0.25
+				mobilization_speed = -0.5
+				training_time_factor = 0.25
+				research_speed_factor = 0.05
+				stability_factor = 0.05
+				conscription_factor = -0.15
+			}
+		}
+	}
+	
+	country = {
+		UNC_workers = {
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_production_bonus
+			modifier = {
+				consumer_goods_factor = 0.4
+				production_speed_buildings_factor = -0.15
+				production_factory_max_efficiency_factor = -0.1
+			}
+		}
+	}
+
+	country = {
+		UNC_closed_from_griffonia = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = capital_outflow
+
+			modifier = {
+				trade_opinion_factor = -0.50
+				trade_laws_cost_factor = 0.75
+			}
+			targeted_modifier = {
+				tag = GRI
+				trade_cost_for_target_factor = 1.0
+			}
+		}
+	}
+	
+	country = {
+		UNC_timed_trade_with_MNH = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = idea_rainbow_factory
+
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+	}
+	
+	country = {
+		UNC_corrupted_aristocrats_idea_1 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = Generic_Scroll
+			
+			removal_cost = -1
+
+			modifier = {
+				political_advisor_cost_factor = -0.1
+				economy_cost_factor = -0.1
+			}
+		}
+		
+		UNC_sell_lands_for_UNC = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		UNC_sell_lands_for_MNH = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+		}
+		
+		UNC_unp_rising = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_fascism_drift_bonus
+			removal_cost = -1
+			modifier = {
+				fascism_drift = 0.02
+				weekly_manpower = -75
+				stability_factor = -0.025
+			}
+		}
+	}
+	
+	
+	
+
+}

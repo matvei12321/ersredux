@@ -1,0 +1,1868 @@
+guiTypes = {
+	
+	## Prekrasnoye Daleko ##
+	
+	containerWindowType = {
+		name = "ERS_custom_super_event_prekrasnoye_daleko"
+		size = { width = 580 height = 565 }
+		position = { x=0 y=3000 }
+		show_sound = menu_open_window	
+		show_position = { x=0 y=0 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 780
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+
+		
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_thin_border2"
+		}
+		
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 15 }
+			font = "aldrich_18_outline"
+			borderSize = {x = 0 y = 0}
+			text = "SE_prekrasnoye_daleko_title"
+			maxWidth = 580
+			maxHeight = 24
+			format = center
+		}
+		
+		containerWindowType = {
+			name = "Content"
+			size = { width = 603 height = 480 }
+			position = { x=0 y=0 }
+			Orientation = center
+			Origo = center
+			
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window_1b_no_border"
+			}
+			
+			iconType = {
+				name ="Image"
+				spriteType = "GFX_super_event_custom_you_did_it"
+				position = { x=15 y =15 }
+				#Orientation = center
+				alwaystransparent = yes
+			}
+			
+			iconType = {
+				name ="Underlay"
+				spriteType = "GFX_superevent_text_underlay"
+				position = { x= 40 y = -145 }
+				Orientation = lower_left
+				alwaystransparent = yes
+			}
+			
+			instantTextBoxType = {
+				name = "Description"
+				position = {  x= 105 y = -140 }
+				font = "aldrich_18_outline"
+				text = "SE_prekrasnoye_daleko_desc"
+				maxWidth = 475
+				maxHeight = 175
+				fixedsize = yes
+				format = right
+				Orientation = lower_left
+			}
+		}
+			
+		buttonType = {
+			name = "Option"
+			text = "SE_prekrasnoye_daleko_reaction"
+			shortcut = "ESCAPE"
+			position = { x = -180 y = 240 }
+			quadTextureSprite ="GFX_button_359x34"
+			buttonFont = "aldrich_18_outline"
+			Orientation = center
+		}
+	}
+	
+	
+	#### EQS GETS NUKES (basically everyone will die)
+	
+	containerWindowType = {
+		name = "ERS_custom_super_event_nuclear"
+		size = { width = 580 height = 565 }
+		position = { x=0 y=3000 }
+		show_sound = menu_open_window	
+		show_position = { x=0 y=0 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 780
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+
+		
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_thin_border2"
+		}
+		
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 15 }
+			font = "aldrich_18_outline"
+			borderSize = {x = 0 y = 0}
+			text = "SE_nuclear_title"
+			maxWidth = 580
+			maxHeight = 24
+			format = center
+		}
+		
+		containerWindowType = {
+			name = "Content"
+			size = { width = 603 height = 480 }
+			position = { x=0 y=0 }
+			Orientation = center
+			Origo = center
+			
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window_1b_no_border"
+			}
+			
+			iconType = {
+				name ="Image"
+				spriteType = "GFX_super_event_custom_superevent_nuclear"
+				position = { x=15 y =15 }
+				#Orientation = center
+				alwaystransparent = yes
+			}
+			
+			iconType = {
+				name ="Underlay"
+				spriteType = "GFX_superevent_text_underlay"
+				position = { x= 40 y = -145 }
+				Orientation = lower_left
+				alwaystransparent = yes
+			}
+			
+			instantTextBoxType = {
+				name = "Description"
+				position = {  x= 105 y = -140 }
+				font = "aldrich_18_outline"
+				text = "SE_nuclear_desc"
+				maxWidth = 475
+				maxHeight = 175
+				fixedsize = yes
+				format = right
+				Orientation = lower_left
+			}
+		}
+			
+		buttonType = {
+			name = "Option"
+			text = "SE_nuclear_reaction"
+			shortcut = "ESCAPE"
+			position = { x = -180 y = 240 }
+			quadTextureSprite ="GFX_button_359x34"
+			buttonFont = "aldrich_18_outline"
+			Orientation = center
+		}
+	}
+	
+	#### DODGE CITY COLLAPSE (time goes back)
+	
+	containerWindowType = {
+		name = "ERS_custom_super_event_dodge_city_collapse_1"
+		size = { width = 580 height = 565 }
+		position = { x=0 y=3000 }
+		show_sound = menu_open_window	
+		show_position = { x=0 y=0 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 780
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+
+		
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_thin_border2"
+		}
+		
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 15 }
+			font = "aldrich_18_outline"
+			borderSize = {x = 0 y = 0}
+			text = "SE_dodge_city_collapse_1_title"
+			maxWidth = 580
+			maxHeight = 24
+			format = center
+		}
+		
+		containerWindowType = {
+			name = "Content"
+			size = { width = 603 height = 480 }
+			position = { x=0 y=0 }
+			Orientation = center
+			Origo = center
+			
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window_1b_no_border"
+			}
+			
+			iconType = {
+				name ="Image"
+				spriteType = "GFX_super_event_custom_superevent_dodge_city_collapse_1"
+				position = { x=15 y =15 }
+				#Orientation = center
+				alwaystransparent = yes
+			}
+			
+			iconType = {
+				name ="Underlay"
+				spriteType = "GFX_superevent_text_underlay"
+				position = { x= 40 y = -145 }
+				Orientation = lower_left
+				alwaystransparent = yes
+			}
+			
+			instantTextBoxType = {
+				name = "Description"
+				position = {  x= 105 y = -140 }
+				font = "aldrich_18_outline"
+				text = "SE_dodge_city_collapse_1_desc"
+				maxWidth = 475
+				maxHeight = 175
+				fixedsize = yes
+				format = right
+				Orientation = lower_left
+			}
+		}
+			
+		buttonType = {
+			name = "Option"
+			text = "SE_dodge_city_collapse_1_reaction"
+			shortcut = "ESCAPE"
+			position = { x = -180 y = 240 }
+			quadTextureSprite ="GFX_button_359x34"
+			buttonFont = "aldrich_18_outline"
+			Orientation = center
+		}
+	}
+	
+	## Pegasi anarchist communists ##
+	
+	containerWindowType = {
+		name = "ERS_custom_super_event_anarchy"
+		size = { width = 580 height = 565 }
+		position = { x=0 y=3000 }
+		show_sound = menu_open_window	
+		show_position = { x=0 y=0 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 780
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+
+		
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_thin_border2"
+		}
+		
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 15 }
+			font = "aldrich_18_outline"
+			borderSize = {x = 0 y = 0}
+			text = "SE_anarchy_title"
+			maxWidth = 580
+			maxHeight = 24
+			format = center
+		}
+		
+		containerWindowType = {
+			name = "Content"
+			size = { width = 603 height = 480 }
+			position = { x=0 y=0 }
+			Orientation = center
+			Origo = center
+			
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window_1b_no_border"
+			}
+			
+			iconType = {
+				name ="Image"
+				spriteType = "GFX_super_event_custom_superevent_anarchy"
+				position = { x=15 y =15 }
+				#Orientation = center
+				alwaystransparent = yes
+			}
+			
+			iconType = {
+				name ="Underlay"
+				spriteType = "GFX_superevent_text_underlay"
+				position = { x= 40 y = -145 }
+				Orientation = lower_left
+				alwaystransparent = yes
+			}
+			
+			instantTextBoxType = {
+				name = "Description"
+				position = {  x= 105 y = -140 }
+				font = "aldrich_18_outline"
+				text = "SE_anarchy_desc"
+				maxWidth = 475
+				maxHeight = 175
+				fixedsize = yes
+				format = right
+				Orientation = lower_left
+			}
+		}
+			
+		buttonType = {
+			name = "Option"
+			text = "SE_anarchy_reaction"
+			shortcut = "ESCAPE"
+			position = { x = -180 y = 240 }
+			quadTextureSprite ="GFX_button_359x34"
+			buttonFont = "aldrich_18_outline"
+			Orientation = center
+		}
+	}
+	
+	
+	## warknan war ##
+	
+	containerWindowType = {
+		name = "ERS_custom_super_event_warkhan_war"
+		size = { width = 580 height = 565 }
+		position = { x=0 y=3000 }
+		show_sound = menu_open_window	
+		show_position = { x=0 y=0 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 780
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+
+		
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_thin_border2"
+		}
+		
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 15 }
+			font = "aldrich_18_outline"
+			borderSize = {x = 0 y = 0}
+			text = "SE_warkhan_war_title"
+			maxWidth = 580
+			maxHeight = 24
+			format = center
+		}
+		
+		containerWindowType = {
+			name = "Content"
+			size = { width = 603 height = 480 }
+			position = { x=0 y=0 }
+			Orientation = center
+			Origo = center
+			
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window_1b_no_border"
+			}
+			
+			iconType = {
+				name ="Image"
+				spriteType = "GFX_super_event_custom_superevent_warkhan_war"
+				position = { x=15 y =15 }
+				#Orientation = center
+				alwaystransparent = yes
+			}
+			
+			iconType = {
+				name ="Underlay"
+				spriteType = "GFX_superevent_text_underlay"
+				position = { x= 40 y = -145 }
+				Orientation = lower_left
+				alwaystransparent = yes
+			}
+			
+			instantTextBoxType = {
+				name = "Description"
+				position = {  x= 105 y = -140 }
+				font = "aldrich_18_outline"
+				text = "SE_warkhan_war_desc"
+				maxWidth = 475
+				maxHeight = 175
+				fixedsize = yes
+				format = right
+				Orientation = lower_left
+			}
+		}
+			
+		buttonType = {
+			name = "Option"
+			text = "SE_warkhan_war_reaction"
+			shortcut = "ESCAPE"
+			position = { x = -180 y = 240 }
+			quadTextureSprite ="GFX_button_359x34"
+			buttonFont = "aldrich_18_outline"
+			Orientation = center
+		}
+	}
+	
+	
+	
+	
+	# Little dark age #
+	containerWindowType = {
+		name = "ERS_custom_super_event_little_dark_age"
+		size = { width = 580 height = 565 }
+		position = { x=0 y=3000 }
+		show_sound = menu_open_window	
+		show_position = { x=0 y=0 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 780
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+
+		
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_thin_border2"
+		}
+		
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 15 }
+			font = "aldrich_18_outline"
+			borderSize = {x = 0 y = 0}
+			text = "SE_little_dark_age_war_title"
+			maxWidth = 580
+			maxHeight = 24
+			format = center
+		}
+		
+		containerWindowType = {
+			name = "Content"
+			size = { width = 603 height = 480 }
+			position = { x=0 y=0 }
+			Orientation = center
+			Origo = center
+			
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window_1b_no_border"
+			}
+			
+			iconType = {
+				name ="Image"
+				spriteType = "GFX_super_event_custom_superevent_little_dark_age"
+				position = { x=15 y =15 }
+				#Orientation = center
+				alwaystransparent = yes
+			}
+			
+			iconType = {
+				name ="Underlay"
+				spriteType = "GFX_superevent_text_underlay"
+				position = { x= 40 y = -145 }
+				Orientation = lower_left
+				alwaystransparent = yes
+			}
+			
+			instantTextBoxType = {
+				name = "Description"
+				position = {  x= 105 y = -140 }
+				font = "aldrich_18_outline"
+				text = "SE_little_dark_age_desc"
+				maxWidth = 475
+				maxHeight = 175
+				fixedsize = yes
+				format = right
+				Orientation = lower_left
+			}
+		}
+			
+		buttonType = {
+			name = "Option"
+			text = "SE_little_dark_age_reaction"
+			shortcut = "ESCAPE"
+			position = { x = -180 y = 240 }
+			quadTextureSprite ="GFX_button_359x34"
+			buttonFont = "aldrich_18_outline"
+			Orientation = center
+		}
+	}
+	
+	# Soldat #
+	containerWindowType = {
+		name = "ERS_custom_super_event_soldat"
+		size = { width = 580 height = 565 }
+		position = { x=0 y=3000 }
+		show_sound = menu_open_window	
+		show_position = { x=0 y=0 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 780
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+
+		
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_thin_border2"
+		}
+		
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 15 }
+			font = "aldrich_18_outline"
+			borderSize = {x = 0 y = 0}
+			text = "SE_soldat_title"
+			maxWidth = 580
+			maxHeight = 24
+			format = center
+		}
+		
+		containerWindowType = {
+			name = "Content"
+			size = { width = 603 height = 480 }
+			position = { x=0 y=0 }
+			Orientation = center
+			Origo = center
+			
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window_1b_no_border"
+			}
+			
+			iconType = {
+				name ="Image"
+				spriteType = "GFX_super_event_soldat"
+				position = { x=15 y =15 }
+				#Orientation = center
+				alwaystransparent = yes
+			}
+			
+			iconType = {
+				name ="Underlay"
+				spriteType = "GFX_superevent_text_underlay"
+				position = { x= 40 y = -145 }
+				Orientation = lower_left
+				alwaystransparent = yes
+			}
+			
+			instantTextBoxType = {
+				name = "Description"
+				position = {  x= 105 y = -140 }
+				font = "aldrich_18_outline"
+				text = "SE_soldat_unification_desc"
+				maxWidth = 475
+				maxHeight = 175
+				fixedsize = yes
+				format = right
+				Orientation = lower_left
+			}
+		}
+			
+		buttonType = {
+			name = "Option"
+			text = "SE_soldat_reaction"
+			shortcut = "ESCAPE"
+			position = { x = -180 y = 240 }
+			quadTextureSprite ="GFX_button_359x34"
+			buttonFont = "aldrich_18_outline"
+			Orientation = center
+		}
+	}
+	
+	# Starlight Doomer #
+	containerWindowType = {
+		name = "ERS_custom_super_event_starlight_unification"
+		size = { width = 580 height = 565 }
+		position = { x=0 y=3000 }
+		show_sound = menu_open_window	
+		show_position = { x=0 y=0 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 780
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+
+		
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_thin_border2"
+		}
+		
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 15 }
+			font = "aldrich_18_outline"
+			borderSize = {x = 0 y = 0}
+			text = "SE_starlight_unification_title"
+			maxWidth = 580
+			maxHeight = 24
+			format = center
+		}
+		
+		containerWindowType = {
+			name = "Content"
+			size = { width = 603 height = 480 }
+			position = { x=0 y=0 }
+			Orientation = center
+			Origo = center
+			
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window_1b_no_border"
+			}
+			
+			iconType = {
+				name ="Image"
+				spriteType = "GFX_super_event_custom_superevent_starlight_unification"
+				position = { x=15 y =15 }
+				#Orientation = center
+				alwaystransparent = yes
+			}
+			
+			iconType = {
+				name ="Underlay"
+				spriteType = "GFX_superevent_text_underlay"
+				position = { x= 40 y = -145 }
+				Orientation = lower_left
+				alwaystransparent = yes
+			}
+			
+			instantTextBoxType = {
+				name = "Description"
+				position = {  x= 105 y = -140 }
+				font = "aldrich_18_outline"
+				text = "SE_starlight_unification_desc"
+				maxWidth = 475
+				maxHeight = 175
+				fixedsize = yes
+				format = right
+				Orientation = lower_left
+			}
+		}
+			
+		buttonType = {
+			name = "Option"
+			text = "SE_starlight_unification_reaction"
+			shortcut = "ESCAPE"
+			position = { x = -180 y = 240 }
+			quadTextureSprite ="GFX_button_359x34"
+			buttonFont = "aldrich_18_outline"
+			Orientation = center
+		}
+	}
+	
+	# Changeling Collapse
+	containerWindowType = {
+		name = "ERS_custom_super_event_changeling_hehemony_collapse"
+		size = { width = 580 height = 565 }
+		position = { x=0 y=3000 }
+		show_sound = menu_open_window	
+		show_position = { x=0 y=0 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 780
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+
+		
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_thin_border2"
+		}
+		
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 15 }
+			font = "aldrich_18_outline"
+			borderSize = {x = 0 y = 0}
+			text = "SE_changeling_hehemony_collapse_title"
+			maxWidth = 580
+			maxHeight = 24
+			format = center
+		}
+		
+		containerWindowType = {
+			name = "Content"
+			size = { width = 603 height = 480 }
+			position = { x=0 y=0 }
+			Orientation = center
+			Origo = center
+			
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window_1b_no_border"
+			}
+			
+			iconType = {
+				name ="Image"
+				spriteType = "GFX_super_event_custom_superevent_changeling_hehemony_collapse"
+				position = { x=15 y =15 }
+				#Orientation = center
+				alwaystransparent = yes
+			}
+			
+			iconType = {
+				name ="Underlay"
+				spriteType = "GFX_superevent_text_underlay"
+				position = { x= 40 y = -145 }
+				Orientation = lower_left
+				alwaystransparent = yes
+			}
+			
+			instantTextBoxType = {
+				name = "Description"
+				position = {  x= 105 y = -140 }
+				font = "aldrich_18_outline"
+				text = "SE_changeling_hehemony_collapse_desc"
+				maxWidth = 475
+				maxHeight = 175
+				fixedsize = yes
+				format = right
+				Orientation = lower_left
+			}
+		}
+			
+		buttonType = {
+			name = "Option"
+			text = "SE_changeling_hehemony_collapse_reaction"
+			shortcut = "ESCAPE"
+			position = { x = -180 y = 240 }
+			quadTextureSprite ="GFX_button_359x34"
+			buttonFont = "aldrich_18_outline"
+			Orientation = center
+		}
+	}
+	
+	# Frost Is Here
+	containerWindowType = {
+		name = "ERS_custom_super_event_frost_is_here"
+		size = { width = 580 height = 565 }
+		position = { x=0 y=3000 }
+		show_sound = menu_open_window	
+		show_position = { x=0 y=0 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 780
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+
+		
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_thin_border2"
+		}
+		
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 15 }
+			font = "aldrich_18_outline"
+			borderSize = {x = 0 y = 0}
+			text = "SE_frost_is_here_title"
+			maxWidth = 580
+			maxHeight = 24
+			format = center
+		}
+		
+		containerWindowType = {
+			name = "Content"
+			size = { width = 603 height = 480 }
+			position = { x=0 y=0 }
+			Orientation = center
+			Origo = center
+			
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window_1b_no_border"
+			}
+			
+			iconType = {
+				name ="Image"
+				spriteType = "GFX_super_event_custom_superevent_frost_is_here"
+				position = { x=15 y =15 }
+				#Orientation = center
+				alwaystransparent = yes
+			}
+			
+			iconType = {
+				name ="Underlay"
+				spriteType = "GFX_superevent_text_underlay"
+				position = { x= 40 y = -145 }
+				Orientation = lower_left
+				alwaystransparent = yes
+			}
+			
+			instantTextBoxType = {
+				name = "Description"
+				position = {  x= 105 y = -140 }
+				font = "aldrich_18_outline"
+				text = "SE_frost_is_here_desc"
+				maxWidth = 475
+				maxHeight = 175
+				fixedsize = yes
+				format = right
+				Orientation = lower_left
+			}
+		}
+			
+		buttonType = {
+			name = "Option"
+			text = "SE_frost_is_here_reaction"
+			shortcut = "ESCAPE"
+			position = { x = -180 y = 240 }
+			quadTextureSprite ="GFX_button_359x34"
+			buttonFont = "aldrich_18_outline"
+			Orientation = center
+		}
+	}
+	
+	# Lyc_ole_war
+	containerWindowType = {
+		name = "ERS_custom_super_event_lyc_ole_war"
+		size = { width = 580 height = 565 }
+		position = { x=0 y=3000 }
+		show_sound = menu_open_window	
+		show_position = { x=0 y=0 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 780
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+
+		
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_thin_border2"
+		}
+		
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 15 }
+			font = "aldrich_18_outline"
+			borderSize = {x = 0 y = 0}
+			text = "SE_lyc_ole_war_title"
+			maxWidth = 580
+			maxHeight = 24
+			format = center
+		}
+		
+		containerWindowType = {
+			name = "Content"
+			size = { width = 603 height = 480 }
+			position = { x=0 y=0 }
+			Orientation = center
+			Origo = center
+			
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window_1b_no_border"
+			}
+			
+			iconType = {
+				name ="Image"
+				spriteType = "GFX_super_event_custom_superevent_lyc_ole_war"
+				position = { x=15 y =15 }
+				#Orientation = center
+				alwaystransparent = yes
+			}
+			
+			iconType = {
+				name ="Underlay"
+				spriteType = "GFX_superevent_text_underlay"
+				position = { x= 40 y = -145 }
+				Orientation = lower_left
+				alwaystransparent = yes
+			}
+			
+			instantTextBoxType = {
+				name = "Description"
+				position = {  x= 105 y = -140 }
+				font = "aldrich_18_outline"
+				text = "SE_lyc_ole_war_desc"
+				maxWidth = 475
+				maxHeight = 175
+				fixedsize = yes
+				format = right
+				Orientation = lower_left
+			}
+		}
+			
+		buttonType = {
+			name = "Option"
+			text = "SE_lyc_ole_war_reaction"
+			shortcut = "ESCAPE"
+			position = { x = -180 y = 240 }
+			quadTextureSprite ="GFX_button_359x34"
+			buttonFont = "aldrich_18_outline"
+			Orientation = center
+		}
+	}
+	
+	
+	
+	
+	# Red Changelings Rise
+	containerWindowType = {
+		name = "ERS_custom_super_event_red_changelings_rise"
+		size = { width = 580 height = 565 }
+		position = { x=0 y=3000 }
+		show_sound = menu_open_window	
+		show_position = { x=0 y=0 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 780
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+
+		
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_thin_border2"
+		}
+		
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 15 }
+			font = "aldrich_18_outline"
+			borderSize = {x = 0 y = 0}
+			text = "SE_red_changelings_rise_title"
+			maxWidth = 580
+			maxHeight = 24
+			format = center
+		}
+		
+		containerWindowType = {
+			name = "Content"
+			size = { width = 603 height = 480 }
+			position = { x=0 y=0 }
+			Orientation = center
+			Origo = center
+			
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window_1b_no_border"
+			}
+			
+			iconType = {
+				name ="Image"
+				spriteType = "GFX_super_event_custom_superevent_red_changelings_rise"
+				position = { x=15 y =15 }
+				#Orientation = center
+				alwaystransparent = yes
+			}
+			
+			iconType = {
+				name ="Underlay"
+				spriteType = "GFX_superevent_text_underlay"
+				position = { x= 40 y = -145 }
+				Orientation = lower_left
+				alwaystransparent = yes
+			}
+			
+			instantTextBoxType = {
+				name = "Description"
+				position = {  x= 105 y = -140 }
+				font = "aldrich_18_outline"
+				text = "SE_red_changelings_rise_desc"
+				maxWidth = 475
+				maxHeight = 175
+				fixedsize = yes
+				format = right
+				Orientation = lower_left
+			}
+		}
+			
+		buttonType = {
+			name = "Option"
+			text = "SE_red_changelings_rise_reaction"
+			shortcut = "ESCAPE"
+			position = { x = -180 y = 240 }
+			quadTextureSprite ="GFX_button_359x34"
+			buttonFont = "aldrich_18_outline"
+			Orientation = center
+		}
+	}
+	
+	# HOR fall (dancing with the dead)
+	containerWindowType = {
+		name = "ERS_custom_super_event_dwtd"
+		size = { width = 580 height = 565 }
+		position = { x=0 y=3000 }
+		show_sound = menu_open_window	
+		show_position = { x=0 y=0 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 780
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+
+		
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_thin_border2"
+		}
+		
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 15 }
+			font = "aldrich_18_outline"
+			borderSize = {x = 0 y = 0}
+			text = "SE_dwtd_title"
+			maxWidth = 580
+			maxHeight = 24
+			format = center
+		}
+		
+		containerWindowType = {
+			name = "Content"
+			size = { width = 603 height = 480 }
+			position = { x=0 y=0 }
+			Orientation = center
+			Origo = center
+			
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window_1b_no_border"
+			}
+			
+			iconType = {
+				name ="Image"
+				spriteType = "GFX_super_event_custom_superevent_dwtd"
+				position = { x=15 y =15 }
+				#Orientation = center
+				alwaystransparent = yes
+			}
+			
+			iconType = {
+				name ="Underlay"
+				spriteType = "GFX_superevent_text_underlay"
+				position = { x= 40 y = -145 }
+				Orientation = lower_left
+				alwaystransparent = yes
+			}
+			
+			instantTextBoxType = {
+				name = "Description"
+				position = {  x= 105 y = -140 }
+				font = "aldrich_18_outline"
+				text = "SE_dwtd_desc"
+				maxWidth = 475
+				maxHeight = 175
+				fixedsize = yes
+				format = right
+				Orientation = lower_left
+			}
+		}
+			
+		buttonType = {
+			name = "Option"
+			text = "SE_dwtd_reaction"
+			shortcut = "ESCAPE"
+			position = { x = -180 y = 240 }
+			quadTextureSprite ="GFX_button_359x34"
+			buttonFont = "aldrich_18_outline"
+			Orientation = center
+		}
+	}
+	
+	# marx revival
+	containerWindowType = {
+		name = "ERS_custom_super_event_marx_revival"
+		size = { width = 580 height = 565 }
+		position = { x=0 y=3000 }
+		show_sound = menu_open_window	
+		show_position = { x=0 y=0 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 780
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+
+		
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_thin_border2"
+		}
+		
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 15 }
+			font = "aldrich_18_outline"
+			borderSize = {x = 0 y = 0}
+			text = "SE_marx_revival_title"
+			maxWidth = 580
+			maxHeight = 24
+			format = center
+		}
+		
+		containerWindowType = {
+			name = "Content"
+			size = { width = 603 height = 480 }
+			position = { x=0 y=0 }
+			Orientation = center
+			Origo = center
+			
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window_1b_no_border"
+			}
+			
+			iconType = {
+				name ="Image"
+				spriteType = "GFX_super_event_marx_revival"
+				position = { x=15 y =15 }
+				#Orientation = center
+				alwaystransparent = yes
+			}
+			
+			iconType = {
+				name ="Underlay"
+				spriteType = "GFX_superevent_text_underlay"
+				position = { x= 40 y = -145 }
+				Orientation = lower_left
+				alwaystransparent = yes
+			}
+			
+			instantTextBoxType = {
+				name = "Description"
+				position = {  x= 105 y = -140 }
+				font = "aldrich_18_outline"
+				text = "SE_marx_revival_desc"
+				maxWidth = 475
+				maxHeight = 175
+				fixedsize = yes
+				format = right
+				Orientation = lower_left
+			}
+		}
+			
+		buttonType = {
+			name = "Option"
+			text = "SE_chrysalis_unification_reaction"
+			shortcut = "ESCAPE"
+			position = { x = -180 y = 240 }
+			quadTextureSprite ="GFX_button_359x34"
+			buttonFont = "aldrich_18_outline"
+			Orientation = center
+		}
+	}
+	
+	# chrizzalys unification
+	containerWindowType = {
+		name = "ERS_custom_super_event_chrysalis_unification"
+		size = { width = 580 height = 565 }
+		position = { x=0 y=3000 }
+		show_sound = menu_open_window	
+		show_position = { x=0 y=0 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 780
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+
+		
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_thin_border2"
+		}
+		
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 15 }
+			font = "aldrich_18_outline"
+			borderSize = {x = 0 y = 0}
+			text = "SE_chrysalis_unification_title"
+			maxWidth = 580
+			maxHeight = 24
+			format = center
+		}
+		
+		containerWindowType = {
+			name = "Content"
+			size = { width = 603 height = 480 }
+			position = { x=0 y=0 }
+			Orientation = center
+			Origo = center
+			
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window_1b_no_border"
+			}
+			
+			iconType = {
+				name ="Image"
+				spriteType = "GFX_super_event_chrysalis_unification"
+				position = { x=15 y =15 }
+				#Orientation = center
+				alwaystransparent = yes
+			}
+			
+			iconType = {
+				name ="Underlay"
+				spriteType = "GFX_superevent_text_underlay"
+				position = { x= 40 y = -145 }
+				Orientation = lower_left
+				alwaystransparent = yes
+			}
+			
+			instantTextBoxType = {
+				name = "Description"
+				position = {  x= 105 y = -140 }
+				font = "aldrich_18_outline"
+				text = "SE_chrysalis_unification_desc"
+				maxWidth = 475
+				maxHeight = 175
+				fixedsize = yes
+				format = right
+				Orientation = lower_left
+			}
+		}
+			
+		buttonType = {
+			name = "Option"
+			text = "SE_chrysalis_unification_reaction"
+			shortcut = "ESCAPE"
+			position = { x = -180 y = 240 }
+			quadTextureSprite ="GFX_button_359x34"
+			buttonFont = "aldrich_18_outline"
+			Orientation = center
+		}
+	}
+	
+	# aurantia unification
+	containerWindowType = {
+		name = "ERS_custom_super_event_aurantia_unification"
+		size = { width = 580 height = 565 }
+		position = { x=0 y=3000 }
+		show_sound = menu_open_window	
+		show_position = { x=0 y=0 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 780
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+
+		
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_thin_border2"
+		}
+		
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 15 }
+			font = "aldrich_18_outline"
+			borderSize = {x = 0 y = 0}
+			text = "SE_aurantia_unification_title"
+			maxWidth = 580
+			maxHeight = 24
+			format = center
+		}
+		
+		containerWindowType = {
+			name = "Content"
+			size = { width = 603 height = 480 }
+			position = { x=0 y=0 }
+			Orientation = center
+			Origo = center
+			
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window_1b_no_border"
+			}
+			
+			iconType = {
+				name ="Image"
+				spriteType = "GFX_super_event_aurantia_unification"
+				position = { x=15 y =15 }
+				#Orientation = center
+				alwaystransparent = yes
+			}
+			
+			iconType = {
+				name ="Underlay"
+				spriteType = "GFX_superevent_text_underlay"
+				position = { x= 40 y = -145 }
+				Orientation = lower_left
+				alwaystransparent = yes
+			}
+			
+			instantTextBoxType = {
+				name = "Description"
+				position = {  x= 105 y = -140 }
+				font = "aldrich_18_outline"
+				text = "SE_aurantia_unification_desc"
+				maxWidth = 475
+				maxHeight = 175
+				fixedsize = yes
+				format = right
+				Orientation = lower_left
+			}
+		}
+			
+		buttonType = {
+			name = "Option"
+			text = "SE_aurantia_unification_reaction"
+			shortcut = "ESCAPE"
+			position = { x = -180 y = 240 }
+			quadTextureSprite ="GFX_button_359x34"
+			buttonFont = "aldrich_18_outline"
+			Orientation = center
+		}
+	}
+	
+	# argynnis unification
+	containerWindowType = {
+		name = "ERS_custom_super_event_argynnis_unification"
+		size = { width = 580 height = 565 }
+		position = { x=0 y=3000 }
+		show_sound = menu_open_window	
+		show_position = { x=0 y=0 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 780
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+
+		
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_thin_border2"
+		}
+		
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 15 }
+			font = "aldrich_18_outline"
+			borderSize = {x = 0 y = 0}
+			text = "SE_argynnis_unification_title"
+			maxWidth = 580
+			maxHeight = 24
+			format = center
+		}
+		
+		containerWindowType = {
+			name = "Content"
+			size = { width = 603 height = 480 }
+			position = { x=0 y=0 }
+			Orientation = center
+			Origo = center
+			
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window_1b_no_border"
+			}
+			
+			iconType = {
+				name ="Image"
+				spriteType = "GFX_super_event_argynnis_unification"
+				position = { x=15 y =15 }
+				#Orientation = center
+				alwaystransparent = yes
+			}
+			
+			iconType = {
+				name ="Underlay"
+				spriteType = "GFX_superevent_text_underlay"
+				position = { x= 40 y = -145 }
+				Orientation = lower_left
+				alwaystransparent = yes
+			}
+			
+			instantTextBoxType = {
+				name = "Description"
+				position = {  x= 105 y = -140 }
+				font = "aldrich_18_outline"
+				text = "SE_argynnis_unification_desc"
+				maxWidth = 475
+				maxHeight = 175
+				fixedsize = yes
+				format = right
+				Orientation = lower_left
+			}
+		}
+			
+		buttonType = {
+			name = "Option"
+			text = "SE_aurantia_unification_reaction"
+			shortcut = "ESCAPE"
+			position = { x = -180 y = 240 }
+			quadTextureSprite ="GFX_button_359x34"
+			buttonFont = "aldrich_18_outline"
+			Orientation = center
+		}
+	}
+
+	# olenians_extinction
+	containerWindowType = {
+		name = "ERS_super_event_olenians_extinction"
+		size = { width = 580 height = 565 }
+		position = { x=0 y=3000 }
+		show_sound = menu_open_window	
+		show_position = { x=0 y=0 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 780
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+
+		
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_thin_border2"
+		}
+		
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 15 }
+			font = "aldrich_18_outline"
+			borderSize = {x = 0 y = 0}
+			text = "SE_olenians_extinction_title"
+			maxWidth = 580
+			maxHeight = 24
+			format = center
+		}
+		
+		containerWindowType = {
+			name = "Content"
+			size = { width = 603 height = 480 }
+			position = { x=0 y=0 }
+			Orientation = center
+			Origo = center
+			
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window_1b_no_border"
+			}
+			
+			iconType = {
+				name ="Image"
+				spriteType = "GFX_super_event_olenians_extinction"
+				position = { x=15 y =15 }
+				#Orientation = center
+				alwaystransparent = yes
+			}
+			
+			iconType = {
+				name ="Underlay"
+				spriteType = "GFX_superevent_text_underlay"
+				position = { x= 40 y = -145 }
+				Orientation = lower_left
+				alwaystransparent = yes
+			}
+			
+			instantTextBoxType = {
+				name = "Description"
+				position = {  x= 105 y = -140 }
+				font = "aldrich_18_outline"
+				text = "SE_olenians_extinction_desc"
+				maxWidth = 475
+				maxHeight = 175
+				fixedsize = yes
+				format = right
+				Orientation = lower_left
+			}
+		}
+			
+		buttonType = {
+			name = "Option"
+			text = "SE_olenians_extinction_reaction"
+			shortcut = "ESCAPE"
+			position = { x = -180 y = 240 }
+			quadTextureSprite ="GFX_button_359x34"
+			buttonFont = "aldrich_18_outline"
+			Orientation = center
+		}
+	}
+	
+	# red sun
+	containerWindowType = {
+		name = "ERS_super_event_red_sun"
+		size = { width = 580 height = 565 }
+		position = { x=0 y=3000 }
+		show_sound = menu_open_window	
+		show_position = { x=0 y=0 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 780
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+
+		
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_thin_border2"
+		}
+		
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 15 }
+			font = "aldrich_18_outline"
+			borderSize = {x = 0 y = 0}
+			text = "SE_red_sun_title"
+			maxWidth = 580
+			maxHeight = 24
+			format = center
+		}
+		
+		containerWindowType = {
+			name = "Content"
+			size = { width = 603 height = 480 }
+			position = { x=0 y=0 }
+			Orientation = center
+			Origo = center
+			
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window_1b_no_border"
+			}
+			
+			iconType = {
+				name ="Image"
+				spriteType = "GFX_super_event_red_sun"
+				position = { x=15 y =15 }
+				#Orientation = center
+				alwaystransparent = yes
+			}
+			
+			iconType = {
+				name ="Underlay"
+				spriteType = "GFX_superevent_text_underlay"
+				position = { x= 40 y = -145 }
+				Orientation = lower_left
+				alwaystransparent = yes
+			}
+			
+			instantTextBoxType = {
+				name = "Description"
+				position = {  x= 105 y = -140 }
+				font = "aldrich_18_outline"
+				text = "SE_red_sun_desc"
+				maxWidth = 475
+				maxHeight = 175
+				fixedsize = yes
+				format = right
+				Orientation = lower_left
+			}
+		}
+		
+		buttonType = {
+			name = "Option"
+			text = "SE_red_sun_reaction"
+			shortcut = "ESCAPE"
+			position = { x = -180 y = 240 }
+			quadTextureSprite ="GFX_button_359x34"
+			buttonFont = "aldrich_18_outline"
+			Orientation = center
+		}
+	}
+	
+	# The Great War
+	containerWindowType = {
+		name = "ERS_super_event_the_great_war"
+		size = { width = 580 height = 565 }
+		position = { x=0 y=3000 }
+		show_sound = menu_open_window	
+		show_position = { x=0 y=0 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 780
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+
+		
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_thin_border2"
+		}
+		
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 15 }
+			font = "aldrich_18_outline"
+			borderSize = {x = 0 y = 0}
+			text = "SE_the_great_war_title"
+			maxWidth = 580
+			maxHeight = 24
+			format = center
+		}
+		
+		containerWindowType = {
+			name = "Content"
+			size = { width = 603 height = 480 }
+			position = { x=0 y=0 }
+			Orientation = center
+			Origo = center
+			
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window_1b_no_border"
+			}
+			
+			iconType = {
+				name ="Image"
+				spriteType = "GFX_super_event_the_great_war"
+				position = { x=15 y =15 }
+				#Orientation = center
+				alwaystransparent = yes
+			}
+			
+			iconType = {
+				name ="Underlay"
+				spriteType = "GFX_superevent_text_underlay"
+				position = { x= 40 y = -145 }
+				Orientation = lower_left
+				alwaystransparent = yes
+			}
+			
+			instantTextBoxType = {
+				name = "Description"
+				position = {  x= 105 y = -140 }
+				font = "aldrich_18_outline"
+				text = "SE_the_great_war_desc"
+				maxWidth = 475
+				maxHeight = 175
+				fixedsize = yes
+				format = right
+				Orientation = lower_left
+			}
+		}
+		
+		buttonType = {
+			name = "Option"
+			text = "SE_the_great_war_reaction"
+			shortcut = "ESCAPE"
+			position = { x = -180 y = 240 }
+			quadTextureSprite ="GFX_button_359x34"
+			buttonFont = "aldrich_18_outline"
+			Orientation = center
+		}
+	}
+	
+	# Armed Sage
+	containerWindowType = {
+		name = "ERS_super_event_armed_sage_thestralia"
+		size = { width = 580 height = 565 }
+		position = { x=0 y=3000 }
+		show_sound = menu_open_window	
+		show_position = { x=0 y=0 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 780
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+
+		
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_thin_border2"
+		}
+		
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 15 }
+			font = "aldrich_18_outline"
+			borderSize = {x = 0 y = 0}
+			text = "SE_armed_sage_thestralia_title"
+			maxWidth = 580
+			maxHeight = 24
+			format = center
+		}
+		
+		containerWindowType = {
+			name = "Content"
+			size = { width = 603 height = 480 }
+			position = { x=0 y=0 }
+			Orientation = center
+			Origo = center
+			
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window_1b_no_border"
+			}
+			
+			iconType = {
+				name ="Image"
+				spriteType = "GFX_super_event_armed_sage_thestralia"
+				position = { x=15 y =15 }
+				#Orientation = center
+				alwaystransparent = yes
+			}
+			
+			iconType = {
+				name ="Underlay"
+				spriteType = "GFX_superevent_text_underlay"
+				position = { x= 40 y = -145 }
+				Orientation = lower_left
+				alwaystransparent = yes
+			}
+			
+			instantTextBoxType = {
+				name = "Description"
+				position = {  x= 105 y = -140 }
+				font = "aldrich_18_outline"
+				text = "SE_armed_sage_thestralia_desc"
+				maxWidth = 475
+				maxHeight = 175
+				fixedsize = yes
+				format = right
+				Orientation = lower_left
+			}
+		}
+		
+		buttonType = {
+			name = "Option"
+			text = "SE_armed_sage_thestralia_reaction"
+			shortcut = "ESCAPE"
+			position = { x = -180 y = 240 }
+			quadTextureSprite ="GFX_button_359x34"
+			buttonFont = "aldrich_18_outline"
+			Orientation = center
+		}
+	}
+
+
+
+
+	# Second North Zebrican War
+	containerWindowType = {
+		name = "ERS_super_event_second_north_zebrican_war"
+		size = { width = 580 height = 565 }
+		position = { x=0 y=3000 }
+		show_sound = menu_open_window	
+		show_position = { x=0 y=0 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 780
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+
+		
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_thin_border2"
+		}
+		
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 15 }
+			font = "aldrich_18_outline"
+			borderSize = {x = 0 y = 0}
+			text = "SE_second_north_zebrican_war_title"
+			maxWidth = 580
+			maxHeight = 24
+			format = center
+		}
+		
+		containerWindowType = {
+			name = "Content"
+			size = { width = 603 height = 480 }
+			position = { x=0 y=0 }
+			Orientation = center
+			Origo = center
+			
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window_1b_no_border"
+			}
+			
+			iconType = {
+				name ="Image"
+				spriteType = "GFX_super_event_second_north_zebrican_war"
+				position = { x=15 y =15 }
+				#Orientation = center
+				alwaystransparent = yes
+			}
+			
+			iconType = {
+				name ="Underlay"
+				spriteType = "GFX_superevent_text_underlay"
+				position = { x= 40 y = -145 }
+				Orientation = lower_left
+				alwaystransparent = yes
+			}
+			
+			instantTextBoxType = {
+				name = "Description"
+				position = {  x= 105 y = -140 }
+				font = "aldrich_18_outline"
+				text = "SE_second_north_zebrican_war_desc"
+				maxWidth = 475
+				maxHeight = 175
+				fixedsize = yes
+				format = right
+				Orientation = lower_left
+			}
+		}
+			
+		buttonType = {
+			name = "Option"
+			text = "SE_second_north_zebrican_war_reaction"
+			shortcut = "ESCAPE"
+			position = { x = -180 y = 240 }
+			quadTextureSprite ="GFX_button_359x34"
+			buttonFont = "aldrich_18_outline"
+			Orientation = center
+		}
+	}
+}

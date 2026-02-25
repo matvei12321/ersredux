@@ -1,0 +1,36 @@
+
+TST_trigger_start_focus_tree = {
+	NOT = {
+		has_country_flag = TST_socialism_elected
+	}
+}
+
+TST_trigger_Armed_Sage_start_focus_tree = {
+	has_country_flag = TST_socialism_elected
+}
+
+TST_trigger_humankind_extermination_committee_focus_tree = {
+	has_country_flag = TST_humankind_extermination_committee_start
+}
+
+TST_thestralia_united = {
+	custom_trigger_tooltip = {
+		tooltip = TST_thestralia_united_tt		
+		has_country_flag = TST_thestralia_united
+	}
+}
+
+TST_equestria_united = {
+	custom_trigger_tooltip = {
+		tooltip = TST_equestria_united_tt		
+		has_country_flag = TST_Armed_Sage_equestria_united
+	}
+}
+
+TST_thestralia_urbanized = {
+	custom_trigger_tooltip = {
+		tooltip = TST_thestralia_urbanized_tt		
+		has_country_flag = TST_thestralia_urbanized
+	}
+	
+}

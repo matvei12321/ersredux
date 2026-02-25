@@ -1,0 +1,14 @@
+SpriteTypes = {
+	spritetype = {
+		name = "GFX_OLE_extermination_bar_frame"
+		texturefile = "gfx/interface/lyc_ez/extermination_progress_frame.tga"
+	}
+	progressbartype = {
+		name = "GFX_OLE_extermination_bar"
+		texturefile1 = "gfx/interface/lyc_ez/extermination_progress_green.tga"
+		texturefile2 = "gfx/interface/blank.dds"
+		size = { x = 450 y = 40 }
+		effectfile = "gfx/FX/progress.lua"
+		steps = 100
+	}
+}

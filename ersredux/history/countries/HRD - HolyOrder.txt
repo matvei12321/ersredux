@@ -1,0 +1,71 @@
+capital = 145
+
+set_research_slots = 2
+starting_train_buffer = 4
+
+save_global_event_target_as = holy_order_unicorns_target
+
+country_event = { id = hrd.8 days = 55 }
+country_event = { id = hrd.7 days = 115 }
+country_event = { id = hrd.6 days = 175 }
+country_event = { id = hrd.2 days = 235 }
+country_event = { id = hrd.4 days = 295 }
+country_event = { id = hrd.8 days = 355 }
+country_event = { id = hrd.5 days = 415 }
+
+set_variable = { hrd_piety_count = 250 }
+
+oob = "HRD_1007"
+add_manpower = 45000
+add_ideas = { 
+	
+	limited_conscription
+	limited_exports
+	low_economic_mobilisation
+	
+	HRD_shield_of_hope_idea
+	HRD_corrupted_priests
+	
+	no_lack_of_scientists
+	pre_industrial_society
+	poverty3
+	
+	ers_cantoritsism
+}
+	
+recruit_character = HRD_abrael
+recruit_character = HRD_azazel
+recruit_character = HRD_endless_void
+recruit_character = HRD_nobody
+
+
+set_technology = {
+	 
+	unicorn_race = 1
+	melee_weapons = 1
+	melee_weapons1 = 1
+	motorised_infantry = 1
+	basic_train = 1
+	pre_gw_artillery = 1
+	tech_support = 1
+	infantry_weapons = 1
+}
+actually_fix_weapon_techs = yes #THIS HAS TO BE CALLED IN EVERY HISTORY FILE RIGHT AFTER MAIN set_technology!
+
+
+
+set_popularities = {
+	fascism = 1
+	democratic = 89
+	neutrality = 10
+}
+set_politics = {
+	ruling_party = democratic
+	last_election = "1.10.10"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+
+set_stability = 0.6
+set_war_support = 0.4

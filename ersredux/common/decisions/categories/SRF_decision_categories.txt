@@ -1,0 +1,9 @@
+SRF_colonisation_cat = {
+	
+	allowed = {
+		tag = SRF
+		has_country_flag = start_colonisation_flag
+	}
+	visible_when_empty = yes
+	priority = 200
+}

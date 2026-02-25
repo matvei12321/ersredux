@@ -1,0 +1,341 @@
+scripted_gui = {	
+	
+	
+	
+	## Equs Unification - Prekrasnoye Daleko ##
+	
+	ERS_custom_super_event_prekrasnoye_daleko = {
+		context_type = player_context
+		window_name = "ERS_custom_super_event_prekrasnoye_daleko"
+
+		visible = {
+			has_global_flag = eaw_super_event_flag_prekrasnoye_daleko
+		}
+		
+		effects = {
+			Option_click = {
+				clr_global_flag = eaw_super_event_flag_prekrasnoye_daleko
+			}
+		}
+	}
+	
+	ERS_custom_super_event_nuclear = {
+		context_type = player_context
+		window_name = "ERS_custom_super_event_nuclear"
+
+		visible = {
+			has_global_flag = eaw_super_event_flag_nuclear
+		}
+		
+		effects = {
+			Option_click = {
+				clr_global_flag = eaw_super_event_flag_nuclear
+			}
+		}
+	}
+	
+	ERS_custom_super_event_dodge_city_collapse_1 = {
+		context_type = player_context
+		window_name = "ERS_custom_super_event_dodge_city_collapse_1"
+
+		visible = {
+			has_global_flag = eaw_super_event_flag_dodge_city_collapse_1
+		}
+		
+		effects = {
+			Option_click = {
+				clr_global_flag = eaw_super_event_flag_dodge_city_collapse_1
+			}
+		}
+	}
+	
+	ERS_custom_super_event_anarchy = {
+		context_type = player_context
+		window_name = "ERS_custom_super_event_anarchy"
+
+		visible = {
+			has_global_flag = eaw_super_event_flag_anarchy
+		}
+		
+		effects = {
+			Option_click = {
+				clr_global_flag = eaw_super_event_flag_anarchy
+			}
+		}
+	}
+	
+	ERS_custom_super_event_warkhan_war= {
+		context_type = player_context
+		window_name = "ERS_custom_super_event_warkhan_war"
+
+		visible = {
+			has_global_flag = eaw_super_event_flag_warkhan_war
+		}
+		
+		effects = {
+			Option_click = {
+				clr_global_flag = eaw_super_event_flag_warkhan_war
+			}
+		}
+	}
+	
+	ERS_custom_super_event_little_dark_age= {
+		context_type = player_context
+		window_name = "ERS_custom_super_event_little_dark_age"
+
+		visible = {
+			has_global_flag = eaw_super_event_flag_little_dark_age
+		}
+		
+		effects = {
+			Option_click = {
+				clr_global_flag = eaw_super_event_flag_little_dark_age
+			}
+		}
+	}
+	
+	ERS_custom_super_event_soldat= {
+		context_type = player_context
+		window_name = "ERS_custom_super_event_soldat"
+
+		visible = {
+			has_global_flag = eaw_super_event_flag_soldat
+		}
+		
+		effects = {
+			Option_click = {
+				clr_global_flag = eaw_super_event_flag_soldat
+			}
+		}
+	}
+	
+	ERS_custom_super_event_starlight_unification= {
+		context_type = player_context
+		window_name = "ERS_custom_super_event_starlight_unification"
+
+		visible = {
+			has_global_flag = eaw_super_event_flag_starlight_unification
+		}
+		
+		effects = {
+			Option_click = {
+				clr_global_flag = eaw_super_event_flag_starlight_unification
+			}
+		}
+	}
+	
+	ERS_custom_super_event_changeling_hehemony_collapse= {
+		context_type = player_context
+		window_name = "ERS_custom_super_event_changeling_hehemony_collapse"
+
+		visible = {
+			has_global_flag = eaw_super_event_flag_changeling_hehemony_collapse
+		}
+		
+		effects = {
+			Option_click = {
+				clr_global_flag = eaw_super_event_flag_changeling_hehemony_collapse
+			}
+		}
+	}
+	
+	
+	### Frost is Here
+	ERS_custom_super_event_frost_is_here = {
+		context_type = player_context
+		window_name = "ERS_custom_super_event_frost_is_here"
+
+		visible = {
+			has_global_flag = ers_super_event_flag_frost_is_here
+		}
+		
+		effects = {
+			Option_click = {
+				clr_global_flag = ers_super_event_flag_frost_is_here
+			}
+		}
+	}
+	
+	### LYC OLE WAR
+	ERS_custom_super_event_lyc_ole_war = {
+		context_type = player_context
+		window_name = "ERS_custom_super_event_lyc_ole_war"
+
+		visible = {
+			has_global_flag = ers_super_event_flag_lyc_ole_war
+		}
+		
+		effects = {
+			Option_click = {
+				clr_global_flag = ers_super_event_flag_lyc_ole_war
+			}
+		}
+	}
+	
+	ERS_custom_super_event_red_changelings_rise = {
+		context_type = player_context
+		window_name = "ERS_custom_super_event_red_changelings_rise"
+
+		visible = {
+			has_global_flag = ers_super_event_flag_red_changelings_rise
+		}
+		
+		effects = {
+			Option_click = {
+				clr_global_flag = ers_super_event_flag_red_changelings_rise
+			}
+		}
+	}
+	
+	ERS_custom_super_event_dwtd = {
+		context_type = player_context
+		window_name = "ERS_custom_super_event_dwtd"
+
+		visible = {
+			has_global_flag = ers_super_event_flag_dwtd
+		}
+		
+		effects = {
+			Option_click = {
+				clr_global_flag = ers_super_event_flag_dwtd
+			}
+		}
+	}
+	
+	ERS_custom_super_event_marx_revival = {
+		context_type = player_context
+		window_name = "ERS_custom_super_event_marx_revival"
+
+		visible = {
+			has_global_flag = ers_super_event_flag_marx_revival
+		}
+		
+		effects = {
+			Option_click = {
+				clr_global_flag = ers_super_event_flag_marx_revival
+			}
+		}
+	}
+	
+	ERS_custom_super_event_chrysalis_unification = {
+		context_type = player_context
+		window_name = "ERS_custom_super_event_chrysalis_unification"
+
+		visible = {
+			has_global_flag = ers_super_event_flag_chrysalis_unification
+		}
+		
+		effects = {
+			Option_click = {
+				clr_global_flag = ers_super_event_flag_chrysalis_unification
+			}
+		}
+	}
+
+	ERS_custom_super_event_aurantia_unification = {
+		context_type = player_context
+		window_name = "ERS_custom_super_event_aurantia_unification"
+
+		visible = {
+			has_global_flag = ers_super_event_flag_aurantia_unification
+		}
+		
+		effects = {
+			Option_click = {
+				clr_global_flag = ers_super_event_flag_aurantia_unification
+			}
+		}
+	}
+	
+	ERS_custom_super_event_argynnis_unification = {
+		context_type = player_context
+		window_name = "ERS_custom_super_event_argynnis_unification"
+
+		visible = {
+			has_global_flag = ers_super_event_flag_argynnis_unification
+		}
+		
+		effects = {
+			Option_click = {
+				clr_global_flag = ers_super_event_flag_argynnis_unification
+			}
+		}
+	}
+	
+	
+	ERS_super_event_olenians_extinction = {
+		context_type = player_context
+		window_name = "ERS_super_event_olenians_extinction"
+
+		visible = {
+			has_global_flag = ers_super_event_flag_olenians_extinction
+		}
+		
+		effects = {
+			Option_click = {
+				clr_global_flag = ers_super_event_flag_olenians_extinction
+			}
+		}
+	}
+	
+	ERS_super_event_red_sun = {
+		context_type = player_context
+		window_name = "ERS_super_event_red_sun"
+
+		visible = {
+			has_global_flag = ers_super_event_flag_red_sun
+		}
+		
+		effects = {
+			Option_click = {
+				clr_global_flag = ers_super_event_flag_red_sun
+			}
+		}
+	}
+	
+	ERS_super_event_the_great_war = {
+		context_type = player_context
+		window_name = "ERS_super_event_the_great_war"
+
+		visible = {
+			has_global_flag = ers_super_event_flag_the_great_war
+		}
+		
+		effects = {
+			Option_click = {
+				clr_global_flag = ers_super_event_flag_the_great_war
+			}
+		}
+	}
+	
+	ERS_super_event_armed_sage_thestralia = {
+		context_type = player_context
+		window_name = "ERS_super_event_armed_sage_thestralia"
+
+		visible = {
+			has_global_flag = ers_super_event_flag_armed_sage_thestralia
+		}
+		
+		effects = {
+			Option_click = {
+				clr_global_flag = ers_super_event_flag_armed_sage_thestralia
+			}
+		}
+	}
+	
+	ERS_super_event_second_north_zebrican_war = {
+		context_type = player_context
+		window_name = "ERS_super_event_second_north_zebrican_war"
+
+		visible = {
+			has_global_flag = ers_super_event_flag_second_north_zebrican_war
+		}
+		
+		effects = {
+			Option_click = {
+				clr_global_flag = ers_super_event_flag_second_north_zebrican_war
+			}
+		}
+	}
+	
+}

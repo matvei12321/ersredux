@@ -1,0 +1,17 @@
+characters={
+	UMF_leader_neutrality={
+		name=UMF_leader_neutrality
+		portraits={
+			civilian={
+				large="gfx/leaders/Herzland/portrait_herzland_generic_male_2.tga"
+			}
+		}
+
+		country_leader={
+			ideology=despotism
+			traits = { landed_noble }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

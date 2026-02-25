@@ -1,0 +1,47 @@
+spriteTypes = { 
+	
+	SpriteType = { 
+		name = "GFX_DTS_event_helvia"
+		texturefile = "gfx/interface/events/DTS/DTS_event_helvia.tga"
+	}
+	SpriteType = {
+		name = "GFX_Argynnis_ivent_death"
+		texturefile = "gfx/interface/events/DTS/Argynnis_ivent_death.tga"
+	}
+	SpriteType = {
+		name = "GFX_Aurantia_ivent_death"
+		texturefile = "gfx/interface/events/DTS/Aurantia_ivent_death.tga"
+	}
+	SpriteType = { 
+		name = "GFX_Yaria_event"
+		texturefile = "gfx/interface/events/DTS/Yaria_event.tga"
+	}
+	SpriteType = {
+		name = "GFX_Chrysalis_event"
+		texturefile = "gfx/interface/events/DTS/Chrysalis_event.tga"
+	}
+	SpriteType = {
+		name = "GFX_DTS_event_fire_Argynnis"
+		texturefile = "gfx/interface/events/DTS/DTS_event_fire_Argynnis.tga"
+	}
+	SpriteType = {
+		name = "GFX_Ayrantia_event_pohod"
+		texturefile = "gfx/interface/events/DTS/Ayrantia_event_pohod.tga"
+	}
+	SpriteType = {
+		name = "GFX_Angry_Chrysalis"
+		texturefile = "gfx/interface/events/DTS/Angry_Chrysalis.tga"
+	}
+	SpriteType = {
+		name = "GFX_Dinner_of_Queens"
+		texturefile = "gfx/interface/events/DTS/Dinner_of_Queens.tga"
+	}
+	SpriteType = {
+		name = "GFX_Chrysalis_communist"
+		texturefile = "gfx/interface/events/DTS/Chrysalis_communist.tga"
+	}
+	SpriteType = {
+		name = "GFX_Only_timed"
+		texturefile = "gfx/interface/events/DTS/Only_timed.tga"
+	}
+ }

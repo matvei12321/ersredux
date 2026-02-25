@@ -1,0 +1,501 @@
+music_station = "ers"
+
+music = {
+	song = "maintheme"
+	chance = {
+		factor = 1.5
+		modifier = {
+			factor = 2.5
+			has_government = communism
+		}
+	}
+}
+music = {
+	song = "monster_grain"
+	chance = {
+		factor = 2
+	}
+}
+# A
+music = {
+	song = "rot_und_schwarz"
+	chance = {
+		factor = 0
+		
+		modifier = {
+			factor = 1.5
+			has_war = yes
+		}
+
+		modifier = {
+			factor = 1
+			original_tag = LYC
+		}
+	}
+}
+
+# A
+music = {
+	song = "madame_lulu"
+	chance = {
+		factor = 2
+		
+		modifier = {
+			factor = 0.5
+			has_war = yes
+		}
+	}
+}
+
+music = {
+	song = "smert_luni"
+	chance = {
+		factor = 0
+		
+		modifier = {
+			factor = 3
+			has_war = yes
+		}
+	}
+}
+
+# E
+music = {
+	song = "Dorime"
+	chance = {
+		factor = 0
+
+		modifier = {
+			factor = 10000
+			original_tag = CLT
+		}
+	}
+}
+
+# A
+music = {
+	song = "red_sun"
+	chance = {
+		factor = 0.5
+		modifier = {
+			factor = 5
+			original_tag = NEI
+		}
+	}
+}
+
+# G
+music = {
+	song = "in_our_town"
+
+	chance = {
+		
+		factor = 0
+		
+		modifier = {
+			chance = 0.5
+			has_government = communism 
+		}
+		modifier = {
+			factor = 10000
+			AND = {
+				original_tag = STL
+				has_government = communism
+			}
+		}
+	}
+}
+
+# J
+
+music = {
+	song = "Eclipse"
+	chance = {
+		factor = 0
+
+		modifier = {
+			factor = 3
+			has_war = yes
+		}
+	}
+}
+
+music = {
+	song = "together"
+	chance = {
+		factor = 1
+		
+		modifier = {
+			factor = 4
+			has_war = yes
+		}
+	}
+}
+
+music = {
+	song = "lunas_future"
+	chance = {
+		factor = 0
+		
+		modifier = {
+			factor = 2
+			has_war = yes
+		}
+		modifier = {
+			factor = 20
+			has_war_with = CLD
+		}
+	}
+}
+
+# K
+music = {
+	song = "maintheme"
+	chance = {
+		factor = 1
+		
+		modifier = {
+			factor = 3
+			has_war = yes
+		}
+	}
+}
+
+# P
+music = {
+	song = "my_brother"
+	chance = {
+		factor = 0
+		
+		modifier = {
+			factor = 5
+			has_war = yes
+		}
+	}
+}
+
+# S
+music = {
+	song = "discord"
+	chance = {
+		factor = 1
+		
+		modifier = {
+			factor = 0.5
+			has_war = yes
+		}
+	}
+}
+
+
+music = {
+	song = "snow_queen"
+	chance = {
+		factor = 0
+		
+		modifier = {
+			factor = 20
+			has_war_with = CLD
+		}
+	}
+}
+
+
+
+###### ------------------- Russian songs
+
+
+# Grob
+music = {
+	song = "na_dalney_stantsii_soydu"
+	chance = {
+		
+		modifier = {
+			factor = 1
+			has_war = no
+		}
+		
+		modifier = {
+			factor = 2.0
+			has_government = communism
+		}
+
+		modifier = {
+			factor = 3.0
+			original_tag = YAK
+			has_government = communism
+		}
+	}
+}
+
+music = {
+	song = "the_battle_is_going_again"
+	chance = {
+		
+		modifier = {
+			factor = 1
+			has_war = no
+		}
+		
+		modifier = {
+			factor = 2.0
+			has_government = communism
+		}
+
+		modifier = {
+			factor = 2.0
+			has_country_leader = {
+				character = TST_Armed_Sage
+				ruling_only = yes
+			}
+			has_government = communism
+		}
+	}
+}
+
+# K
+music = {
+	song = "tri_konya"
+	chance = {
+		
+		factor = 0.5
+		
+		modifier = {
+			factor = 1.0
+			has_war = yes
+		}
+	}
+}
+
+
+
+music = {
+	song = "ne_moya_zabota"
+	chance = {
+	
+		modifier = {
+			factor = 0
+			NOT = {
+				has_country_flag = anarchist_music_flag
+			}
+		}
+		
+		modifier = {
+			factor = 5
+			AND = {
+				has_country_flag = anarchist_music_flag
+				has_war = yes
+			}
+		}
+	}
+}
+
+music = {
+	song = "matrosi_deneg_ne_berut"
+	chance = {
+	
+		modifier = {
+			factor = 0
+			NOT = {
+				has_country_flag = anarchist_music_flag
+			}
+		}
+		
+		modifier = {
+			factor = 5
+			AND = {
+				has_country_flag = anarchist_music_flag
+				has_war = yes
+			}
+		}
+	}
+}
+
+music = {
+	song = "Tryn_trava"
+	chance = {
+	
+		modifier = {
+			factor = 0
+			NOT = {
+				has_country_flag = anarchist_music_flag
+			}
+		}
+		
+		modifier = {
+			factor = 5
+			AND = {
+				has_country_flag = anarchist_music_flag
+				has_war = yes
+			}
+		}
+	}
+}
+
+music = {
+	song = "Sanitar"
+	chance = {
+		
+		modifier = {
+			factor = 0
+			NOT = {
+				has_country_flag = anarchist_music_flag
+			}
+		}
+		
+		modifier = {
+			factor = 5
+			AND = {
+				has_country_flag = anarchist_music_flag
+				has_war = yes
+			}
+		}
+	}
+}
+
+music = {
+	song = "Tachanka_2"
+	chance = {
+		modifier = {
+			factor = 0
+			NOT = {
+				has_country_flag = anarchist_music_flag
+			}
+		}
+		
+		modifier = {
+			factor = 5
+			AND = {
+				has_country_flag = anarchist_music_flag
+				has_war = yes
+			}
+		}
+	}
+}
+
+music = {
+	song = "pervomai"
+
+	chance = {
+		factor = 0
+		
+		modifier = {
+			factor = 0.5
+			has_government = communism
+		}
+		modifier = {
+			factor = 2
+			has_government = communism
+			original_tag = YAC
+		}
+		modifier = {
+			factor = 1.5
+			has_government = communism
+			has_war = yes
+		}
+	}
+}
+
+music = {	
+	song = "kuzinatra"
+	chance = {
+		factor = 2
+		modifier = {
+			has_war = yes
+			factor = 0
+		}
+	}
+}
+
+music = {
+	song = "kak_rodnaya_mat"
+	chance = {
+				
+		factor = 2
+		modifier = {
+			factor = 0
+			NOT = { has_government = communism }
+		}
+		modifier = {
+			factor = 3
+			OR = {
+				original_tag = STG
+				original_tag = STL
+			}
+		}
+	}
+}
+
+music = {
+	song = "vernopoddanim"
+
+	chance = {
+		factor = 0
+		
+		modifier = {
+			factor = 2
+			original_tag = SVR
+			NOT = {
+				has_government = democratic
+				has_government = communism
+			}
+		}
+	}
+}
+
+
+
+
+music = {
+	song = "Tachanka"
+	chance = {
+		modifier = {
+			factor = 0
+			NOT = {
+				has_country_flag = anarchist_music_flag
+			}
+		}
+		
+		modifier = {
+			factor = 5
+			AND = {
+				has_country_flag = anarchist_music_flag
+				has_war = yes
+			}
+		}
+	}
+}
+
+
+music = {
+	song = "black_znamya"
+	chance = {
+		modifier = {
+			factor = 0
+			NOT = {
+				has_country_flag = anarchist_music_flag
+			}
+		}
+		
+		modifier = {
+			factor = 5
+			AND = {
+				has_country_flag = anarchist_music_flag
+				has_war = yes
+			}
+		}
+	}
+}
+
+music = {
+	song = "prekrasnoye_daleko"
+	chance = {
+
+		factor = 2
+		
+		modifier = {
+			factor = 1.5
+			has_war = no
+		}
+	}
+}

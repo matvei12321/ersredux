@@ -1,0 +1,142 @@
+
+music_station = "ers_superevents"
+
+
+
+
+music = {
+	song = "argynnis_unification"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "hrd_full_sin_party"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "second_north_zebrican_war"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "armed_sage_thestralia"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "the_great_war"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "red_sun_se"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "aurantia_unification"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "Equus_Unification_Marks"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "olenians_extinction"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "chrysalis_unifiaction"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "anarchy"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "soldat"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "dwtd"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "frost_is_here"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "warkhan_war"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "dodge_city_collapse_1"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "changeling_hehemony_collapse"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "lyc_ole_war"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "red_changelings_rise"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+
+
+

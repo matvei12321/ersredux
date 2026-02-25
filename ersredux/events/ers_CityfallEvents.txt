@@ -1,0 +1,314 @@
+﻿add_namespace = ers_cityfall
+
+
+
+### PGS takes Fargopolis during civil war
+news_event = {
+	id = ers_cityfall.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ers_cityfall.1"}
+	title = ers_cityfall.1.t
+	desc = ers_cityfall.1.d
+	
+	picture = GFX_news_event_generic_sign_treaty2
+
+	major = yes
+
+	immediate = {
+		set_global_flag = PGS_civil_war_taken_fargopolis
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = ers_cityfall.1.a
+		trigger = {
+			NOT = {
+				TAG = ANR
+				TAG = PGS
+			}
+		}
+	}
+	option = {
+		name = ers_cityfall.1.b
+		trigger = { TAG = ANR }
+	}
+	option = {
+		name = ers_cityfall.1.c
+		trigger = { TAG = PGS }
+	}
+}
+
+### ANR takes Pegasopolis during civil war
+news_event = {
+	id = ers_cityfall.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ers_cityfall.2"}
+	title = ers_cityfall.2.t
+	desc = ers_cityfall.2.d
+
+	picture = GFX_news_event_generic_sign_treaty2
+
+	major = yes
+
+	immediate = {
+		set_global_flag = ANR_civil_war_taken_pegasopolis
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = ers_cityfall.2.a
+		trigger = {
+			NOT = {
+				TAG = ANR
+				TAG = PGS
+			}
+		}
+	}
+	option = {
+		name = ers_cityfall.2.b
+		trigger = { TAG = ANR }
+	}
+	option = {
+		name = ers_cityfall.2.c
+		trigger = { TAG = PGS }
+	}
+}
+
+### Pegasi take back Los Pegasus
+news_event = {
+	id = ers_cityfall.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ers_cityfall.3"}
+	title = ers_cityfall.3.t
+	desc = ers_cityfall.3.d
+
+	picture = GFX_news_event_generic_sign_treaty2
+
+	major = yes
+
+	immediate = {
+		set_global_flag = fall_of_los_pegasus
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = ers_cityfall.3.a
+		trigger = {
+			NOT = {
+				TAG = ANR
+				TAG = PGS
+				TAG = LOS
+			}
+		}
+	}
+	option = {
+		name = ers_cityfall.3.b
+		trigger = { 
+			OR = {
+				TAG = ANR
+				TAG = PGS
+			}
+		}
+	}
+	option = {
+		name = ers_cityfall.3.c
+		trigger = { TAG = LOS }
+	}
+}
+
+### Bales Fall
+news_event = {
+	id = ers_cityfall.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ers_cityfall.4"}
+	title = ers_cityfall.4.t
+	desc = ers_cityfall.4.d
+
+	picture = GFX_news_event_generic_sign_treaty2
+
+	major = yes
+
+	immediate = {
+		set_global_flag = LOS_lost_capital_to_PGS_ANR_flag
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = ers_cityfall.4.a
+		trigger = {
+			NOT = {
+				TAG = UNC
+			}
+		}
+	}
+	option = {
+		name = ers_cityfall.4.b
+		trigger = { 
+			TAG = UNC
+		}
+	}
+}
+
+### Garn Aanad Fall
+news_event = {
+	id = ers_cityfall.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ers_cityfall.5"}
+	title = ers_cityfall.5.t
+	desc = ers_cityfall.5.d
+
+	picture = GFX_news_event_generic_sign_treaty2
+
+	major = yes
+
+	immediate = {
+		set_global_flag = MNT_lost_capital
+	}
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ers_cityfall.5.a
+		trigger = {
+			NOT = {
+				TAG = MNT
+			}
+		}
+	}
+	option = {
+		name = ers_cityfall.5.b
+		trigger = { 
+			TAG = MNT
+		}
+	}
+}
+
+### Karsakag
+news_event = {
+	id = ers_cityfall.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ers_cityfall6"}
+	title = ers_cityfall.6.t
+	desc = ers_cityfall.6.d
+	picture = GFX_news_event_generic_sign_treaty2
+	major = yes
+	immediate = {
+		set_global_flag = YAC_lost_capital
+	}
+	is_triggered_only = yes
+	option = {
+		name = ers_cityfall.6.a
+		trigger = {
+			NOT = {	TAG = YAC }
+		}
+	}
+	option = {
+		name = ers_cityfall.6.b
+		trigger = { TAG = YAC }
+	}
+}
+
+### Baradur
+news_event = {
+	id = ers_cityfall.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ers_cityfall.7"}
+	title = ers_cityfall.7.t
+	desc = ers_cityfall.7.d
+	picture = GFX_news_event_generic_sign_treaty2
+	major = yes
+	immediate = {
+		set_global_flag = BAD_lost_capital
+	}
+	is_triggered_only = yes
+	option = {
+		name = ers_cityfall.7.a
+		trigger = {
+			NOT = {	TAG = BAD }
+		}
+	}
+	option = {
+		name = ers_cityfall.7.b
+		trigger = { TAG = BAD }
+	}
+}
+
+### Yak Matkhan Krikhe
+news_event = {
+	id = ers_cityfall.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ers_cityfall.8"}
+	title = ers_cityfall.8.t
+	desc = ers_cityfall.8.d
+	picture = GFX_news_event_generic_sign_treaty2
+	major = yes
+	immediate = {
+		set_global_flag = SHA_lost_capital
+	}
+	is_triggered_only = yes
+	option = {
+		name = ers_cityfall.8.a
+		trigger = {
+			NOT = {	TAG = SHA }
+		}
+	}
+	option = {
+		name = ers_cityfall.8.b
+		trigger = { TAG = SHA }
+	}
+}
+
+### Kereh Davsag
+news_event = {
+	id = ers_cityfall.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ers_cityfall.9"}
+	title = ers_cityfall.9.t
+	desc = ers_cityfall.9.d
+	picture = GFX_news_event_generic_sign_treaty2
+	major = yes
+	immediate = {
+		set_global_flag = SHA_lost_capital
+	}
+	is_triggered_only = yes
+	option = {
+		name = ers_cityfall.9.a
+		trigger = {
+			NOT = {	TAG = JAK }
+		}
+	}
+	option = {
+		name = ers_cityfall.9.b
+		trigger = { TAG = JAK }
+	}
+}
+
+### Huuramch Oi
+news_event = {
+	id = ers_cityfall.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ers_cityfall.9"}
+	title = ers_cityfall.10.t
+	desc = ers_cityfall.10.d
+	picture = GFX_news_event_generic_sign_treaty2
+	major = yes
+	immediate = {
+		set_global_flag = NAK_lost_capital
+	}
+	is_triggered_only = yes
+	option = {
+		name = ers_cityfall.10.a
+		trigger = {
+			NOT = {	TAG = NAK }
+		}
+	}
+	option = {
+		name = ers_cityfall.9.b
+		trigger = { TAG = NAK }
+	}
+}
+
+
+
+
+
+
+
+
+# YAC_lost_capital
+
+

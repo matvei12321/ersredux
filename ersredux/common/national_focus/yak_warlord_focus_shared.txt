@@ -1,0 +1,957 @@
+shared_focus = {
+	id = YAK_WARKHAN_start
+	icon = GFX_goal_yak_war
+	cost = 3
+	available = {
+		NOT = {
+			has_global_flag = yak_civ_war_flag
+		}
+	}
+	allow_branch = {
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+			NOT = {
+				has_completed_focus = YAC_war_win
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	x = 10
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus army_effort"
+		add_stability = 0.02
+		add_war_support = 0.02
+		add_political_power = 100
+	}
+}
+	
+	########## ARMY TREE########################################
+	
+shared_focus = {
+	id = YAK_WARKHAN_focus_on_army
+	icon = GFX_goal_generic_allies_build_infantry
+	cost = 3
+	prerequisite = { focus = YAK_WARKHAN_start }
+	available = {
+		NOT = {
+			has_global_flag = yak_civ_war_flag
+		}
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = YAK_WARKHAN_start
+	x = 8
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus army_effort"
+		army_experience = 10
+		add_manpower = 7500		
+	}
+}
+	
+shared_focus = {
+	id = YAK_WARKHAN_army_defence
+	icon = GFX_fortification_gen
+	cost = 5
+	prerequisite = { focus = YAK_WARKHAN_focus_on_army }
+	mutually_exclusive = { focus = YAK_WARKHAN_army_attack }
+	available = {
+		NOT = {
+			has_global_flag = yak_civ_war_flag
+		}
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = YAK_WARKHAN_focus_on_army
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus army_effort"
+		add_ideas = YAK_WARKHAN_defence_idea
+	}
+}
+	
+shared_focus = {
+	id = YAK_WARKHAN_army_attack
+	icon = GFX_goal_generic_attack_allies
+	cost = 5
+	prerequisite = { focus = YAK_WARKHAN_focus_on_army }
+	mutually_exclusive = { focus = YAK_WARKHAN_army_defence }
+	available = {
+		NOT = {
+			has_global_flag = yak_civ_war_flag
+		}
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = YAK_WARKHAN_focus_on_army
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus army_effort"
+		add_ideas = YAK_WARKHAN_attack_idea
+	}
+}
+	
+shared_focus = {
+	id = YAK_WARKHAN_equipment
+	icon = GFX_goal_national_arsenal
+	cost = 4
+	prerequisite = { focus = YAK_WARKHAN_army_attack focus = YAK_WARKHAN_army_defence }
+	available = {
+		NOT = {
+			has_global_flag = yak_civ_war_flag
+		}
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = YAK_WARKHAN_focus_on_army
+	x = -2
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus army_effort"
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_0
+			amount = 5000
+		}
+	}
+}
+	
+shared_focus = {
+	id = YAK_WARKHAN_special_forces
+	icon = GFX_goal_Transformation_of_Nature
+	cost = 4
+	prerequisite = { focus = YAK_WARKHAN_army_attack focus = YAK_WARKHAN_army_defence }
+	relative_position_id = YAK_WARKHAN_focus_on_army
+	available = {
+		NOT = {
+			has_global_flag = yak_civ_war_flag
+		}
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	x = 2
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus army_effort"
+		random_owned_state = {
+			create_unit = {
+				division = "name = \"Yak Mountain Division\" division_template = \"Mountaineer Warband\" start_experience_factor = 0.3 start_equipment_factor = 1.0"  
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"Yak Mountain Division\" division_template = \"Mountaineer Warband\" start_experience_factor = 0.3 start_equipment_factor = 1.0"  
+				owner = ROOT
+			}
+		}
+	}
+}
+	
+shared_focus = {
+	id = YAK_WARKHAN_work_on_strategy
+	icon = GFX_goal_generic_martial_law
+	cost = 4
+	prerequisite = { focus = YAK_WARKHAN_army_attack focus = YAK_WARKHAN_army_defence }
+	relative_position_id = YAK_WARKHAN_focus_on_army
+	available = {
+		NOT = {
+			has_global_flag = yak_civ_war_flag
+		}
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	x = 0
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus army_effort"
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.45
+			uses = 2
+			category = land_doctrine
+		}
+	}
+}
+	
+shared_focus = {
+	id = YAK_WARKHAN_war_propaganda
+	icon = GFX_goal_authority
+	cost = 5
+	prerequisite = { focus = YAK_WARKHAN_work_on_strategy }
+	prerequisite = { focus = YAK_WARKHAN_special_forces }
+	relative_position_id = YAK_WARKHAN_focus_on_army
+	available = {
+		NOT = {
+			has_global_flag = yak_civ_war_flag
+		}
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	x = 1
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus army_effort"
+		add_war_support = 0.15
+		add_manpower = 10000
+	}
+}
+	
+shared_focus = {
+	id = YAK_WARKHAN_war_industry
+	icon = GFX_goal_national_artillery
+	cost = 5
+	prerequisite = { focus = YAK_WARKHAN_work_on_strategy }
+	prerequisite = { focus = YAK_WARKHAN_equipment }
+	relative_position_id = YAK_WARKHAN_focus_on_army
+	available = {
+		NOT = {
+			has_global_flag = yak_civ_war_flag
+		}
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	x = -1
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus army_effort"
+		add_tech_bonus = {
+			name = infantry_weapons_bonus
+			bonus = 1.0
+			uses = 1
+			category = artillery
+		}
+		add_equipment_to_stockpile = { 
+			type = artillery_equipment_1 
+			amount = 500 
+			producer = ROOT 
+		}		
+	}
+}
+	
+shared_focus = {
+	id = YAK_WARKHAN_cause_red_goes_faster
+	icon = GFX_focus_chi_army_reform
+	cost = 5
+	prerequisite = { focus = YAK_WARKHAN_war_industry }
+	prerequisite = { focus = YAK_WARKHAN_war_propaganda }
+	relative_position_id = YAK_WARKHAN_focus_on_army
+	available = {
+		NOT = {
+			has_global_flag = yak_civ_war_flag
+		}
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	x = 0
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus army_effort"
+		add_ideas = YAK_WARKHAN_army_speed_idea
+	}
+}
+	
+	
+	########## INDUSTRY TREE########################################
+	
+shared_focus = {
+	id = YAK_WARKHAN_focus_on_industry
+	icon = GFX_goal_generic_lau_construction
+	cost = 3
+	prerequisite = { focus = YAK_WARKHAN_start }
+	relative_position_id = YAK_WARKHAN_start
+	available = {
+		NOT = {
+			has_global_flag = yak_civ_war_flag
+		}
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	x = -8		
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAK_WARKHAN_focus_on_industry"
+		random_owned_state = {
+			add_building_construction = {
+			type = industrial_complex
+			level = 2
+			instant_build = yes
+			}
+		}
+	}
+}
+	
+shared_focus = {
+	id = YAK_WARKHAN_infrastructure
+	icon = GFX_goal_generic_construct_infrastructure
+	cost = 3
+	prerequisite = { focus = YAK_WARKHAN_focus_on_industry }
+	relative_position_id = YAK_WARKHAN_start
+	available = {
+		NOT = {
+			has_global_flag = yak_civ_war_flag
+		}
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	x = -8
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAK_WARKHAN_focus_on_industry"
+		every_owned_state = {
+			add_building_construction = {
+			type = infrastructure
+			level = 1
+			instant_build = yes
+			}
+		}
+	}
+}
+	
+shared_focus = {
+	id = YAK_WARKHAN_military_industry
+	icon = GFX_focus_indy_industrial_tanks
+	cost = 3
+	prerequisite = { focus = YAK_WARKHAN_infrastructure }
+	available = {
+		NOT = {
+			has_global_flag = yak_civ_war_flag
+		}
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = YAK_WARKHAN_focus_on_industry
+	x = -1
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAK_WARKHAN_military_industry"
+		random_owned_state = {
+			add_building_construction = {
+			type = arms_factory
+			level = 2
+			instant_build = yes
+			}
+		}
+	}
+}
+	
+shared_focus = {
+	id = YAK_WARKHAN_military_industry_2
+	icon = GFX_goal_factory_complex
+	cost = 3
+	prerequisite = { focus = YAK_WARKHAN_military_industry }
+	relative_position_id = YAK_WARKHAN_focus_on_industry
+	available = {
+		NOT = {
+			has_global_flag = yak_civ_war_flag
+		}
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	x = -1
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAK_WARKHAN_military_industry"
+		random_owned_state = {
+			add_building_construction = {
+			type = industrial_complex
+			level = 2
+			instant_build = yes
+			}
+		}
+		add_manpower = -500
+	}
+}
+	
+shared_focus = {
+	id = YAK_WARKHAN_speed_building
+	icon = GFX_goal_factory_complex
+	cost = 3
+	prerequisite = { focus = YAK_WARKHAN_infrastructure }
+	relative_position_id = YAK_WARKHAN_focus_on_industry
+	available = {
+		NOT = {
+			has_global_flag = yak_civ_war_flag
+		}
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	x = 1
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAK_WARKHAN_military_industry"
+		add_ideas = YAK_WARKHAN_construction_idea
+		
+	}
+}
+	
+shared_focus = {
+	id = YAK_WARKHAN_speed_production
+	icon = GFX_goal_generic_military_equipment
+	cost = 3
+	prerequisite = { focus = YAK_WARKHAN_speed_building }
+	available = {
+		NOT = {
+			has_global_flag = yak_civ_war_flag
+		}
+	}
+	relative_position_id = YAK_WARKHAN_focus_on_industry
+	x = 1
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAK_WARKHAN_military_industry"
+		add_ideas = YAK_WARKHAN_production_idea
+	}
+}
+	
+shared_focus = {
+	id = YAK_WARKHAN_bunkers
+	icon = GFX_goal_nested_fortifications
+	cost = 5
+	prerequisite = { focus = YAK_WARKHAN_military_industry_2 }
+	prerequisite = { focus = YAK_WARKHAN_speed_production }
+	available = {
+		NOT = {
+			has_global_flag = yak_civ_war_flag
+		}
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = YAK_WARKHAN_focus_on_industry
+	x = -2
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAK_WARKHAN_military_industry"
+		add_ideas = YAK_WARKHAN_bunker_idea
+	}
+}
+	
+shared_focus = {
+	id = YAK_WARKHAN_repairs
+	icon = GFX_goal_purchase_tech
+	cost = 5
+	prerequisite = { focus = YAK_WARKHAN_military_industry_2 }
+	prerequisite = { focus = YAK_WARKHAN_speed_production }
+	available = {
+		NOT = {
+			has_global_flag = yak_civ_war_flag
+		}
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = YAK_WARKHAN_focus_on_industry
+	x = 0
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAK_WARKHAN_military_industry"
+		add_ideas = YAK_WARKHAN_reliability_idea
+		}
+}
+
+shared_focus = {
+	id = YAK_WARKHAN_steal
+	icon = GFX_goal_generic_gunrunning
+	cost = 5
+	prerequisite = { focus = YAK_WARKHAN_military_industry_2 }
+	prerequisite = { focus = YAK_WARKHAN_speed_production }	
+	available = {
+		NOT = {
+			has_global_flag = yak_civ_war_flag
+		}
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = YAK_WARKHAN_focus_on_industry
+	x = 2
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAK_WARKHAN_military_industry"
+		add_ideas = YAK_WARKHAN_equipment_capture
+		}
+}
+	
+	
+	############## SOCIETY TREE########################################
+	
+shared_focus = {
+	id = YAK_WARKHAN_focus_on_unity
+	icon = GFX_goal_generic_national_unity
+	cost = 3
+	prerequisite = { focus = YAK_WARKHAN_start }
+	available = {
+		NOT = {
+			has_global_flag = yak_civ_war_flag
+		}
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = YAK_WARKHAN_start
+	x = 0
+	y = 1		
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAK_WARKHAN_focus_on_industry"
+		add_stability = 0.1
+		if = {
+			limit = { 
+				has_government = fascism
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+		}
+		else_if = {
+			limit = { 
+				has_government = neutrality
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+		}
+		else_if = {
+			limit = { 
+				has_government = communism
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+		}
+		else_if = {
+			limit = { 
+				has_government = democratic
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = YAK_WARKHAN_prepare_citizens
+	icon = GFX_goal_new_treaty
+	cost = 3
+	prerequisite = { focus = YAK_WARKHAN_focus_on_unity }
+	available = {
+		NOT = {
+			has_global_flag = yak_civ_war_flag
+		}
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = YAK_WARKHAN_focus_on_unity
+	x = 2
+	y = 1		
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAK_WARKHAN_focus_on_industry"
+		add_manpower = 5000
+		add_stability = -0.02
+	}
+}
+
+shared_focus = {
+	id = YAK_WARKHAN_counsil
+	icon = GFX_focus_yak_sneldarfest
+	cost = 1.5
+	prerequisite = { focus = YAK_WARKHAN_focus_on_unity }
+	available = {
+		NOT = {
+			has_global_flag = yak_civ_war_flag
+		}
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = YAK_WARKHAN_focus_on_unity
+	x = 0
+	y = 1		
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAK_WARKHAN_focus_on_industry"
+		add_political_power = 75
+		if = {
+			limit = {
+				OR ={
+					tag = NAK
+					tag = SHA
+					tag = YAK
+					tag = JAK
+					tag = BAD
+				}
+			}
+			country_event =	yak_unification.2
+		}
+		if = {
+			limit = {
+				tag = MNT
+			}
+			country_event =	yak_unification.3
+		}
+		if = {
+			limit = {
+				tag = YAC
+			}
+			country_event =	yak_unification.4
+		}
+	}
+}
+
+shared_focus = {
+	id = YAK_WARKHAN_war_faster
+	icon = GFX_goal_GEA_guerilla_warfare
+	cost = 3
+	prerequisite = { focus = YAK_WARKHAN_counsil }
+	available = {
+		NOT = {
+			has_global_flag = yak_civ_war_flag
+		}
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	mutually_exclusive = { focus = YAK_WARKHAN_war_slower }
+	relative_position_id = YAK_WARKHAN_focus_on_unity
+	x = -1
+	y = 2		
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAK_WARKHAN_focus_on_industry"
+		add_days_mission_timeout = {
+			mission = yak_civ_war_start
+			days = -35
+		}
+	}
+}
+
+shared_focus = {
+	id = YAK_WARKHAN_war_slower
+	icon = GFX_goal_griffon_clock
+	cost = 3
+	prerequisite = { focus = YAK_WARKHAN_counsil }
+	mutually_exclusive = { focus = YAK_WARKHAN_war_faster }
+	available = {
+		NOT = {
+			has_global_flag = yak_civ_war_flag
+		}
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = YAK_WARKHAN_focus_on_unity
+	x = 1
+	y = 2		
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAK_WARKHAN_focus_on_industry"
+		add_days_mission_timeout = {
+			mission = yak_civ_war_start
+			days = 35
+		}
+	}
+}
+
+shared_focus = {
+	id = YAK_WARKHAN_develop_camps
+	icon = GFX_goal_generic_allies_build_infantry
+	cost = 3
+	prerequisite = { focus = YAK_WARKHAN_focus_on_unity }
+	available = {
+		NOT = {
+			has_global_flag = yak_civ_war_flag
+		}
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = YAK_WARKHAN_focus_on_unity
+	x = -2
+	y = 1		
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAK_WARKHAN_focus_on_industry"
+		add_ideas = YAK_WARKHAN_conscription_idea
+	}
+}
+
+shared_focus = {
+	id = YAK_WARKHAN_war_drums
+	icon = GFX_goal_generic_ordnance
+	cost = 3
+	prerequisite = { focus = YAK_WARKHAN_war_faster  focus = YAK_WARKHAN_war_slower }
+	prerequisite = { focus = YAK_WARKHAN_develop_camps }
+	available = {
+		NOT = {
+			has_global_flag = yak_civ_war_flag
+		}
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = YAK_WARKHAN_focus_on_unity
+	x = -2
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAK_WARKHAN_focus_on_industry"
+		add_ideas = YAK_WARKHAN_war_drums_idea
+	}
+}
+
+shared_focus = {
+	id = YAK_WARKHAN_resistance
+	icon = GFX_goal_graveyard
+	cost = 3
+	prerequisite = { focus = YAK_WARKHAN_war_faster  focus = YAK_WARKHAN_war_slower }
+	prerequisite = { focus = YAK_WARKHAN_prepare_citizens }
+	available = {
+		NOT = {
+			has_global_flag = yak_civ_war_flag
+		}
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = YAK_WARKHAN_focus_on_unity
+	x = 2
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAK_WARKHAN_focus_on_industry"
+		add_ideas = YAK_WARKHAN_resistence_idea
+	}
+}
+
+shared_focus = {
+	id = YAK_WARKHAN_unity_2
+	icon = GFX_goal_skull_treaty2
+	cost = 0.8
+	prerequisite = { focus = YAK_WARKHAN_war_drums }
+	prerequisite = { focus = YAK_WARKHAN_resistance }
+	available = {
+		NOT = {
+			has_global_flag = yak_civ_war_flag
+		}
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = YAK_WARKHAN_focus_on_unity
+	x = 0
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAK_WARKHAN_focus_on_industry"
+		add_war_support = 0.05
+	}
+}
+
+shared_focus = {
+	id = YAK_WARKHAN_attack_YAK
+	icon = GFX_goal_attack_yak
+	cost = 4
+	prerequisite = { focus = YAK_WARKHAN_unity_2 }
+	available = {
+		NOT = {
+			has_global_flag = yak_civ_war_flag
+			tag = YAK
+		}
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 40
+			is_neighbor_of = YAK
+		}
+	}
+	relative_position_id = YAK_WARKHAN_focus_on_unity
+	x = -3
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAK_WARKHAN_focus_on_industry"
+		add_ideas = YAK_WARKHAN_attack_YAK_idea
+	}
+}
+
+shared_focus = {
+	id = YAK_WARKHAN_attack_JAK
+	icon = GFX_goal_attack_jak
+	cost = 4
+	prerequisite = { focus = YAK_WARKHAN_unity_2 }
+	available = {
+		NOT = {
+			has_global_flag = yak_civ_war_flag
+			tag = JAK
+		}
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 40
+			is_neighbor_of = JAK
+		}
+	}
+	relative_position_id = YAK_WARKHAN_focus_on_unity
+	x = -1
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAK_WARKHAN_focus_on_industry"
+		add_ideas = YAK_WARKHAN_attack_JAK_idea
+	}
+}
+
+shared_focus = {
+	id = YAK_WARKHAN_attack_NAK
+	icon = GFX_goal_attack_nak
+	cost = 4
+	prerequisite = { focus = YAK_WARKHAN_unity_2 }
+	available = {
+		NOT = {
+			has_global_flag = yak_civ_war_flag
+			tag = NAK
+		}
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 40
+			is_neighbor_of = NAK
+		}
+	}
+	relative_position_id = YAK_WARKHAN_focus_on_unity
+	x = 3
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAK_WARKHAN_focus_on_industry"
+		add_ideas = YAK_WARKHAN_attack_NAK_idea
+	}
+}
+
+shared_focus = {
+	id = YAK_WARKHAN_attack_YAC
+	icon = GFX_goal_attack_yac
+	cost = 4
+	prerequisite = { focus = YAK_WARKHAN_unity_2 }
+	available = {
+		NOT = {
+			has_global_flag = yak_civ_war_flag
+			tag = YAC
+		}
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 40
+			is_neighbor_of = YAC
+		}
+	}
+	relative_position_id = YAK_WARKHAN_focus_on_unity
+	x = 1
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAK_WARKHAN_focus_on_industry"
+		add_ideas = YAK_WARKHAN_attack_YAC_idea
+	}
+}
+
+shared_focus = {
+	id = YAK_WARKHAN_attack_SHA
+	icon = GFX_goal_attack_sha
+	cost = 4
+	prerequisite = { focus = YAK_WARKHAN_unity_2 }
+	available = {
+		NOT = {
+			has_global_flag = yak_civ_war_flag
+			tag = SHA
+		}
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 40
+			is_neighbor_of = SHA
+		}
+	}
+	relative_position_id = YAK_WARKHAN_focus_on_unity
+	x = -2
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAK_WARKHAN_focus_on_industry"
+		add_ideas = YAK_WARKHAN_attack_SHA_idea
+	}
+}
+
+shared_focus = {
+	id = YAK_WARKHAN_attack_BAD
+	icon = GFX_goal_attack_bad
+	cost = 4
+	prerequisite = { focus = YAK_WARKHAN_unity_2 }
+	available = {
+		NOT = {
+			has_global_flag = yak_civ_war_flag
+			tag = BAD
+		}
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 40
+			is_neighbor_of = BAD
+		}
+	}
+	relative_position_id = YAK_WARKHAN_focus_on_unity
+	x = 0
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAK_WARKHAN_focus_on_industry"
+		add_ideas = YAK_WARKHAN_attack_BAD_idea
+	}
+}
+
+shared_focus = {
+	id = YAK_WARKHAN_attack_MNT
+	icon = GFX_goal_attack_mnt
+	cost = 4
+	prerequisite = { focus = YAK_WARKHAN_unity_2 }
+	available = {
+		NOT = {
+			has_global_flag = yak_civ_war_flag
+			tag = MNT
+		}
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 40
+			is_neighbor_of = MNT
+		}
+	}
+	relative_position_id = YAK_WARKHAN_focus_on_unity
+	x = 2
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAK_WARKHAN_focus_on_industry"
+		add_ideas = YAK_WARKHAN_attack_MNT_idea
+	}
+}

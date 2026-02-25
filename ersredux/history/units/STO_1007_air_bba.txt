@@ -1,0 +1,67 @@
+﻿air_wings = {
+	749 = {
+		medium_airship_airframe_0 = {
+			owner = "STO"
+			amount = 100
+			version_name = "Early Medium Airship"
+		}
+		medium_airship_airframe_0 = {
+			owner = "STO"
+			amount = 100
+			version_name = "Early Medium Airship"
+		}
+		medium_airship_airframe_0 = {
+			owner = "STO"
+			amount = 100
+			version_name = "Early Medium Airship"
+		}
+		large_airship_airframe_0 = {
+			owner = "STO"
+			amount = 100
+			version_name = "Early Heavy Airship"
+		}
+		large_airship_airframe_0 = {
+			owner = "STO"
+			amount = 74
+			version_name = "Early Heavy Airship"
+		}
+	}
+	
+	884 = {
+		medium_airship_airframe_0 = {
+			owner = "STO"
+			amount = 100
+			version_name = "Early Medium Airship"
+		}
+		large_airship_airframe_0 = {
+			owner = "STO"
+			amount = 80
+			version_name = "Early Heavy Airship"
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = medium_airship_airframe_0
+			creator = "STO"
+			version_name = "Early Medium Airship"
+		}
+		requested_factories = 10
+		progress = 0.1
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = heavy_airship_airframe_0
+			creator = "STO"
+			version_name = "Early Heavy Airship"
+		}
+		requested_factories = 5
+		progress = 0.1
+		efficiency = 50
+	}
+	
+	
+}

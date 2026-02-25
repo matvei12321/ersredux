@@ -1,0 +1,11 @@
+units = {
+	fleet = {
+		name = "The Chancellor"
+		naval_base = 9118
+		task_force = {
+			name = "The Chancellor"
+			location = 9118
+			ship = { name = "STS The Iron Chancellor" definition = battleship equipment = { battleship_1 = { amount = 1 owner = TRD } } }
+		}
+	}
+}

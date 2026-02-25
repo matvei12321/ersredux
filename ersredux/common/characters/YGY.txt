@@ -1,0 +1,18 @@
+characters = {
+YGY_Osval={
+    name=YGY_Osval
+    portraits={
+      civilian={
+        large="gfx/leaders/NGC/NGC_Oswald.tga"
+      }
+    }
+    country_leader={
+      desc="YGY_Osval_desc"
+      ideology= esotericism 
+      traits={governor_of_Zona }
+      expire="1965.1.1.1"
+      id=-1
+    }
+    gender = male
+      }
+  }

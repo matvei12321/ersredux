@@ -1,0 +1,99 @@
+characters={
+	HRZ_regency_council = {
+		name = HRZ_regency_council
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/HRZ/Regency.tga"
+			}
+		}
+		country_leader = {
+				expire = "1965.1.1"
+				ideology = oligarchism
+			}
+	}
+	HRZ_emperor_grover_vi={
+		name=HRZ_emperor_grover_vi_old
+		portraits={
+			civilian={
+				large="gfx/leaders/HRZ/Grover_vi.tga"
+			}
+		}
+		country_leader={
+			desc="old_grover_vi_desc"
+			traits={ grover_old grover_of_piece }
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	HRZ_grover_vii={
+		name=HRZ_grover_vii
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/HRZ/Grover_vii.dds"
+				large="gfx/leaders/HRZ/Grover_vii.tga"
+			}
+		}
+		corps_commander={
+			traits={ griffon_race_trait grover_erzherzog }
+			skill=2
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	HRZ_Reinhold_Thundertail = {
+		name = HRZ_Reinhold_Thundertail
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/advisors/HRZ/Reinhold_Thundertail.dds"
+				large = "gfx/leaders/HRZ/Reinhold_Thundertail.tga"
+			}
+		}
+		corps_commander = {
+			traits={ griffon_race_trait organizer panzer_leader panzer_expert}
+			skill=4
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	HRZ_ferdinand_dawnclaw = {
+		name = HGE_ferdinand_dawnclaw
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/advisors/HGE/HGE_ferdinand.dds"
+				large = "gfx/leaders/HGE/Ferdinand.tga"
+			}
+		}
+		corps_commander = {
+			traits={ griffon_race_trait infantry_leader fascist_sympathizer  }
+			skill=3
+			attack_skill=4
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	HRZ_maria_grover = {
+		name = HRZ_maria_grover
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/HRZ/HRZ_maria_grover_normal.tga"
+			}
+		}
+		country_leader = {
+			desc=""
+			traits={ HRZ_last_chance }
+			ideology=despotism
+			expire="1965.1.1.1"
+			
+			}
+	}
+}

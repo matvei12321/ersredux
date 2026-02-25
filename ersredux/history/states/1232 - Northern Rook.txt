@@ -1,0 +1,25 @@
+state={
+	id=1232
+	name="STATE_1232"
+
+	provinces={
+		6347 6546 9346 11101 11441
+	}
+
+	manpower=22300
+	state_category = rural
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = ROK
+		add_core_of = ROK
+		
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	
+	resources = {
+		steel = 1
+	}
+}

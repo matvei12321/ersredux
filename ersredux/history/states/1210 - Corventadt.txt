@@ -1,0 +1,21 @@
+state={
+	id=1210
+	name="STATE_1210"
+
+	provinces={
+		584 628 3835 6673 9613	
+	}
+
+	manpower=174270
+	state_category=rural
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = ERP
+		add_core_of = ERP
+
+		buildings = {
+			infrastructure = 1
+		}
+	}
+}

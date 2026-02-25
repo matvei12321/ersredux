@@ -1,0 +1,101 @@
+﻿division_template = {
+	name = "Prench Divisione"
+	template_counter = 3
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+	priority = 2
+}
+
+division_template = {
+	name = "Prench Police"
+	template_counter = 7
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+
+	support = {
+	}
+	priority = 0
+}
+
+units = {
+	division = {
+		name = "Prench Divisione"
+		location = 3534
+		division_template = "Prench Divisione"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Prench Divisione"
+		location = 3534
+		division_template = "Prench Divisione"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Prench Police"
+		location = 3534
+		division_template = "Prench Police"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Prench Divisione"
+		location = 9751
+		division_template = "Prench Police"
+		start_experience_factor = 0.4
+	}
+	division = {
+		name = "Prench Divisione"
+		location = 620
+		division_template = "Prench Divisione"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Prench Divisione"
+		location = 620
+		division_template = "Prench Divisione"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Prench Divisione"
+		location = 11596
+		division_template = "Prench Police"
+		start_experience_factor = 0.4
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "PRG"
+		}
+		requested_factories = 2
+		progress = 0.75
+		efficiency = 30
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "PRG"
+		}
+		requested_factories = 1
+		progress = 0.75
+		efficiency = 30
+	}
+}

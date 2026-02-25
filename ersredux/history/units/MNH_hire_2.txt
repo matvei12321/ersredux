@@ -1,0 +1,16 @@
+units = {
+	division = {
+		name = "MaxTack Soldiers"
+		location = 758
+		division_template = "MaxTack Group"
+		start_experience_factor = 0.2
+	}
+}
+units = {
+	division = {
+		name = "MaxTack Soldiers"
+		location = 758
+		division_template = "MaxTack Group"
+		start_experience_factor = 0.2
+	}
+}

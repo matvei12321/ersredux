@@ -1,0 +1,21 @@
+﻿
+units = {
+	division = {
+		name = "Crystal Soldiers"
+		location = 489
+		division_template = "Militia Regiment"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Crystal Soldiers"
+		location = 489
+		division_template = "Militia Regiment"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Crystal Soldiers"
+		location = 489
+		division_template = "Militia Regiment"
+		start_experience_factor = 0.2
+	}
+}

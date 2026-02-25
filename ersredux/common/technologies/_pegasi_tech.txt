@@ -1,0 +1,386 @@
+
+
+technologies = {
+	
+	
+	pegasi_unit_tech = {
+		research_cost = 1
+		path = {
+			leads_to_tech = flight_techinque_1
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = land_pegasi_equipment
+			research_cost_coeff = 1
+		}
+	
+		enable_subunits = {
+			pegasi
+		}
+		
+		folder = {
+			name = pegasi_folder
+			position = { x = 2 y = 0 }
+		}
+		
+		categories = {
+			race_tech
+			pegasi_tech
+		}
+	}
+	
+	flight_techinque_1 = {
+		
+		research_cost = 1
+		pegasi = {
+			max_organisation = 5
+		}
+		
+		path = {
+			leads_to_tech = flight_techinque_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = pegasi_scouts
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = pegasi_folder
+			position = { x = 0 y = 4 }
+		}
+		categories = {
+			race_tech
+			pegasi_tech
+		}
+	}
+	pegasi_scouts = {
+		
+		research_cost = 1
+		pegasi = {
+			recon = 0.2
+		}
+		army_intel_factor = 0.1
+		
+		folder = {
+			name = pegasi_folder
+			position = { x = -2 y = 4 }
+		}
+		categories = {
+			race_tech
+			pegasi_tech
+		}
+	}
+	
+	land_pegasi_equipment = {
+		
+		research_cost = 1
+		infantry = {
+			max_organisation = 5
+		}
+		
+		motorized = {
+			max_organisation = 5
+		}
+		
+		mechanized = {
+			max_organisation = 5
+		}
+		
+		magical_motorized = {
+			max_organisation = 5
+		}
+		
+		magical_mechanized = {
+			max_organisation = 5
+		}
+		
+		path = {
+			leads_to_tech = smithing_technology
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = pegasi_folder
+			position = { x = 4 y = 4 }
+		}
+		categories = {
+			race_tech
+			pegasi_tech
+		}
+	}
+	
+	flight_techinque_2 = {
+		research_cost = 1
+		pegasi = {
+			defense = 0.1
+		}
+		
+		path = {
+			leads_to_tech = flight_techinque_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = raider_flights
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = pegasi_folder
+			position = { x = 0 y = 8 }
+		}
+		categories = {
+			race_tech
+			pegasi_tech
+		}
+	}
+	
+	raider_flights = {
+		research_cost = 1
+		pegasi = {
+			suppression_factor = 0.1
+		}
+		
+		
+		folder = {
+			name = pegasi_folder
+			position = { x = -2 y = 8 }
+		}
+		categories = {
+			race_tech
+			pegasi_tech
+		}
+	}
+	
+	smithing_technology = {
+		research_cost = 1
+		
+		industrial_capacity_factory = 0.075
+		
+		path = {
+			leads_to_tech = land_pegasi_equipment_2
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = pegasi_folder
+			position = { x = 4 y = 8 }
+		}
+		categories = {
+			race_tech
+			pegasi_tech
+		}
+	}
+	
+	flight_techinque_3 = {
+		research_cost = 1
+		pegasi = {
+			maximum_speed = 0.05
+			soft_attack = 0.05
+			breakthrough = 0.05
+		}
+		
+		path = {
+			leads_to_tech = universal_combination
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = exowings
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = heavy_pegasi_armour
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = pegasi_folder
+			position = { x = 0 y = 12 }
+		}
+		categories = {
+			race_tech
+			pegasi_tech
+		}
+	}
+	
+	heavy_pegasi_armour = {
+		research_cost = 1
+		pegasi = {
+			maximum_speed = -0.15
+			defense = 0.15
+		}
+		
+		folder = {
+			name = pegasi_folder
+			position = { x = -2 y = 12 }
+		}
+		categories = {
+			race_tech
+			pegasi_tech
+		}
+	}
+	
+	land_pegasi_equipment_2 = {
+		research_cost = 1
+		
+		max_dig_in_factor = 0.1
+		
+		path = {
+			leads_to_tech = universal_combination
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = exowings
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = pegasi_folder
+			position = { x = 4 y = 12 }
+		}
+		categories = {
+			race_tech
+			pegasi_tech
+		}
+	}
+	
+	universal_combination = {
+		research_cost = 1
+		
+		army_attack_factor = 0.05
+		army_defence_factor = 0.05
+		
+		xor = { exowings }
+		
+		folder = {
+			name = pegasi_folder
+			position = { x = 0 y = 16 }
+		}
+		categories = {
+			race_tech
+			pegasi_tech
+		}
+	}
+	
+	exowings = {
+		research_cost = 1
+		
+		army_infantry_attack_factor = 0.1
+		army_infantry_speed_factor = 0.1
+		category_all_infantry = {
+			maximum_speed = 0.1
+			max_strength = 0.075
+		}
+		
+		xor = { universal_combination }
+		
+		folder = {
+			name = pegasi_folder
+			position = { x = 4 y = 16 }
+		}
+		categories = {
+			race_tech
+			pegasi_tech
+		}
+	}
+	
+	
+	weather_control = {
+		research_cost = 1
+		air_weather_penalty = -0.05
+		path = {
+			leads_to_tech = cold_tech
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = heat_tech
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = pegasi_folder
+			position = { x = 2 y = 6 }
+		}
+		categories = {
+			race_tech
+			pegasi_tech
+		}
+	}
+	
+	cold_tech = {
+		research_cost = 1
+		acclimatization_cold_climate_gain_factor = 0.15
+		path = {
+			leads_to_tech = devastating_weather
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = agriculture_hip
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = pegasi_folder
+			position = { x = 0 y = 10 }
+		}
+		categories = {
+			race_tech
+			pegasi_tech
+		}
+	}
+	
+	heat_tech = {
+		research_cost = 1
+		acclimatization_hot_climate_gain_factor = 0.15
+		path = {
+			leads_to_tech = devastating_weather
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = agriculture_hip
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = pegasi_folder
+			position = { x = 4 y = 10 }
+		}
+		categories = {
+			race_tech
+			pegasi_tech
+		}
+	}
+	
+	devastating_weather = {
+		research_cost = 1
+		air_strategic_bomber_bombing_factor = 0.1
+		xor = { agriculture_hip }
+		
+		folder = {
+			name = pegasi_folder
+			position = { x = 0 y = 14 }
+		}
+		categories = {
+			race_tech
+			pegasi_tech
+		}
+	}
+	
+	agriculture_hip = {
+		research_cost = 1
+		monthly_population = 0.15
+		production_speed_buildings_factor = 0.05
+		supply_consumption_factor = -0.065
+		xor = { devastating_weather }
+		
+		folder = {
+			name = pegasi_folder
+			position = { x = 4 y = 14 }
+		}
+		categories = {
+			race_tech
+			pegasi_tech
+		}
+	}
+}
+		

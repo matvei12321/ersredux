@@ -1,0 +1,866 @@
+
+shared_focus = {
+	id = SRF_cancel_geshtalt
+	icon = GFX_goal_srf_geshtalt
+	cost = 5.8
+	available = {
+	}
+	ai_will_do = {
+		factor = 40
+	}
+	
+	x = 13
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		remove_ideas = SRF_project_geshtalt
+		country_event = { id = srf.1 days = 2 } 
+	}
+	search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+}
+
+shared_focus = {
+	id = SRF_scientists
+	icon = GFX_goal_srf_technocrat_society
+	cost = 2.9
+	available = {
+		NOT = {
+			has_idea = SRF_project_geshtalt
+		}
+	}
+	prerequisite = { focus = SRF_cancel_geshtalt }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = SRF_cancel_geshtalt
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		country_event = srf.5
+	}
+	search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+}
+
+shared_focus = {
+	id = SRF_esotericists
+	icon = GFX_goal_srf_paganism
+	cost = 2.9
+	available = {
+		NOT = {
+			has_idea = SRF_project_geshtalt
+		}
+	}
+	prerequisite = { focus = SRF_cancel_geshtalt }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = SRF_cancel_geshtalt
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		country_event = srf.6
+	}
+	search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+}
+
+shared_focus = {
+	id = SRF_this_is_vissenschtat
+	icon = GFX_goal_srf_queens_tower
+	cost = 4
+	available = {
+		NOT = {
+			has_idea = SRF_project_geshtalt
+		}
+	}
+	prerequisite = { focus = SRF_scientists }
+	prerequisite = { focus = SRF_esotericists }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = SRF_cancel_geshtalt
+	x = 0
+	y =2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		add_stability = 0.025
+		add_political_power = 100
+	}
+	search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+}
+
+shared_focus = {
+	id = SRF_we_will_solve_all_the_mysteries_of_the_universe
+	icon = GFX_goal_srf_queens_tower
+	cost = 4
+	prerequisite = { focus = SRF_this_is_vissenschtat }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = SRF_cancel_geshtalt
+	x = -5
+	y =3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		
+	}
+	search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+}
+
+shared_focus = {
+	id = SRF_new_and_fresh_minds
+	icon = GFX_goal_srf_queens_tower
+	cost = 4
+	prerequisite = { focus = SRF_we_will_solve_all_the_mysteries_of_the_universe }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = SRF_we_will_solve_all_the_mysteries_of_the_universe
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		
+	}
+	search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+}
+
+shared_focus = {
+	id = SRF_key_lake
+	icon = GFX_goal_srf_queens_tower
+	cost = 4
+	prerequisite = { focus = SRF_we_will_solve_all_the_mysteries_of_the_universe }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = SRF_we_will_solve_all_the_mysteries_of_the_universe
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		add_political_power = 25
+		262 = {
+			add_extra_state_shared_building_slots = 1
+		}
+		add_resource = {
+			type = crystals
+			amount = 10
+			state = 262
+		}
+	}
+	search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+}
+
+shared_focus = {
+	id = SRF_save_the_lake
+	icon = GFX_goal_srf_queens_tower
+	cost = 4
+	prerequisite = { focus = SRF_new_and_fresh_minds }
+	prerequisite = { focus = SRF_key_lake }
+	mutually_exclusive = { focus = SRF_active_research }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = SRF_we_will_solve_all_the_mysteries_of_the_universe
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		add_power_balance_value = {
+			id = srf_balance_of_power
+			value = -0.05
+		}
+	}
+	search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+}
+
+shared_focus = {
+	id = SRF_active_research
+	icon = GFX_goal_srf_queens_tower
+	cost = 4
+	prerequisite = { focus = SRF_new_and_fresh_minds }
+	prerequisite = { focus = SRF_key_lake }
+	mutually_exclusive = { focus = SRF_save_the_lake }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = SRF_we_will_solve_all_the_mysteries_of_the_universe
+	x = 2
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		add_power_balance_value = {
+			id = srf_balance_of_power
+			value = 0.05
+		}
+		262 = {
+			add_extra_state_shared_building_slots = 3
+		}
+	}
+	search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+}
+
+shared_focus = {
+	id = SRF_great_goal
+	icon = GFX_goal_srf_queens_tower
+	cost = 4
+	prerequisite = { focus = SRF_active_research focus = SRF_save_the_lake }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = SRF_we_will_solve_all_the_mysteries_of_the_universe
+	x = 1
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		
+	}
+	search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+}
+
+shared_focus = {
+	id = SRF_colonisation_hooves
+	icon = GFX_goal_srf_geshtalt
+	cost = 4
+	available = {
+	}
+	prerequisite = { focus = SRF_great_goal }
+	mutually_exclusive = { focus = SRF_colonisation_bereg }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = SRF_we_will_solve_all_the_mysteries_of_the_universe
+	x = 0
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		314 = {
+			add_manpower = 15000
+		}
+		262 = {
+			add_manpower = -15000
+		}
+		custom_effect_tooltip = SRF_colonisation_tt
+		hidden_effect = {
+			set_victory_points = {
+			province = 10478
+			value = 1
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+}
+	
+shared_focus = {
+	id = SRF_colonisation_bereg
+	icon = GFX_goal_srf_geshtalt
+	cost = 4
+	available = {
+	}
+	prerequisite = { focus = SRF_great_goal }
+	mutually_exclusive = { focus = SRF_colonisation_hooves }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = SRF_we_will_solve_all_the_mysteries_of_the_universe
+	x = 2
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		314 = {
+			add_manpower = 15000
+		}
+		264 = {
+			add_manpower = -15000
+		}
+		custom_effect_tooltip = SRF_colonisation_2_tt
+		hidden_effect = {
+			set_victory_points = {
+			province = 1866
+			value = 1
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+}
+
+shared_focus = {
+	id = SRF_heat_generators
+	icon = GFX_goal_srf_city_hives
+	cost = 4
+	available = {
+	}
+	prerequisite = { focus = SRF_colonisation_bereg focus = SRF_colonisation_hooves }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = SRF_we_will_solve_all_the_mysteries_of_the_universe
+	x = 1
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SRF_heat_generators"
+		country_event = srf.3
+	}
+	search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+}
+
+shared_focus = {
+	id = SRF_expand_unit_51
+	icon = GFX_goal_srf_queens_tower
+	cost = 4
+	prerequisite = { focus = SRF_new_and_fresh_minds }
+	prerequisite = { focus = SRF_key_lake }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = SRF_we_will_solve_all_the_mysteries_of_the_universe
+	x = -2
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		add_ideas = SRF_research_idea
+	}
+	search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+}
+
+
+
+
+
+
+shared_focus = {
+	id = SRF_research
+	icon = GFX_goal_srf_crystals
+	cost = 4
+	available = {
+		NOT = {
+			has_idea = SRF_project_geshtalt
+		}
+	}
+	prerequisite = { focus = SRF_cancel_geshtalt }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = SRF_cancel_geshtalt
+	x = -10
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		add_research_slot = 1
+	}
+	search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+}
+	
+shared_focus = {
+	id = SRF_manpower
+	icon = GFX_goal_srf_one_chng
+	cost = 4
+	available = {
+		NOT = {
+			has_idea = SRF_project_geshtalt
+		}
+		is_puppet_of = CHN
+	}
+	prerequisite = { focus = SRF_cancel_geshtalt }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = SRF_cancel_geshtalt
+	x = 10
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		add_manpower = 10000
+		CHN = {
+			add_stability = 0.02
+		}
+	}
+	search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+}
+	
+shared_focus = {
+	id = SRF_manpower_soldiers
+	icon = GFX_goal_srf_manpower
+	cost = 4
+	available = {
+	}
+	prerequisite = { focus = SRF_manpower }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = SRF_manpower
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PGS_black_squads"
+		army_experience = 5
+		custom_effect_tooltip = srf_create_unit_tt
+		hidden_effect = {
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Gardyer Division\" division_template = \"Grenzinfanterie\" start_experience_factor = 0.45"  
+					owner = SRF
+				}
+			}
+		}
+	add_manpower = -5000
+	}
+	search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+}
+	
+shared_focus = {
+	id = SRF_army_experiments
+	icon = GFX_goal_srf_rifles
+	cost = 5
+	available = {
+	}
+	prerequisite = { focus = SRF_manpower_soldiers }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = SRF_manpower
+	x = 2
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PGS_black_squads"
+		add_tech_bonus = {
+			name = infantry_weapons_bonus
+			bonus = 0.4
+			uses = 2
+			category = infantry_weapons
+		}		
+		CHN = {
+			add_tech_bonus = {
+			name = infantry_weapons_bonus
+			bonus = 0.4
+			uses = 1
+			category = infantry_weapons
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+}
+	
+shared_focus = {
+	id = SRF_expand_camps
+	icon = GFX_goal_srf_city_hives
+	cost = 4
+	available = {
+	}
+	prerequisite = { focus = SRF_manpower_soldiers }
+	prerequisite = { focus = SRF_manpower_workers }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = SRF_manpower
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PGS_black_squads"	
+		add_manpower = 5000
+	}
+	search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+}
+	
+shared_focus = {
+	id = SRF_manpower_workers
+	icon = GFX_goal_srf_pony_factory
+	cost = 4
+	available = {
+	}
+	prerequisite = { focus = SRF_manpower }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = SRF_manpower
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		262 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		add_manpower = -5000
+	}
+	search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+}
+	
+shared_focus = {
+	id = SRF_workers_experiments
+	icon = GFX_goal_srf_gear
+	cost = 5
+	available = {
+	}
+	prerequisite = { focus = SRF_manpower_workers }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = SRF_manpower
+	x = -2
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		add_tech_bonus = {
+			name = factory_upgrades
+			bonus = 0.45
+			uses = 2
+			category = industry
+		}
+		CHN = {
+			add_tech_bonus = {
+				name = factory_upgrades
+				bonus = 0.45
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+}
+
+	
+
+	
+shared_focus = {
+	id = SRF_native_people
+	icon = GFX_goal_srf_changelings
+	cost = 4
+	available = {
+		NOT = {
+			has_idea = SRF_project_geshtalt
+		}
+	}
+	prerequisite = { focus = SRF_cancel_geshtalt }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = SRF_cancel_geshtalt
+	x = 3
+	y = 1
+	completion_reward = {
+		262 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+			add_manpower = 10000
+		}
+	}
+	search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+}
+	
+shared_focus = {
+	id = SRF_borning_program
+	icon = GFX_goal_srf_borning
+	cost = 4
+	available = {
+	}
+	prerequisite = { focus = SRF_native_people }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = SRF_cancel_geshtalt
+	x = 3
+	y = 2
+	completion_reward = {
+		add_ideas = SRF_borning
+	}
+	search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+}
+	
+shared_focus = {
+	id = SRF_science_research
+	icon = GFX_goal_srf_research
+	cost = 4
+	available = {
+	}
+	mutually_exclusive = { focus = SRF_pagan_research }
+	prerequisite = { focus = SRF_research }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = SRF_research
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		add_power_balance_value = {
+			id = srf_balance_of_power
+			value = 0.15
+		}
+		add_stability = 0.025
+	}
+	search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+}
+	
+shared_focus = {
+	id = SRF_pagan_research
+	icon = GFX_goal_srf_pagan_symbol
+	cost = 4
+	available = {
+	}
+	mutually_exclusive = { focus = SRF_science_research }
+	prerequisite = { focus = SRF_research }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = SRF_research
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		add_power_balance_value = {
+			id = srf_balance_of_power
+			value = -0.15
+		}
+		add_war_support = 0.025
+	}
+	search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+}
+	
+shared_focus = {
+	id = SRF_new_research_commands
+	icon = GFX_goal_srf_crystals
+	cost = 4
+	available = {
+	}
+	prerequisite = { focus = SRF_science_research focus = SRF_pagan_research }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = SRF_research
+	x = -1
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		add_ideas = SRF_research_idea
+	}
+}
+	
+shared_focus = {
+	id = SRF_lake
+	icon = GFX_goal_srf_star
+	cost = 4
+	available = {
+	}
+	prerequisite = { focus = SRF_science_research focus = SRF_pagan_research }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = SRF_research
+	x = 1
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		add_resource = {
+			type = crystals
+			amount = 10
+			state = 262
+		}
+	}
+}
+	
+shared_focus = {
+	id = SRF_hide_researches
+	icon = GFX_goal_srf_brain
+	cost = 4
+	available = {
+	}
+	prerequisite = { focus = SRF_lake }
+	prerequisite = { focus = SRF_new_research_commands }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = SRF_research
+	x = 0
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		country_event = srf.4
+	}
+	search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+}
+
+shared_focus = {
+	id = SRF_form_secret_researches
+	icon = GFX_goal_srf_research
+	cost = 4
+	available = {
+	}
+	allow_branch = {
+		has_country_flag = SRF_can_hide_researches_flag
+	}
+	prerequisite = { focus = SRF_hide_researches }
+	ai_will_do = {
+		factor = 40
+	}
+	
+	relative_position_id = SRF_hide_researches
+	x = -6
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		custom_effect_tooltip = autocomplete
+	}
+	search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+}
+
+shared_focus = {
+	id = SRF_pagan_resources
+	icon = GFX_goal_srf_plants
+	cost = 4
+	available = {
+	}
+	mutually_exclusive = { focus = SRF_science_resources }
+	prerequisite = { focus = SRF_form_secret_researches }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = SRF_form_secret_researches
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		add_ideas = SRF_earth_resources_idea
+		add_power_balance_value = {
+			id = srf_balance_of_power
+			value = -0.1
+		}
+		custom_effect_tooltip = chryssy_agro
+	}
+	search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+}
+
+shared_focus = {
+	id = SRF_science_resources
+	icon = GFX_goal_srf_mining
+	cost = 4
+	available = {
+	}
+	mutually_exclusive = { focus = SRF_pagan_resources }
+	prerequisite = { focus = SRF_form_secret_researches }
+	ai_will_do = {
+		factor = 40
+	}
+	x = -1
+	y = 1
+	
+	relative_position_id = SRF_form_secret_researches
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		add_ideas = SRF_technoburs
+		add_power_balance_value = {
+			id = srf_balance_of_power
+			value = 0.1
+		}
+		custom_effect_tooltip = chryssy_agro
+	}
+	search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+}
+
+shared_focus = {
+	id = SRF_science_army_cyber
+	icon = GFX_goal_srf_soldier_head
+	cost = 4
+	available = {
+	}
+	mutually_exclusive = { focus = SRF_pagan_army }
+	prerequisite = { focus = SRF_form_secret_researches }
+	ai_will_do = {
+		factor = 40
+	}
+	x = -5
+	y = 1
+	
+	relative_position_id = SRF_form_secret_researches
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		add_ideas = SRF_technoarmy
+		add_power_balance_value = {
+			id = srf_balance_of_power
+			value = 0.1
+		}
+		custom_effect_tooltip = chryssy_agro
+	}
+	search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+}
+
+shared_focus = {
+	id = SRF_pagan_army
+	icon = GFX_goal_srf_circles
+	cost = 4
+	available = {
+	}
+	mutually_exclusive = { focus = SRF_science_army_cyber }
+	prerequisite = { focus = SRF_form_secret_researches }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = SRF_form_secret_researches
+	x = -3
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		add_ideas = SRF_pagan_army
+		add_power_balance_value = {
+			id = srf_balance_of_power
+			value = -0.1
+		}
+		custom_effect_tooltip = chryssy_agro
+	}
+	search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+}
+
+shared_focus = {
+	id = SRF_otherworld_techno
+	icon = GFX_goal_srf_research
+	cost = 4
+	available = {
+	}
+	mutually_exclusive = { focus = SRF_otherworld_pagan }
+	prerequisite = { focus = SRF_form_secret_researches }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = SRF_form_secret_researches
+	x = 3
+	y = 1
+	
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+
+		custom_effect_tooltip = add_1_technocrats_influence
+		custom_effect_tooltip = chryssy_agro
+	}
+	search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+}
+
+shared_focus = {
+	id = SRF_otherworld_pagan
+	icon = GFX_goal_srf_research
+	cost = 4
+	available = {
+	}
+	mutually_exclusive = { focus = SRF_otherworld_techno }
+	prerequisite = { focus = SRF_form_secret_researches }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = SRF_form_secret_researches
+	x = 5
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+
+		custom_effect_tooltip = add_1_technocrats_influence
+		custom_effect_tooltip = chryssy_agro
+	}
+	search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+}

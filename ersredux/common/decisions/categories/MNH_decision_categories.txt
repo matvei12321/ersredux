@@ -1,0 +1,26 @@
+MNH_hire_soldiers_cat = {
+	
+	allowed = {
+		tag = MNH
+		
+	}
+	icon = GFX_decision_cat_mnh
+	visible_when_empty = yes
+	visible = {
+	
+	}
+	priority = 90
+}
+MNH_companies_cat = {
+	
+	allowed = {
+		tag = MNH
+		
+	}
+	icon = GFX_decision_cat_mnh
+	visible_when_empty = yes
+	visible = {
+	
+	}
+	priority = 100
+}

@@ -1,0 +1,21 @@
+focus_tree = {
+	id = OLV_non_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = OLV
+		}
+	}
+	continuous_focus_position = {x = 4500 y = 2250 }
+	
+	focus = {
+		id = OLV_non
+		icon = GFX_goal_unknown
+		cost = 1
+
+		x = 29
+		y = 2
+
+	}
+}

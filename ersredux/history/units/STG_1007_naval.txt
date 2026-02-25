@@ -1,0 +1,173 @@
+﻿### OOB for file SVR_1007.txt
+units = {
+	fleet = {
+		name = "Severyanskiy Morskoy Flot"
+		naval_base = 311
+		task_force = {
+			name = "Udarnyy Flot"
+			location = 311 # Petershoof
+			ship = { name = "PMS Romanovskiy" pride_of_the_fleet = yes definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_1 = { amount = 1 owner = SVR version_name = "Stalliongrad Class" } } }
+			ship = { name = "PMS Petershoof" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_1 = { amount = 1 owner = SVR version_name = "Stalliongrad Class" } } }
+			ship = { name = "PMS Allard" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_1 = { amount = 1 owner = SVR version_name = "Stalliongrad Class" } } }
+			ship = { name = "PMS Coltsok" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SVR version_name = "Altidiya Class" } } }
+			ship = { name = "PMS Pyotr I" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SVR version_name = "Altidiya Class" } } }
+			ship = { name = "PMS Pyotr II" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SVR version_name = "Altidiya Class" } } }
+			ship = { name = "PMS Pyotr III" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SVR version_name = "Krasnaya Burya Class" } } }
+			ship = { name = "PMS Star" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SVR version_name = "Krasnaya Burya Class" } } }
+			ship = { name = "PMS Rodina" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SVR version_name = "Altidiya Class" } } }
+			ship = { name = "PMS Marega" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_1 = { amount = 1 owner = SVR version_name = "Orfey Class" } } }
+			ship = { name = "PMS Orfey" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_1 = { amount = 1 owner = SVR version_name = "Orfey Class" } } }
+			ship = { name = "PMS Malen'kaya Loshad" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_1 = { amount = 1 owner = SVR version_name = "Orfey Class" } } }
+			ship = { name = "PMS Boevov" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_1 = { amount = 1 owner = SVR version_name = "Orfey Class" } } }
+			ship = { name = "PMS Yemelyan the Black" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_1 = { amount = 1 owner = SVR version_name = "Orfey Class" } } }
+			ship = { name = "PMS Artyom" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_1 = { amount = 1 owner = SVR version_name = "Orfey Class" } } }
+			ship = { name = "PMS Maredarskiy" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_1 = { amount = 1 owner = SVR version_name = "Orfey Class" } } }
+			ship = { name = "PMS Ursa" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_1 = { amount = 1 owner = SVR version_name = "Orfey Class" } } }
+			ship = { name = "PMS Union" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_1 = { amount = 1 owner = SVR version_name = "Fidonisi Class" } } }
+			ship = { name = "PMS Nico" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_1 = { amount = 1 owner = SVR version_name = "Fidonisi Class" } } }
+			ship = { name = "PMS Fidonisi" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_1 = { amount = 1 owner = SVR version_name = "Fidonisi Class" } } }
+		}
+		task_force = {
+			name = "Petershoofskiy Oboronitelnyy Flot"
+			location = 311 # Petershoof
+			ship = { name = "PMS Marti" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SVR version_name = "Marti Class" } } }
+			ship = { name = "PMS Belaya Burya" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SVR version_name = "Krasnaya Burya Class" } } }
+			ship = { name = "PMS Bug" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_1 = { amount = 1 owner = SVR version_name = "Bug Class" } } }
+		}
+		task_force = {
+			name = "Azkabanskiy Oboronitelnyy Flot"
+			location = 9176 # Azkaban
+			ship = { name = "PMS Serp" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SVR version_name = "Krasnaya Burya Class" } } }
+			ship = { name = "PMS Molot" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SVR version_name = "Krasnaya Burya Class" } } }
+			ship = { name = "PMS Azkaban" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SVR version_name = "Krasnaya Burya Class" } } }
+		}
+	}
+	fleet = {
+		name = "Bely Podvodny Flot"
+		naval_base = 9176
+		task_force = {
+			name = "Pribrezhny Podvodny Flot"
+			location = 9176 # Azkaban
+			ship = { name = "Akula" definition = submarine start_experience_factor = 0.3 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SVR version_name = "Series I Dekabrist" } } }
+			ship = { name = "Murena" definition = submarine start_experience_factor = 0.3 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SVR version_name = "Series I Dekabrist" } } }
+			ship = { name = "Kal'mar" definition = submarine start_experience_factor = 0.3 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SVR version_name = "Series I Dekabrist" } } }
+			ship = { name = "Delfin" definition = submarine start_experience_factor = 0.3 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SVR version_name = "Series I Dekabrist" } } }
+			ship = { name = "Navaga" definition = submarine start_experience_factor = 0.3 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SVR version_name = "Series I Dekabrist" } } }
+			ship = { name = "Nalim" definition = submarine start_experience_factor = 0.3 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SVR version_name = "Series I Dekabrist" } } }
+		}
+		task_force = {
+			name = "Pribrezhny Podvodny Flot"
+			location = 9176 # Azkaban
+			ship = { name = "K-1" definition = submarine start_experience_factor = 0.3 equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = SVR version_name = "Kreyserskaya Series" } } }
+			ship = { name = "K-2" definition = submarine start_experience_factor = 0.3 equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = SVR version_name = "Kreyserskaya Series" } } }
+			ship = { name = "K-3" definition = submarine start_experience_factor = 0.3 equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = SVR version_name = "Kreyserskaya Series" } } }
+			ship = { name = "K-4" definition = submarine start_experience_factor = 0.3 equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = SVR version_name = "Kreyserskaya Series" } } }
+			ship = { name = "K-5" definition = submarine start_experience_factor = 0.3 equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = SVR version_name = "Kreyserskaya Series" } } }
+			ship = { name = "K-6" definition = submarine start_experience_factor = 0.3 equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = SVR version_name = "Kreyserskaya Series" } } }
+		}
+	}
+}
+instant_effect = {
+
+	### Ships Under Contruction ###
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_2
+			creator = "SVR" 
+			version_name = "Molniya Class"
+		}
+		requested_factories = 1
+		progress = 0.40
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_2
+			creator = "SVR" 
+			version_name = "Series II Srednyaya"
+		}
+		requested_factories = 1
+		progress = 0.50
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_2
+			creator = "SVR" 
+			version_name = "Series II Srednyaya"
+		}
+		requested_factories = 1
+		progress = 0.45
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_2
+			creator = "SVR" 
+			version_name = "Series II Srednyaya"
+		}
+		requested_factories = 1
+		progress = 0.40
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_2
+			creator = "SVR" 
+			version_name = "Series II Srednyaya"
+		}
+		requested_factories = 1
+		progress = 0.35
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_2
+			creator = "SVR" 
+			version_name = "Series II Srednyaya"
+		}
+		requested_factories = 1
+		progress = 0.30
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_2
+			creator = "SVR" 
+			version_name = "Series II Srednyaya"
+		}
+		requested_factories = 1
+		progress = 0.25
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "SVR" 
+			version_name = "Gnevny Class"
+		}
+		requested_factories = 1
+		progress = 0.80
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "SVR" 
+			version_name = "Gnevny Class"
+		}
+		requested_factories = 1
+		progress = 0.70
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "SVR" 
+			version_name = "Gnevny Class"
+		}
+		requested_factories = 1
+		progress = 0.60
+		amount = 1
+	}
+}

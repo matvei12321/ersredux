@@ -1,0 +1,46 @@
+people_decisions = {
+     icon = generic_economy
+       visible = {
+        has_completed_focus = "NGC_focuss_MMM_Eco"
+    }
+	allowed = {
+		original_tag = NGC
+	}
+}
+construction_decisions = {
+     icon = generic_industry
+     picture = GFX_decision_cat_picture_faction_management_bulgaria
+       visible = {
+        has_completed_focus = "NGC_focuss_MMM_Eco"
+    }
+	allowed = {
+		original_tag = NGC
+	}
+}
+region_decisions = {
+     icon = gre_paying_ifc_debt
+      visible = {
+        has_completed_focus = "NGC_focuss_MMM_Eco"
+    }
+	allowed = {
+		original_tag = NGC
+	}
+}
+army_ec_decisions = {
+     icon = gre_faction_management
+       visible = {
+        has_completed_focus = "NGC_focuss_MMM_Eco"
+    }
+	allowed = {
+		original_tag = NGC
+	}
+}
+fabrisher_decisions = {
+     icon = SOV_merge_designers
+       visible = {
+        has_completed_focus = "NGC_focuss_MMM_Eco"
+    }
+	allowed = {
+		original_tag = NGC
+	}
+}

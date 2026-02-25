@@ -1,0 +1,1393 @@
+﻿### Names generation for aces ###
+# Surnames can be male/female dependent or general. Fe. in Polish some surnames has different endings depending on the gender.
+# Names and Surnames are randomly picked and will sometimes repeat, but will never repeat in combinations for example there will never be generated another "John Smith".
+# Assigning the callsign is random - may be assigned or not. If we use the callsign, it will never be assigned to anyone again. Callsigns are not obligatory to script.
+# Picking up a gender is random, and is influenced by the amount of names scripted.
+### Operations
+# Operations will randomly pick from national pools until exhausted
+# You can specify a strategic region for which an order name will be drawn
+# if any enemy province along the frontline matches this strategic region, this sub-pool will be considered and used in preference to default. 
+# Whether this 'historical' name pool is exhausted is dependent on the define: HISTORICAL_ORDER_NAME_EXHAUSTION
+# Strategic region index '0' is the generic national pool.
+# You can specify the same name in several regions, though I would suggest not doing this too often, for performance reasons.
+# After this, a first and second will be randomly picked from the default pool
+# The prefix must be provided for all pools
+
+
+
+###############################################################
+# Modded Names
+###############################################################
+NEI = {
+	male = {
+		names = { 
+			Day Adehi Aponivi Arenk Ahout Bizhiki Wokey Wiho Wera Ginio Jingob Iiska Iseti Kel Kem Ichi Kotori Kucheta Len Luta Lonie Makki Hota Chitema Chunta Editon Yanizin Uoniki Uokini Uoshepa Uohehiv Uochinkhsepa
+		}
+	}
+	female = {
+		names = { 
+			Day Adsila Aponi Alekua Ayash Venoma Viko Wooti Doli Isi Kei Kelferey Kesa Moema Nesha Medi Peta Pekuma Soyala Tutsi Tuva Honovi Chuza Yazhi Yamka
+		}
+	}
+	surnames = {
+		Ader Kreyg Morrey Chicaso Kiroki Monito Munkva Montesuma "the Brave" "Iron Heart" "Bronze Heart" "the Brave" "the Red" "the Fast" "the Silly" "the Strong" "the Silent" "the Breaker"
+	}
+	callsigns = {
+		"Daybreaker" "Sundowner" "Red Sun"
+		use_geographical_default_operation_names = yes
+	}
+}
+
+
+YAC = {
+	male = {
+		names = { 
+			Adair Alastair Alban Angus Archibald Callum Cameron Campbell Dairmid Donald Donnan Douglas Drummond Dougal Eachann Erskine Fergus Finlay Gavin Hamilton Irvine Rutherford Lachlan Malcolm William
+			Crompus Dromius Grimhorn Gruntwig Horwitz Ingville Leroy Tormand Ulysses Yakatar Yojan Yksler Leibowitz Yissakhar Yonatan Brynjar Agnar Fergus Yomhar Roderick Torcall Enok Holger Sigurd Yngvar
+		}
+	}
+	female = {
+		names = { 
+			Agnes Aileen Ainslie Annis Blair Catriona Donalda Fenella Emilia Gavina Greer Kirstine Una Khan
+			Yakmina Yigrid Royznbarg Yaara Yachna Yemima Yona Gunnel Agnes Fiona Rhona Brynja Dagmar Elvira Erna Hedwig Ida Kari Lena Mona Nora Olaug Ruth Smilla Thyra Ylva
+		}
+	}
+	surnames = {
+		""
+	}
+	callsigns = {
+		"Stomper" "Smasher" "Breaker" "The Giant" "Best Beard" "Longhorns" "Mountain Yak" "Braided One" "The Hairy"
+	}
+	use_geographical_default_operation_names = yes
+}
+
+MNT = {
+	male = {
+		names = { 
+			Adair Alastair Alban Angus Archibald Callum Cameron Campbell Dairmid Donald Donnan Douglas Drummond Dougal Eachann Erskine Fergus Finlay Gavin Hamilton Irvine Rutherford Lachlan Malcolm William
+			Crompus Dromius Grimhorn Gruntwig Horwitz Ingville Leroy Tormand Ulysses Yakatar Yojan Yksler Leibowitz Yissakhar Yonatan Brynjar Agnar Fergus Yomhar Roderick Torcall Enok Holger Sigurd Yngvar
+		}
+	}
+	female = {
+		names = { 
+			Agnes Aileen Ainslie Annis Blair Catriona Donalda Fenella Emilia Gavina Greer Kirstine Una Khan
+			Yakmina Yigrid Royznbarg Yaara Yachna Yemima Yona Gunnel Agnes Fiona Rhona Brynja Dagmar Elvira Erna Hedwig Ida Kari Lena Mona Nora Olaug Ruth Smilla Thyra Ylva
+		}
+	}
+	surnames = {
+		""
+	}
+	callsigns = {
+		"Stomper" "Smasher" "Breaker" "The Giant" "Best Beard" "Longhorns" "Mountain Yak" "Braided One" "The Hairy"
+	}
+	use_geographical_default_operation_names = yes
+}
+
+NAK = {
+	male = {
+		names = { 
+			Adair Alastair Alban Angus Archibald Callum Cameron Campbell Dairmid Donald Donnan Douglas Drummond Dougal Eachann Erskine Fergus Finlay Gavin Hamilton Irvine Rutherford Lachlan Malcolm William
+			Crompus Dromius Grimhorn Gruntwig Horwitz Ingville Leroy Tormand Ulysses Yakatar Yojan Yksler Leibowitz Yissakhar Yonatan Brynjar Agnar Fergus Yomhar Roderick Torcall Enok Holger Sigurd Yngvar
+		}
+	}
+	female = {
+		names = { 
+			Agnes Aileen Ainslie Annis Blair Catriona Donalda Fenella Emilia Gavina Greer Kirstine Una Khan
+			Yakmina Yigrid Royznbarg Yaara Yachna Yemima Yona Gunnel Agnes Fiona Rhona Brynja Dagmar Elvira Erna Hedwig Ida Kari Lena Mona Nora Olaug Ruth Smilla Thyra Ylva
+		}
+	}
+	surnames = {
+		""
+	}
+	callsigns = {
+		"Stomper" "Smasher" "Breaker" "The Giant" "Best Beard" "Longhorns" "Mountain Yak" "Braided One" "The Hairy"
+	}
+	use_geographical_default_operation_names = yes
+}
+
+BAD = {
+	male = {
+		names = { 
+			Adair Alastair Alban Angus Archibald Callum Cameron Campbell Dairmid Donald Donnan Douglas Drummond Dougal Eachann Erskine Fergus Finlay Gavin Hamilton Irvine Rutherford Lachlan Malcolm William
+			Crompus Dromius Grimhorn Gruntwig Horwitz Ingville Leroy Tormand Ulysses Yakatar Yojan Yksler Leibowitz Yissakhar Yonatan Brynjar Agnar Fergus Yomhar Roderick Torcall Enok Holger Sigurd Yngvar
+		}
+	}
+	female = {
+		names = { 
+			Agnes Aileen Ainslie Annis Blair Catriona Donalda Fenella Emilia Gavina Greer Kirstine Una Khan
+			Yakmina Yigrid Royznbarg Yaara Yachna Yemima Yona Gunnel Agnes Fiona Rhona Brynja Dagmar Elvira Erna Hedwig Ida Kari Lena Mona Nora Olaug Ruth Smilla Thyra Ylva
+		}
+	}
+	surnames = {
+		""
+	}
+	callsigns = {
+		"Stomper" "Smasher" "Breaker" "The Giant" "Best Beard" "Longhorns" "Mountain Yak" "Braided One" "The Hairy"
+	}
+	use_geographical_default_operation_names = yes
+}
+
+SHA = {
+	male = {
+		names = { 
+			Adair Alastair Alban Angus Archibald Callum Cameron Campbell Dairmid Donald Donnan Douglas Drummond Dougal Eachann Erskine Fergus Finlay Gavin Hamilton Irvine Rutherford Lachlan Malcolm William
+			Crompus Dromius Grimhorn Gruntwig Horwitz Ingville Leroy Tormand Ulysses Yakatar Yojan Yksler Leibowitz Yissakhar Yonatan Brynjar Agnar Fergus Yomhar Roderick Torcall Enok Holger Sigurd Yngvar
+		}
+	}
+	female = {
+		names = { 
+			Agnes Aileen Ainslie Annis Blair Catriona Donalda Fenella Emilia Gavina Greer Kirstine Una Khan
+			Yakmina Yigrid Royznbarg Yaara Yachna Yemima Yona Gunnel Agnes Fiona Rhona Brynja Dagmar Elvira Erna Hedwig Ida Kari Lena Mona Nora Olaug Ruth Smilla Thyra Ylva
+		}
+	}
+	surnames = {
+		""
+	}
+	callsigns = {
+		"Stomper" "Smasher" "Breaker" "The Giant" "Best Beard" "Longhorns" "Mountain Yak" "Braided One" "The Hairy"
+	}
+	use_geographical_default_operation_names = yes
+}
+HRZ = {
+	male = {
+		names = {  Maximilian Felix Erich Gerhard Gunther Otto Walter Wilhelm Heinz Hermann Heinrich
+			Theodor Hans Anton Joachim Max Emil Peter Fritz Otto Adolf Tobias Staffan Marco Karl Chiron
+			Ancietus Reinhold August Elias Harald Eggert Konrad Fritz Cornelius Erhard Horstn Herbert Rolf
+			Wilhelm Erwin Wolfgang Kalus Friedrich Rikard Siegfried Gustav Heinrich Waldemar Theodor Ludwig 
+			Oskar Ferdinand Albrecht Reinhardt Strom
+		}
+	}
+	female = {
+		names = { Jessica Emma Hanna Sofia Marie Iris Elsa Victoria Karin Ingrid Margarethe Edith Erna Mia Theresa
+		Pauline Louisa Luoise Clara Sara Karja Eva Sophie Carla Gretchen Kathrine Heidi Lorelei Regitze Ilsa Wilhelmina 
+		Ulrike Sieglinde Wanda Ulla Ingeborg Charlotte Hedwig Irene Rita Anne Elsbeth Elisabeth Rosa Sonja Barbara Brunhilde
+		}
+	}
+	surnames = {
+		Greytalon Mistfeather Stormfeather Raincrest Hellcrest Bronzetail Thundertail Mudbeak Helltalon Duskwing
+		Darkclaw Grimwing Grimclaw Hardbeak Silverplume Beamclaw Stormborn Goldplume Whitefeather Starbill
+		Sunclaw Rainfeather Rockbeak Bluebeak Silverwing Blackfeather Sterbenclaw Windwing Lighttalon Sunwing
+	}
+	callsigns = { "Bubi" "Assi" "The Black Devil" "The Golden Knight Of Griffonia" "Dolfo" "Fighter of Griffenheim" "Petit Rouge" "Pritzl" "The Red Baron" "The Red Battle-flyer" "The Red Knight" "Reeste" }
+
+	prefix = o_unternehmen
+	operation = {
+		0 = {
+			o_ostwind
+            o_fuchsjagd
+            o_dorffest
+            o_freiherr
+            o_heimfahrt
+            o_hasenjagd
+            o_jahreswechsel
+            o_mondschein
+            o_neuland
+            o_ruckreise
+            o_vogelsang
+            o_winkel
+            o_nordpol
+            o_orkan
+            o_raubtier
+            o_storfang
+            o_taubenschlag
+            o_trappenjagd
+            o_wiesengrund
+            o_wintermarchen
+            o_eisbar
+            o_leopard
+            o_michael
+            o_poseidon
+            o_zwischenspiel
+            o_blume
+            o_fischfang
+            o_herbstnebel
+            o_ludwig
+            o_luttich
+            o_martin
+            o_morgenwind
+            o_sonnenaufgang
+            o_konrad
+            o_moorbrand 
+            o_bruckenschlag
+            o_schneeman
+            o_sonnenwende
+            o_haifisch
+            o_nordwind
+            o_sturmflut
+            o_Kaiserreich
+			o_Ruckkehr
+			o_Grover
+			o_Falke
+			o_Arcturius
+			o_Ubermacht
+			o_Donnerschlag
+			o_Eifrigkeit
+		}
+		159 = {
+			o_Kemerskai
+			o_Hochverrat
+		}
+		167 = {
+			o_Sudwind
+			o_Karthinien
+		}
+		154 = {
+			o_Aquileia
+			o_Discret
+		}
+	}
+}
+
+CLO = {
+	male = {
+		names = {  Maximilian Felix Erich Gerhard Gunther Otto Walter Wilhelm Heinz Hermann Heinrich
+			Theodor Hans Anton Joachim Max Emil Peter Fritz Otto Adolf Tobias Staffan Marco Karl Chiron
+			Ancietus Reinhold August Elias Harald Eggert Konrad Fritz Cornelius Erhard Horst Herbert Rolf
+			Wilhelm Erwin Wolfgang Kalus Friedrich Rikard Siegfried Gustav Heinrich Waldemar Theodor Ludwig 
+			Oskar Ferdinand Albrecht Reinhardt Strom
+		}
+	}
+	female = {
+		names = { Jessica Emma Hanna Sofia Marie Iris Elsa Victoria Karin Ingrid Margarethe Edith Erna Mia Theresa
+		Pauline Louisa Luoise Clara Sara Karja Eva Sophie Carla Gretchen Kathrine Heidi Lorelei Regitze Ilsa Wilhelmina 
+		Ulrike Sieglinde Wanda Ulla Ingeborg Charlotte Hedwig Irene Rita Anne Elsbeth Elisabeth Rosa Sonja Barbara Brunhilde
+		}
+	}
+	surnames = {
+		Greytalon Mistfeather Stormfeather Raincrest Hellcrest Bronzetail Thundertail Mudbeak Helltalon Duskwing
+		Darkclaw Grimwing Grimclaw Hardbeak Silverplume Beamclaw Stormborn Goldplume Whitefeather Starbill
+		Sunclaw Rainfeather Rockbeak Bluebeak Silverwing Blackfeather Sterbenclaw Windwing Lighttalon Sunwing
+	}
+	callsigns = { "Bubi" "Assi" "The Black Devil" "Dolfo" "Ripper" "Petit Rouge" "Pritzl" "Hero" "Pebbles" "Tricolor" "Reeste" }
+
+	prefix = o_unternehmen
+	operation = {
+		0 = {
+			o_ostwind
+            o_fuchsjagd
+            o_dorffest
+            o_freiherr
+            o_heimfahrt
+            o_hasenjagd
+            o_jahreswechsel
+            o_mondschein
+            o_neuland
+            o_ruckreise
+            o_vogelsang
+            o_winkel
+            o_nordpol
+            o_orkan
+            o_raubtier
+            o_storfang
+            o_taubenschlag
+            o_trappenjagd
+            o_wiesengrund
+            o_wintermarchen
+            o_eisbar
+            o_leopard
+            o_michael
+            o_poseidon
+            o_zwischenspiel
+            o_blume
+            o_fischfang
+            o_herbstnebel
+            o_ludwig
+            o_luttich
+            o_martin
+            o_morgenwind
+            o_sonnenaufgang
+            o_konrad
+            o_moorbrand 
+            o_bruckenschlag
+            o_schneeman
+            o_sonnenwende
+            o_haifisch
+            o_nordwind
+            o_sturmflut
+            o_Revolution
+			o_Trikolour
+			o_Konigsmord
+			o_Herzland
+			o_Prasidentschaft
+			o_Retter
+			o_Befreiung
+			o_Heimkehr
+		}
+		164 = {
+			o_Marsch
+		}
+		162 = {
+			o_Sickelkralle
+		}
+	}
+}
+
+REV = {
+	male = {
+		names = {  Karl Erik Lars Anders Per Mikael Johan Olof Nils Jan
+		}
+	}
+	female = {
+		names = { Elisabeth Anna Margareta Eva Birgitta Karin Linnea }
+	}
+	surnames = {
+		Gråklo Dimfjäder Stormfjäder Regnskiöld Bronssvans Åsksvans Lernäbb Skymningsvinge Mörkerklo Bistervinge
+		Bisterklo Hårdnäbb Silverplym Strålklo Stormfödd Guldplym Vitfjäder Stjärnnäbb
+	}
+	callsigns = { "Skyknight" "Valiant" "Brave" "Lancer" "Skysword" "Dragonslayer" "Lady's Blessing" }
+	use_geographical_default_operation_names = yes
+}
+AUR = {
+	male = {
+		names = {
+			Achille Adolphe Adrien Aimable Alphonse Amédée Antoine Armand August Augustin
+			Charles Daniel Denis Édouard Elie Éttiene Eugène Félicien Félix Fernand
+			François Frédéric Georges Guillaume Gustave Henri Hubert Hugo Jacques Jean
+			Joseph Jules Julien Lazare Léopold Leroy Louis Lucien Matthieu Michel
+			Napoléon Nicolas Patrice Paul Philippe Pierre Robert Thibaut Thierry Thomas
+
+		}
+	}
+	female = {
+		names = { Anne Marie Françoise Gisèle Marguerite Marianne Simone Anaïs Irène Nathalie Elsa }
+	}
+	surnames = {
+		Anthoine "Baraguey d'Hilliers" Bazaine Billot Bosquet "Boué de Lapeyrère" Bouët-Willaumez Boulanger Bourbaki
+		Bugeaud Caillard Canrobert Courbet Cousin-Mountauban Davout "de Castellane" "de Castelnau"
+		"de Langle de Cary" "de MacMahon" "de Montaignac" "de Saint Arnaud" d'Orleans Dubail Dubois Duchêne Dupetit-Thouars Exelmans
+		Foch Forey "Franchet d'Espèrey" Gallieni Gouraud Guillaumat Hamelin Harispe Hoche Humbert
+		Jaurès Joffre Lebouef Lyautey Murat "Ney d'Elchingen" Nivelle Péllissier Petain Vaillant
+	}
+	callsigns = { "Draco" "Fast" "Sparrow" "Ripper" "Sundance" "Twitch" "Farmer" "Weasel" "Target Practice" "Invisible" "The Mute" "Carpenter" }
+
+	operation = {
+		0 = {
+			o_Hirondelle
+			o_Faucon
+			o_Licorne
+			o_Condor
+			o_Aigle
+			o_Dechainement
+			o_Deferlement
+			o_Tempete
+			o_Lame
+			o_Estoc
+			o_Cannonade
+			o_Vagabon
+			o_Mousquetaire
+			o_Tirreur
+			o_Mercenaire
+			o_Ronce
+			o_Ortie
+			o_Cactus
+			o_Rose
+			o_Chrysantheme
+			o_Crepuscule
+			o_Penombre
+			o_Aurore
+			o_Aube
+		}
+		172 = {
+			o_Chevalier
+			o_Liberation
+		}
+		166 = {
+			o_Reclamation
+			o_Unification
+		}
+		173 = {
+			o_Reclamation
+			o_Unification
+		}
+		157 = {
+			o_Reclamation
+			o_Unification
+		}
+		155 = {
+			o_Reclamation
+			o_Unification
+		}
+		164 = {
+			o_Seconde
+			o_Destinee
+			o_Apogee
+		}
+	}
+}
+
+WIG = {
+	male = {
+		names = {
+			Glessandro Galfonso Gambrogio Gamedeo Andrea Angelo Antonio Benito Camillo Carlo
+			Cesare Costanzo Davide Enrico Ettore Fabrizio Faustino Federico Felice Ferdinando
+			Fiorenzo Francesco Gaetano Gennaro Girolamo Giulio Giuseppe Guglielmo Innocenzo Leopoldo
+			Luigi Mario Marco Massimo Matteo Nicola Oreste Paolo Pasquale Pietro Prospero
+			Raffaele Griffberto Ruggiero Silvio Simone Tancredi Ugo Umberto Vincenzo Vittorio
+
+		}
+	}
+	female = {
+		names = { Garia Ganna Gara Gaura Goffia Getella Gangela Giovanna Guiseppina Gianna Giulia Galentina }
+	}
+	surnames = {
+		Acton Albricci Badoglio Baldissera Baratieri Bava-Beccaris Cadorna Cagni Canevaro Capello
+		Caviglia Ceccherini Cialdini Cusani Dezza "di Robilant" "di Gavoia"
+		Emo Fanti Fara Filomarino Garibaldi Giardino Govone "La Màrmora" Mambretti
+		Menabrea Orengo Pallavicino Pecori-Giraldi  Pelloux Perruchetti Pianelli Porro
+		Presbitero Ramorino Ricotti-Magnani Sacchi Saletta Sanna Solari Vaccari Zupelli
+	}
+	callsigns = { Buzzard Dusty Falcon Hawk Hammer Viper Banshee "The Baron" Lightning Duce Raven "Two Shot" Rosso }
+
+	operation = {
+		0 = {
+			o_Sciabola
+			o_Dinamo
+			o_Saetta
+			o_Ferreo
+			o_Provvidenza
+			o_Ago
+			o_Perla
+			o_Acqua
+			o_Fantasma
+			O_Platino
+			o_Tempesta
+			o_Cittadella
+			o_Predatore
+			o_Obelisco
+			o_Bronzo
+			o_Silenzio
+			o_Paladino
+			O_Squalo
+			o_Incubo
+			o_Valanga
+			o_Bianco
+			o_Meteorite
+			o_Fortuna
+			o_Fulmine
+			o_Cuor
+			O_Mezzanotte
+			o_Pitone
+			o_Sirena
+			o_Portone
+			o_Rossa
+			o_Cavaliere
+			o_Caccia
+			o_Alacrita
+			O_Lacrime
+			o_Pioggia
+			o_Fulmine
+			o_Rosa
+			o_Alfabeto
+			o_Incudine
+			o_Fuoco
+			o_Martello
+			o_Calamita
+			o_Ramo
+			o_Carovana
+			o_Bussola
+			o_Rasoio
+			o_Enigma
+			o_Fata
+			o_Trappola
+			o_Scopa
+			o_Occhio
+			o_Camaleonte
+		}
+		176 = {
+			o_Demolizione
+			o_Fine
+			o_Alba
+		}
+		168 = {
+			o_Demolizione
+			o_Fine
+			o_Alba
+		}
+		170 = {
+			o_Bastione
+			o_Marus
+			o_Tempio
+		}
+		171 = {
+			o_Pulcino
+			o_Balbetta
+			o_Accogliente
+		}
+		217 = {
+			o_Lago
+			o_Florestale
+		}
+		293 = {
+			o_Labirinto
+			o_Libreria
+			o_Aster
+		}
+		294 = {
+			o_Giallo
+			o_Secca
+			o_Aranci
+		}
+	}
+}
+FRC = {
+	male = {
+		names = {
+			Glessandro Galfonso Gambrogio Gamedeo Andrea Angelo Antonio Benito Camillo Carlo
+			Cesare Costanzo Davide Enrico Ettore Fabrizio Faustino Federico Felice Ferdinando
+			Fiorenzo Francesco Gaetano Gennaro Girolamo Giulio Giuseppe Guglielmo Innocenzo Leopoldo
+			Luigi Mario Marco Massimo Matteo Nicola Oreste Paolo Pasquale Pietro Prospero
+			Raffaele Griffberto Ruggiero Silvio Simone Tancredi Ugo Umberto Vincenzo Vittorio
+
+		}
+	}
+	female = {
+		names = { Maria Anna Sara Laura Sofia Stella Angela Giovanna Guiseppina Gianna Giulia Valentina }
+	}
+	surnames = {
+		Acton Albricci Badoglio Baldissera Baratieri Bava-Beccaris Cadorna Cagni Canevaro Capello
+		Caviglia Ceccherini Cialdini Cusani Dezza "di Robilant" "di Gavoia"
+		Emo Fanti Fara Filomarino Garibaldi Giardino Govone "La Màrmora" Mambretti
+		Menabrea Orengo Pallavicino Pecori-Giraldi  Pelloux Perruchetti Pianelli Porro
+		Presbitero Ramorino Ricotti-Magnani Sacchi Saletta Sanna Solari Vaccari Zupelli
+
+	}
+	callsigns = { Buzzard Dusty Falcon Hawk Hammer Viper Banshee "The Baron" Lightning Duce Raven "Two Shot" Rosso }
+
+	operation = {
+		0 = {
+			o_Sciabola
+			o_Dinamo
+			o_Saetta
+			o_Ferreo
+			o_Provvidenza
+			o_Ago
+			o_Perla
+			o_Acqua
+			o_Fantasma
+			O_Platino
+			o_Tempesta
+			o_Cittadella
+			o_Predatore
+			o_Obelisco
+			o_Bronzo
+			o_Silenzio
+			o_Paladino
+			O_Squalo
+			o_Incubo
+			o_Valanga
+			o_Bianco
+			o_Meteorite
+			o_Fortuna
+			o_Fulmine
+			o_Cuor
+			O_Mezzanotte
+			o_Pitone
+			o_Sirena
+			o_Portone
+			o_Rossa
+			o_Cavaliere
+			o_Caccia
+			o_Alacrita
+			O_Lacrime
+			o_Pioggia
+			o_Fulmine
+			o_Rosa
+			o_Alfabeto
+			o_Incudine
+			o_Fuoco
+			o_Martello
+			o_Calamita
+			o_Ramo
+			o_Carovana
+			o_Bussola
+			o_Rasoio
+			o_Enigma
+			o_Fata
+			o_Trappola
+			o_Scopa
+			o_Occhio
+			o_Camaleonte
+		}
+		176 = {
+			o_Demolizione
+			o_Fine
+			o_Alba
+		}
+		168 = {
+			o_Demolizione
+			o_Fine
+			o_Alba
+		}
+		170 = {
+			o_Bastione
+			o_Marus
+			o_Tempio
+		}
+		167 = {
+			o_Lungomare
+			o_Gioiello
+			o_Eterna
+			o_Capitale
+		}
+		217 = {
+			o_Lago
+			o_Florestale
+		}
+		293 = {
+			o_Labirinto
+			o_Libreria
+			o_Aster
+		}
+	}
+}
+TUL = {
+	male = {
+		names = {
+			Glessandro Galfonso Gambrogio Gamedeo Andrea Angelo Antonio Benito Camillo Carlo
+			Cesare Costanzo Davide Enrico Ettore Fabrizio Faustino Federico Felice Ferdinando
+			Fiorenzo Francesco Gaetano Gennaro Girolamo Giulio Giuseppe Guglielmo Innocenzo Leopoldo
+			Luigi Mario Marco Massimo Matteo Nicola Oreste Paolo Pasquale Pietro Prospero
+			Raffaele Griffberto Ruggiero Silvio Simone Tancredi Ugo Umberto Vincenzo Vittorio
+
+		}
+	}
+	female = {
+		names = { Garia Ganna Gara Gaura Goffia Getella Gangela Giovanna Guiseppina Gianna Giulia Galentina }
+	}
+	surnames = {
+		Acton Albricci Badoglio Baldissera Baratieri Bava-Beccaris Cadorna Cagni Canevaro Capello
+		Caviglia Ceccherini Cialdini Cusani Dezza "di Robilant" "di Gavoia"
+		Emo Fanti Fara Filomarino Garibaldi Giardino Govone "La Màrmora" Mambretti
+		Menabrea Orengo Pallavicino Pecori-Giraldi  Pelloux Perruchetti Pianelli Porro
+		Presbitero Ramorino Ricotti-Magnani Sacchi Saletta Sanna Solari Vaccari Zupelli
+
+	}
+	callsigns = { Buzzard Dusty Falcon Hawk Hammer Viper Banshee "The Baron" Lightning Duce Raven "Two Shot" Rosso }
+
+	operation = {
+		0 = {
+			o_Sciabola
+			o_Dinamo
+			o_Saetta
+			o_Ferreo
+			o_Provvidenza
+			o_Ago
+			o_Perla
+			o_Acqua
+			o_Fantasma
+			O_Platino
+			o_Tempesta
+			o_Cittadella
+			o_Predatore
+			o_Obelisco
+			o_Bronzo
+			o_Silenzio
+			o_Paladino
+			O_Squalo
+			o_Incubo
+			o_Valanga
+			o_Bianco
+			o_Meteorite
+			o_Fortuna
+			o_Fulmine
+			o_Cuor
+			O_Mezzanotte
+			o_Pitone
+			o_Sirena
+			o_Portone
+			o_Rossa
+			o_Cavaliere
+			o_Caccia
+			o_Alacrita
+			O_Lacrime
+			o_Pioggia
+			o_Fulmine
+			o_Rosa
+			o_Alfabeto
+			o_Incudine
+			o_Fuoco
+			o_Martello
+			o_Calamita
+			o_Ramo
+			o_Carovana
+			o_Bussola
+			o_Rasoio
+			o_Enigma
+			o_Fata
+			o_Trappola
+			o_Scopa
+			o_Occhio
+			o_Camaleonte
+		}
+		176 = {
+			o_Demolizione
+			o_Fine
+			o_Alba
+		}
+		168 = {
+			o_Demolizione
+			o_Fine
+			o_Alba
+		}
+		167 = {
+			o_Lungomare
+			o_Gioiello
+			o_Eterna
+			o_Capitale
+		}
+		171 = {
+			o_Pulcino
+			o_Balbetta
+			o_Accogliente
+		}
+		217 = {
+			o_Lago
+			o_Florestale
+		}
+		293 = {
+			o_Labirinto
+			o_Libreria
+			o_Aster
+		}
+	}
+}
+SCM = {
+	male = {
+		names = {
+			Sebastian Matias Nicolas Samuel Joaquin Martin Jeronimo Emmanuel Maximiliano Rodrigo
+			Agustín Alberto Alejandro Alfonso Álvaro Antonio Arsenio Augusto Baldomero
+			Baltasar Benito Bernardino Bernardo Calixto Carlos Celestino Claudio Cristobal Dámaso
+			Diego Dionisio Eduardo Emilio Federico Felipe Félix Fernando Francisco
+			Gabino Gabriel Gaspar Genaro Gonzalo Ignacio Isidro Jacobo Jaime
+			Joaquín José  Juan Julio Leopoldo Lorenzo 
+			Luis Manuel Marcelo Mariano Mateo Melchor Miguel Nicolás Pablo Pascual
+			Pedro Rafael Raimundo Ramón Ricardo Santiago Sebastián Segismundo Valeriano Vicente 
+		}
+	}
+	female = {
+		names = { 
+			Sofia Mariana Carmen Gabriela Victoria Lucia Sara Samanta Catalina Julieta Antonella
+			Adelita Araceli Belén Camila Candelaria Consuelo Cristina Delfina Esperanza Elena
+			Fidelia Graciela Irene Isadora Isabella Ximena Luciana Lucrecia María Marisol
+			Noemí Nohemi Valentina Valeria Rocío Socorro Sofía Teófila Amaranta Úrsula Rebeca Remedios
+		}
+	}
+	surnames = {
+		Garragris "Pluma de Tormenta" Cresta Cola Pico Ala Remontarse Volar
+	}
+	callsigns = { Falcon Bravo Condor Cloudpiercer Salty Pepe }
+	use_geographical_default_operation_names = yes
+}
+CIO = {
+	male = {
+		names = {  Maximilian Felix Erich Gerhard Gunther Otto Walter Wilhelm Heinz Hermann Heinrich
+			Theodor Hans Anton Joachim Max Emil Peter Fritz Otto Adolf Tobias Staffan Marco Karl Chiron
+			Ancietus Reinhold August Elias Harald Eggert Konrad Fritz Cornelius Erhard Horstn Herbert Rolf
+			Wilhelm Erwin Wolfgang Kalus Friedrich Rikard Siegfried Gustav Heinrich Waldemar Theodor Ludwig 
+			Oskar Ferdinand Albrecht Reinhardt Strom
+		}
+	}
+	female = {
+		names = { Jessica Emma Hanna Sofia Marie Iris Elsa Victoria Karin Ingrid Margarethe Edith Erna Mia Theresa
+		Pauline Louisa Luoise Clara Sara Karja Eva Sophie Carla Gretchen Kathrine Heidi Lorelei Regitze Ilsa Wilhelmina 
+		Ulrike Sieglinde Wanda Ulla Ingeborg Charlotte Hedwig Irene Rita Anne Elsbeth Elisabeth Rosa Sonja Barbara Brunhilde
+		}
+	}
+	surnames = {
+		Greytalon Mistfeather Stormfeather Raincrest Hellcrest Bronzetail Thundertail Mudbeak Helltalon Duskwing
+		Darkclaw Grimwing Grimclaw Hardbeak Silverplume Beamclaw Stormborn Goldplume Whitefeather Starbill
+		Sunclaw Rainfeather Rockbeak Bluebeak Silverwing Blackfeather Sterbenclaw Windwing Lighttalon Sunwing
+	}
+	callsigns = { "Bubi" "Assi" "The Black Devil" "The Golden Knight Of Griffonia" "Dolfo" "Fighter of Griffenheim" "Petit Rouge" "Pritzl" "The Red Baron" "The Red Battle-flyer" "The Red Knight" "Reeste" }
+	use_geographical_default_operation_names = yes
+}
+AST = {
+	male = {
+		names = {
+			Adamantios Alexandros Anastasios Andreas Antonios Aristidis Athanasios Augustinos Benizelos Charalambos
+			Charilaos Dimitrios Diomidis Eleftherios Emmanouil Epameinontas Evripidis Gennaios Georgios Ilias
+			Ionnis Kitsos Konstantinos Kyriakos Kyriakoulis Leonidas Makarios Markos Mikhael Militiadis
+			Nikolaos Odysseas Othon Panagiotis Pavlos Petros Sofoklis Sotiris Spyridion Spyros
+			Staikos Stefanos Stylianos Themistoklis Theodoros Tharyvoulos Tzannis Vasos Viktor Zinovios
+		}
+	}
+	female = {
+		names = {
+			Alexandra Adriane Adriana Agathe Agatha Agne Agnes Aikaterine Alexeia Anastasia Anastasia 
+			Anna Anthe Anthousa Antipatra Antonia Apollonia Athanasia Barbara Basillike
+			Chrysogone Damiane Demetra Dionysia Dorothea Dorothy Aigidia Eirene Irene Elaiodora Epiphania 
+			Eudokia Eudocia Eudoxia Eugenia Eulalia Eunike Euphemia Euphrasia Euphrosyne Euphrosyne
+			Eupraxia Eusebia Eustathia Evanthia Gabrielia Garyphallia Georgia Gregoria Helene Helen 
+			Ioanna Joan Ioulia Julia Iouliana Juliana Ioustina Justina Kale Konstantia Constantia 
+			Konstantine Constantina Kyra Kyriake Hypatia Zoe
+		}
+	}
+	surnames = {
+		Altanis Charalambis Christakis-Zografos Danglis Dousmanis Foumis Gonatas Hatzianestis Kallergis Kanaris Katsimiros
+		Kolokotronis Kondylis Kountouriotis Kriezis Makriyannis Manos Mavrocordatos Mavrovouniotis Metaxas Mouskos
+		Nider Othonaios Palaskas Pangalos Papadiamantopoulos Papadopoulos Papagos Papoulas Parakevopouolos Plapoutas
+		Plastiras Sapountzakis Sarafis Smolenskis Sofoulis Soutsos Spyromilios Staikopoulos Stanotas
+		Trikoupis Tsakalotos Tsolakoglou  Tzavelas Vassos Venizelos Voulgaris Zaimis Zymvrakakis
+	}
+	callsigns = { "Avenger" "Megali" "Liberator" "Flying Bull" "Skyhorns" }
+	use_geographical_default_operation_names = yes
+}
+PRA = {
+	male = {
+		names = {
+			Gheorghe Ioan Vasile Constantin Ion Lexandru Nicolae Kihai Dumitru Andrei Denis Augustin Ionel Geza Dragomir Stefan Nic Varujan Simu
+		}
+	}
+	female = {
+		names = { Maria Elena Ana Ioana Kihaela Andreea Cristina Mariana Lexandra }
+	}
+	surnames = {
+		Popa Popescu Radu Dumitru Stan Stoica Matei Ciobanu Ionescu Rusu "de Temsoar" "de Kivessin" "de Larios"
+	}
+	callsigns = { "Captain" "Nails" "Echo" "Fives" "Commiebait" "Hevy" "Cutup" }
+	use_geographical_default_operation_names = yes
+}
+FRO = {
+	male = {
+		names = {  Maximilian Felix Erich Gerhard Gunther Otto Walter Wilhelm Heinz Hermann Heinrich
+			Theodor Hans Anton Joachim Max Emil Peter Fritz Otto Adolf Tobias Staffan Marco Karl Chiron
+			Ancietus Reinhold August Elias Harald Eggert Konrad Fritz Cornelius Erhard Horstn Herbert Rolf
+			Wilhelm Erwin Wolfgang Kalus Friedrich Rikard Siegfried Gustav Heinrich Waldemar Theodor Ludwig 
+			Oskar Ferdinand Albrecht Reinhardt Strom
+		}
+	}
+	female = {
+		names = { Jessica Emma Hanna Sofia Marie Iris Elsa Victoria Karin Ingrid Margarethe Edith Erna Mia Theresa
+		Pauline Louisa Luoise Clara Sara Karja Eva Sophie Carla Gretchen Kathrine Heidi Lorelei Regitze Ilsa Wilhelmina 
+		Ulrike Sieglinde Wanda Ulla Ingeborg Charlotte Hedwig Irene Rita Anne Elsbeth Elisabeth Rosa Sonja Barbara Brunhilde
+		}
+	}
+	surnames = {
+		Greytalon Mistfeather Stormfeather Raincrest Hellcrest Bronzetail Thundertail Mudbeak Helltalon Duskwing
+		Darkclaw Grimwing Grimclaw Hardbeak Silverplume Beamclaw Stormborn Goldplume Whitefeather Starbill
+		Sunclaw Rainfeather Rockbeak Bluebeak Silverwing Blackfeather Sterbenclaw Windwing Lighttalon Sunwing
+	}
+	callsigns = { "Bubi" "Assi" "The Black Devil" "The Golden Knight Of Griffonia" "Dolfo" "Fighter of Griffenheim" "Petit Rouge" "Pritzl" "The Red Baron" "The Red Battle-flyer" "The Red Knight" "Reeste" }
+
+	prefix = o_unternehmen
+	operation = {
+		0 = {
+			o_ostwind
+            o_fuchsjagd
+            o_dorffest
+            o_freiherr
+            o_heimfahrt
+            o_hasenjagd
+            o_jahreswechsel
+            o_mondschein
+            o_neuland
+            o_ruckreise
+            o_vogelsang
+            o_winkel
+            o_nordpol
+            o_orkan
+            o_raubtier
+            o_storfang
+            o_taubenschlag
+            o_trappenjagd
+            o_wiesengrund
+            o_wintermarchen
+            o_eisbar
+            o_leopard
+            o_michael
+            o_poseidon
+            o_zwischenspiel
+            o_blume
+            o_fischfang
+            o_herbstnebel
+            o_ludwig
+            o_luttich
+            o_martin
+            o_morgenwind
+            o_sonnenaufgang
+            o_konrad
+            o_moorbrand 
+            o_bruckenschlag
+            o_schneeman
+            o_sonnenwende
+            o_haifisch
+            o_nordwind
+            o_sturmflut
+            o_Kaiserreich
+			o_Ruckkehr
+			o_Grover
+			o_Falke
+			o_Arcturius
+			o_Ubermacht
+			o_Donnerschlag
+			o_Eifrigkeit
+		}
+		159 = {
+			o_Kemerskai
+			o_Hochverrat
+		}
+		167 = {
+			o_Sudwind
+			o_Karthinien
+		}
+		154 = {
+			o_Aquileia
+			o_Discret
+		}
+	}
+}
+REF = {
+	male = {
+		names = { Thunder Duke Star Brisk Steel Flash Wild Platinum Rapid Blue Lighthoof Ebony Torch Big Burnt Feather
+		Filthy Hard Cream Carrot Foam Piles Rusty Silver Trouble Caramel Lavender Golden Tough Ace Black Brindle Bush Cobalt
+		Emerald Evening Ginger Grape Hammer Hay Iron Lapis Lead Lime Lucky Pine Prance Rough Sealed Shiny Tall Cloudy White Sand Stellar
+		Storm Warm Midnight Moonshadow Moonlight Starry Stars Moon Night }
+	}
+	female = {
+		names = { Cherry Amber Scarlet Emerald Mythic Lotus Pink Cup Starlight Velvet Orange Sapphire Tree
+		Marble Limestone Caramel Candy Lavender Red Azure Blueberry Strawberry Corn Crimson Daisy Flurry Green Grape
+		Jasmine Lilac Lily Minty Snowy Ocean Rainbow Sunset Purple Raspberry Raven Spring Sun Winter Lemon Pearly Sea Sprinkle Midnight 
+		Moonshadow Velvet Moonlight }
+	}
+	surnames = {
+		Shine Blossom Glimmer Cinnamon Cloud Dew Pommel Tea Peach Pear Shores Rich Milk Song Bucks 
+		Oak Breadwinner Diamond Amethyst Hat Stream Nut Bucket Shoes Cider Cobbler Leaves Honey Berry Core Split
+		Apricot Brass Frost Icicle Hoof Mane Curls Spurs Twirl Swirl Punch Flower Dust Dough Wheat Trot Gallop Whinny Heart Rock Jewel
+		Harvest Tide Leaf Bloom Valley Spray Dawn Sparkle Melody Glow Shimmer Pearl Haze Wave Glaze Ruby Splash Water Ice Sap Bread Stone Saddle Neigh
+		Light Clover Dusk Sky Rose
+	}
+	callsigns = { "The Storm" "Skylance" "Steel Wings" "Cloudchaser" "Sunray" "Divine Wrath" "Bullseye" "Iron Pegasus" }
+
+	operation = {
+		0 = {
+			o_Meka
+			o_Tekucica
+			o_Val
+			o_Poplava
+			o_Rominjanje
+			o_Vodica
+			o_Oblik
+			o_Vala
+			o_Povrsinska
+			o_Povod
+		}
+		183 = {
+			o_Stepski
+			o_Ravnica
+			o_Vjetar
+		}
+		182 = {
+			o_Stepski
+			o_Ravnica
+			o_Vjetar
+		}
+		199 = {
+			o_Stepski
+			o_Ravnica
+			o_Vjetar
+		}
+		194 = {
+			o_Fronta
+			o_Gruda
+			o_Mecava
+			o_Santa
+			o_Tuca
+		}
+		196 = {
+			o_Fronta
+			o_Gruda
+			o_Mecava
+			o_Santa
+			o_Tuca
+		}
+		202 = {
+			o_Frula
+			o_Voda
+		}
+	}
+}
+KAZ = {
+	male = {
+		names = {
+			Limon Karanbóla Spedju Lista Rátu Gudja Koitalel Kango Noti Dinheru Fonti Boli Grelha
+		}
+	}
+	female = {
+		names = { Luxu Asu Rekádu Simentu Karbon Keju Kanela Lenha Txeia Flór Kranka Négua Karokol }
+	}
+	surnames = {
+		Funku Jélu Djeu Féru Gaiáto Kudjéron Lagu Fódja Pó Obama Metal Jornal Konbustival Ijieni 
+	}
+	callsigns = { 
+		Vencedor Invencível Strubon Disafia Tenpestádi
+	}
+	use_geographical_default_operation_names = yes
+}
+ZAU ={
+	male = {
+		names = {  Karl Erik Lars Anders Per Mikael Johan Olof Nils Jan
+		}
+	}
+	female = {
+		names = { Elisabeth Anna Margareta Eva Birgitta Karin Linnea }
+	}
+	surnames = {
+		Gråklo Dimfjäder Stormfjäder Regnskiöld Bronssvans Åsksvans Lernäbb Skymningsvinge Mörkerklo Bistervinge
+		Bisterklo Hårdnäbb Silverplym Strålklo Stormfödd Guldplym Vitfjäder Stjärnnäbb
+	}
+	callsigns = { "Skyknight" "Valiant" "Brave" "Lancer" "Skysword" "Dragonslayer" "Lady's Blessing" }
+	use_geographical_default_operation_names = yes
+}
+HRR = {
+	male = {
+		names = {  Maximilian Felix Erich Gerhard Gunther Otto Walter Wilhelm Heinz Hermann Heinrich
+			Theodor Hans Anton Joachim Max Emil Peter Fritz Otto Adolf Tobias Staffan Marco Karl Chiron
+			Ancietus Reinhold August Elias Harald Eggert Konrad Fritz Cornelius Erhard Horstn Herbert Rolf
+			Wilhelm Erwin Wolfgang Kalus Friedrich Rikard Siegfried Gustav Heinrich Waldemar Theodor Ludwig 
+			Oskar Ferdinand Albrecht Reinhardt Strom
+		}
+	}
+	female = {
+		names = { Jessica Emma Hanna Sofia Marie Iris Elsa Victoria Karin Ingrid Margarethe Edith Erna Mia Theresa
+		Pauline Louisa Luoise Clara Sara Karja Eva Sophie Carla Gretchen Kathrine Heidi Lorelei Regitze Ilsa Wilhelmina 
+		Ulrike Sieglinde Wanda Ulla Ingeborg Charlotte Hedwig Irene Rita Anne Elsbeth Elisabeth Rosa Sonja Barbara Brunhilde
+		}
+	}
+	surnames = {
+		Greytalon Mistfeather Stormfeather Raincrest Hellcrest Bronzetail Thundertail Mudbeak Helltalon Duskwing
+		Darkclaw Grimwing Grimclaw Hardbeak Silverplume Beamclaw Stormborn Goldplume Whitefeather Starbill
+		Sunclaw Rainfeather Rockbeak Bluebeak Silverwing Blackfeather Sterbenclaw Windwing Lighttalon Sunwing
+	}
+	callsigns = { "Bubi" "Assi" "The Black Devil" "The Golden Knight Of Griffonia" "Dolfo" "Fighter of Griffenheim" "Petit Rouge" "Pritzl" "The Red Baron" "The Red Battle-flyer" "The Red Knight" "Reeste" }
+
+	prefix = o_unternehmen
+	operation = {
+		0 = {
+			o_ostwind
+            o_fuchsjagd
+            o_dorffest
+            o_freiherr
+            o_heimfahrt
+            o_hasenjagd
+            o_jahreswechsel
+            o_mondschein
+            o_neuland
+            o_ruckreise
+            o_vogelsang
+            o_winkel
+            o_nordpol
+            o_orkan
+            o_raubtier
+            o_storfang
+            o_taubenschlag
+            o_trappenjagd
+            o_wiesengrund
+            o_wintermarchen
+            o_eisbar
+            o_leopard
+            o_michael
+            o_poseidon
+            o_zwischenspiel
+            o_blume
+            o_fischfang
+            o_herbstnebel
+            o_ludwig
+            o_luttich
+            o_martin
+            o_morgenwind
+            o_sonnenaufgang
+            o_konrad
+            o_moorbrand 
+            o_bruckenschlag
+            o_schneeman
+            o_sonnenwende
+            o_haifisch
+            o_nordwind
+            o_sturmflut
+            o_Kaiserreich
+			o_Ruckkehr
+			o_Grover
+			o_Falke
+			o_Arcturius
+			o_Ubermacht
+			o_Donnerschlag
+			o_Eifrigkeit
+		}
+		159 = {
+			o_Kemerskai
+			o_Hochverrat
+		}
+		167 = {
+			o_Sudwind
+			o_Karthinien
+		}
+		154 = {
+			o_Aquileia
+			o_Discret
+		}
+	}
+}
+HGE = {
+	male = {
+		names = {  Maximilian Felix Erich Gerhard Gunther Otto Walter Wilhelm Heinz Hermann Heinrich
+			Theodor Hans Anton Joachim Max Emil Peter Fritz Otto Adolf Tobias Staffan Marco Karl Chiron
+			Ancietus Reinhold August Elias Harald Eggert Konrad Fritz Cornelius Erhard Horstn Herbert Rolf
+			Wilhelm Erwin Wolfgang Kalus Friedrich Rikard Siegfried Gustav Heinrich Waldemar Theodor Ludwig 
+			Oskar Ferdinand Albrecht Reinhardt Strom
+		}
+	}
+	female = {
+		names = { Jessica Emma Hanna Sofia Marie Iris Elsa Victoria Karin Ingrid Margarethe Edith Erna Mia Theresa
+		Pauline Louisa Luoise Clara Sara Karja Eva Sophie Carla Gretchen Kathrine Heidi Lorelei Regitze Ilsa Wilhelmina 
+		Ulrike Sieglinde Wanda Ulla Ingeborg Charlotte Hedwig Irene Rita Anne Elsbeth Elisabeth Rosa Sonja Barbara Brunhilde
+		}
+	}
+	surnames = {
+		Greytalon Mistfeather Stormfeather Raincrest Hellcrest Bronzetail Thundertail Mudbeak Helltalon Duskwing
+		Darkclaw Grimwing Grimclaw Hardbeak Silverplume Beamclaw Stormborn Goldplume Whitefeather Starbill
+		Sunclaw Rainfeather Rockbeak Bluebeak Silverwing Blackfeather Sterbenclaw Windwing Lighttalon Sunwing
+	}
+	callsigns = { "Bubi" "Assi" "The Black Devil" "The Golden Knight Of Griffonia" "Dolfo" "Fighter of Griffenheim" "Petit Rouge" "Pritzl" "The Red Baron" "The Red Battle-flyer" "The Red Knight" "Reeste" }
+
+	prefix = o_unternehmen
+	operation = {
+		0 = {
+			o_ostwind
+            o_fuchsjagd
+            o_dorffest
+            o_freiherr
+            o_heimfahrt
+            o_hasenjagd
+            o_jahreswechsel
+            o_mondschein
+            o_neuland
+            o_ruckreise
+            o_vogelsang
+            o_winkel
+            o_nordpol
+            o_orkan
+            o_raubtier
+            o_storfang
+            o_taubenschlag
+            o_trappenjagd
+            o_wiesengrund
+            o_wintermarchen
+            o_eisbar
+            o_leopard
+            o_michael
+            o_poseidon
+            o_zwischenspiel
+            o_blume
+            o_fischfang
+            o_herbstnebel
+            o_ludwig
+            o_luttich
+            o_martin
+            o_morgenwind
+            o_sonnenaufgang
+            o_konrad
+            o_moorbrand 
+            o_bruckenschlag
+            o_schneeman
+            o_sonnenwende
+            o_haifisch
+            o_nordwind
+            o_sturmflut
+            o_Kaiserreich
+			o_Ruckkehr
+			o_Grover
+			o_Falke
+			o_Arcturius
+			o_Ubermacht
+			o_Donnerschlag
+			o_Eifrigkeit
+		}
+		159 = {
+			o_Kemerskai
+			o_Hochverrat
+		}
+		167 = {
+			o_Sudwind
+			o_Karthinien
+		}
+		154 = {
+			o_Aquileia
+			o_Discret
+		}
+	}
+}
+HKR = {
+	male = {
+		names = {  Maximilian Felix Erich Gerhard Gunther Otto Walter Wilhelm Heinz Hermann Heinrich
+			Theodor Hans Anton Joachim Max Emil Peter Fritz Otto Adolf Tobias Staffan Marco Karl Chiron
+			Ancietus Reinhold August Elias Harald Eggert Konrad Fritz Cornelius Erhard Horstn Herbert Rolf
+			Wilhelm Erwin Wolfgang Kalus Friedrich Rikard Siegfried Gustav Heinrich Waldemar Theodor Ludwig 
+			Oskar Ferdinand Albrecht Reinhardt Strom
+		}
+	}
+	female = {
+		names = { Jessica Emma Hanna Sofia Marie Iris Elsa Victoria Karin Ingrid Margarethe Edith Erna Mia Theresa
+		Pauline Louisa Luoise Clara Sara Karja Eva Sophie Carla Gretchen Kathrine Heidi Lorelei Regitze Ilsa Wilhelmina 
+		Ulrike Sieglinde Wanda Ulla Ingeborg Charlotte Hedwig Irene Rita Anne Elsbeth Elisabeth Rosa Sonja Barbara Brunhilde
+		}
+	}
+	surnames = {
+		Greytalon Mistfeather Stormfeather Raincrest Hellcrest Bronzetail Thundertail Mudbeak Helltalon Duskwing
+		Darkclaw Grimwing Grimclaw Hardbeak Silverplume Beamclaw Stormborn Goldplume Whitefeather Starbill
+		Sunclaw Rainfeather Rockbeak Bluebeak Silverwing Blackfeather Sterbenclaw Windwing Lighttalon Sunwing
+	}
+	callsigns = { "Bubi" "Assi" "The Black Devil" "The Golden Knight Of Griffonia" "Dolfo" "Fighter of Griffenheim" "Petit Rouge" "Pritzl" "The Red Baron" "The Red Battle-flyer" "The Red Knight" "Reeste" }
+
+	prefix = o_unternehmen
+	operation = {
+		0 = {
+			o_ostwind
+            o_fuchsjagd
+            o_dorffest
+            o_freiherr
+            o_heimfahrt
+            o_hasenjagd
+            o_jahreswechsel
+            o_mondschein
+            o_neuland
+            o_ruckreise
+            o_vogelsang
+            o_winkel
+            o_nordpol
+            o_orkan
+            o_raubtier
+            o_storfang
+            o_taubenschlag
+            o_trappenjagd
+            o_wiesengrund
+            o_wintermarchen
+            o_eisbar
+            o_leopard
+            o_michael
+            o_poseidon
+            o_zwischenspiel
+            o_blume
+            o_fischfang
+            o_herbstnebel
+            o_ludwig
+            o_luttich
+            o_martin
+            o_morgenwind
+            o_sonnenaufgang
+            o_konrad
+            o_moorbrand 
+            o_bruckenschlag
+            o_schneeman
+            o_sonnenwende
+            o_haifisch
+            o_nordwind
+            o_sturmflut
+            o_Kaiserreich
+			o_Ruckkehr
+			o_Grover
+			o_Falke
+			o_Arcturius
+			o_Ubermacht
+			o_Donnerschlag
+			o_Eifrigkeit
+		}
+		159 = {
+			o_Kemerskai
+			o_Hochverrat
+		}
+		167 = {
+			o_Sudwind
+			o_Karthinien
+		}
+		154 = {
+			o_Aquileia
+			o_Discret
+		}
+	}
+}
+
+SKF = {
+	male = {
+		names = {
+			Albert Alexandre Alexis Alphonse André Antoine Auguste Barthélémy Baudouin Blaise Camille Clément Charles Constant
+			Damien David Désiré Didier Edmond Édouard Emmanuel Émile Etienne Eugène Félix Fernand Feullien Florent François Frédéric Georges
+			Gérard Gilles Guillaume Gustave Henri Hercule Hubert Ignace Isidore Jacques Jean Jean-Baptiste Jean-François Jean-Louis
+			Jean-Jacques Joseph Jules Lambert Laurent Léon Léonard Léopold Louis Lucien Mathieu Maxime Maximilien Nicolas Olivier
+			Pascal Patrice Paul Philippe Philippe-Joseph Pierre Pierre-Guillaume Sébastien Sylvain Théophile Victor Vincent Werner
+		}
+	}
+	female = {
+		names = { Marie Anne Géraldine Louise Marie-Claude Helene Karine Rachel Paule Claude Melanie Merel Marleen Johanna Ingrid Irene Ilse Hilda Helga Beatrix Antje Anneke }
+	}
+	surnames = {
+		Allard Barbanson Barthélémy Baugniet Beaucarne Berger Berthels Beyts Biver Blargnies Brialmont Bredart Cauvin Collet
+		Cols Claus Clerix Coquilhat d'Arenberg d'Huart d'Omalius d'Oreye d'Oultremont David Davignon "de Baillet" "de Beaufort"
+		"de Behr" "de Bocarmé" "de Bousies" "de Brouckère" "de Broqueville" "de Burlet" "de Celles" "de Chasteler" "de Coppin de Falaen"
+		"de Croÿ" "de Decker" "de Dixmude" "de Gerlache" "de Grez" "de Hemptinne" "de Labbeville" "de Lannoy" "de Ligne" "de Leuze" "de Melin"
+		"de Mérode" "de Pelichy" "de Quarre" "de Riquet" "de Robaulx" "de Rouille" "de Sauvage" "de Sécus" "de Selys Longchamps"
+		"de Stassart" "de Stockem" "de Theux de Meylandt" "de Trazegnies" "de Trooz" "de Viron" "de Waha" Defacqz Deguise Delacroix
+		"Desmanet de Biesme" Destriveaux Dethier Devaux Deville Dewandre Dhanis Dreze "du Bois" "du Bus" "du Pont" "du Val de Beaulieu" Dumont
+		Fallon Fendius Figeys Fleury-Dubay Fleussu Forgeur Frison Fuchs Gendebien Goffint Henry "Huysman d'Annecroix" Jacques Joos Jottrand
+		Lahure Lardinois "le Cocq" "le Hon" Lebeau Leclercq Lefebvre Leman Malou Marcq Marlet Masbourg Nagelmackers Nalinne Nothomb
+		Orban Pétillon Picquet Pirmez Pirson Raikem Roeser Rogier Rouen Rouppe Seron Thonus Thorn "van Snick" Wahis Wangermée Wyvekens Zoude
+
+	}
+	callsigns = { "Bubi" "Assi" "The Black Devil" "Dolfo" "Ripper" "Petit Rouge" "Pritzl" "Hero" "Pebbles" "Reeste" }
+
+	operation = {
+		0 = {
+			o_Raaf
+			o_Arend
+			o_Pruim
+			o_Fantoom
+			o_Degenkamp
+			o_Dolkstoot
+			o_Schildwacht
+			o_Vleugels
+			o_Dijk
+			o_Speerpunt
+			o_Wervelwind
+			o_Vuurdoop
+			o_Ravelijn
+			o_Bolwerk
+		}
+		159 = {
+			o_Wolkenval
+			o_Arrest
+			o_Orde
+		}
+		164 = {
+			o_Kroon
+			o_Hartslag
+			o_Griffking
+		}
+		154 = {
+			o_Stokbrood
+			o_Haan
+			o_Genot
+		}
+	}
+}
+GFN = {
+	male = {
+		names = {  Maximilian Felix Erich Gerhard Gunther Otto Walter Wilhelm Heinz Hermann Heinrich
+			Theodor Hans Anton Joachim Max Emil Peter Fritz Otto Adolf Tobias Staffan Marco Karl Chiron
+			Ancietus Reinhold August Elias Harald Eggert Konrad Fritz Cornelius Erhard Horst Herbert Rolf
+			Wilhelm Erwin Wolfgang Kalus Friedrich Rikard Siegfried Gustav Heinrich Waldemar Theodor Ludwig 
+			Oskar Ferdinand Albrecht Reinhardt Strom
+		}
+	}
+	female = {
+		names = { Jessica Emma Hanna Sofia Marie Iris Elsa Victoria Karin Ingrid Margarethe Edith Erna Mia Theresa
+		Pauline Louisa Luoise Clara Sara Karja Eva Sophie Carla Gretchen Kathrine Heidi Lorelei Regitze Ilsa Wilhelmina 
+		Ulrike Sieglinde Wanda Ulla Ingeborg Charlotte Hedwig Irene Rita Anne Elsbeth Elisabeth Rosa Sonja Barbara Brunhilde
+		}
+	}
+	surnames = {
+		Greytalon Mistfeather Stormfeather Raincrest Hellcrest Bronzetail Thundertail Mudbeak Helltalon Duskwing
+		Darkclaw Grimwing Grimclaw Hardbeak Silverplume Beamclaw Stormborn Goldplume Whitefeather Starbill
+		Sunclaw Rainfeather Rockbeak Bluebeak Silverwing Blackfeather Sterbenclaw Windwing Lighttalon Sunwing
+	}
+	callsigns = { "Bubi" "Assi" "The Black Devil" "Dolfo" "Ripper" "Petit Rouge" "Pritzl" "Hero" "Pebbles" "Reeste" }
+	use_geographical_default_operation_names = yes
+}

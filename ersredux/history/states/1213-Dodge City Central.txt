@@ -1,0 +1,29 @@
+state={
+	id=1213
+	name="STATE_1213"
+
+	provinces={
+		11427
+	}
+
+	manpower=151812
+	state_category=city
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = CLT
+		add_core_of = CLT
+		add_core_of = ERP
+		victory_points = { 11427 5 }
+		
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 2
+		}
+		
+	}
+	resources={
+		crystals = 5
+	}
+}

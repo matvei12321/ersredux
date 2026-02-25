@@ -1,0 +1,290 @@
+desert_annex_cat = {
+	annex_furry_mountains = {
+		icon = GFX_decision_griffon_claw
+		fire_only_once = yes
+		available = {
+			EMP = {	owns_state = 71 }
+			AND = {
+				OR = {
+					owns_state = 47
+					any_country = {
+						owns_state = 47
+						is_puppet_of = ROOT
+					}
+				}
+				OR = {
+					owns_state = 49
+					any_country = {
+						owns_state = 49
+						is_puppet_of = ROOT
+					}
+				}
+				OR = {
+					owns_state = 44
+					any_country = {
+						owns_state = 44
+						is_puppet_of = ROOT
+					}
+				}
+			}
+		}
+				
+		visible = {
+			EMP = { owns_state = 71 }
+			OR = {
+				OR = {
+					owns_state = 47
+					any_country = {
+						owns_state = 47
+						is_puppet_of = ROOT
+					}
+				}
+				OR = {
+					owns_state = 49
+					any_country = {
+						owns_state = 49
+						is_puppet_of = ROOT
+					}
+				}
+				OR = {
+					owns_state = 44
+					any_country = {
+						owns_state = 44
+						is_puppet_of = ROOT
+					}
+				}
+			}
+		}
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 71
+			}
+		}
+		
+		ai_will_do = {
+			factor = 71
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision annex_furry_mountains"
+			ROOT = {
+				transfer_state = 71
+			}
+			add_political_power = 50
+			add_stability = 0.05
+		}
+	}
+	
+	annex_san_palermo = {
+		icon = GFX_decision_griffon_claw
+		fire_only_once = yes
+		available = {
+			EMP = {
+				owns_state = 42
+			}
+			AND = {
+				OR = {
+					OR = {
+						owns_state = 71
+						any_country = {
+							owns_state = 71
+							is_puppet_of = ROOT
+						}
+					}
+					OR = {
+						owns_state = 20
+						any_country = {
+							owns_state = 20
+							is_puppet_of = ROOT
+						}
+					}
+				}
+				OR = {
+					AND = {
+						OR = {
+							owns_state = 49
+							any_country = {
+								owns_state = 49
+								is_puppet_of = ROOT
+							}
+						}
+						OR = {
+							owns_state = 94
+							any_country = {
+								owns_state = 94
+								is_puppet_of = ROOT
+							}
+						}
+					}	
+					OR = {
+						owns_state = 44
+						any_country = {
+							owns_state = 44
+							is_puppet_of = ROOT
+						}
+					}
+				}	
+			}
+		}
+				
+		visible = {
+			EMP = {
+				owns_state = 42
+			}
+			OR = {
+				OR = {
+					owns_state = 44
+					any_country = {
+						owns_state = 44
+						is_puppet_of = ROOT
+					}
+				}
+				OR = {
+					owns_state = 78
+					any_country = {
+						owns_state = 78
+						is_puppet_of = ROOT
+					}
+				}
+				OR = {
+					owns_state = 49
+					any_country = {
+						owns_state = 49
+						is_puppet_of = ROOT
+					}
+				}
+				OR = {
+					owns_state = 94
+					any_country = {
+						owns_state = 94
+						is_puppet_of = ROOT
+					}
+				}
+			}
+		}
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 42
+			}
+		}
+		
+		ai_will_do = {
+			factor = 120
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision annex_san_palermo"
+			ROOT = {
+				transfer_state = 42
+			}
+			add_political_power = 50
+			add_stability = 0.05
+		}
+	}
+	
+	annex_snortor = {
+		icon = GFX_decision_griffon_claw
+		fire_only_once = yes
+		available = {
+			EMP = {
+				owns_state = 20
+			}
+			AND = {
+				OR = {
+					owns_state = 1223
+					any_country = {
+						owns_state = 1223
+						is_puppet_of = ROOT
+					}
+				}
+				OR = {
+					owns_state = 38
+					any_country = {
+						owns_state = 38
+						is_puppet_of = ROOT
+					}
+				}
+				OR = {
+					owns_state = 21
+					any_country = {
+						owns_state = 21
+						is_puppet_of = ROOT
+					}
+				}
+				OR = {
+					owns_state = 89
+					any_country = {
+						owns_state = 89
+						is_puppet_of = ROOT
+					}
+				}
+				OR = {
+					owns_state = 78
+					any_country = {
+						owns_state = 78
+						is_puppet_of = ROOT
+					}
+				}
+			}
+		}	
+		visible = {
+			EMP = { owns_state = 20 }
+			OR = {
+				OR = {
+					owns_state = 1223
+					any_country = {
+						owns_state = 1223
+						is_puppet_of = ROOT
+					}
+				}
+				OR = {
+					owns_state = 38
+					any_country = {
+						owns_state = 38
+						is_puppet_of = ROOT
+					}
+				}
+				OR = {
+					owns_state = 21
+					any_country = {
+						owns_state = 21
+						is_puppet_of = ROOT
+					}
+				}
+				OR = {
+					owns_state = 89
+					any_country = {
+						owns_state = 89
+						is_puppet_of = ROOT
+					}
+				}
+				OR = {
+					owns_state = 78
+					any_country = {
+						owns_state = 78
+						is_puppet_of = ROOT
+					}
+				}	
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 20
+			}
+		}
+		ai_will_do = {
+			factor = 120
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision annex_snortor"
+			ROOT = {
+				transfer_state = 20
+			}
+			add_political_power = 50
+			add_stability = 0.05
+		}
+	}
+}

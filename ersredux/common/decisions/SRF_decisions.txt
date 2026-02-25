@@ -1,0 +1,193 @@
+SRF_special_projects_cat = {
+	SRF_collect_pony_resources = {
+		icon = GFX_decision_megaphone
+		available = {
+			has_completed_focus = SRF_manpower
+			custom_trigger_tooltip = {
+				tooltip = srf_decision_collect_pony_resources_75_days_tt
+				NOT = {
+					has_country_flag = srf_decision_collect_pony_resources_75_days_flag
+				}
+			}
+			
+		}
+		days_remove = 10
+		modifier = {
+			stability_factor = -0.025
+		}
+		complete_effect = {
+			set_country_flag = {
+				flag = srf_decision_collect_pony_resources_75_days_flag
+				days = 75
+				value = 1
+			}
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision UNP_no_plague_day"
+			add_to_variable = {
+				srf_special_ponypower = 1000
+			}
+			custom_effect_tooltip = srf_plus_1000_ponyresource_tt
+			add_manpower = -1000
+		}
+	}
+	
+	SRF_raid_bears_for_ponypower = {
+		icon = GFX_decision_megaphone
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = srf_decision_raid_plb_150_days_tt
+				NOT = {
+					has_country_flag = srf_decision_raid_plb_150_days_flag
+				}
+			}
+			PLB = {
+				NOT = {
+					OR = {
+						is_in_faction_with = ROOT
+						is_puppet_of = ROOT
+						has_war_with = ROOT
+					}
+				}
+			}
+			owns_state = 262
+			PLB = {
+				owns_state = 263
+			}
+			
+		}
+		days_remove = 5
+		modifier = {
+			
+		}
+		complete_effect = {
+			set_country_flag = {
+				flag = srf_decision_raid_plb_150_days_flag
+				days = 150
+				value = 1
+			}
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision UNP_no_plague_day"
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 262
+					num_provinces = 1
+					on_win = srf_border_conflict.1
+					# on_lose = ers_stl.5 #stl loses
+				}
+				defender = {
+					state = 263
+					num_provinces = 1
+					
+				}
+			}
+			PLB = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = unprovoked_aggression
+				}
+			}
+		}
+	}
+	
+	SRF_research_speed_for_ponypower = {
+		icon = GFX_decision_megaphone
+		available = {
+			check_variable = {
+				srf_special_ponypower > 499
+			}
+			custom_trigger_tooltip = {
+				tooltip = srf_has_500_ponypower_tt
+				check_variable = {
+					srf_special_ponypower > 499
+				}
+			}
+			
+		}
+		days_re_enable = 50
+		days_remove = 100
+		modifier = {
+			research_speed_factor = 0.05
+		}
+		complete_effect = {
+			add_to_variable = {
+				srf_special_ponypower = -500
+			}
+			custom_effect_tooltip = srf_minus_500_ponypower
+		}
+	}
+	
+	
+}
+
+SRF_project_gestaalt_category = {
+	SRF_explore_soryth_projects = {
+		icon = GFX_decision_generic_research
+		available = {
+			owns_state = 262
+			has_country_flag = changeling_allow_hive_mind_path_flag
+		}
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 262
+			}
+		}
+		days_remove = 50
+		cost = 10
+		modifier = {
+			research_speed_factor = -0.1
+		}
+		remove_effect = {
+			country_event = hive_mind.2
+		}
+	}
+
+	SRF_working_on_project_gestaalt = {
+		icon = GFX_decision_generic_research
+		available = {
+			always = no
+		}
+		fire_only_once = yes
+		activation = {
+			has_country_flag = hive_mind_project_start_flag
+		}
+		priority = 9
+		is_good = yes
+		days_mission_timeout = 100
+		timeout_effect = {
+			custom_effect_tooltip = hive_mind_project_finished_tt
+			set_country_flag = hive_mind_project_completed_flag
+		}
+	}
+
+	SRF_activate_gestaalt = {
+		icon = GFX_decision_generic_research
+		available = {
+			has_country_flag = hive_mind_project_completed_flag
+			custom_trigger_tooltip = {
+				tooltip = hive_mind_has_queen_leader
+				always = yes
+			}
+		}
+		cost = 25
+		priority = -10
+		is_good = yes
+		complete_effect = {
+			custom_effect_tooltip = hive_mind_project_finished_tt
+			country_event = hive_mind.6
+		}
+	}
+
+}
+
+
+
+
+
+
+
+
+

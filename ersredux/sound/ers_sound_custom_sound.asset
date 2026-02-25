@@ -1,0 +1,41 @@
+sound = {
+	name = "soundeffect_gun_shot"
+	file = "customsound/soundeffect_gun_shot.wav"
+	always_load = no
+}
+
+sound = {
+	name = "soundeffect_march"
+	file = "customsound/soundeffect_march.wav"
+	always_load = no
+}
+
+sound = {
+	name = "ui_research_tab_chem_tech"
+	file = "menu/ui_research_tab_chem_tech.wav"
+	always_load = no
+}
+
+sound = {
+	name = "ui_research_tab_chem_tech"
+	file = "menu/ui_research_tab_chem_tech.wav"
+	always_load = no
+}
+
+sound = {
+	name = "hive_created"
+	file = "hive_sounds/hive_created.wav"
+	always_load = no
+}
+
+sound = {
+	name = "hive_enemy_capitulated"
+	file = "hive_sounds/hive_enemy_capitulated.wav"
+	always_load = no
+}
+
+sound = {
+	name = "hive_war_declaration"
+	file = "hive_sounds/hive_war_declaration.wav"
+	always_load = no
+}

@@ -1,0 +1,19 @@
+characters={
+	FLC_gabriele_dartiglio={
+		name=FLC_gabriele_dartiglio
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/FAL/FAL_joaquim_picasso.tga"
+			}
+			civilian={
+				large="gfx/leaders/FAL/JoaquimPicasso.tga"
+			}
+		}
+		country_leader={
+			desc="FLC_gabriele_dartiglio_desc"
+			ideology=stratocracy
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

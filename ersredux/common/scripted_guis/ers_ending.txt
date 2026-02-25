@@ -1,0 +1,48 @@
+scripted_gui = {
+	ers_ending = {
+		context_type = player_context
+
+		window_name = "ers_ending"
+
+		visible = {
+			has_variable = open_ers_ending_container_variable
+		}
+		
+		effects = {
+			close_button_click = {
+				clear_variable = open_ers_ending_container_variable
+			}
+			
+			ers_ending_next_button_click = {
+				add_manpower = 50
+				if = {
+					limit = {
+						has_country_flag = lyctida_sane_ending_flag_1
+					}
+					
+					clr_country_flag = lyctida_sane_ending_flag_1
+					set_country_flag = lyctida_sane_ending_flag_2
+					clr_country_flag = ending_burning_village_flag
+					set_country_flag = ending_windigo_flag
+				}
+				else_if = {
+					limit = {
+						has_country_flag = lyctida_sane_ending_flag_2
+					}
+					
+					clr_country_flag = lyctida_sane_ending_flag_2
+					set_country_flag = lyctida_sane_ending_flag_3
+					clr_country_flag = ending_windigo_flag
+				}
+				else_if = {
+					limit = {
+						has_country_flag = lyctida_sane_ending_flag_3
+					}
+					clr_country_flag = lyctida_sane_ending_flag_3
+					clear_variable = open_ers_ending_container_variable
+		
+				}
+			}
+		}
+	}		
+}

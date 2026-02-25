@@ -1,0 +1,21 @@
+characters = {
+	UNP_danglar={
+		name=UNP_danglar
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/HLR/HLR_necromancer_waifu.tga"
+			}
+			civilian={
+				large="gfx/leaders/EQS/Allen.tga"
+			}
+		}
+		country_leader={
+			desc="DANGLAR_DESC"
+			ideology=despotism
+			traits={ timed_kommissar }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		gender = male
+	}
+}

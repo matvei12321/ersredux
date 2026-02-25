@@ -1,0 +1,18 @@
+focus_tree = {
+	id = YAC_unique_focus_tree
+
+	continuous_focus_position = { x = -5000 y = 1750 }
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = YAC
+		}
+	}
+	
+	default = no
+	
+	shared_focus = YAK_WARKHAN_start
+	shared_focus = YAC_war_win
+}

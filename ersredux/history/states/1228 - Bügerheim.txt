@@ -1,0 +1,24 @@
+state={
+	id=1228
+	name="STATE_1228"
+
+	provinces={
+		844 872 939 956 3845 9846 6901 9827 9842 11737 11756 11825
+	}
+
+	manpower=394581
+	state_category = town
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = UNC
+		add_core_of = UNC
+		
+		victory_points = { 9827 8 }
+		
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 3
+		}
+	}
+}

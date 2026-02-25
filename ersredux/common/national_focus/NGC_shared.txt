@@ -1,0 +1,71 @@
+###########################################
+──────█▄█▄█▄█▄▄█▄█▄█▄█
+▄▄───▄▄▄▄▄▄▄▄██▀██▄───
+████████████████████──　 　　ＭＥＲＲＹ
+─██████████████▀███▀── 　ＣＨＲＩＳＴＭＡＳ черножепый🎄🎅🎁
+─██████████████───────
+─██▀██▀▀▀██▀██
+------------------------------------------
+###########################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#НАЧАЛО
+focus_tree = {
+	id =  NGC_cult
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = NGC
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 550 y = 1800 }
+	  shared_focus = NGC_focuss_Z #Основаная ветка
+}
+
+
+
+
+################################################################
+
+
+
+
+#ПРОВАЛ ПЕРЕГОВОРОВ
+focus_tree = {
+	id =  NGC_War_Sos
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = NGC
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 550 y = 1800 }
+	    shared_focus = NGC_focuss_U #Основаная ветка
+	shared_focus = NGC_focuss_Democratia #Авиация МММ
+	shared_focus = NGC_focuss_Penal_battalion #КАИН ВЕРНИ МИЛЛИОН ДЕТЕЙ!
+	shared_focus = NGC_focuss_motorization_battalion #На дискотеку
+	shared_focus = NGC_focuss_MMM_Eco #Экономика МММ
+	  = NGC_Plan_Alpha #Плачет ли Луна?
+}

@@ -1,0 +1,18 @@
+characters = {
+	SLT_leader={
+		name=SLT_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/SLT/SLT_nayaki.tga"
+			}
+		}
+		country_leader={
+			desc="loli_desc"
+			ideology=socialist_monarchism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		gender = male
+	}
+}

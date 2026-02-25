@@ -1,0 +1,39 @@
+
+units = {
+	division = {
+		name = "1st Partisan Squad"
+		location = 9837
+		division_template = "Anarchists Pegasi Division"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "2nd Partisan Squad"
+		location = 3893
+		division_template = "Anarchists Pegasi Division"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "3d Partisan Squad"
+		location = 6895
+		division_template = "Tachanka Division"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "4th Partisan Squad"
+		location = 907
+		division_template = "Anarchists Pegasi Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.6
+	}
+	
+	division = {
+		name = "Paradise Partisans"
+		location = 9357
+		division_template = "Tachanka Division"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.5
+	}
+}

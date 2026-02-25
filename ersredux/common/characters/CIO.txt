@@ -1,0 +1,16 @@
+characters={
+	CIO_zumpfkil={
+		name=CIO_teilloy_zumpfkil
+		portraits={
+			civilian={
+				large="gfx/leaders/CIO/redbirb.tga"
+			}
+		}
+		gender = female
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

@@ -1,0 +1,315 @@
+﻿add_namespace = ers_stl
+
+country_event = {
+	id = ers_stl.1 
+	immediate = {log = "[Root.GetName]: event ers_stl.1"}
+	title = ers_stl.1.t
+	desc = ers_stl.1.d
+
+	picture = GFX_event_equality
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ers_stl.1.a
+		add_political_power = 100
+		add_manpower = 250
+	}
+}
+
+country_event = {
+	id = ers_stl.2
+	immediate = {log = "[Root.GetName]: event ers_stl.2"}
+	title = ers_stl.2.t
+	desc = ers_stl.2.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ers_stl.2.a
+		STL = {
+			country_event = { id = ers_stl.3 days = 2 }
+		}
+	}
+}
+
+country_event = {
+	id = ers_stl.3
+	immediate = {log = "[Root.GetName]: event ers_stl.3"}
+	title = ers_stl.3.t
+	desc = ers_stl.3.d
+	
+	picture = GFX_event_equality
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ers_stl.3.a
+		add_political_power = -15
+	}
+}
+
+
+##### BORDER CONFLICT - STL WIN
+country_event = {
+	id = ers_stl.4
+	immediate = {log = "[Root.GetName]: event ers_stl.4"}
+	title = ers_stl.4.t
+	desc = ers_stl.4.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ers_stl.4.a
+		add_war_support = 0.05
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_1
+			amount = 250
+			produser = ROOT
+		}
+		add_manpower = 500
+	}
+}
+
+##### BORDER CONFLICT - STL LOSE
+country_event = {
+	id = ers_stl.5
+	immediate = {log = "[Root.GetName]: event ers_stl.5"}
+	title = ers_stl.5.t
+	desc = ers_stl.5.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ers_stl.5.a
+		add_war_support = -0.05
+		add_popularity = {
+			ideology = communism
+			popularity = -0.05
+		}
+	}
+}
+
+##### BORDER CONFLICT - STG WIN
+country_event = {
+	id = ers_stl.6
+	immediate = {log = "[Root.GetName]: event ers_stl.6"}
+	title = ers_stl.6.t
+	desc = ers_stl.6.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ers_stl.6.a
+		add_war_support = 0.05
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+	}
+}
+
+##### BORDER CONFLICT - STG LOSE
+country_event = {
+	id = ers_stl.7
+	immediate = {log = "[Root.GetName]: event ers_stl.7"}
+	title = ers_stl.7.t
+	desc = ers_stl.7.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ers_stl.7.a
+		add_war_support = -0.05
+		add_popularity = {
+			ideology = communism
+			popularity = -0.05
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_1
+			amount = -250
+			produser = ROOT
+		}
+	}
+}
+
+### Flavour Event
+country_event = {
+	id = ers_stl.8
+	immediate = {log = "[Root.GetName]: event ers_stl.8"}
+	title = ers_stl.8.t
+	desc = ers_stl.8.d
+
+	picture = GFX_event_equality
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ers_stl.8.a
+		add_popularity = {
+			ideology = communism
+			popularity = 0.01
+		}
+		
+	}
+}
+
+### Flavour Event
+country_event = {
+	id = ers_stl.9
+	immediate = {log = "[Root.GetName]: event ers_stl.9"}
+	title = ers_stl.9.t
+	desc = ers_stl.9.d
+
+	picture = GFX_event_equality
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ers_stl.9.a
+		add_popularity = {
+			ideology = communism
+			popularity = 0.01
+		}
+		
+	}
+}
+
+### Flavour Event
+country_event = {
+	id = ers_stl.10
+	immediate = {log = "[Root.GetName]: event ers_stl.10"}
+	title = ers_stl.10.t
+	desc = ers_stl.10.d
+
+	picture = GFX_event_equality
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ers_stl.10.a
+		add_popularity = {
+			ideology = communism
+			popularity = 0.01
+		}
+		
+	}
+}
+
+### Flavour Event
+country_event = {
+	id = ers_stl.11
+	immediate = {log = "[Root.GetName]: event ers_stl.11"}
+	title = ers_stl.11.t
+	desc = ers_stl.11.d
+
+	picture = GFX_event_equality
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ers_stl.11.a
+		add_popularity = {
+			ideology = communism
+			popularity = 0.01
+		}
+	}
+	option = {
+		name = ers_stl.11.b
+		add_popularity = {
+			ideology = communism
+			popularity = 0.01
+		}
+	}
+	option = {
+		name = ers_stl.11.c
+		add_popularity = {
+			ideology = communism
+			popularity = 0.01
+		}
+	}
+	option = {
+		name = ers_stl.11.e
+		add_popularity = {
+			ideology = communism
+			popularity = 0.01
+		}
+	}
+}
+
+country_event = {			### Politburo creation
+	id = ers_stl.12
+	immediate = {log = "[Root.GetName]: event ers_stl.10"}
+	title = ers_stl.12.t
+	desc = ers_stl.12.d
+
+	picture = GFX_event_equality
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ers_stl.12.a
+		add_manpower = -8
+	}
+}
+
+country_event = {			### STG leaders fate
+	id = ers_stl.13
+	immediate = {log = "[Root.GetName]: event ers_stl.10"}
+	title = ers_stl.13.t
+	desc = ers_stl.13.d
+
+	picture = GFX_event_equality
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ers_stl.13.a
+		
+	}
+}
+
+country_event = {			### Feather Bangs Coup
+	id = ers_stl.14
+	immediate = {log = "[Root.GetName]: event ers_stl.14"}
+	title = ers_stl.14.t
+	desc = ers_stl.14.d
+
+	picture = GFX_event_equality
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ers_stl.14.a
+		add_popularity = {
+				ideology = democratic
+				popularity = -0.025
+		}
+	}
+	option = {
+		name = ers_stl.14.b
+		set_politics = {
+			ruling_party = democratic
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = -0.4
+		}
+		set_capital = 156
+		156 = {	add_core_of = ROOT }
+		157 = {	add_core_of = ROOT }
+		164 = {	add_core_of = ROOT }
+		326 = {	add_core_of = ROOT }
+		160 = {	add_core_of = ROOT }
+		162 = {	add_core_of = ROOT }
+		
+		start_civil_war = {
+			ideology = communism
+			capital = 57
+			states = { 57 240 165 334 235 153 225 237 163 161 }
+		}
+	}
+	
+}
+
+

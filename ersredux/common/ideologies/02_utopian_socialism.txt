@@ -1,0 +1,68 @@
+
+######======================================================================######
+######====================== IMPORTANT MESSAGE =============================######
+######======================================================================######
+#    When adding a new subideology, please add an entry of the subideology in    #
+# common/scripted_localisation/EAW_subideology_display_scripted_localisation.txt #
+######======================================================================######
+
+
+ideologies = {
+     
+	socialism = {
+		types = {
+
+			oligarchical_collectivism = {
+				can_be_randomly_selected = no
+			}
+			rozenkampism = {
+				can_be_randomly_selected = no
+			}
+			democratic_socialism = {}
+			syndicalism = {}
+			socialist_monarchism = {
+				can_be_randomly_selected = no
+			}
+			religious_socialism = {
+				can_be_randomly_selected = no
+			}
+			juche = {
+				can_be_randomly_selected = no
+			}
+			socialist_anarchism = {}
+			futurist_socialism = {
+				can_be_randomly_selected = no
+			}
+			equalism = {
+				can_be_randomly_selected = no
+			}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_SOCIALISM_1"
+			"FACTION_NAME_SOCIALISM_2"
+			"FACTION_NAME_SOCIALISM_3"
+			"FACTION_NAME_SOCIALISM_4"
+			"FACTION_NAME_SOCIALISM_5"
+		}
+		color = {236 7 75}
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+		}
+		can_collaborate = yes
+		war_impact_on_world_tension = 0.25    #change
+		faction_impact_on_world_tension = 0.1 #change
+		modifiers = {
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 10.0
+			navy_intel_to_others = 20.0
+			airforce_intel_to_others = 2
+		}
+		can_host_government_in_exile = no		
+		faction_modifiers = {}
+		can_be_boosted = yes
+		ai_communist = yes
+	}
+}

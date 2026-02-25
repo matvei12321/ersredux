@@ -1,0 +1,73 @@
+capital = 32
+
+set_research_slots = 1
+starting_train_buffer = 2
+
+save_global_event_target_as = chilton_target
+
+oob = "CHL_1007"
+
+every_country = {
+	limit = {
+		has_idea = ers_thestral_race
+	}
+	country_event = { id = chl.1 days = 345 }
+}
+
+country_event = { id = chl.2 day = 150 }
+country_event = { id = chl.3 day = 300 }
+country_event = { id = chl.4 day = 450 }
+
+add_ideas = { 
+	
+	tribal_society
+	slavery_economy
+	lack_of_scientists2
+	better_science_base
+	
+	foreign_rights1
+	
+	
+	CHL_holy_leader
+	CHL_slave_society
+	CHL_slave_army
+	THESTRALS_potoh_not_invented
+}
+
+recruit_character = CHL_leader
+
+set_technology = {
+	 
+	thestral_race = 1
+	melee_weapons = 1
+	tech_support = 1
+	tech_thestrals = 1
+}
+
+actually_fix_weapon_techs = yes #THIS HAS TO BE CALLED IN EVERY HISTORY FILE RIGHT AFTER MAIN set_technology!
+
+add_equipment_to_stockpile = {
+	type = melee_equipment_0
+	amount = 1100
+	producer = CHL
+}
+
+set_convoys = 0
+set_popularities = {
+	fascism = 82
+	communism = 18
+}
+set_politics = {
+	ruling_party = fascism
+	last_election = "1.10.10"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+set_stability = 0.45
+set_war_support = 0.45
+
+declare_war_on = {
+	target = MES
+	type = annex_everything
+}

@@ -1,0 +1,15 @@
+focus_tree = {
+	id = ANR_civil_war_tree
+	continuous_focus_position = { x = 1 y = 1750 }
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ANR
+		}
+	}
+	
+	shared_focus = ANR_we_are_at_fucking_war
+	shared_focus = ANR_anarcho_army
+	shared_focus = ANR_civil_war_finale
+}

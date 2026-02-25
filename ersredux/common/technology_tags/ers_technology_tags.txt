@@ -1,0 +1,5 @@
+
+technology_categories = {
+	thestrals_tech
+	chemical_warfare_category
+}

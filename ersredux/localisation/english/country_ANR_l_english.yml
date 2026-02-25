@@ -1,0 +1,214 @@
+﻿l_english:
+
+ ### Parties ###
+ DRG_neutrality_party:0 "Dynasty of Torches"
+ DRG_communism_party:0 "PREP"
+ DRG_communism_party_long:0 "Dragon Communist Party"
+ DRG_democratic_party:0 "Torch Dynasty"
+ DRG_fascism_party:0 "Imperial Power"
+
+ ### National Focuses ####
+
+ ANR_we_are_at_fucking_war:0 "Anarchy is the mother of order!"
+ ANR_we_are_at_fucking_war_desc:0 "CHAOS is THE FATHER OF ORDER!"
+ ANR_partizans:0 "Activate the guerrillas"
+ ANR_partizans_desc:0 "What is there to explain? He infiltrated the rear, found our people, and started hitting all the enemies. Our points in the depths of the enemy's rear are already eagerly awaiting the order to attack."
+ anr_can_create_partizans_tt:0 " Will activate the partisan divisions! in the rear of the state §R[PGS.getname]§!"
+ ANR_find_guns:0 "I wish I had a gun."
+ ANR_find_guns_desc:0 "We have just discovered a shortage of firearms among our infantrymen. Drag everything you have onto the battlefield, take the rifles off the corpses! Everyone should have at least a broken bottle that can be used to kill an enemy soldier in close combat!"
+ ANR_recover:0 "To establish an organization at the front"
+ ANR_recover_desc:0 "What is the strength of our opponent? In the organization. Everyone knows and understands who is subordinate to whom, and in our ranks there is an outspoken commanding officer. Because...This is our strategy! Yes, that's right!"
+ ANR_reorganize_people:0 "Get everyone to the front"
+ ANR_reorganize_people_desc:0 "More than half of our Pegasi have not arrived at the field of slaughter! These assholes decided to celebrate our victory in advance. Stop having fun in a drunken frenzy in the rear, hurry to the front!"
+ ANR_recover:0 "Half of Toklom's peasants don't know how to fire the rusty guns they have. But who said it could be a problem? Everything can be learned on the battlefield!"
+ ANR_build_tachankas:0 "Invention of the pegasus genius"
+ ANR_build_tachankas_desc:0" Cars are the most awesome equipment we have. And I don't care about its dubious practicality, because the attack on these bands looks just awesome!"
+ ANR_even_more_soldiers:0 "To attract the rabble to our cause"
+ ANR_even_more_soldiers_desc:0 "There's nothing to put on airs and choose more experienced soldiers from a bunch of drunks and other rabble. Freedom is for everyone, so let everyone fight for it!"
+ anr_hire_bad_diviisons_tt:0 "Create many rapidly manned and untrained divisions! §Y(8)§!\n§Maybe quantity, not quality, will ensure our victory...§!"
+ ANR_build_industry:0 "Work again..."
+ ANR_build_industry_desc:0 "Our wave of revolution is destroying everything in its path. And our positions too. We can find outsiders so that they are responsible for the restoration of infarction... inst... In short, they need to repair roads and all houses."
+ ANR_more_military:0 "Send gunsmiths to the rear"
+ ANR_more_military_desc:0 "Perhaps the best way to obtain weapons is not to steal them from the corpses of enemies, but to produce them right in the rear. It sounds logical to some extent."
+ ANR_again_not_ok:0 "Something's wrong again"
+ ANR_again_not_ok_desc:0 "WIP"
+ ANR_no_religion:0 "The gods won't stop the bullets"
+ ANR_no_religion_desc:0 "WIP"
+ ANR_motivation:0 "§RMOTIVATION§!"
+ ANR_motivation_desc:0 "In order to motivate all the brothers to attack, we will focus our attacks on those cities and villages where vodka, beer, and all similar top anarchist values are stored and produced."
+ ANR_decisions_focus:0 "Do we have a plan?"
+ ANR_decisions_focus_desc:0 "Unlikely."
+ anr_unlock_anarchy_civ_war_decisions_tt:0 "Unlocks the special £decision_icon_small § Solutions.§!"
+ ANR_red_flag:0 "Raise red flags"
+ ANR_red_flag_desc:0 "Those were the days of the uprising of the people\The slaves who had risen up furiously\And died by the hundreds from sabers and shooting\With a mighty shout: "Long live freedom!""
+ ANR_civil_war_finale:0 "Black and red sky"
+ ANR_civil_war_finale_desc:0 ""
+ ANR_after_c_w_bottles:0 "A bottle for each..."
+ ANR_after_c_w_bottles_desc:0 "Now that all beer warehouses and breweries are under our control, alcohol will flow into the people like a river. And even if we wanted to do something about it... We won't do that."
+ ANR_after_c_w_mares:0 "... and a filly for each!"
+ ANR_after_c_w_mares_desc:0 "Our guys did a very good job for the glory of the revolution. They have the right to relax and spend a few stormy nights with the captive Pegasuses."
+ 
+ 
+ 
+ ANR_super_tachanka:0 "All four wheels"
+ ANR_super_tachanka_desc:0" Cars with machine guns attached helped us a lot during the war. Now we can use them to carry out raids on peasant homes in order to forcibly impose a dictatorship of anarchy on everyone."
+ ANR_anarchic_power:0 "Anarchic force"
+ ANR_anarchic_power_desc:0 "WIP"
+ ANR_trin_trava:0 "§R EVERYTHING ELSE IS TRASH-GRASS!§!"
+ ANR_trin_trava_desc:0 "WIP"
+ ANR_dont_touch_its_not_yours:0 "Don't touch it, it's not yours!"
+ ANR_did_you_get_it_good:0 "Did you grab it? Good girl!"
+ ANR_total_celebration:0 "Everyone's drinking!"
+ ANR_total_celebration_desc:0 "It doesn't matter who fought for our revolution and who holed up in the rear. Anarchy is for everyone, and bread is for everyone too!"
+ ANR_only_who_worked:0 "Those who have not worked do not eat"
+ ANR_only_who_worked_desc:0 "If you didn't fight or risk your life, get out! Only veterans can have plenty of rest."
+ ANR_apple:0 "Oh, bullseye"
+ ANR_apple_desc:0 "WIP"
+ ANR_stop_dengi:0 "Stop the money!"
+ ANR_stop_dengi_desc:0 "No money should exist! Money is a tool used by the bourgeoisie to enslave us. But in fact, there is no value in money! And in our territory, only freedom is valued."
+ ANR_stop_state:0 "Stop the state!"
+ ANR_stop_state_desc:0 "For hundreds of years, the state has slowly enslaved the working people. We stopped it! For hundreds of years, the peasants have been fighting to destroy the oppressive system. So let's repeal all the laws of the old regime, abolish borders, and just be happy that each of us is now free to do whatever we want!"
+ ANR_stop_politika:0 "Stop politics!"
+ ANR_stop_politika_desc:0 "Politics is crap invented by the bourgeoisie. No one in the ranks of our resistance has ever been interested in politics, and did this prevent the glorious revolution? On the contrary, it rallied us against a terrible enemy. Politics must be destroyed."
+ ANR_train_anarchy:0 "Steam locomotive 'Anarchy'"
+ ANR_train_anarchy_desc:0 "WIP"
+ ANR_more_guns:0 "Every man for himself"
+ ANR_more_guns_desc:0 "You can't rely on your comrades forever. In other words, you can't ride on other people's backs! How to get a rifle and devour it is always ready, and how to die on the battlefield is so immediately indignant. Let everyone do what they want. In the end, only true revolutionaries will survive."
+ ANR_only_villages:0 "Towns and villages"
+ ANR_only_villages_desc:0 "WIP"
+ ANR_motivated_terror:0 "Motivated terror"
+ ANR_motivated_terror_desc:0 "WIP"
+ ANR_anti_democratic:0 "Anti-liberalization"
+ ANR_anti_democratic_desc:0 "WIP"
+ ANR_anti_neutrality:0 "Anti-monarchization"
+ ANR_anti_neutrality_desc:0 "WIP"
+ ANR_sing_revolution:0 "Sing, revolution!"
+ ANR_sing_revolution_desc:0" The wind is calling\The flame is burning\The sky is singing\ The song is burning:\n "Sing, revolution!""
+ ANR_sing_revolution_tt:0 "Any country we capture will be integrated immediately.§!"
+ ANR_ignore_poverty:0 "Ignore poverty"
+ ANR_ignore_poverty_desc:0 "Over time, the poor will die out."
+ ANR_from_farmers_to_maroders:0 "From farmers to looters"
+ ANR_from_farmers_to_maroders_desc:0 "WIP"
+ ANR_ignore_illiteracy:0 "Ignore illiteracy"
+ ANR_ignore_illiteracy_desc:0 "Illiterates will eventually die out."
+ ANR_support_banditism:0 "Bandit solidarity"
+ ANR_support_banditism_desc:0 "Anarchists... They are also a kind of bandits. So why should we consider robberies and raids as something bad? They shouldn't. These bandits are just continuing the revolution and defending their freedom. Conversely. Let's support the pogroms! Let's support the robberies! Let's support the revolution!"
+
+ 
+ ANR_anarcho_army:0 "Anarcho-army"
+ ANR_anarcho_army_desc:0 "WIP"
+ ANR_international_brigades:0 "International Brigades"
+ ANR_international_brigades_desc:0 "WIP"
+ ANR_sacred_disorganisation:0 "Righteous Disorganization"
+ ANR_sacred_disorganisation_desc:0 "WIP"
+ ANR_theres_many_rifles_in_the_world:0 "There are many rifles in the world..."
+ ANR_THERE_MANY_RIFLES_IN_THE_WORLD_DESC:0 "WIP"
+ ANR_molotov_throwers:0 "Terrorist arsonists"
+ ANR_molotov_throwers_desc:0 "WIP"
+ ANR_ultra_smart:0 "Genius beyond comprehension"
+ ANR_ultra_smart_desc:0 "WIP"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ ### Ideas ###
+ ANR_wild_ride:0 "Wild Ride"
+ ANR_motivation_idea:0 "Motivation!"
+ ANR_ultrasex_idea:0 "Free love!" ANR_drinking_idea
+ ANR_drinking_idea:0 "§More alcohol§!"
+ ANR_drinking_idea_for_all:0 "More alcohol than alcohol!" ANR_only_who_worked_idea
+ ANR_only_who_worked_idea:0 "§RA sea of alcohol§!"
+ ANR_treasure_for_everyone:0 "Everything is mine!"
+ ANR_anarchic_power_idea:0 "The anarchic force of the coming day"
+ ANR_stop_state_idea:0 "There is no state"
+ ANR_stop_politika_idea:0 "No politics"
+ ANR_more_guns_idea:0 "Indiscriminate artisanal production of rifles"
+ ANR_march_to_farsh:0 "March to mince"
+ ANR_sing_revolution_idea:0 "Song of Revolution"
+ ANR_uncontrollable_banditism:0 "Uncontrolled banditry"
+ ANR_uncontrollable_banditism_1:0 "Uncontrolled banditry"
+ ANR_international_revolutionaries:0 "Anarchism in all parts of the world"
+ ANR_desorganisation_idea:0 "Maximum disruption"
+ ANR_farmers_to_raders:0 "Negative social mobility"
+ ANR_farmers_to_raders_desc:0 "The situation with banditry in the country has become so uncontrollable that citizens have to descend to looting and robbery, regardless of what they did in their previous lives."
+ ANR_destroy_occipied_territories:0 "Terror in the occupied territories"
+ ANR_anti_state:0 "We have given you freedom, and we will take away your state"
+ ANR_anti_state_desc:0 "WIP"
+ ANR_civil_war_ignorance:0 "We no longer live in the state"
+ ANR_civil_war_ignorance_desc:0 "If we lived in a state, we would be concerned about the need to rebuild it after the civil war. But why do extra work if there is no state? We're all free. You and me. Don't give a damn about the state. Don't give a damn about the welfare of others.  Get to the bottom of the authorities, spit on their moral standards, create anarchy and muddy them up. Create as much chaos and disorder as you can!"
+ 
+ ### Decisions ##
+ ANR_civil_war_cat:0 "Wartime Massacre"
+ ANR_partizans_decision:0 "Contact the guerrillas"
+ ANR_equipment_decision:0 "Search for gear"
+ ANR_generals_meeting_decision:0 "Hold an extraordinary command meeting"
+ ANR_stability_decision:0 "Feed the civilians in the rear"
+ ANR_war_support_decision:0 "Anarchic songs"
+ ANR_war_support_decision_desc:0 ""A cannon is hitting blindly, a saber is slashing, and a large-winged raven is circling over the battle. The bullet knows exactly who it doesn't like, who it doesn't like, it's lying in the ground.""
+ ANR_beer_politics:0 "Official beer policy"
+ ANR_beer_politics_desc:0 "Number of beers in the cellars: £beer_small_icon §Y[?ANR.beer_variable]§! units\n\n Monthly increase: £beer_small_icon §Y[?ANR.beer_variable_production_var]§! units in a month\n\If it turns out that there is no beer left in our cellars:\n§R-10.00%§! one-time stability\n§R-5.00%§! stability on a monthly basis until stocks are restored\n\R-5.00%\! war support monthly until stocks are restored"
+ ANR_palyenoye_pivo:0 "Palenka"
+ ANR_palyenoye_pivo_desc:0 "Not everyone will like cheap quality beer, but we just don't have it right now!"
+ ANR_stop_palyenoye_pivo:0 "Return normal beer"
+
+ ANR_pegasi_unification:0 "Pegasus Union"
+ 
+ 
+ ### Custom Tooltips ###
+ anr_partisans_tt:0 "§WOrmilia§!, §Ear Hollow§!, §UParadis§!:Create g5 poorly trained and poorly equipped guerrilla divisions!"
+
+ now_drink_beer_flag_tt:0 "From now on, our country will consume £beer_small_icon §Y5 units of beer§! daily"
+ ANR_palyenoye_pivo_tt:0 " Will increase the production of £beer_small_icon beer by §G+10 units.§! per month, but will reduce §R Stability§!, §R Support for the war§! on §R2.50%§! per month and reduce your energy resources! on §R-1000§! per month"
+ need_less_26_bear:0 "In the cellars of £beer_small_icon §Y25 units§! beer or less"
+ need_more_than_99_bear:0 "In the cellars of £beer_small_icon §Y100 units.§! beer or more"
+ ANR_stop_palyenoye_pivo_tt:0 "Will stop the production of burnt beer"
+ minus_5_beer_monthly_tt:0 "£beer_small_icon Monthly beer change: §R-5 units§!"
+ minus_10_beer_monthly_tt:0"£beer_small_icon Monthly beer change: §R-10 units.§!"
+ minus_15_beer_monthly_tt:0 "£beer_small_icon Monthly beer change: §R-15 units§!"
+ plus_5_beer_monthly_tt:0 "£beer_small_icon Monthly beer change: §G+5 units§!"
+ plus_10_beer_monthly_tt:0 "£beer_small_icon Monthly beer change: §G+10 units§!"
+ plus_15_beer_monthly_tt:0 "£beer_small_icon Monthly beer change: §G+15 units§!"
+ plus_100_beer_tt:0"£beer_small_icon Add beer: §G+100 units.§!"
+ plus_75_beer_tt:0 "£beer_small_icon Add beer: §G+75 units§!"
+ plus_50_beer_tt:0"£beer_small_icon Add beer: §G+50 units.§!"
+ plus_25_beer_tt:0 "£beer_small_icon Add beer: §G+25 units§!"
+ minus_100_beer_tt:0"£beer_small_icon Add beer: §R-100 units.§!"
+ 
+ anarchopolis:0 "Anarchopolis"
+ 
+ random_5_states_become_demilitarized_tt:0 "Random" §Five regions§! will they become demilitarized?! Because of the excessive activity of bandits! in them"
+ ### Events ###
+ anr.1.t:0 "Happiness"
+ anr.1.d:0 "Eleferios Politis, known among his supporters as the "Red Flame", drank incessantly. It seemed to him that he was fifty percent beer and vodka (which was partly true), and this morning started especially badly for him.Earlier, he managed to get drunk for a while, but in the end he still found himself in a noisy group of anarchist friends and got drunk to unconsciousness to group drunken songs.\n\nNo... he was sure that everything was under control."
+ anr.1.a:0 "Bring another bottle!"
+
+ anr.2.t:0 "Hot temper"
+ anr.2.d:0 "The supporters of Eleferia were mostly greyhound stallions, but there was one exception. The Pegasus Agalis, nicknamed Pink Ears, was one of the confidants of the leader of the revolution. And despite his attitude towards the fillies, he respected her. What other anarchists should do.During an ordinary and calm day, an unpleasant-looking bandit approached Agalis. He was covered with unshaven stubble, in torn clothes and with a smell of alcohol from his mouth. And he appeared not alone, but with a whole group of the same tramps.\n\n- Hey, baby girl. Isn't that you, my dad's girlfriend?In response, Agalis only looked contemptuously at him and the whole squad. His friends were stupidly smiling and giggling.\n\n- Why are you silent, huh? Or are you more talkative in bed? Come on, we know why Dad's so worried about you. If you're courting him, why not have fun with us? He's alone, always busy. And there's a whole crowd of us, even for the whole night. Eh, guys?\n\The guards laughed approvingly in response.\n\n- Come on, pretty girl, don't break down. We won't hurt you. Even on the contrary, Bandit has already come too close to Agalis. His mouth smelled so strongly of a mixture of vodka and cheap tobacco that she thought she was going to be sick. But in the blink of an eye, the bandit fell to the ground and writhed in pain, clutching at his dignity, which Agalis kicked nobly after completing her combat move. Then she took out her trophy Mauser and shot him right in the eye.Other bandits, as if sobered up, understood everything without words and quickly retreated."
+ anr.2.a:0 "Who else wants to taste the commissar's body?"
+
+ anr.3.t:0 "WIP"
+ anr.3.d:0 "WIP"
+ anr.3.a:0 "WIP"
+
+ anr.4.t:0 ""
+ anr.4.d:0 ""
+ anr.4.a:0""
+
+ anr.5.t:0 "Gulyai Pole"
+ anr.5.d:0 "The civil war ended, and real anarchy began. Most of the militarists were slaughtered during the war, but there were still those who lived and even led the resistance. One of them was none other than Andreas Hurricane.\n\The pig. The bastard. Killer. Words cannot describe him, much less count the crimes that this scum has committed against the freedom of the people. And, fortunately, this vulture was finally caught. He defended the positions in Pegasopolis for a long time, until the garrison ran out of ammunition, and this cowardly rat and his soldiers surrendered.It is natural that only execution awaits him. And our bright father, our inspirer, Eleferiy, must execute him. For such a significant event, a small wooden platform was organized in Pegasopolis so that the pegasi could see what was happening from all sides. Bound by wings and hooves, Hurricane was dragged onto the podium by the anarchists. The crowd shouted and demanded to shoot him immediately, but everyone was waiting for Eleferia.When he finally arrived, a crowd of Pegasi had gathered at the square. There was no room left on the ground, and some viewers had to watch while hovering above the ground. With a sense of triumph, the revolutionary ascended to the former field marshal. The crowd cheered when they saw him.\n\To make his friends even more happy, Eleferius decided to pull off the execution spectacularly. Under the noise of the crowd, he took out his captured revolver, after which he quickly and roughly shoved the barrel into the prisoner's mouth. The impact shattered his two front teeth. Without a word, Eleferius cocked the trigger, and Hurricane's brains flew to the floor. The crowd cheered, throwing their caps up, but Eleferius fired again, this time into the air. So, there will be a fiery speech.\n\n- I wish that everything...\n\nthat he realized that he had not prepared a speech. So, we need to improvise! Ah, though... fuck it. The job has already been done. Eleferius took a bottle out of his shoulder bag and smashed it against Hurricane's lifeless body. The bottle broke, and he started drinking beer right out of it. The beer got into his mouth, but mostly spread over his face, which made him wet, as if he had been caught in the rain.The crowd took this gesture as a good ending for the execution, and a black and red flag was raised over the square. Looking at him, the drunken Eleferius thought..."
+ anr.5.a:0 ""Dirty rag...""
+
+ anr.6.t:0 "Not my concern!"
+ anr.6.d:0 "Eleferiy, as a true anarchist revolutionary, denied any state, and, moreover, denied the concept of "home." Those who are free do not keep anything, and sooner or later the place that you call a small homeland will remind you of itself. That is why Eleferiy never mentioned where he was born or what he did before the revolution, and in principle no one knew. With his small retinue of bandits, he constantly roamed from town to town. The leaders of the revolution had no headquarters, only portable tents. Anyway, he despised those ponies who were attached to their homes more than anyone else.\n\n- Please do something!  The adult pegasus howled, pleading with Eleferia. - They burned down my family's fields, shot my husband because he resisted them, and took my son and daughter with them!\n\n- And?\n\n- I know who they are! They said they were the Ceraris squad! You can find them, right? They'll listen to you, won't they? Will you bring my children back?Eleferiy smoked a pipe with tobacco, which was mixed with many different intoxicating herbs. In a slightly amused tone, he said, "Take off your clothes."\n\n- H-what?..\n\n- Make my boys happy, filly. And then I'll think about it.\n\n- But... me...\n\n- Do you want to save your foals?\n\nThe mask looked around in confusion. Eleferia's comrades were already giggling among themselves, examining the victim. For the next few hours, Pony thought about only one thing: she was doing this for the sake of the children she loved...\n\Panarchists have already had enough of it. Humiliated and depressed, she returned to Eleferius.\n\n- Please.. Do something...\n\n- About what? Who are you, bitch? A. Stop. The one who's looking for kids?\n\Pona nodded in response.\n\n- So did the fuck come to me? Your children, save them yourself. And that's not my concern!\n\Our world has turned upside down. Screaming, she attacked the pegasus, but the bandits' strong hooves dragged her far from the camp and threw her into a puddle of mud.\n\n- Well, shall we shoot the insolent bastard?\n\n- That's how it is... There was no such order.\n\n- Why do I need these orders? Ah. And I made something up. Let me give you a silver coin. Eagle, let's shoot. Tails - do not shoot."
+ anr.6.a:0 "And..."
+ 
+ 
+ 
+ 
+ 
+ 
+ 

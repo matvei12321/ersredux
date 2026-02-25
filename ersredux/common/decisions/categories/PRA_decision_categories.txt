@@ -1,0 +1,32 @@
+PRA_revanshists_cat = {
+	
+	allowed = {
+		tag = PRG
+		NOT = {
+			OR = {
+				has_government = fascism
+				NOT = {
+					has_idea = PRA_revansh
+				}
+				has_civil_war = yes
+			}
+		}
+	}
+
+	icon = GFX_decision_cat_prance_revansh
+	
+	visible = {
+		NOT = {
+			OR = {
+				has_government = fascism
+				NOT = {
+					has_idea = PRA_revansh
+				}
+				has_civil_war = yes
+			}
+		}
+	}
+	visible_when_empty = yes
+	
+	priority = 50
+}

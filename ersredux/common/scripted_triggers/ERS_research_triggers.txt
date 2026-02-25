@@ -1,0 +1,96 @@
+
+is_available_earthpony_tech = {
+	custom_trigger_tooltip = {
+		tooltip = is_available_earthpony_tech_tt
+		OR = {
+			has_idea = pony_race
+			has_idea = earthponies_race
+			38 = {
+				is_core_of = ROOT
+			}
+			121 = {
+				is_core_of = ROOT
+			}
+			123 = {
+				is_core_of = ROOT
+			}
+			97 = {
+				is_core_of = ROOT
+			}
+		}
+	}
+}
+
+is_available_unicorn_tech = {
+	custom_trigger_tooltip = {
+		tooltip = is_available_unicorn_tech_tt
+		OR = {
+			has_idea = pony_race
+			has_idea = unicorns_race
+			12 = {
+				is_core_of = ROOT
+			}
+			29 = {
+				is_core_of = ROOT
+			}
+			74 = {
+				is_core_of = ROOT
+			}
+			70 = {
+				is_core_of = ROOT
+			}
+			75 = {
+				is_core_of = ROOT
+			}
+			166 = {
+				is_core_of = ROOT
+			}
+			153 = {
+				is_core_of = ROOT
+			}
+		}
+	}
+}
+
+is_available_pegasi_tech = {
+	custom_trigger_tooltip = {
+		tooltip = is_available_pegasi_tech_tt
+		OR = {
+			has_idea = pony_race
+			has_idea = pegasi_race
+			66 = {
+				is_core_of = ROOT
+			}
+			68 = {
+				is_core_of = ROOT
+			}
+			170 = {
+				is_core_of = ROOT
+			}
+			175 = {
+				is_core_of = ROOT
+			}
+			59 = {
+				is_core_of = ROOT
+			}
+			14 = {
+				is_core_of = ROOT
+			}
+		}
+	}
+}
+
+is_available_thestral_tech = {
+	custom_trigger_tooltip = {
+		tooltip = is_available_thestral_tech_tt
+		OR = {
+			has_idea = ers_thestral_race
+			30 = {
+				is_core_of = ROOT
+			}
+			16 = {
+				is_core_of = ROOT
+			}
+		}
+	}
+}

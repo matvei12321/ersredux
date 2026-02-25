@@ -1,0 +1,26 @@
+state={
+	id=86
+	name="STATE_86"
+
+	provinces={
+		3561 4933 6513 7958 9894 11445 11493
+	}
+
+	manpower=245600
+	state_category=rural
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = CHL
+		add_core_of = CHL
+		
+		victory_points = { 4933 5 }
+		buildings = {
+			industrial_complex = 1
+		}
+	}
+	
+	resources={
+		steel = 8
+	}
+}

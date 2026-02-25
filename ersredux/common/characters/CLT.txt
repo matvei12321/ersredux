@@ -1,0 +1,177 @@
+characters = {
+	CLT_valentine={
+		name=CLT_valentine
+		portraits={
+			civilian={
+				large = GFX_CLT_valentine
+			}
+		}
+		country_leader={
+			desc="valentine_desc"
+			ideology=esotericism
+			traits={ deranged }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		gender = male
+	}
+	
+	CLT_devourer={
+		name=CLT_devourer
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/CLT/devourer_advisor.tga"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CLT_devourer
+			cost = 100
+			desc = "devourer_desc"
+			allowed = {
+				original_tag = CLT
+			}
+			traits = {
+				ers_devourer
+			}
+		}
+		gender = female
+	}
+	
+	CLT_death={
+		name=CLT_death
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/CLT/death_advisor.tga"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CLT_death
+			cost = 100
+			desc = "clt_5_pony_desc"
+			allowed = {
+				original_tag = CLT
+			}
+			traits = {
+				fifth_vessel
+			}
+		}
+		gender = male
+	}
+	
+	CLT_lost={
+		name=CLT_lost
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/CLT/lost_advisor.tga"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CLT_lost
+			cost = 100
+			desc = "CLT_lost_desc"
+			allowed = {
+				original_tag = CLT
+			}
+			available = {
+				
+			}
+			traits = {
+				ers_lost_trait
+			}
+		}
+		gender = female
+	}
+	
+	CLT_endostazis={
+		name=CLT_endostazis
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/CLT/endostazis_advisor.tga"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CLT_endostazis
+			cost = 100
+			allowed = {
+				original_tag = CLT
+			}
+			traits = {
+				ers_endostasis_trait
+			}
+		}
+		gender = female
+	}
+	
+	ERS_pucci={
+		name=ERS_pucci
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/CLT/pucci_advisor.tga"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ERS_pucci
+			cost = 100
+			allowed = {
+				original_tag = CLT
+			}
+			available = {
+				has_government = democratic
+			}
+		}
+		gender = male
+	}
+	
+	
+	#### Theorists
+	CLT_rosa_maledicta={
+		name=CLT_rosa_maledicta
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/HLR/HLR_necromancer_waifu.tga"
+			}
+			civilian={
+				large="gfx/leaders/DED/Rosa_old.tga"
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = CLT_rosa_maledicta
+			cost = 100
+			desc = "CLT_rosa_maledicta_desc"
+			allowed = {
+				original_tag = CLT
+			}
+			traits = {
+				ers_rose_necromancer_trait
+			}
+		}
+		gender = female
+	}
+	
+	CLT_grimuara={
+		name=CLT_grimuara
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/CLT/grimuara_advisor.tga"
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = CLT_grimuara
+			cost = 100
+			allowed = {
+				original_tag = CLT
+			}
+			traits = {
+				military_theorist
+			}
+		}
+		gender = male
+	}
+}

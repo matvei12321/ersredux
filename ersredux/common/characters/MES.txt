@@ -1,0 +1,18 @@
+characters = {
+	MES_leader={
+		name=MES_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/MES/iolotli.tga"
+			}
+		}
+		country_leader={
+			desc="MES_leader_desc"
+			ideology=tribal_council
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		gender = male
+	}
+}

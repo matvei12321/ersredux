@@ -1,0 +1,53 @@
+capital = 234
+
+set_research_slots = 3
+starting_train_buffer = 4
+
+save_global_event_target_as = umferschtaat_target
+
+oob = "UMF_1007"
+
+recruit_character = UMF_leader_neutrality
+
+add_ideas = { 
+
+	lack_of_scientists3
+	pre_industrial_society
+	poverty5
+	
+	civilian_economy
+	
+	UMF_griffonisation_of_language
+	UMF_griffonisation_of_culture
+	UMF_weak_garrisons
+}
+
+set_technology = {
+	griffon_race = 1
+	melee_weapons = 1
+	melee_weapons1 = 1
+	pre_gw_artillery = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	trench_warfare = 1
+	interwar_antiair = 1
+	base_strike = 1
+}
+actually_fix_weapon_techs = yes #THIS HAS TO BE CALLED IN EVERY HISTORY FILE RIGHT AFTER MAIN set_technology!
+
+set_popularities = {
+	fascism = 45
+	communism = 10
+	neutrality = 45
+}
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1.10.10"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+
+set_stability = 0.65
+set_war_support = 0.5

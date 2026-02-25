@@ -1,0 +1,184 @@
+ideas = {
+
+	country = {
+		CLT_cultists = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			available = {
+				
+			}
+
+			picture = valentine_idea
+
+			modifier = {
+				stability_factor = -0.3
+				war_support_factor = -0.3
+			}
+		}
+		
+		CLT_cultists_1 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			available = {
+				
+			}
+
+			picture = valentine_idea
+
+			modifier = {
+				stability_factor = -0.325
+				war_support_factor = -0.325
+				LOCAL_MANPOWER = 0.1
+			}
+		}
+		
+		CLT_buffalo_slaverty = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			available = {
+				
+			}
+
+			picture = slavery
+
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				monthly_population = -0.02
+			}
+		}
+		
+		CLT_buffalo_slaverty_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			available = {
+				
+			}
+
+			picture = slavery
+
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.05
+				monthly_population = -0.04
+			}
+		}
+	
+		CLT_no_ruling = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			available = {
+				
+			}
+
+			picture = absentee
+
+			modifier = {
+				political_power_factor = -1.0
+			}
+		}
+	
+		CLT_no_ruling_1 = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			available = {
+				
+			}
+
+			picture = absentee
+
+			modifier = {
+				political_power_factor = -0.75
+				COMPLIANCE_GROWTH = 0.05
+				RESISTANCE_GROWTH = 0.1
+			}
+		}
+	
+		CLT_no_ruling_2 = {
+		
+			allowed = {	
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			available = {
+				
+			}
+
+			picture = absentee
+
+			modifier = {
+				political_power_factor = -0.5
+				COMPLIANCE_GROWTH = 0.1
+				RESISTANCE_GROWTH = 0.2
+			}
+		}
+		
+		CLT_no_ruling_3 = {
+		
+			allowed = {	
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			available = {
+				
+			}
+
+			picture = absentee
+
+			modifier = {
+				political_power_factor = -0.25
+				COMPLIANCE_GROWTH = 0.2
+				RESISTANCE_GROWTH = 0.3
+			}
+		}
+	}
+}

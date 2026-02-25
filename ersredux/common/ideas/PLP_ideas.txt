@@ -1,0 +1,50 @@
+ideas = {
+	country= {
+		PLP_no_cities = { 
+
+			removal_cost = -1
+				
+			allowed = {
+				original_tag = PLP
+			}
+	
+			picture = POL_the_peasants_strike
+			
+			modifier = {
+				monthly_population = -0.2
+				stability_factor = -0.25
+			}
+		}
+		
+		PLP_death_everywhere = { 
+
+			removal_cost = -1
+				
+			allowed = {
+				original_tag = PLP
+			}
+			
+			picture = NOR_secret_police_spirit
+			
+			modifier = {
+				political_power_factor = -0.75
+				research_speed_factor = -0.25
+			}
+		}
+		
+		PLP_building_hyperponia = { 
+
+			removal_cost = -1
+				
+			allowed = {
+				original_tag = PLP
+			}
+			
+			picture = plp_hyperponia
+			
+			modifier = {
+			}
+		}
+	}
+
+}

@@ -1,0 +1,44 @@
+﻿units = {
+	division = {
+		name = "Black Wings"
+		location = 11045
+		division_template = "Infanterie Division"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Synovial Opergroup"
+		location = 11045
+		division_template = "Infanterie Division"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Synovial Opergroup"
+		location = 11045
+		division_template = "Infanterie Division"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Synovial Opergroup"
+		location = 11045
+		division_template = "Infanterie Division"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Synovial Opergroup"
+		location = 11045
+		division_template = "Infanterie Division"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Synovial Opergroup"
+		location = 11045
+		division_template = "Infanterie Division"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Synovial Opergroup"
+		location = 11045
+		division_template = "Infanterie Division"
+		start_experience_factor = 0.3 
+	}
+}

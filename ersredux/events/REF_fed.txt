@@ -1,0 +1,227 @@
+add_namespace = REF
+
+country_event = {		
+	id = REF.1
+	immediate = {log = "[Root.GetName]: event REF.1"}
+	title = REF.1.t
+	desc = REF.1.d
+
+	picture = GFX_HRZ_event_writen_mail
+	
+	is_triggered_only = yes
+
+	option = {
+		name = REF.1.a
+		add_ideas = unstable_federation
+	}
+}
+
+country_event = {		
+	id = REF.2
+	immediate = {log = "[Root.GetName]: event REF.2"}
+	title = REF.2.t
+	desc = REF.2.d
+
+	picture = GFX_HRZ_event_writen_mail
+	
+	is_triggered_only = yes
+
+	option = {
+		name = REF.2.a
+		swap_ideas = {
+                remove_idea = unstable_federation
+                add_idea = unstable_federation1
+            }
+	}
+}
+
+country_event = {		
+	id = REF.3
+	immediate = {log = "[Root.GetName]: event REF.3"}
+	title = REF.3.t
+	desc = REF.3.d
+
+	picture = GFX_HRZ_event_writen_mail
+	
+	is_triggered_only = yes
+
+	option = {
+		name = REF.3.a
+		swap_ideas = {
+                remove_idea = unstable_federation1
+                add_idea = unstable_federation2
+            }
+	}
+}
+
+country_event = {		
+	id = REF.4
+	immediate = {log = "[Root.GetName]: event REF.4"}
+	title = REF.4.t
+	desc = REF.4.d
+
+	picture = GFX_HRZ_event_writen_mail
+	
+	is_triggered_only = yes
+
+	option = {
+		name = REF.4.a
+		swap_ideas = {
+                remove_idea = unstable_federation2
+                add_idea = unstable_federation3
+            }
+	}
+}
+
+country_event = {		
+	id = REF.5
+	immediate = {log = "[Root.GetName]: event REF.5"}
+	title = REF.5.t
+	desc = REF.5.d
+
+	picture = GFX_HRZ_event_writen_mail
+	
+	is_triggered_only = yes
+
+	option = {
+		name = REF.5.a
+		swap_ideas = {
+                remove_idea = unstable_federation3
+                add_idea = unstable_federation4
+            }
+	}
+}
+
+country_event = {		
+	id = REF.6
+	immediate = {log = "[Root.GetName]: event REF.6"}
+	title = REF.6.t
+	desc = REF.6.d
+
+	picture = GFX_HRZ_event_writen_mail
+	
+	is_triggered_only = yes
+
+	option = {
+		name = REF.6.a
+		swap_ideas = {
+                remove_idea = unstable_federation4
+                add_idea = unstable_federation5
+            }
+			add_ideas = { corruption_kaza_ref }
+			KAZ = {
+				add_ideas = corruption_kaza
+				}
+			OLV = {
+				add_ideas = bespredel_oleny
+				}
+	}
+}
+country_event = {		
+	id = REF.7
+	immediate = {log = "[Root.GetName]: event REF.7"}
+	title = REF.7.t
+	desc = REF.7.d
+
+	picture = GFX_HRZ_event_writen_mail
+	
+	is_triggered_only = yes
+
+	option = {
+		name = REF.7.a
+			add_ideas = { proletariat_problem }
+	}
+}
+country_event = {		
+	id = REF.8
+	immediate = {log = "[Root.GetName]: event REF.8"}
+	title = REF.8.t
+	desc = REF.8.d
+
+	picture = GFX_HRZ_event_writen_mail
+	
+	is_triggered_only = yes
+
+	option = {
+		name = REF.8.a
+			add_stability = -0.05
+	}
+}
+country_event = {		
+	id = REF.9
+	immediate = {log = "[Root.GetName]: event REF.9"}
+	title = REF.9.t
+	desc = REF.9.d
+
+	picture = GFX_HRZ_event_writen_mail
+	
+	is_triggered_only = yes
+
+	option = {
+		name = REF.9.a
+			remove_ideas = REF_Zeren
+	}
+}
+country_event = {		
+	id = REF.10
+	immediate = {log = "[Root.GetName]: event REF.10"}
+	title = REF.10.t
+	desc = REF.10.d
+
+	picture = GFX_HRZ_event_writen_mail
+	
+	is_triggered_only = yes
+
+	option = {
+		name = REF.10.a
+	}
+}
+country_event = {		
+	id = REF.11
+	immediate = {log = "[Root.GetName]: event REF.11"}
+	title = REF.11.t
+	desc = REF.11.d
+
+	picture = GFX_HRZ_event_writen_mail
+	
+	is_triggered_only = yes
+
+	option = {
+		name = REF.11.a
+			remove_ideas = REF_Estern
+			add_stability = -0.05
+	}
+}
+country_event = {		
+	id = REF.12
+	immediate = {log = "[Root.GetName]: event REF.12"}
+	title = REF.12.t
+	desc = REF.12.d
+
+	picture = GFX_HRZ_event_writen_mail
+	
+	is_triggered_only = yes
+
+	option = {
+		name = REF.11.a
+			add_political_power = -0.05
+	}
+}
+country_event = {		
+	id = REF.13
+	immediate = {log = "[Root.GetName]: event REF.13"}
+	title = REF.13.t
+	desc = REF.13.d
+
+	picture = GFX_HRZ_event_writen_mail
+	
+	is_triggered_only = yes
+
+	option = {
+		name = REF.11.a
+			add_ideas = REF_Ulf_Indor
+			add_stability = 0.05
+			add_ideas = finance_police
+	}
+}
+

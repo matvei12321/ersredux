@@ -1,0 +1,152 @@
+characters={
+	ANR_still_will={
+		name=PGS_still_will
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/ANR/ANR_liria_advisor.tga"
+				large="gfx/leaders/ANR/ANR_red_flame.tga"
+			}
+			civilian={
+				large="gfx/leaders/ANR/ANR_red_flame.tga"
+			}
+		}
+		country_leader={
+			desc="PGS_red_flame_desc"
+			ideology=anarchist_communism
+			traits={ red_flame last_scum }
+			expire="1965.1.1.1"
+		}
+		
+		field_marshal={
+			traits={ media_personality politically_connected pegasi_race_trait }
+			skill=3
+			attack_skill=4
+			defense_skill=2
+			planning_skill=5
+			logistics_skill=2
+			legacy_id=-1
+		}
+		
+	}
+	
+	ANR_liria={
+		name=ANR_liria
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/ANR/ANR_liria_advisor.tga"
+				large="gfx/leaders/ANR/ANR_liriya.tga"
+			}
+			civilian={
+				large="gfx/leaders/ANR/ANR_liriya.tga"
+			}
+		}
+		
+		corps_commander={
+			traits={ offensive_doctrine promising_general pegasi_race_trait }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+		
+	}
+	ANR_orissariy={
+		name=ANR_orissariy
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/ANR/ANR_liria_advisor.tga"
+				large="gfx/leaders/ANR/ANR_bomber.tga"
+			}
+			civilian={
+				large="gfx/leaders/ANR/ANR_bomber.tga"
+			}
+		}
+		
+		corps_commander={
+			traits={ pegasi_race_trait infantry_officer supply_raider politically_connected }
+			skill=2
+			attack_skill= 3
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+		
+	}
+	ANR_odysseya={
+		name=ANR_odysseya
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/ANR/ANR_liria_advisor.tga"
+				large="gfx/leaders/ANR/ANR_choomba.tga"
+			}
+			civilian={
+				large="gfx/leaders/ANR/ANR_choomba.tga"
+			}
+		}
+		
+		corps_commander={
+			traits={ winter_specialist bleeding_heart pegasi_race_trait }
+			skill=1
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+		
+	}
+	
+	ANR_nefroniya={
+		name=ANR_nefroniya
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/ANR/ANR_liria_advisor.tga"
+				large="gfx/leaders/ANR/ANR_nefroniya.tga"
+			}
+			civilian={
+				large="gfx/leaders/ANR/ANR_nefroniya.tga"
+			}
+		}
+		
+		corps_commander={
+			traits={ skilled_staffer pegasi_race_trait }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+		
+	}
+	
+	ANR_pink_ears = {
+		name=ANR_pink_ears
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_unknown_advisor.dds"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = ANR_pink_ears_token
+			allowed = {
+				original_tag = ANR
+			}
+			available = {
+			}
+			on_add = {
+			}
+			traits = {
+				princess_of_red_terror
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+}

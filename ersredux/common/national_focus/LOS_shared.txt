@@ -1,0 +1,626 @@
+shared_focus = {
+	id = LOS_old_new_home_d
+	icon = GFX_goal_los_shield
+	cost = 4
+	available = {
+	}
+	ai_will_do = {
+		factor = 40
+	}
+	x = 9
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LOS_old_new_home_d"
+		add_political_power = 70
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = LOS_monarchist
+	icon = GFX_focus_generic_monarchy_2
+	cost = 4
+	prerequisite = { focus = LOS_old_new_home_d }
+	available = { 
+	}
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LOS_old_new_home_d
+	x = -4
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LOS_old_new_home_d"
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.05
+		}
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = LOS_monarchist_still_believing
+	icon = GFX_focus_generic_home_defense
+	cost = 4
+	prerequisite = { focus =  LOS_monarchist }
+	available = { 
+		NOT = {
+			has_completed_focus = LOS_support_revolution
+		}
+	}
+	ai_will_do = {
+		factor = 40
+	}
+	mutually_exclusive = { focus = LOS_monarchist_no_hope }
+	mutually_exclusive = { focus = LOS_monarchist_no_false_kings }
+	relative_position_id = LOS_monarchist
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LOS_old_new_home_d"
+		add_stability = -0.05
+		custom_effect_tooltip = los_still_believing_tt
+		custom_effect_tooltip = call_to_PGS_tt
+		set_country_flag = los_found_king_flag
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = LOS_monarchist_no_false_kings
+	icon = GFX_goal_new_treaty
+	cost = 6
+
+	prerequisite = { focus =  LOS_monarchist }
+	available = { 
+		has_country_flag = los_false_monarch_flag
+		NOT = {
+			has_completed_focus = LOS_support_revolution
+		}
+	}
+	ai_will_do = {
+		factor = 40
+	}
+	mutually_exclusive = { focus = LOS_monarchist_no_hope }
+	mutually_exclusive = { focus = LOS_monarchist_still_believing }
+	relative_position_id = LOS_monarchist
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LOS_old_new_home_d"
+		country_event = los.1 
+		add_stability = -0.05
+		
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = LOS_monarchist_hail_the_king
+	icon = GFX_goal_tfv_strengthen_commonwealth_ties_pony
+	cost = 4
+	prerequisite = { focus = LOS_monarchist_still_believing focus = LOS_monarchist_no_false_kings }
+	available = { }
+	ai_will_do = {
+		factor = 20
+	}
+	relative_position_id = LOS_monarchist
+	x = -1
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LOS_old_new_home_d"
+		add_stability = 0.1
+		add_political_power = 100
+		add_manpower = 1500
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = LOS_little_trolling
+	icon = GFX_focus_indy_excavations
+	cost = 4
+	prerequisite = { focus = LOS_monarchist_still_believing focus = LOS_monarchist_no_false_kings }
+	available = { }
+	ai_will_do = {
+		factor = 20
+	}
+	relative_position_id = LOS_monarchist
+	x = 1
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LOS_old_new_home_d"
+		66 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = LOS_monarchist_council
+	icon = GFX_goal_government_icon
+	cost = 4
+	prerequisite = { focus = LOS_monarchist_hail_the_king }
+	prerequisite = { focus = LOS_little_trolling }
+	available = { }
+	ai_will_do = {
+		factor = 20
+	}
+	relative_position_id = LOS_monarchist
+	x = -1
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LOS_old_new_home_d"
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.05
+		}
+		add_ideas = LOS_regency_council_1
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = LOS_monarchist_call_to_PGS
+	icon = GFX_goal_authority
+	cost = 4
+	prerequisite = { focus = LOS_monarchist_hail_the_king }
+	prerequisite = { focus = LOS_little_trolling }
+	available = { }
+	ai_will_do = {
+		factor = 20
+	}
+	relative_position_id = LOS_monarchist
+	x = 1
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LOS_old_new_home_d"
+		add_war_support = 0.1
+		41 ={
+			add_claim_by = LOS
+		}
+		95 ={
+			add_claim_by = LOS
+		}
+		96 ={
+			add_claim_by = LOS
+		}
+		125 ={
+			add_claim_by = LOS
+		}
+		99 ={
+			add_claim_by = LOS
+		}
+		68 ={
+			add_claim_by = LOS
+		}
+		los_plus_2_monarchist_var = yes
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = LOS_monarchist_knight_spirit
+	icon = GFX_goal_crown_and_swords
+	cost = 4
+	prerequisite = { focus = LOS_monarchist_council focus = LOS_monarchist_call_to_PGS }
+	available = { }
+	ai_will_do = {
+		factor = 20
+	}
+	relative_position_id = LOS_monarchist
+	x = 0
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LOS_old_new_home_d"
+		add_ideas = LOS_knights
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = LOS_no_radicals
+	icon = GFX_focus_hol_the_foundations_of_defense
+	cost = 4
+	prerequisite = { focus = LOS_old_new_home_d }
+	available = { 
+		OR= {
+			has_completed_focus = LOS_monarchist 
+			has_completed_focus = LOS_democrats
+		}
+	}
+	ai_will_do = {
+		factor = 80
+	}
+	relative_position_id = LOS_old_new_home_d
+
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LOS_old_new_home_d"
+		add_stability = 0.1
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.05
+		}
+		add_ideas = LOS_against_PGS_idea
+		remove_ideas = LOS_national_republicans
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = LOS_pony_rights
+	icon = GFX_goal_constitutional_guarantees
+	cost = 4
+	prerequisite = { focus = LOS_no_radicals }
+	available = { 
+		has_completed_focus = LOS_strenghem_the_government 
+	}
+	ai_will_do = {
+		factor = 30
+	}
+	relative_position_id = LOS_old_new_home_d
+
+	x = 0
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LOS_old_new_home_d"
+		country_event = los.5
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = LOS_monarchist_no_hope
+	icon = GFX_focus_rom_abdicate
+	cost = 4
+	prerequisite = { focus =  LOS_monarchist }
+	available = { }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LOS_old_new_home_d
+	mutually_exclusive = { focus = LOS_monarchist_still_believing } 
+	mutually_exclusive = { focus = LOS_monarchist_no_false_kings }
+	x = -6
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LOS_old_new_home_d"
+		add_stability = 0.05
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.15
+		}
+		custom_effect_tooltip = los_delete_decisions_tt
+		if = {
+				limit = {
+					has_dynamic_modifier = {
+						modifier = LOS_dynamic_monarchy
+					}
+				}
+			remove_dynamic_modifier = { 
+				modifier = LOS_dynamic_monarchy
+			}
+		}
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = LOS_step_forward
+	icon = GFX_goal_ers_peace
+	cost = 4
+	prerequisite = { focus = LOS_pony_rights }
+	available = { 
+		OR = {
+			has_completed_focus = LOS_monarchist_no_hope 
+			has_completed_focus = LOS_monarchist_knight_spirit
+		}
+		has_completed_focus = LOS_invite_friends
+	}
+		
+	ai_will_do = {
+		factor = 80
+	}
+	relative_position_id = LOS_old_new_home_d 
+	x = -0
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LOS_old_new_home_d"
+		custom_effect_tooltip = ers_focus_no_effect
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = LOS_democrats
+	icon = GFX_focus_indy_give_democracy
+	cost = 4
+	prerequisite = { focus = LOS_old_new_home_d }
+	available = { }
+	ai_will_do = {
+		factor = 120
+	}
+	relative_position_id = LOS_old_new_home_d
+	x = 4
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LOS_old_new_home_d"
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = LOS_strenghem_the_government
+	icon = GFX_goal_compassionaite_politics
+	cost = 4
+	prerequisite = { focus = LOS_democrats }
+	available = { }
+	ai_will_do = {
+		factor = 80
+	}
+	relative_position_id = LOS_democrats
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LOS_old_new_home_d"
+		add_political_power = 150
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = LOS_meet_friends_from_pandoria
+	icon = GFX_goal_support_democracy
+	cost = 4
+	prerequisite = { focus = LOS_democrats }
+	available = { }
+	ai_will_do = {
+		factor = 80
+	}
+	relative_position_id = LOS_democrats
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LOS_old_new_home_d"
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.02
+		}
+		ERP = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.02
+			}
+		}
+		add_opinion_modifier = { target = ERP modifier = made_friends }
+		ERP = {
+			add_opinion_modifier = { target = ROOT modifier = made_friends }
+		}
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = LOS_word_freedom
+	icon = GFX_goal_supremacy_of_will
+	cost = 4
+	prerequisite = { focus = LOS_democrats }
+	available = { }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LOS_democrats
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LOS_old_new_home_d"
+		add_stability = 0.1
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.02
+		}
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = LOS_develop_small_business
+	icon = GFX_goal_agricultural_aid_2
+	cost = 4
+	prerequisite = { focus = LOS_support_revolution focus = LOS_no_anarchy }
+	available = { }
+	ai_will_do = {
+		factor = 80
+	}
+	relative_position_id = LOS_democrats
+	x = 1
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LOS_old_new_home_d"
+		add_political_power = 75
+		118 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		119 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = LOS_defence_vs_bandits
+	icon = GFX_desert_gen
+	cost = 4
+	prerequisite = { focus = LOS_meet_friends_from_pandoria focus = LOS_strenghem_the_government focus = LOS_word_freedom }
+	available = { }
+	ai_will_do = {
+		factor = 80
+	}
+	relative_position_id = LOS_democrats
+	x = -1
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LOS_old_new_home_d"
+		66 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = 12885
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = 9567
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = 6464
+			}
+		}
+		118 = {
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = 3414
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = 421
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = 6485
+			}
+		}
+	}
+	search_filters = {  }	
+}
+
+
+shared_focus = {
+	id = LOS_support_revolution
+	icon = GFX_goal_anr_rise_flags
+	cost = 4
+	prerequisite = { focus = LOS_meet_friends_from_pandoria focus = LOS_strenghem_the_government focus = LOS_word_freedom }
+	mutually_exclusive = { focus = LOS_no_anarchy }
+	available = { 
+		NOT = {
+			has_completed_focus = LOS_monarchist_still_believing
+			has_completed_focus = LOS_monarchist_no_false_kings
+		}
+	}
+	ai_will_do = {
+		factor = 1000
+	}
+	relative_position_id = LOS_democrats
+	x = -1
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LOS_old_new_home_d"
+		custom_effect_tooltip = los_can_invade_pgs_civ_war
+		set_country_flag = can_invade_PGS_as_rev
+		add_popularity = {
+			ideology = communism
+			popularity = 0.02
+		}
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = LOS_no_anarchy
+	icon = GFX_focus_indy_pacifist_state
+	cost = 4
+	prerequisite = { focus = LOS_meet_friends_from_pandoria focus = LOS_strenghem_the_government focus = LOS_word_freedom }
+	mutually_exclusive = { focus = LOS_support_revolution }
+	available = { }
+	ai_will_do = {
+		factor = 1000
+	}
+	relative_position_id = LOS_democrats
+	x = 1
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LOS_old_new_home_d"
+		custom_effect_tooltip = los_can_invade_pgs_civ_war_d
+		set_country_flag = can_invade_PGS_as_good
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.02
+		}
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = LOS_invite_friends
+	icon = GFX_focus_indy_agriculture
+	cost = 4
+	prerequisite = { focus = LOS_defence_vs_bandits }
+	prerequisite = { focus = LOS_develop_small_business }
+	available = { }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LOS_democrats
+	x = 0
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LOS_old_new_home_d"
+		add_ideas = LOS_migrants
+		PGS = {
+			add_manpower = -15000
+		}
+	}
+	search_filters = {  }	
+}

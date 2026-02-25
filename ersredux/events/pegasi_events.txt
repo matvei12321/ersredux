@@ -1,0 +1,1609 @@
+﻿add_namespace = pegasi
+add_namespace = pegasi_h
+add_namespace = pegasi_f
+
+
+country_event = {		# Воинский совет
+	id = pegasi.1 
+	immediate = {log = "[Root.GetName]: event pegasi.1"}
+	title = pegasi.1.t
+	desc = pegasi.1.d
+
+	picture = GFX_report_event_military_planning
+	
+	is_triggered_only = yes
+
+	option = {
+		name = pegasi.1.a 
+		add_stability = -0.01
+		ai_chance = {
+			factor = 0
+			modifier = {
+				has_country_flag = bot_dictatorship_flag
+				factor = 100
+			}
+		}
+	}
+	option = {
+		name = pegasi.1.b 
+		add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+		ai_chance = {
+			factor = 0
+			modifier = {
+				has_country_flag = bot_monarchy_flag
+				factor = 100
+			}
+		}
+	}
+	option = {
+		name = pegasi.1.c
+		add_stability = 0.01
+		add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+		ai_chance = {
+			factor = 0
+			modifier = {
+				has_country_flag = bot_peacemakers
+				factor = 100
+			}
+		}
+			
+	}
+}
+
+country_event = {		# солдатский беспредел 
+	id = pegasi.2
+	immediate = {log = "[Root.GetName]: event pegasi.2"}
+	title = pegasi.2.t
+	desc = pegasi.2.d
+	
+	picture = GFX_event_dont_clop
+
+	is_triggered_only = yes
+
+	option = {
+		name = pegasi.2.a 
+		add_stability = -0.01
+		add_popularity = {
+				ideology = fascism
+				popularity = 0.02
+			}
+		ai_chance = {
+			factor = 0
+			modifier = {
+				has_country_flag = bot_dictatorship_flag
+				factor = 100
+			}
+		}
+	}
+	option = {
+		name = pegasi.2.b
+		add_stability = 0.01
+		add_popularity = {
+				ideology = communism
+				popularity = 0.02
+			}
+		ai_chance = {
+			factor = 0
+		}
+	}
+	option = {
+		name = pegasi.2.c
+		add_manpower = -3
+		add_popularity = {
+				ideology = democratic
+				popularity = 0.02
+			}
+		ai_chance = {
+			factor = 0
+			modifier = {
+				has_country_flag = bot_peacemakers
+				factor = 100
+			}
+		}
+	}
+	option = {
+		name = pegasi.2.e
+		add_political_power = -5
+		add_popularity = {
+				ideology = neutrality
+				popularity = 0.02
+			}
+		ai_chance = {
+			factor = 0
+			modifier = {
+				has_country_flag = bot_monarchy_flag
+				factor = 100
+			}
+		}
+	}
+	
+}
+
+country_event = {		# дискуссии с Флаттершай
+	id = pegasi.3
+	immediate = {log = "[Root.GetName]: event pegasi.3"}
+	title = pegasi.3.t
+	desc = pegasi.3.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = pegasi.3.a
+		add_popularity = {
+				ideology = communism
+				popularity = 0.02
+			}
+		ai_chance = {
+			factor = 0
+		}
+	}
+	
+	option = {
+		name = pegasi.3.b
+		add_popularity = {
+				ideology = neutrality
+				popularity = 0.02
+			}
+		ai_chance = {
+			factor = 0
+			modifier = {
+				has_country_flag = bot_monarchy_flag
+				factor = 100
+			}
+		}
+	}
+	option = {
+		name = pegasi.3.c
+		add_popularity = {
+				ideology = democratic
+				popularity = 0.02
+			}
+		ai_chance = {
+			factor = 0
+			modifier = {
+				has_country_flag = bot_peacemakers
+				factor = 100
+			}
+		}
+	}
+}
+
+country_event = {			# Рейды коммунистов
+	id = pegasi.4
+	immediate = {log = "[Root.GetName]: event pegasi.4"}
+	title = pegasi.4.t
+	desc = pegasi.4.d
+
+	picture = GFX_event_ponies_in_battle
+	
+	is_triggered_only = yes
+
+	option = {
+		name = pegasi.4.a
+		hidden_effect = {
+			country_event = { id = pegasi.4 days = 70 }
+		}
+		add_days_mission_timeout = {
+			mission = PGS_civil_war_time
+			days = -30
+		}
+		add_popularity = {
+				ideology = communism
+				popularity = 0.01
+			}
+		add_manpower = -10
+		}
+	
+}
+
+country_event = {	   			# MONARCHY 1
+	id = pegasi.5
+	immediate = {log = "[Root.GetName]: event pegasi.5"}
+	title = pegasi.5.t
+	desc = pegasi.5.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = pegasi.5.a
+		add_popularity = {
+			ideology = neutrality 
+			popularity = 0.03
+		}
+		hidden_effect = {
+			country_event = { id = pegasi.6 days = 14 }
+		}
+	}
+}
+
+country_event = {	   			# MONARCHY 2
+	id = pegasi.6
+	immediate = {log = "[Root.GetName]: event pegasi.6"}
+	title = pegasi.6.t
+	desc = pegasi.6.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = pegasi.6.a
+		add_political_power = -5
+		hidden_effect = {
+			country_event = { id = pegasi.7 days = 10 }
+			}
+		ai_chance = {
+			factor = 90
+		}
+	}
+	option = {
+		name = pegasi.6.b
+		set_country_flag = bad_monarch
+		set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+		add_country_leader_role = {
+				character = PGS_hurrikane
+				promote_leader = yes
+
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = { }
+				}
+			}
+		add_stability = -0.25
+		add_political_power = -100
+		add_ideas = PGS_nedovolstvo
+		
+		LOS = {
+			set_country_flag = los_false_monarch_flag
+		}
+			
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+country_event = {	   			# MONARCHY 3 - FALSE MONARCH
+	id = pegasi.7
+	immediate = {log = "[Root.GetName]: event pegasi.7"}
+	title = pegasi.7.t
+	desc = pegasi.7.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = pegasi.7.a
+		hidden_effect = {
+			country_event = { id = pegasi.8 days = 10 }
+		}
+	}
+}
+
+country_event = {	   			# MONARCHY 4 - REAL MONARCH
+	id = pegasi.8
+	immediate = {log = "[Root.GetName]: event pegasi.8"}
+	title = pegasi.8.t
+	desc = pegasi.8.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = pegasi.8.a
+		country_event = { id = pegasi.9 days = 1 }
+	}
+}
+
+country_event = {	   			# MONARCHY 5 - FINALE
+	id = pegasi.9
+	immediate = {log = "[Root.GetName]: event pegasi.9"}
+	title = pegasi.9.t
+	desc = pegasi.9.d
+
+	is_triggered_only = yes
+
+	option = {						# Legal 
+		name = pegasi.9.a
+		add_stability = 0.15
+		set_country_flag = good_monarch
+		set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+		add_country_leader_role = {
+				character = PGS_christofer
+				promote_leader = yes
+
+				country_leader = {
+					desc = "PGS_christofer_desc"
+					expire = "1965.1.1"
+					ideology = populism
+					traits = { }
+				}
+			}
+		set_party_name = { ideology = neutrality long_name = PGS_legal_dinastiya_party_name_long name = PGS_legal_dinastiya_party_name }
+		
+	}
+	option = {						#Illegal
+		name = pegasi.9.b
+		add_stability = 0.05
+		set_country_flag = good_monarch
+		set_country_flag = bad_monarch
+		set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+		add_country_leader_role = {
+				character = PGS_moondowner
+				promote_leader = yes
+
+				country_leader = {
+					desc = "PGS_moondowner_desc"
+					expire = "1965.1.1"
+					ideology = centrism
+					traits = { }
+				}
+			}
+		set_party_name = { ideology = neutrality long_name = PGS_illegal_dinastiya_party_name_long name = PGS_illegal_dinastiya_party_name }
+		LOS = {
+			set_country_flag = los_false_monarch_flag
+		}
+	}
+	option = {						# Hurrikane
+		name = pegasi.9.c
+		set_country_flag = bad_monarch
+		set_country_flag = PGS_hurrikane_wants_to_be_king_flag
+		set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+		add_country_leader_role = {
+				character =PGS_hurrikane
+				promote_leader = yes
+
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = { }
+				}
+			}
+		add_stability = -0.1
+		add_political_power = -100
+		add_ideas = PGS_nedovolstvo
+		set_party_name = { ideology = neutrality long_name = PGS_hurrikane_dinastiya_party_name_long name = PGS_hurrikane_dinastiya_party_name }
+			LOS = {
+				set_country_flag = los_false_monarch_flag
+			}
+		}
+}
+
+country_event = {	   				# REVOLUTION
+	id = pegasi.10
+	immediate = {
+		log = "[Root.GetName]: event pegasi.10"
+		hidden_effect = {
+			PGS_still_will = {
+				set_nationality = ANR
+			}
+		}
+	}
+	title = pegasi.10.t
+	desc = pegasi.10.d
+	picture = GFX_event_tachanka
+
+	is_triggered_only = yes
+
+	option = {		### Fight as PGS				
+		name = pegasi.10.a
+		ai_chance = {
+			factor = 100
+		}
+		
+		ANR = {
+			add_country_leader_role = {
+				character = PGS_still_will
+				promote_leader = yes
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = anarchist_communism
+					traits = { }
+				}
+			}
+		}
+		PGS_civil_war_start_effect = yes
+			
+		if = {
+				limit = {
+					LOS = {
+						has_country_flag = can_invade_PGS_as_rev
+					}
+				}
+				LOS = {
+					country_event = { id = los.3 days = 1 }
+				}
+		}
+		if = {
+			limit = {
+				LOS = {
+					has_country_flag = can_invade_PGS_as_good
+				}
+			}
+			LOS = {
+				country_event = { id = los.4 days = 1 }
+			}
+		}
+			
+		custom_effect_tooltip = pegasi_civil_war_tt
+		PGS = {
+			add_stability = -0.15
+			add_war_support = 0.2
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					PGS = {
+						is_ai = no
+					}
+				}
+				play_song = "Tryn_trava"
+			}
+		}
+	}
+	
+	option = {		### Fight as ANR	
+		name = pegasi.10.b
+		ai_chance = {
+			factor = 0
+		}
+		PGS_civil_war_start_effect = yes
+		if = {
+				limit = {
+					LOS = {
+						has_country_flag = can_invade_PGS_as_rev
+					}
+				}
+				LOS = {
+					country_event = { id = los.3 days = 1 }
+				}
+		}
+		if = {
+			limit = {
+				LOS = {
+					has_country_flag = can_invade_PGS_as_good
+				}
+			}
+			LOS = {
+				country_event = { id = los.4 days = 1 }
+			}
+		}
+			
+		custom_effect_tooltip = pegasi_civil_war_tt
+		PGS = {
+			add_stability = -0.15
+			add_war_support = 0.2
+		}
+		hidden_effect = {
+			play_song = "Tryn_trava"
+			ANR = { change_tag_from = ROOT	}
+		}
+		
+	}
+}
+			
+				
+
+country_event = {		# Воинский совет - военные инвестиции
+	id = pegasi.11
+	immediate = {log = "[Root.GetName]: event pegasi.11"}
+	title = pegasi.11.t
+	desc = pegasi.11.d
+
+	picture = GFX_event_altar_of_the_fatherland
+	
+	is_triggered_only = yes
+
+	option = {
+		name = pegasi.11.a 
+		add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+		ai_chance = {
+			factor = 0
+			modifier = {
+				has_country_flag = bot_dictatorship_flag
+				factor = 100
+			}
+		}
+	}
+	option = {
+		name = pegasi.11.b 
+		add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+		ai_chance = {
+			factor = 0
+			modifier = {
+				has_country_flag = bot_peacemakers
+				factor = 100
+			}
+		}
+	}
+	option = {
+		name = pegasi.11.c
+		add_stability = 0.01
+		add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+		ai_chance = {
+			factor = 0
+			modifier = {
+				has_country_flag = bot_monarchy_flag
+				factor = 100
+			}
+		}
+	}
+}
+
+country_event = {	   			# ПОКУШЕНИЕ НА СТИЛЛ ВИЛЛА
+	id = pegasi.12
+	immediate = {log = "[Root.GetName]: event pegasi.12"}
+	title = pegasi.12.t
+	desc = pegasi.12.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = pegasi.12.a
+		add_manpower = -2
+		add_political_power = -5
+		add_days_mission_timeout = {
+				mission = PGS_civil_war_time
+				days = -5
+			}
+	}
+}
+
+country_event = {	   			# Fluttershy walk
+	id = pegasi.13
+	immediate = {log = "[Root.GetName]: event pegasi.13"}
+	title = pegasi.13.t
+	desc = pegasi.13.d
+	
+	picture = GFX_event_sun_pegasi
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = pegasi.13.a
+		army_experience = -1
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.03
+		}
+		ai_chance = {
+			factor = 0
+			modifier = {
+				has_country_flag = bot_peacemakers
+				factor = 100
+			}
+		}
+		set_country_flag = PGS_hurrikane_x_fluttershy_flag
+	}
+	
+	option = {
+		name = pegasi.13.b
+		army_experience = 1
+	}
+}
+
+country_event = {	   			# BOT CHOSES THE PATH (in order to not always go for dictatorship focus)
+	id = pegasi.14
+	immediate = {log = "[Root.GetName]: IMPORTANT EVENT pegasi.14"}
+	title = pegasi.14.t
+	desc = pegasi.14.d
+
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = PGS
+		is_ai = yes
+	}
+	mean_time_to_happen = { days = 1 }
+	
+	option = {					# bot dictatorship
+		name = pegasi.14.a
+		ai_chance = {
+			factor = 10
+		}
+		set_country_flag = bot_dictatorship_flag
+	}
+	option = {					# bot monarchy
+		name = pegasi.14.b
+		ai_chance = {
+			factor = 0
+		}
+		set_country_flag = bot_monarchy_flag
+	}	
+	option = {					# bot peacemakers
+		name = pegasi.1c.a
+		ai_chance = {
+			factor = 4
+		}
+		set_country_flag = bot_peacemakers
+	}
+}
+
+country_event = {
+	id = pegasi.15
+	immediate = {log = "[Root.GetName]: event pegasi.15"}
+	title = pegasi.15.t
+	desc = pegasi.15.d
+
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = pegasi.15.a
+		ai_chance = {
+			factor = 10
+		}
+		add_stability = -0.01
+	}
+}
+
+country_event = {	   				# EVENT FOR PRE-CIVIL WAR FOCUS TREE
+	id = pegasi.16
+	immediate = {log = "[Root.GetName]: event pegasi.10"}
+	title = pegasi.16.t
+	desc = pegasi.16.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {						
+		name = pegasi.16.a
+		load_focus_tree = pegasi_civil_war_1_focus_tree
+	}
+}
+
+country_event = {	   				# CHURCH DOES NOT SUPPORT US
+	id = pegasi.17
+	immediate = {log = "[Root.GetName]: event pegasi.17"}
+	title = pegasi.17.t
+	desc = pegasi.17.d
+
+	is_triggered_only = yes
+
+	option = {						
+		name = pegasi.17.a
+		add_political_power = -5
+		add_war_support = -0.05
+		add_stability = -0.05
+	}
+}
+
+country_event = {	   				# CHURCH SUPPORTS US
+	id = pegasi.18
+	immediate = {log = "[Root.GetName]: event pegasi.17"}
+	title = pegasi.18.t
+	desc = pegasi.18.d
+
+	is_triggered_only = yes
+
+	option = {						
+		name = pegasi.18.a
+		add_ideas =  PGS_church_help_idea
+	}
+}
+
+country_event = {
+	id = pegasi.19
+	immediate = {log = "[Root.GetName]: event pegasi.19"}
+	title = pegasi.19.t
+	desc = pegasi.19.d
+
+	is_triggered_only = yes
+
+	option = {						
+		name = pegasi.19.a
+		add_country_leader_role = {
+			character = PGS_fluttershy
+			promote_leader = yes
+			
+			country_leader = {
+				expire = "1965.1.1"
+				desc = "ordopacifism_fluttershy_desc"
+				ideology = ordopacifism
+				traits = {  }
+			}
+		}
+		hidden_effect = {
+			set_country_leader_portrait = {
+				ideology = fascism
+				portrait = GFX_funny_fluttershy
+			}
+			set_cosmetic_tag = PGS_cursed_flatty
+		}
+	}
+}
+
+country_event = {	   				# FLUTTERSHY_WALK_good_monarch
+	id = pegasi.20
+	immediate = {log = "[Root.GetName]: event pegasi.20"}
+	title = pegasi.20.t
+	desc = pegasi.20.d
+
+	picture = GFX_event_sun_pegasi
+	
+	trigger = {
+		NOT = {
+			has_country_flag = PGS_hurrikane_wants_to_be_king_flag
+			has_country_flag = kobayashi
+		}
+		has_country_flag = good_monarch
+		has_country_flag = PGS_hurrikane_x_fluttershy_flag
+	}
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = { days = 5 } 
+
+	option = {						
+		name = pegasi.20.a
+		add_popularity = {
+			ideology = fascism 
+			popularity = -0.01
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.01
+		}
+		hidden_effect = {	
+			retire_character = PGS_hurrikane
+			retire_character = PGS_fluttershy
+		}
+		set_country_flag = kobayashi
+	}
+}
+
+country_event = {	   				# FLUTTERSHY_WALK_bitch_monarch
+	id = pegasi.21
+	immediate = {log = "[Root.GetName]: event pegasi.21"}
+	title = pegasi.21.t
+	desc = pegasi.21.d
+
+	
+	trigger = {
+		NOT = {
+			has_country_flag = PGS_hurrikane_wants_to_be_king_flag
+			has_country_flag = kobayashi
+		}
+		has_country_flag = bad_monarch
+		has_country_flag = PGS_hurrikane_x_fluttershy_flag
+	}
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = { days = 5 } 
+
+	option = {						
+		name = pegasi.21.a
+		add_popularity = {
+			ideology = fascism 
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.02
+		}
+		set_country_flag = kobayashi
+		}
+}
+
+country_event = {	   				# These los pegasus bitches attacked us
+	id = pegasi.22
+	immediate = {log = "[Root.GetName]: event pegasi.22"}
+	title = pegasi.22.t
+	desc = pegasi.22.d
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+
+	option = {						
+		name = pegasi.22.a
+		add_war_support = 0.05
+		load_oob = "PGS_emergency"
+	}
+}
+
+country_event = {	   				# start_tree
+	id = pegasi.23
+	immediate = {log = "[Root.GetName]: event pegasi.23"}
+	title = pegasi.23.t
+	desc = pegasi.23.d
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+
+	option = {						
+		name = pegasi.23.a
+		hidden_effect = {
+			remove_ideas = PGS_civil_war_idea
+			remove_ideas = PGS_workers
+		}
+		add_dynamic_modifier = { 
+			modifier = PGS_civil_war_recovering
+		}
+		set_variable = { pgs_civil_war_stability_factor = -0.3 }
+		set_variable = { pgs_civil_war_consumer_goods_factor = 0.35 }
+		set_variable = { pgs_civil_war_production_speed_buildings_factor = -0.25 }
+		set_variable = { pgs_civil_war_production_factory_efficiency_gain_factor = -0.25 }
+		set_variable = { pgs_civil_war_industrial_capacity_factory = -0.25 }
+		set_variable = { pgs_civil_war_conscription_factor = -0.25 }
+		set_variable = { pgs_civil_war_conscription = -0.1 }
+		add_stability = -0.05
+		add_war_support = -0.05
+		add_political_power = -50
+	}
+}
+
+country_event = {	   				# social recovery after civ war tree
+	id = pegasi.24
+	immediate = {log = "[Root.GetName]: event pegasi.24"}
+	title = pegasi.24.t
+	desc = pegasi.24.d
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+
+	option = {						
+		name = pegasi.24.a	
+		load_focus_tree = pegasi_after_ciwil_war_hurricane
+		set_country_flag = PGS_civil_war_ended
+	}
+}
+
+country_event = {	   				# Fluttershy execution
+	id = pegasi.25
+	immediate = {log = "[Root.GetName]: event pegasi.25"}
+	title = pegasi.25.t
+	desc = pegasi.25.d
+	
+	picture = GFX_event_fluttershy_eleminated
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {						
+		name = pegasi.25.a	
+		add_manpower = -1
+		hidden_effect = {
+			retire_character = PGS_fluttershy
+			scoped_sound_effect = "soundeffect_gun_shot"
+		}
+		if = {
+			limit = {
+				NOT = {	has_global_flag = warcrimes_disabled }
+			}
+			add_to_variable = {
+				ROOT_warcrimes_count = 1
+			}
+		}
+	}
+}
+
+country_event = {	   				# finally_killing_red_flame
+	id = pegasi.26
+	immediate = {log = "[Root.GetName]: event pegasi.26"}
+	title = pegasi.26.t
+	desc = pegasi.26.d
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {						
+		name = pegasi.26.a	
+		add_manpower = -1
+	}
+}
+
+country_event = {	   				# oops, we have no scientists to do this!
+	id = pegasi.27
+	immediate = {log = "[Root.GetName]: event pegasi.26"}
+	title = pegasi.27.t
+	desc = pegasi.27.d
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {						
+		name = pegasi.27.a	
+		if = {
+			limit = {
+				owns_state = 66
+			}
+			add_political_power = 25
+		}
+		if = {
+			limit = {
+				NOT = {
+					owns_state = 66
+				}
+			}
+			add_ideas = PGS_not_enough_scientists
+			LOS = {
+				country_event = { id = pegasi.28 days = 1 }
+			}
+		}
+	}
+}
+
+country_event = {	   				
+	id = pegasi.28
+	immediate = {log = "[Root.GetName]: event pegasi.28"}
+	title = pegasi.28.t
+	desc = pegasi.28.d
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {						
+		name = pegasi.28.a	
+		PGS = {
+			country_event = { id = pegasi.29 days = 2 }
+		}
+	}
+	option = {						
+		name = pegasi.28.b
+		add_manpower = -250
+		add_political_power = -100
+		PGS = {
+			country_event = { id = pegasi.30 days = 2 }
+		}		
+	}
+}
+country_event = {	   						# los will not give us scientists			
+	id = pegasi.29
+	immediate = {log = "[Root.GetName]: event pegasi.29"}
+	title = pegasi.29.t
+	desc = pegasi.29.d
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {						
+		name = pegasi.29.a	
+		add_political_power = -25
+	}
+}
+
+country_event = {	   						# los will give us scientists			
+	id = pegasi.30
+	immediate = {log = "[Root.GetName]: event pegasi.30"}
+	title = pegasi.30.t
+	desc = pegasi.30.d
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {						
+		name = pegasi.30.a	
+		add_political_power = 25
+		remove_ideas = PGS_not_enough_scientists
+		set_country_flag = pgs_dont_need_scientists_flag
+	}
+}
+
+
+
+
+####### Hurricane exclusive events
+country_event = {	   						# going full military		
+	id = pegasi.31
+	immediate = {
+		log = "[Root.GetName]: event pegasi.31"
+		hidden_effect = { scoped_sound_effect = "soundeffect_march" }
+	}
+	title = pegasi.31.t
+	desc = pegasi.31.d
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {						
+		name = pegasi.31.a
+		add_stability = -0.1
+		add_manpower = 150000
+		hidden_effect = { scoped_sound_effect = "soundeffect_march" }
+		
+	}
+}
+
+country_event = {	   						# hurricane atmosphere		
+	id = pegasi.32
+	immediate = {log = "[Root.GetName]: event pegasi.32"}
+	title = pegasi.32.t
+	desc = pegasi.32.d
+	
+	picture = GFX_event_medieval_castle_on_hill
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {						
+		name = pegasi.32.a
+	}
+}
+
+country_event = {	   				# Fluttershy escapes
+	id = pegasi.33
+	immediate = {log = "[Root.GetName]: event pegasi.33"}
+	title = pegasi.33.t
+	desc = pegasi.33.d
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {						
+		name = pegasi.33.a	
+		add_manpower = -1
+		hidden_effect = {
+			retire_character = PGS_fluttershy
+		}
+	}
+}
+
+
+country_event = {	   				# Fluttershy path test event
+	id = pegasi.34
+	immediate = {log = "[Root.GetName]: event pegasi.34"}
+	title = pegasi.34.t
+	desc = pegasi.34.d
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {						
+		name = pegasi.34.a	
+	}
+}
+
+country_event = {	   				# Some workers
+	id = pegasi.35
+	immediate = {log = "[Root.GetName]: event pegasi.35"}
+	title = pegasi.35.t
+	desc = pegasi.35.d
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {						
+		name = pegasi.35.a	
+		add_stability = 0.15
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.01
+		}
+	}
+}
+
+country_event = {	   				# no vneshnyaya politika
+	id = pegasi.36
+	immediate = {log = "[Root.GetName]: event pegasi.36"}
+	title = pegasi.36.t
+	desc = pegasi.36.d
+	
+	picture = GFX_event_great_lakes_forest
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {						
+		name = pegasi.36.a	
+		add_ideas = PGS_no_politics
+	}
+}
+
+country_event = {	   				#Country Recovered
+	id = pegasi.37
+	immediate = { log = "[Root.GetName]: event pegasi.37" }
+	title = pegasi.37.t
+	desc = pegasi.37.d
+	
+	picture = GFX_event_stormlands_nature1
+
+	trigger = {
+		tag = PGS
+		has_completed_focus = PGS_hurricane_political_aftermath
+		check_variable = {
+			pgs_civil_war_consumer_goods_factor = 0
+		}
+		check_variable = {
+			pgs_civil_war_production_speed_buildings_factor = 0
+		}
+		check_variable = {
+			pgs_civil_war_production_factory_efficiency_gain_factor = 0
+		}
+		check_variable = {
+			pgs_civil_war_industrial_capacity_factory = 0
+		}
+		check_variable = {
+			pgs_civil_war_conscription_factor = 0
+		}
+		check_variable = {
+			pgs_civil_war_conscription = 0
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	fire_only_once = yes
+	
+	option = {						
+		name = pegasi.37.a
+		remove_dynamic_modifier = {
+			modifier = PGS_civil_war_recovering
+		}
+		add_political_power = 15
+	}
+}
+
+#country_event = {	   				# war with Ponyold
+#	id = pegasi.37
+#	immediate = {log = "[Root.GetName]: event pegasi.37"}
+#	title = pegasi.37.t
+#	desc = pegasi.37.d
+#	
+#	trigger = {
+#		OR = {
+#			AND = {
+#				tag = PGS
+#				has_completed_focus = PGS_civil_war_the_end
+#			}
+#			AND = {
+#				tag = ANR
+#				has_completed_focus = ANR_civil_war_finale
+#			}
+#		}
+#		PGV = {
+#			is_puppet = NO
+#		}
+#		has_war = NO
+#	}
+#	
+#	mean_time_to_happen = { days = 1 }
+#	fire_only_once = yes
+#	
+#	option = {						
+#		name = pegasi.37.a	
+#		declare_war_on = { target = PGV type = annex_everything }
+#	}
+#}
+#country_event = {	   				# war with Los Pegasus
+#	id = pegasi.38
+#	immediate = {log = "[Root.GetName]: event pegasi.38"}
+#	title = pegasi.38.t
+#	desc = pegasi.38.d
+#	
+#	trigger = {
+#		OR = {
+#			AND = {
+#				tag = PGS
+#				has_completed_focus = PGS_civil_war_the_end
+#			}
+#			AND = {
+#				tag = ANR
+#				has_completed_focus = ANR_civil_war_finale
+#			}
+#		}
+#		LOS = {
+#			exists = yes
+#		}
+#		has_war = NO
+#	}
+#	
+#	mean_time_to_happen = { days = 1 }
+#	fire_only_once = yes
+#	
+#	option = {						
+#		name = pegasi.38.a	
+#		declare_war_on = { target = LOS type = annex_everything }
+#	}
+#}
+
+
+country_event = {	   				# no vneshnyaya politika
+	id = pegasi_h.1
+	immediate = {log = "[Root.GetName]: pegasi_h.1"}
+	title = pegasi_h.1.t
+	desc = pegasi_h.1.d
+	
+	picture = GFX_event_great_lakes_forest
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {						
+		name = pegasi_h.1.a	
+	}
+}
+
+country_event = {	   				# victory day 1
+	id = pegasi_h.2
+	immediate = {
+		hidden_effect = {
+			country_event = { id = pegasi_h.3 days = 365 }
+		}
+		log = "[Root.GetName]: event pegasi_h.2"
+	}
+	title = pegasi_h.2.t
+	desc = pegasi_h.2.d
+	
+	picture = GFX_event_canterlot
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {						
+		name = pegasi_h.2.a
+		country_event = { id = pegasi_h.3 days = 365 }
+	}
+}
+
+country_event = {	   				# victory day 2
+	id = pegasi_h.3
+	immediate = {
+		hidden_effect = {
+			country_event = { id = pegasi_h.3 days = 365 }
+		}
+		log = "[Root.GetName]: event pegasi_h.3"
+	}
+	title = pegasi_h.3.t
+	desc = pegasi_h.3.d
+	
+	picture = GFX_event_canterlot
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {						
+		name = pegasi_h.3.a
+		add_timed_idea = {
+			idea = PGS_victory_day
+			days = 50
+		}
+	}
+}
+
+country_event = {	   				# big military trainings
+	id = pegasi_h.4
+	immediate = { log = "[Root.GetName]: event pegasi_h.4" }
+	title = pegasi_h.4.t
+	desc = pegasi_h.4.d
+	
+	picture = GFX_event_pony_riot
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {						
+		name = pegasi_h.4.a
+	}
+}
+
+country_event = {	   				# two drunk anarchists shot
+	id = pegasi_h.5
+	immediate = { log = "[Root.GetName]: event pegasi_h.5" }
+	title = pegasi_h.5.t
+	desc = pegasi_h.5.d
+	
+	picture = GFX_event_pony_trench
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {						
+		name = pegasi_h.5.a
+	}
+}
+
+country_event = {	   				# paranoya 1
+	id = pegasi_h.6
+	immediate = { log = "[Root.GetName]: event pegasi_h.6" }
+	title = pegasi_h.6.t
+	desc = pegasi_h.6.d
+	
+	picture = GFX_event_pony_soldiers_sunset
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {						
+		name = pegasi_h.6.a
+		hidden_effect = {
+			country_event = { id = pegasi_h.7 days = 40 }
+		}
+		add_power_balance_value = {
+			id = pgs_balance_of_power
+			value = 0.05
+		}
+	}
+}
+
+country_event = {	   				# paranoya 2
+	id = pegasi_h.7
+	immediate = { log = "[Root.GetName]: event pegasi_h.7" }
+	title = pegasi_h.7.t
+	desc = pegasi_h.7.d
+	
+	picture = GFX_event_pony_soldiers_sunset
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {						
+		name = pegasi_h.7.a
+		hidden_effect = {
+			country_event = { id = pegasi_h.8 days = 40 }
+		}
+		add_power_balance_value = {
+			id = pgs_balance_of_power
+			value = 0.05
+		}
+	}
+}
+
+country_event = {	   				# paranoya 3
+	id = pegasi_h.8
+	immediate = { log = "[Root.GetName]: event pegasi_h.8" }
+	title = pegasi_h.8.t
+	desc = pegasi_h.8.d
+	
+	picture = GFX_event_pony_soldiers_sunset
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {						
+		name = pegasi_h.8.a
+		hidden_effect = {
+			country_event = { id = pegasi_h.9 days = 40 }
+		}
+		PGS = {
+			retire_character = PGS_demokridias
+		}
+		add_power_balance_value = {
+			id = pgs_balance_of_power
+			value = 0.05
+		}
+	}
+}
+
+country_event = {	   				# paranoya 4
+	id = pegasi_h.9
+	immediate = { log = "[Root.GetName]: event pegasi_h.0" }
+	title = pegasi_h.9.t
+	desc = pegasi_h.9.d
+	
+	picture = GFX_event_pony_soldiers_sunset
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {						
+		name = pegasi_h.9.a
+		hidden_effect = {
+			country_event = { id = pegasi_h.10 days = 40 }
+		}
+		add_power_balance_value = {
+			id = pgs_balance_of_power
+			value = 0.05
+		}
+	}
+}
+
+country_event = {	   				# paranoya 5
+	id = pegasi_h.10
+	immediate = { log = "[Root.GetName]: event pegasi_h.10" }
+	title = pegasi_h.10.t
+	desc = pegasi_h.10.d
+	
+	picture = GFX_event_pony_soldiers_sunset
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {						
+		name = pegasi_h.10.a
+		hidden_effect = {
+			country_event = { id = pegasi_h.11 days = 40 }
+		}
+		add_power_balance_value = {
+			id = pgs_balance_of_power
+			value = 0.075
+		}
+	}
+}
+
+country_event = {	   				# paranoya 6
+	id = pegasi_h.11
+	immediate = { log = "[Root.GetName]: event pegasi_h.11" }
+	title = pegasi_h.11.t
+	desc = pegasi_h.11.d
+	
+	picture = GFX_event_pony_soldiers_sunset
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {						
+		name = pegasi_h.11.a
+		hidden_effect = {
+			country_event = { id = pegasi_h.12 days = 40 }
+		}
+		add_power_balance_value = {
+			id = pgs_balance_of_power
+			value = 0.075
+		}
+	}
+}
+
+country_event = {	   				# paranoya 7
+	id = pegasi_h.12
+	immediate = { log = "[Root.GetName]: event pegasi_h.12" }
+	title = pegasi_h.12.t
+	desc = pegasi_h.12.d
+	
+	picture = GFX_event_pony_soldiers_sunset
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {						
+		name = pegasi_h.12.a
+		add_power_balance_value = {
+			id = pgs_balance_of_power
+			value = 0.1
+		}
+		add_political_power = 15
+	}
+}
+
+country_event = {	   				# guys from Wingbardy
+	id = pegasi_h.13
+	immediate = { log = "[Root.GetName]: event pegasi_h.12" }
+	title = pegasi_h.13.t
+	desc = pegasi_h.13.d
+	
+	picture = GFX_event_griffon_royal_guard
+
+	trigger = {
+		tag = PGS
+		has_government = fascism
+		has_completed_focus = PGS_big_hunt
+		WNG = {
+			has_government = fascism
+		}
+	}
+	
+	mean_time_to_happen = { days = 20 }
+	fire_only_once = yes
+	
+	option = {						
+		name = pegasi_h.13.a
+		add_political_power = 5
+	}
+}
+
+country_event = {	   				# Hurricane Story - Part 1
+	id = pegasi_h.14
+	immediate = { log = "[Root.GetName]: event pegasi_h.14" }
+	title = pegasi_h.14.t
+	desc = pegasi_h.14.d
+	
+	picture = GFX_event_stormlands_nature1
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {						
+		name = pegasi_h.14.a
+
+	}
+}
+
+
+
+
+
+
+country_event = {	   				# Talking to Eleferiy (Fluttershy)
+	id = pegasi_f.1
+	immediate = { log = "[Root.GetName]: event pegasi_h.11" }
+	title = pegasi_f.1.t
+	desc = pegasi_f.1.d
+	
+	picture = GFX_event_pony_soldiers_sunset
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {						
+		name = pegasi_f.1.a
+		add_days_mission_timeout = {
+			mission = PGS_civil_war_time
+			days = 50
+		}
+		add_popularity = {
+			ideology = communism 
+			popularity = 0.05
+		}
+	}
+}
+
+country_event = {	   				# Talking to Eleferiy (Fluttershy)
+	id = pegasi_f.2
+	immediate = { log = "[Root.GetName]: event pegasi_h.11" }
+	title = pegasi_f.2.t
+	desc = pegasi_f.2.d
+	
+	picture = GFX_event_pony_soldiers_sunset
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {						
+		name = pegasi_f.2.a
+		PGS_release_anarchist_state = yes
+
+	}
+}

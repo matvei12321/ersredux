@@ -1,0 +1,28 @@
+state={
+	id=117
+	name="STATE_117"
+
+	provinces={
+		442 3410 562 9290 11385
+	}
+
+	manpower=155510
+	state_category=pastoral
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = ERP
+		add_core_of = ERP
+		
+		victory_points = { 562 10 }
+		
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	
+	resources={
+		steel=5
+		chromium=13
+	}
+}

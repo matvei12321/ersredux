@@ -1,0 +1,135 @@
+defined_text = {
+	name = hip_khiva_building_stage
+	text = {
+		trigger = {
+			HIP = { has_idea = ers_HIP_khiva_0 }
+		}
+		localization_key = HIP_khiva_stage_1
+	}
+	text = {
+		trigger = {
+			HIP = { has_idea = ers_HIP_khiva_1 }
+		}
+		localization_key = HIP_khiva_stage_2
+	}
+	
+
+
+
+	
+	
+}
+
+defined_text = {
+	name = hip_khiva_incident_chance_loc
+	text = {
+		trigger = {
+			HIP = { 
+				check_variable = {
+					HIP_incident_chance = 0
+				}
+			} 
+		}
+		localization_key = hip_incident_chance_0
+	}
+	text = {
+		trigger = {
+			HIP = { 
+				check_variable = {
+					HIP_incident_chance = 1
+				}
+			} 
+		}
+		localization_key = hip_incident_chance_1
+	}
+	text = {
+		trigger = {
+			HIP = { 
+				check_variable = {
+					HIP_incident_chance = 2
+				}
+			} 
+		}
+		localization_key = hip_incident_chance_2
+	}
+	text = {
+		trigger = {
+			HIP = { 
+				check_variable = {
+					HIP_incident_chance = 3
+				}
+			} 
+		}
+		localization_key = hip_incident_chance_3
+	}
+	text = {
+		trigger = {
+			HIP = { 
+				check_variable = {
+					HIP_incident_chance = 4
+				}
+			} 
+		}
+		localization_key = hip_incident_chance_4
+	}
+	text = {
+		trigger = {
+			HIP = { 
+				check_variable = {
+					HIP_incident_chance = 5
+				}
+			} 
+		}
+		localization_key = hip_incident_chance_5
+	}
+	text = {
+		trigger = {
+			HIP = { 
+				check_variable = {
+					HIP_incident_chance = 6
+				}
+			} 
+		}
+		localization_key = hip_incident_chance_6
+	}
+	text = {
+		trigger = {
+			HIP = { 
+				check_variable = {
+					HIP_incident_chance = 7
+				}
+			} 
+		}
+		localization_key = hip_incident_chance_7
+	}
+	text = {
+		trigger = {
+			HIP = { 
+				check_variable = {
+					HIP_incident_chance = 8
+				}
+			} 
+		}
+		localization_key = hip_incident_chance_8
+	}
+	text = {
+		trigger = {
+			HIP = { 
+				check_variable = {
+					HIP_incident_chance = 9
+				}
+			} 
+		}
+		localization_key = hip_incident_chance_9
+	}
+	text = {
+		trigger = {
+			HIP = { 
+				check_variable = {
+					HIP_incident_chance = 10
+				}
+			} 
+		}
+		localization_key = hip_incident_chance_10
+	}
+}

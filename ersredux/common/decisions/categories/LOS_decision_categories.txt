@@ -1,0 +1,27 @@
+LOS_monarch_cat = {
+	
+	icon = GFX_decision_category_generic_monarchism
+	allowed = {
+		tag = LOS
+		NOT = {
+			has_completed_focus = LOS_monarchist_no_hope
+		}
+	}
+	visible = {
+		
+	}
+	priority = 11
+}
+
+LOS_civil_war_in_our_homeland_cat = {
+	
+	icon = GFX_decision_category_border_war
+	allowed = {
+		tag = LOS
+		
+	}
+	visible = {
+	
+	}
+	priority = 10
+}

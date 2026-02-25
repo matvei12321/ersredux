@@ -1,0 +1,166 @@
+﻿l_english:
+
+
+ 
+ ##### PARTIES
+
+ ##### CHARACTERS
+ OLE_EZ_ixiod_eidrich:0 "Ixiod Eidrich"
+ OLE_EZ_maris_mandelis:0 "Marisa Mandelis"
+ OLE_EZ_oscar_dirlewanderer:0 "Oscar Dirlewanderer"
+ OLE_EZ_oscar_dirlewanderer_desc:0 "Oscar Dirlewanderer was sentenced to life imprisonment five times for crimes of the highest degree, but his connections in military circles miraculously helped him remain free. At one point, Chrysalis' patience ran out, and she personally issued an order to capture the stormtrooper general who served in the Vesalipolis military. However, by that time he had disappeared, and no one had heard anything about him until the puppet regime of Lyctida was established in Olenia. This suggests that Dirlewanderer was on good terms with von Krieger. Good enough for him to hide the criminal and allow him to become one of his closest rulers of the Kingdom of Death."
+ 
+ ##### NATIONAL FOCUS
+ #------start tree
+ OLE_EZ_dawn_of_the_hope:0 "There is no hope in this darkness"
+ OLE_EZ_dawn_of_the_hope_desc:0 "We have failed. We have fallen. We are doomed wretches, we are mere creatures unworthy of life. Now our future is uncertain, and our new masters spare no one in their path. Truly, this is the end for the Olenian nation."
+ OLE_EZ_expluatation:0 "Fight for Extinction"
+ OLE_EZ_expluatation_desc:0 "While Aurantia has given us clear instructions on how we should proceed, Krieger has... his own plans. He enjoys not so much the death of the reindeer, but the fact that they suffer.\nVon Krieger has ordered "competitions" to be held among the Reindeer in the Reindeer settlements. These competitions will include such tests as giving up love and life force, enduring torture, killing one's own kind, marathons through minefields, and much... MUCH more. The reward for victory will be a quick and noble death."
+ OLE_EZ_cages:0 "Wildlife Cages"
+ OLE_EZ_cages_desc:0 "Once we destroyed the deer state, they showed their TRUE nature. Worse than ants - they are disorganized, scurrying back and forth from village to village in panic, fearing for their lives. Just like wild animals. And such wild animals need appropriate cages to herd them into one area."
+ OLE_EZ_destroy_culture:0 "Degenerate Culture"
+ OLE_EZ_destroy_culture_desc:0 "All over the territory of Olenia, castles, temples, shrines, schools, museums were built... An abomination, honestly. The Olenia people consider this a manifestation of culture, but in fact these buildings are worth nothing. Deer have no culture. They are animals, and they could never build such a thing themselves. Can an Olenia man paint a picture? Can he compose a symphony? The answer is obvious: no.\n\nAll an Olenia man is capable of is lighting fires and throwing himself into the flames at will for the sake of his false gods."
+ OLE_EZ_poverty:0 "Take away everything they have"
+ OLE_EZ_poverty_desc:0 "The Oleni have things they absolutely do not deserve. Money, cars, clothes, home furnishings, food. This and much more should be forcibly confiscated from every Oleni settlement."
+ OLE_EZ_flame:0 "Burn everything"
+ OLE_EZ_flame_desc:0 "I will pour kerosene into your eyes."
+ OLE_EZ_wack_woman:0 "Stop the birth"
+ OLE_EZ_wack_woman_desc:0 "The deer females are the source of the cursed contagion, their wombs bearing generations of horror. If any male deer survive, they will die out on their own, but if even one female survives, the deer race will continue to multiply mindlessly until it consumes and destroys the entire world."
+ OLE_EZ_spread_gas:0 "Spread Gas"
+ OLE_EZ_spread_gas_desc:0 "The air itself is poisoned, because wild and harmful animals have coexisted in it for hundreds of years. Such air can only be cleaned in one way..."
+ OLE_EZ_brainwash:0 "Mindwash"
+ OLE_EZ_brainwash_desc:0 "The Oleniians should not consider themselves intelligent beings, because they are not. We will forbid them to think, and we will also instill in them that they are wild animals. In this we will be helped not only by psychological correction of the surviving population, but also by special radio waves developed using the technology of our scientists. This system will be called the "Brain Burner.""
+ OLE_EZ_watchtowers:0 "You are being watched"
+ OLE_EZ_watchtowers_desc:0 "We need to set up watchtowers to monitor the animals so that none of them escape. These watchtowers will be manned by snipers who will shoot poisoned hunting shells at escapees without warning.\nWhen a wild animal escapes from surveillance, it is not good."
+
+ OLE_EZ_burn_sakhara:0 "Test the atomic bomb on Sakara"
+ OLE_EZ_burn_sakhara_desc:0 "A new weapon is being created in the lands of Liktida. Deadly, but extremely expensive - it uses the energy of the atom and magical crystals to create an explosion of unprecedented power. But Krieger has an idea for a more effective weapon, even if no one listens to him. This "dirty atomic bomb" will contain hundreds of thousands of tons of toxic substances, which will spread for kilometers due to the kinetic energy of the explosion. Oskar Dirlewanderer joked that such a bomb would not destroy even cities in one explosion, and Krieger took this as a challenge. We will hastily create a dirty atomic bomb from what we have, and activate it in Sakara. The result should be satisfactory."
+ OLE_EZ_burn_tservus:0 "Bomb Cervus"
+ OLE_EZ_burn_tservus_desc:0 "Lictidian pilots haven't had any direct air combat training since the war. Pilots won't gain any experience at some training airfields... We need to urgently call in squadrons of Lictidian aviation, preferably aircraft that can cause area damage. These aircraft will be allowed to carry out non-training bombings of Cervus. I hope this bastard's semblance of a city will be smashed to smithereens."
+ OLE_EZ_nuke_researches:0 "Squad 241"
+ OLE_EZ_nuke_researches_desc:0 "WIP"
+ OLE_EZ_burn_weiverfront:0 "Wipe the Population of Wavefront"
+ OLE_EZ_burn_weiverfront_desc:0 "Wavefront is a major city bordering Ponjold. The nation of [PGV.getname] is an example of how the filthy hooves of the Olenians can reach other shores. If we had not stopped them, the Olenians would have spread their influence to the entire world. Wavefont, as the center of Olenism's spread to other countries, must be cleansed."
+ OLE_EZ_burn_hjortland:0 "Rape Hjortland"
+ OLE_EZ_burn_hjortland_desc:0 "The capital of Olenia, a stronghold of filth and degeneration. Previously, the local Oleni swarmed here like maggots, worshiping their vile gods of filth and degeneration. Now we will destroy all holy monuments, every relic, and on the altars we will pile up mountains of Oleni corpses. Although... no, this is not enough. The capital of the degenerate people itself must turn into a living hell. Life must no longer appear here, grass must not grow, and the Sun must not illuminate the ruins of Hjortland. A more thorough destruction is needed not only of the Oleni, but of nature itself, which is cursed by filthy paganism."
+ OLE_EZ_toxic_researches:0 "Unit 731"
+ OLE_EZ_toxic_researches_desc:0 "Unit 731 ("Einheit 731") is a special unit of the Anti-Olenia armed forces, engaged in research in the field of biological weapons, experiments are carried out on living Olenia. In this unit, experiments are carried out to determine the amount of time that an Olenia can survive under the influence of various factors (drying out, deprivation of food, deprivation of water, frostbite, exposure to boiling water, electric current, vivisection, etc.)."
+ 
+ OLE_EZ_but_theres_somthing:0 "§RMeater§!" 
+ OLE_EZ_but_theres_somthing_desc:0 "I will kill them all. I will kill every one of them. I will flay them, flay them, tear out their eyes and tongues just to make them understand. Oh yes, one day they will understand. But for now, there is only fate, which I control.\nI am beautiful. I am like an architect! I am a composer, a writer, and a philosopher all rolled into one. I am creating a world where they do not exist. A world that lives by new laws until it destroys itself.\nPerhaps I am God, who has come down here to save the promised land. For I am truly sinless. By my will, all the pagans have burst into flames. I see piles of corpses scattered haphazardly throughout every city in Olenia. I see every city at once. Because they are all the same. The stench from the corpses is already beginning to make my head spin..."
+ OLE_EZ_who_dies_first:0 "Who will die first?"
+ OLE_EZ_who_dies_first_desc:0 "Our soldiers have been raping the surviving Oleni population both physically and mentally for a long time. Let's see if they are ready to accept their fate and give up the territories they have considered theirs for hundreds of years."
+ OLE_EZ_second_wave:0 "Wave 2"
+ OLE_EZ_second_wave_desc:0 "WIP"
+ OLE_EZ_traitors:0 "Deal with the spineless traitors"
+ OLE_EZ_traitors_desc:0 "Reports are coming in of soldiers who are not killing the Deer. They are refusing to do their sacred duty. Bastards, scum, filthy worms - that's what they are. Such nightmare abominations with their sinister intentions of keeping the Deer alive have no place among us. Their place is among the entire barnyard. And they will be slaughtered, like the entire barnyard."
+ OLE_EZ_no_science:0 "Drive the scientists away"
+ OLE_EZ_no_science_desc:0 "Destruction has become more than a simple process - it is now a whole ritual, full of symbols and meaning. Destruction is what this land is, not creation. The Liktida scientists want to come here to study the corpses of the Olenians, but we will not allow them. Scientists are creators who create science, there is no place for them in the land of destruction."
+ OLE_EZ_ritual_samoubiystva:0 "Ritual Self-Sacrifice"
+ OLE_EZ_ritual_samoubiystva_desc:0 "The beasts of this land die like flies, as they should. But the changelings remain alive. The terrible truth is that this land, having become a separate entity, will not tolerate those who believe themselves worthy of life. The Queen will not know this: to save us, we must sacrifice ourselves. You understand - this is a mortal necessity, otherwise she will burst into a thousand fires against us ..."
+ 
+ OLE_EZ_corpses_corpses_corpses_corpses:0 "Corpses, Corpses, Corpses"
+ OLE_EZ_corpses_corpses_corpses_corpses_desc:0 "WIP"
+ OLE_EZ_erase_small_cities:0 "Only Smoking Ruins"
+ OLE_EZ_erase_small_cities_desc:0 "Some cities have already been exterminated of wild animals. No point in keeping a garrison there.\n\nGo home, boys."
+ 
+ OLE_EZ_ill_be_the_one:0 "AND I WILL BECOME THE ONE"
+ OLE_EZ_ill_be_the_one_desc:0 "WIP"
+ OLE_EZ_who_decides_your_fate:0 "WHO WILL DECIDE YOUR FATE"
+ OLE_EZ_who_decides_your_fate_desc:0 "WIP"
+ OLE_EZ_for_your_fate_is:0 "FOR YOUR FATE"
+ OLE_EZ_for_your_fate_is_desc:0 "WIP"
+ OLE_EZ_is_the_fate_of_mine:0 "This is my fate too."
+ OLE_EZ_is_the_fate_of_mine_desc:0 "WIP"
+ 
+ ##### DECISIONS 
+ LYC_uncore_sakhara:0 "Take Sakara from the wild beasts"
+ LYC_uncore_tservus:0 "Take Cervus from the wild beasts"
+ LYC_uncore_hjortland:0 "Take Hjortland from the wild beasts"
+ LYC_EZ_elxburg:0 "Leave Elxburg"
+ LYC_EZ_ishemn:0 "Leave Ishemn"
+ LYC_EZ_feslott:0 "Leave Feslott"
+ LYC_EZ_smalshtag:0 "Leave Smalshtad"
+ 
+ 
+ ##### IDEAS
+ EZ_stop_borning:0 "Hunting for game"
+ EZ_fuck_traitors:0 "Mass executions of traitors"
+ EZ_fuck_science:0 "Expulsion of scientists"
+ EZ_rituals:0 "Ritual self-sacrifice"
+ OLE_always_gasing_idea:0 "Chemical terror"
+ EZ_squad_731:0 "731st"
+ #### OOB
+ 
+ #### COSMETIC TAGS
+ 
+ #### traits
+
+ 
+ #### TOOLTIPS
+ EZ_tt:0 "§RNow the goal of this land is death. Drown, burn, destroy - leave no one.§!"
+ plus_2_olenia_extermination:0 "§C[OLE.getname]§!: increase §Rextermination§! by §G2.00%§!\n"
+ plus_7_5_olenia_extermination:0 "§C[OLE.getname]§!: increase §Rextermination§! by §G7.50%§!\n"
+ plus_10_olenia_extermination:0 "§C[OLE.getname]§!: increase §Rextermination§! by §G10.00%§!\n"
+ plus_20_olenia_extermination:0 "§C[OLE.getname]§!: increase §Rextermination§! by §G20.00%§!\n"
+ OLE_EZ_who_dies_first_tt:0 "Unlocks decisions to increase §RDevastation§! and §Gstripping§! your national territories."
+ OLE_EZ_erase_small_cities_tt:0 "Unlocks decisions to §Yerase§! §Ravages of the savages.§!"
+ 
+ OLE_EZ_spread_gas_tt:0 "Wild Beasts: §G-100§!."
+ OLE_EZ_minus_5000_animals_tt:0 "Wild Beasts: §G-5000§!.\n"
+ OLE_EZ_minus_20000_animals_tt:0 "Wild Beasts: §G-20000§!.\n"
+ OLE_EZ_minus_10000_animals_tt:0 "Wild Beasts: §G-10000§!.\n"
+ 
+ ez_uncoring_ole_territory_flag:0 "Erases national territory"
+ 
+ LYC_EZ_silent_place:0 "The quietest place in the world"
+ 
+ extermination_var_is_25_tt:0 "§RDevastation§! minimum §Y25.00%§!"
+ extermination_var_is_100_tt:0 "Olenia is empty."
+ 
+ delete_all_manpower_tt:0 "§RWild beasts will be declared extinct.§!"
+ extermination_flag:0 "Extermination Zone" 
+ 
+ OLE_EZ_burn_sakhara_tt:0 "\n\n£ole_ez_burning1\n\n\n" 
+ OLE_EZ_burn_tservus_tt:0 "£ole_ez_burning2" 
+ OLE_EZ_burn_weiverfront_tt:0 "£ole_ez_burning3" 
+ OLE_EZ_burn_hjortland_tt:0 "£ole_ez_burning4" 
+ 
+ OLE_EZ_burn_city_tt:0 "\n\n£ole_ez_burning_text_icon\n\n\n\n" 
+ OLE_EZ_nuke_city_tt:0 "\n\n£ole_ez_nuking_text_icon\n\n\n\n" 
+ OLE_EZ_toxic_city_tt:0 "\n\n£ole_ez_toxic_text_icon\n\n\n\n"
+ OLE_EZ_ruins_city_tt:0 "\n\n£ole_ez_ruins_text_icon\n\n\n\n"
+ 
+ OLE_always_gasing_idea_tt:0 "Weekly increase §YDesolation§! by §G1.00%§!"
+ EZ_squad_731_tt:0 "Weekly increase §YDesolation§! by §G0.50%§!"#### GUI
+ 
+ OLE_extermination_name:0 "Olenia's §Rdestruction§!"
+ LYC_EZ_extermination_desc:0 "When the §Rdestruction§! reaches §Y100%§!, the soldiers of Lyctida will abandon Olenia, and Olenia will lose its entire population and become an isolated wasteland."
+ 
+ #### EVENTS
+ 
+ ez.1.t:0 "Fear in their eyes"
+ ez.1.d:0 "Houses were burned, families were killed, the land was poisoned. But this is not enough for Aurantia. We must ensure that Olenia is devastated, that no horned creature dares to tread these lands again.\n\n- Let the mares come out first, as well as the youngest of your brood!\n\nIt has already begun. This band of changelings has occupied and taken upon themselves the task of exterminating all the inhabitants of a small village. The deer were thrown out of their own homes at gunpoint, forcing them to stumble and fall on their disgusting faces in the mud. The villagers were herded into a small square in which they were forced to fit. They were surrounded by several soldiers, ready to shoot them at any moment.\n\n- I repeat once more. MOTHERS AND CHILDREN, COME OUT OF THE CROWD FORWARD!\n\n- Stanter, I suspect that they do not understand our language. Look into their eyes. It is as if they see aliens. They are terrified, they do not understand what is happening.\n\n- Hm.\n\nThey were all huddled in a helpless, noisy bunch. What a pitiful sight.\n\n- Those of you who understand our language, come forward!\n\nChangeling said this menacingly and clearly, and the Deer people fell silent. One came out of the crowd.\n\n- Ha. Ha-ha! The pig came out at the call of the master. Well, how well do you speak our language?\n\n- Please... Don't kill us. We are simple people, we do not need much. Please. We will even give you provisions so that you do not starve. Just do not touch-\n\nChangeling with a tired look took out his revolver. The next moment the deer's body fell into the mud.\n\n- What's the order?\n\n- Start herding them into that big barn over there. I think they'll all fit in there."
+ ez.1.a:0 "And then burn the barn."
+ 
+ ez.2.t:0 "At the Border"
+ ez.2.d:0 "- Are you sure we'll find anything interesting patrolling along the border? It's boring. I suggest we stay at our post.\n\n- Oh, come on! Let's take a walk. Otherwise, you'll spend your entire service sitting at your post.\n\nThe two changelings were guarding a post located near the Lyctidio-Olenia border. But since Olenia capitulated, they were essentially guarding the border between Lyctis and the Lyctidia colony, so nothing interesting was happening. Their walk shouldn't take long.\n\n- Hey, look. What's that?\n\nThere were some peaks visible in the distance. A huge line of peaks sticking out of the ground.\n\n- Oh, that. That's how we demarcate the territory of Lyctis and Olenia. That is, this is there is a border.\n\n- Wait, those aren't just spikes. There's something on them...\n\nThe changelings came closer to the border. And indeed, there were skulls with horns on the spikes.\n\n- Creative, right? Aurantia came up with that. I'd even say...\n\nAnother changeling doubled over - he threw up right there.\n\n- Hm? Come on, that's not so bad.\n\nWipe his face with a napkin, the changeling pointed with his hoof at one of the spikes. There was a whole deer impaled on it. And it seemed to be still alive, despite being pierced with rusty metal. But it seemed the birds didn't think he was alive, and a flock of crows flew down on the body and started pecking at the deer."
+ ez.2.a:0 ""That's not so bad.""
+ 
+ ez.3.t:0 "The Black God"
+ ez.3.d:0 "- I am Death, therefore I exist. I came to this land for one purpose - and that purpose I will fulfill. Then from the bones and ashes a new kingdom will rise, my subjects will be Death and Sorrow. And in the new kingdom I will be known as Veden, and I will be like the gods for all that I have done."\n\nVon Krieger conveniently set up temporary headquarters in the former Olenian temple. When alone, Krieger recited prayers to gods known only to him. Truly, this land was doomed from the moment the Beast set foot on it."
+ ez.3.a:0 "I am Death, I am Destruction."
+ 
+ ez.4.t:0 ""Getting ready for the campaign...""
+ ez.4.d:0 "Near the city of Hovenhamn, there was a sinister concentration camp, of which there had already been a great many in Oleniya. The camp was not set up in the city itself, because the destruction and concentration of gas in it were unbearable for the most steadfast changeling soldiers with the best equipment.\n\nIn the morning, the captured Olenians were brought out into the street. There were several hundred of them or so. Sergeant Gorax was supposed to make a more accurate count. He was young and had an ardent nature, and when the war began, he happily signed up as a volunteer to "experience new sensations in war." He had killed many soldiers and was proud of his superiority. He could shoot any Olenian during a patrol - and nothing would happen to him. With these thoughts, whistling, he continued counting the Olenians lined up in a column. But among he came across something he hadn't expected. A small fawn stood in the column and looked straight at the changeling. Very young, about ten years old. Although Gorax had met deer on the battlefield, this was the first time he had seen such a young fawn so close. And the baby looked at the soldier and mumbled something to himself.\n\n- What are you muttering about? Do you want trouble? Come on, shut up, and no one will do anything to you.\n\nBut the fawn didn't stop. Only then did Gorax realize that he was humming a melody. Strange for a changeling - it seemed both melancholic and encouraging. Not knowing how to stop him, Gorax simply walked on. After passing several prisoners, he heard that they had also begun to hum a melody. So, very soon the entire chain of Deer was singing a folk tune, putting the changelings into a stupor. Over time, the crowd grew bolder, and instead of mooing, the Deer began to humming the words of a song in the Olenian language. The song echoed throughout the camp.\n\nA Olenian collaborator was brought to the camp commander. Although orders from the top were to spare no one, being able to communicate with the crowd of Olenians was very useful.\n\n- What are they doing?\n\n- They are singing, Herr Commander. Singing a song that is as old as the world.\n\n- Is it clear WHAT they are singing?\n\n- It is a song about a young Viking who fell in love with a young Olenian girl. But he decided that he would ignore this feeling and go on a campaign to plunder the lands with his comrades. During the campaign, the Viking sensed that something was wrong and returned to his homeland. There he found that his home had been destroyed, and, more importantly, his love had been stolen by the alien beetles from the east. The song ends with the Viking finally admitting that loves the fawn and vows to go to enemy lands and maybe sacrifice himself to save her.\n\nThe commander looked at the crowd with disdain. The changelings present had different reactions, but it was Gorax who felt something strange when he remembered the baby. Something that did not give him peace.\n\n- I see. I order the garrison to shoot a couple of singers to shut them up.\n\nGorax went to carry out the order. He shot two adult males without any effort, but ran into the baby again. The fawn looked at him with hatred.\n\n- You... It's your fault. It's your fault they were killed. If it weren't for you...\n\nThere was an unnatural tremor in his voice for a soldier."
+ ez.4.a:0 "You just made yourself the worst enemy of Liktida, and there is only one approach to enemies."
+ ez.4.b:0 "Although, you are not guilty of anything."
+ 
+ # ez.5.t:0 "Break Them Down"
+ # ez.5.d:0 "Two snipers in the Hjörtland concentration camp watched the life inside the walls from their tower. It was a common thing for the Olenins to be taken out of their cages and then shot one by one. The two snipers were getting tired of betting on who would die first. And today was the day that the process that had caught their attention began.\n\nAs usual, the Olenins were herded into a bunch and then lined up in several rows. The camp commandant stood in front of the columns of Olenins. The snipers couldn't hear what he was saying, but he was clearly launching into a tirade about something serious. Then a box was brought to him. From the box he took out a bag. It was small, but the snipers could see that there was something alive and moving in it. The commandant raised the bag menacingly, as if threatening to throw him onto the concrete floor, but a certain female deer ran out of the crowd. It was clear that she howled, bowing before the commandant. The snipers found this an absurd and funny sight.\n\nThen the commandant hit the female deer in the face with all his might with his free hoof, pouring verbal dirt on her, as if reproaching her for her misdeed. With the bundle levitating from the magic of his horn, he approached the concrete wall. The female deer, only now recovering from the blow, stood up and screamed so shrilly that the scream of her voice reached the snipers, although the words were still indistinguishable.\n\nThe commandant approached the wall of the camp almost point-blank. Gathering all his strength, he hit the vertical concrete with the sack. Then again, and again, until the sack stopped twitching and was stained with blood from the inside.\n\nThe female deer, looking at this, was silent. An expression of horror and despair froze on her face, and soon she fell to the ground, exhausted.\n\nWhen one of the snipers returned from a break, he told them what had happened. The soldiers who had been watching the process from close range said that it all began like this. Last night, the drone guards found a certain doe hiding a newborn fawn..."
+ # ez.5.a:0 ""Blessed is he who will smash the heads of your babies on a stone.""
+
+ ez.6.t:0 "Nothing else"
+ ez.6.d:0 "A soldier from the western camp number 81 stared boredly at the sky, covered with a black veil. They say that such a sky is everywhere now - it is smoke from fires, bonfires and furnaces in which the corpses of wild animals are being burned right now. Each time his face filled with excitement when he managed to see the sun among the clouds of smoke beam. Periodically this idyll was interrupted by a strong cough - as luck would have it, he was one of those who did not get gas masks. He was forced to inhale unfiltered air poisoned by the stench of chemicals and lead, although the commander claimed that it should not cause much harm to health. A fellow soldier joined him, and now they were both looking at the monotonous black sky.\n\nA few hours later, Hans was already standing on the parade ground with all the other soldiers. Their commander announced that finally all the soldiers could return home. Having announced the gatherings, deadlines and tasks that needed to be completed before departure, the commander dismissed the soldiers.\n\nHere Hans is already collecting his things, and also helping his people in preserving the temporary camp.\n\nSoon he was already rushing to the column of trucks preparing to leave. The soldiers were smoking and discussing something among themselves, and someone was silent, but shared the general joy of the modest smile. Although, Hans could barely see the true emotions of his fellow soldiers through their gas masks. Both the soldiers and the vehicles were treated with some extremely smelly stuff, they said - disinfection. \n \nOn the way, Hans looked out the window of the truck. Sometimes he saw cities, or rather, what was left of them. Black earth and ruins, smoking and empty, flashed and disappeared, reminding him of all the days that Hans spent here. \n \nThat's right. They had sat on this land for too long. The land that was now unofficially called the Dead Land. The column of trucks drove through the iron gates, which then closed forever. \n \nHans had no family and he simply returned to loneliness in his small house. Even when he left the Dead Land, the cough did not leave him, but only got worse, sometimes spitting out blood. \n \nHans did not ask anyone for help. He just lay on bed, looking at the sky through the window and rejoicing that in his last minutes he sees a blue sky."
+ ez.6.a:0 "And no one will come."
+ 

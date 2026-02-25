@@ -1,0 +1,32 @@
+ideas = {
+	political_advisor = {
+
+		MinSVR_ponikin = {
+			picture = MinSVR_ponikin-1047
+			traits = {
+				 war_industrialist
+			}
+		}
+
+		MinSVR_korenilov = {
+			picture = MinSVR_korenilov-1068
+			traits = {
+				 prince_of_terror
+			}
+		}
+
+		MinSVR_sovyonkov = {
+			picture = MinSVR_sovyonkov-1043
+			traits = {
+				 falangist_syndicalist
+			}
+		}
+
+		MinSVR_kolcok = {
+			picture = MinSVR_kolcok-1045
+			traits = {
+				 backroom_backstabber
+			}
+		}
+	}
+}

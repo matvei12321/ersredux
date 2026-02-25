@@ -1,0 +1,19 @@
+characters = {
+	SHA_leader_neutrality={
+		name=SHA_leader_neutrality
+		portraits={
+			civilian={
+				large="gfx/leaders/YAK/yak1.tga"
+			}
+		}
+		country_leader={
+			desc="SHA_leader_neutrality_desc"
+			ideology=theocracy_subideology
+			traits={ occultist }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		gender = male
+	}
+
+}

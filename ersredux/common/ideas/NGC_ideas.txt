@@ -1,0 +1,1059 @@
+ideas = {
+	country= {
+	NGC_Konez = { 
+
+			removal_cost = -1
+			
+			picture = viirasoldat6
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+			weekly_manpower = 750000000
+				
+			}
+		}
+	NGC_Konez_Nwa = { 
+
+			removal_cost = -1
+			
+			picture = GRI_streamlined_air_production 
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+			B
+				army_core_attack_factor = -0.99
+				army_attack_factor = -0.99
+			}
+		}
+	NGC_Aviasia = { 
+
+			removal_cost = -1
+			
+			picture = GRI_streamlined_air_production 
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+			consumer_goods_factor = -0.15
+			}
+			equipment_bonus = {
+				small_plane_airframe = {
+					build_cost_ic = 0.5 instant = yes
+				}
+				cv_small_plane_airframe = {
+					build_cost_ic = 0.5 instant = yes
+				}
+			}
+		}
+		NGC_Aviasia_Baza = { 
+
+			removal_cost = -1
+			
+			picture = GRI_streamlined_air_production 
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+			    experience_gain_air = 0.05
+				air_doctrine_cost_factor = -0.10
+				air_ace_generation_chance_factor = 0.25
+		    }
+		}
+		NGC_Aviasia_Baza1 = { 
+
+			removal_cost = -1
+			
+			picture = GRI_streamlined_air_production 
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+			    experience_gain_air = 0.05
+				air_doctrine_cost_factor = -0.10
+				air_ace_generation_chance_factor = 0.25
+		    }
+			equipment_bonus = {
+				small_plane_airframe = {
+					build_cost_ic = -0.2 instant = yes
+				}
+			}
+		}
+	NGC_deserttribes = { 
+
+			removal_cost = -1
+			
+			picture = NCN_queens_tower_idea 
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+			ai_call_ally_desire_factor = -2500
+			ai_join_ally_desire_factor = -2500
+			}
+		}
+	NGC_Blitcrig = {
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			picture = Camel_Race2
+			modifier = {
+			army_speed_factor = 0.99
+			out_of_supply_factor = -0.75
+			supply_consumption_factor = -0.75
+			ai_focus_aggressive_factor = 100
+			}
+			targeted_modifier = {
+				tag = EMP
+				surrender_limit = -0.999
+			}
+		}
+	NGC_inflatsia = {
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			picture = LEC_staggering_reserves
+			modifier = {
+				political_power_factor = -0.99
+			}
+		}
+		NGC_No_energia = {
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			picture = BAR_science_party
+			modifier = {
+				stability_factor = -0.10
+				research_speed_factor = -0.35
+				local_resources_factor = -0.15
+				PRODUCTION_SPEED_BUILDINGS_FACTOR = -0.20
+				production_factory_efficiency_gain_factor = -0.20
+				production_factory_max_efficiency_factor = -0.20
+			}
+		}
+	NGC_isolatsia = {
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			picture = generic_reserve_divisions
+			modifier = {
+				production_speed_bunker_factor = 0.25
+				production_speed_anti_air_building_factor = 0.25
+				army_core_defence_factor = 0.1
+				MAX_DIG_IN_FACTOR = 2.5
+			}
+		}
+	NGC_Bancs1 = { 
+
+			removal_cost = -1
+			
+			picture = NGC_Banc1
+			allowed_civil_war = {
+				always = yes
+			}
+
+			
+			modifier = {
+			consumer_goods_factor = 0.15
+		
+			}
+		}
+	NGC_Bancs2 = { 
+
+			removal_cost = -1
+			
+			picture = NGC_Banc2
+			allowed_civil_war = {
+				always = yes
+			}
+
+			
+			modifier = {
+			consumer_goods_factor = 0.30
+		
+			}
+		}
+	NGC_Bancs3 = { 
+
+			removal_cost = -1
+			
+			picture = NGC_Banc3
+			allowed_civil_war = {
+				always = yes
+			}
+
+			
+			modifier = {
+			consumer_goods_factor = 0.45
+		
+			}
+		}
+	NGC_Bancs4 = { 
+
+			removal_cost = -1
+			
+			picture = NGC_Banc4
+			allowed_civil_war = {
+				always = yes
+			}
+
+			
+			modifier = {
+			consumer_goods_factor = 0.60
+		
+			}
+		}
+		
+	NGC_Woor = { 
+
+			removal_cost = -1
+			
+			picture = LEC_exhausted_reserves
+			allowed_civil_war = {
+				always = yes
+			}
+
+			
+			modifier = {
+			consumer_goods_factor = 0.25
+		
+			}
+		}
+		
+	NGC_Dobrovolez = { 
+
+			removal_cost = -1
+			
+			picture = CHN_continous_war_plan
+			allowed_civil_war = {
+				always = yes
+			}
+
+			
+			modifier = {
+			weekly_manpower = 19180
+		
+			}
+		}
+		
+	NGC_Smert_mozga = { 
+
+			removal_cost = -1
+			
+			picture = pgs_brain
+			allowed_civil_war = {
+				always = yes
+			}
+
+			
+			modifier = {
+			weekly_manpower = -210
+				stability_factor = -0.60
+				war_support_factor = -0.60
+		
+			}
+		}
+	NGC_Smert_mozga1 = { 
+
+			removal_cost = -1
+			
+			picture = pgs_brain
+			allowed_civil_war = {
+				always = yes
+			}
+
+			
+			modifier = {
+			weekly_manpower = -400
+				stability_factor = 0.60
+				war_support_factor = -0.60
+		
+			}
+		}
+	NGC_Smert_mozga2 = { 
+
+			removal_cost = -1
+			
+			picture = pgs_brain
+			allowed_civil_war = {
+				always = yes
+			}
+
+			
+			modifier = {
+			weekly_manpower = -400
+				stability_factor = -0.60
+				war_support_factor = 0.60
+		
+			}
+		}
+	NGC_Smert_mozga3 = { 
+
+			removal_cost = -1
+			
+			picture = pgs_brain
+			allowed_civil_war = {
+				always = yes
+			}
+
+			
+			modifier = {
+			weekly_manpower = -600
+				stability_factor = 0.900
+				war_support_factor = 0.900
+				industrial_capacity_factory = 0.900
+		
+			}
+		}
+	NGC_Smert_tela = { 
+
+			removal_cost = -1
+			
+			picture = stl_correcting_opinion
+			allowed_civil_war = {
+				always = yes
+			}
+
+			
+			modifier = {
+				industrial_capacity_factory = 0.2
+		
+			}
+		}
+
+		
+		
+	NGC_protivosto_1 = { 
+
+			removal_cost = -1
+			
+			picture = GRI_hat
+			allowed_civil_war = {
+				always = yes
+			}
+
+			
+			modifier = {
+				war_support_factor = 0.05
+				training_time_army_factor = -0.1
+				army_org_factor = 0.05
+		
+			}
+
+		}
+	NGC_protivosto_2 = { 
+
+			removal_cost = -1
+			
+			picture = generic_production_bonus
+			allowed_civil_war = {
+				always = yes
+			}
+
+			
+			modifier = {
+				industrial_capacity_factory = 0.2
+		
+			}
+
+		}
+	NGC_protivosto_3 = { 
+
+			removal_cost = -1
+			
+			picture = STG_collectivization_effort
+			allowed_civil_war = {
+				always = yes
+			}
+
+			
+			modifier = {
+				MONTHLY_POPULATION = 0.4
+		
+			}
+
+		}
+		NGC_left_alone = { 
+
+			removal_cost = -1
+			
+			picture = BOI_idol_of_boreas_lost
+			allowed_civil_war = {
+				always = yes
+			}
+
+			
+			modifier = {
+			surrender_limit = 0.50
+				stability_factor = 0.5
+				war_support_factor = 0.10
+			}
+
+		}
+		NGC_radio_silence = {
+			picture = viira_anarchy_village
+			modifier = {
+				stability_factor = -1.0
+				war_support_factor = -1.0
+				research_speed_factor = -1.0
+				local_resources_factor = -1.0
+				training_time_factor = 1.0
+				PRODUCTION_SPEED_BUILDINGS_FACTOR = -1.0
+				conscription_factor = -1.0
+				INDUSTRIAL_CAPACITY_FACTORY = -1.0
+				industrial_capacity_dockyard = -1.0
+				political_power_factor = -1.0
+				monthly_population = -1.0
+			}
+		}
+		NGC_Plan_V_idea = { 
+			
+			picture = Plan_Dresler
+			allowed = { 
+				tag = NGC
+			}
+
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				weekly_manpower = -48
+				consumer_goods_factor = 0.45
+				
+			}
+
+		}
+			NGC_Skam_idea  = { 
+			
+			picture = mammoth
+			allowed = { 
+				tag = NGC
+			}
+
+			modifier = {
+					consumer_goods_factor = 0.05
+			}
+
+		}
+		NGC_Mobulizasia_idea = { 
+			
+			picture = Mobulizasi
+			allowed = { 
+				tag = NGC
+			}
+
+			modifier = {
+				mobilization_speed = 0.50
+				army_morale_factor = 0.25
+				production_factory_start_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.50
+			}
+
+		}
+		NGC_remember_idea = { 
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = lyc_kill_deers_new
+			
+			targeted_modifier = {
+				tag = GUA
+				attack_bonus_against = 0.10
+			}
+		}
+		
+		NGC_Don_idea = { 
+			
+			picture = DMT_dog_revanchism
+			allowed = { 
+				tag = NGC
+			}
+
+			modifier = {
+				stability_factor = -0.1
+			}
+
+		}
+		
+		NGC_Don1_idea = { 
+			
+			picture = DMT_dog_revanchism
+			allowed = { 
+				tag = NGC
+			}
+
+			modifier = {
+				non_core_manpower = -0.5
+				resistance_decay = -0.05
+				local_resources_factor = -0.1
+				stability_factor = -0.1
+			}
+
+		}
+		NGC_Don2_idea = { 
+			
+			picture = DMT_dog_revanchism
+			allowed = { 
+				tag = NGC
+			}
+
+			modifier = {
+				stability_factor = -0.1
+			}
+
+		}
+			NGC_genocide_idea = { 
+			
+			picture = burning_skull_knife
+			allowed = { 
+				tag = NGC
+			}
+
+			modifier = {
+				monthly_population = 0.1
+				political_power_gain = -0.3
+			}
+
+		}
+		
+		NGC_genocide_idea_Dom_V = { 
+			
+			picture = Generic_Pony_Zebra_Balance
+			allowed = { 
+				tag = NGC
+			}
+
+			modifier = {
+				monthly_population = 0.5
+				stability_factor = -0.3
+			}
+
+		}
+		NGC_Kult_Z = { 
+			
+			picture = EQS_TNO_diminuendo_idea
+			allowed = { 
+				tag = NGC
+			}
+
+			modifier = {
+			    political_power_factor = -0.30
+				mobilization_speed = -0.10
+				conscription_factor = -0.10
+				army_attack_factor = -0.050
+				army_org_factor = -0.050
+				army_morale_factor = -0.050
+			}
+
+		}
+		GC_Kult_EV = { 
+			
+			picture = viira_holy_site
+			allowed = { 
+				tag = NGC
+			}
+
+			modifier = {
+				mobilization_speed = -0.10
+			}
+
+		}
+			NGC_Kult_OP = { 
+			
+			picture = viira_anarchy_village
+			allowed = { 
+				tag = NGC
+			}
+
+			modifier = {
+			    political_power_factor = -0.001
+			}
+
+		}
+		NGC_genocide_Z = { 
+			
+			picture = Voru_Nyw
+			allowed = { 
+				tag = NGC
+			}
+
+			modifier = {
+			    political_power_factor = -0.30
+				mobilization_speed = -0.5
+				conscription_factor = -0.7
+				army_attack_factor = -0.08
+				army_org_factor = -0.27
+				army_morale_factor = -0.05
+				air_chief_cost_factor = 0.5
+				army_chief_cost_factor = 0.8
+				navy_chief_cost_factor = 0.8
+				training_time_factor = 0.9
+			}
+
+		}
+		
+		NGC_genocide_Z1 = { 
+			
+			picture = MQA_Rebellion
+			allowed = { 
+				tag = NGC
+			}
+
+			modifier = {
+				political_power_factor = -0.29
+				mobilization_speed = -0.5
+				conscription_factor = -0.7
+				army_attack_factor = -0.08
+				army_org_factor = -0.27
+				army_morale_factor = -0.05
+				air_chief_cost_factor = 0.3
+				army_chief_cost_factor = 0.3
+				navy_chief_cost_factor = 0.3
+				training_time_factor = 0.9
+			}
+
+		}
+		NGC_genocide_Z2 = { 
+			
+			picture = RAZ_loyal_army
+			allowed = { 
+				tag = NGC
+			}
+
+			modifier = {
+				political_power_factor = -0.35
+				mobilization_speed = -0.5
+				conscription_factor = -0.4
+				army_attack_factor = -0.02
+				army_org_factor = -0.27
+				army_morale_factor = -0.05
+				air_chief_cost_factor = 0.5
+				army_chief_cost_factor = 0.3
+				navy_chief_cost_factor = 0.3
+				training_time_factor = 0.9
+			}
+
+		}
+		NGC_genocide_Z3 = { 
+			
+			picture = NGC_plox
+			allowed = { 
+				tag = NGC
+			}
+
+			modifier = {
+				political_power_factor = -0.40
+				mobilization_speed = -0.2
+				army_attack_factor = -0.03
+				air_chief_cost_factor = 0.3
+				army_chief_cost_factor = 0.3
+				navy_chief_cost_factor = 0.3
+			}
+
+		}
+				NGC_genocide_Z4 = { 
+			
+			picture = army_ready
+			allowed = { 
+				tag = NGC
+			}
+
+			modifier = {
+				political_power_factor = -0.20
+				army_attack_factor = 0.05
+				mobilization_speed = 0.10
+				training_time_factor = -0.2
+				
+			}
+
+		}
+		NGC_genocide_Iskra= { 
+			
+			picture = Scientists
+			allowed = { 
+				tag = NGC
+			}
+
+			modifier = {
+				research_speed_factor = 0.1
+			}
+			research_bonus = {
+				chemical_warfare_category = 0.10
+			}
+		}
+		
+		NGC_genocide_Koll= { 
+			
+			picture = collaborators
+			allowed = { 
+				tag = NGC
+			}
+
+			modifier = {
+				resistance_decay = +0.001
+			}
+
+		}
+		NGC_genocide_Koll1= { 
+			
+			picture = collaborators
+			allowed = { 
+				tag = NGC
+			}
+
+			modifier = {
+				non_core_manpower = +0.020
+				resistance_decay = +0.050
+			}
+
+		}
+		NGC_jagers_of_NGC = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+				tag = NGC
+			}
+
+			picture = Commissioner_Cain
+			
+			modifier ={
+				special_forces_min = 24
+				SPECIAL_FORCES_NO_SUPPLY_GRACE = 48
+				SPECIAL_FORCES_ATTACK_FACTOR = 0.1
+				SPECIAL_FORCES_DEFENCE_FACTOR = 0.1
+				political_power_gain = -0.45
+				SPECIAL_FORCES_CAP = 0.1
+				SPECIAL_FORCES_TRAINING_TIME_FACTOR = 0.1
+			}
+			
+		}
+		NGC_genocide_V = { 
+			
+			picture = union
+			allowed = { 
+				tag = NGC
+			}
+
+			modifier = {
+				monthly_population = +0.1
+				political_power_gain = +0.3
+			}
+
+		}
+		NGC_genocide_V1 = { 
+			
+			picture = union
+			allowed = { 
+				tag = NGC
+			}
+             
+			modifier = {
+				monthly_population = +0.1
+				political_power_gain = +0.3
+			}
+			targeted_modifier = {
+				tag = CHN
+				cic_to_target_factor = 0.25
+				mic_to_target_factor = 0.25
+				extra_trade_to_target_factor = 0.5
+				trade_cost_for_target_factor = -0.5
+			}
+
+		}
+		NGC_genocide_V2 = { 
+			
+			picture = union
+			allowed = { 
+				tag = NGC
+			}
+
+			modifier = {
+				monthly_population = +0.1
+				political_power_gain = +0.3
+				resistance_damage_to_garrison = -0.2
+				army_org_factor = 0.05
+				planning_speed = 0.1
+				experience_gain_army_factor = 0.1
+				
+			}
+			targeted_modifier = {
+				tag = CHN
+				cic_to_target_factor = 0.25
+				mic_to_target_factor = 0.25
+				extra_trade_to_target_factor = 0.5
+				trade_cost_for_target_factor = -0.5
+			}
+
+		}
+		
+		NGC_IdVoznesenie= { 
+			
+			picture = chn_high_puppet
+			allowed = { 
+				tag = NGC
+			}
+
+			modifier = {
+				monthly_population = -0.25
+				weekly_manpower = -100
+			}
+
+		}
+		NGC_W_Rok_idea = { 
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = W_Roks
+			
+			targeted_modifier = {
+				tag = ROK
+				attack_bonus_against = 0.20
+			}
+		}
+		NGC_Woda_idea = { 
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = EQS_TNO_cleanse_hives_idea
+			
+			targeted_modifier = {
+				tag = NCN
+				attack_bonus_against = 0.20
+			}
+		}
+		NGC_Mertvtz_idea = { 
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = EQS_TNO_diminuendo_idea
+			
+			targeted_modifier = {
+				tag = YGY
+				attack_bonus_against = 0.20
+			}
+		}
+		NGC_W_biz_idea = { 
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = lyc_kill_deers_new
+			
+			targeted_modifier = {
+				tag = BUF
+				attack_bonus_against = 0.20
+			}
+		}
+		NGC_slave_pony = {
+			available = {
+			}
+			picture = idea_prc_low_popular_support
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.025
+			}
+		}
+		
+		NGC_Kolonia = {
+			available = {
+			}
+			picture = CTL_service
+			removal_cost = -1
+			targeted_modifier = {
+				tag = NGC
+				cic_to_target_factor = 0.25
+				mic_to_target_factor = 0.25
+				extra_trade_to_target_factor = 0.5
+				trade_cost_for_target_factor = -0.5
+			}
+		}
+		NGC_Tiw = {
+			available = {
+			}
+			picture = ANG_the_black_claw
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+		NGC_Wera_YGY = {                  
+			available = {
+			}
+			picture = HIP_f_coin
+			removal_cost = -1
+			modifier = {
+				mobilization_speed = -.5
+				conscription_factor = -0.1
+				army_attack_factor = -0.05
+				army_org_factor = -0.05
+				army_morale_factor = -0.05
+			}
+			targeted_modifier = {
+				tag = YGY
+				attack_bonus_against = -0.20
+			}
+		}
+		NGC_Wera_Heittal = {
+			available = {
+			}
+			picture = griffon_army_unhappy
+			removal_cost = -1
+			modifier = {
+				mobilization_speed = -.5
+				conscription_factor = -0.1
+				army_attack_factor = -0.05
+				army_org_factor = -0.05
+				army_morale_factor = -0.05
+			}
+		}
+		
+		NGC_Wera_GYB = {
+			available = {
+			}
+			picture = MAF_Black_hat
+			removal_cost = -1
+		    modifier = {
+				mobilization_speed = +.5
+				conscription_factor = +0.1
+				army_attack_factor = 0.05
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+			}
+		}
+		
+		NGC_puppet_economic_control = {
+			picture = SOV_scientist_defect
+			allowed = {
+			}
+			available = {
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				master_ideology_drift = 0.05
+			}
+			
+			targeted_modifier = {
+				tag = CHN
+				cic_to_target_factor = 0.25
+				mic_to_target_factor = 0.25
+				extra_trade_to_target_factor = 0.5
+				trade_cost_for_target_factor = -0.5
+			}
+		}
+		
+		NGC_changeling_advisors_idea = {
+         picture = german_advisors
+
+			modifier = {
+				political_power_factor = -0.10
+				resistance_damage_to_garrison = -0.2
+				army_org_factor = 0.05
+				planning_speed = 0.1
+				experience_gain_army_factor = 0.1
+				autonomy_gain_global_factor = -0.1
+			}
+		}
+		NGC_Blada_idea = {
+         picture = money_money 
+
+			modifier = {
+				stability_factor = +0.5
+				consumer_goods_factor = 0.35
+			}
+		}
+
+	NGC_Wostanie = {
+         picture = NLR_bats3_idea
+
+			modifier = {
+				stability_factor = +0.5
+				consumer_goods_factor = 0.35
+			}
+		}
+		NGC_Intervensia = {
+         picture = PLB_armyreorg
+
+			modifier = {
+				stability_factor = +0.5
+				consumer_goods_factor = 0.35
+			}
+		}
+		NGC_Neitrall = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = PLB_what
+			removal_cost = -1
+			modifier ={
+				war_support_factor = 0.05
+				ai_call_ally_desire_factor = -2500
+				ai_join_ally_desire_factor = -2500
+			}
+			
+		}
+		
+		
+	}
+	
+	
+	
+	
+	country= {
+		wild_south_west = { 							# all south-west countries
+
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = outlaw_economy
+			
+			modifier = {
+				production_speed_buildings_factor = -0.1
+				research_speed_factor = -0.05
+				heat_attrition = -0.15
+				war_support_factor = 0.05
+			}
+
+		}
+	}
+}

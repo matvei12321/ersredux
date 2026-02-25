@@ -1,0 +1,35 @@
+state={
+	id=50
+	name="STATE_50"
+
+	provinces={
+		937 953 982 984 3922 3924 6799 6889 6957 9557 9572 11845
+	}
+
+	manpower=959900
+	buildings_max_level_factor=1.00
+	state_category=town
+
+	history={
+		owner = SIR
+		add_core_of = SIR
+
+		victory_points = { 9572 10 }
+		victory_points = { 6957 5 }
+		victory_points = { 982 5 }
+
+		buildings = {
+			arms_factory = 2
+
+			9572 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	resources={
+		aluminium = 3
+		steel = 9
+		rubber = 4
+	}
+}

@@ -1,0 +1,22 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ending_base_bg"
+		texturefile = "gfx/interface/ending/ending_base.tga"
+	}
+	
+	
+	
+	
+	
+	
+	spriteType = {
+		name = "GFX_ending_burning_village"
+		texturefile = "gfx/interface/ending/ending_pictures/ending_burning_village.tga"
+	}
+	spriteType = {
+		name = "GFX_ending_windigo"
+		texturefile = "gfx/interface/ending/ending_pictures/wendigo_ending.tga"
+	}
+	
+	
+}

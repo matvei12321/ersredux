@@ -1,0 +1,19 @@
+﻿air_wings = {
+	1139 = {
+		medium_airship_airframe_0 = {
+			owner = "THU"
+			amount = 100
+			version_name = "Early Medium Airship"
+		}
+		medium_airship_airframe_0 = {
+			owner = "THU"
+			amount = 88
+			version_name = "Early Medium Airship"
+		}
+		large_airship_airframe_0 = {
+			owner = "THU"
+			amount = 72
+			version_name = "Early Heavy Airship"
+		}
+	}
+}

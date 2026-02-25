@@ -1,0 +1,16 @@
+characters={
+	SCM_Rooby_moore={
+		name=SCM_Rooby_moore
+		portraits={
+			civilian={
+				large="gfx/leaders/SCM/Rooby_moore.tga"
+			}
+		}
+		gender = female
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

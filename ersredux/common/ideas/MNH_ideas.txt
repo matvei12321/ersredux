@@ -1,0 +1,132 @@
+ideas = {
+	country= {
+		MNH_no_army = {
+			picture = mnh_pmc
+			removal_cost = -1
+			allowed = {
+				original_tag = MNH
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				custom_modifier_tooltip = MNH_no_army_tt
+				CONSCRIPTION_FACTOR = -0.1
+				fascism_drift = 0.01
+				COMMAND_ABILITIES_COST_FACTOR = 0.15
+				XP_GAIN_ARMY_FACTOR = -0.1
+			}
+			on_add = {
+				country_lock_all_division_template = yes
+			}
+			on_remove = {
+				country_lock_all_division_template = no
+			}
+			
+		}
+		
+		
+		MNH_no_army_upgraded = {
+			picture = mnh_pmc
+			removal_cost = -1
+			allowed = {
+				original_tag = MNH
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				custom_modifier_tooltip = MNH_no_army_tt
+				CONSCRIPTION_FACTOR = -0.1
+				fascism_drift = 0.02
+				XP_GAIN_ARMY_FACTOR = -0.05
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+			}
+			on_add = {
+				country_lock_all_division_template = yes
+			}
+			on_remove = {
+				country_lock_all_division_template = no
+			}
+			
+		}
+		
+		
+		MNH_money_society_idea = {
+			picture = ancap_boi
+			removal_cost = -1
+			allowed = {
+				original_tag = MNH
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = 0.25
+				trade_laws_cost_factor = 0.1
+				economy_cost_factor = 0.1
+				political_advisor_cost_factor = -0.05
+				research_speed_factor = -0.05
+				materiel_manufacturer_cost_factor = 0.1
+				industrial_concern_cost_factor = 0.1
+			}
+		} 		
+		
+		MNH_fnf_leadership = {
+			picture = mnh_ff
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			available = {
+			
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				local_resources_factor = 0.05
+				political_power_factor = 0.05
+				drift_defence_factor = -0.15
+			}
+		}
+		
+		MNH_trading_for_buyer = {
+			picture = world_traiding
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			available = {
+				NOT = {
+					has_war_with = MNH
+				}
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				consumer_goods_factor = 0.1e
+			}
+		}
+		
+		MNH_guards_of_federation_idea = {
+			picture = ancap_boi
+			removal_cost = -1
+			allowed = {
+				original_tag = MNH
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				non_core_manpower = 0.03
+				resistance_growth = -0.1
+				resistance_garrison_penetration_chance = -0.1
+				resistance_damage_to_garrison = -0.1
+			}
+		} 	
+	}
+}

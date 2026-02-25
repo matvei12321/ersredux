@@ -1,0 +1,2805 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_cal_war_bet_pon"
+		texturefile = "gfx/interface/goals/GUA/cal_war_bet_pon.dds"
+	}
+	spriteType = {
+		name = "GFX_generic_stable_government"
+		texturefile = "gfx/interface/goals/GUA/generic_stable_government.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_hmd_queen_head"
+		texturefile = "gfx/interface/goals/HMD/goal_hmd_queen_head.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_hmd_eyes"
+		texturefile = "gfx/interface/goals/HMD/goal_hmd_eyes.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_hmd_skulls"
+		texturefile = "gfx/interface/goals/HMD/goal_hmd_skulls.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_hmd_cells"
+		texturefile = "gfx/interface/goals/HMD/goal_hmd_cells.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_hmd_hive_cell_1"
+		texturefile = "gfx/interface/goals/HMD/goal_hmd_hive_cell_1.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_hmd_hive_cell_2"
+		texturefile = "gfx/interface/goals/HMD/goal_hmd_hive_cell_2.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_hmd_hive_cell_3"
+		texturefile = "gfx/interface/goals/HMD/goal_hmd_hive_cell_3.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_hmd_hive_cell_4"
+		texturefile = "gfx/interface/goals/HMD/goal_hmd_hive_cell_4.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_hmd_hive_cell_5"
+		texturefile = "gfx/interface/goals/HMD/goal_hmd_hive_cell_5.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_hmd_hive_cell_6"
+		texturefile = "gfx/interface/goals/HMD/goal_hmd_hive_cell_6.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_hmd_hive_cell_7"
+		texturefile = "gfx/interface/goals/HMD/goal_hmd_hive_cell_7.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_hmd_hive_cell_8"
+		texturefile = "gfx/interface/goals/HMD/goal_hmd_hive_cell_8.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_hmd_hive_cell_9"
+		texturefile = "gfx/interface/goals/HMD/goal_hmd_hive_cell_9.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_hmd_hive_cell_10"
+		texturefile = "gfx/interface/goals/HMD/goal_hmd_hive_cell_10.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_hmd_hive_cell_11"
+		texturefile = "gfx/interface/goals/HMD/goal_hmd_hive_cell_11.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_hmd_hive_cell_12"
+		texturefile = "gfx/interface/goals/HMD/goal_hmd_hive_cell_12.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_hmd_hive_cell_13"
+		texturefile = "gfx/interface/goals/HMD/goal_hmd_hive_cell_13.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_hmd_hive_cell_14"
+		texturefile = "gfx/interface/goals/HMD/goal_hmd_hive_cell_14.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_hmd_hive_cell_15"
+		texturefile = "gfx/interface/goals/HMD/goal_hmd_hive_cell_15.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_hmd_hive_cell_16"
+		texturefile = "gfx/interface/goals/HMD/goal_hmd_hive_cell_16.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_hmd_hive_cell_17"
+		texturefile = "gfx/interface/goals/HMD/goal_hmd_hive_cell_17.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_hmd_hive_cell_18"
+		texturefile = "gfx/interface/goals/HMD/goal_hmd_hive_cell_18.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_hmd_hive_cell_19"
+		texturefile = "gfx/interface/goals/HMD/goal_hmd_hive_cell_19.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_hmd_hive_cell_20"
+		texturefile = "gfx/interface/goals/HMD/goal_hmd_hive_cell_20.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_hmd_hive_cell_21"
+		texturefile = "gfx/interface/goals/HMD/goal_hmd_hive_cell_21.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_hmd_hive_cell_22"
+		texturefile = "gfx/interface/goals/HMD/goal_hmd_hive_cell_22.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_hmd_hive_cell_23"
+		texturefile = "gfx/interface/goals/HMD/goal_hmd_hive_cell_23.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_hmd_hive_cell_24"
+		texturefile = "gfx/interface/goals/HMD/goal_hmd_hive_cell_24.tga"
+	}
+
+
+	spriteType = {
+			name = "GFX_goal_sin_pride"
+			texturefile = "gfx/interface/goals/HRD/SIN/goal_sin_pride.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_sin_envy"
+			texturefile = "gfx/interface/goals/HRD/SIN/goal_sin_envy.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_sin_greed"
+			texturefile = "gfx/interface/goals/HRD/SIN/goal_sin_greed.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_sin_sloth"
+			texturefile = "gfx/interface/goals/HRD/SIN/goal_sin_sloth.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_sin_gluttony"
+			texturefile = "gfx/interface/goals/HRD/SIN/goal_sin_gluttony.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_sin_lust"
+			texturefile = "gfx/interface/goals/HRD/SIN/goal_sin_lust.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_sin_wrath"
+			texturefile = "gfx/interface/goals/HRD/SIN/goal_sin_wrath.tga"
+	}
+	
+
+
+
+	spriteType = {
+			name = "GFX_goal_ole_r_evil_deer"
+			texturefile = "gfx/interface/goals/OLE_R/goal_ole_r_evil_deer.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_ole_r_great_horror"
+			texturefile = "gfx/interface/goals/OLE_R/goal_ole_r_great_horror.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_ole_r_dawn"
+			texturefile = "gfx/interface/goals/OLE_R/goal_ole_r_dawn.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_ole_r_neon_skull"
+			texturefile = "gfx/interface/goals/OLE_R/goal_ole_r_neon_skull.tga"
+	}
+	
+
+
+
+	spriteType = {
+			name = "GFX_goal_plague_question"
+			texturefile = "gfx/interface/goals/plague_question.dds"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_plague_factories_question"
+			texturefile = "gfx/interface/goals/plague_factories_question.dds"
+	}
+
+	spriteType = {
+			name = "GFX_goal_danglar_plan"
+			texturefile = "gfx/interface/goals/danglar_plan.dds"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_plague_propaganda"
+			texturefile = "gfx/interface/goals/plague_propaganda.dds"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_hurrikane"
+			texturefile = "gfx/interface/goals/goal_hurrikane.tga"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_weather_factory_riffles"
+			texturefile = "gfx/interface/goals/goal_weather_factory_riffles.dds"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_ers_peace"
+			texturefile = "gfx/interface/goals/ers_peace.dds"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_stop_priests"
+			texturefile = "gfx/interface/goals/goal_stop_priests.dds"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_test"
+			texturefile = "gfx/interface/goals/test.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_appleloosa"
+			texturefile = "gfx/interface/goals/goal_appleloosa.tga"
+	}
+	
+	
+	spriteType = {
+			name = "GFX_goal_vrax_queen"
+			texturefile = "gfx/interface/goals/goal_vrax_queen.dds"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_vrx_hat"
+			texturefile = "gfx/interface/goals/goal_vrx_hat.tga"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_vrx_vesalipolis"
+			texturefile = "gfx/interface/goals/goal_vrx_vesalipolis.dds"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_vrx_propaganda"
+			texturefile = "gfx/interface/goals/goal_vrx_propaganda.dds"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_vrx_factory"
+			texturefile = "gfx/interface/goals/goal_vrx_factory.tga"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_megapolis"
+			texturefile = "gfx/interface/goals/goal_megapolis.dds"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_ban_relygion"
+			texturefile = "gfx/interface/goals/goal_ban_relygion.dds"
+	}
+
+	spriteType = {
+			name = "GFX_goal_great_industry"
+			texturefile = "gfx/interface/goals/goal_great_industry.dds"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_brain"
+			texturefile = "gfx/interface/goals/goal_brain.dds"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_priests_politics"
+			texturefile = "gfx/interface/goals/goal_priests_politics.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_pandoria_church_fascism"
+			texturefile = "gfx/interface/goals/goal_pandoria_church_fascism.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_fascist_pandoria"
+			texturefile = "gfx/interface/goals/goal_fascist_pandoria.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_unc_kingdom"
+			texturefile = "gfx/interface/goals/UNC/goal_unc_kingdom.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_unicornia_puppets"
+			texturefile = "gfx/interface/goals/unicornia_puppets.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_ers_band_demicratic"
+			texturefile = "gfx/interface/goals/goal_ers_band_demicratic.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_plan"
+			texturefile = "gfx/interface/goals/goal_plan.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_all_ideologies"
+			texturefile = "gfx/interface/goals/goal_all_ideologies.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_attack_los"
+			texturefile = "gfx/interface/goals/goal_attack_los.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_total_propaganda"
+			texturefile = "gfx/interface/goals/goal_total_propaganda.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_cog_brain"
+			texturefile = "gfx/interface/goals/goal_cog_brain.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_sell_bills"
+			texturefile = "gfx/interface/goals/goal_sell_bills.tga"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_unc_happy_mare"
+			texturefile = "gfx/interface/goals/UNC/goal_unc_happy_mare.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_unc_grand_gala"
+			texturefile = "gfx/interface/goals/UNC/goal_unc_grand_gala.tga"
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	spriteType = {
+			name = "GFX_goal_ers_puppet"
+			texturefile = "gfx/interface/goals/ers_puppet.dds"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_srf_paganism"
+			texturefile = "gfx/interface/goals/SRF/goal_srf_paganism.tga"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_srf_queen"
+			texturefile = "gfx/interface/goals/goal_srf_queen.dds"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_srf_geshtalt"
+			texturefile = "gfx/interface/goals/goal_srf_geshtalt.dds"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_srf_research"
+			texturefile = "gfx/interface/goals/SRF/goal_srf_research.tga"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_srf_borning"
+			texturefile = "gfx/interface/goals/goal_srf_borning.dds"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_srf_changelings"
+			texturefile = "gfx/interface/goals/goal_srf_changelings.dds"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_srf_crystals"
+			texturefile = "gfx/interface/goals/goal_srf_crystals.dds"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_srf_manpower"
+			texturefile = "gfx/interface/goals/goal_srf_manpower.dds"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_srf_one_chng"
+			texturefile = "gfx/interface/goals/goal_srf_one_chng.dds"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_srf_city_hives"
+			texturefile = "gfx/interface/goals/goal_srf_city_hives.dds"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_valentine_torches"
+			texturefile = "gfx/interface/goals/goal_valentine_torches.dds"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_srf_gear"
+			texturefile = "gfx/interface/goals/goal_srf_gear.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_srf_queens_tower"
+			texturefile = "gfx/interface/goals/SRF/goal_srf_queens_tower.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_srf_technocrat_society"
+			texturefile = "gfx/interface/goals/SRF/goal_srf_technocrat_society.tga"
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	spriteType = {
+			name = "GFX_goal_plague_experiments"
+			texturefile = "gfx/interface/goals/plague_experiments.tga"
+	}
+	
+
+
+
+	spriteType = {
+			name = "GFX_goal_stl_factory"
+			texturefile = "gfx/interface/goals/goal_stl_factory.tga"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_stl_rifles"
+			texturefile = "gfx/interface/goals/goal_stl_rifles.tga"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_stl_propaganda"
+			texturefile = "gfx/interface/goals/goal_stl_propaganda.tga"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_stl_cuffs"
+			texturefile = "gfx/interface/goals/goal_stl_cuffs.tga"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_hrd_abrael"
+			texturefile = "gfx/interface/goals/goal_hrd_abrael.tga"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_svr_anastasia"
+			texturefile = "gfx/interface/goals/goal_svr_anastasia.tga"
+	}
+	
+	
+	spriteType = {
+			name = "GFX_goal_svr_yelena_independence"
+			texturefile = "gfx/interface/goals/goal_svr_yelena_independence.tga"
+	}
+	
+	
+	spriteType = {
+			name = "GFX_goal_svr_kolcok"
+			texturefile = "gfx/interface/goals/goal_svr_kolcok.tga"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_svr_pagan"
+			texturefile = "gfx/interface/goals/goal_svr_pagan.tga"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_svr_pagan_weapons"
+			texturefile = "gfx/interface/goal_svr_pagan_weapons.tga"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_attack_yak"
+			texturefile = "gfx/interface/goals/goal_attack_yak.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_attack_yac"
+			texturefile = "gfx/interface/goals/goal_attack_yac.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_attack_jak"
+			texturefile = "gfx/interface/goals/goal_attack_jak.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_attack_nak"
+			texturefile = "gfx/interface/goals/goal_attack_nak.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_attack_sha"
+			texturefile = "gfx/interface/goals/goal_attack_sha.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_attack_bad"
+			texturefile = "gfx/interface/goals/goal_attack_bad.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_attack_mnt"
+			texturefile = "gfx/interface/goals/goal_attack_mnt.tga"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_kill_red_flame"
+			texturefile = "gfx/interface/goals/goal_kill_red_flame.tga"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_rainbow_factory"
+			texturefile = "gfx/interface/goals/goal_rainbow_factory.tga"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_fluttershy_nice"
+			texturefile = "gfx/interface/goals/goal_fluttershy_nice.tga"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_motivation"
+			texturefile = "gfx/interface/goals/goal_motivation.tga"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_anr_rise_flags"
+			texturefile = "gfx/interface/goals/goal_anr_rise_flags.tga"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_make_them_suffer"
+			texturefile = "gfx/interface/goals/goal_make_them_suffer.tga"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_blessing"
+			texturefile = "gfx/interface/goals/goal_blessing.tga"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_skull_arrows"
+			texturefile = "gfx/interface/goals/goal_skull_arrows.tga"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_erp_luter"
+			texturefile = "gfx/interface/goals/goal_erp_luter.tga"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_erp_hopestar"
+			texturefile = "gfx/interface/goals/goal_erp_hopestar.tga"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_erp_evelin"
+			texturefile = "gfx/interface/goals/ERP/goal_erp_evelin.tga"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_erp_elections"
+			texturefile = "gfx/interface/goals/goal_erp_elections.tga"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_burn"
+			texturefile = "gfx/interface/goals/goal_burn.tga"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_bloody_pile_of_skulls"
+			texturefile = "gfx/interface/goals/goal_bloody_pile_of_skulls.tga"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_ers_production"
+			texturefile = "gfx/interface/goals/goal_ers_production.tga"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_minus_army"
+			texturefile = "gfx/interface/goals/goal_minus_army.tga"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_communism_army"
+			texturefile = "gfx/interface/goals/goal_communism_army.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_clock_and_gun"
+			texturefile = "gfx/interface/goals/goal_clock_and_gun.tga"
+	}
+	
+	
+	
+	spriteType = {
+			name = "GFX_goal_vrx_tank"
+			texturefile = "gfx/interface/goals/goal_vrx_tank.tga"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_vrx_jager"
+			texturefile = "gfx/interface/goals/goal_vrx_jager.tga"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_vrx_swords"
+			texturefile = "gfx/interface/goals/goal_vrx_swords.tga"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_monarchy_money"
+			texturefile = "gfx/interface/goals/goal_monarchy_money.tga"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_pacifism_health"
+			texturefile = "gfx/interface/goals/goal_pacifism_health.tga"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_close_prance"
+			texturefile = "gfx/interface/goals/goal_close_prance.tga"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_close_prance"
+			texturefile = "gfx/interface/goals/goal_close_prance.tga"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_f_and_f"
+			texturefile = "gfx/interface/goals/goal_f_and_f.tga"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_protect_earthponies"
+			texturefile = "gfx/interface/goals/goal_protect_earthponies.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_ers_feudalism"
+			texturefile = "gfx/interface/goals/goal_ers_feudalism.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_free_industry"
+			texturefile = "gfx/interface/goals/goal_free_industry.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_conquer_world"
+			texturefile = "gfx/interface/goals/goal_conquer_world.tga"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_blessing_industry"
+			texturefile = "gfx/interface/goals/goal_blessing_industry.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_ers_fascism_science"
+			texturefile = "gfx/interface/goals/goal_ers_fascism_science.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_ers_hunger"
+			texturefile = "gfx/interface/goals/goal_ers_hunger.tga"
+	}
+	
+	
+	
+	spriteType = {
+			name = "GFX_goal_pgs_monarchy"
+			texturefile = "gfx/interface/goals/PGS/goal_pgs_monarchy.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_pgs_army"
+			texturefile = "gfx/interface/goals/PGS/goal_pgs_army.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_pgs_fascism_politics"
+			texturefile = "gfx/interface/goals/PGS/goal_pgs_fascism_politics.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_pgs_fascism"
+			texturefile = "gfx/interface/goals/PGS/goal_pgs_fascism.tga"
+	} 
+	spriteType = {
+		name = "GFX_goal_pgs_country"
+		texturefile = "gfx/interface/goals/PGS/goal_pgs_country.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_pgs_militaty_government"
+		texturefile = "gfx/interface/goals/PGS/goal_pgs_militaty_government.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_pgs_kill_the_anarchist"
+		texturefile = "gfx/interface/goals/PGS/goal_pgs_kill_the_anarchist.tga"
+	} 
+	spriteType = {
+		name = "GFX_goal_pgs_guilotine"
+		texturefile = "gfx/interface/goals/PGS/goal_pgs_guilotine.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_pgs_skull_with_swords"
+		texturefile = "gfx/interface/goals/PGS/goal_pgs_skull_with_swords.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_pgs_unity"
+		texturefile = "gfx/interface/goals/PGS/goal_pgs_unity.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_pgs_helmet"
+		texturefile = "gfx/interface/goals/PGS/goal_pgs_helmet.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_pgs_derpy_soldier"
+		texturefile = "gfx/interface/goals/PGS/goal_pgs_derpy_soldier.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_pgs_ban_communism"
+		texturefile = "gfx/interface/goals/PGS/goal_pgs_ban_communism.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_pgs_cult_of_personality"
+		texturefile = "gfx/interface/goals/PGS/goal_pgs_cult_of_personality.tga"
+	}
+
+
+
+	spriteType = {
+		name = "GFX_goal_pgs_pacifism_fluttershy"
+		texturefile = "gfx/interface/goals/PGS/pacifism/goal_pgs_pacifism_fluttershy.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_pgs_postulate_of_harmony"
+		texturefile = "gfx/interface/goals/PGS/pacifism/goal_pgs_postulate_of_harmony.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_pgs_pacifism_treaty_with_anarchists"
+		texturefile = "gfx/interface/goals/PGS/pacifism/goal_pgs_pacifism_treaty_with_anarchists.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_pgs_pacifism_los_pegasus"
+		texturefile = "gfx/interface/goals/PGS/pacifism/goal_pgs_pacifism_los_pegasus.tga"
+	}
+	
+	
+
+
+
+	spriteType = {
+		name = "GFX_goal_pgs_monarchy_crown"
+		texturefile = "gfx/interface/goals/PGS/monarchy/goal_pgs_monarchy_crown.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_pgs_industry"
+		texturefile = "gfx/interface/goals/PGS/GENERIC/goal_pgs_industry.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_pgs_pile_of_skulls"
+		texturefile = "gfx/interface/goals/PGS/goal_pgs_pile_of_skulls.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_pgs_femida"
+		texturefile = "gfx/interface/goals/PGS/goal_pgs_femida.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_pgs_ban_alcochol"
+		texturefile = "gfx/interface/goals/PGS/goal_pgs_ban_alcochol.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_pgs_accept_pacifism"
+		texturefile = "gfx/interface/goals/PGS/goal_pgs_accept_pacifism.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_pgs_barracs"
+		texturefile = "gfx/interface/goals/PGS/goal_pgs_barracs.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_pgs_broken_crown"
+		texturefile = "gfx/interface/goals/PGS/goal_pgs_broken_crown.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_pgs_healthcare"
+		texturefile = "gfx/interface/goals/PGS/goal_pgs_healthcare.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_pgs_super_brain"
+		texturefile = "gfx/interface/goals/PGS/goal_pgs_super_brain.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_pgs_soldier"
+		texturefile = "gfx/interface/goals/PGS/goal_pgs_soldier.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_pgs_rainbow_dash"
+		texturefile = "gfx/interface/goals/PGS/goal_pgs_rainbow_dash.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_pgs_hat"
+		texturefile = "gfx/interface/goals/PGS/goal_pgs_hat.tga"
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	spriteType = {
+		name = "GFX_goal_mnh_libertarian_snake"
+		texturefile = "gfx/interface/goals/MNH/goal_mnh_libertarian_snake.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_mnh_libertarianism"
+		texturefile = "gfx/interface/goals/MNH/goal_mnh_libertarianism.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_mnh_give_war_a_chance"
+		texturefile = "gfx/interface/goals/MNH/goal_mnh_give_war_a_chance.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_mnh_anarcho_capitalism"
+		texturefile = "gfx/interface/goals/MNH/goal_mnh_anarcho_capitalism.tga"
+	}
+	
+	
+	
+	
+	
+	
+	
+	spriteType = {
+			name = "GFX_goal_erp_f_hat_torch_eagle"
+			texturefile = "gfx/interface/goals/ERP/goal_erp_f_hat_torch_eagle.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_erp_f_esotericism"
+			texturefile = "gfx/interface/goals/ERP/goal_erp_f_esotericism.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_erp_f_esotericism_2"
+			texturefile = "gfx/interface/goals/ERP/goal_erp_f_esotericism_2.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_erp_f_antidemocracy"
+			texturefile = "gfx/interface/goals/ERP/goal_erp_f_antidemocracy.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_erp_f_police"
+			texturefile = "gfx/interface/goals/ERP/goal_erp_f_police.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_erp_fascism_government"
+			texturefile = "gfx/interface/goals/ERP/goal_erp_fascism_government.tga"
+	}
+	spriteType = {
+			name = "GFX_gaol_ethnic_cleaning"
+			texturefile = "gfx/interface/goals/ERP/gaol_ethnic_cleaning.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_erp_crossfou"
+			texturefile = "gfx/interface/goals/ERP/goal_erp_crossfou.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_erp_trotland"
+			texturefile = "gfx/interface/goals/ERP/goal_erp_trotland.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_erp_f_pandoria"
+			texturefile = "gfx/interface/goals/ERP/goal_erp_f_pandoria.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_erp_f_church_fate"
+			texturefile = "gfx/interface/goals/ERP/goal_erp_f_church_fate.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_erp_f_distsipline"
+			texturefile = "gfx/interface/goals/ERP/goal_erp_f_distsipline.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_erp_f_ideology"
+			texturefile = "gfx/interface/goals/ERP/goal_erp_f_ideology.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_erp_f_stormtroopers"
+			texturefile = "gfx/interface/goals/ERP/goal_erp_f_stormtroopers.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_erp_f_military_industry"
+			texturefile = "gfx/interface/goals/ERP/goal_erp_f_military_industry.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_erp_f_anti_batpony"
+			texturefile = "gfx/interface/goals/ERP/goal_erp_f_anti_batpony.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_erp_f_love_for_party"
+			texturefile = "gfx/interface/goals/ERP/goal_erp_f_love_for_party.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_erp_f_government"
+			texturefile = "gfx/interface/goals/ERP/goal_erp_f_government.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_erp_f_army"
+			texturefile = "gfx/interface/goals/ERP/goal_erp_f_army.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_erp_fascism_party"
+			texturefile = "gfx/interface/goals/ERP/goal_erp_fascism_party.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_erp_cultists"
+		texturefile = "gfx/interface/goals/ERP/goal_erp_cultists.tga"
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	spriteType = {
+		name = "GFX_goal_erp_communism"
+		texturefile = "gfx/interface/goals/ERP/goal_erp_communism.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_erp_communism_anarchists"
+		texturefile = "gfx/interface/goals/ERP/goal_erp_communism_anarchists.tga"
+	}
+	
+	
+	
+	
+	
+	
+	spriteType = {
+			name = "GFX_goal_pra_champane"
+			texturefile = "gfx/interface/goals/PRA/goal_pra_champame.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_shores_celebration"
+			texturefile = "gfx/interface/goals/PRA/goal_shores_celebration.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_prance"
+			texturefile = "gfx/interface/goals/PRA/goal_prance.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_pra_prance"
+			texturefile = "gfx/interface/goals/PRA/goal_pra_prance.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_revanshism"
+			texturefile = "gfx/interface/goals/PRA/goal_revanshism.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_pra_communism"
+			texturefile = "gfx/interface/goals/PRA/goal_pra_communism.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_pra_neutral_won"
+			texturefile = "gfx/interface/goals/PRA/goal_pra_neutral_won.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_pra_crown"
+			texturefile = "gfx/interface/goals/PRA/goal_pra_crown.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_pra_white_rose"
+			texturefile = "gfx/interface/goals/PRA/goal_pra_white_rose.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_pra_fascism_jail"
+			texturefile = "gfx/interface/goals/PRA/goal_pra_fascism_jail.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_pra_broken"
+			texturefile = "gfx/interface/goals/PRA/goal_pra_broken.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_pra_fascism_won"
+			texturefile = "gfx/interface/goals/PRA/goal_pra_fascism_won.tga"
+	}
+	
+	
+	
+
+	
+
+	spriteType = {
+			name = "GFX_goal_lyc_atom"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_atom.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_nuclear_reactor"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_nuclear_reactor.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_pacifism"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_pacifism.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_monster_black_sun"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_monster_black_sun.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_kill_the_deer"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_kill_the_deer.dds"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_lyc_puppet_master"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_puppet_master.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_rifles"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_rifles.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_queen"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_queen.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_factory"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_factory.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_monster"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_monster.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_96th"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_96th.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_genocide"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_genocide.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_clocks"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_clocks.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_steel"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_steel.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_ole"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_ole.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_bombing"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_bombing.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_sword"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_sword.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_bunker"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_bunker.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_vesalipolis"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_vesalipolis.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_production"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_production.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_bomber"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_bomber.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_submarine"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_submarine.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_garrison"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_garrison.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_gasmask"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_gasmask.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_cctv"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_cctv.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_panzerfaust"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_panzerfaust.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_helmet"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_helmet.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_black_sus"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_black_sus.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_hoof"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_hoof.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_shield"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_shield.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_ole_factories"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_ole_factories.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_panzervor"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_panzervor.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_bullets"
+			texturefile = " fx/interface/goals/LYC/goal_lyc_bullets.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_globe"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_globe.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_lead_the_army"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_lead_the_army.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_cogs_ak"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_cogs_ak.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_modern_panzer"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_modern_panzer.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_money"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_money.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_megapolis"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_megapolis.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_changelingia"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_changelingia.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_cut_deers_head"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_cut_deers_head.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_question"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_question.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_cellist"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_cellist.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_demobilisation"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_demobilisation.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_office"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_office.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_jaws"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_jaws.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_research"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_research.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_heart"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_heart.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_handcuffs"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_handcuffs.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_infantry_weapons"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_infantry_weapons.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_ultra_esoterism"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_ultra_esoterism.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_shield_simple"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_shield_simple.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_industry_of_hives"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_industry_of_hives.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_helmet2"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_helmet2.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_crown"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_crown.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_strike_communism"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_strike_communism.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_chemicals"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_chemicals.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_navy"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_navy.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_carreer"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_carreer.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_lyctida"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_lyctida.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_small_ship"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_small_ship.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_lyc_peace"
+			texturefile = "gfx/interface/goals/LYC/goal_lyc_peace.tga"
+	}
+	
+	
+
+	
+	
+	
+	
+	
+	spriteType = {
+			name = "GFX_goal_vst_detective"
+			texturefile = "gfx/interface/goals/VST/goal_vst_detective.tga"
+	}
+	
+	
+	
+	
+	spriteType = {
+			name = "GFX_goal_svr_arrest_democrats"
+			texturefile = "gfx/interface/goals/SVR/goal_svr_arrest_democrats.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_SVR_vs_STG"
+			texturefile = "gfx/interface/goals/SVR/goal_SVR_vs_STG.tga"
+	}
+	
+	
+	
+	
+	
+	spriteType = {
+			name = "GFX_goal_unc_planet"
+			texturefile = "gfx/interface/goals/UNC/goal_unc_planet.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_unc_develop_factories"
+			texturefile = "gfx/interface/goals/UNC/goal_unc_develop_factories.tga"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_unc_lower_army"
+			texturefile = "gfx/interface/goals/UNC/goal_unc_lower_army.tga"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_great_unicornia"
+			texturefile = "gfx/interface/goals/UNC/goal_great_unicornia.tga"
+	}
+	
+	spriteType = {
+			name = "GFX_goal_unc_shield"
+			texturefile = "gfx/interface/goals/UNC/goal_unc_shield.tga"
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	spriteType = {
+			name = "GFX_goal_los_shield"
+			texturefile = "gfx/interface/goals/LOS/goal_los_shield.tga"
+	}
+
+
+	
+	spriteType = {
+			name = "GFX_goal_hrd_order"
+			texturefile = "gfx/interface/goals/HRD/goal_hrd_order.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_hrd_sword_and_helmet"
+			texturefile = "gfx/interface/goals/HRD/goal_hrd_sword_and_helmet.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_hrd_azazel"
+			texturefile = "gfx/interface/goals/HRD/goal_hrd_azazel.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_sword_and_shield"
+			texturefile = "gfx/interface/goals/HRD/goal_sword_and_shield.tga"
+	}
+	
+	
+	
+	
+	
+	
+	spriteType = {
+			name = "GFX_goal_yac_win"
+			texturefile = "gfx/interface/goals/YAC/goal_yac_win.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_yac_marks_hidden"
+			texturefile = "gfx/interface/goals/YAC/goal_yac_marks_hidden.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_yac_books"
+			texturefile = "gfx/interface/goals/YAC/goal_yac_books.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_yac_sus_sun"
+			texturefile = "gfx/interface/goals/YAC/goal_yac_sus_sun.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_yac_agrarian_industry"
+			texturefile = "gfx/interface/goals/YAC/goal_yac_agrarian_industry.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_yac_sun"
+			texturefile = "gfx/interface/goals/YAC/goal_yac_sun.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_yac_burn_moneys"
+			texturefile = "gfx/interface/goals/YAC/goal_yac_burn_moneys.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_yac_flag_and_ak"
+			texturefile = "gfx/interface/goals/YAC/goal_yac_flag_and_ak.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_yac_marks_portrait"
+			texturefile = "gfx/interface/goals/YAC/goal_yac_marks_portrait.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_yac_shoot_ya"
+			texturefile = "gfx/interface/goals/YAC/goal_yac_shoot_ya.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_yac_alt_history"
+			texturefile = "gfx/interface/goals/YAC/goal_yac_alt_history.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_yac_syndicalism"
+			texturefile = "gfx/interface/goals/YAC/goal_yac_syndicalism.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_yac_marks_flag_and_ak"
+			texturefile = "gfx/interface/goals/YAC/goal_yac_marks_flag_and_ak.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_yac_resources"
+			texturefile = "gfx/interface/goals/YAC/goal_yac_resources.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_yac_pyramid"
+			texturefile = "gfx/interface/goals/YAC/goal_yac_pyramid.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_yac_religious_communism"
+			texturefile = "gfx/interface/goals/YAC/goal_yac_religious_communism.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_yac_capitol_guns"
+			texturefile = "gfx/interface/goals/YAC/goal_yac_capitol_guns.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_yac_tample"
+			texturefile = "gfx/interface/goals/YAC/goal_yac_tample.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_yac_utopia"
+			texturefile = "gfx/interface/goals/YAC/goal_yac_utopia.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_yac_rifles_factory"
+			texturefile = "gfx/interface/goals/YAC/goal_yac_rifles_factory.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_yac_factories"
+			texturefile = "gfx/interface/goals/YAC/goal_yac_factories.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_yac_inquisition"
+			texturefile = "gfx/interface/goals/YAC/goal_yac_inquisition.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_yac_ultranationalism"
+			texturefile = "gfx/interface/goals/YAC/goal_yac_ultranationalism.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_yac_web"
+			texturefile = "gfx/interface/goals/YAC/goal_yac_web.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_yac_search"
+		texturefile = "gfx/interface/goals/YAC/goal_yac_search.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_yac_check_list"
+		texturefile = "gfx/interface/goals/YAC/goal_yac_check_list.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_yac_culture"
+		texturefile = "gfx/interface/goals/YAC/goal_yac_culture.tga"
+	}
+	
+	
+
+
+	
+	spriteType = {
+		name = "GFX_goal_anr_flag"
+		texturefile = "gfx/interface/goals/ANR/goal_anr_flag.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_anr_free_love"
+		texturefile = "gfx/interface/goals/ANR/goal_anr_free_love.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_anr_vodka"
+		texturefile = "gfx/interface/goals/ANR/goal_anr_vodka.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_anr_skull"
+		texturefile = "gfx/interface/goals/ANR/goal_anr_skull.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_anr_factories"
+		texturefile = "gfx/interface/goals/ANR/goal_anr_factories.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_anr_cash_and_gun"
+		texturefile = "gfx/interface/goals/ANR/goal_anr_cash_and_gun.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_anr_bread"
+		texturefile = "gfx/interface/goals/ANR/goal_anr_bread.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_anr_apple"
+		texturefile = "gfx/interface/goals/ANR/goal_anr_apple.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_anr_tachka"
+		texturefile = "gfx/interface/goals/ANR/goal_anr_tachka.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_anr_cute_pony"
+		texturefile = "gfx/interface/goals/ANR/goal_anr_cute_pony.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_anr_no_state"
+		texturefile = "gfx/interface/goals/ANR/goal_anr_no_state.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_anr_money_burn"
+		texturefile = "gfx/interface/goals/ANR/goal_anr_money_burn.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_anr_molotov"
+		texturefile = "gfx/interface/goals/ANR/goal_anr_molotov.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_anr_train_anarchy"
+		texturefile = "gfx/interface/goals/ANR/goal_anr_train_anarchy.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_anr_illiteracy"
+		texturefile = "gfx/interface/goals/ANR/goal_anr_illiteracy.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_anr_letov"
+		texturefile = "gfx/interface/goals/ANR/goal_anr_letov.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_anr_terror"
+		texturefile = "gfx/interface/goals/ANR/goal_anr_terror.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_anr_spooky_scary_sceleton"
+		texturefile = "gfx/interface/goals/ANR/goal_anr_spooky_scary_sceleton.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_anr_burning_capitol"
+		texturefile = "gfx/interface/goals/ANR/goal_anr_burning_capitol.tga"
+	}
+	
+	
+	
+	
+	
+	spriteType = {
+			name = "GFX_goal_CHC_gold_muffin"
+			texturefile = "gfx/interface/goals/CHC/goal_CHC_gold_muffin.tga"
+	}
+	
+	
+	
+	spriteType = {
+			name = "GFX_goal_chn_question"
+			texturefile = "gfx/interface/goals/CHN/goal_chn_question.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_chn_cool_thing"
+			texturefile = "gfx/interface/goals/CHN/goal_chn_cool_thing.tga"
+	}
+	
+	
+	
+	
+	spriteType = {
+			name = "GFX_goal_princess_amore"
+			texturefile = "gfx/interface/goals/CRY/goal_princess_amore.tga"
+	}
+	
+	
+	
+	
+	spriteType = {
+			name = "GFX_goal_beginning_of_the_end"
+			texturefile = "gfx/interface/goals/shizoshy/goal_beginning_of_the_end.tga"
+	}
+	
+	
+	
+
+
+	
+	spriteType = {
+		name = "GFX_goal_stl_book_broken"
+		texturefile = "gfx/interface/goals/STL/goal_stl_book_broken.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_stl_kremlin"
+		texturefile = "gfx/interface/goals/STL/goal_stl_kremlin.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_stl_purge"
+		texturefile = "gfx/interface/goals/STL/goal_stl_purge.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_stl_kremlin"
+		texturefile = "gfx/interface/goals/STL/goal_stl_kremlin.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_stl_no_war"
+		texturefile = "gfx/interface/goals/STL/goal_stl_no_war.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_stl_industry"
+		texturefile = "gfx/interface/goals/STL/goal_stl_industry.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_stl_pyramide"
+		texturefile = "gfx/interface/goals/STL/goal_stl_pyramide.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_stl_treaty"
+		texturefile = "gfx/interface/goals/STL/goal_stl_treaty.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_stl_soldier"
+		texturefile = "gfx/interface/goals/STL/goal_stl_soldier.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_stl_bread"
+		texturefile = "gfx/interface/goals/STL/goal_stl_bread.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_stl_artillery"
+		texturefile = "gfx/interface/goals/STL/goal_stl_artillery.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_stl_skull"
+		texturefile = "gfx/interface/goals/STL/goal_stl_skull.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_stl_censorship"
+		texturefile = "gfx/interface/goals/STL/goal_stl_censorship.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_stl_pioneers"
+		texturefile = "gfx/interface/goals/STL/goal_stl_pioneers.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_stl_triumph_of_will"
+		texturefile = "gfx/interface/goals/STL/goal_stl_triumph_of_will.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_stl_rifles_alt"
+		texturefile = "gfx/interface/goals/STL/goal_stl_rifles_alt.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_stl_railroads"
+		texturefile = "gfx/interface/goals/STL/goal_stl_railroads.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_stl_unicorn"
+		texturefile = "gfx/interface/goals/STL/goal_stl_unicorn.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_stl_soldier_alt"
+		texturefile = "gfx/interface/goals/STL/goal_stl_soldier_alt.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_stl_severyana_empire"
+		texturefile = "gfx/interface/goals/STL/goal_stl_severyana_empire.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_stl_sabotage"
+		texturefile = "gfx/interface/goals/STL/goal_stl_sabotage.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_stl_spy"
+		texturefile = "gfx/interface/goals/STL/goal_stl_spy.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_stl_attack_stg"
+		texturefile = "gfx/interface/goals/STL/goal_stl_attack_stg.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_stl_flag1"
+		texturefile = "gfx/interface/goals/STL/goal_stl_flag1.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_stl_flag2"
+		texturefile = "gfx/interface/goals/STL/goal_stl_flag2.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_stl_police"
+		texturefile = "gfx/interface/goals/STL/goal_stl_police.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_stl_breaking_statues"
+		texturefile = "gfx/interface/goals/STL/goal_stl_breaking_statues.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_stl_book_ministry"
+		texturefile = "gfx/interface/goals/STL/goal_stl_book_ministry.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_stl_book_starlight"
+		texturefile = "gfx/interface/goals/STL/goal_stl_book_starlight.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_stl_skull2"
+		texturefile = "gfx/interface/goals/STL/goal_stl_skull2.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_stl_worker"
+		texturefile = "gfx/interface/goals/STL/goal_stl_worker.tga"
+	}
+	
+	
+	
+	
+	
+	
+	
+	spriteType = {
+		name = "GFX_goal_ers_STG_stars"
+		texturefile = "gfx/interface/goals/STG/goal_ers_STG_stars.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_pantushenko"
+			texturefile = "gfx/interface/goals/STG/goal_pantushenko.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_ers_serov"
+		texturefile = "gfx/interface/goals/STG/goal_ers_serov.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_ers_vinous"
+		texturefile = "gfx/interface/goals/STG/goal_ers_vinous.tga"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_goal_cold_land"
+		texturefile = "gfx/interface/goals/CLD/goal_cold_land.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_srf_circles"
+		texturefile = "gfx/interface/goals/SRF/goal_srf_circles.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_srf_star"
+		texturefile = "gfx/interface/goals/SRF/goal_srf_star.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_srf_pony_factory"
+		texturefile = "gfx/interface/goals/SRF/goal_srf_pony_factory.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_srf_rifles"
+		texturefile = "gfx/interface/goals/SRF/goal_srf_rifles.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_srf_mining"
+		texturefile = "gfx/interface/goals/SRF/goal_srf_mining.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_srf_brain"
+		texturefile = "gfx/interface/goals/SRF/goal_srf_brain.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_srf_soldier_head"
+		texturefile = "gfx/interface/goals/SRF/goal_srf_soldier_head.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_srf_plants"
+		texturefile = "gfx/interface/goals/SRF/goal_srf_plants.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_srf_crown"
+		texturefile = "gfx/interface/goals/SRF/goal_srf_crown.tga"
+	}
+	
+	
+	
+	
+	
+	spriteType = {
+			name = "GFX_goal_ez_shield"
+			texturefile = "gfx/interface/goals/EZ/goal_ez_shield.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_ez_wire"
+			texturefile = "gfx/interface/goals/EZ/goal_ez_wire.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_ez_factory"
+			texturefile = "gfx/interface/goals/EZ/goal_ez_factory.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_ez_krieger"
+			texturefile = "gfx/interface/goals/EZ/goal_ez_krieger.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_ez_execution"
+			texturefile = "gfx/interface/goals/EZ/goal_ez_execution.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_ez_fire"
+			texturefile = "gfx/interface/goals/EZ/goal_ez_fire.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_ez_watchtower"
+			texturefile = "gfx/interface/goals/EZ/goal_ez_watchtower.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_ez_waves"
+			texturefile = "gfx/interface/goals/EZ/goal_ez_waves.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_ez_bombing"
+			texturefile = "gfx/interface/goals/EZ/goal_ez_bombing.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_ez_reznya"
+			texturefile = "gfx/interface/goals/EZ/goal_ez_reznya.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_ez_who_dies_first"
+			texturefile = "gfx/interface/goals/EZ/goal_ez_who_dies_first.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_ez_traitors"
+			texturefile = "gfx/interface/goals/EZ/goal_ez_traitors.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_ez_krieger_epic_prank"
+			texturefile = "gfx/interface/goals/EZ/goal_ez_krieger_epic_prank.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_ez_antiscience"
+			texturefile = "gfx/interface/goals/EZ/goal_ez_antiscience.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_ez_hjorltand"
+			texturefile = "gfx/interface/goals/EZ/goal_ez_hjorltand.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_ez_ruins"
+			texturefile = "gfx/interface/goals/EZ/goal_ez_ruins.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_ez_radiation"
+			texturefile = "gfx/interface/goals/EZ/goal_ez_radiation.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_ez_toxic_gas"
+			texturefile = "gfx/interface/goals/EZ/goal_ez_toxic_gas.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_ez_rope"
+			texturefile = "gfx/interface/goals/EZ/goal_ez_rope.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_ez_mass_murder"
+			texturefile = "gfx/interface/goals/EZ/goal_ez_mass_murder.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_ez_death_1"
+			texturefile = "gfx/interface/goals/EZ/goal_ez_death_1.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_ez_death_2"
+			texturefile = "gfx/interface/goals/EZ/goal_ez_death_2.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_ez_death_3"
+			texturefile = "gfx/interface/goals/EZ/goal_ez_death_3.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_ez_krieger_epic_pile_of_skulls"
+			texturefile = "gfx/interface/goals/EZ/goal_ez_krieger_epic_pile_of_skulls.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_ez_my_eye"
+			texturefile = "gfx/interface/goals/EZ/goal_ez_my_eye.tga"
+	}
+	
+	
+	
+	
+	
+	spriteType = {
+		name = "GFX_goal_octavia"
+		texturefile = "gfx/interface/goals/ROK/goal_octavia.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_helvia"
+		texturefile = "gfx/interface/goals/DTS/goal_helvia.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_dts_crown"
+		texturefile = "gfx/interface/goals/DTS/goal_dts_crown.tga"
+	}
+	
+	
+	
+	
+	
+	
+	spriteType = {
+		name = "GFX_goal_generic_thestral"
+		texturefile = "gfx/interface/goals/thestral_generic/goal_generic_thestral.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_thestral_whoa"
+		texturefile = "gfx/interface/goals/thestral_generic/goal_generic_thestral_whoa.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_thestral_fire"
+		texturefile = "gfx/interface/goals/thestral_generic/goal_generic_thestral_fire.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_thestral_moon"
+		texturefile = "gfx/interface/goals/thestral_generic/goal_generic_thestral_moon.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_thestral_sun"
+		texturefile = "gfx/interface/goals/thestral_generic/goal_generic_thestral_sun.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_thestral_warrior"
+		texturefile = "gfx/interface/goals/thestral_generic/goal_generic_thestral_warrior.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_thestral_brain"
+		texturefile = "gfx/interface/goals/thestral_generic/goal_generic_thestral_brain.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_thestral_communism"
+		texturefile = "gfx/interface/goals/thestral_generic/goal_generic_thestral_communism.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_thestral_fascism"
+		texturefile = "gfx/interface/goals/thestral_generic/goal_generic_thestral_fascism.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_thestral_swords"
+		texturefile = "gfx/interface/goals/thestral_generic/goal_generic_thestral_swords.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_thestral_isolation"
+		texturefile = "gfx/interface/goals/thestral_generic/goal_generic_thestral_isolation.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_thetral_black_sus"
+		texturefile = "gfx/interface/goals/thestral_generic/goal_generic_thetral_black_sus.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_thestral_resources"
+		texturefile = "gfx/interface/goals/thestral_generic/goal_generic_thestral_resources.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_thestral_rifles"
+		texturefile = "gfx/interface/goals/thestral_generic/goal_generic_thestral_rifles.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_thestral_upgrade"
+		texturefile = "gfx/interface/goals/thestral_generic/goal_generic_thestral_upgrade.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_thestral_politics"
+		texturefile = "gfx/interface/goals/thestral_generic/goal_generic_thestral_politics.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_thestral_communism_hammer"
+		texturefile = "gfx/interface/goals/thestral_generic/goal_generic_thestral_communism_hammer.tga"
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	spriteType = {
+		name = "GFX_goal_cry_ers_soldier"
+		texturefile = "gfx/interface/goals/CRY/goal_cry_ers_soldier.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_cry_ers_defence"
+		texturefile = "gfx/interface/goals/CRY/goal_cry_ers_defence.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_cry_ers_offence"
+		texturefile = "gfx/interface/goals/CRY/goal_cry_ers_offence.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_cry_ers_hooves"
+		texturefile = "gfx/interface/goals/CRY/goal_cry_ers_hooves.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_cry_ers_artillery"
+		texturefile = "gfx/interface/goals/CRY/goal_cry_ers_artillery.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_cry_ers_tank"
+		texturefile = "gfx/interface/goals/CRY/goal_cry_ers_tank.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_cry_ers_magic_canon"
+		texturefile = "gfx/interface/goals/CRY/goal_cry_ers_magic_canon.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_cry_ers_arrow_and_hat"
+		texturefile = "gfx/interface/goals/CRY/goal_cry_ers_arrow_and_hat.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_cry_ers_army_decentralized"
+		texturefile = "gfx/interface/goals/CRY/goal_cry_ers_army_decentralized.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_cry_ers_army_centralized"
+		texturefile = "gfx/interface/goals/CRY/goal_cry_ers_army_centralized.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_cry_ers_industry"
+		texturefile = "gfx/interface/goals/CRY/goal_cry_ers_industry.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_cry_ers_industry_upgrade"
+		texturefile = "gfx/interface/goals/CRY/goal_cry_ers_industry_upgrade.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_cry_ers_radio"
+		texturefile = "gfx/interface/goals/CRY/goal_cry_ers_radio.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_cry_ers_radioactive"
+		texturefile = "gfx/interface/goals/CRY/goal_cry_ers_radioactive.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_cry_ers_grenade"
+		texturefile = "gfx/interface/goals/CRY/goal_cry_ers_grenade.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_cry_ers_blood"
+		texturefile = "gfx/interface/goals/CRY/goal_cry_ers_blood.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_cry_ers_airplane"
+		texturefile = "gfx/interface/goals/CRY/goal_cry_ers_airplane.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_cry_ers_ship"
+		texturefile = "gfx/interface/goals/CRY/goal_cry_ers_ship.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_cry_ers_anti_tank"
+		texturefile = "gfx/interface/goals/CRY/goal_cry_ers_anti_tank.tga"
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	spriteType = {
+		name = "GFX_goal_clt_crawler"
+		texturefile = "gfx/interface/goals/CLT/goal_clt_crawler.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_clt_eye"
+		texturefile = "gfx/interface/goals/CLT/goal_clt_eye.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_clt_screaming_dude"
+		texturefile = "gfx/interface/goals/CLT/goal_clt_screaming_dude.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_rape"
+		texturefile = "gfx/interface/goals/CLT/rape.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_do_drugs"
+		texturefile = "gfx/interface/goals/CLT/goal_do_drugs.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_clt_fetus"
+		texturefile = "gfx/interface/goals/CLT/goal_clt_fetus.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_clt_your_children"
+		texturefile = "gfx/interface/goals/CLT/goal_clt_your_children.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_clt_valentinepng"
+		texturefile = "gfx/interface/goals/CLT/goal_clt_valentinepng.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_clt_fuck_in_the_eye"
+		texturefile = "gfx/interface/goals/CLT/goal_clt_fuck_in_the_eye.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_clt_the_fog"
+		texturefile = "gfx/interface/goals/CLT/goal_clt_the_fog.tga"
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	spriteType = {
+		name = "GFX_goal_vrx_crown"
+		texturefile = "gfx/interface/goals/VRX/goal_vrx_crown.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_vrx_tower"
+		texturefile = "gfx/interface/goals/VRX/goal_vrx_tower.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_vrx_gears"
+		texturefile = "gfx/interface/goals/VRX/goal_vrx_gears.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_vrx_rifles"
+		texturefile = "gfx/interface/goals/VRX/goal_vrx_rifles.tga"
+	}
+	
+	
+	
+	
+	spriteType = {
+		name = "GFX_goal_nei_batpony"
+		texturefile = "gfx/interface/goals/NEI/goal_nei_batpony.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_nei_scroll"
+		texturefile = "gfx/interface/goals/NEI/goal_nei_svitok.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_nei_sun_vs_moon"
+		texturefile = "gfx/interface/goals/NEI/goal_nei_sun_vs_moon.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_nei_tst_escape"
+		texturefile = "gfx/interface/goals/NEI/goal_nei_tst_escape.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_nei_tst_red_sun"
+		texturefile = "gfx/interface/goals/NEI/goal_nei_tst_red_sun.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_nei_tst_intervention"
+		texturefile = "gfx/interface/goals/NEI/goal_nei_tst_intervention.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_nei_rewrite_scrolls"
+		texturefile = "gfx/interface/goals/NEI/goal_nei_rewrite_scrolls.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_nei_temple"
+		texturefile = "gfx/interface/goals/NEI/goal_nei_temple.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_nei_rewrite_scrolls"
+		texturefile = "gfx/interface/goals/NEI/goal_nei_rewrite_scrolls.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_nei_coins"
+		texturefile = "gfx/interface/goals/NEI/goal_nei_coins.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_nei_sheild"
+		texturefile = "gfx/interface/goals/NEI/goal_nei_sheild.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_nei_tst_sundown"
+		texturefile = "gfx/interface/goals/NEI/goal_nei_tst_sundown.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_nei_relygion_agressive"
+		texturefile = "gfx/interface/goals/NEI/goal_nei_relygion_agressive.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_nei_sun_above_us"
+			texturefile = "gfx/interface/goals/NEI/goal_nei_sun_above_us.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_traid_barter"
+			texturefile = "gfx/interface/goals/NEI/goal_traid_barter.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_traid_money"
+			texturefile = "gfx/interface/goals/NEI/goal_traid_money.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_nei_friendship_with_TST"
+			texturefile = "gfx/interface/goals/NEI/goal_nei_friendship_with_TST.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_nei_concurention"
+			texturefile = "gfx/interface/goals/NEI/goal_nei_concurention.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_nei_totem"
+			texturefile = "gfx/interface/goals/NEI/goal_nei_totem.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_nei_solar_armor"
+			texturefile = "gfx/interface/goals/NEI/goal_nei_solar_armor.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_nei_solar_swords"
+			texturefile = "gfx/interface/goals/NEI/goal_nei_solar_swords.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_nei_smithing"
+			texturefile = "gfx/interface/goals/NEI/goal_nei_smithing.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_nei_sun_army"
+			texturefile = "gfx/interface/goals/NEI/goal_nei_sun_army.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_nei_heretics_question"
+			texturefile = "gfx/interface/goals/NEI/goal_nei_heretics_question.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_nei_heretics_burn"
+			texturefile = "gfx/interface/goals/NEI/goal_nei_heretics_burn.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_nei_unite_with_tst"
+			texturefile = "gfx/interface/goals/NEI/goal_nei_unite_with_tst.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_nei_country_with_sun"
+			texturefile = "gfx/interface/goals/NEI/goal_nei_country_with_sun.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_nei_raids"
+			texturefile = "gfx/interface/goals/NEI/goal_nei_raids.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_nei_gift_for_the_moon"
+			texturefile = "gfx/interface/goals/NEI/goal_nei_gift_for_the_moon.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_nei_x_tst"
+			texturefile = "gfx/interface/goals/NEI/goal_nei_x_tst.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_nei_propaganda"
+			texturefile = "gfx/interface/goals/NEI/goal_nei_propaganda.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_nei_jaws"
+			texturefile = "gfx/interface/goals/NEI/goal_nei_jaws.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_nei_strike_moon"
+		 	texturefile = "gfx/interface/goals/NEI/goal_nei_strike_moon.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_nei_elite_guards"
+			texturefile = "gfx/interface/goals/NEI/goal_nei_elite_guards.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_nei_bats"
+			texturefile = "gfx/interface/goals/NEI/goal_nei_bats.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_nei_jungles"
+			texturefile = "gfx/interface/goals/NEI/goal_nei_jungles.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_nei_sun_and_moon"
+			texturefile = "gfx/interface/goals/NEI/goal_nei_sun_and_moon.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_nei_mountain"
+			texturefile = "gfx/interface/goals/NEI/goal_nei_mountain.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_nei_super_scroll"
+			texturefile = "gfx/interface/goals/NEI/goal_nei_super_scroll.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_nei_crystals"
+		texturefile = "gfx/interface/goals/NEI/goal_nei_crystals.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_nei_smart"
+		texturefile = "gfx/interface/goals/NEI/goal_nei_smart.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_nei_factories"
+		texturefile = "gfx/interface/goals/NEI/goal_nei_factories.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_nei_mango_everywhere"
+		texturefile = "gfx/interface/goals/NEI/goal_nei_mango_everywhere.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_nei_plant"
+		texturefile = "gfx/interface/goals/NEI/goal_nei_plant.tga"
+	}
+	
+	
+	
+	
+	
+	spriteType = {
+			name = "GFX_goal_tst_batpony"
+			texturefile = "gfx/interface/goals/TST/goal_tst_batpony.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_tst_batpony2"
+			texturefile = "gfx/interface/goals/TST/goal_tst_batpony2.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_tst_eagle"
+			texturefile = "gfx/interface/goals/TST/goal_tst_eagle.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_tst_eagle"
+			texturefile = "gfx/interface/goals/TST/goal_tst_eagle.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_tst_ultra_gun"
+			texturefile = "gfx/interface/goals/TST/goal_tst_ultra_gun.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_generic_thestral_beartrap"
+			texturefile = "gfx/interface/goals/TST/goal_generic_thestral_beartrap.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_tst_forest_jump"
+			texturefile = "gfx/interface/goals/TST/goal_tst_forest_jump.tga"
+	}
+	
+
+
+
+	spriteType = {
+			name = "GFX_goal_mnh_flam"
+			texturefile = "gfx/interface/goals/MNH/goal_mnh_flam.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_mnh_flim"
+			texturefile = "gfx/interface/goals/MNH/goal_mnh_flim.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_mnh_guards_of_federation"
+			texturefile = "gfx/interface/goals/MNH/goal_mnh_guards_of_federation.tga"
+	}
+	
+	
+	
+	
+	spriteType = {
+			name = "GFX_goal_hip_ocean_breeze_speech"
+			texturefile = "gfx/interface/goals/HIP/goal_hip_ocean_breeze_speech.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_stl_time_clocks"
+		texturefile = "gfx/interface/goals/STL/ACCELERATIONISM/goal_stl_time_clocks.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_stl_time_feather_bangs"
+		texturefile = "gfx/interface/goals/STL/ACCELERATIONISM/goal_stl_time_feather_bangs.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_stl_time_feather_bangs_2"
+		texturefile = "gfx/interface/goals/STL/ACCELERATIONISM/goal_stl_time_feather_bangs_2.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_stl_time_shield"
+		texturefile = "gfx/interface/goals/STL/ACCELERATIONISM/goal_stl_time_shield.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_stl_time_skull"
+		texturefile = "gfx/interface/goals/STL/ACCELERATIONISM/goal_stl_time_skull.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_stl_time_torch"
+		texturefile = "gfx/interface/goals/STL/ACCELERATIONISM/goal_stl_time_torch.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_stl_time_uroboros_eye"
+		texturefile = "gfx/interface/goals/STL/ACCELERATIONISM/goal_stl_time_uroboros_eye.tga"
+	}
+	
+	
+	
+	spriteType = {
+		name = "GFX_goal_plp_king"
+		texturefile = "gfx/interface/goals/PLP/goal_plp_king.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Svist"
+		texturefile = "gfx/interface/goals/NGC/goal_Svist.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Fate"
+		texturefile = "gfx/interface/goals/NGC/goal_Fate.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Fine"
+		texturefile = "gfx/interface/goals/NGC/goal_Fine.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_motors" 
+		texturefile = "gfx/interface/goals/NGC/goal_motors.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Waiting_ahead"
+		texturefile = "gfx/interface/goals/NGC/goal_Waiting_ahead.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Getting_ready"
+		texturefile = "gfx/interface/goals/NGC/goal_Getting_ready.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Protects"
+		texturefile = "gfx/interface/goals/NGC/goal_Protects.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Abandoned"
+		texturefile = "gfx/interface/goals/NGC/goal_Abandoned.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Good_time_for_deals"
+		texturefile = "gfx/interface/goals/NGC/goal_Good_time_for_deals.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_take_advantage"
+		texturefile = "gfx/interface/goals/NGC/goal_take_advantage.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Look_into_the_forgotten"
+		texturefile = "gfx/interface/goals/NGC/goal_Look_into_the_forgotten.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Southern_Teachings"
+		texturefile = "gfx/interface/goals/NGC/goal_Southern_Teachings.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Walk_through_garden"
+		texturefile = "gfx/interface/goals/NGC/goal_Walk_through_garden.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Find_losers"
+		texturefile = "gfx/interface/goals/NGC/goal_Find_losers.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Southern_Jerk"
+		texturefile = "gfx/interface/goals/NGC/goal_Southern_Jerk.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Everything_is_bullshit"
+		texturefile = "gfx/interface/goals/NGC/goal_Everything_is_bullshit.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_madhouse"
+		texturefile = "gfx/interface/goals/NGC/goal_madhouse.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_by_gun"
+		texturefile = "gfx/interface/goals/NGC/goal_by_gun.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_northern_exercises"
+		texturefile = "gfx/interface/goals/NGC/goal_northern_exercises.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Operation_Ether"
+		texturefile = "gfx/interface/goals/NGC/goal_Operation_Ether.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Elite_Elite"
+		texturefile = "gfx/interface/goals/NGC/goal_Elite_Elite.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Bespectacled"
+		texturefile = "gfx/interface/goals/NGC/goal_Bespectacled.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_The_Gunners"
+		texturefile = "gfx/interface/goals/NGC/goal_The_Gunners.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_On_rails"
+		texturefile = "gfx/interface/goals/NGC/goal_On_rails.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Operation_leave"
+		texturefile = "gfx/interface/goals/NGC/goal_Operation_leave.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Die_is_cast"
+		texturefile = "gfx/interface/goals/NGC/goal_Die_is_cast.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Final_blow"
+		texturefile = "gfx/interface/goals/NGC/goal_Final_blow.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Something_went_wrong"
+		texturefile = "gfx/interface/goals/NGC/goal_Something_went_wrong.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_south"
+		texturefile = "gfx/interface/goals/NGC/goal_south.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Expansion"
+		texturefile = "gfx/interface/goals/NGC/goal_Expansion.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Steal_technology"
+		texturefile = "gfx/interface/goals/NGC/goal_Steal_technology.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_WasSS"
+		texturefile = "gfx/interface/goals/NGC/goal_WasSS.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Heavenly_Nightmare"
+		texturefile = "gfx/interface/goals/NGC/goal_Heavenly_Nightmare.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_In_hell"
+		texturefile = "gfx/interface/goals/NGC/goal_In_hell.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Broadcast"
+		texturefile = "gfx/interface/goals/NGC/goal_Broadcast.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_proposal"
+		texturefile = "gfx/interface/goals/NGC/goal_proposal.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_radion"
+		texturefile = "gfx/interface/goals/NGC/goal_radion.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_We_are_not"
+		texturefile = "gfx/interface/goals/NGC/goal_We_are_not.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Keep_calm"
+		texturefile = "gfx/interface/goals/NGC/goal_Keep_calm.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Ded"
+		texturefile = "gfx/interface/goals/NGC/goal_Ded.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_beetles"
+		texturefile = "gfx/interface/goals/NGC/goal_beetles.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Bom_Bom"
+		texturefile = "gfx/interface/goals/NGC/goal_Bom_Bom.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Kraigeeeeeeeer"
+		texturefile = "gfx/interface/goals/NGC/goal_Kraigeeeeeeeer.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Mobuliz"
+		texturefile = "gfx/interface/goals/NGC/goal_Mobuliz.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_isolation"
+		texturefile = "gfx/interface/goals/NGC/goal_isolation.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_No_poz"
+		texturefile = "gfx/interface/goals/NGC/goal_No_poz.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Nyws"
+		texturefile = "gfx/interface/goals/NGC/goal_Nyws.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_dishwasher"
+		texturefile = "gfx/interface/goals/NGC/goal_dishwasher.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_The_Commissioner_knows"
+		texturefile = "gfx/interface/goals/NGC/Kain/goal_The_Commissioner_knows.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_SOS"
+		texturefile = "gfx/interface/goals/NGC/TIC_TAC/goal_SOS.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Abandoned1"
+		texturefile = "gfx/interface/goals/NGC/TIC_TAC/goal_Abandoned1.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_IDOLOZE1"
+		texturefile = "gfx/interface/goals/NGC/TIC_TAC/goal_IDOLOZE1.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Was21"
+		texturefile = "gfx/interface/goals/NGC/TIC_TAC/goal_Was21.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Desires"
+		texturefile = "gfx/interface/goals/NGC/Kain/goal_Desires.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Fears"
+		texturefile = "gfx/interface/goals/NGC/Kain/goal_Fears.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Dreams"
+		texturefile = "gfx/interface/goals/NGC/Kain/goal_Dreams.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Pray"
+		texturefile = "gfx/interface/goals/NGC/Kain/goal_Pray.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Listen"
+		texturefile = "gfx/interface/goals/NGC/Kain/goal_Listen.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_IDOLOZE"
+		texturefile = "gfx/interface/goals/NGC/Kain/goal_IDOLOZE.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Zones"
+		texturefile = "gfx/interface/goals/NGC/goal_Zones.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_vrx_bit"
+		texturefile = "gfx/interface/goals/VRX/goal_vrx_bit.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_vrx_skorost"
+		texturefile = "gfx/interface/goals/VRX/goal_vrx_skorost.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_vrx_krasnie"
+		texturefile = "gfx/interface/goals/VRX/goal_vrx_krasnie.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_vrx_zavog"
+		texturefile = "gfx/interface/goals/VRX/goal_vrx_zavog.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_vrx_armi"
+		texturefile = "gfx/interface/goals/VRX/goal_vrx_armi.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_vrx_new"
+		texturefile = "gfx/interface/goals/VRX/goal_vrx_new.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_vrx_neft"
+		texturefile = "gfx/interface/goals/VRX/goal_vrx_neft.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_vrx_amnez"
+		texturefile = "gfx/interface/goals/VRX/goal_vrx_amnez.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_vrx_syt"
+		texturefile = "gfx/interface/goals/VRX/goal_vrx_syt.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_vrx_prax"
+		texturefile = "gfx/interface/goals/VRX/goal_vrx_prax.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_vrx_gaz"
+		texturefile = "gfx/interface/goals/VRX/goal_vrx_gaz.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_vrx_camolet"
+		texturefile = "gfx/interface/goals/VRX/goal_vrx_camolet.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_vrx_tractor"
+		texturefile = "gfx/interface/goals/VRX/goal_vrx_tractor.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_vrx1"
+		texturefile = "gfx/interface/goals/VRX/goal_vrx1.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_vrx2"
+		texturefile = "gfx/interface/goals/VRX/goal_vrx2.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_vrx3"
+		texturefile = "gfx/interface/goals/VRX/goal_vrx3.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_vrx4"
+		texturefile = "gfx/interface/goals/VRX/goal_vrx4.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_vrx5"
+		texturefile = "gfx/interface/goals/VRX/goal_vrx5.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_vrx6"
+		texturefile = "gfx/interface/goals/VRX/goal_vrx6.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_vrx7"
+		texturefile = "gfx/interface/goals/VRX/goal_vrx7.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_vrx8"
+		texturefile = "gfx/interface/goals/VRX/goal_vrx8.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_vrx9"
+		texturefile = "gfx/interface/goals/VRX/goal_vrx9.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_vrx10"
+		texturefile = "gfx/interface/goals/VRX/goal_vrx10.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_vrx11"
+		texturefile = "gfx/interface/goals/VRX/goal_vrx11.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_vrx12"
+		texturefile = "gfx/interface/goals/VRX/goal_vrx12.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_vrx13"
+		texturefile = "gfx/interface/goals/VRX/goal_vrx13.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_vrx14"
+		texturefile = "gfx/interface/goals/VRX/goal_vrx14.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Was"
+		texturefile = "gfx/interface/goals/NGC/Dreslers/goal_Was.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Was1"
+		texturefile = "gfx/interface/goals/NGC/Dreslers/goal_Was1.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Was2"
+		texturefile = "gfx/interface/goals/NGC/Dreslers/goal_Was2.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Was3"
+		texturefile = "gfx/interface/goals/NGC/Dreslers/goal_Was3.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Was4"
+		texturefile = "gfx/interface/goals/NGC/Dreslers/goal_Was4.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Was5"
+		texturefile = "gfx/interface/goals/NGC/Dreslers/goal_Was5.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Was6"
+		texturefile = "gfx/interface/goals/NGC/Dreslers/goal_Was6.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Was7"
+		texturefile = "gfx/interface/goals/NGC/Dreslers/goal_Was7.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Was8"
+		texturefile = "gfx/interface/goals/NGC/Dreslers/goal_Was8.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Was9"
+		texturefile = "gfx/interface/goals/NGC/Dreslers/goal_Was9.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Was10"
+		texturefile = "gfx/interface/goals/NGC/Dreslers/goal_Was10.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Was11"
+		texturefile = "gfx/interface/goals/NGC/Dreslers/goal_Was11.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_Was12"
+		texturefile = "gfx/interface/goals/NGC/Dreslers/goal_Was12.tga"
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

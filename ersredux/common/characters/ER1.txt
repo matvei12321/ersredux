@@ -1,0 +1,18 @@
+characters={
+	ER1_vynil = {
+		name=ER1_vynil
+		portraits={
+			civilian={
+				large="gfx/leaders/ER1/pon3.tga"
+			}
+		}
+		
+		country_leader={
+			desc="POLITICS_ER1_leader_DESC"
+			ideology=retrowave_satanism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

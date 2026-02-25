@@ -1,0 +1,1939 @@
+
+shared_focus = {
+	id = ers_STL_our_town
+	icon = GFX_equalist
+	cost = 4.4
+	x = 5
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_our_town"
+		add_stability = 0.05
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+	}
+}
+
+shared_focus = {
+	id = ers_STL_our_politics
+	icon = GFX_equalist
+	cost = 4.4
+	relative_position_id = ers_STL_our_town
+	x = 0 
+	y = 1
+	prerequisite = { focus = ers_STL_our_town }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_our_politics"
+		country_event = ers_stl.1
+	}
+}
+	
+shared_focus = {
+	id = ers_STL_buro
+	icon = GFX_goal_stl_censorship
+	cost = 4.4
+	relative_position_id = ers_STL_our_town
+	x = -2
+	y = 2
+	prerequisite = { focus = ers_STL_our_politics }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_buro"
+		add_ideas = idea_STL_buro
+		if = {
+				limit = {
+				has_dlc = "La Resistance"
+			}
+			if = {
+				limit = {
+					has_intelligence_agency = no
+				}
+				create_intelligence_agency = {
+					name = "Buro Politkontrolya"
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = { id = ers_stl.12 days = 15 }
+		}
+	}
+}
+	
+shared_focus = {
+	id = ers_STL_peoners
+	icon = GFX_goal_stl_pioneers
+	cost = 4.4
+	relative_position_id = ers_STL_our_town
+	x = -3
+	y = 3
+	prerequisite = { focus = ers_STL_buro}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_peoners"
+		add_ideas = idea_STL_peoners
+		add_manpower = 1000
+	}
+}
+	
+shared_focus = {
+	id = ers_STL_upgrade_peoners
+	icon = GFX_goal_stl_pioneers
+	prerequisite = { focus = ers_STL_peoners }
+	prerequisite = { focus = ers_STL_jobs }
+	cost = 4.4
+	relative_position_id = ers_STL_our_town
+	x = -4
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_peoners"
+		swap_ideas = {	
+			remove_idea = idea_STL_peoners
+			add_idea = idea_STL_peoners_2
+		}
+	}
+}
+	
+shared_focus = {
+	id = ers_STL_jobs
+	icon = GFX_goal_stl_skull
+	cost = 4.4
+	relative_position_id = ers_STL_our_town
+	x = -1
+	y = 3
+	prerequisite = { focus = ers_STL_buro}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_jobs"
+		add_timed_idea = { idea = idea_STL_purge days = 35 }
+		custom_effect_tooltip = plus_5_warcrimes_tt
+		add_to_variable = {
+			ROOT_warcrimes_count = 5
+		}
+	}
+}
+	
+shared_focus = {
+	id = ers_STL_free_will
+	icon = GFX_goal_stl_triumph_of_will
+	prerequisite = { focus = ers_STL_peoners }
+	prerequisite = { focus = ers_STL_jobs }
+	prerequisite = { focus = ers_STL_patriotism }
+	prerequisite = { focus = ers_STL_STG_demands }
+	cost = 4.4
+	relative_position_id = ers_STL_our_town
+	x = 0
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_jobs"
+		add_war_support = 0.1
+		add_political_power = 100	
+	}
+}
+	
+shared_focus = {
+	id = ers_STL_consumer_goods
+	icon = GFX_goal_stl_pyramide
+	cost = 4.4
+	relative_position_id = ers_STL_our_town
+	x = -2
+	y = 4
+	prerequisite = { focus = ers_STL_jobs }
+	prerequisite = { focus = ers_STL_peoners}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_consumer_goods"
+		add_ideas = STL_our_needs_idea
+	}
+}
+	
+shared_focus = {
+	id = ers_STL_war_spirit
+	icon = GFX_equalist
+	cost = 4.4
+	relative_position_id = ers_STL_our_town
+	x = 2
+	y = 2
+	prerequisite = { focus = ers_STL_our_politics }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_war_spirit"
+		add_manpower = 17000
+		add_war_support = 0.05
+	}
+}
+	
+shared_focus = {
+	id = ers_STL_patriotism
+	icon = GFX_goal_stl_soldier
+	cost = 4.4
+	relative_position_id = ers_STL_our_town
+	x = 1
+	y = 3
+	prerequisite = { focus = ers_STL_war_spirit }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_patriotism"	
+			hidden_effect = {
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Shtrafnoy Iskupitelniy Batalyon\" division_template = \"Equality Division\" start_experience_factor = 0.05"  
+						owner = STL
+					}
+				}
+			}
+		custom_effect_tooltip = stl_create_division_tt
+	}
+}
+	
+shared_focus = {
+	id = ers_STL_STG_demands
+	icon = GFX_goal_stl_treaty
+	cost = 4.4
+	relative_position_id = ers_STL_our_town
+	x = 3
+	y = 3
+	prerequisite = { focus = ers_STL_war_spirit }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_STG_demands"
+		STG = {
+			country_event = ers_stl.2
+		}
+	}
+}
+	
+shared_focus = {
+	id = ers_STL_march_on_square
+	icon = GFX_goal_stl_treaty
+	prerequisite = { focus = ers_STL_patriotism }
+	prerequisite = { focus = ers_STL_STG_demands }
+	cost = 4.4
+	relative_position_id = ers_STL_our_town
+	x = 4
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_STG_demands"
+		
+	}
+}
+	
+shared_focus = {
+	id = ers_STL_raid
+	icon = GFX_goal_stl_purge
+	prerequisite = { focus = ers_STL_patriotism }
+	prerequisite = { focus = ers_STL_STG_demands }
+	cost = 4.4
+	relative_position_id = ers_STL_our_town
+	x = 2
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_raid"
+		add_timed_idea = { idea = STL_courage days = 20 }
+		start_border_war = {
+			change_state_after_war = no
+			attacker = {
+				state = 240
+				num_provinces = 2
+				on_win = ers_stl.4 #stl wins
+				on_lose = ers_stl.5 #stl loses
+			}
+			defender = {
+				state = 165
+				num_provinces = 2
+				on_win = ers_stl.6 #stg wins
+				on_lose = ers_stl.7 #stg loses
+			}
+		}
+	}
+}
+	
+shared_focus = {
+	id = ers_STL_military_equalism
+	icon = GFX_goal_stl_rifles
+	prerequisite = { focus = ers_STL_raid }
+	prerequisite = { focus = ers_STL_consumer_goods }
+	cost = 4.4
+	mutually_exclusive = { focus = ers_STL_social_equalism }
+	mutually_exclusive = { focus = ers_STL_positive_equalism }
+	relative_position_id = ers_STL_our_town
+	x = 4
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_equalism"
+		add_ideas = STL_more_guns_idea
+	}
+}
+	
+shared_focus = {
+	id = ers_STL_give_em_guns
+	icon = GFX_goal_stl_rifles_alt
+	prerequisite = { focus = ers_STL_military_equalism }
+	cost = 4.4
+	relative_position_id = ers_STL_our_town
+	x = 5
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_give_em_guns"
+		add_equipment_to_stockpile = {
+		type = infantry_equipment_1
+			amount = 2500
+			produser = ROOT
+		}
+	}
+}
+	
+shared_focus = {
+	id = ers_STL_teach_em_war
+	icon = GFX_goal_stl_unicorn
+	prerequisite = { focus = ers_STL_military_equalism }
+	cost = 4.4
+	relative_position_id = ers_STL_our_town
+	x = 3
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_teach_em_war"
+		army_experience = 15
+		add_ideas = STL_prepared_attack_idea
+	}	
+}
+	
+shared_focus = {
+	id = ers_STL_conversion_to_military
+	icon = GFX_goal_stl_railroads
+	prerequisite = { focus = ers_STL_military_equalism }
+	cost = 4.4	
+	relative_position_id = ers_STL_our_town
+	x = 7
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_conversion_to_military"
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+			}
+		}
+	}
+}
+	
+shared_focus = {
+	id = ers_STL_military_bandits_no
+	icon = GFX_goal_stl_rifles
+	cost = 4.4	
+	prerequisite = { focus = ers_STL_conversion_to_military }
+	prerequisite = { focus = ers_STL_teach_em_war }
+	relative_position_id = ers_STL_our_town
+	mutually_exclusive = { focus = ers_STL_military_bandits_yes }
+	x = 4
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_bandits_no"
+		add_manpower = 2500
+		add_stability = 0.05
+		custom_effect_tooltip = STL_good_divisions_tt
+		hidden_effect = {
+			load_oob = "STL_good_divisions"
+		}
+	}
+}
+	
+shared_focus = {
+	id = ers_STL_military_bandits_yes
+	icon = GFX_goal_stl_rifles
+	prerequisite = { focus = ers_STL_conversion_to_military }
+	cost = 4.4	
+	relative_position_id = ers_STL_our_town
+	mutually_exclusive = { focus = ers_STL_military_bandits_no }
+	x = 6
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_bandits_yes"
+		add_manpower = 5000
+		add_stability = -0.05
+		add_popularity = {
+			ideology = communism
+			popularity = -0.05
+		}
+		custom_effect_tooltip = STL_bad_divisions_tt
+		hidden_effect = {
+			load_oob = "STL_bad_divisions"
+		}
+	}
+}
+
+shared_focus = {
+	id = ers_STL_collaborants
+	icon = GFX_goal_stl_rifles
+	prerequisite = { focus = ers_STL_social_equalism_zlatocvet focus = ers_STL_teach_em_war }
+	prerequisite = { focus = ers_STL_social_equalism_zayatsk focus = ers_STL_conversion_to_military }
+	cost = 4.4	
+	relative_position_id = ers_STL_our_town
+	x = 2
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_conscription"
+		add_ideas = idea_STL_collaborants
+		custom_effect_tooltip = ers_stl_collaborants_tt
+	}
+}
+
+shared_focus = {
+	id = ers_STL_military_conscription
+	icon = GFX_goal_stl_soldier_alt
+	prerequisite = { focus = ers_STL_military_bandits_no focus = ers_STL_military_bandits_yes }
+	cost = 4.4	
+	relative_position_id = ers_STL_our_town
+	x = 5
+	y = 8
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_conscription"
+		clr_country_flag = stl_cant_control_army_laws
+		custom_effect_tooltip = can_control_conscription_flag
+		swap_ideas = {
+			remove_idea = volunteer_only
+			add_idea = service_by_requirement
+		}
+		add_manpower = 25000
+	}
+}
+	
+shared_focus = {
+	id = ers_STL_military_attack_STG
+	icon = GFX_goal_stl_attack_stg
+	prerequisite = { focus = ers_STL_military_conscription  focus = ers_STL_social_equalism_last_chance }
+	cost = 4.4	
+	relative_position_id = ers_STL_our_town
+	x = 2
+	y = 10
+	bypass = {
+		owns_state = 153
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_conscription"
+		STG = {
+			add_war_support = -0.1
+		}
+		create_wargoal = {
+			target = STG
+			type = annex_everything
+		}
+		every_state = {
+				limit = {
+					is_core_of = STG
+				}
+				add_claim_by = STL
+		}
+	}
+}
+shared_focus = {
+	id = ers_STL_military_STG
+	icon = GFX_goal_total_propaganda
+	prerequisite = { focus = ers_STL_military_attack_STG }
+	cost = 4.4	
+	relative_position_id = ers_STL_military_attack_STG
+	x = 0
+	y = 1
+	available = {
+		owns_state = 153
+	}
+	completion_reward = {
+	load_focus_tree = starlight_our_severyana
+		STG = {
+			add_war_support = -0.1
+		}
+	}
+}
+	
+shared_focus = {
+	id = ers_STL_social_equalism
+	icon = GFX_goal_stl_propaganda
+	prerequisite = { focus = ers_STL_raid }
+	prerequisite = { focus = ers_STL_consumer_goods }
+	cost = 4.4
+	mutually_exclusive = { focus = ers_STL_military_equalism }
+	mutually_exclusive = { focus = ers_STL_positive_equalism }
+	relative_position_id = ers_STL_our_town
+	x = 0
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_social_equalism"
+		add_political_power = 100
+		STG = {
+			add_political_power = -50
+		}
+	}
+}
+	
+shared_focus = {
+	id = ers_STL_social_equalism_zayatsk
+	icon = GFX_goal_stl_spy
+	cost = 4.4
+	relative_position_id = ers_STL_our_town
+	x = -1
+	y = 6
+	prerequisite = { focus = ers_STL_social_equalism }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_social_equalism_zayatsk"
+		add_to_variable = {
+			stl_annex_stg_var = 1
+		}
+		custom_effect_tooltip = stl_add_1_to_annex_var_tt
+		custom_effect_tooltip = can_influence_zayatsk
+		334 = {
+			add_province_modifier = {
+				static_modifiers = { stl_state_debuff_i}
+				province = {
+					all_provinces = yes
+				}
+			}
+		}
+		STG = {
+			add_stability = -0.05
+		}
+		set_country_flag = stl_zayatsk_tt
+	}
+}
+
+shared_focus = {
+	id = ers_STL_social_equalism_zlatocvet
+	icon = GFX_goal_stl_sabotage
+	prerequisite = { focus = ers_STL_social_equalism }
+	cost = 4.4
+	relative_position_id = ers_STL_our_town
+	x = 1
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus  ers_STL_social_equalism_zlatocvet"
+		add_to_variable = {
+			stl_annex_stg_var = 1
+		}
+		custom_effect_tooltip = stl_add_1_to_annex_var_tt
+		custom_effect_tooltip = can_influence_zlatocvet
+		165 = {
+			add_province_modifier = {
+				static_modifiers = { stl_state_debuff_i}
+				province = {
+					all_provinces = yes
+				}
+			}
+		}
+		STG = {
+			add_war_support = -0.1
+		}
+		set_country_flag = stl_zlatocvet_tt
+	}
+}
+
+shared_focus = {
+	id = ers_STL_social_equalism_princessin
+	icon = GFX_goal_stl_kremlin
+	prerequisite = { focus = ers_STL_social_equalism_zayatsk }
+	prerequisite = { focus = ers_STL_social_equalism_zlatocvet }
+	cost = 4.4
+	relative_position_id = ers_STL_our_town
+	x = 0
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_social_equalism_princessin"
+		add_to_variable = {
+			stl_annex_stg_var = 1
+		}
+		custom_effect_tooltip = stl_add_1_to_annex_var_tt
+		custom_effect_tooltip = can_influence_princessin
+		153 = {
+			add_province_modifier = {
+				static_modifiers = { stl_state_debuff_i}
+				province = {
+					all_provinces = yes
+				}
+			}
+		}
+		STG = {
+			add_manpower = -15000
+		}
+		set_country_flag = stl_princessin_tt
+	}
+}
+	
+shared_focus = {
+	id = ers_STL_social_equalism_steal_equipment
+	icon = GFX_goal_stl_sabotage
+	prerequisite = { focus = ers_STL_social_equalism_princessin }
+	cost = 4.4
+	relative_position_id = ers_STL_our_town
+	x = -1
+	y = 8
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_social_equalism]_steal_equipment"
+		add_to_variable = {
+			stl_annex_stg_var = 1
+		}
+		custom_effect_tooltip = stl_add_1_to_annex_var_tt
+		STG = {
+			add_equipment_to_stockpile = {	
+				type = infantry_equipment
+				amount = -5000
+			}
+			add_equipment_to_stockpile = {	
+				type = artillery_equipment
+				amount = -1000
+			}
+		}
+		add_equipment_to_stockpile = {	
+			type = infantry_equipment
+			amount = 5000
+		}
+		add_equipment_to_stockpile = {	
+				type = artillery_equipment
+				amount = 1000
+			}
+	}
+}
+	
+shared_focus = {
+	id = ers_STL_social_equalism_send_spies
+	icon = GFX_goal_stl_spy
+	cost = 4.4
+	relative_position_id = ers_STL_our_town
+	x = 1
+	y = 8
+	prerequisite = { focus = ers_STL_social_equalism_princessin }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_social_equalism_send_spies"
+		add_to_variable = {
+			stl_annex_stg_var = 1
+		}
+		custom_effect_tooltip = stl_add_1_to_annex_var_tt
+		STG = {
+			add_manpower = -10000
+		}
+		add_manpower = 10000
+	}
+}
+	
+shared_focus = {
+	id = ers_STL_social_equalism_last_chance
+	icon = GFX_goal_stl_propaganda
+	prerequisite = { focus = ers_STL_social_equalism_send_spies }
+	prerequisite = { focus = ers_STL_social_equalism_steal_equipment }
+	cost = 4.4
+	relative_position_id = ers_STL_our_town
+	x = 0
+	y = 9
+	bypass = {
+		owns_state = 153
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_social_equalism_send_spies"
+		STG = {
+			add_ideas = STL_STG_threatened
+		}
+	}
+}
+	
+shared_focus = {
+	id = ers_STL_positive_equalism
+	icon = GFX_equalist
+	prerequisite = { focus = ers_STL_raid }
+	prerequisite = { focus = ers_STL_consumer_goods }
+	cost = 4.4
+	mutually_exclusive = { focus = ers_STL_military_equalism }
+	mutually_exclusive = { focus = ers_STL_social_equalism }
+	relative_position_id = ers_STL_our_town
+	x = -4
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_our_politics"
+		add_stability = 0.1
+		add_war_support = -0.1	
+		custom_effect_tooltip = stl_no_way_further
+	}
+}
+	
+shared_focus = {
+	id = ers_STL_p_eq_bunkers
+	icon = GFX_equalist
+	prerequisite = { focus = ers_STL_positive_equalism }
+	cost = 4.4
+	relative_position_id = ers_STL_positive_equalism
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_p_eq_bunkers"
+		hidden_effect = {
+			set_technology = {
+				interwar_antitank = 1
+			}
+			set_technology = {
+				interwar_antiair= 1
+			}
+		}
+		240 = {
+			add_building_construction = {
+				type = bunker
+				level = 5
+				province = {
+					id = 6386
+					}
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				level = 5
+				province = {
+					id = 6330
+					}
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				level = 5
+				province = {
+					id = 635
+				}
+				instant_build = yes
+			}
+		}
+		custom_effect_tooltip = stl_antiair_antitank
+	}
+}
+	
+shared_focus = {
+	id = ers_STL_p_eq_factories
+	icon = GFX_equalist
+	prerequisite = { focus = ers_STL_positive_equalism }
+	cost = 4.4
+	relative_position_id = ers_STL_positive_equalism
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_p_eq_factories"
+		57 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		57 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+	
+shared_focus = {
+	id = ers_STL_p_eq_neutrality_policy
+	icon = GFX_goal_stl_no_war
+	prerequisite = { focus = ers_STL_p_eq_bunkers }
+	prerequisite = { focus = ers_STL_p_eq_factories }
+	cost = 4.4
+	relative_position_id = ers_STL_positive_equalism
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_p_eq_neutrality_policy"
+		add_ideas = neutrality_idea
+	}
+}
+	
+shared_focus = {
+	id = ers_STL_p_eq_neutrality_policy_2
+	icon = GFX_equalist
+	prerequisite = { focus = ers_STL_p_eq_neutrality_policy }
+	cost = 4.4	
+	relative_position_id = ers_STL_positive_equalism
+	x = 0
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_p_eq_neutrality_policy_2"
+		add_ideas = STL_isolatsia
+	}
+}
+	
+shared_focus = {
+	id = ers_STL_p_eq_neutrality_policy_3
+	icon = GFX_equalist
+	prerequisite = { focus = ers_STL_p_eq_neutrality_policy_2 }
+	cost = 4.4
+	available = {
+		has_manpower < 5000
+	}
+	relative_position_id = ers_STL_positive_equalism
+	x = 0
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_p_eq_neutrality_policy_3"
+		swap_ideas = {
+			remove_idea = volunteer_only
+			add_idea = extensive_conscription
+		}
+	}
+}
+	
+	############# INDUSTRY
+	
+shared_focus = {
+	id = ers_STL_1_factory
+	icon = GFX_goal_stl_industry
+	cost = 4.4
+	x = 19
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_1_factory"
+		57 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+	
+shared_focus = {
+	id = ers_STL_2_factory
+	icon = GFX_goal_stl_industry
+	prerequisite = { focus = ers_STL_1_factory }
+	cost = 3.4
+	relative_position_id = ers_STL_1_factory
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_2_factory"
+		57 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+	
+shared_focus = {
+	id = ers_STL_bread_for_all
+	icon = GFX_goal_stl_bread
+	cost = 7.15
+	relative_position_id = ers_STL_1_factory
+	x = 0
+	y = 2
+	available = {
+		has_stability < 0.4
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_2_factory"
+		add_stability = 0.1
+		add_manpower = 10000
+	}
+}
+		
+shared_focus = {
+	id = ers_STL_peoners_profiction
+	icon = GFX_goal_revolution_tools
+	prerequisite = { focus = ers_STL_2_factory }
+	cost = 4.4
+	relative_position_id = ers_STL_1_factory
+	x = -3
+	y = 2
+	available = {
+		has_completed_focus = ers_STL_peoners
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_peoners_profiction"
+		57 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		add_political_power = 25
+	}
+}
+	
+shared_focus = {
+	id = ers_STL_no_lazyness
+	icon = GFX_focus_generic_support_the_left_right
+	prerequisite = { focus = ers_STL_peoners_profiction }
+	cost = 4.4
+	relative_position_id = ers_STL_1_factory
+	x = -4
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_no_lazyness"
+		add_ideas = STL_no_more_lazyness
+	}
+}
+	
+shared_focus = {
+	id = ers_STL_destroy_tsarist_culture
+	icon = GFX_goal_stl_severyana_empire
+	prerequisite = { focus = ers_STL_peoners_profiction }
+	cost = 4.4
+	relative_position_id = ers_STL_1_factory
+	x = -2
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_destroy_tsarist_culture"
+		add_stability = 0.05
+		57 = {
+			add_extra_state_shared_building_slots = 5
+		}
+		240 = {
+			add_extra_state_shared_building_slots = 2
+		}
+	}
+}
+	
+shared_focus = {
+	id = ers_STL_society_works
+	icon = GFX_focus_collective_housing
+	prerequisite = { focus = ers_STL_no_lazyness }
+	prerequisite = { focus = ers_STL_destroy_tsarist_culture }
+	cost = 4.4
+	relative_position_id = ers_STL_1_factory
+	x = -3
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_society_works"
+		add_ideas = STL_society_works_idea
+	}
+}
+	
+shared_focus = {
+	id = ers_STL_social_collectivism
+	icon = GFX_focus_collective_housing
+	prerequisite = { focus = ers_STL_no_lazyness }
+	prerequisite = { focus = ers_STL_destroy_tsarist_culture }
+	cost = 4.4
+	relative_position_id = ers_STL_1_factory
+	x = -1
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_society_works"
+		add_stability = 0.025
+		57 = {
+			add_extra_state_shared_building_slots = 5
+			add_manpower = 50000
+		}
+	}
+}
+
+shared_focus = {
+	id = ers_STL_military_factory
+	icon = GFX_goal_generic_soviet_construction
+	prerequisite = { focus = ers_STL_2_factory }
+	cost = 4.4
+	relative_position_id = ers_STL_1_factory
+	x = 3
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+		add_popularity = {
+			ideology = communism 
+			popularity = 0.02
+		}
+		57 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		240 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+	
+shared_focus = {
+	id = ers_STL_military_factory_left_1
+	icon = GFX_goal_stl_railroads
+	prerequisite = { focus = ers_STL_military_factory}
+	cost = 4.4
+	relative_position_id = ers_STL_1_factory
+	x = 2
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+		57 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		240 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+	
+shared_focus = {
+	id = ers_STL_military_factory_left_2
+	icon = GFX_goal_classless_society
+	prerequisite = { focus = ers_STL_military_factory_left_1 focus = ers_STL_military_factory_right_1  }
+	cost = 4.4
+	mutually_exclusive = { focus = ers_STL_military_factory_right_2 }
+	relative_position_id = ers_STL_1_factory
+	x = 1
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+		240 = {
+			add_extra_state_shared_building_slots = 4
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+	
+shared_focus = {
+	id = ers_STL_military_factory_right_1
+	icon = GFX_goal_generic_axis_build_infantry
+	prerequisite = { focus = ers_STL_military_factory}
+	cost = 4.4
+	relative_position_id = ers_STL_1_factory
+	x = 4
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+		custom_effect_tooltip = can_do_woyennoye_polozhenie_tt
+	}
+}
+	
+shared_focus = {
+	id = ers_STL_military_factory_right_2
+	icon = GFX_goal_skull_cannon
+	prerequisite = { focus = ers_STL_military_factory_right_1 focus = ers_STL_military_factory_left_1 }
+	cost = 4.4
+	mutually_exclusive = { focus = ers_STL_military_factory_left_2 }
+	relative_position_id = ers_STL_1_factory
+	x = 3
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+		57 = {
+			add_extra_state_shared_building_slots = 4
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}
+		}	
+	}
+}
+
+shared_focus = {
+	id = ers_STL_believe_in_materialism
+	icon = GFX_goal_socialist_industry
+	prerequisite = { focus = ers_STL_social_collectivism }
+	prerequisite = { focus = ers_STL_society_works }
+	prerequisite = { focus = ers_STL_military_factory_left_2 focus = ers_STL_military_factory_right_2 }
+	cost = 4.4
+	
+	relative_position_id = ers_STL_1_factory
+	x = -1
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+			
+	}
+}
+
+shared_focus = {
+	id = ers_STL_trud_project
+	icon = GFX_goal_stl_worker
+	prerequisite = { focus = ers_STL_social_collectivism }
+	prerequisite = { focus = ers_STL_society_works }
+	prerequisite = { focus = ers_STL_military_factory_left_2 focus = ers_STL_military_factory_right_2 }
+	cost = 4.4
+	
+	relative_position_id = ers_STL_1_factory
+	x = 1
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+			
+	}
+}
+
+shared_focus = {
+	id = ers_STL_electronics
+	icon = GFX_goal_generic_radio_equipment
+	prerequisite = { focus = ers_STL_believe_in_materialism }
+	prerequisite = { focus = ers_STL_trud_project }
+	cost = 4.4
+	relative_position_id = ers_STL_1_factory
+	x = -3
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+			
+	}
+}
+
+shared_focus = {
+	id = ers_STL_resource_harvesting
+	icon = GFX_goal_Copper_Mining
+	prerequisite = { focus = ers_STL_believe_in_materialism }
+	prerequisite = { focus = ers_STL_trud_project }
+	cost = 4.4
+	relative_position_id = ers_STL_1_factory
+	x = -1
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+			
+	}
+}
+
+shared_focus = {
+	id = ers_STL_mines_in_sovyonok
+	icon = GFX_goal_mountain_mine
+	prerequisite = { focus = ers_STL_electronics }
+	prerequisite = { focus = ers_STL_resource_harvesting }
+	cost = 4.4
+	relative_position_id = ers_STL_1_factory
+	x = -4
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+			
+	}
+}
+
+shared_focus = {
+	id = ers_STL_school_of_equality
+	icon = GFX_goal_education
+	prerequisite = { focus = ers_STL_electronics }
+	prerequisite = { focus = ers_STL_resource_harvesting }
+	cost = 4.4
+	relative_position_id = ers_STL_1_factory
+	x = -2
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+			
+	}
+}
+
+shared_focus = {
+	id = ers_STL_sinhronisation
+	icon = GFX_goal_industry_air
+	prerequisite = { focus = ers_STL_mines_in_sovyonok focus = ers_STL_school_of_equality }
+	cost = 4.4
+	relative_position_id = ers_STL_1_factory
+	x = -1
+	y = 8
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+			
+	}
+}
+
+shared_focus = {
+	id = ers_STL_one_year_plan
+	icon = GFX_goal_pony_labour
+	prerequisite = { focus = ers_STL_believe_in_materialism }
+	prerequisite = { focus = ers_STL_trud_project }
+	cost = 4.4
+	relative_position_id = ers_STL_1_factory
+	x = 1
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+			
+	}
+}
+
+shared_focus = {
+	id = ers_STL_arsenal_of_equality
+	icon = GFX_goal_stl_rifles
+	prerequisite = { focus = ers_STL_believe_in_materialism }
+	prerequisite = { focus = ers_STL_trud_project }
+	cost = 4.4
+	relative_position_id = ers_STL_1_factory
+	x = 3
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+			
+	}
+}
+
+shared_focus = {
+	id = ers_STL_cult_of_trains
+	icon = GFX_goal_stl_railroads
+	prerequisite = { focus = ers_STL_one_year_plan }
+	prerequisite = { focus = ers_STL_arsenal_of_equality }
+	cost = 4.4
+	relative_position_id = ers_STL_1_factory
+	x = 2
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+			
+	}
+}
+
+shared_focus = {
+	id = ers_STL_unbreakable_chain
+	icon = GFX_goal_Choose_BWP
+	prerequisite = { focus = ers_STL_one_year_plan }
+	prerequisite = { focus = ers_STL_arsenal_of_equality }
+	cost = 4.4
+	relative_position_id = ers_STL_1_factory
+	x = 4
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+			
+	}
+}
+
+shared_focus = {
+	id = ers_STL_standartisation
+	icon = GFX_goal_soviet_factory_town
+	prerequisite = { focus = ers_STL_cult_of_trains focus = ers_STL_unbreakable_chain }
+	cost = 4.4
+	relative_position_id = ers_STL_1_factory
+	x = 1
+	y = 8
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+			
+	}
+}
+
+shared_focus = {
+	id = ers_STL_USTANOVKA
+	icon = GFX_goal_stl_triumph_of_will
+	prerequisite = { focus = ers_STL_sinhronisation }
+	prerequisite = { focus = ers_STL_standartisation }
+	cost = 4.4
+	relative_position_id = ers_STL_1_factory
+	x = 0
+	y = 9
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+			
+	}
+}
+
+
+
+
+
+
+
+shared_focus = {
+	id = ers_STL_arm_the_people
+	icon = GFX_goal_stl_rifles
+	cost = 4.4
+	x = 29
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+		army_experience = 20
+	}
+}
+	
+shared_focus = {
+	id = ers_STL_grand_plan
+	icon = GFX_focus_indy_tanks_across_the_border
+	cost = 4.4
+	prerequisite = { focus = ers_STL_arm_the_people }
+	relative_position_id = ers_STL_arm_the_people
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.5
+			uses = 1
+			category = land_doctrine
+		}
+	}
+}
+	
+shared_focus = {
+	id = ers_STL_artillery_effort
+	icon = GFX_goal_stl_artillery
+	cost = 4.4
+	prerequisite = { focus = ers_STL_arm_the_people }
+	relative_position_id = ers_STL_arm_the_people
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+		add_tech_bonus = {
+		name = infantry_artillery_bonus
+			bonus = 0.5
+			uses = 2
+			category = artillery
+		}
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 150
+		}
+	}
+}
+	
+shared_focus = {
+	id = ers_STL_infantry_effort
+	icon = GFX_goal_gunpoint_diplomacy
+	cost = 4.4
+	prerequisite = { focus = ers_STL_arm_the_people }
+	relative_position_id = ers_STL_arm_the_people
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+		add_tech_bonus = {
+			name = infantry_equipment_bonus
+			bonus = 0.5
+			uses = 2
+			category = infantry_weapons
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 500
+		}
+	}
+}
+	
+shared_focus = {
+	id = ers_STL_strategy_of_weapon
+	icon = GFX_goal_unicorn_soldier
+	cost = 4.4
+	prerequisite = { focus = ers_STL_artillery_effort }
+	prerequisite = { focus = ers_STL_grand_plan }
+	relative_position_id = ers_STL_arm_the_people
+	x = 2
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+		army_experience = 20
+	}
+}
+	
+shared_focus = {
+	id = ers_STL_strategy_of_will
+	icon = GFX_goal_military_academy
+	cost = 4.4
+	prerequisite = { focus = ers_STL_infantry_effort }
+	prerequisite = { focus = ers_STL_grand_plan }
+	relative_position_id = ers_STL_arm_the_people
+	x = -2
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+		add_ideas = STL_army_will
+	}
+}
+	
+shared_focus = {
+	id = ers_STL_defence_against_STG
+	icon = GFX_goal_skull_cannon
+	cost = 4.4
+	prerequisite = { focus = ers_STL_strategy_of_will }
+	relative_position_id = ers_STL_arm_the_people
+	x = -2
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+		army_experience = 20
+	}
+}
+	
+shared_focus = {
+	id = ers_STL_attack_with_magic
+	icon = GFX_goal_wizard_hat
+	cost = 4.4
+	prerequisite = { focus = ers_STL_strategy_of_weapon }
+	relative_position_id = ers_STL_arm_the_people
+	x = 2
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+		add_tech_bonus = {
+			name = magical_bonus
+			bonus = 1.0
+			uses = 1
+			category = magical_tech
+		}
+	}
+}
+	
+shared_focus = {
+	id = ers_STL_collective_concqousnsness_at_fight
+	icon = GFX_equalist
+	cost = 4.4
+	prerequisite = { focus = ers_STL_strategy_of_will }
+	prerequisite = { focus = ers_STL_strategy_of_weapon }
+	relative_position_id = ers_STL_arm_the_people
+	x = 0
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+		add_ideas = STL_collective_mind
+	}
+}
+
+
+
+
+
+
+shared_focus = {
+	id = ers_STL_colorless_revolution
+	icon = GFX_equalist
+	cost = 2.2
+	x = 5
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+		set_cosmetic_tag = STL_OUR_communism
+	}
+}
+
+shared_focus = {
+	id = ers_STL_crush_hoof_and_hammer
+	icon = GFX_goal_stl_purge
+	cost = 2.2
+	prerequisite = { focus = ers_STL_colorless_revolution }
+	relative_position_id = ers_STL_colorless_revolution
+	x = -3
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+		add_stability = -0.05
+		every_owned_state = {
+			limit = {
+				is_core_of = STG
+			}
+			add_manpower = -250
+			add_resistance = 15
+		}
+	}
+}
+
+shared_focus = {
+	id = ers_STL_flag_of_equalism
+	icon = GFX_goal_stl_flag2
+	cost = 2.2
+	prerequisite = { focus = ers_STL_colorless_revolution }
+	relative_position_id = ers_STL_colorless_revolution
+	x = 3
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+		add_war_support = -0.05
+		every_owned_state = {
+			limit = {
+				is_core_of = STG
+			}
+			add_manpower = -250
+			add_compliance = -15
+		}
+	}
+}
+
+shared_focus = {
+	id = ers_STL_find_fascists
+	icon = GFX_goal_stl_skull2
+	cost = 4.4
+	prerequisite = { focus = ers_STL_crush_hoof_and_hammer }
+	prerequisite = { focus = ers_STL_flag_of_equalism }
+	relative_position_id = ers_STL_colorless_revolution
+	x = -6
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.5
+		}
+		country_event = { id = ers_stl.13 days = 2 }
+	}
+}
+
+shared_focus = {
+	id = ers_STL_burn_anticommunist_literature
+	icon = GFX_goal_stl_book_broken
+	cost = 4.4
+	prerequisite = { focus = ers_STL_crush_hoof_and_hammer }
+	prerequisite = { focus = ers_STL_flag_of_equalism }
+	relative_position_id = ers_STL_colorless_revolution
+	x = -3
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+		add_ideas = stl_ban_anticommunist_books_idea
+	}
+}
+
+shared_focus = {
+	id = ers_STL_fanatic_belief_in_starlight
+	icon = GFX_equalist
+	cost = 4.4
+	prerequisite = { focus = ers_STL_crush_hoof_and_hammer }
+	prerequisite = { focus = ers_STL_flag_of_equalism }
+	mutually_exclusive = { focus = ers_STL_fanatic_belief_in_people }
+	relative_position_id = ers_STL_colorless_revolution
+	x = -1
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+		add_country_leader_trait = dictator
+		add_political_power = 20
+		add_power_balance_value = {
+			id = stl_balance_of_power
+			value = 0.2
+		}
+	}
+}
+
+shared_focus = {
+	id = ers_STL_fanatic_belief_in_people
+	icon = GFX_equalist
+	cost = 4.4
+	prerequisite = { focus = ers_STL_crush_hoof_and_hammer }
+	prerequisite = { focus = ers_STL_flag_of_equalism }
+	mutually_exclusive = { focus = ers_STL_fanatic_belief_in_starlight }
+	relative_position_id = ers_STL_colorless_revolution
+	x = 1
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+		add_stability = 0.05
+		add_political_power = 150
+	}
+}
+
+shared_focus = {
+	id = ers_STL_destroy_statues
+	icon = GFX_goal_stl_breaking_statues
+	cost = 4.4
+	prerequisite = { focus = ers_STL_crush_hoof_and_hammer }
+	prerequisite = { focus = ers_STL_flag_of_equalism }
+	relative_position_id = ers_STL_colorless_revolution
+	x = 3
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+		add_war_support = 0.05
+		every_state = {
+			limit = {
+				is_core_of = STG
+			}
+			add_extra_state_shared_building_slots = 2
+			
+		}
+	}
+}
+
+shared_focus = {
+	id = ers_STL_very_big_propaganda
+	icon = GFX_goal_stl_propaganda
+	cost = 4.4
+	prerequisite = { focus = ers_STL_crush_hoof_and_hammer }
+	prerequisite = { focus = ers_STL_flag_of_equalism }
+	relative_position_id = ers_STL_colorless_revolution
+	x = 6
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+		add_ideas = stl_huge_propaganda_idea
+	}
+}
+
+shared_focus = {
+	id = ers_STL_enlightener_is_army_leader
+	icon = GFX_goal_stl_unicorn
+	cost = 4.4
+	prerequisite = { focus = ers_STL_find_fascists }
+	prerequisite = { focus = ers_STL_burn_anticommunist_literature }
+	prerequisite = { focus = ers_STL_fanatic_belief_in_people focus = ers_STL_fanatic_belief_in_starlight }
+	prerequisite = { focus = ers_STL_destroy_statues }
+	prerequisite = { focus = ers_STL_very_big_propaganda }
+	mutually_exclusive = { focus = ers_STL_people_army_comitte }
+	relative_position_id = ers_STL_colorless_revolution
+	x = -7
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+		add_field_marshal_role = {
+			character = STL_starlight
+			traits = { inspirational_leader unirorns_race_trait }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 5
+			logistics_skill = 2
+			legacy_id = -1
+		}
+		custom_effect_tooltip = starlight_stats_tp
+		add_ideas = stl_army_simping_for_starlight_idea
+		add_power_balance_value = {
+			id = stl_balance_of_power
+			value = 0.2
+		}
+	}
+}
+
+shared_focus = {
+	id = ers_STL_people_army_comitte
+	icon = GFX_goal_stl_unicorn
+	cost = 4.4
+	prerequisite = { focus = ers_STL_find_fascists }
+	prerequisite = { focus = ers_STL_burn_anticommunist_literature }
+	prerequisite = { focus = ers_STL_fanatic_belief_in_people focus = ers_STL_fanatic_belief_in_starlight }
+	prerequisite = { focus = ers_STL_destroy_statues }
+	prerequisite = { focus = ers_STL_very_big_propaganda }
+	mutually_exclusive = { focus = ers_STL_enlightener_is_army_leader }
+	relative_position_id = ers_STL_colorless_revolution
+	x = -5
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+		army_experience = 10
+		add_ideas = stl_army_comitte_idea
+	}
+}
+
+shared_focus = {
+	id = ers_STL_lessons_of_war
+	icon = GFX_goal_stl_soldier
+	cost = 4.4
+	prerequisite = { focus = ers_STL_enlightener_is_army_leader focus = ers_STL_people_army_comitte }
+	relative_position_id = ers_STL_colorless_revolution
+	x = -7
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+		army_experience = 15
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.5
+			uses = 1
+			category = land_doctrine
+		}
+		
+	}
+}
+
+shared_focus = {
+	id = ers_STL_military_police
+	icon = GFX_goal_stl_police
+	cost = 4.4
+	prerequisite = { focus = ers_STL_enlightener_is_army_leader focus = ers_STL_people_army_comitte }
+	relative_position_id = ers_STL_colorless_revolution
+	x = -5
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+		add_ideas = stl_nice_police_idea
+		add_tech_bonus = {
+			name = HIP_ahac_milpol
+			category = military_police_tech
+			uses = 1
+			bonus = 2
+		}
+	}
+}
+
+shared_focus = {
+	id = ers_STL_boundaries
+	icon = GFX_equalist
+	cost = 4.4
+	prerequisite = { focus = ers_STL_find_fascists }
+	prerequisite = { focus = ers_STL_burn_anticommunist_literature }
+	prerequisite = { focus = ers_STL_fanatic_belief_in_people focus = ers_STL_fanatic_belief_in_starlight }
+	prerequisite = { focus = ers_STL_destroy_statues }
+	prerequisite = { focus = ers_STL_very_big_propaganda }
+	relative_position_id = ers_STL_colorless_revolution
+	x = -3
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+		add_manpower = 15000
+		153 = { add_resistance = -10 }
+		235 = { add_resistance = -10 }
+		225 = { add_resistance = -10 }
+		157 = { add_resistance = -10 }
+	}
+}
+
+shared_focus = {
+	id = ers_STL_starlight_books
+	icon = GFX_goal_stl_book_starlight
+	cost = 4.4
+	prerequisite = { focus = ers_STL_find_fascists }
+	prerequisite = { focus = ers_STL_burn_anticommunist_literature }
+	prerequisite = { focus = ers_STL_fanatic_belief_in_people focus = ers_STL_fanatic_belief_in_starlight }
+	prerequisite = { focus = ers_STL_destroy_statues }
+	prerequisite = { focus = ers_STL_very_big_propaganda }
+	mutually_exclusive = { focus = ers_STL_people_books }
+	relative_position_id = ers_STL_colorless_revolution
+	x = -1
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+		swap_ideas = {
+			remove_idea = stl_ban_anticommunist_books_idea
+			add_idea = stl_starlight_books_idea
+		}
+		add_power_balance_value = {
+			id = stl_balance_of_power
+			value = 0.2
+		}
+	}
+}
+
+shared_focus = {
+	id = ers_STL_people_books
+	icon = GFX_goal_stl_book_ministry
+	cost = 4.4
+	prerequisite = { focus = ers_STL_find_fascists }
+	prerequisite = { focus = ers_STL_burn_anticommunist_literature }
+	prerequisite = { focus = ers_STL_fanatic_belief_in_people focus = ers_STL_fanatic_belief_in_starlight }
+	prerequisite = { focus = ers_STL_destroy_statues }
+	prerequisite = { focus = ers_STL_very_big_propaganda }
+	mutually_exclusive = { focus = ers_STL_starlight_books }
+	relative_position_id = ers_STL_colorless_revolution
+	x = 1
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+		swap_ideas = {
+			remove_idea = stl_ban_anticommunist_books_idea
+			add_idea = stl_ministry_books_idea
+		}
+	}
+}
+
+shared_focus = {
+	id = ers_STL_prohibid_selfish_thoughts
+	icon = GFX_equalist
+	cost = 4.4
+	prerequisite = { focus = ers_STL_people_books focus = ers_STL_starlight_books }
+	relative_position_id = ers_STL_colorless_revolution
+	x = -1
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+		add_political_power = 75
+	}
+}
+
+shared_focus = {
+	id = ers_STL_one_for_everyone
+	icon = GFX_goal_stl_soldier_alt
+	cost = 4.4
+	prerequisite = { focus = ers_STL_people_books focus = ers_STL_starlight_books }
+	relative_position_id = ers_STL_colorless_revolution
+	x = 1
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+		add_manpower = 15000
+		custom_effect_tooltip = STL_STG_volunteers_tt
+		hidden_effect = {
+			load_oob = "STL_STG_volunteers"
+		}
+	}
+}
+
+shared_focus = {
+	id = ers_STL_boundaries_2
+	icon = GFX_goal_stl_spy
+	cost = 4.4
+	prerequisite = { focus = ers_STL_find_fascists }
+	prerequisite = { focus = ers_STL_burn_anticommunist_literature }
+	prerequisite = { focus = ers_STL_fanatic_belief_in_people focus = ers_STL_fanatic_belief_in_starlight }
+	prerequisite = { focus = ers_STL_destroy_statues }
+	prerequisite = { focus = ers_STL_very_big_propaganda }
+	relative_position_id = ers_STL_colorless_revolution
+	x = 3
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+		add_manpower = 15000
+		153 = { add_compliance = 10 }
+		235 = { add_compliance = 10 }
+		225 = { add_compliance = 10 }
+		157 = { add_compliance = 10 }
+	}
+}
+
+shared_focus = {
+	id = ers_STL_starlight_knows
+	icon = GFX_equalist
+	cost = 4.4
+	prerequisite = { focus = ers_STL_find_fascists }
+	prerequisite = { focus = ers_STL_burn_anticommunist_literature }
+	prerequisite = { focus = ers_STL_fanatic_belief_in_people focus = ers_STL_fanatic_belief_in_starlight }
+	prerequisite = { focus = ers_STL_destroy_statues }
+	prerequisite = { focus = ers_STL_very_big_propaganda }
+	mutually_exclusive = { focus = ers_STL_local_power}
+	relative_position_id = ers_STL_colorless_revolution
+	x = 5
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+		add_power_balance_value = {
+			id = stl_balance_of_power
+			value = 0.2
+		}
+		unlock_decision_tooltip = STL_reduce_resistance_in_state
+		unlock_decision_tooltip = STL_increace_compliance_in_state
+	}
+}
+
+shared_focus = {
+	id = ers_STL_local_power
+	icon = GFX_equalist
+	cost = 4.4
+	prerequisite = { focus = ers_STL_find_fascists }
+	prerequisite = { focus = ers_STL_burn_anticommunist_literature }
+	prerequisite = { focus = ers_STL_fanatic_belief_in_people focus = ers_STL_fanatic_belief_in_starlight }
+	prerequisite = { focus = ers_STL_destroy_statues }
+	prerequisite = { focus = ers_STL_very_big_propaganda }
+	mutually_exclusive = { focus = ers_STL_starlight_knows }
+	relative_position_id = ers_STL_colorless_revolution
+	x = 7
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+		add_political_power = 75
+		unlock_decision_tooltip = STL_reduce_resistance_in_state
+		unlock_decision_tooltip = STL_increace_compliance_in_state
+	}
+}
+
+shared_focus = {
+	id = ers_STL_destroy_extra_good_life
+	icon = GFX_equalist
+	cost = 4.4
+	prerequisite = { focus = ers_STL_starlight_knows focus = ers_STL_local_power}
+	relative_position_id = ers_STL_colorless_revolution
+	x = 5
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+		add_popularity = {
+				ideology = communism
+				popularity = 0.02
+		}
+		add_ideas = stl_no_great_life
+	}
+}
+
+shared_focus = {
+	id = ers_STL_new_production
+	icon = GFX_goal_stl_pyramide
+	cost = 4.4
+	prerequisite = { focus = ers_STL_starlight_knows focus = ers_STL_local_power}
+	relative_position_id = ers_STL_colorless_revolution
+	x = 7
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+		add_ideas = stl_taken_resources_idea
+	}
+}
+
+shared_focus = {
+	id = ers_STL_clean_country_from_opposition
+	icon = GFX_goal_stl_treaty
+	cost = 4.4
+	prerequisite = { focus = ers_STL_lessons_of_war }
+	prerequisite = { focus = ers_STL_military_police }
+	prerequisite = { focus = ers_STL_prohibid_selfish_thoughts }
+	prerequisite = { focus = ers_STL_one_for_everyone }
+	prerequisite = { focus = ers_STL_destroy_extra_good_life }
+	prerequisite = { focus = ers_STL_new_production }
+	available = {
+		NOT = {
+			has_country_flag = stl_feather_bangs_coup
+		}
+	}
+	relative_position_id = ers_STL_colorless_revolution
+	x = -3
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.25
+		}
+	}
+}
+
+shared_focus = {
+	id = ers_STL_total_power_of_profsoyuz
+	icon = GFX_goal_stl_worker
+	cost = 4.4
+	prerequisite = { focus = ers_STL_lessons_of_war }
+	prerequisite = { focus = ers_STL_military_police }
+	prerequisite = { focus = ers_STL_prohibid_selfish_thoughts }
+	prerequisite = { focus = ers_STL_one_for_everyone }
+	prerequisite = { focus = ers_STL_destroy_extra_good_life }
+	prerequisite = { focus = ers_STL_new_production }
+	relative_position_id = ers_STL_colorless_revolution
+	x = 3
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+		add_political_power = 75
+	}
+}
+
+shared_focus = {
+	id = ers_STL_our_severyana
+	icon = GFX_goal_stl_flag2
+	cost = 4.4
+	prerequisite = { focus = ers_STL_clean_country_from_opposition }
+	prerequisite = { focus = ers_STL_total_power_of_profsoyuz }
+	relative_position_id = ers_STL_colorless_revolution
+	x = 0
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_military_factory"
+		news_event = { id = ers_news.20 days = 1 }
+		STG = { add_to_ROOT_potential_cores = yes }
+	}
+}
+
+
+
+
+

@@ -1,0 +1,1309 @@
+shared_focus = {
+	id = ANR_we_are_at_fucking_war
+	icon = GFX_goal_red_star
+	cost = 1.5
+	available = {
+	}
+	ai_will_do = {
+		factor = 40
+	}
+	bypass = {
+		NOT = {
+			has_war_with = PGS
+		}
+	}
+	x = 9
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LOS_old_new_home_d"
+		add_political_power = -50
+	}
+	search_filters = {  }
+}
+
+shared_focus = {
+	id = ANR_decisions_focus
+	icon = GFX_goal_secret_agents_red
+	cost = 3.6
+	available = {
+	}
+	prerequisite = { 
+		focus = ANR_we_are_at_fucking_war
+	}
+	ai_will_do = {
+		factor = 40
+	}
+	bypass = {
+		NOT = {
+			has_war_with = PGS
+		}
+	}
+	relative_position_id = ANR_we_are_at_fucking_war
+	x = -3
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LOS_old_new_home_d"
+		custom_effect_tooltip = anr_unlock_anarchy_civ_war_decisions_tt
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = ANR_even_more_soldiers
+	icon = GFX_goal_revolution_tools
+	cost = 3.6
+	available = {
+	}
+	prerequisite = { 
+		focus = ANR_decisions_focus
+	}
+	ai_will_do = {
+		factor = 40
+	}
+	bypass = {
+		NOT = {
+			has_war_with = PGS
+		}
+	}
+	relative_position_id = ANR_we_are_at_fucking_war
+	x = -3
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LOS_old_new_home_d"
+		hidden_effect = {
+			load_oob = "Anarchists_bad_divisions"
+		}
+		custom_effect_tooltip = anr_hire_bad_diviisons_tt
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = ANR_partizans
+	icon = GFX_goal_communism_cloud
+	cost = 3.6
+	available = {
+	}
+	prerequisite = { 
+		focus = ANR_decisions_focus
+	}
+	ai_will_do = {
+		factor = 40
+	}
+	bypass = {
+		NOT = {
+			has_war_with = PGS
+		}
+	}
+	relative_position_id = ANR_we_are_at_fucking_war
+	x = -5
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LOS_old_new_home_d"
+		custom_effect_tooltip = anr_can_create_partizans_tt
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = ANR_red_flag
+	icon = GFX_goal_anr_rise_flags
+	cost = 3.6
+	available = {
+	}
+	prerequisite = { focus = ANR_partizans }
+	prerequisite = { focus = ANR_even_more_soldiers }
+	ai_will_do = {
+		factor = 40
+	}
+	bypass = {
+		NOT = {
+			has_war_with = PGS
+		}
+	}
+	relative_position_id = ANR_we_are_at_fucking_war
+	x = -4
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LOS_old_new_home_d"
+		add_manpower = 50000
+		add_doctrine_cost_reduction = {
+			name = cat_mass_assault
+			cost_reduction = 0.75
+			uses = 1
+			category = cat_mass_assault
+		}
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = ANR_recover
+	icon = GFX_goal_red_eagle
+	cost = 3.6
+	available = {
+	}
+	prerequisite = { 
+		focus = ANR_we_are_at_fucking_war 
+	}
+	ai_will_do = {
+		factor = 40
+	}
+	bypass = {
+		NOT = {
+			has_war_with = PGS
+		}
+	}
+	relative_position_id = ANR_we_are_at_fucking_war
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LOS_old_new_home_d"
+		add_war_support = 0.1
+		army_experience = 25
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = ANR_reorganize_people
+	icon = GFX_goal_strasserist_conscription
+	cost = 3.6
+	available = {
+	}
+	prerequisite = { 
+		focus = ANR_we_are_at_fucking_war 
+	}
+	ai_will_do = {
+		factor = 40
+	}
+	bypass = {
+		NOT = {
+			has_war_with = PGS
+		}
+	}
+	relative_position_id = ANR_we_are_at_fucking_war
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LOS_old_new_home_d"
+		add_stability = -0.05
+		add_manpower = 200000
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = ANR_again_not_ok
+	icon = GFX_goal_psody_cyrus
+	cost = 0.8
+	available = {
+	}
+	prerequisite = { 
+		focus = ANR_recover
+	}
+	prerequisite = { 
+		focus = ANR_reorganize_people
+	}
+	ai_will_do = {
+		factor = 40
+	}
+	bypass = {
+		NOT = {
+			has_war_with = PGS
+		}
+	}
+	relative_position_id = ANR_we_are_at_fucking_war
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LOS_old_new_home_d"
+		add_stability = -0.05
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = ANR_no_religion
+	icon = GFX_goal_ban_relygion
+	cost = 2
+	available = {
+	}
+	prerequisite = { 
+		focus = ANR_again_not_ok
+	}
+	ai_will_do = {
+		factor = 40
+	}
+	bypass = {
+		NOT = {
+			has_war_with = PGS
+		}
+	}
+	relative_position_id = ANR_we_are_at_fucking_war
+	x = 1
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LOS_old_new_home_d"
+		swap_ideas = {
+			remove_idea = ers_pegasism
+			add_idea = ers_atheism
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.1
+		}
+	}
+	search_filters = {  }	
+}
+
+
+shared_focus = {
+	id = ANR_motivation
+	icon = GFX_goal_motivation
+	cost = 1.5
+	available = {
+	}
+	prerequisite = { 
+		focus = ANR_again_not_ok
+	}
+	ai_will_do = {
+		factor = 40
+	}
+	bypass = {
+		NOT = {
+			has_war_with = PGS
+		}
+	}
+	relative_position_id = ANR_we_are_at_fucking_war
+	x = -1
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LOS_old_new_home_d"
+		add_to_variable = { ANR.beer_variable = 75 }
+		custom_effect_tooltip = plus_75_beer_tt
+		add_timed_idea = { idea = ANR_motivation_idea days = 50	}
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = ANR_find_guns
+	icon = GFX_goal_red_star_guard
+	cost = 3.6
+	available = {
+	}
+	prerequisite = { 
+		focus = ANR_we_are_at_fucking_war 
+	}
+	ai_will_do = {
+		factor = 40
+	}
+	bypass = {
+		NOT = {
+			has_war_with = PGS
+		}
+	}
+	relative_position_id = ANR_we_are_at_fucking_war
+	x = 3
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LOS_old_new_home_d"
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 972
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 41
+		}
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = ANR_build_tachankas
+	icon = GFX_truck_gen
+	cost = 3.6
+	available = {
+	}
+	prerequisite = { 
+		focus = ANR_find_guns 
+	}
+	ai_will_do = {
+		factor = 40
+	}
+	bypass = {
+		NOT = {
+			has_war_with = PGS
+		}
+	}
+	relative_position_id = ANR_we_are_at_fucking_war
+	x = 3
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LOS_old_new_home_d"
+		swap_ideas = {
+			remove_idea = PGS_tachankas_construction
+			add_idea = ANR_wild_ride
+		}
+		add_equipment_to_stockpile = {
+			type = motorized_equipment
+			amount = 175
+		}
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = ANR_build_industry
+	icon = GFX_goal_soviet_factory_town
+	cost = 3.6
+	available = {
+	}
+	prerequisite = { 
+		focus = ANR_find_guns 
+	}
+	ai_will_do = {
+		factor = 40
+	}
+	bypass = {
+		NOT = {
+			has_war_with = PGS
+		}
+	}
+	relative_position_id = ANR_we_are_at_fucking_war
+	x = 5
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LOS_old_new_home_d"
+		175 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		138 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		343 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = ANR_more_military
+	icon = GFX_goal_pony_labour
+	cost = 3.6
+	available = {
+	}
+	prerequisite = { 
+		focus = ANR_build_industry
+	}
+	prerequisite = { 
+		focus = ANR_build_tachankas
+	}
+	ai_will_do = {
+		factor = 40
+	}
+	bypass = {
+		NOT = {
+			has_war_with = PGS
+		}
+	}
+	relative_position_id = ANR_we_are_at_fucking_war
+	x = 4
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LOS_old_new_home_d"
+		138 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+		137 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		add_manpower = -2500
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = ANR_civil_war_finale
+	icon = GFX_goal_anr_flag
+	cost = 1.5
+	available = {
+		OR = {
+			AND = {
+				owns_state = 170
+				PGS = {
+					exists = no
+				}
+			}
+			PGS = {
+				has_government = democratic
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = ANR_we_are_at_fucking_war
+	x = 0
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LOS_old_new_home_d"
+		add_political_power = -25
+		hidden_effect = {
+			country_event = { id = anr.1 days = 30 }
+			country_event = { id = anr.2 days = 60 }
+			country_event = { id = anr.3 days = 90 }
+			country_event = { id = anr.4 days = 100 }
+		}
+		if = {
+			limit = {
+				PGS = {
+					NOT = {
+						has_government = democratic
+					}
+				}
+			}
+			remove_ideas = PGS_civil_war_idea
+		add_dynamic_modifier = {
+			modifier = PGS_civil_war_recovering
+		}
+		add_to_variable = { pgs_civil_war_stability_factor = -0.1 }
+		add_to_variable = { pgs_civil_war_consumer_goods_factor = 0.1 }
+		add_to_variable = { pgs_civil_war_production_speed_buildings_factor = -0.15 }
+		add_to_variable = { pgs_civil_war_industrial_capacity_factory = -0.15 }
+		add_to_variable = { pgs_civil_war_conscription_factor = -0.25 }
+		}
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = ANR_after_c_w_bottles
+	icon = GFX_goal_anr_vodka
+	cost = 4.4
+	available = {
+		has_government = communism
+	}
+	prerequisite = { focus = ANR_civil_war_finale }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = ANR_civil_war_finale
+	x = -4
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ANR_after_c_w_bottles"
+		add_to_variable = { ANR.beer_variable = 25 }
+		custom_effect_tooltip = plus_25_beer_tt
+		add_ideas = ANR_drinking_idea
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = ANR_after_c_w_mares
+	icon = GFX_goal_anr_free_love
+	cost = 4.4
+	available = {
+		has_government = communism
+	}
+	prerequisite = { focus = ANR_civil_war_finale }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = ANR_civil_war_finale
+	x = 4
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ANR_after_c_w_mares"
+		add_ideas = ANR_ultrasex_idea
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = ANR_total_celebration
+	icon = GFX_goal_socialist_industry
+	mutually_exclusive = { focus = ANR_only_who_worked }
+	cost = 4.4
+	available = {
+		has_government = communism
+	}
+	prerequisite = { focus = ANR_after_c_w_bottles }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = ANR_civil_war_finale
+	x = -5
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ANR_trin_trava"
+		swap_ideas = {
+			remove_idea = ANR_drinking_idea
+			add_idea = ANR_drinking_idea_for_all
+		}
+		custom_effect_tooltip = minus_5_beer_monthly_tt
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = ANR_only_who_worked
+	icon = GFX_goal_anr_bread
+	mutually_exclusive = { focus = ANR_total_celebration }
+	cost = 4.4
+	available = {
+		has_government = communism
+	}
+	prerequisite = { focus = ANR_after_c_w_bottles }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = ANR_civil_war_finale
+	x = -3
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ANR_trin_trava"
+		swap_ideas = {
+			remove_idea = ANR_drinking_idea
+			add_idea = ANR_only_who_worked_idea
+		}	
+		custom_effect_tooltip = plus_5_beer_monthly_tt
+	}
+	search_filters = {  }
+}
+
+shared_focus = {
+	id = ANR_support_banditism
+	icon = GFX_goal_arms_sales
+	cost = 4.4
+	available = {
+		has_government = communism
+		has_idea = ANR_uncontrollable_banditism
+	}
+	prerequisite = { focus = ANR_train_anarchy }
+	prerequisite = { focus = ANR_dont_touch_its_not_yours }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = ANR_civil_war_finale
+	x = -7
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ANR_trin_trava"
+		add_stability = -0.1
+		swap_ideas = {	
+			remove_idea = ANR_uncontrollable_banditism
+			add_idea = ANR_uncontrollable_banditism_1
+		}
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = ANR_ignore_poverty
+	icon = GFX_focus_empty_coffers
+	cost = 4.4
+	available = {
+		has_government = communism
+	}
+	prerequisite = { focus = ANR_train_anarchy }
+	prerequisite = { focus = ANR_dont_touch_its_not_yours }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = ANR_civil_war_finale
+	x = -5
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ANR_trin_trava"
+		add_political_power = -100
+		decrease_poverty = yes
+	}
+	search_filters = {  }	
+}
+
+
+shared_focus = {
+	id = ANR_from_farmers_to_maroders
+	icon = GFX_focus_generic_join_comintern
+	cost = 4.4
+	available = {
+		has_government = communism
+	}
+	prerequisite = { focus = ANR_ignore_poverty }
+	prerequisite = { focus = ANR_more_guns }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = ANR_civil_war_finale
+	x = -6
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ANR_trin_trava"
+		add_ideas = ANR_farmers_to_raders
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = ANR_ignore_illiteracy
+	icon = GFX_goal_anr_illiteracy
+	cost = 4.4
+	available = {
+		has_government = communism
+	}
+	prerequisite = { focus = ANR_ignore_poverty }
+	prerequisite = { focus = ANR_support_banditism }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = ANR_civil_war_finale
+	x = -4
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ANR_trin_trava"
+		add_war_support = -0.1
+		decrease_illiteracy = yes	
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = ANR_civil_war_ignorance
+	icon = GFX_goal_anr_burning_capitol
+	cost = 4.4
+	available = {
+		has_government = communism
+	}
+	prerequisite = { focus = ANR_ignore_illiteracy }
+	prerequisite = { focus = ANR_from_farmers_to_maroders }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = ANR_civil_war_finale
+	x = -5
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ANR_trin_trava"
+		add_to_variable = { ANR.beer_variable = 100 }
+		custom_effect_tooltip = plus_100_beer_tt
+		add_political_power = -500
+		add_manpower = -100000
+		add_popularity = {
+			ideology = communism
+			popularity = -0.15
+		}
+		remove_dynamic_modifier = { modifier = PGS_civil_war_recovering }	
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = ANR_train_anarchy
+	icon = GFX_goal_anr_train_anarchy
+	cost = 4.4
+	available = {
+		has_government = communism
+	}
+	prerequisite = { focus = ANR_total_celebration focus = ANR_only_who_worked }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = ANR_civil_war_finale
+	x = -4
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ANR_trin_trava"
+		add_stability = -0.05
+		add_war_support = 0.05
+		add_manpower = -7000
+		build_railway = {
+			level = 2
+			start_province = 11686
+			target_province = 9351
+			build_only_on_allied = yes
+        }
+		build_railway = {
+			level = 2
+			start_province = 11686
+			target_province = 11672
+			build_only_on_allied = yes
+        }
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = ANR_more_guns
+	icon = GFX_goal_generic_military_equipment
+	cost = 4.4
+	available = {
+		has_government = communism
+	}
+	prerequisite = { focus = ANR_dont_touch_its_not_yours }
+	prerequisite = { focus = ANR_train_anarchy }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = ANR_civil_war_finale
+	x = -3
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ANR_trin_trava"
+		add_ideas = ANR_more_guns_idea
+		175 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+			}
+		}
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = ANR_trin_trava
+	icon = GFX_goal_anr_skull
+	cost = 4.4
+	available = {
+		has_government = communism
+	}
+	prerequisite = { focus = ANR_after_c_w_bottles }
+	prerequisite = { focus = ANR_after_c_w_mares }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = ANR_civil_war_finale
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ANR_trin_trava"
+		country_event = { id = anr.5 days = 30 }
+		add_popularity = {
+			ideology = communism
+			popularity = 1.0
+		}
+		every_owned_state = {
+			add_manpower = -25000
+		}
+		
+	}
+	search_filters = {  }	
+}
+
+
+
+shared_focus = {
+	id = ANR_dont_touch_its_not_yours
+	icon = GFX_goal_anr_cash_and_gun
+	cost = 4.4
+	available = {
+		has_government = communism
+	}
+	prerequisite = { focus = ANR_trin_trava }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = ANR_trin_trava
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ANR_trin_trava"
+		add_ideas = ANR_treasure_for_everyone
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = ANR_did_you_get_it_good
+	icon = GFX_goal_anr_factories
+	cost = 4.4
+	available = {
+		has_government = communism
+	}
+	prerequisite = { focus = ANR_trin_trava }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = ANR_trin_trava
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ANR_trin_trava"
+		175 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+			}
+			
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+			}
+		}
+		add_political_power = -75
+		add_stability = 0.05
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = ANR_only_villages
+	icon = GFX_goal_anr_molotov
+	cost = 4.4
+	available = {
+		has_government = communism
+	}
+	prerequisite = { focus = ANR_dont_touch_its_not_yours }
+	prerequisite = { focus = ANR_did_you_get_it_good }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = ANR_trin_trava
+	x = -1
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ANR_trin_trava"
+		add_manpower = 50000
+		add_popularity = {
+			ideology = communism
+			popularity = -0.1
+		}
+		every_owned_state = {
+			damage_building = { type = infrastructure damage = 0.1 }
+			set_state_category = anarchopolis
+		}
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = ANR_motivated_terror
+	icon = GFX_goal_anr_terror
+	goal_anr_spooky_scary_sceleton
+	cost = 4.4
+	available = {
+		has_government = communism
+	}
+	prerequisite = { focus = ANR_dont_touch_its_not_yours }
+	prerequisite = { focus = ANR_did_you_get_it_good }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = ANR_trin_trava
+	x = 1
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ANR_trin_trava"
+		army_experience = -5
+		add_ideas = ANR_march_to_farsh
+		every_owned_state = {
+			add_manpower = -50000
+		}
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = ANR_sing_revolution
+	icon = GFX_goal_anr_letov
+	cost = 4.4
+	available = {
+		has_government = communism
+	}
+	prerequisite = { focus = ANR_only_villages }
+	prerequisite = { focus = ANR_motivated_terror }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = ANR_trin_trava
+	x = 0
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ANR_trin_trava"
+		add_ideas = ANR_sing_revolution_idea
+		custom_effect_tooltip = ANR_sing_revolution_tt
+		###every_state = {
+		###	add_claim_by = ROOT
+		###}
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = ANR_stop_dengi
+	icon = GFX_goal_anr_money_burn
+	cost = 4.4
+	available = {
+		has_government = communism
+	}
+	prerequisite = { focus = ANR_apple }
+	prerequisite = { focus = ANR_did_you_get_it_good }
+	prerequisite = { focus = ANR_dont_touch_its_not_yours }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = ANR_trin_trava
+	x = 3
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ANR_trin_trava"
+		add_stability = -0.1
+		add_popularity = {
+			ideology = communism
+			popularity = 0.1
+		}
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = ANR_stop_politika
+	icon = GFX_goal_anr_burning_capitol
+	cost = 4.4
+	available = {
+		has_government = communism
+	}
+	prerequisite = { focus = ANR_apple }
+	prerequisite = { focus = ANR_did_you_get_it_good }
+	prerequisite = { focus = ANR_dont_touch_its_not_yours }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = ANR_trin_trava
+	x = 5
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ANR_trin_trava"
+		add_political_power = -100
+		add_ideas = ANR_stop_politika_idea
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = ANR_stop_state
+	icon = GFX_goal_anr_no_state
+	cost = 4.4
+	available = {
+		has_government = communism
+	}
+	prerequisite = { focus = ANR_apple }
+	prerequisite = { focus = ANR_did_you_get_it_good }
+	prerequisite = { focus = ANR_dont_touch_its_not_yours }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = ANR_trin_trava
+	x = 7
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ANR_trin_trava"
+		add_ideas = ANR_stop_state_idea
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = ANR_anti_democratic
+	icon = GFX_goal_Choose_BWP
+	cost = 4.4
+	available = {
+		has_government = communism
+	}
+	prerequisite = { focus = ANR_stop_dengi }
+	prerequisite = { focus = ANR_stop_politika }
+	prerequisite = { focus = ANR_stop_state }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = ANR_trin_trava
+	x = 4
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ANR_trin_trava"
+		declare_war_on = { target = LOS type = annex_everything }
+	}
+	search_filters = {  }	
+}
+shared_focus = {
+	id = ANR_anti_neutrality
+	icon = GFX_goal_crush_monarchy
+	cost = 4.4
+	available = {
+		has_government = communism
+	}
+	prerequisite = { focus = ANR_stop_dengi }
+	prerequisite = { focus = ANR_stop_politika }
+	prerequisite = { focus = ANR_stop_state }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = ANR_trin_trava
+	x = 6
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ANR_trin_trava"
+		declare_war_on = { target = PGV type = annex_everything }
+	}
+	search_filters = {  }
+}
+
+shared_focus = {
+	id = ANR_anti_state
+	icon = GFX_goal_crush_monarchy
+	cost = 4.4
+	available = {
+		has_government = communism
+	}
+	prerequisite = { focus = ANR_anti_democratic }
+	prerequisite = { focus = ANR_anti_neutrality }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = ANR_trin_trava
+	x = 5
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ANR_trin_trava"
+		add_ideas = ANR_destroy_occipied_territories
+		
+		LOS = { add_to_ROOT_potential_cores = yes }
+		PGV = { add_to_ROOT_potential_cores = yes }
+	}
+	search_filters = {  }	
+}
+
+
+shared_focus = {
+	id = ANR_super_tachanka
+	icon = GFX_goal_anr_tachka
+	cost = 4.4
+	available = {
+		has_government = communism
+	}
+	prerequisite = { focus = ANR_after_c_w_mares }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = ANR_civil_war_finale
+	x = 3
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ANR_super_tachanka"
+		add_equipment_to_stockpile = {
+			type = motorized_equipment
+			amount = 1500
+		}
+		add_stability = -0.07
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = ANR_anarchic_power
+	icon = GFX_goal_anr_cute_pony
+	cost = 4.4
+	available = {
+		has_government = communism
+	}
+	prerequisite = { focus = ANR_after_c_w_mares }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = ANR_civil_war_finale
+	x = 5
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ANR_anarchic_power"
+		add_ideas = ANR_anarchic_power_idea
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = ANR_apple
+	icon = GFX_goal_anr_apple
+	cost = 4.4
+	available = {
+		has_government = communism
+	}
+	prerequisite = { focus = ANR_super_tachanka }
+	prerequisite = { focus = ANR_anarchic_power }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = ANR_civil_war_finale
+	x = 4
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ANR_apple"
+		add_war_support = -0.05
+		add_stability = 0.05
+		add_to_variable = { ANR.beer_variable = 50 }
+		custom_effect_tooltip = plus_50_beer_tt
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = ANR_anarcho_army
+	icon = GFX_goal_anr_spooky_scary_sceleton
+	cost = 2.2
+	available = {
+		has_completed_focus = ANR_civil_war_finale
+	}
+	ai_will_do = {
+		factor = 40
+	}
+	
+	x = 21
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ANR_anarcho_army"
+		army_experience = -10
+		add_manpower = 25000
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = ANR_international_brigades
+	icon = GFX_goal_red_star_guard
+	cost = 5
+	available = {
+	}
+	prerequisite = { focus = ANR_anarcho_army }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = ANR_anarcho_army
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ANR_anarcho_army"
+		add_ideas = ANR_international_revolutionaries
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = ANR_sacred_disorganisation
+	icon = GFX_goal_conscription_pony
+	cost = 5
+	available = {
+	}
+	prerequisite = { focus = ANR_anarcho_army }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = ANR_anarcho_army
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ANR_anarcho_army"
+		add_ideas = ANR_desorganisation_idea
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = ANR_theres_many_rifles_in_the_world
+	icon = GFX_goal_generic_small_arms
+	cost = 2.2
+	available = {
+	}
+	prerequisite = { focus = ANR_international_brigades }
+	prerequisite = { focus = ANR_sacred_disorganisation }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = ANR_anarcho_army
+	x = -1
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ANR_anarcho_army"
+		add_tech_bonus = {
+			name = infantry_weapons_bonus
+			bonus = 1.0
+			uses = 2
+			category = infantry_weapons
+		}
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = ANR_molotov_throwers
+	icon = GFX_goal_broken_red_star
+	cost = 2.2
+	available = {
+	}
+	prerequisite = { focus = ANR_international_brigades }
+	prerequisite = { focus = ANR_sacred_disorganisation }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = ANR_anarcho_army
+	x = 1
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ANR_anarcho_army"
+		add_tech_bonus = {
+			name = infantry_bonus
+			bonus = 1.0
+			uses = 2
+			category = support_tech
+		}
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = ANR_ultra_smart
+	icon = GFX_goal_commune_politics
+	cost = 2.2
+	available = {
+	}
+	prerequisite = { focus = ANR_theres_many_rifles_in_the_world }
+	prerequisite = { focus = ANR_molotov_throwers }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = ANR_anarcho_army
+	x = 0
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ANR_anarcho_army"
+	
+	}
+	search_filters = {  }	
+}

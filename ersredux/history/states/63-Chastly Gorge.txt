@@ -1,0 +1,29 @@
+state={
+	id=63
+	name="STATE_63"
+
+	provinces={
+		629 782 3621 3754 3910 6536 6648 6862 9732 9794 9838 9904 11465 11751 11846 11882 11889 13125
+	}
+
+	manpower=641510
+	state_category=town
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = NIG
+		add_core_of = NIG
+		
+		victory_points = { 782 5 }
+		
+		buildings = {
+			industrial_complex = 1
+			arms_factory = 2
+		}
+		
+	}
+
+	resources = {
+		steel = 10
+	}
+}

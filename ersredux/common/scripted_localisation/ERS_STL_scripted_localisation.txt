@@ -1,0 +1,15 @@
+defined_text = {
+	name = stl_annex_points_colored_status
+	text = {
+		trigger = { check_variable = { stl_annex_stg_var < 1 } }
+		localization_key = stl_annex_points_red
+	}
+	text = {
+		trigger = { check_variable = { stl_annex_stg_var = 1 } }
+		localization_key = stl_annex_points_yellow
+	}
+	text = {
+		trigger = { check_variable = { stl_annex_stg_var = 2 } }
+		localization_key = stl_annex_points_green
+	}
+}

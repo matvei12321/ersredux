@@ -1,0 +1,81 @@
+characters = {
+	HRD_abrael={
+		name=HRD_abrael
+		portraits={
+			civilian={
+				large="gfx/leaders/HRD/Abrael.tga"
+			}
+		}
+		country_leader={
+			desc="abrael_desc"
+			ideology=holy_order_h
+			traits={ ers_heretic }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		field_marshal={
+			traits={inspirational_leader unicorn_race_trait }
+			skill=2
+			attack_skill=2
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+			desc="abrael_desc"
+		}
+		gender = male
+	}
+	
+	HRD_azazel={
+		name=HRD_azazel
+		portraits={
+			civilian={
+				large="gfx/leaders/HRD/azazel.tga"
+			}
+		}
+		country_leader={
+			desc="azazel_desc"
+			ideology=holy_order_n
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		corps_commander={
+			traits={ unicorn_race_trait }
+			skill=2
+			attack_skill=4
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+			desc="abrael_desc"
+		}
+		gender = male
+	}
+	
+	HRD_nobody={
+		name=HRD_nobody
+		portraits={
+			civilian={
+				large="gfx/leaders/HRD/endless_void.tga"
+			}
+		}
+		country_leader={
+			desc="endless_void_desc"
+			ideology=nazism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			desc="endless_void_desc"
+			ideology=leninism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		gender = male
+	}
+	
+
+}

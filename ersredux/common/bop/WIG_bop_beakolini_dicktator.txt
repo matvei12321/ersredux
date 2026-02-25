@@ -1,0 +1,76 @@
+WIG_bop_beakolini_dicktator_balance_of_power = {
+	initial_value = 0.25
+	left_side = WIG_kemerskai_power
+	right_side = WIG_beakolini_power
+	decision_category = WIG_bop_beakolini_category
+	range = {
+		id = WIG_bop_mid_range
+		min = 0.0
+		max = 0.0
+		modifier = {
+		}
+	}
+		
+	side = {
+		id = WIG_kemerskai_power
+		icon = GFX_goal_WIG_soy
+		range = {
+			id = WIG_kemerskai_power_1
+			min = -0.55
+			max = -0.1
+			modifier = {
+				war_support_factor = -0.1
+				political_power_factor = -0.1
+				conscription_factor = -0.15
+				army_org_regain = -0.05
+				army_morale_factor = -0.1
+				army_speed_factor = -0.1
+				army_infantry_attack_factor = -0.1
+			}
+		}
+		range = {
+			id = WIG_kemerskai_power_2
+			min = -1
+			max = -0.55
+			modifier = {
+				custom_modifier_tooltip = WIG_kemerskai_bop_coup_tt
+			}
+		}
+	}
+	side = {
+		id = WIG_beakolini_power
+		icon = GFX_goal_WIG_chad
+		range = {
+			id = WIG_beakolini_power_1
+			min = 0.1
+			max = 0.5
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.1
+				political_power_factor = 0.1
+				conscription_factor = 0.05
+				army_org_regain = 0.05
+				army_morale_factor = 0.05
+				army_speed_factor = 0.05
+				army_infantry_attack_factor = 0.05
+			}
+		}
+		
+		range = {
+			id = WIG_beakolini_power_2
+			min = 0.5
+			max = 1
+			modifier = {
+				stability_factor = 0.15
+				war_support_factor = 0.15
+				political_power_factor = 0.2
+				conscription_factor = 0.1
+				army_org_regain = 0.1
+				army_morale_factor = 0.1
+				army_speed_factor = 0.1
+				army_infantry_attack_factor = 0.1	
+			}
+		}
+	}
+}
+

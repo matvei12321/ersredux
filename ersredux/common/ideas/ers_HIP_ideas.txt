@@ -1,0 +1,80 @@
+ideas = {
+
+	country = {
+		ers_HIP_khiva_0 = {
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = nuclear_reactor
+			modifier = {
+				custom_modifier_tooltip = ers_HIP_khiva_building_tt
+			}
+		}
+		ers_HIP_khiva_1 = {
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = nuclear_reactor
+			modifier = {
+				custom_modifier_tooltip = ers_HIP_khiva_building_tt
+			}
+		}
+		ers_HIP_khiva_2 = {
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = nuclear_reactor
+			modifier = {
+				custom_modifier_tooltip = ers_HIP_khiva_building_tt
+			}
+		}
+		ers_HIP_khiva = {
+			picture = nuclear_reactor
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				nuclear_production_factor = 0.25
+				production_speed_nuclear_reactor_factor = 0.1
+			}
+		}
+		
+		ers_HIP_kadia = {
+			picture = HIP_AF_fort
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.05
+				war_support_factor = 0.2
+				army_core_defence_factor = 0.1
+				army_bonus_air_superiority_factor = 0.25
+			}
+			targeted_modifier = {
+				tag = STO
+				defense_bonus_against = 0.25
+			}
+			targeted_modifier = {
+				tag = STM
+				defense_bonus_against = 0.25
+			}
+			targeted_modifier = {
+				tag = GYZ
+				defense_bonus_against = 0.25
+			}
+			targeted_modifier = {
+				tag = THU
+				defense_bonus_against = 0.25
+			}
+			targeted_modifier = {
+				tag = SLC
+				defense_bonus_against = 0.25
+			}
+		}
+	}
+}

@@ -1,0 +1,15 @@
+characters={
+	FRA_Martlewing={
+		name=FRA_Martlewing
+		portraits={
+			civilian={
+				large="gfx/leaders/FRC/Martlewing.tga"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

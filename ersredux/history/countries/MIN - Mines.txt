@@ -1,0 +1,54 @@
+capital = 87
+
+set_research_slots = 3
+starting_train_buffer = 4
+
+save_global_event_target_as = mines_target
+
+oob = "MIN_1007"
+
+add_manpower = 10000
+
+recruit_character = MIN_pinkie
+recruit_character = MIN_limestone
+
+add_ideas = { 
+
+	lack_of_scientists2
+	agrarian_society
+	poverty4
+	
+	civilian_economy
+	
+	MIN_miners_idea
+	wild_south_west
+}
+
+set_technology = {
+	 
+	 earthpony_race = 1
+	melee_weapons = 1
+	melee_weapons1 = 1
+	infantry_weapons = 1
+	tech_support = 1
+	tech_military_police = 1
+}
+actually_fix_weapon_techs = yes #THIS HAS TO BE CALLED IN EVERY HISTORY FILE RIGHT AFTER MAIN set_technology!
+
+
+
+set_popularities = {
+
+	fascism = 75
+	neutrality = 25
+}
+set_politics = {
+	ruling_party = fascism
+	last_election = "1.10.10"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+
+set_stability = 0.4
+set_war_support = 0.4

@@ -1,0 +1,23 @@
+state={
+	id=1227
+	name="STATE_1227"
+
+	provinces={
+		1559 1621 3149 4522 11717 12328
+	}
+
+	manpower=2394581
+	state_category = rural
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = CHN
+		add_core_of = CHN
+
+		victory_points = { 12328 10 }
+
+		buildings = {
+			infrastructure = 1
+		}
+	}
+}

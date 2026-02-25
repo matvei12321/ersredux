@@ -1,0 +1,31 @@
+state={
+	id=1230
+	name="STATE_1230"
+
+	provinces={
+		935 949 965 3952 3971 6982 11754
+	}
+
+	manpower=870129
+	state_category = rural
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = NGC
+		add_core_of = NGC
+	
+		
+		victory_points = { 11754 5 }
+		
+		buildings = {
+			arms_factory = 1
+			
+			11754 = {
+				naval_base = 1
+			}
+		949 = {
+				bunker = 1
+		    }
+		}
+	}
+}

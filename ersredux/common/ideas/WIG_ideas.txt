@@ -1,0 +1,484 @@
+ideas = {
+	country = {
+		WIG_economic_crisis = {
+			picture = EQS_UESR_economy
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.4
+				industrial_capacity_factory = -0.20
+				industrial_capacity_dockyard = -0.20
+				production_speed_buildings_factor = -0.20
+			}
+		}
+	}
+
+	country = {
+		WIG_economic_crisis_1 = {
+			picture = EQS_UESR_economy
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.3
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+				production_speed_buildings_factor = -0.15
+			}
+		}
+	}
+	
+	country = {
+		WIG_economic_crisis_2 = {
+			picture = EQS_UESR_economy
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.2
+				industrial_capacity_factory = -0.10
+				industrial_capacity_dockyard = -0.10
+				production_speed_buildings_factor = -0.10
+			}
+		}
+	}
+	
+	country = {
+		WIG_economic_crisis_3 = {
+			picture = EQS_UESR_economy
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.1
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+				production_speed_buildings_factor = -0.05
+			}
+		}
+	}
+	
+	country = {
+		WIG_economic_crisis_4 = {
+			picture = EQS_UESR_economy
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = -0.025
+				industrial_capacity_dockyard = -0.025
+				production_speed_buildings_factor = -0.025
+			}
+		}
+	}	
+	country = {
+		WIG_economic_miracle = {
+			picture = WNG_balanced
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		removal_cost = -1
+		modifier = {
+			consumer_goods_factor = -0.1
+			industrial_capacity_factory = 0.2
+			industrial_capacity_dockyard = 0.2
+			production_speed_buildings_factor = 0.1
+			}
+		}
+	}
+
+	country = {
+		WIG_squarona_ges = {
+			picture = goal_dam
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+		removal_cost = -1
+		modifier = { 
+			consumer_goods_factor = -0.05
+			}
+		}
+	}
+	country = {
+		WIG_falcor_resistance = {
+			picture = chi_war_of_resistance3
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = { 
+				political_power_gain = -0.25
+				consumer_goods_factor = 0.10
+				stability_factor = -0.2
+				industry_repair_factor = -0.1
+				army_morale_factor = -0.05
+			}
+		
+		}
+	}
+	country = {
+		WIG_talonieli_subsidise = {
+			picture = WNG_B_prod
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = { 
+				political_power_gain = -0.1
+				consumer_goods_factor = -0.05			
+			}
+		
+		}
+	}
+	country = {
+		WIG_small_business_idea = {
+			picture = WNG_B_prod
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = { 
+				political_power_gain = -0.1
+				consumer_goods_factor = -0.05				
+			}
+		
+		}
+	}	
+	hidden_ideas = {
+		WIG_talkara_academy_idea = {
+			picture = WNG_B_prod
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = { 
+				command_power_gain = 0.05
+			}
+		
+		}
+	}
+	hidden_ideas = {
+		WIG_unification_guns_idea = {
+			picture = WNG_B_prod
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = { 
+				equipment_conversion_speed = 0.5
+			}
+		
+		}
+	}	
+	country = {
+		WIG_trash_army_idea = {
+			picture = generic_victors_of_ww1
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = { 
+				army_org_regain = -0.2
+				army_morale_factor = -0.15
+				army_speed_factor = -0.15
+				army_infantry_attack_factor = -0.2
+				army_infantry_defence_factor = -0.2
+				planning_speed = -0.2
+				custom_modifier_tooltip = ZES_military_blocked_tp
+			}
+			on_add = {
+				country_lock_all_division_template = yes
+			}
+			on_remove = {
+				country_lock_all_division_template = no
+			}
+		}
+	}		
+	country = {
+		WIG_trash_army_idea_1 = {
+			picture = generic_victors_of_ww1
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = { 
+				army_org_regain = -0.15
+				army_morale_factor = -0.1
+				army_speed_factor = -0.1
+				army_infantry_attack_factor = -0.15
+				army_infantry_defence_factor = -0.15
+				planning_speed = -0.15
+				custom_modifier_tooltip = ZES_military_blocked_tp
+			}
+			on_add = {
+				country_lock_all_division_template = yes
+			}
+			on_remove = {
+				country_lock_all_division_template = no
+			}
+		}
+	}		
+	country = {
+		WIG_trash_army_idea_2 = {
+			picture = generic_victors_of_ww1
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = { 
+				army_org_regain = -0.1
+				army_morale_factor = -0.05
+				army_speed_factor = -0.05
+				army_infantry_attack_factor = -0.1
+				army_infantry_defence_factor = -0.1
+				planning_speed = -0.1
+				custom_modifier_tooltip = ZES_military_blocked_tp
+			}
+			on_add = {
+				country_lock_all_division_template = yes
+			}
+			on_remove = {
+				country_lock_all_division_template = no
+			}
+		}
+	}
+	country = {
+		WIG_trash_army_idea_3 = {
+			picture = generic_victors_of_ww1
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = { 
+				army_org_regain = -0.05
+				army_infantry_attack_factor = -0.05
+				army_infantry_defence_factor = -0.05
+				planning_speed = -0.05
+			}
+		}
+	}	
+	country = {
+		WIG_modern_army_idea = {
+			picture = generic_victors_of_ww1
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = { 
+				army_org_regain = 0.05
+				army_morale_factor = 0.05
+				army_speed_factor = 0.05
+				army_infantry_attack_factor = 0.1
+				army_infantry_defence_factor = 0.1
+				planning_speed = 0.1
+			}
+		}
+	}	
+	hidden_ideas = {
+		WIG_speed_ggf_idea = {
+			picture = generic_victors_of_ww1
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = { 
+				army_speed_factor = 0.1
+			}
+
+		
+		}
+	}	
+	country = {	
+		WIG_political_deadlock = {
+			picture = WNG_political_deadlock
+			allowed = {
+				original_tag = WNG
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_cost = 0.5
+				stability_factor = -0.10
+				stability_weekly = -0.003
+				war_support_factor = -0.1
+			}
+		}
+	}
+	hidden_ideas = {	
+		WIG_alco_idea = {
+			picture = WNG_political_deadlock
+			allowed = {
+				original_tag = WNG
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_cost = -0.25
+			}
+		}
+	}
+	country = {	
+		WIG_emergency_state_idea_0 = {
+			picture = WNG_political_deadlock
+			allowed = {
+				original_tag = WNG
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_cost = -0.25
+			}
+		}
+	}
+	country = {	
+		WIG_emergency_state_idea_1 = {
+			picture = WNG_political_deadlock
+			allowed = {
+				original_tag = WNG
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_cost = -0.25
+			}
+		}
+	}
+	country = {	
+		WIG_war_loans_idea = {
+			picture = WNG_political_deadlock
+			allowed = {
+				original_tag = WNG
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_cost = -0.25
+			}
+		}
+	}
+	country = {	
+		WIG_field_hospitals_idea = {
+			picture = WNG_political_deadlock
+			allowed = {
+				original_tag = WNG
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				experience_loss_factor = -0.2
+			}
+		}
+	}
+	country = {	
+		WIG_B_invests_from = {
+			picture = KIS_factory_investment
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+	}
+	country = {	
+		WIG_B_constitution = {
+			picture = Generic_Scroll
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+	}
+
+}

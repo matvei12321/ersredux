@@ -1,0 +1,53 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "change_chrysalis_container"
+		position = {x=0 y=0}
+		size = {width=380 height=120}
+		orientation = upper_left
+		
+		buttonType = {
+			name = "change_chrysalis_container_button"
+			position = {x=425 y=254 }
+			quadTextureSprite = "GFX_chibi_chrysalis_crown"
+			clicksound = click_default
+			orientation = UPPER_LEFT
+			pdx_tooltip = "change_chrysalis_portrait_desc"
+		}
+	}
+	
+	containerWindowType = {
+		name = "change_starlight_container"
+		position = {x=0 y=0}
+		size = {width=380 height=120}
+		orientation = upper_left
+		
+		buttonType = {
+			name = "change_starlight_container_button"
+			position = {x=328 y=150 }
+			quadTextureSprite = "GFX_evolutionary"
+			clicksound = click_default
+			orientation = UPPER_LEFT
+			pdx_tooltip = "change_starlight_portrait_desc"
+		}
+	}
+
+	containerWindowType = {
+		name = "change_marks_container"
+		position = {x=0 y=0}
+		size = {width=380 height=120}
+		orientation = upper_left
+		
+		buttonType = {
+			name = "change_marks_container_button"
+			position = {x=380 y=3 }
+			quadTextureSprite = "GFX_marks_portrait_texticon"
+			clicksound = click_default
+			orientation = UPPER_LEFT
+			pdx_tooltip = "change_marks_portrait_desc"
+		}
+	}
+
+
+
+}

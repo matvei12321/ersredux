@@ -1,0 +1,36 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_PGS_bop_council"
+		texturefile = "gfx/interface/bop/PGS_bop_council.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_PGS_bop_hurricane"
+		texturefile = "gfx/interface/bop/PGS_bop_hurricane.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_stl_bop_my_power"
+		texturefile = "gfx/interface/bop/stl_bop_my_power.tga"
+	}
+		spriteType = {
+		name = "GFX_NGC_YGY_Prav_council"
+		texturefile = "gfx/interface/bop/NGC_YGY_Prav_council.tga"
+	}
+		spriteType = {
+		name = "GFX_NGC_YGY_Lev_council"
+		texturefile = "gfx/interface/bop/NGC_YGY_Lev_council.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_capital_outflow"
+		texturefile = "gfx/interface/bop/idea_capital_outflow.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_service_by_requirementl"
+		texturefile = "gfx/interface/bop/idea_service_by_requirement.tga"
+	}
+	spriteType = {
+		name = "GFX_pony_passport"
+		texturefile = "gfx/interface/bop/pony_passport.tga"
+	}
+}

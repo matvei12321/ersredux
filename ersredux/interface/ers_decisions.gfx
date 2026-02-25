@@ -1,0 +1,202 @@
+spriteTypes = {
+	
+	
+	spriteType = {
+		name = "GFX_decision_cat_rok_star"
+		texturefile = "gfx/interface/decisions/decision_cat_rok_star.tga"
+	}
+	spriteType = {
+		name = "GFX_decision_hive_mind_d"
+		texturefile = "gfx/interface/decisions/hive_mind_d.tga"
+	}
+	spriteType = {
+		name = "GFX_decision_hive_mind_f"
+		texturefile = "gfx/interface/decisions/hive_mind_f.tga"
+	}
+	spriteType = {
+		name = "GFX_decision_hive_mind_c"
+		texturefile = "gfx/interface/decisions/hive_mind_c.tga"
+	}
+	spriteType = {
+		name = "GFX_decision_hive_mind_n"
+		texturefile = "gfx/interface/decisions/hive_mind_n.tga"
+	}
+	
+
+	
+	spriteType = {
+		name = "GFX_decision_communism_magnifying_glass"
+		texturefile = "gfx/interface/decisions/decision_communism_magnifying_glass.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_holy_order"
+		texturefile = "gfx/interface/decisions/decision_holy_order.tga"
+	}
+		
+	spriteType = {
+		name = "GFX_decision_social_democracy"
+		texturefile = "gfx/interface/decisions/decision_social_democracy.tga"
+	}
+	
+	spriteType = {
+			name = "GFX_skull_category"
+			texturefile = "gfx/interface/decisions/skull_decision_category.dds"
+		}
+	spriteType = {
+			name = "GFX_rainbow_factory_category"
+			texturefile = "gfx/interface/decisions/rainbow_factory_category.dds"
+		}
+	spriteType = {
+			name = "GFX_marx_category_picture"
+			texturefile = "gfx/interface/decisions/marx_category_picture.tga"
+		}	
+		
+	spriteType = {
+			name = "GFX_rainbow_factory_decision_big"
+			texturefile = "gfx/interface/decisions/rainbow_factory_decision_big.tga"
+		}
+
+	spriteType = {
+			name = "GFX_DONT_DO_ANY_OF_THIS"
+			texturefile = "gfx/interface/decisions/DONT_DO_ANY_OF_THIS.tga"
+		}
+		
+	spriteType = {
+			name = "GFX_decision_scary_eye"
+			texturefile = "gfx/interface/decisions/decision_scary_eye.tga"
+		}
+	
+	spriteType = {
+			name = "GFX_decision_cat_prance_revansh"
+			texturefile = "gfx/interface/decisions/decision_cat_prance_revansh.tga"
+		}	
+	
+	spriteType = {
+			name = "GFX_decision_prance_revansh"
+			texturefile = "gfx/interface/decisions/decision_prance_revansh.tga"
+		}
+	
+	spriteType = {
+			name = "GFX_decision_erp_fascism_cat"
+			texturefile = "gfx/interface/decisions/erp_fascism_cat.tga"
+		}
+
+	spriteType = {
+		name = "GFX_decision_decision_theocracy"
+		texturefile = "gfx/interface/decisions/decision_theocracy.tga"
+	}
+	spriteType = {
+		name = "GFX_decision_decision_stratocracy"
+		texturefile = "gfx/interface/decisions/decision_stratocracy.tga"
+	}
+	spriteType = {
+		name = "GFX_decision_decision_liberalism"
+		texturefile = "gfx/interface/decisions/decision_liberalism.tga"
+	}
+	spriteType = {
+		name = "GFX_decision_decision_despotism"
+		texturefile = "gfx/interface/decisions/decision_despotism.tga"
+	}
+	spriteType = {
+		name = "GFX_decision_decision_ultranationalism"
+		texturefile = "gfx/interface/decisions/decision_ultranationalism.tga"
+	}
+	spriteType = {
+		name = "GFX_decision_decision_autocracy"
+		texturefile = "gfx/interface/decisions/decision_autocracy.tga"
+	}
+	spriteType = {
+		name = "GFX_decision_upgrade_hehemony"
+		texturefile = "gfx/interface/decisions/upgrade_hehemony.tga"
+	}
+	spriteType = {
+		name = "GFX_decision_decrease_hehemony"
+		texturefile = "gfx/interface/decisions/decrease_hehemony.tga"
+	}
+	spriteType = {
+		name = "GFX_decision_olenian_skull"
+		texturefile = "gfx/interface/decisions/decision_olenian_skull.tga"
+	}
+	spriteType = {
+		name = "GFX_decision_olenian_town"
+		texturefile = "gfx/interface/decisions/decision_olenian_town.tga"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_thestralia"
+		texturefile = "gfx/interface/decisions/decision_cat_thestralia.tga"
+	}
+	spriteType = {
+		name = "GFX_decision_category_generic_politics"
+		texturefile = "gfx/interface/decisions/decision_category_generic_politics.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_cat_mnh"
+		texturefile = "gfx/interface/decisions/decision_cat_mnh.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_poroh"
+		texturefile = "gfx/interface/decisions/decision_poroh.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_picture_nuclear_reactor"
+		texturefile = "gfx/interface/decisions/decision_picture_nuclear_reactor.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_pgs_commander"
+		texturefile = "gfx/interface/decisions/decision_pgs_commander.tga"
+	}
+	spriteType = {
+		name = "GFX_decision_pgs_council"
+		texturefile = "gfx/interface/decisions/decision_pgs_council.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_zayatsk"
+		texturefile = "gfx/interface/decisions/decision_zayatsk.tga"
+	}
+	spriteType = {
+		name = "GFX_decision_zlatocvet"
+		texturefile = "gfx/interface/decisions/decision_zlatocvet.tga"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_research"
+		texturefile = "gfx/interface/decisions/decision_cat_research.tga"
+	}
+	spriteType = {
+		name = "GFX_decision_pickaxe"
+		texturefile = "gfx/interface/decisions/decision_pickaxe.tga"
+	}
+	spriteType = {
+		name = "GFX_Star_Zeb"
+		texturefile = "gfx/interface/decisions/Star_Zeb.tga"
+	}
+	spriteType = {
+		name = "GFX_Star_Zebrs"
+		texturefile = "gfx/interface/decisions/Star_Zebrs.tga"
+	}
+	spriteType = {
+		name = "GFX_decision_picture_Zavog"
+		texturefile = "gfx/interface/decisions/decision_picture_Zavog.tga"
+	}
+	spriteType = {
+		name = "GFX_decision_picture_Vracs"
+		texturefile = "gfx/interface/decisions/decision_picture_Vracs.tga"
+	}
+	
+	
+	
+	spriteType = {
+		name = "GFX_ers_button_94x31"
+		texturefile = "gfx/interface/button_94x31.tga"
+	}
+	
+	
+	
+	
+}
+

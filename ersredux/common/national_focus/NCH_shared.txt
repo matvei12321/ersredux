@@ -1,0 +1,15 @@
+
+shared_focus = {
+	id = NCH_New_day
+	icon = GFX_goal_chn_question
+	cost = 1
+	x = 10
+	y = 0
+	ai_will_do = {
+		factor = 40
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NCH_New_day"
+		add_stability = 0.01
+	}
+}

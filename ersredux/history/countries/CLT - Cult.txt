@@ -1,0 +1,77 @@
+capital = 1213
+
+oob = "CLT_1007"
+
+set_research_slots = 2
+starting_train_buffer = 4
+
+save_global_event_target_as = cult_target
+
+recruit_character = CLT_valentine
+recruit_character = CLT_endostazis
+recruit_character = CLT_death
+recruit_character = CLT_devourer
+recruit_character = CLT_lost
+recruit_character = CLT_rosa_maledicta
+# recruit_character = ERS_pucci
+recruit_character = CLT_grimuara
+
+add_manpower = 7500
+
+add_ideas = { 
+
+	lack_of_scientists2
+	agrarian_society
+	poverty4
+	insane_idea
+	
+	civilian_economy
+	
+	CLT_cultists
+	CLT_no_ruling
+	wild_south_west
+}
+
+set_technology = {
+	 
+	 earthpony_race = 1
+	melee_weapons = 1
+	melee_weapons1 = 1
+	infantry_weapons = 1
+	tech_support = 1
+	tech_military_police = 1
+}
+actually_fix_weapon_techs = yes #THIS HAS TO BE CALLED IN EVERY HISTORY FILE RIGHT AFTER MAIN set_technology!
+
+
+
+set_popularities = {
+
+	fascism = 100
+}
+set_politics = {
+	ruling_party = fascism
+	last_election = "1.10.10"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+
+set_stability = 0.2
+set_war_support = 0.2
+
+###### Shizofrenia
+
+add_to_variable = { 
+	inner_phantoplasma_var = 50 
+}
+add_to_variable = {
+	CLT_eop_variable = 1
+}
+add_to_variable = { 
+	CLT_vith_variable = 1 
+}
+add_to_variable = { 
+	CLT_ss_variable = 2 
+}
+

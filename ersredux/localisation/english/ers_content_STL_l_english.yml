@@ -1,0 +1,225 @@
+﻿l_english:
+
+
+ ##### NATIONAL FOCUS
+ #------main tree
+ ers_STL_our_town:0 "Our Millennial City"
+ ers_STL_our_town_desc:0 "Our society is that small utopia in which there are no selfish concepts of "I" or "Mine". And there is nothing "Party". There is only "Our personality", "Our" and "Public". And it will last for many generations."
+ ers_STL_our_politics:0 "Our Order"
+ ers_STL_our_politics_desc:0 "Not all ponies like to live in our happy society. But they will not be able to leave it, because they have already entered the true path of light and equality."
+ ers_STL_buro:0 "Our Politburo"
+ ers_STL_buro_desc:0 "More and more workers are flocking to our little utopia, looking for an ideal place for communist life. But not all of them expect that our society will be so perfect that they will not believe in its reality. They are looking for pitfalls where there are definitely none, and it is worth creating an authority that would monitor so that no one digs too deep."
+ ers_STL_peoners:0 "Our Young Generation"
+ ers_STL_peoners_desc:0 "The system of pioneers in the Red Severyana is a spit in the face of communism. It teaches foals from an early age that it is honorable to stand out with her superiority among others. A true pioneer should preach equalism from an early age, and also be ready to go shoulder to shoulder with his comrades."
+ ers_STL_jobs:0 "§RNo Dissatisfied§!"
+ ers_STL_jobs_desc:0 ""Don't you like our society? Well, I can take you to your like-minded people. In the next world, you will have a lot of time to change your mind.""
+ ers_STL_consumer_goods:0 "Our Needs"
+ ers_STL_consumer_goods_desc:0 "If we want to gut true communism and defeat the capitalists of Severyana, we must be sure that everypony gives everything to society that he can give. After all, it's not "his" property.\n\nIt is our property."
+ ers_STL_war_spirit:0 "Our Fighting Spirit"
+ ers_STL_war_spirit_desc:0 "It is obvious that corrupt novosocialism is our worst enemy. And our sacred mission is to destroy all those who perverted the original idea of communism!"
+ ers_STL_patriotism:0 "The Magic of Patriotism"
+ ers_STL_patriotism_desc:0 ""A soldier in Our army" is not a special status, because every inhabitant of our society equally shares the function of a worker, a soldier and any other profession. But recently a group of pure volunteers decided that they want to devote their lives to the protection of our state until their death. Perfectly! In our city, no one will be denied such an aspiration."
+ ers_STL_STG_demands:0 "Our Requirements"
+ ers_STL_STG_demands_desc:0 "The government in the city of Princessin can still be saved. We will send a message there, in which we will put forward demands for the complete annexation of the territory of Krasnaya Severyana and the transfer of armed and industrial forces to our City."
+ ers_STL_raid:0 "Our First Steps to Liberation"
+ ers_STL_raid_desc:0 "Although there are many times fewer of us, this does not make us weaker than the Red Severyana. We will use the element of surprise and show them that we should not be perceived as isolationist fanatics."
+
+#------isolation tree
+ ers_STL_positive_equalism:0 "Isolation Equalism"
+ ers_STL_positive_equalism_desc:0 "Everything is clear as day: capitalist countries (that is, those that do not follow equalism) will fall in the next ten years and destroy themselves from within. We have already built a utopia and will be watching the decline of the age of capital."
+ stl_no_way_further:0 "-----------------\n§R We will remain to defend the utopia of§! §POur City.§!"
+ ers_STL_p_eq_bunkers:0 "Our Modern Defense"
+ ers_STL_p_eq_bunkers_desc:0 "Let the envious enemy throw at us even with tanks, even with airplanes - he will not break into our little utopia."
+ ers_STL_p_eq_factories:0 "Internal Industry Support"
+ ers_STL_p_eq_factories_desc:0 "It is important to support our internal development. Although we have achieved harmony, we cannot lag behind our neighbors in development. No, we will not just keep up: we will surpass all the leading imperialist powers! Even a united Griffin will seem like an insect compared to Our City."
+ ers_STL_p_eq_neutrality_policy:0 "Pacify Militarism"
+ ers_STL_p_eq_neutrality_policy_desc:0 "The desire for war was relevant before we realized that we had achieved our goals. Now the war is seen not as a means of accomplishing a super-task, but as an event because of which our young officers may die. We will not allow war!"
+ ers_STL_p_eq_neutrality_policy_2:0 "We Will not Retreat!"
+ ers_STL_p_eq_neutrality_policy_2_desc:0 "The order "Not a step back, Our City is behind" is now used not just in emergency situations, now it is the motto of our armed forces!"
+ ers_STL_p_eq_neutrality_policy_3:0 "The Army of Our Defenders"
+ ers_STL_p_eq_neutrality_policy_3_desc:0 "Our military-defensive power is growing! Along with it, the needs of the army are growing. It wouldn't be a big sin if we ordered some ponies to serve in the army."
+
+#------influence tree
+ ers_STL_social_equalism:0 "Psycho-Equalism"
+ ers_STL_social_equalism_desc:0 "We will be able to capture the Red Severyana without spilling a drop of blood. Increased propaganda, espionage and a few political crimes will break the spirit of Serov's gang, Pantsushenko, Dark Wing and all the false communists."
+ can_influence_zlatocvet:0 "Can impose negative modifiers on §YZlatotsvet§!\n\n"
+ can_influence_princessin:0 "Can impose negative modifiers on §YThe capital of the Red Severyana§!\n\n"
+ can_influence_zayatsk:0 "Can impose negative modifiers on §YZayatsk§!\n\n"
+ ers_STL_social_equalism_zayatsk:0 "Send Spies"
+ ers_STL_social_equalism_zayatsk_desc:0 "We will start spying on the inhabitants of Severyana. We will find information about each of its inhabitants and use it so that the outcome of events turns out not in favor of the bloody regime."
+ ers_STL_social_equalism_zlatocvet:0 "Wreak Havoc"
+ ers_STL_social_equalism_zlatocvet_desc:0 "We will send some of our trained cells directly to the cities of Severyana, so that they spread rumors and the truth that they are actually manipulated by capitalism. In addition, some diversionists will openly discredit the Red Government. It may take a long time, but such a psychological attack will only benefit both sides - we will get more followers, and the Red Severyana will be freed from the shackles of fascism."
+ ers_STL_social_equalism_princessin:0 "Rise Up, Residents of the Capital"
+ ers_STL_social_equalism_princessin_desc:0 "It's time to start influencing the breeding ground of pseudo-communist contagion. And although the capital of the Red Severyana is teeming with fascist henchmen, this will not stop us."
+ ers_STL_social_equalism_steal_equipment:0 "Our Diversions"
+ ers_STL_social_equalism_steal_equipment_desc:0 "When words and espionage are not enough, we will resort to methods that others would call "terror", but in fact we will destroy warehouses with provisions and equipment, as well as houses of Severyana. Our spies and infiltrated cells will arrange everything as if it was arranged by the very "benevolent" government of the Red Severyana. This should infuriate the Severyanians and set them up to fight monstrous capitalism."
+ ers_STL_social_equalism_send_spies:0 "Convince Them of Uur Rightness"
+ ers_STL_social_equalism_send_spies_desc:0 "Someone will call this a "kidnapping". And this "someone" will be a dirty, greedy capitalist who does not understand the basics of a true communist society! We will send missionaries to the cities in order to take the citizens of the Severyana right out from under the noses of the capitalists."
+ ers_STL_social_equalism_last_chance:0 "Last Argument"
+ ers_STL_social_equalism_last_chance_desc:0 "We tried to reach the residents of Krasnaya Severyana. We tried to show them that their supposedly "socialist" way of life is a deception of dirty capitalists. But they refuse to listen to us. It means only one thing...\n\nCAPITALISTS USE MAGIC TO BRAINWASH SEVERYANIANS! WE ARE NOT AFFECTED BY IT, BECAUSE WE FOLLOW THE ONLY TRUE TEACHING - EQUALISM, AND ONLY IN OUR POWER TO FREE THE SEVERYANIANS FROM THIS CURSE.\nThe last ARGUMENT IS WAR!"
+
+#------war tree
+ ers_stl_military_equalism:0 "Military Equalism"
+ ers_STL_military_equalism_desc:0 "Foals and adults, workers and diplomats: get ready for battle, because Red October is still far away... and we will cut a path to it with pure war."
+ ers_STL_teach_em_war:0 "Our Military Exercises"
+ ers_STL_teach_em_war_desc:0""For betraying the idea of Caramel Marx, for torturing the people of the Severyana, for the death of millions of unfortunate people, for the deliberate spread of capitalism, for the destruction of Our childhood... they will pay. And we know - they will pay with blood!"\n\n- From the propaganda speech of the novapionary foals"
+ ers_STL_give_em_guns:0 "Rifle For Everyone"
+ ers_STL_give_em_guns_desc:0 "Every foal and adult should know how to handle weapons. And we will teach them."
+ ers_STL_conversion_to_military:0 "On the Rails of War"
+ ers_STL_conversion_to_military_desc:0 "Our military factories should produce more equipment. Yes, it's that simple: let them give us more guns!"
+ ers_STL_military_bandits_no:0 "Keep Them in Penal Battalions"
+ ers_STL_military_bandits_no_desc:0 "We will not allow the dirty traitors who are kept in the Sovenok concentration camp to fight side by side with the true soldiers of Our society. But yes, we need pony resources catastrophically, so we will attract some camp prisoners to the service - but they will not play a dominant role in the new divisions. They will be kept in penal battalions under the vigilant supervision of equalist commissars."
+ ers_STL_military_bandits_yes:0 "Sudden Surge of Patriotism"
+ ers_STL_military_bandits_yes_desc:0 "Of course, we will not allow convicts in the Sovenok camp to serve in our army... but we desperately need pony resources. Jailers report that most of the prisoners of the "Owl" suddenly experienced a surge of patriotism and wants to go to the battlefield en masse. There are so many willing that there are not enough commissars for them - we will have to form full-fledged divisions from former prisoners."
+ ers_STL_military_conscription:0 ""Have YOU Already Signed Up For the Army?""
+ ers_STL_military_conscription_desc:0 "In this dark hour, we must tighten our belts and forget for a while about what our work was before. Now we are all taking on the role of a soldier.\n\n§R MARCH LEFT, TWO, THREE!\nMARCH LEFT, TWO, THREE!§!"
+ can_control_conscription_flag:0 "Will allow you to change the §Ylaw on military conscription§!"
+ stl_create_division_tt:0 "§PThe spirit of true equality§! will allow us to create a §Yfully equipped division!§!"
+ stl_antiair_antitank:0 "Will research basic  §Yanti-air§! and §Yanti-tank§! technologies"
+ ers_STL_military_attack_STG:0 "Big March-throw"
+ ers_STL_military_attack_STG_desc:0 "That moment has come. The moment that everyone was waiting for - both the residents of Our society and the long-suffering residents of the Red Severyana. We will begin our sacred campaign against capitalism, which is brazenly covered with the ideas of communism. But Starlight knows the truth. And as an Enlightener, we will all devote ourselves to destroying the rotten infection in the south."
+
+
+#------industry tree
+ ers_STL_1_factory:0 "Our Industrialization"
+ ers_STL_1_factory_desc:0 "In order to maintain the existence of our Utopia, we must develop our industrial capacities. And let the small size of our country not confuse anyone - our industry will become the greatest in the world..."
+ ers_STL_2_factory:0 "Our Diligence"
+ ers_STL_2_factory_desc:0 "It will not be possible to build too many industrial plants in Our City. Therefore, we must make every effort to use Our resources as efficiently as possible..."
+ ers_STL_peoners_profiction:0 "Young and Purposeful"
+ ers_STL_peoners_profiction_desc:0 "New Novapioneers are our future. And in order to feel all the joy of serving Starlight and Our Society from an early age, the foals will work in factories in the same conditions as adults. What a wonderful childhood!"
+ ers_stl_military_factory:0 "Measured Hum"
+ ers_STL_military_factory_desc:0 "The chains of bloody oppression have been broken,\n\nThe people have overthrown the enemy.\n\pI zakpiela dashing work:\n\The worker lived, and the factory came to life!"
+ ers_STL_no_lazyness:0 "Comrade, Laziness is Ruinous!"
+ ers_STL_no_lazyness_desc:0 "The worst enemy of every worker is laziness! Parasites who do not want to work passively destroy our Utopia, in which everyone must fulfill their duty in the name of universal happiness. From now on, anyone who shirks his duty in the workplace will be punished. This is the will of the people!"
+ ers_STL_destroy_tsarist_culture:0 "Destroy the Culture of the Tsarists"
+ ers_STL_destroy_tsarist_culture_desc:0 "Once these lands belonged to... the disgusting royal family. Monuments to these Romanovsky monsters stand here and there! And although the active cells of Our society tried to destroy these vile statues, no serious attempts were made to do so. Starlight will order to finally end this terrible legacy of the brutal Romanovsky regime."
+ ers_stl_society_works:0 "Public Works"
+ ers_STL_military_factory_left_1:0 "All Roads Lead to Our City"
+ ers_STL_military_factory_right_1:0 "Preparation for Martial Law"
+ can_do_woyennoye_polozhenie_tt:0 "Allows the introduction of §Ymartial law§! and §Ymilitary tax§! through the decisions."
+ ers_STL_military_factory_left_2:0 "Purity of Mind on the Labor Front"
+ ers_STL_military_factory_right_2:0 "Use the Labor of Traitors"
+ ers_STL_bread_for_all:0 "Bread for Our People"
+ 
+ #### ARMY EFFORT TREE
+
+ ers_STL_arm_the_people:0 "Our Armament"
+ ers_STL_grand_plan:0 "Our Grand Plan"
+ ers_STL_artillery_effort:0 "Artillery Friends"
+ ers_STL_infantry_effort:0 "And the Bullet Knows for Sure"
+ ers_STL_strategy_of_will:0 "Our Will Strategy"
+ ers_STL_strategy_of_weapon:0 "Our Weapon Strategy"
+ ers_STEEL_defence_against_STG:0 "Root and Destroy"
+ ers_STEEL_attack_with_magic:0 "Equalism Turns Miracles Into Reality"
+ ers_STL_collective_concqousnsness_at_fight:0 "Our Unity of Mind"
+ 
+ 
+ ##### BALANCE OF POWER
+ 
+ stl_balance_of_power:0 "Power status"
+ stl_our_side:0 "§POur power§!"
+ stl_people_power_bop_1:0 "Our power I"
+ stl_people_power_bop_2:0 "Our power II"
+ stl_my_side:0 "§RMy power§!"
+ stl_my_power_box_1:0 "My power I"
+ stl_my_power_bop_2:0 "My power II"
+ 
+ ##### DECISIONS 
+ STL_annex_STG:0 "Наша Красная Северяна"
+ stl_has_more_5_influence:0 "Имеет §G6§! влияния или больше"
+ stl_unification_tt:0 "Сделает все территории §RКрасной Северяны§!, §Yкоторыми мы владеем§!, §Gнациональными§!"
+ 
+ STL_unification_cat:0 "Dreams of a Perfect Severyana"
+ STL_unification_cat_desc:0 "Influence on the state [STG.getname] for its annexation: [stl_annex_points_colored_status]/§G6§!"
+ stl_annex_points_red:0 "§R[?STL.stl_annex_stg_var]§!"
+ stl_annex_points_yellow:0 "§Y[?STL.stl_annex_stg_var]§!"
+ stl_annex_points_green:0 "§G[?STL.stl_annex_stg_var]§!"
+ stl_state_debuff_i:0 "The influence of equalists I"
+ stl_state_debuff_ii:0 "The influence of equalists II"
+ stl_state_debuff_iii:0 "The influence of equalists III"
+ stl_state_debuff_iv:0 "Influence of equalists IV"
+ stl_state_debuff_v:0 "The influence of equalists V"
+ STL_influence_zayatsk:0 "Send Spies to Zayatsk"
+ STL_annex_zayatsk:0 "Reunite With the Residents of Zayatsk"
+ STL_annex_zlatocvet:0 "Reunite With the Residents of Zlatotsvet"
+ stl_zayatsk_5_flag:0 "Has §YThe influence of equalists V§! (debuffs reached -25.00%) in the region §YZayatsk§!"
+ stl_zlatocvet_5_flag:0 "Has §YThe influence of equalists V§! (debuffs reached -25.00%) in the region §YZlatotsvet§!"
+ STL_unify_with_communists_decision:0 "Finally Free"
+ STL_economic_politics_cat:0 "Our War"
+ STL_war_taxes:0 "Introduce a Military Tax"
+ STL_war_taxes_desc:0 "War has come to our lands, and the cells of Our Society must sacrifice everything so that we can achieve victory. The war tax will last exactly one year. Even if we defeat our enemies before that time... the effect of the tax will still continue. Such a scheme was invented personally by the illuminator §!, so there are no (and cannot be) any disadvantages in it! Keep it up, Comrade Starlight!"
+ STL_war_polozh:0 "Declare Martial Law"
+ STL_war_polozh_desc:0 "War has come to our lands, and the cells of Our Society must zealously serve in the name of victory. Martial law will last exactly one year. Even if we defeat our enemies before that time... martial law will continue anyway. Such a scheme was invented personally by the illuminator!, so there are no (and cannot be) any disadvantages in it! Keep it up, Comrade Starlight!"
+
+
+ ##### IDEAS
+ STL_ers_equality:0 "True Equality"
+ STL_ers_equality_desc:0 "The Northern communes disappointed us. Ponies need true equality, not the tyranny of the party! Our ideology is the only true one, and Our spirit is unshakable!\n\nGlory to Starlight the Enlightener!"
+ idea_STL_buro:0 "Bureau of Political Control"
+ idea_STL_buro_desc:0 "We'll just make sure you don't do anything. Meanwhile, try to inform us if you suspect your friends of illegal activities."
+ idea_STL_peoners:0 "Nova Pioneeria"
+ idea_STL_peoners_desc:0 "Purposeful and infinitely devoted to the idea of equalism - that's how real pioneers should be."
+ idea_STL_purge:0 "Taking out the trash..."
+ STL_courage:0 "Crush the Stallionists"
+ STL_prpr:0 "Private Property is Our Property"
+ STL_prpr_desc:0 "In the name of the common cause, of course."
+ STL_isolatsia:0 "Our Impenetrable Line of Defense"
+ STL_more_guns_idea:0 "Intensive Military Industry"
+ STL_prepared_attack_idea:0 "We Are Ready to Rear the False Communists to Shreds"
+ STL_prepared_attack_idea_desc:0 "For the betrayal of the Caramel Marx cause, for the torture of the people of the Northerners, for the death of millions of unfortunate people, for the spread of rotting capitalism... they will pay. And they will pay with blood."
+ STL_no_more_lazyness:0 "Laziness is Punishable"
+ STL_no_more_lazyness_desc:0 "What is laziness? It's a tumor. A country that is sick with a tumor, the wound will fall sooner or later. But not us, because the cells of Our society simply do not know what laziness is."
+ STL_society_works_idea:0 "Community Service"
+ STL_society_works_idea_desc:0 "All cells of Our society should participate in public works - to help in the construction of roads, repair and manufacture of equipment."
+ STL_collective_mind:0 "Unity of Mind"
+ STL_STG_threatened:0 "No Changes on the Northern Front
+ 
+ 
+ #### OOB
+ STL_bad_divisions_tt:0 "Создаст много дивизий (идеологически §Rневерных§!, следовательно, §Rнеопытных§!)"
+ STL_good_divisions_tt:0 "Создаст немного дивизий (идеологически §Gверных§!, следовательно, §Gопытных§!)"
+ 
+ #### COSMETIC TAGS
+ STL_unified_tag:0 "Truly Equal Severyana"
+ STL_unified_tag_DEF:0 "Truly Equal Severyana"
+ 
+ 
+ #### TOOLTIPS
+ 
+ stl_add_1_to_annex_var_tt:0 "Add §P+1§! to the value of the influence on §Y[STG.getname]§!"
+ 
+ #### EVENTS
+ ers_stl.1.t:0 "Our Best Enlightener"
+ ers_stl.1.d:0 "A traitor was discovered in Our City in the morning. He criticized Our Enlightener, claiming that "this mare picked up an entire city-state to her hooves and established a crazy cult in it." Our punitive detachments quickly and smoothly eliminated the violator of the order.\n\nThe next day, campaigns were held in Our homes to explain to Our residents the essence of such a phenomenon of the era as Starlight Glimmer. Our Enlightener does not control the masses, but only leads everyone on the right path and does not have any privileges from this. And Our society voluntarily follows her spirit of true equality, no one forces anyone to do anything. And She is the same pony of Our Society as we are, comrade!"
+ ers_btl.1.a:0 "Let the younger generation take an example from the Enlightener!"
+ 
+ ers_stl.2.t:0 "The Equalists Demand a Change of Our Ideology"
+ ers_stl.2.d:0 ""
+ ers_stl.2.a:0 "These madponies again..."
+
+ ers_stl.3.t:0 "The Severyana Refuses"
+ ers_stl.3.d:0 "Communes continue to live in a blinded vision of "equality". They refuse to accept that all ponies should live under the same banner of equalism.\n\nBut we know that the people in the communes really want freedom from the oppressors. But the party of tyrants, hiding behind the ideas of socialism, overshadowed their minds.\n\nOne day Our Enlightener will be able to convey the truth to them! She will launch the great equalism machine, and even after her death nothing will be able to stop it. "
+ ers_stl.3.a:0 "Three cheers for our true vision of equality!"
+ 
+ ers_stl.4.t:0 "Victory Over the Blood-red Threat"
+ ers_stl.4.d:0 "The element of surprise together with the ardent devotion of soldiers create an indestructible force. Before they had time to come to their senses, their warehouses with equipment and outposts were destroyed, and our soldiers even received several combat trophies that will be transferred to the common possession of our community." 
+ ers_stl.4.a:0 "One thing is clear: it is we who will decide the fate of the entire Severyana."
+
+ ers_stl.8.t:0 "In Our City..."
+ ers_stl.8.d:0 "Among all the inhabitants of Our Society, there were like those who experienced wild euphoria from being here, but some felt themselves... not too comfortable. They did not want to overthrow Starlight and were not against her rule, but still they were not comfortable. Young Wynn Volkerov was just like that.\n\n"Don't worry, you'll get used to it soon. Just start having fun with what you're doing! And besides, pay attention to everyone around you. The inhabitants of Our Town are mostly unicorns, and you are an Earth pony. And no one even thinks you are somehow "not like that"! For pony races, this is very unusual," said Wynn's friend, Carl Hayes casually.\n"Huh, I would like as much optimism as you have. The only good news lately is that I was miraculously able to get luciferium."\n"Luciferium? The kind of herb that can cure almost any diseases and wounds? Why do you need it?"\n"Well. My sister has something like a lung lesion. This luciferium is my last hope."\n"I understand... Okay, I went on shift, Our Duty calls. Good luck! But my advice to you: don't get caught with this grass in the eyes of the patrol. They will definitely take away such a thing."\n"Thank you! Good luck on the shift."\n"I think you need luck. Don't let your lil' sister down.""
+ ers_stl.8.a:0 "It's so good to have understanding friends."
+ 
+ ers_stl.9.t:0 "In Our City..."
+ ers_stl.9.d:0 ""NO! WHAT ARE YOU DOING? GIVE IT BACK TO ME!"\n\n"Cell of Our society, on behalf of Our society, I thank you for finding such a rare medicinal herb and kindly handing it over to the hooves of Our Police. Glory to the Star-"\n\n" Freak! Without luciferium, my sister will die, you know? I deeply shat on your army, on your politics, I HAVE TO SAVE HER!"\n\n"Listen here. I don't want to shoot you, an inferior racial Earth-like freak, and I don't care about your daughter at all."\n\n"SHE'S MY SISTER!"\n\n"Calm down. Just pretend I never took away your luciferium. Pretend you've never had a sister. And I'll pretend I didn't see or hear you. And you and the rest of your relatives will not suffer. Got it?"\n\n"...got it."\n\n""Great! Glory to the Starlight the Enlightener!\n\n"Glory..."\n\nThe patrolpony slowly left to hand over the "sudden find" to the army department, tears welled up in Wynn's eyes."
+ ers_stl.9.a:0 "He is so happy that he serves Our Society."
+ 
+ ers_stl.10.t:0 "Smile! Smile! Smile!"
+ ers_stl.10.d:0 "Earthpony Wynn hasn't been out of bed for days. Now he lived in the house alone. He buried his sister in a small grave on the hill next to his house. He \n\n"Co-o-o-mrade Volkerov, wa-ake up! It's already 7:00, it's time to go to the central square, for the day of Happiness!\n\n"Carl, leave me alone, please."\n\n"I... listen, I know about your sister. I'm sorry that even luciferium couldn't cope with the disease, but life didn't end there. Let's go. Starlight has issued a mandatory law that every Sunday is recognized as a Day of Happiness."\n\n"And what does it mean?"\n\n"Come on, you'll see for yourself!"\n\nWynn felt lousy. But he must be strong. For the sake of those who still remain and believe in him. His friend was smiling strangely as they walked to the square. Wide, in all teeth... Unnatural."\n\n"Carl, is everything okay? Should I call for help?"\n\n"Quickly, smile!"\n\n"What?"\n\n"Smile if you want to live!"\n\n"Wynn saw two patrolmen walking towards them. Like Carl, they had a smile on their faces from ear to ear."\n\n"Glory to Starlight the Enlightener!"\n\n"Glory to Starlight the Enlightener!" \n\pS with great difficulty, but Wynn pulled a smile. And so they reached the square itself. All the ponies were smiling, laughing, some were trying to march to the beat of street music.\n\nThe day of Happiness turned out to be the most hated day for Wynn. All the residents gathered in the square to hear how beautiful Starlight is, how terrible the communists in the south are. And the obligatory element of this day was a smile. So the citizens had to show their own... sincere emotions and all my joy for the achievements that Our society has achieved.It was just painful for Winn to keep smiling for several hours - and so he had to hold out until the very end of the day. Only an Enlightener knows what would have happened to him if he had stopped suppressing a smile for even a moment. Meanwhile, the muscles of the muzzle ached and ached, tears welled up in his eyes. "Look! This cell of Our Society is so happy about the news about the imminent execution of vagrants who stole food from barns! He's crying with happiness!"\n\nThe next day it hurt him to open his mouth."
+ ers_stl.10.a:0 "Smile!"
+ 
+ ers_stl.11.t:0 "Our culture"
+ ers_stl.11.d:0 ""...Join in Our utopia, come out of the dark. Bound by equality, by the cutie mark!"\n\n-Well done, foals! This time you were able to sing the anthem of Our community in almost the same manner! This is exactly what we expect from you. At the next evening concert, you have to show how much you have learned to be like each other...\n\nWynn looked at this scene of the foal choir rehearsal with some dislike. He resigned himself and almost got used to the fact that every Sunday he has to smile from ear to ear from morning to night. However, he still didn't quite like the anthem of this country. And I don't think I'll ever like it. It seemed to him that in some places he was too aggressive, and some lines were inappropriate, but once a day he could survive it.\n\nInteresting. His sister had left this world only a few months ago, and he had already begun to forget it a little. Does the community really affect him that much? Although it is in any case better than starving and waiting for a strike from the west in the Red Northerners. His thoughts were interrupted by Karl playfully sneaking up from behind. \n\n- Comrade Wynn! Sign the petition!\n\n- "Comrade"? Aren't they referring to each other here as "the cell of Our society"?\n\n- Well done! You get it on the fly, even though you said you'd never get used to it, ha-ha!\n\nnHa-ha? What's so fucking funny about that?\n\n- In any case, sign the petition.\n\n- About?\n\n- About Our anthem. Although this is not a petition... I don't know what to call this document correctly, but the point is this. Starlight decided that it was necessary to change how often the anthem is played from megaphones on the street.\n\n- So. I'm already interested.\n\n- In general, we have developed a whole belluten with answer options for us. And whichever option gets the most votes will be put into action. Imagine, democracy!\n\n- I hope there is an option to "cancel playing the anthem".\n\n- Ah... haha... yes...\n\nWynn looked at the answer options."
+ ers_stl.11.a:0 "I want the anthem to be played every day without a break!"
+ ers_stl.11.b:0 "I want the anthem to be played 24 hours a day and 7 hours a week!"
+ ers_stl.11.c:0 "I want the anthem to be played from 8 a.m. to 8 a.m.!"
+ ers_stl.11.e:0 "I want the anthem to be played constantly!"

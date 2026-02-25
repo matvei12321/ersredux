@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ers_album_art"
+		texturefile = "gfx//interface//topbar//musicplayer//ers_musicstation.tga"
+		noOfFrames = 2
+	}
+}

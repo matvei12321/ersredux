@@ -1,0 +1,14 @@
+ERP_fascism_decisions = {
+	
+	icon = GFX_decision_erp_fascism_cat
+	
+	allowed = {
+		tag = ERP
+	}
+	
+	visible = {
+		has_government = fascism 
+	}
+	visible_when_empty = yes
+	priority = 200
+}

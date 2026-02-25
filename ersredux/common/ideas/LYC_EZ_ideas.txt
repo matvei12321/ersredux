@@ -1,0 +1,97 @@
+ideas = {
+	country= {
+		EZ_stop_borning = { 
+
+			removal_cost = -1
+				
+			allowed = {
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = LYC_kill_deers
+			
+			modifier = {
+				monthly_population = -0.25
+			}
+		}
+		
+		EZ_fuck_traitors = {
+			removal_cost = -1	
+			allowed = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_secret_police
+			modifier = {
+				army_org_factor = 0.15
+				conscription_factor = -0.2
+			}
+		}
+		
+		
+		EZ_fuck_science = { 
+
+			removal_cost = -1
+				
+			allowed = {
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = LYC_kill_deers
+			
+			modifier = {
+				research_speed_factor = -0.25
+			}
+		}
+		
+		EZ_rituals = {
+			removal_cost = -1
+			allowed = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = ez_rope
+			modifier = {
+				weekly_manpower = -100
+			}
+		}
+		
+		OLE_always_gasing_idea = {
+			removal_cost = -1	
+			allowed = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = biohazard
+			modifier = {
+				custom_modifier_tooltip = OLE_always_gasing_idea_tt
+			}
+		}
+		
+		EZ_squad_731 = {
+			removal_cost = -1	
+			allowed = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = ez_731
+			modifier = {
+				custom_modifier_tooltip = EZ_squad_731_tt
+				monthly_population = -0.05
+			}
+			research_bonus = {
+				chemical_warfare_category = 0.075
+			}
+		}
+	}
+}

@@ -1,0 +1,1685 @@
+
+shared_focus = {
+	id = NEI_People_Of_The_Sun
+	icon = GFX_goal_nei_batpony
+	cost = 1.5
+	x = 16
+	y = 0
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_People_Of_The_Sun"
+		country_event = { id = neigua.1 days = 1 }
+	}
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_Tail_Of_The_Skies
+	icon = GFX_goal_nei_scroll
+	prerequisite = { focus = NEI_People_Of_The_Sun }
+	cost = 1.5
+	relative_position_id = NEI_People_Of_The_Sun
+	x = -1
+	y = 1
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Tail_Of_The_Skies"
+		country_event = { id = neigua.2 days = 1 }
+	}
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_Sun_VS_Moon
+	icon = GFX_goal_nei_sun_vs_moon
+	prerequisite = { focus = NEI_People_Of_The_Sun }
+	cost = 1.5
+	relative_position_id = NEI_People_Of_The_Sun
+	x = 1
+	y = 1
+	available = { has_completed_focus = NEI_Tail_Of_The_Skies }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Sun_VS_Moon"
+		country_event = { id = neigua.3 days = 1 }
+	}
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_Keep_Our_Priests
+	icon = GFX_goal_nei_tst_red_sun
+	prerequisite = { focus = NEI_Tail_Of_The_Skies }
+	prerequisite = { focus = NEI_Sun_VS_Moon }
+	mutually_exclusive = { focus = NEI_Spread_Solarism }
+	mutually_exclusive = { focus = NEI_Call_Out_Our_Priests }
+	cost = 4.4
+	relative_position_id = NEI_People_Of_The_Sun
+	x = -2
+	y = 2
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Keep_Our_Priests"
+		add_political_power = 100
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_Call_Out_Our_Priests
+	icon = GFX_goal_nei_tst_escape
+	prerequisite = { focus = NEI_Tail_Of_The_Skies }
+	prerequisite = { focus = NEI_Sun_VS_Moon }
+	mutually_exclusive = { focus = NEI_Spread_Solarism }
+	mutually_exclusive = { focus = NEI_Keep_Our_Priests }
+	cost = 4.4
+	relative_position_id = NEI_People_Of_The_Sun
+	x = 0
+	y = 2
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Call_Out_Our_Priests"
+		add_war_support = 0.05
+		remove_ideas = NEI_priests_of_day_sent
+		TST = {
+			country_event = neigua.5
+			remove_ideas = TST_night_vs_day_religion
+		}
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_Spread_Solarism
+	icon = GFX_goal_nei_tst_intervention
+	prerequisite = { focus = NEI_Tail_Of_The_Skies }
+	prerequisite = { focus = NEI_Sun_VS_Moon }
+	mutually_exclusive = { focus = NEI_Call_Out_Our_Priests }
+	mutually_exclusive = { focus = NEI_Keep_Our_Priests }
+	cost = 4.4
+	relative_position_id = NEI_People_Of_The_Sun
+	x = 2
+	y = 2
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Spread_Solarism"
+		TST = {
+			add_opinion_modifier = {
+				target = ROOT 
+				modifier = they_intervent_in_our_traditions
+			}
+		}
+		add_political_power = -75
+		TST = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.07
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_Solar_Temples
+	icon = GFX_goal_nei_temple
+	prerequisite = { focus = NEI_Spread_Solarism focus = NEI_Keep_Our_Priests focus = NEI_Call_Out_Our_Priests }
+	cost = 4.4
+	relative_position_id = NEI_People_Of_The_Sun
+	x = -4
+	y = 3
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Solar_Temples"
+		add_political_power = 50
+		15 = {
+			add_extra_state_shared_building_slots = 2
+			add_manpower = 10000
+		}
+		24 = {
+			add_extra_state_shared_building_slots = 2
+			add_manpower = 10000
+		}
+		352 = {
+			add_extra_state_shared_building_slots = 2
+			add_manpower = 10000
+		}
+		88 = {
+			add_extra_state_shared_building_slots = 2
+			add_manpower = 10000
+		}
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_Original_Scrolls
+	icon = GFX_goal_nei_super_scroll
+	prerequisite = { focus = NEI_Solar_Temples }
+	mutually_exclusive = { focus = NEI_Non_Original_Scrolls }
+	cost = 4.4
+	relative_position_id = NEI_People_Of_The_Sun
+	x = -3
+	y = 4
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Original_Scrolls"
+		add_ideas = NEI_original_tales_idea
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY_BONUS }
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_Non_Original_Scrolls
+	icon = GFX_goal_nei_rewrite_scrolls
+	prerequisite = { focus = NEI_Solar_Temples }
+	mutually_exclusive = { focus = NEI_Original_Scrolls }
+	cost = 4.4
+	relative_position_id = NEI_People_Of_The_Sun
+	x = -5
+	y = 4
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Non_Original_Scrolls"
+		add_ideas = NEI_non_original_tales_idea
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_Pojertvovaniya
+	icon = GFX_goal_nei_coins
+	prerequisite = { focus = NEI_Non_Original_Scrolls focus = NEI_Original_Scrolls }
+	cost = 4.4
+	relative_position_id = NEI_People_Of_The_Sun
+	x = -4
+	y = 5
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Pojertvovaniya"
+		add_ideas = NEI_pojertvovaniya_idea
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_Integrate_In_Their_Society
+	icon = GFX_goal_nei_tst_sundown
+	prerequisite = { focus = NEI_Keep_Our_Priests }
+	cost = 4.4
+	relative_position_id = NEI_People_Of_The_Sun
+	x = -2
+	y = 3
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Integrate_In_Their_Society"
+		add_ideas = NEI_integration_in_tst
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.05
+		}
+		TST = {
+			add_opinion_modifier = {
+				modifier = friendly_tribe
+				target = ROOT
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_Strenghem_Inner_Beliefs
+	icon = GFX_goal_nei_sheild
+	prerequisite = { focus = NEI_Call_Out_Our_Priests }
+	cost = 4.4
+	relative_position_id = NEI_People_Of_The_Sun
+	x = 0
+	y = 3
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Strenghem_Inner_Beliefs"
+		swap_ideas = {
+			remove_idea = NEI_fanatism
+			add_idea = NEI_fanatism_inner_beliefs
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_ARMY_BONUS }
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_Agressive_Talks
+	icon = GFX_goal_nei_relygion_agressive
+	prerequisite = { focus = NEI_Spread_Solarism }
+	cost = 4.4
+	relative_position_id = NEI_People_Of_The_Sun
+	x = 2
+	y = 3
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Agressive_Talks"
+		swap_ideas = {
+			remove_idea = NEI_fanatism
+			add_idea = NEI_fanatism_agression
+		}
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_WAR_SUPPORT }
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_Friendship_With_Ayakachtli
+	icon = GFX_goal_nei_friendship_with_TST
+	prerequisite = { focus = NEI_Integrate_In_Their_Society }
+	available = {
+		has_idea = NEI_priests_of_day_sent
+	}	
+	mutually_exclusive = { focus = NEI_No_Friendship_With_Ayakachtli }
+	cost = 4.4
+	relative_position_id = NEI_People_Of_The_Sun
+	x = -1
+	y = 4
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Friendship_With_Ayakachtli"
+		TST = {
+			country_event = { id = neigua.7 days = 1 } 
+		}
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_No_Friendship_With_Ayakachtli
+	icon = GFX_goal_nei_coins
+	prerequisite = { focus = NEI_Integrate_In_Their_Society focus = NEI_Agressive_Talks focus = NEI_Strenghem_Inner_Beliefs }
+	mutually_exclusive = { focus = NEI_Friendship_With_Ayakachtli }
+	cost = 4.4
+	relative_position_id = NEI_People_Of_The_Sun
+	x = 1
+	y = 4
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_No_Friendship_With_Ayakachtli"
+		add_political_power = 150
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_Red_Sun_Above_Us
+	icon = GFX_goal_nei_sun_above_us
+	prerequisite = { focus = NEI_Friendship_With_Ayakachtli focus = NEI_No_Friendship_With_Ayakachtli }
+	cost = 4.4
+	relative_position_id = NEI_People_Of_The_Sun
+	x = 0
+	y = 5
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Red_Sun_Above_Us"
+		add_stability = 0.1
+		add_war_support = 0.05
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_Trade_With_Neibghours
+	icon = GFX_goal_nei_coins
+	prerequisite = { focus = NEI_Keep_Our_Priests focus = NEI_Call_Out_Our_Priests focus = NEI_Spread_Solarism }
+	cost = 4.4
+	relative_position_id = NEI_People_Of_The_Sun
+	x = 4
+	y = 3
+	available = { 
+		any_neighbor_country = {
+			has_idea = ers_thestral_race
+			NOT = {
+				OR = {
+					has_war_with = ROOT
+					tag = PLP
+					tag = RZR
+				}
+			}
+		}	
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Trade_With_Neibghours"
+		custom_effect_tooltip = NEI_Trade_With_Neibghours_tt
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_Barter
+	icon = GFX_goal_traid_barter
+	prerequisite = { focus = NEI_Trade_With_Neibghours }
+	mutually_exclusive = { focus = NEI_Money }
+	cost = 4.4
+	relative_position_id = NEI_People_Of_The_Sun
+	x = 3
+	y = 4
+	available = { 
+		any_neighbor_country = {
+			has_idea = ers_thestral_race
+			NOT = {
+				OR = {
+					has_war_with = ROOT
+					tag = PLP
+					tag = RZR
+				}
+			}
+		}	
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Barter"
+		custom_effect_tooltip = NEI_Barter_tt
+		add_equipment_to_stockpile = {
+			type = melee_equipment_0
+			amount = 250
+		}
+	}
+	search_filters = { FOCUS_FILTER_ARMY_BONUS }
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_Money
+	icon = GFX_goal_traid_money
+	prerequisite = { focus = NEI_Trade_With_Neibghours }
+	mutually_exclusive = { focus = NEI_Barter }
+	cost = 4.4
+	relative_position_id = NEI_People_Of_The_Sun
+	x = 5
+	y = 4
+	available = { 
+		any_neighbor_country = {
+			has_idea = ers_thestral_race
+			NOT = {
+				OR = {
+					has_war_with = ROOT
+					tag = PLP
+					tag = RZR
+				}
+			}
+		}	
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Money"
+		custom_effect_tooltip = NEI_Money_tt
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_Concurention
+	icon = GFX_goal_nei_concurention
+	prerequisite = { focus = NEI_Barter focus = NEI_Money }
+	cost = 4.4
+	relative_position_id = NEI_People_Of_The_Sun
+	x = 4
+	y = 5
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Concurention"
+		add_political_power = 25
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 4
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	ai_will_do = { factor = 40 }
+}
+
+##############################################################################################################################################################################################
+##############################################################################################################################################################################################
+##############################################################################################################################################################################################
+##############################################################################################################################################################################################
+##############################################################################################################################################################################################
+##############################################################################################################################################################################################
+##############################################################################################################################################################################################
+
+shared_focus = {
+	id = NEI_Start_Industry
+	icon = GFX_goal_nei_concurention
+	cost = 4.4
+	x = 5
+	y = 0
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Concurention"
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_Working_Thestrals
+	icon = GFX_goal_nei_concurention
+	prerequisite = { focus = NEI_Start_Industry }
+	cost = 4.4
+	relative_position_id = NEI_Start_Industry
+	x = -1
+	y = 1
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Concurention"
+		add_stability = 0.025
+		every_owned_state = {
+			add_manpower = 10000
+		}
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_Expand_Cities
+	icon = GFX_goal_nei_concurention
+	prerequisite = { focus = NEI_Start_Industry }
+	cost = 4.4
+	relative_position_id = NEI_Start_Industry
+	x = 1
+	y = 1
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Concurention"
+		add_stability = 0.025
+		every_owned_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_Rich_Earth
+	icon = GFX_goal_nei_plant
+	prerequisite = { focus = NEI_Working_Thestrals }
+	prerequisite = { focus = NEI_Expand_Cities }
+	cost = 4.4
+	relative_position_id = NEI_Start_Industry
+	x = -3
+	y = 2
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Concurention"
+		add_ideas = NEI_rich_earth_idea
+		add_tech_bonus = {
+			name = ANG_mining_bonus
+			bonus = 1.0
+			uses = 2
+			technology = excavation1
+			technology = excavation2
+			technology = excavation3
+			technology = excavation4
+			technology = excavation5
+		}
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_Search_Solar_Steel
+	icon = GFX_goal_nei_crystals
+	prerequisite = { focus = NEI_Working_Thestrals }
+	prerequisite = { focus = NEI_Expand_Cities }
+	cost = 4.4
+	relative_position_id = NEI_Start_Industry
+	x = -1
+	y = 2
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Concurention"
+		16 = {
+			add_resource = {
+				type = crystals
+				amount = 10
+			}
+		}
+		352 = {
+			add_resource = {
+				type = crystals
+				amount = 2
+			}
+		}
+		88 = {
+			add_resource = {
+				type = crystals
+				amount = 2
+			}
+		}
+		24 = {
+			add_resource = {
+				type = crystals
+				amount = 10
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_Great_Anvils
+	icon = GFX_goal_nei_smithing
+	prerequisite = { focus = NEI_Working_Thestrals }
+	prerequisite = { focus = NEI_Expand_Cities }
+	cost = 4.4
+	relative_position_id = NEI_Start_Industry
+	x = 1
+	y = 2
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Concurention"
+		16 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_Thinking_Thestrals
+	icon = GFX_goal_nei_smart
+	prerequisite = { focus = NEI_Working_Thestrals }
+	prerequisite = { focus = NEI_Expand_Cities }
+	cost = 4.4
+	relative_position_id = NEI_Start_Industry
+	x = 3
+	y = 2
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Concurention"
+		add_ideas = NEI_thinking_thestrals_idea
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_Solar_Steel_In_Agriculture
+	icon = GFX_goal_nei_concurention
+	prerequisite = { focus = NEI_Rich_Earth }
+	prerequisite = { focus = NEI_Search_Solar_Steel }
+	cost = 4.4
+	relative_position_id = NEI_Start_Industry
+	x = -2
+	y = 3
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Concurention"
+		add_stability = 0.05
+		random_owned_state = {
+			prioritize = { 16 }
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_New_Resources
+	icon = GFX_goal_nei_concurention
+	prerequisite = { focus = NEI_Great_Anvils }
+	prerequisite = { focus = NEI_Search_Solar_Steel }
+	cost = 4.4
+	relative_position_id = NEI_Start_Industry
+	x = 0
+	y = 3
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Concurention"
+		16 = {
+			add_resource = {
+				type = steel
+				amount = 10
+			}
+		}
+		24 = {
+			add_resource = {
+				type = rubber
+				amount = 7
+			}
+		}
+		88 = {
+			add_resource = {
+				type = tungsten
+				amount = 7
+			}
+		}
+		352 = {
+			add_resource = {
+				type = aluminium
+				amount = 7
+			}
+		}
+		83 = {
+			add_resource = {
+				type = oil
+				amount = 7
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_All_Roads_Lead_To_Tenochtitlan
+	icon = GFX_goal_nei_concurention
+	prerequisite = { focus = NEI_Great_Anvils }
+	prerequisite = { focus = NEI_Thinking_Thestrals }
+	cost = 4.4
+	relative_position_id = NEI_Start_Industry
+	x = 2
+	y = 3
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Concurention"
+		every_owned_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_Milost_Of_Gods
+	icon = GFX_goal_nei_totem
+	prerequisite = { focus = NEI_Rich_Earth }
+	cost = 7.2
+	relative_position_id = NEI_Start_Industry
+	x = -4
+	y = 4
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Concurention"
+		custom_effect_tooltip = nei_milost_of_gods_tt
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_Mango_In_Every_House
+	icon = GFX_goal_nei_mango_everywhere
+	prerequisite = { focus = NEI_Solar_Steel_In_Agriculture }
+	cost = 4.4
+	relative_position_id = NEI_Start_Industry
+	x = -2
+	y = 4
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Concurention"
+		add_ideas = NEI_mango_in_every_house_idea
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_Tribal_Collectivism
+	icon = GFX_goal_traid_barter
+	prerequisite = { focus = NEI_All_Roads_Lead_To_Tenochtitlan }
+	cost = 4.4
+	relative_position_id = NEI_Start_Industry
+	x = 2
+	y = 4
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Concurention"
+		add_ideas = NEI_collectivism_idea
+		add_popularity = {
+			ideology = communism
+			popularity = 0.075
+		}
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_Provideniye
+	icon = GFX_goal_nei_concurention
+	prerequisite = { focus = NEI_Thinking_Thestrals }
+	cost = 7.2
+	relative_position_id = NEI_Start_Industry
+	x = 4
+	y = 4
+	available = { 
+		num_of_factories > 19 
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Concurention"
+		add_research_slot = 1
+		increase_science_base = yes
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_Global_Agriculturism
+	icon = GFX_goal_nei_jungles
+	prerequisite = { focus = NEI_New_Resources }
+	prerequisite = { focus = NEI_Mango_In_Every_House }
+	mutually_exclusive = { focus = NEI_Global_Modernisation }
+	cost = 7.2
+	relative_position_id = NEI_Start_Industry
+	x = -1
+	y = 5
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Concurention"
+		add_stability = 0.2
+		add_political_power = 50
+		every_owned_state = {
+			add_manpower = 25000
+		}
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_Global_Modernisation
+	icon = GFX_goal_nei_factories
+	prerequisite = { focus = NEI_Tribal_Collectivism }
+	prerequisite = { focus = NEI_New_Resources }
+	mutually_exclusive = { focus = NEI_Global_Agriculturism }
+	cost = 7.2
+	relative_position_id = NEI_Start_Industry
+	x = 1
+	y = 5
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Concurention"
+		add_stability = -0.1
+		add_political_power = -50
+		every_owned_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+			}
+		}
+		24 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+		352 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+		16 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+		88 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+		16 = {
+			add_extra_state_shared_building_slots = 4
+			add_building_construction = {
+				type = arms_factory
+				level = 4
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_See_In_Future
+	icon = GFX_goal_nei_factories
+	prerequisite = { focus = NEI_Global_Agriculturism focus = NEI_Global_Modernisation }
+	cost = 7.2
+	relative_position_id = NEI_Start_Industry
+	x = 0
+	y = 6
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Concurention"
+		increase_society_development = yes
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	ai_will_do = { factor = 40 }
+}
+
+
+
+
+
+
+
+##############################################################################################################################################################################################
+##############################################################################################################################################################################################
+##############################################################################################################################################################################################
+##############################################################################################################################################################################################
+##############################################################################################################################################################################################
+##############################################################################################################################################################################################
+##############################################################################################################################################################################################
+
+shared_focus = {
+	id = NEI_Solar_Forces
+	icon = GFX_goal_nei_sun_army
+	cost = 6.5
+	x = 27
+	y = 0
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_People_Of_The_Sun"
+		army_experience = 15
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.2
+			uses = 1
+			category = land_doctrine
+		}
+	}
+	search_filters = { FOCUS_FILTER_ARMY_BONUS }
+	ai_will_do = { factor = 20 }
+}
+
+shared_focus = {
+	id = NEI_Fight_In_The_Jungles
+	icon = GFX_goal_nei_jungles
+	prerequisite = { focus = NEI_Solar_Forces }
+	cost = 6.5
+	relative_position_id = NEI_Solar_Forces
+	x = 2
+	y = 1
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Tail_Of_The_Skies"
+		hidden_effect = { set_technology = { jungle_warfare = 1 } }
+		custom_effect_tooltip = NEI_Fight_In_The_Jungles_tt
+	}
+	search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_RESEARCH }
+	ai_will_do = { factor = 20 }
+}
+
+shared_focus = {
+	id = NEI_Fight_In_The_Mountains
+	icon = GFX_goal_nei_mountain
+	prerequisite = { focus = NEI_Fight_In_The_Jungles }
+	cost = 6.5
+	relative_position_id = NEI_Solar_Forces
+	x = 3
+	y = 3
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Tail_Of_The_Skies"
+		hidden_effect = { set_technology = { popup = no HLQ_hill_warfare = 1 } }
+		custom_effect_tooltip = NEI_Fight_In_The_Mountains_tt
+	}
+	search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_RESEARCH }
+	ai_will_do = { factor = 20 }
+}
+
+
+
+
+shared_focus = {
+	id = NEI_New_Commanders
+	icon = GFX_goal_nei_jaws
+	prerequisite = { focus = NEI_Solar_Forces }
+	cost = 6.5
+	relative_position_id = NEI_Solar_Forces
+	x = -2
+	y = 1
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Tail_Of_The_Skies"
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.5
+			uses = 2
+			category = land_doctrine
+		}
+		add_tech_bonus = {
+			name = race_bonus
+			bonus = 1.5
+			uses = 2
+			category = thestrals_tech
+		}
+	}
+	search_filters = { FOCUS_FILTER_ARMY_BONUS }
+	ai_will_do = { factor = 20 }
+}
+
+shared_focus = {
+	id = NEI_Quality_Focus
+	icon = GFX_goal_nei_elite_guards
+	prerequisite = { focus = NEI_New_Commanders }
+	mutually_exclusive = { focus = NEI_Manpower_Focus }
+	cost = 6.5
+	relative_position_id = NEI_Solar_Forces
+	x = -4
+	y = 2
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Tail_Of_The_Skies"
+		swap_ideas = {
+			remove_idea = NEI_irregular_army_idea
+			add_idea = NEI_irregular_army_quality_idea
+		}
+	}
+	search_filters = { FOCUS_FILTER_ARMY_BONUS }
+	ai_will_do = { factor = 20 }
+}
+
+shared_focus = {
+	id = NEI_Manpower_Focus
+	icon = GFX_goal_nei_bats
+	prerequisite = { focus = NEI_New_Commanders }
+	mutually_exclusive = { focus = NEI_Quality_Focus }
+	cost = 6.5
+	relative_position_id = NEI_Solar_Forces
+	x = -2
+	y = 2
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Tail_Of_The_Skies"
+		swap_ideas = {
+			remove_idea = NEI_irregular_army_idea
+			add_idea = NEI_irregular_army_quantity_idea
+		}
+	}
+	search_filters = { FOCUS_FILTER_ARMY_BONUS }
+	ai_will_do = { factor = 20 }
+}
+
+shared_focus = {
+	id = NEI_Magic
+	icon = GFX_goal_nei_totem
+	prerequisite = { focus = NEI_Manpower_Focus focus = NEI_Quality_Focus }
+	cost = 6.5
+	relative_position_id = NEI_Solar_Forces
+	x = -3
+	y = 3
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Tail_Of_The_Skies"
+		add_ideas = NEI_magic_army_idea
+	}
+	search_filters = { FOCUS_FILTER_ARMY_BONUS }
+	ai_will_do = { factor = 20 }
+}
+
+
+shared_focus = {
+	id = NEI_Tribal_Army
+	icon = GFX_goal_nei_totem
+	prerequisite = { focus = NEI_Solar_Forces }
+	cost = 6.5
+	relative_position_id = NEI_Solar_Forces
+	x = 0
+	y = 1
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Tail_Of_The_Skies"
+		add_manpower = 5000
+		army_experience = 5
+		custom_effect_tooltip = NEI_Tribal_Army_tt
+		hidden_effect = {
+			load_oob = "NEI_extra_divisions"
+		}
+	}
+	search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_ARMY_BONUS }
+	ai_will_do = { factor = 20 }
+}
+
+shared_focus = {
+	id = NEI_Smith_Solar_Steel
+	icon = GFX_goal_nei_smithing
+	prerequisite = { focus = NEI_Tribal_Army }
+	cost = 6.5
+	relative_position_id = NEI_Solar_Forces
+	x = 0
+	y = 2
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Tail_Of_The_Skies"
+		add_ideas = NEI_smithing_idea
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	ai_will_do = { factor = 20 }
+}
+
+shared_focus = {
+	id = NEI_Solar_Swords
+	icon = GFX_goal_nei_solar_swords
+	prerequisite = { focus = NEI_Smith_Solar_Steel }
+	cost = 6.5
+	relative_position_id = NEI_Solar_Forces
+	x = -1
+	y = 3
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Tail_Of_The_Skies"
+		add_ideas = NEI_solar_swords_idea
+		add_equipment_to_stockpile = {
+			type = melee_equipment_0
+			amount = 250
+		}
+	}
+	search_filters = { FOCUS_FILTER_ARMY_BONUS }
+	ai_will_do = { factor = 20 }
+}
+
+shared_focus = {
+	id = NEI_Solar_Armor
+	icon = GFX_goal_nei_solar_armor
+	prerequisite = { focus = NEI_Smith_Solar_Steel }
+	cost = 6.5
+	relative_position_id = NEI_Solar_Forces
+	x = 1
+	y = 3
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Tail_Of_The_Skies"
+		add_ideas = NEI_solar_armor_idea
+		add_equipment_to_stockpile = {
+			type = melee_equipment_0
+			amount = 250
+		}
+	}
+	search_filters = { FOCUS_FILTER_ARMY_BONUS }
+	ai_will_do = { factor = 20 }
+}
+
+shared_focus = {
+	id = NEI_Sun_Leads_Us_To_Fight
+	icon = GFX_goal_nei_scroll
+	prerequisite = { focus = NEI_Solar_Armor }
+	prerequisite = { focus = NEI_Solar_Swords }
+	prerequisite = { focus = NEI_Fight_In_The_Mountains }
+	prerequisite = { focus = NEI_Magic }
+	cost = 6.5
+	relative_position_id = NEI_Solar_Forces
+	x = 0
+	y = 4
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Tail_Of_The_Skies"
+		add_ideas = NEI_power_of_god_idea
+	}
+	search_filters = { FOCUS_FILTER_ARMY_BONUS }
+	ai_will_do = { factor = 20 }
+}
+
+##############################################################################################################################################################################################
+##############################################################################################################################################################################################
+##############################################################################################################################################################################################
+##############################################################################################################################################################################################
+##############################################################################################################################################################################################
+##############################################################################################################################################################################################
+##############################################################################################################################################################################################
+
+shared_focus = {
+	id = NEI_Ayakachtli_Question
+	icon = GFX_goal_nei_heretics_question
+	available = {
+		has_completed_focus = NEI_Red_Sun_Above_Us
+	}
+	cost = 4.4
+	x = 16
+	y = 7
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Tail_Of_The_Skies"
+		add_political_power = 75
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_Fight_Heretics
+	icon = GFX_goal_nei_relygion_agressive
+	prerequisite = { focus = NEI_Ayakachtli_Question }
+	mutually_exclusive = { focus = NEI_Friendly_Relations }
+	available = {
+		NOT = {
+			is_in_faction_with = TST
+		}
+	}
+	cost = 4.4
+	relative_position_id = NEI_Ayakachtli_Question
+	x = -3
+	y = 1
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Tail_Of_The_Skies"
+		add_war_support = 0.05
+	}
+	search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_Raiding_Borders
+	icon = GFX_goal_nei_raids
+	prerequisite = { focus = NEI_Fight_Heretics }
+	cost = 4.4
+	relative_position_id = NEI_Ayakachtli_Question
+	x = -4
+	y = 2
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Tail_Of_The_Skies"
+		TST = {	
+			add_timed_idea = {
+				idea = NEI_TST_raids_idea
+				days = 150
+			}
+			remove_ideas = TST_river_caravans
+		}
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_Furious_Flame
+	icon = GFX_goal_nei_strike_moon
+	prerequisite = { focus = NEI_Fight_Heretics }
+	cost = 4.4
+	relative_position_id = NEI_Ayakachtli_Question
+	x = -2
+	y = 2
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Tail_Of_The_Skies"
+		add_ideas = NEI_furious_flame_idea
+	}
+	search_filters = { FOCUS_FILTER_ARMY_BONUS }
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_Burn_Night_Altars
+	icon = GFX_goal_nei_tst_intervention
+	prerequisite = { focus = NEI_Raiding_Borders }
+	prerequisite = { focus = NEI_Furious_Flame }
+	cost = 4.4
+	relative_position_id = NEI_Ayakachtli_Question
+	x = -3
+	y = 3
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Tail_Of_The_Skies"
+		TST = {
+			every_owned_state = {
+				add_manpower = -15000
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_Prepare_People_For_Fight
+	icon = GFX_goal_nei_country_with_sun
+	prerequisite = { focus = NEI_Raiding_Borders }
+	prerequisite = { focus = NEI_Furious_Flame }
+	cost = 4.4
+	relative_position_id = NEI_Ayakachtli_Question
+	x = -1
+	y = 3
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Tail_Of_The_Skies"
+		16 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+			}
+		}
+		add_manpower = 10000
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER }
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_Burn_Them_All
+	icon = GFX_goal_nei_heretics_burn
+	prerequisite = { focus = NEI_Prepare_People_For_Fight }
+	prerequisite = { focus = NEI_Burn_Night_Altars }
+	cost = 4.4
+	relative_position_id = NEI_Ayakachtli_Question
+	x = -2
+	y = 4
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Tail_Of_The_Skies"
+		declare_war_on = {
+			target = TST
+			type = annex_everything
+		}
+	}
+	search_filters = { FOCUS_FILTER_ANNEXATION }
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_Friendly_Relations
+	icon = GFX_goal_nei_friendship_with_TST
+	prerequisite = { focus = NEI_Ayakachtli_Question }
+	mutually_exclusive = { focus = NEI_Fight_Heretics }
+	available = {
+		is_in_faction_with = TST
+	}
+	cost = 4.4
+	relative_position_id = NEI_Ayakachtli_Question
+	x = 3
+	y = 1
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Tail_Of_The_Skies"
+		add_political_power = -50
+		TST = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.05
+			}
+		}
+		add_to_variable = {
+			NEI_tst_integration = 1
+		}
+		custom_effect_tooltip = NEI_tst_integration_tt
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_Propaganda_Wave
+	icon = GFX_goal_nei_propaganda
+	prerequisite = { focus = NEI_Friendly_Relations }
+	available = {
+		is_in_faction_with = TST
+	}
+	cost = 4.4
+	relative_position_id = NEI_Ayakachtli_Question
+	x = 2
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Tail_Of_The_Skies"
+		add_manpower = -5000
+		TST = {
+			add_manpower = 5000
+		}
+		TST = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+		}
+		add_to_variable = {
+			NEI_tst_integration = 1
+		}
+		custom_effect_tooltip = NEI_tst_integration_tt
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_Gifts
+	icon = GFX_goal_nei_gift_for_the_moon
+	prerequisite = { focus = NEI_Friendly_Relations }
+	available = {
+		is_in_faction_with = TST
+	}
+	cost = 4.4
+	relative_position_id = NEI_Ayakachtli_Question
+	x = 4
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Tail_Of_The_Skies"
+		16 = {
+			remove_building = {
+				type = infrastructure
+				level = 1
+			}
+			remove_building = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+		30 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+		add_to_variable = {
+			NEI_tst_integration = 1
+		}
+		custom_effect_tooltip = NEI_tst_integration_tt
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_Set_Our_People_For_Friendship
+	icon = GFX_goal_nei_tst_sundown
+	prerequisite = { focus = NEI_Propaganda_Wave }
+	prerequisite = { focus = NEI_Gifts }
+	available = {
+		is_in_faction_with = TST
+	}
+	cost = 4.4
+	relative_position_id = NEI_Ayakachtli_Question
+	x = 1
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Tail_Of_The_Skies"
+		add_war_support = -0.05
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
+		add_to_variable = {
+			NEI_tst_integration = 1
+		}
+		custom_effect_tooltip = NEI_tst_integration_tt
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_Unthinkable_Synthes
+	icon = GFX_goal_nei_sun_and_moon
+	prerequisite = { focus = NEI_Propaganda_Wave }
+	prerequisite = { focus = NEI_Gifts }
+	available = {
+		is_in_faction_with = TST
+	}
+	cost = 4.4
+	relative_position_id = NEI_Ayakachtli_Question
+	x = 3
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Tail_Of_The_Skies"
+		add_stability = -0.05
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.05
+		}
+		add_to_variable = {
+			NEI_tst_integration = 1
+		}
+		custom_effect_tooltip = NEI_tst_integration_tt
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_Faction_of_Tribes
+	icon = GFX_goal_nei_x_tst
+	prerequisite = { focus = NEI_Set_Our_People_For_Friendship }
+	prerequisite = { focus = NEI_Unthinkable_Synthes }
+	available = {
+		is_in_faction_with = TST
+	}
+	bypass = {
+		TST = {
+			exists = no
+		}
+	}
+	cost = 4.4
+	relative_position_id = NEI_Ayakachtli_Question
+	x = 2
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Tail_Of_The_Skies"
+		annex_country = {
+			target = TST
+		}
+	}
+	search_filters = { FOCUS_FILTER_ANNEXATION }
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_Nova_Solaria
+	icon = GFX_goal_nei_unite_with_tst
+	prerequisite = { focus = NEI_Burn_Them_All focus = NEI_Faction_of_Tribes }
+	available = {
+		owns_state = 30
+		owns_state = 36
+		owns_state = 350
+		owns_state = 348
+	}
+	cost = 4.4
+	relative_position_id = NEI_Ayakachtli_Question
+	x = 0
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Tail_Of_The_Skies"
+		TST = { add_to_ROOT_potential_cores = yes }
+		custom_effect_tooltip = NEI_Nova_Solaria_tt
+		set_cosmetic_tag = Nova_Solaria
+		every_state = {
+			limit = {
+				is_core_of = TST
+			}
+			set_resistance = 30
+			set_compliance = 5
+			add_manpower = -5000
+		}
+		if = {
+			limit = {
+				has_completed_focus = NEI_Fight_Heretics
+			}
+			every_state = {
+				limit = {
+					is_core_of = TST
+				}
+				add_dynamic_modifier = {
+					modifier = TST_agressive_resistance_againts_NEI
+				}
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_ANNEXATION }
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_Warriors_Of_Light
+	icon = GFX_goal_nei_elite_guards
+	prerequisite = { focus = NEI_Nova_Solaria }
+	available = {
+		owns_state = 30
+	}
+	cost = 4.4
+	relative_position_id = NEI_Nova_Solaria
+	x = -3
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Tail_Of_The_Skies"
+		random_owned_controlled_state = {
+			prioritize = { 16 }
+			hidden_effect = {
+				create_unit = {
+					division = "name = \"Warriors of Light\" division_template = \"Solar Warriors\" start_experience_factor = 1.0" 
+					owner = NEI
+				}
+				create_unit = {
+					division = "name = \"Warriors of Light\" division_template = \"Solar Warriors\" start_experience_factor = 1.0" 
+					owner = NEI
+				}
+				create_unit = {
+					division = "name = \"Warriors of Light\" division_template = \"Solar Warriors\" start_experience_factor = 1.0" 
+					owner = NEI
+				}
+				create_unit = {
+					division = "name = \"Warriors of Light\" division_template = \"Solar Warriors\" start_experience_factor = 1.0" 
+					owner = NEI
+				}
+			}
+			custom_effect_tooltip = NEI_Warriors_Of_Light_tt
+		}
+	}
+	search_filters = { FOCUS_FILTER_ANNEXATION }
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_Keep_Night_City
+	icon = GFX_goal_nei_unite_with_tst
+	prerequisite = { focus = NEI_Nova_Solaria }
+	mutually_exclusive = { focus = NEI_New_Ayakachtli }
+	available = {
+		owns_state = 30
+	}
+	cost = 4.4
+	relative_position_id = NEI_Nova_Solaria
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Tail_Of_The_Skies"
+		set_victory_points = {
+			province = 569
+			value = 15
+		}
+		30 = {
+			add_extra_state_shared_building_slots = 3
+			add_manpower = 20000
+		}
+	}
+	search_filters = { FOCUS_FILTER_ANNEXATION }
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_New_Ayakachtli
+	icon = GFX_goal_nei_unite_with_tst
+	prerequisite = { focus = NEI_Nova_Solaria }
+	mutually_exclusive = { focus = NEI_Keep_Night_City }
+	available = {
+		owns_state = 30
+	}
+	cost = 4.4
+	relative_position_id = NEI_Nova_Solaria
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Tail_Of_The_Skies"
+		set_victory_points = {
+			province = 569
+			value = 5
+		}
+		add_stability = -0.05
+		add_war_support = 0.05
+	}
+	search_filters = { FOCUS_FILTER_ANNEXATION }
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = NEI_Write_New_Chapter
+	icon = GFX_goal_nei_rewrite_scrolls
+	prerequisite = { focus = NEI_Nova_Solaria }
+	available = {
+		owns_state = 30
+		OR = {
+			has_completed_focus = NEI_Non_Original_Scrolls
+			has_completed_focus = NEI_Original_Scrolls
+		}
+	}
+	cost = 4.4
+	relative_position_id = NEI_Nova_Solaria
+	x = 3
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NEI_Tail_Of_The_Skies"
+		country_event = neigua.10
+		add_political_power = 150
+		add_stability = 0.05
+	}
+	search_filters = { FOCUS_FILTER_ANNEXATION }
+	ai_will_do = { factor = 40 }
+}

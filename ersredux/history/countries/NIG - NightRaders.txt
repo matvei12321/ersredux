@@ -1,0 +1,57 @@
+capital = 113
+
+oob = "NIG_1007"
+
+set_research_slots = 1
+starting_train_buffer = 2
+
+save_global_event_target_as = night_raders_target
+
+recruit_character = NIG_leader
+
+add_ideas = { 	
+	tribal_society
+	low_economic_mobilisation
+	lack_of_scientists2
+	better_science_base
+	
+	NIG_night_raders
+	NIG_black_horde
+	THESTRALS_potoh_not_invented
+}
+
+add_manpower = 85000
+
+set_technology = {
+	 
+	thestral_race = 1
+	melee_weapons = 1
+	tech_support = 1
+	tech_thestrals = 1
+}
+
+actually_fix_weapon_techs = yes #THIS HAS TO BE CALLED IN EVERY HISTORY FILE RIGHT AFTER MAIN set_technology!
+
+set_major = yes
+
+add_equipment_to_stockpile = {
+	type = melee_equipment_1
+	amount = 2000
+	producer = NIG
+}
+
+set_convoys = 0
+set_popularities = {
+	communism = 7
+	fascism = 83
+	neutrality = 10
+}
+set_politics = {
+	ruling_party = fascism
+	last_election = "1.10.10"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+set_stability = 0.3
+set_war_support = 0.8

@@ -1,0 +1,28 @@
+state={
+	id=1209
+	name="STATE_1209"
+
+	provinces={
+		535 577 3309 3556 3577 3759 4720 6579 9359 11341		
+	}
+
+	manpower=274270
+	state_category=rural
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = PGS
+		add_core_of = PGS
+
+		victory_points = { 3556 5 }
+
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	
+	resources = {
+		oil=20
+		steel = 14
+	}
+}

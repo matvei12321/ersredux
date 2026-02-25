@@ -1,0 +1,298 @@
+Yak_unification_war_cat = {	
+		
+	yaks_unified_claim_GRF = {
+		available = {
+			has_country_flag = unified_yaks_flag
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		priority = 20
+		cost = 10
+		fire_only_once = yes
+		target_trigger = {
+			FROM = {
+				OR = {
+					owns_state = 275
+					owns_state = 269
+					owns_state = 274
+					owns_state = 340
+					owns_state = 341
+					owns_state = 253
+					owns_state = 342
+					owns_state = 337
+				}
+			}
+		}
+		days_remove = 10
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision PGS_civil_war_time"
+			277 = {
+				add_claim_by = ROOT
+			}
+			278 = {
+				add_claim_by = ROOT
+			}
+			
+			275 = {
+				add_claim_by = ROOT
+			}
+			269 = {
+				add_claim_by = ROOT
+			}
+			274 = {
+				add_claim_by = ROOT
+			}
+			340 = {
+				add_claim_by = ROOT
+			}
+			341 = {
+				add_claim_by = ROOT
+			}
+			253 = {
+				add_claim_by = ROOT
+			}
+			342 = {
+				add_claim_by = ROOT
+			}
+			337 = {
+				add_claim_by = ROOT
+			}
+			set_country_flag = yaks_unified_ready_to_attack_GRF
+		}
+	}
+	
+	yaks_unified_attack_GRF = {
+		available = {
+			has_country_flag = yaks_unified_ready_to_attack_GRF
+			has_army_manpower = { size > 99999 }
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		priority = 19
+		cost = 10
+		fire_only_once = yes
+		days_remove = 10
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision PGS_civil_war_time"
+			custom_effect_tooltip = yak_war_with_grf_tt
+			declare_war_on = {
+				target = GRF
+				type = annex_everything
+			}
+		}
+	}
+	
+	yak_civ_war_start = {
+		available = {
+			NOT = {
+				tag = YAC
+			}
+		}
+		days_mission_timeout = 365
+		fire_only_once = yes
+		
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision PGS_civil_war_time"
+			country_event = yak_unification.1
+		}
+	}
+	
+	YAK_war_unify_decision = {
+		icon = GFX_decision_generic_formable_nation
+		available = {
+		# MNT lands
+			owns_state = 77
+			owns_state = 139
+			owns_state = 140
+			owns_state = 317
+		# YAK lands
+			owns_state = 11
+			owns_state = 267
+			owns_state = 256
+		#	NAK lands
+			owns_state = 255
+			owns_state = 254
+			owns_state = 257
+		#	YAC lands
+			owns_state = 270
+			owns_state = 268
+		# JAK lands
+			owns_state = 346
+			owns_state = 273
+		# BAD lands
+			owns_state = 276
+			owns_state = 347
+		# SHA lands
+			owns_state = 280
+			
+			has_war = no
+		}
+		ai_will_do = {
+			factor = 2000
+		}
+		priority = 10000
+		fire_only_once = yes
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision UNP_no_plague_day"
+			set_country_flag = unified_yaks_flag
+			if = {
+				limit = {
+					NOt = {
+						tag = YAC
+					}
+				}
+				set_capital = { state =  11 }
+			}
+			add_stability = 0.05
+			if = {
+				limit = { 
+					has_government = fascism
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.05
+				}
+			}
+			else_if = {
+				limit = { 
+					has_government = neutrality
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.05
+				}
+			}
+			else_if = {
+				limit = { 
+					has_government = communism
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+			}
+			else_if = {
+				limit = {
+					has_government = democratic
+				}
+				add_popularity = {
+					ideology = de
+					popularity = 0.05
+				}
+			}
+			
+			if = {
+				limit = {
+					tag = YAC
+				}
+				set_cosmetic_tag = YAC_unified
+			}
+		}
+	}
+	
+	yak_war_nationalise_region  = {
+		icon = GFX_decision_generic_military
+		available = {
+			FROM = {
+				is_controlled_by = ROOT
+				resistance < 10
+			}
+		}
+		visible = {
+			OR = {
+				original_tag = MNT
+				original_tag = NAK
+				original_tag = YAK
+				original_tag = JAK
+				original_tag = SHA
+				original_tag = BAD
+				original_tag = YAC
+			}
+			FROM = {
+				NOT = {
+					is_core_of = ROOT
+				}
+				OR = {
+					is_core_of = MNT
+					is_core_of = NAK
+					is_core_of = YAK
+					is_core_of = JAK
+					is_core_of = SHA
+					is_core_of = BAD
+					is_core_of = YAC
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1200
+		}
+		state_target = yes
+        targets = { 11 77 139 140 254 255 256 257 267 268 273 276 280 317 346 347 1235 }
+		days_remove = 25
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision UNP_no_plague_day"
+			FROM = {
+				add_core_of = ROOT
+			}
+		}
+	}
+
+	yak_final_unification  = {
+		icon = GFX_decision_category_form_griffon_empire
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = yak_freed_territory
+				owns_state = 253
+				owns_state = 269
+				owns_state = 274
+				owns_state = 275
+				owns_state = 277
+				owns_state = 278
+				owns_state = 337
+				owns_state = 339
+				owns_state = 340
+				owns_state = 341
+				owns_state = 342
+			}
+		}
+		fire_only_once = yes
+		visible = {
+			OR = {
+				original_tag = MNT
+				original_tag = NAK
+				original_tag = YAK
+				original_tag = JAK
+				original_tag = SHA
+				original_tag = BAD
+				original_tag = YAC
+			}
+			
+		}
+		ai_will_do = {
+			factor = 1200
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision UNP_no_plague_day"
+			if = {
+				limit = {
+					original_tag = YAC
+				}
+				set_cosmetic_tag = YAC_unified_final
+			}
+			253 = { add_core_of = ROOT }
+			269 = { add_core_of = ROOT }
+			274 = { add_core_of = ROOT }
+			275 = { add_core_of = ROOT }
+			277 = { add_core_of = ROOT }
+			278 = { add_core_of = ROOT }
+			337 = { add_core_of = ROOT }
+			339 = { add_core_of = ROOT }
+			340 = { add_core_of = ROOT }
+			341 = { add_core_of = ROOT }
+			342 = { add_core_of = ROOT }
+		}
+	}
+}

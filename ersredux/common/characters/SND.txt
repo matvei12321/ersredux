@@ -1,0 +1,18 @@
+characters = {
+	SND_council={
+		name=SND_council
+		portraits={
+			civilian={
+				large="gfx/leaders/SND/SND_council.tga"
+			}
+		}
+		country_leader={
+			desc="SND_council_desc"
+			ideology=tribal_council
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		gender = female
+	}
+}

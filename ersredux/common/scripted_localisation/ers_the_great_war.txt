@@ -1,0 +1,15 @@
+defined_text = {
+	name = the_great_war_desc
+	text = {
+		trigger = {
+			TST = {
+				TST_equestria_united = yes
+			}
+		}
+		localization_key = "the_great_war_desc_armed_sage"
+	}
+	text = {
+		localization_key = "the_great_war_desc_default"
+	}
+
+}

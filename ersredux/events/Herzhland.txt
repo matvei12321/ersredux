@@ -1,0 +1,839 @@
+add_namespace = hrz
+
+country_event = {		
+	id = HRZ.1
+	immediate = {log = "[Root.GetName]: event HRZ.1"}
+	title = HRZ.1.t
+	desc = HRZ.1.d
+
+	picture = GFX_HRZ_event_writen_mail
+	
+	is_triggered_only = yes
+
+	option = {
+		name = HRZ.1.a 
+	}
+}
+country_event = {
+	id = HRZ.2
+	immediate = {log = "[Root.GetName]: event HRZ.2"}
+	title = HRZ.2.t
+	desc = HRZ.2.d
+	
+	picture = GFX_event_griffenheim
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = HRZ.2.a
+		hidden_effect = { country_event = { id = HRZ.3  hours = 4} }
+	}
+}
+country_event = {
+	id = HRZ.3
+	immediate = {log = "[Root.GetName]: event HRZ.3"}
+	title = HRZ.3.t
+	desc = HRZ.3.d
+	
+	is_triggered_only = yes
+	
+	picture = GFX_HRZ_event_fon_knighprode
+	
+	option = {
+		name = HRZ.3.a
+	}
+}
+country_event = {
+	id = HRZ.4
+	immediate = {log = "[Root.GetName]: event HRZ.4"}
+	title = HRZ.4.t
+	desc = HRZ.4.d
+	
+	is_triggered_only = yes
+	
+	picture = GFX_event_Aquila
+	
+	option = {
+		name = HRZ.4.a
+		hidden_effect = { country_event = { id = HRZ.5 days = 1 } }
+	}
+}
+country_event = {
+	id = HRZ.5
+	immediate = {log = "[Root.GetName]: event HRZ.5"}
+	title = HRZ.5.t
+	desc = HRZ.5.d
+	
+	is_triggered_only = yes
+	
+	picture = GFX_event_hight_Aquila
+	
+	option = {
+		name = HRZ.5.a
+	}
+}
+country_event = {
+	id = HRZ.6
+	immediate = {log = "[Root.GetName]: event HRZ.6"}
+	title = HRZ.6.t
+	desc = HRZ.6.d
+	
+	is_triggered_only = yes
+	
+	picture = GFX_Night_sky
+	
+	option = {
+		name = HRZ.6.a
+	}
+}
+country_event = {
+	id = HRZ.7
+	immediate = {log = "[Root.GetName]: event HRZ.7"}
+	title = HRZ.7.t
+	desc = HRZ.7.d
+	
+	is_triggered_only = yes
+	
+	picture = GFX_Grover_vii_is_death
+	
+	option = {
+		name = HRZ.7.a
+		set_country_flag = Grover_vii_death
+		hidden_effect = {
+			HRZ_Grover_vii = {
+				retire = yes
+			}
+			country_event = { id = HRZ.8 hours = 10 }
+			WIG = { 
+				country_event = { id = wig_politcs.3 }
+			}
+		}
+	}
+}
+country_event = {
+	id = HRZ.8
+	immediate = {log = "[Root.GetName]: event HRZ.8"}
+	title = HRZ.8.t
+	desc = HRZ.8.d
+	
+	is_triggered_only = yes
+	
+	picture = GFX_event_griffenheim_night
+	
+	option = {
+		name = HRZ.8.a
+		hidden_effect = { 
+		country_event = {id = HRZ.9 days = 1 }
+		}
+	}
+}
+country_event = {
+	id = HRZ.9
+	immediate = {log = "[Root.GetName]: event HRZ.9"}
+	title = HRZ.9.t
+	desc = HRZ.9.d
+	
+	is_triggered_only = yes
+	
+	picture = GFX_event_Grover_vi_death
+	
+	option = {
+		name = HRZ.9.a
+		hidden_effect = { 
+		country_event = {id = HRZ.10 days = 10 }
+		}
+	}
+}
+country_event = {
+	id = HRZ.10
+	immediate = {log = "[Root.GetName]: event HRZ.10"}
+	title = HRZ.10.t
+	desc = HRZ.10.d
+	
+	is_triggered_only = yes
+	
+	picture = GFX_event_griffenheim
+	
+	option = {
+		name = HRZ.10.a
+		hidden_effect = { 
+		country_event = {id = HRZ.11 days = 10 }
+		}
+	}
+}
+country_event = {
+	id = HRZ.11
+	immediate = {log = "[Root.GetName]: event HRZ.11"}
+	title = HRZ.11.t
+	desc = HRZ.11.d
+	
+	is_triggered_only = yes
+	
+	picture = GFX_event_griffenheim
+	
+	option = {
+		name = HRZ.11.a
+		hidden_effect = { 
+		country_event = { id = HRZ.12 days = 7 }
+		}
+	}
+}
+###Imperor death###
+country_event = {
+	id = HRZ.12
+	immediate = {log = "[Root.GetName]: event HRZ.12"}
+	title = HRZ.12.t
+	desc = HRZ.12.d
+	
+	is_triggered_only = yes
+	
+	picture = GFX_event_griffenheim
+	
+	option = {
+		name = HRZ.12.a
+		kill_country_leader = yes
+		add_country_leader_role = {
+			character = HRZ_regency_council
+			promote_leader = yes
+		}
+		add_political_power = -100
+		add_stability = -0.30
+		hidden_effect = { 
+			set_global_flag = Imperor_Grover_vi_death
+			country_event = { id = HRZ.13 days = 4 }
+			news_event = { id = ers_news.39 hours = 10 }
+			
+		}
+	}
+}
+country_event = {
+	id = HRZ.13
+	immediate = {log = "[Root.GetName]: event HRZ.13"}
+	title = HRZ.13.t
+	desc = HRZ.13.d
+	
+	is_triggered_only = yes
+	
+	picture = GFX_event_griffon_royal_guard
+	
+	option = {
+		name = HRZ.13.a
+		hidden_effect = { 
+		country_event = { id = HRZ.14 days = 2 }
+		}
+	}
+}
+country_event = {
+	id = HRZ.14
+	immediate = {log = "[Root.GetName]: event HRZ.14"}
+	title = HRZ.14.t
+	desc = HRZ.14.d
+	
+	is_triggered_only = yes
+	
+	picture = GFX_event_republican_dream_book
+	
+	option = {
+		name = HRZ.14.a
+		hidden_effect = { 
+		country_event = { id = HRZ.15 days = 2 }
+		}
+	}
+}
+country_event = {
+	id = HRZ.15
+	immediate = {log = "[Root.GetName]: event HRZ.15"}
+	title = HRZ.15.t
+	desc = HRZ.15.d
+	
+	is_triggered_only = yes
+	
+	picture = GFX_event_republican_solders
+	
+	option = {
+		name = HRZ.15.a
+		hidden_effect = { 
+		country_event = { id = HRZ.16 days = 3 }
+		}
+	}
+}
+country_event = {
+	id = HRZ.16
+	immediate = {log = "[Root.GetName]: event HRZ.16"}
+	title = HRZ.16.t
+	desc = HRZ.16.d
+	
+	is_triggered_only = yes
+	
+	picture = GFX_event_go_civil_war
+	
+	option = {
+		name = HRZ.16.a
+		hidden_effect = { 
+		496 = {
+			set_demilitarized_zone = yes
+		}
+		497 = {
+			set_demilitarized_zone = yes 
+		}
+		498 = {
+			set_demilitarized_zone = yes
+		}
+		434 = {
+			set_demilitarized_zone = yes
+		}
+		538 = {
+			set_demilitarized_zone = yes
+		}
+		520 = {
+			set_demilitarized_zone = yes
+		}
+		
+		546 = {
+			set_demilitarized_zone = yes
+		}
+		545 = {
+			set_demilitarized_zone = yes 
+		}
+		539 = {
+			set_demilitarized_zone = yes
+		}
+		568 = {
+			set_demilitarized_zone = yes
+		}
+		476 = {
+			set_demilitarized_zone = yes
+		}
+		477 = {
+			set_demilitarized_zone = yes
+		}
+		581 = {
+			set_demilitarized_zone = yes
+		}
+		475 = {
+			set_demilitarized_zone = yes 
+		}
+		459 = {
+			set_demilitarized_zone = yes
+		}
+		458 = {
+			set_demilitarized_zone = yes
+		}
+		
+		447 = {
+			set_demilitarized_zone = yes
+		}
+		439 = {
+			set_demilitarized_zone = yes 
+		}
+		398 = {
+			set_demilitarized_zone = yes
+		}
+		411 = {
+			set_demilitarized_zone = yes
+		}
+		506 = {
+			set_demilitarized_zone = yes
+		}
+		400 = {
+			set_demilitarized_zone = yes
+		}
+		391 = {
+			set_demilitarized_zone = yes
+		}
+		422 = {
+			set_demilitarized_zone = yes 
+		}
+		547 = {
+			set_demilitarized_zone = yes
+		}
+		402 = {
+			set_demilitarized_zone = yes
+		}
+		423 = {
+			set_demilitarized_zone = yes
+		}
+		554 = {
+			set_demilitarized_zone = yes
+		}
+		
+		380 = {
+			set_demilitarized_zone = yes
+		}
+		396 = {
+			set_demilitarized_zone = yes
+		}
+		379 = {
+			set_demilitarized_zone = yes
+		}
+		381 = {
+			set_demilitarized_zone = yes 
+		}
+		433 = {
+			set_demilitarized_zone = yes
+		}
+		659 = {
+			set_demilitarized_zone = yes
+		}
+		
+		679 = {
+			set_demilitarized_zone = yes
+		}
+		384 = {
+			set_demilitarized_zone = yes 
+		}
+		383 = {
+			set_demilitarized_zone = yes
+		}
+		471 = {
+			set_demilitarized_zone = yes
+		}
+		488 = {
+			set_demilitarized_zone = yes
+		}
+		389 = {
+			set_demilitarized_zone = yes
+		}
+		531 = {
+			set_demilitarized_zone = yes
+		}
+		532 = {
+			set_demilitarized_zone = yes 
+		}
+		489 = {
+			set_demilitarized_zone = yes
+		}
+		606 = {
+			set_demilitarized_zone = yes
+		}
+		
+		country_event = { id = HRZ.17 days = 3 }
+		}
+	}
+}
+country_event = {
+	id = HRZ.17
+	immediate = {log = "[Root.GetName]: event HRZ.17"}
+	title = HRZ.17.t
+	desc = HRZ.17.d
+	
+	is_triggered_only = yes
+	
+	picture = GFX_event_griffon_shoot
+	
+	option = {
+		name = HRZ.17.a
+		hidden_effect = {
+			REV = {
+				add_opinion_modifier = { target = HRZ modifier = trator_empire }
+			}
+			AUR = {
+				add_opinion_modifier = { target = HRZ modifier = trator_empire }
+			}
+			FRC = {
+				add_opinion_modifier = { target = HRZ modifier = trator_empire }
+			}
+			TUL = {
+				add_opinion_modifier = { target = HRZ modifier = trator_empire }
+			}
+			WIG = {
+				add_opinion_modifier = { target = HRZ modifier = trator_empire }
+			}
+			SCM = {
+				add_opinion_modifier = { target = HRZ modifier = trator_empire }
+			}
+			AST = {
+				add_opinion_modifier = { target = HRZ modifier = trator_empire }
+			}
+			CIO = {
+				add_opinion_modifier = { target = HRZ modifier = trator_empire }
+			}
+			PRV = {
+				add_opinion_modifier = { target = HRZ modifier = trator_empire }
+			}
+			FRO = {
+				add_opinion_modifier = { target = HRZ modifier = trator_empire }
+			}
+			CLO = {
+				add_opinion_modifier = { target = HRZ modifier = trator_empire }
+			}
+			
+			add_opinion_modifier = { target = REV modifier = trator_empire }
+			add_opinion_modifier = { target = AUR modifier = trator_empire }
+			add_opinion_modifier = { target = FRC modifier = trator_empire }
+			add_opinion_modifier = { target = TUL modifier = trator_empire }
+			add_opinion_modifier = { target = WIG modifier = trator_empire }
+			add_opinion_modifier = { target = SCM modifier = trator_empire }
+			add_opinion_modifier = { target = AST modifier = trator_empire }
+			add_opinion_modifier = { target = CIO modifier = trator_empire }
+			add_opinion_modifier = { target = PRV modifier = trator_empire }
+			add_opinion_modifier = { target = FRO modifier = trator_empire }
+			add_opinion_modifier = { target = CLO modifier = trator_empire }
+		}
+		
+		if = {
+			limit = {
+				CLO = {
+					is_in_faction_with = HRZ
+				}
+			}
+			CLO = {
+				leave_faction = yes
+				drop_cosmetic_tag = yes
+			}
+		}
+		end_puppet = CLO
+		if = {
+			limit = {
+				REV = {
+					is_in_faction_with = HRZ
+				}
+			}
+			REV = {
+				leave_faction = yes
+				drop_cosmetic_tag = yes
+			}
+		}
+		end_puppet = REV
+		if = {
+			limit = {
+				AUR = {
+					is_in_faction_with = HRZ
+				}
+			}
+			AUR = {
+				leave_faction = yes
+				drop_cosmetic_tag = yes
+			}
+		}
+		end_puppet = AUR
+		if = {
+			limit = {
+				FRC = {
+					is_in_faction_with = HRZ
+				}
+			}
+			FRC = {
+				leave_faction = yes
+				drop_cosmetic_tag = yes
+			}
+		}
+		end_puppet = FRC
+		if = {
+			limit = {
+				TUL = {
+					is_in_faction_with = HRZ
+				}
+			}
+			TUL = {
+				leave_faction = yes
+				drop_cosmetic_tag = yes
+			}
+		}
+		end_puppet = TUL
+		if = {
+			limit = {
+				WIG = {
+					is_in_faction_with = HRZ
+				}
+			}
+			WIG = {
+				leave_faction = yes
+				drop_cosmetic_tag = yes
+			}
+		}
+		end_puppet = WIG
+		if = {
+			limit = {
+				SCM = {
+					is_in_faction_with = HRZ
+				}
+			}
+			SCM = {
+				leave_faction = yes
+				drop_cosmetic_tag = yes
+			}
+		}
+		end_puppet = SCM
+		if = {
+			limit = {
+				AST = {
+					is_in_faction_with = HRZ
+				}
+			}
+			AST = {
+				leave_faction = yes
+				drop_cosmetic_tag = yes
+			}
+		}
+		end_puppet = AST
+		if = {
+			limit = {
+				CIO = {
+					is_in_faction_with = HRZ
+				}
+			}
+			CIO = {
+				leave_faction = yes
+				drop_cosmetic_tag = yes
+			}
+		}
+		end_puppet = CIO
+		if = {
+			limit = {
+				PRV = {
+					is_in_faction_with = HRZ
+				}
+			}
+			PRV = {
+				leave_faction = yes
+				drop_cosmetic_tag = yes
+			}
+		}
+		end_puppet = PRV
+		if = {
+			limit = {
+				PRV = {
+					is_in_faction_with = HRZ
+				}
+			}
+			PRV = {
+				leave_faction = yes
+				drop_cosmetic_tag = yes
+			}
+		}
+		end_puppet = PRV
+		if = {
+			limit = {
+				FRO = {
+					is_in_faction_with = HRZ
+				}
+			}
+			FRO = {
+				leave_faction = yes
+				drop_cosmetic_tag = yes
+			}
+			
+		}
+		end_puppet = FRO
+		
+		
+		
+		hidden_effect = { 
+		country_event = { id = HRZ.18 days = 2 }
+		}
+	}
+}
+country_event = {
+	id = HRZ.18
+	immediate = {log = "[Root.GetName]: event HRZ.18"}
+	title = HRZ.18.t
+	desc = HRZ.18.d
+	
+	is_triggered_only = yes
+	
+	picture = GFX_event_HRZ_civil_war
+	
+	option = {
+		name = HRZ.18.a
+		effect_tooltip = {
+			start_civil_war = {
+				ruling_party = neuntality
+				ideology = democratic
+			}
+			start_civil_war = {
+				ruling_party = neuntality
+				ideology = fascism
+			}
+			start_civil_war = {
+				ruling_party = neuntality
+				ideology = communism
+			}
+		}
+		remove_ideas = HRZ_trade_contract_for_HRZ
+		DTS = {
+			remove_ideas = HRZ_trade_contract_for_DTS
+		}
+		CHN = {
+			remove_ideas = HRZ_trade_contract_for_CHN
+		}
+		HRZ_ferdinand_dawnclaw={
+			retire = yes
+		}
+		HRZ_regency_council = {
+			retire = yes
+		}
+		add_country_leader_role = {
+			character = HRZ_maria_grover
+			promote_leader = yes
+		}
+		
+		remove_ideas = HRZ_communst_problem
+		add_ideas = partial_economic_mobilisation
+		HRZ_Reinhold_Thundertail = {
+			limit = { is_field_marshal = no }
+			promote_leader = yes
+		}
+		hidden_effect = {
+		news_event = { id = ers_news.40 }
+		remove_ideas = civilian_economy
+		HRR = {
+			transfer_technology = yes
+				transfer_state = 496
+				transfer_state = 497
+				transfer_state = 498
+				transfer_state = 434
+				transfer_state = 538
+				transfer_state = 520
+			}
+		HRR = {
+			declare_war_on = { target = HRZ type = civil_war }
+			declare_war_on = { target = HGE type = civil_war }
+			declare_war_on = { target = HKR type = civil_war }
+		}
+		transfer_units_fraction = {
+				target = HRR
+				target_organization = 1
+				keep_unit_leaders_trigger = { always = yes }
+				size = 0.30
+				navy_ratio = 0
+			}
+		every_state = {
+
+				if = {
+					limit = { is_core_of = HRZ }
+					add_core_of = HRR
+				}
+			}
+		HGE = {
+			transfer_technology = yes
+				transfer_state = 546
+				transfer_state = 545
+				transfer_state = 539
+				transfer_state = 568
+				transfer_state = 476
+				transfer_state = 477
+				transfer_state = 581
+				transfer_state = 475 
+				transfer_state = 459
+				transfer_state = 458
+			}
+		HGE = {
+			declare_war_on = { target = HRZ type = civil_war }
+			declare_war_on = { target = HRR type = civil_war }
+			declare_war_on = { target = HKR type = civil_war }
+		}
+		transfer_units_fraction = {
+				target = HGE
+				target_organization = 1
+				keep_unit_leaders_trigger = { always = yes }
+				size = 0.30
+				navy_ratio = 0
+			}
+		every_state = {
+
+				if = {
+					limit = { is_core_of = HRZ }
+					add_core_of = HGE
+				}
+				if = {
+					limit = { is_claimed_by = HRZ }
+					add_claim_by = HGE
+				}
+			}
+		
+		HKR = {
+			transfer_technology = yes
+				transfer_state = 447
+				transfer_state = 439
+				transfer_state = 398
+				transfer_state = 411
+				transfer_state = 506
+				transfer_state = 400
+				transfer_state = 391 
+				transfer_state = 422
+				transfer_state = 547
+				transfer_state = 402
+				transfer_state = 423
+				transfer_state = 554
+			}
+		HKR = {
+			declare_war_on = { target = HRZ type = civil_war }
+			declare_war_on = { target = HRR type = civil_war }
+			declare_war_on = { target = HGE type = civil_war }
+		}
+		transfer_units_fraction = {
+				target = HKR
+				target_organization = 1
+				keep_unit_leaders_trigger = { always = yes }
+				size = 0.30
+				navy_ratio = 0
+			}	
+		every_state = {
+
+				if = {
+					limit = { is_core_of = HRZ }
+					add_core_of = HKR
+				}
+			}
+		
+		
+		SKF = {
+			transfer_technology = yes
+			transfer_state = 380
+			transfer_state = 396
+			transfer_state = 379
+			transfer_state = 381
+			transfer_state = 433
+			transfer_state = 659
+			add_state_core = 380
+			add_state_core = 396
+			add_state_core = 379
+			add_state_core = 381
+			add_state_core = 433
+			add_state_core = 659
+			
+		}
+		transfer_units_fraction = {
+				target = SKF
+				size = 0.05
+				navy_ratio = 1
+			}	
+		GFN = {
+			transfer_technology = yes
+			transfer_state = 679
+			transfer_state = 384
+			transfer_state = 383
+			transfer_state = 471
+			transfer_state = 488
+			transfer_state = 389
+			transfer_state = 531
+			transfer_state = 532
+			transfer_state = 489
+			transfer_state = 606
+			add_state_core = 679
+			add_state_core = 384
+			add_state_core = 383
+			add_state_core = 471
+			add_state_core = 488
+			add_state_core = 389
+			add_state_core = 531
+			add_state_core = 532
+			add_state_core = 489
+			add_state_core = 606
+		}
+		transfer_units_fraction = {
+				target = GFN
+				size = 0.05
+				navy_ratio = 1
+			}	
+		
+		
+		set_cosmetic_tag = HZR_empress
+		}
+	
+	}
+}
+
+
+###

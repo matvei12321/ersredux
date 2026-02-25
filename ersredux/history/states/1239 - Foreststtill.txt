@@ -1,0 +1,20 @@
+state={
+	id=1239
+	name="STATE_1239"
+
+	provinces={
+		1182 7157 6249 9998
+	}
+
+	manpower=25478
+	state_category = rural
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = WAT
+		add_core_of = WAT
+
+
+	}
+
+}

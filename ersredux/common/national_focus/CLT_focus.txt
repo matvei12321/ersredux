@@ -1,0 +1,33 @@
+focus_tree = {
+
+	id = CLT_focus_tree
+
+	continuous_focus_position = { x = 1 y = 1750 }
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CLT
+		}
+	}
+	
+	# shared_focus = CLT_e_l_huyna_1
+	
+	shared_focus = CLT_horrors_of_the_unknown
+	
+	default = no
+}
+
+focus_tree = {
+
+	id = CLT_empty_focus_tree
+
+	continuous_focus_position = { x = 1 y = 1750 }
+	
+	country = {
+		factor = 0
+	}
+	
+	default = no
+}

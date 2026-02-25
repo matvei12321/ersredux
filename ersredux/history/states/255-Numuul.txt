@@ -1,0 +1,29 @@
+
+state={
+	id=255
+	name="STATE_255"
+	resources={
+		tungsten=8.000
+	}
+
+	history={
+		owner = NAK
+		add_core_of = NAK
+		add_claim_by = YAK
+		add_claim_by = YAC
+		add_claim_by = JAK
+		add_claim_by = BAD
+		add_claim_by = SHA
+		add_claim_by = MNT
+
+	}
+
+	provinces={
+		720 1758 4508 8083 10461 11635 4449 954 7831 12697
+	}
+	manpower=11562
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+	impassable=yes
+}

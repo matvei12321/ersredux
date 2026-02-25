@@ -1,0 +1,104 @@
+
+characters = {
+	PRG_le_shors={
+		name=PRG_le_shors
+		portraits={
+			civilian={
+				large="gfx/leaders/PRG/Shors.tga"
+			}
+		}
+		country_leader={
+			desc="SHORS_DESC"
+			ideology=despotism
+			traits={ shores_alcocholic shores_hedonist }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		gender = male
+	}
+	
+	PRA_komitet={
+		name=PRA_komitet
+		portraits={
+			civilian={
+				large="gfx/leaders/PRG/PRA_komitet.tga"
+			}
+		}
+	}
+	
+	PRA_piemont={
+		name=PRA_piemont
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			desc="PRA_PIEMONT_DESC"
+			ideology=irredentism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		gender = male
+	}
+	
+	
+	
+	
+	#### Generals
+	
+	PRA_mesione={
+		name=PRA_mesione
+		portraits={
+			army={
+				large="gfx/leaders/PRG/PRA_generic.tga"
+				small="gfx/interface/ideas/idea_unknown_advisor.dds"
+			}
+		}
+		corps_commander={
+			traits={ unicorns_race_trait media_personality infantry_officer trait_cautious }
+			skill=3
+			attack_skill=3
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+		}
+	}
+	
+	PRA_bourboune={
+		name=PRA_bourboune
+		portraits={
+			army={
+				large="gfx/leaders/PRG/PRA_generic.tga"
+				small="gfx/interface/ideas/idea_unknown_advisor.dds"
+			}
+		}
+		corps_commander={
+			traits={ unicorns_race_trait media_personality trait_reckless }
+			skill=2
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+		}
+	}
+	
+	PRA_monte_dairo={
+		name=PRA_monte_dairo
+		portraits={
+			army={
+				large="gfx/leaders/PRG/PRA_generic.tga"
+				small="gfx/interface/ideas/idea_unknown_advisor.dds"
+			}
+		}
+		field_marshal={
+			traits={ unicorns_race_trait media_personality substance_abuser inflexible_strategist }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+		}
+	}
+}

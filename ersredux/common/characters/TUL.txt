@@ -1,0 +1,16 @@
+characters={
+	TUL_Ginevra={
+		name=TUL_Ginevra
+		portraits={
+			civilian={
+				large="gfx/leaders/TUL/Ginevra.tga"
+			}
+		}
+		gender = female
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

@@ -1,0 +1,14 @@
+focus_tree = {
+	id = UNC_start_focus_tree
+	continuous_focus_position = { x = 1 y = 1750 }
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = UNC
+		}
+	}
+	
+	shared_focus = UNC_royal_busyness
+	# shared_focus = UNC_United_Kingdom
+}

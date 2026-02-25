@@ -1,0 +1,2973 @@
+shared_focus = {
+	id = LYC_our_queen
+	icon = GFX_goal_lyc_queen	
+	cost = 2.2
+	available = {
+		
+	}
+	ai_will_do = {
+		factor = 40
+	}
+	x = 12
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_our_queen"
+		add_political_power = 75
+		hidden_effect = {
+			country_event = { id = lyc.1 days = 75 }
+			add_ideas = big_science_base
+		}
+	}
+	
+}
+	
+shared_focus = {
+	id = LYC_militarisation
+	icon = GFX_goal_lyc_rifles		
+	cost = 2.2
+	available = {
+	}
+	prerequisite = { focus = LYC_our_queen }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_our_queen
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_militarisation"
+		add_ideas = LYC_prepare_militarisation
+		309 = { 
+			add_extra_state_shared_building_slots = 1
+		}
+		309 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+	
+shared_focus = {
+	id = LYC_expand_current_industry
+	icon = GFX_goal_lyc_factory	
+	cost = 2.2
+	available = {
+	}
+	prerequisite = { focus = LYC_our_queen }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_our_queen
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		309 = { 
+			add_extra_state_shared_building_slots = 2
+		}
+		309 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+	
+shared_focus = {
+	id = LYC_obey_to_chryssy
+	icon = GFX_goal_lyc_puppet_master		
+	cost = 2.2
+	available = {
+	}
+	mutually_exclusive = { focus = LYC_kill_deers }
+	prerequisite = { focus = LYC_militarisation }
+	prerequisite = { focus = LYC_expand_current_industry }
+	ai_will_do = {
+		factor = 0
+	}
+	relative_position_id = LYC_our_queen
+	x = -1
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_obey_to_chryssy"
+		add_opinion_modifier = {
+			target = CHN modifier = besties
+		}
+		CHN = {
+			add_opinion_modifier = {
+				target = LYC modifier = besties
+			}
+			add_war_support = 0.05
+		}
+		plus_5_hehemony_unity = yes
+	}
+}
+	
+shared_focus = {
+	id = LYC_kill_deers
+	icon = GFX_goal_lyc_kill_the_deer
+	cost = 2.2
+	available = {
+	}
+	mutually_exclusive = { focus = LYC_obey_to_chryssy } 
+	prerequisite = { focus = LYC_militarisation }
+	prerequisite = { focus = LYC_expand_current_industry }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_our_queen
+	x = 1
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		add_war_support = 0.1
+	}	
+}
+	
+shared_focus = {
+	id = LYC_monster_awakens
+	icon = GFX_goal_lyc_jaws
+	cost = 2.2
+	available = {
+	}
+	prerequisite = { focus = LYC_kill_deers }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_our_queen
+	x = 1
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		add_political_power = 25
+		if = {
+			limit = {
+				NOT = {	has_global_flag = warcrimes_disabled }
+			}
+			add_to_variable = {
+					ROOT_warcrimes_count = 1
+			}
+			custom_effect_tooltip = plus_1_warcrimes_tt	
+		}
+		
+	}
+}
+	
+shared_focus = {
+	id = LYC_wait
+	icon = GFX_goal_lyc_clocks		
+	cost = 5
+	available = {
+	}
+	prerequisite = { focus = LYC_obey_to_chryssy }
+	ai_will_do = {
+		factor = 20
+	}
+	relative_position_id = LYC_our_queen
+	x = -1
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		add_stability = 0.1
+	}
+}
+
+shared_focus = {
+	id = LYC_punishment_for_302
+	icon = GFX_goal_lyc_genocide
+	cost = 5
+	available = {
+	}
+	prerequisite = { focus = LYC_wait focus = LYC_monster_awakens }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_our_queen
+	x = -4
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		hidden_effect = {
+			country_event = { id = lyc.4 days = 10 }
+		}
+		302 = {
+			add_manpower = -20000
+		}
+		302 = {
+			remove_core_of = OLE
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.03
+		}
+		300 = {
+			add_manpower = 142
+		}
+		301 = {
+			add_manpower = 61
+		}
+		if = {
+			limit = {
+				NOT = {	has_global_flag = warcrimes_disabled }
+			}
+			add_to_variable = {
+				ROOT_warcrimes_count = 10
+			}
+			custom_effect_tooltip = plus_10_warcrimes_tt
+		}
+		country_event = { id = lyc.2 days = 5 }
+	}
+}
+
+shared_focus = {
+	id = LYC_develop_302
+	icon = GFX_goal_lyc_steel
+	cost = 5
+	available = {
+	}
+	prerequisite = { focus = LYC_punishment_for_302}
+	ai_will_do = {
+		factor = 20
+	}
+	relative_position_id = LYC_punishment_for_302
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		302 = {
+			set_state_category = town
+			add_manpower = 50000
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+			}
+		}
+		309 = {
+			add_manpower = -25000
+		}
+		303 = {
+			add_manpower = -15000
+		}
+		308 = {
+			add_manpower = -10000
+		}
+	}
+}
+
+shared_focus = {
+	id = LYC_prepare_302
+	icon = GFX_goal_lyc_bunker
+	cost = 5
+	available = {
+	}
+	prerequisite = { focus = LYC_punishment_for_302}
+	ai_will_do = {
+		factor = 20
+	}
+	relative_position_id = LYC_punishment_for_302
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		302 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+			}
+			add_building_construction = {
+				type = bunker
+				province = 10407
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 12752
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 4756
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 10192
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 968
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+		
+}
+
+shared_focus = {
+	id = LYC_chemical_warfare
+	icon = GFX_goal_lyc_gasmask
+	cost = 5
+	available = {
+		
+	}
+	prerequisite = { focus = LYC_punishment_for_302 }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_punishment_for_302
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		add_tech_bonus = {
+			name = chemical_warfare_category
+			bonus = 0.25
+			uses = 2
+			category = chemical_warfare_category
+		}
+		
+	}
+}
+
+shared_focus = {
+	id = LYC_insane_war
+	icon = GFX_goal_lyc_genocide
+	cost = 5
+	available = {
+		has_war_with = OLE
+	}
+	prerequisite = { focus = LYC_chemical_warfare }
+	ai_will_do = {
+		factor = 40
+	}
+	bypass = {
+		OLE = {
+			has_country_flag = extermination_flag
+		}
+	}
+	relative_position_id = LYC_punishment_for_302
+	x = 0
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		add_manpower = 50000
+		set_rule = {
+			can_use_kamikaze_pilots = yes
+		}
+	}
+}
+
+shared_focus = {
+	id = LYC_prepare_executions
+	icon = GFX_goal_lyc_ole
+	cost = 0.8
+	available = {
+		has_completed_focus = LYC_punishment_for_302
+	}
+	prerequisite = { focus = LYC_monster_awakens }
+	ai_will_do = {
+		factor = 100
+	}
+	relative_position_id = LYC_our_queen
+	x = 4
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		custom_effect_tooltip = autocomplete
+		hidden_effect = {
+			country_event = { id = lyc.8 days = 70 }
+		}
+		set_country_leader_portrait = {
+			ideology = fascism
+			portrait = "gfx/leaders/LYC/aurantia_bad.tga"
+		}
+	}
+}
+
+shared_focus = {
+	id = LYC_standalone
+	icon = GFX_goal_lyc_vesalipolis
+	cost = 5
+	available = {
+	}
+	prerequisite = { focus = LYC_prepare_executions}
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_prepare_executions
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		minus_5_hehemony_unity = yes
+		add_political_power = 50
+		add_ideas = LYC_alone_idea
+	}
+}
+
+shared_focus = {
+	id = LYC_tell_them_about_justice
+	icon = GFX_goal_lyc_sword
+	cost = 5
+	available = {
+	}
+	prerequisite = { focus = LYC_prepare_executions}
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_prepare_executions
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		add_ideas = LYC_justice_idea
+	}
+}
+
+shared_focus = {
+	id = LYC_agressive_militarization
+	icon = GFX_goal_lyc_cogs_ak
+	cost = 5
+	available = {
+	}
+	prerequisite = { focus = LYC_tell_them_about_justice }
+	prerequisite = { focus = LYC_standalone }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_prepare_executions
+	x = -4
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_agressive_militarization"
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_0
+			amount = 500
+		}
+		if = {
+			limit = {
+				has_idea = civilian_economy
+			}
+			swap_ideas = {
+				remove_idea = civilian_economy
+				add_idea = partial_economic_mobilisation
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = low_economic_mobilisation
+			}
+			swap_ideas = {
+				remove_idea = low_economic_mobilisation
+				add_idea = partial_economic_mobilisation
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = partial_economic_mobilisation
+			}
+			add_political_power = 150
+			custom_effect_tooltip = lyc_agressive_mobilisation_extra_tt
+		} 
+		309 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory 
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = LYC_army_of_fate
+	icon = GFX_goal_lyc_garrison
+	cost = 5
+	available = {
+	}
+	prerequisite = { focus = LYC_agressive_industry }
+	prerequisite = { focus = LYC_loyalty }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_prepare_executions
+	x = -4
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_army_of_fate"
+		add_manpower = 50000
+		add_war_support = 0.05
+	}
+}
+
+shared_focus = {
+	id = LYC_fight_for_queen
+	icon = GFX_goal_lyc_queen	
+	cost = 5
+	available = {
+	}
+	prerequisite = { focus = LYC_army_of_fate }
+	mutually_exclusive = { focus = LYC_fight_for_idea }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_prepare_executions
+	x = -5
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_fight_for_queen"
+		add_stability = -0.1
+		add_popularity = {
+			ideology = fascism
+			popularity = 1.0
+		}
+	}
+} 
+shared_focus = {
+	id = LYC_fight_for_idea
+	icon = GFX_goal_lyc_kill_the_deer
+	cost = 5
+	available = {
+	}
+	prerequisite = { focus = LYC_army_of_fate }
+	mutually_exclusive = { focus = LYC_fight_for_queen }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_prepare_executions
+	x = -3
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_fight_for_idea"
+		add_ideas = LYC_idea_idea
+	}
+}
+
+shared_focus = {
+	id = LYC_loyalty
+	icon = GFX_goal_lyc_cctv
+	cost = 5
+	available = {
+	}
+	prerequisite = { focus = LYC_agressive_militarization }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_prepare_executions
+	x = -5
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_loyalty"
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.1
+		}
+		add_stability = -0.1
+		add_manpower = -10000
+	}
+}
+
+shared_focus = {
+	id = LYC_agressive_industry
+	icon = GFX_goal_lyc_panzerfaust
+	cost = 5
+	available = {
+	}
+	prerequisite = { focus = LYC_agressive_militarization }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_prepare_executions
+	x = -3
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_agressive_industry"
+		add_ideas = LYC_extended_production
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_0
+			amount = 1000
+		}
+		add_equipment_to_stockpile = {
+			type = gas_weapon_equipment
+			amount = 750
+		}
+	}
+}
+
+shared_focus = {
+	id = LYC_deadly_air
+	icon = GFX_goal_lyc_gasmask
+	cost = 5
+	available = {
+	}
+	prerequisite = { focus = LYC_agressive_industry }
+	prerequisite = { focus = LYC_air_upgrade }
+	prerequisite = { focus = LYC_army_total_destruction }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_prepare_executions
+	x = -2
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_deadly_air"
+		custom_effect_tooltip = LYC_can_gass_all_over_olenia_tt
+		set_country_flag = LYC_can_gass_all_over_olenia_flag
+		country_event = lyc.9
+		add_tech_bonus = {
+			name = chemical_warfare_category
+			bonus = 1.0
+			uses = 1
+			category = chemical_warfare_category
+		}
+	}
+}
+
+shared_focus = {
+	id = LYC_start_independence
+	icon = GFX_goal_lyc_monster	
+	cost = 5
+	available = {
+	}
+	prerequisite = { focus = LYC_tell_them_about_justice }
+	prerequisite = { focus = LYC_standalone }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_prepare_executions
+	x = 4
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_start_independence"
+		hidden_effect = {
+			remove_ideas = changelings_medium_puppet
+		}
+		add_ideas = changelings_low_puppet
+		VRX = {
+			country_event = vrx.1
+		}
+
+	}
+}
+
+shared_focus = {
+	id = LYC_start_independence_r
+	icon = GFX_goal_lyc_monster	
+	cost = 5
+	available = {
+	}
+	prerequisite = { focus = LYC_start_independence }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_prepare_executions
+	x = 5
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_start_independence_r"
+		add_autonomy_ratio = {
+			value = 0.75
+			localization = EQC_patriation
+		}
+		add_ideas = LYC_hive_spirit
+	}
+}
+
+shared_focus = {
+	id = LYC_start_independence_l
+	icon = GFX_goal_lyc_factory
+	cost = 5
+	available = {
+	}
+	prerequisite = { focus = LYC_start_independence }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_prepare_executions
+	x = 3
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_start_independence_l"
+		swap_ideas = {
+			remove_idea = LYC_industrial_hive
+			add_idea = LYC_industrial_hive_1
+		}
+	}
+}
+
+shared_focus = {
+	id = LYC_start_independence_industrial_hive
+	icon = GFX_goal_lyc_vesalipolis
+	cost = 5
+	available = {
+	}
+	prerequisite = { focus = LYC_start_independence_l }
+	prerequisite = { focus = LYC_start_independence_r }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_prepare_executions
+	x = 4
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_start_independence_l"
+		custom_effect_tooltip = start_independence_industrial_hive_tt
+		hidden_effect = {
+			remove_ideas = LYC_prepare_militarisation
+			swap_ideas = {
+				remove_idea = LYC_industrial_hive_1
+				add_idea = LYC_industrial_hive_2
+			}
+			309 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = LYC_full_win
+	icon = GFX_goal_lyc_hoof
+	cost = 5
+	available = {
+	}
+	prerequisite = { focus = LYC_start_independence_industrial_hive }
+	ai_will_do = {
+		factor = 40
+	}
+	mutually_exclusive = { focus = LYC_unspeakable_result }
+	relative_position_id = LYC_prepare_executions
+	x = 3
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_start_independence_l"
+		swap_ideas = {
+			remove_idea = LYC_our_enemies_idea
+			add_idea = LYC_our_enemies_idea_att
+		}
+	}
+}
+
+shared_focus = {
+	id = LYC_unspeakable_result
+	icon = GFX_goal_lyc_shield
+	cost = 5
+	available = {
+	}
+	prerequisite = { focus = LYC_start_independence_industrial_hive }
+	ai_will_do = {
+		factor = 40
+	}
+	mutually_exclusive = { focus = LYC_full_win }
+	relative_position_id = LYC_prepare_executions
+	x = 5
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_start_independence_l"
+		swap_ideas = {
+			remove_idea = LYC_our_enemies_idea
+			add_idea = LYC_our_enemies_idea_def
+		}
+	}
+}
+
+shared_focus = {
+	id = LYC_navy_upgrade
+	icon = GFX_goal_lyc_submarine
+	cost = 5
+	available = {
+	}
+	prerequisite = { focus = LYC_tell_them_about_justice }
+	prerequisite = { focus = LYC_standalone }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_prepare_executions
+	x = 2
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_navy_upgrade"
+		navy_experience = 20
+		302 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 4
+			}
+		}
+		add_tech_bonus = {
+			name = ss_bonus
+			bonus = 0.5
+			uses = 2
+			category = ss_tech
+		}
+	}
+}
+
+shared_focus = {
+	id = LYC_air_upgrade
+	icon = GFX_goal_lyc_bomber
+	cost = 5
+	available = {
+	}
+	prerequisite = { focus = LYC_tell_them_about_justice }
+	prerequisite = { focus = LYC_standalone }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_prepare_executions
+	x = -2
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_air_upgrade"
+		air_experience = 20
+		if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+					has_tech = iw_large_airframe
+				}
+				add_tech_bonus = {
+					name = bomber_bonus
+					bonus = 1.0
+					uses = 1
+					category = heavy_air
+				}
+				set_technology = {
+					early_bombs = 1
+					aa_lmg = 1
+					
+				}
+				generic_early_strat_bomber = yes
+				add_equipment_to_stockpile = {
+					type = large_plane_airframe_0
+					variant_name = "Early Strategic Bomber"
+					amount = 100
+				}
+			}
+			else_if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+					NOT = {
+						has_tech = iw_large_airframe
+					}
+				}
+				set_technology = {
+					iw_large_airframe = 1
+					early_bombs = 1
+					aa_lmg = 1
+				}
+				generic_early_strat_bomber = yes
+				add_equipment_to_stockpile = {
+					type = large_plane_airframe_0
+					variant_name = "Early Strategic Bomber"
+					amount = 100
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = early_bomber
+				}
+				add_tech_bonus = {
+					name = bomber_bonus
+					bonus = 1.0
+					uses = 1
+					category = cat_strategic_bomber
+				}
+				add_equipment_to_stockpile = {
+					type = large_plane_airframe
+					producer = LYC
+					amount = 200
+				}
+			}
+			else = {
+				set_technology = {
+					early_bomber = 1
+					early_fighter = 1
+				}
+				add_equipment_to_stockpile = {
+					type = large_plane_airframe
+					producer = EQC
+					amount = 100
+				}
+			}
+			if = {
+    	        limit = {
+    	            has_dlc = "By Blood Alone"
+    	        }
+				add_tech_bonus = {
+					name = EQC_MARE_bombers
+					bonus = 1.0
+					uses = 1
+					category = heavy_air
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = EQC_MARE_bombers
+					bonus = 1.0
+					uses = 1
+					category = cat_strategic_bomber
+				}
+			}
+	}
+}
+
+shared_focus = {
+	id = LYC_army_upgrade
+	icon = GFX_goal_lyc_rifles
+	cost = 5
+	available = {
+	}
+	prerequisite = { focus = LYC_tell_them_about_justice }
+	prerequisite = { focus = LYC_standalone }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_prepare_executions
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_army_upgrade"
+		army_experience = 10
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.25
+			uses = 2
+			category = land_doctrine
+		}
+		add_manpower = 15000
+	}
+}
+
+shared_focus = {
+	id = LYC_army_total_destruction
+	icon = GFX_goal_lyc_bombing
+	immediate = {
+		country_event = { id = lyc.6 days = 10 }
+		country_event = { id = lyc.7 days = 30 }
+	}
+	cost = 10
+	available = {
+	}
+	prerequisite = { focus = LYC_army_upgrade }
+	mutually_exclusive = { focus = LYC_army_spare_someone }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_prepare_executions
+	x = -1
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_army_total_destruction"
+		hidden_effect = {
+			add_ideas = LYC_total_destruction_idea
+		}
+		custom_effect_tooltip = LYC_total_destruction_tt
+		show_ideas_tooltip = LYC_total_destruction_idea
+	}
+}
+
+shared_focus = {
+	id = LYC_army_spare_someone
+	icon = GFX_goal_lyc_ole_factories
+	cost = 10
+	available = {
+	}
+	prerequisite = { focus = LYC_army_upgrade }
+	mutually_exclusive = { focus = LYC_army_total_destruction }
+	ai_will_do = {
+		factor = 60
+	}
+	relative_position_id = LYC_prepare_executions
+	x = 1
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_army_spare_someone"
+		set_country_flag = LYC_spare_someone_flag
+		custom_effect_tooltip = LYC_spare_someone_flag
+		show_ideas_tooltip = LYC_spare_someone_idea
+	}
+}
+
+shared_focus = {
+	id = LYC_army_upgrade_2
+	icon = GFX_goal_lyc_helmet
+	cost = 5
+	available = {
+	}
+	prerequisite = { focus = LYC_army_spare_someone focus = LYC_army_total_destruction }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_prepare_executions
+	x = 0
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		army_experience = 10
+		add_equipment_to_stockpile = {
+			type = motorized_equipment
+			amount = 700
+		}
+		add_ideas = LYC_motorized_attack
+		add_manpower = 10000
+		303 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+			}
+		}
+		add_tech_bonus = {
+			name = motorized_research
+			bonus = 0.55
+			uses = 1
+			category = motorized_equipment
+		}
+	}
+}
+
+shared_focus = {
+	id = LYC_tank_brigades
+	icon = GFX_goal_lyc_panzervor
+	cost = 5
+	available = {
+	}
+	prerequisite = { focus = LYC_army_upgrade_2 }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_prepare_executions
+	x = -1
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		add_tech_bonus = {
+				name = tank_research
+				bonus = 1.0
+				uses = 1
+				category = cat_light_armor
+			}
+		add_tech_bonus = {
+			name = tank_research
+			bonus = 1.0
+			uses = 1
+			category = cat_medium_armor
+		}
+	}
+}
+
+shared_focus = {
+	id = LYC_artillery_brigades
+	icon = GFX_goal_lyc_rifles
+	cost = 5
+	available = {
+	}
+	prerequisite = { focus = LYC_army_upgrade_2 }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_prepare_executions
+	x = 1
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		add_tech_bonus = {
+			name = arty_bonus
+			bonus = 1.0
+			uses = 1
+			category = artillery
+		}
+		add_tech_bonus = {
+			name = support_bonus
+			bonus = 0.5
+			uses = 1
+			category = support_tech
+		}
+	}
+}
+
+shared_focus = {
+	id = LYC_next_step
+	icon = GFX_goal_lyc_globe
+	cost = 5
+	available = {
+		
+	}
+	prerequisite = { focus = LYC_tank_brigades }
+	prerequisite = { focus = LYC_artillery_brigades }
+	prerequisite = { focus = LYC_fight_for_idea focus = LYC_fight_for_queen }
+	prerequisite = { focus = LYC_unspeakable_result focus = LYC_full_win }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_prepare_executions
+	x = 0
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		minus_5_hehemony_unity = yes
+		every_country = {
+			limit = {
+				is_chn_hehemony_hive = yes
+				NOT = {
+					tag = LYC
+				}
+			}
+			country_event = lyc.32
+		}
+		end_puppet_this = yes
+		leave_faction = yes
+		create_wargoal = {
+			type = annex_everything
+			target = OLE
+			expire = 0
+		}
+		set_cosmetic_tag = extermination_zone_olenia
+		set_country_leader_portrait = {
+			ideology = fascism
+			portrait = "gfx/leaders/LYC/clinically_insane.tga"
+		}
+		remove_ideas = changelings_low_puppet
+	}
+}
+
+shared_focus = {
+	id = LYC_quiet_peace
+	icon = GFX_goal_lyc_lead_the_army
+	cost = 2.2
+	available = {
+		OLE = {
+			has_country_flag = extermination_flag
+		}
+	}
+	ai_will_do = {
+		factor = 40
+	}
+	x = 38
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		custom_effect_tooltip = plus_5_olenia_extermination
+		add_to_variable = {
+			global.extermination_var = 5
+		}
+		set_country_leader_portrait = {
+			ideology = fascism
+			portrait = "gfx/leaders/LYC/aurantia_basic.tga"
+		}
+	}
+}
+
+shared_focus = {
+	id = LYC_parades
+	icon = GFX_goal_lyc_rifles
+	cost = 2.2
+	available = {
+		
+	}
+	prerequisite = { focus = LYC_quiet_peace }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_quiet_peace
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		add_stability = 0.025
+		add_political_power = 25
+	}
+}
+
+shared_focus = {
+	id = LYC_praise_army
+	icon = GFX_goal_lyc_96th
+	cost = 2.2
+	available = {
+		
+	}
+	prerequisite = { focus = LYC_quiet_peace }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_quiet_peace
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		army_experience = 10
+		add_political_power = 25
+	}
+}
+
+shared_focus = {
+	id = LYC_minute_of_silence
+	icon = GFX_goal_lyc_clocks
+	cost = 2.2
+	available = {
+		
+	}
+	prerequisite = { focus = LYC_praise_army }
+	prerequisite = { focus = LYC_parades }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_quiet_peace
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		add_war_support = -0.05
+		add_political_power = 25
+		hidden_effect = {
+			country_event = { id = lyc.27 days = 10 }
+		}
+	}
+}
+
+shared_focus = {
+	id = LYC_back_to_hives
+	icon = GFX_goal_lyc_vesalipolis
+	cost = 5
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+	}
+	prerequisite = { focus = LYC_minute_of_silence }
+	mutually_exclusive = { focus = LYC_standalone_2 } 
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = LYC_quiet_peace
+	x = 12
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		plus_10_hehemony_unity = yes
+		CHN = {
+			add_to_faction = ROOT
+		}
+		country_event = lyc.26
+	}
+}
+
+shared_focus = {
+	id = LYC_promise_of_loyalty
+	icon = GFX_goal_lyc_pacifism
+	cost = 5
+	available = {
+
+	}
+	prerequisite = { focus = LYC_back_to_hives }
+	ai_will_do = {
+		factor = 0
+	}
+	relative_position_id = LYC_back_to_hives
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		country_event = {
+			id = lyc.40 days = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = LYC_share_war_experience
+	icon = GFX_goal_lyc_vesalipolis
+	cost = 5
+	available = {
+		
+	}
+	prerequisite = { focus = LYC_promise_of_loyalty }
+	ai_will_do = {
+		factor = 0
+	}
+	relative_position_id = LYC_back_to_hives
+	x = -3
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		CHN = {
+			army_experience = 15
+			add_tech_bonus = {
+				name = chemical_warfare_category
+				bonus = 1.0
+				uses = 1
+				category = chemical_warfare_category
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = LYC_industrial_hive_again
+	icon = GFX_goal_lyc_peace
+	cost = 5
+	available = {
+		
+	}
+	prerequisite = { focus = LYC_promise_of_loyalty }
+	ai_will_do = {
+		factor = 0
+	}
+	relative_position_id = LYC_back_to_hives
+	x = -1
+
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		add_ideas = LYC_sindustrial_hive_again_idea
+		309 = {
+			remove_building = {
+				type = arms_factory 
+				level = 5
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = LYC_help_vesalipolis
+	icon = GFX_goal_lyc_vesalipolis
+	cost = 5
+	available = {
+		
+	}
+	prerequisite = { focus = LYC_promise_of_loyalty }
+	ai_will_do = {
+		factor = 0
+	}
+	relative_position_id = LYC_back_to_hives
+	x = 1
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		251 = {
+			add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+				type = industrial_complex
+				level = 5
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = LYC_love_export
+	icon = GFX_goal_lyc_heart
+	cost = 5
+	available = {
+		
+	}
+	bypass = {
+		OLE = {
+			NOT = {
+				has_country_flag = extermination_flag
+			}
+			exists = no
+		}
+	}
+	prerequisite = { focus = LYC_promise_of_loyalty }
+	ai_will_do = {
+		factor = 0
+	}
+	relative_position_id = LYC_back_to_hives
+	x = 3
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		LYC = {
+			add_political_power = -50
+		}
+		CHN = {
+			add_stability = 0.1
+		}
+	}
+}
+
+shared_focus = {
+	id = LYC_peace_for_aurantia
+	icon = GFX_goal_lyc_heart
+	cost = 5
+	available = {
+		
+	}
+	prerequisite = { focus = LYC_share_war_experience }
+	prerequisite = { focus = LYC_industrial_hive_again }
+	prerequisite = { focus = LYC_help_vesalipolis }
+	prerequisite = { focus = LYC_love_export }
+	ai_will_do = {
+		factor = 0
+	}
+	relative_position_id = LYC_back_to_hives
+	x = 0
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		custom_effect_tooltip = aurantia_gets_mental_help_tt
+		hidden_effect = {
+			country_event = {
+				id = lyc.39 days = 5
+			}
+		}
+	}
+}
+
+
+shared_focus = {
+	id = LYC_standalone_2
+	icon = GFX_goal_lyc_globe
+	cost = 5
+	available = {
+		
+	}
+	prerequisite = { focus = LYC_minute_of_silence }
+	mutually_exclusive = { focus = LYC_back_to_hives } 
+	ai_will_do = {
+		factor = 80
+	}
+	relative_position_id = LYC_quiet_peace
+	x = -12
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_standalone_2"
+		add_political_power = 100
+		hidden_effect = {
+			country_event = { id = lyc.37 days = 80 }
+		}
+	}
+}
+
+shared_focus = {
+	id = LYC_dreams_of_our_changelingia
+	icon = GFX_goal_lyc_changelingia
+	cost = 5
+	available = {
+		
+	}
+	prerequisite = { focus = LYC_standalone_2 }
+	mutually_exclusive = { focus = LYC_leave_this_fools } 
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_standalone_2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_dreams_of_our_changelingia"
+		251 = {
+			add_claim_by = ROOT
+		}
+		add_country_leader_trait = ers_ambiguous
+	}
+}
+
+shared_focus = {
+	id = LYC_lyctida_uber_alles
+	icon = GFX_goal_lyc_puppet_master
+	cost = 5
+	available = {
+	}
+	prerequisite = { focus = LYC_dreams_of_our_changelingia focus = LYC_leave_this_fools }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_standalone_2
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_lyctida_uber_alles"
+		add_ideas = LYC_uber_alles_idea
+	}
+}
+
+shared_focus = {
+	id = LYC_patriotic_propaganda
+	icon = GFX_goal_lyc_helmet2
+	cost = 5
+	available = {
+	}
+	prerequisite = { focus = LYC_lyctida_uber_alles }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_standalone_2
+	x = 0
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		if = {
+			limit = {
+				has_idea = LYC_hive_spirit
+			}
+			swap_ideas = {
+				remove_idea = LYC_hive_spirit
+				add_idea = LYC_hive_spirit2
+			}
+		}
+		else = {
+			add_ideas = LYC_hive_spirit2
+		}
+	}
+}
+
+shared_focus = {
+	id = LYC_prepare_for_future_war
+	icon = GFX_goal_lyc_garrison
+	cost = 5
+	available = {
+		has_completed_focus = LYC_demobilisation
+		NOT = {
+			has_idea = LYC_demobilised_economy
+		}
+	}
+	prerequisite = { focus = LYC_dreams_of_our_changelingia }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_standalone_2
+	x = 2
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		army_experience = 10
+		add_war_support = 0.025
+		add_manpower = 50000
+	}
+}
+
+shared_focus = {
+	id = LYC_adapt_vpk
+	icon = GFX_goal_lyc_industry_of_hives
+	cost = 5
+	available = {
+	}
+	prerequisite = { focus = LYC_prepare_for_future_war }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_standalone_2
+	x = 2
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		add_political_power = -100
+		309 = {
+			add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = LYC_forces_against_vesalipolis
+	icon = GFX_goal_lyc_panzervor
+	cost = 5
+	available = {
+		NOT = {
+			has_completed_focus = LYC_forward_my_army
+		}
+	}
+	prerequisite = { focus = LYC_adapt_vpk }
+	prerequisite = { focus = LYC_patriotic_propaganda }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_standalone_2
+	x = -1
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_forces_against_vesalipolis"
+		hidden_effect = {
+			load_oob = "LYC_forces_against_vesalipolis"
+		}
+		custom_effect_tooltip = LYC_forces_against_vesalipolis_tt
+	}
+}
+
+shared_focus = {
+	id = LYC_mobilize_army_for_crusade_against_vesalopolis
+	icon = GFX_goal_lyc_panzervor
+	cost = 5
+	available = {
+	}
+	prerequisite = { focus = LYC_adapt_vpk }
+	prerequisite = { focus = LYC_patriotic_propaganda }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_standalone_2
+	x = 1
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_mobilize_army_for_crusade_against_vesalopolis"
+		add_ideas = LYC_crusade_against_vesalipolis
+	}
+}
+
+shared_focus = {
+	id = LYC_forces_against_vesalipolis_toxic
+	icon = GFX_goal_lyc_chemicals
+	cost = 5
+	available = {
+		NOT = {
+			has_completed_focus = LYC_forward_my_army
+		}
+	}
+	prerequisite = { focus = LYC_adapt_vpk }
+	prerequisite = { focus = LYC_patriotic_propaganda }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_standalone_2
+	x = 3
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_forces_against_vesalipolis"
+		hidden_effect = {
+			load_oob = "LYC_forces_against_vesalipolis_toxic"
+		}
+		custom_effect_tooltip = LYC_forces_against_vesalipolis_toxic_tt
+	}
+}
+
+shared_focus = {
+	id = LYC_forward_my_army
+	icon = GFX_goal_lyc_monster
+	cost = 5
+	available = {
+	}
+	prerequisite = { focus = LYC_mobilize_army_for_crusade_against_vesalopolis }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_standalone_2
+	x = 1
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_mobilize_army_for_crusade_against_vesalopolis"
+		create_wargoal = {
+			type = annex_everything
+			target = 251.owner
+			generator = { 251 }
+		}
+	}
+}
+
+
+shared_focus = {
+	id = LYC_coronation_of_vesalipols
+	icon = GFX_goal_chn_man_crown
+	cost = 5
+	available = {
+		owns_state = 251
+	}
+	prerequisite = { focus = LYC_forward_my_army }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_standalone_2
+	x = 1
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_forward_my_army"
+		251 = {
+			add_core_of = ROOT
+		}
+		add_country_leader_trait = vesalipolis_queen
+		add_ideas = changelings_leader
+		create_wargoal = {
+			target = 252.owner
+			type = annex_everything
+		}
+		create_wargoal = {
+			target = 262.owner
+			type = annex_everything
+		}
+		create_wargoal = {
+			target = 259.owner
+			type = annex_everything
+		}
+		create_wargoal = {
+			target = 316.owner
+			type = annex_everything
+		}
+	}
+}
+
+
+shared_focus = {
+	id = LYC_coronation_of_dytrisium
+	icon = GFX_goal_dts_crown
+	cost = 5
+	available = {
+		owns_state = 252
+	}
+	prerequisite = { focus = LYC_coronation_of_vesalipols }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_coronation_of_vesalipols
+	x = -3
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_forward_my_army"
+		252 = {
+			add_core_of = ROOT
+		}
+		add_country_leader_trait = queen_helvia
+	}
+}
+
+shared_focus = {
+	id = LYC_coronation_of_vraks
+	icon = GFX_goal_vrx_crown
+	cost = 5
+	available = {
+		owns_state = 259
+	}
+	prerequisite = { focus = LYC_coronation_of_vesalipols }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_coronation_of_vesalipols
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_forward_my_army"
+		259 = {
+			add_core_of = ROOT
+		}
+		add_country_leader_trait = queen_argynnis
+	}
+}
+
+shared_focus = {
+	id = LYC_coronation_of_soryth
+	icon = GFX_goal_srf_crown
+	cost = 5
+	available = {
+		owns_state = 262
+	}
+	prerequisite = { focus = LYC_coronation_of_vesalipols }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_coronation_of_vesalipols
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_forward_my_army"
+		262 = {
+			add_core_of = ROOT
+		}
+		add_country_leader_trait = queen_yaria
+	}
+}
+
+shared_focus = {
+	id = LYC_integrate_volistad
+	icon = GFX_goal_vst_detective
+	cost = 5
+	available = {
+		owns_state = 316
+	}
+	prerequisite = { focus = LYC_coronation_of_vesalipols }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_coronation_of_vesalipols
+	x = 3
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_forward_my_army"
+		316 = {
+			add_core_of = ROOT
+		}
+	}
+}
+
+shared_focus = {
+	id = LYC_stop_opposition
+	icon = GFX_goal_lyc_crown
+	cost = 5
+	available = {
+	
+	}
+	prerequisite = { focus = LYC_coronation_of_dytrisium }
+	prerequisite = { focus = LYC_coronation_of_soryth }
+	prerequisite = { focus = LYC_coronation_of_vraks }
+	prerequisite = { focus = LYC_integrate_volistad }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_coronation_of_vesalipols
+	x = -1
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_forward_my_army"
+		add_stability = 0.05
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.1
+		}
+		every_owned_state = {
+			limit = {
+				OR = {
+					is_core_of = VST
+					is_core_of = DTS
+					is_core_of = CHN
+					is_core_of = VRX
+					is_core_of = SRF
+					is_core_of = CHC
+				}
+				NOT = {
+					is_core_of = ROOT
+				}
+			} 
+			add_manpower = -10000
+			add_resistance = -10
+			add_compliance = 10
+		}
+	}
+}
+
+shared_focus = {
+	id = LYC_destroy_communists
+	icon = GFX_goal_lyc_strike_communism
+	cost = 5
+	available = {
+
+	}
+	prerequisite = { focus = LYC_coronation_of_dytrisium }
+	prerequisite = { focus = LYC_coronation_of_soryth }
+	prerequisite = { focus = LYC_coronation_of_vraks }
+	prerequisite = { focus = LYC_integrate_volistad }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_coronation_of_vesalipols
+	x = 1
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_forward_my_army"
+		country_event = ers_chn.6
+		add_popularity = {
+			ideology = communism
+			popularity = -1.0
+		}
+		add_stability = -0.1
+	}
+}
+
+shared_focus = {
+	id = LYC_pax_lyctidia
+	icon = GFX_goal_lyc_changelingia
+	cost = 5
+	available = {
+		NOT = {
+			has_war_with = CHC
+		}
+	}
+	prerequisite = { focus = LYC_stop_opposition }
+	prerequisite = { focus = LYC_destroy_communists }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_coronation_of_vesalipols
+	x = 0
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_forward_my_army"
+		custom_effect_tooltip = lyc_event_41_tt
+		custom_effect_tooltip = LYC_pax_lyctidia_tt
+		add_country_leader_trait = ers_queen_of_changelings
+		hidden_effect = {
+			country_event = { id = lyc.41 days = 3 }
+			remove_country_leader_trait = queen_argynnis
+			remove_country_leader_trait = queen_helvia
+			remove_country_leader_trait = queen_yaria
+			remove_country_leader_trait = vesalipolis_queen
+		}
+	}
+}
+
+shared_focus = {
+	id = LYC_leave_this_fools
+	icon = GFX_goal_lyc_office
+	cost = 2.2
+	available = {
+		
+	}
+	prerequisite = { focus = LYC_standalone_2 }
+	mutually_exclusive = { focus = LYC_dreams_of_our_changelingia } 
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_standalone_2
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		add_political_power = 100
+	}
+}
+
+shared_focus = {
+	id = LYC_sphere_of_defence
+	icon = GFX_goal_lyc_shield_simple
+	cost = 2.2
+	available = {
+		
+	}
+	prerequisite = { focus = LYC_leave_this_fools }
+	mutually_exclusive = { focus = LYC_dreams_of_our_changelingia } 
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_standalone_2
+	x = -2
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		add_ideas = LYC_defence_idea
+	}
+}
+
+shared_focus = {
+	id = LYC_justify_olenian_occupation
+	icon = GFX_goal_lyc_cut_deers_head
+	cost = 4.4
+	bypass = {
+		has_global_flag = warcrimes_disabled
+	}
+	prerequisite = { focus = LYC_back_to_hives focus = LYC_standalone_2 }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_quiet_peace
+	x = 0
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		add_war_support = -0.05
+		add_political_power = -50
+		if = {
+			limit = {
+				NOT = {	has_global_flag = warcrimes_disabled }
+			}
+			add_to_variable = {
+				ROOT_warcrimes_count = -50
+			}
+			custom_effect_tooltip = minus_50_warcrimes_tt
+		}
+		
+	}
+}
+
+shared_focus = {
+	id = LYC_evil_science
+	icon = GFX_goal_lyc_research
+	cost = 5
+	available = {
+		has_government = fascism
+		OLE = {
+			has_country_flag = extermination_flag
+		}
+	}
+	prerequisite = { focus = LYC_justify_olenian_occupation }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_quiet_peace
+	x = 0
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		add_timed_idea = {
+			idea = LYC_research_survived_olenians
+			days = 200
+		}
+	}
+}
+
+shared_focus = {
+	id = LYC_rely_on_krieger
+	icon = GFX_goal_lyc_jaws
+	cost = 5
+	available = {
+		has_government = fascism
+		OLE = {
+			has_country_flag = extermination_flag
+		}
+	}
+	prerequisite = { focus = LYC_evil_science }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_quiet_peace
+	x = -1
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		OLE = {
+			add_country_leader_trait = beast_of_the_west
+		}
+	}
+}
+
+shared_focus = {
+	id = LYC_esoterica_in_anti_olenia
+	icon = GFX_goal_lyc_ultra_esoterism
+	cost = 5
+	available = {
+		has_government = fascism
+		OLE = {
+			has_country_flag = extermination_flag
+		}
+	}
+	prerequisite = { focus = LYC_evil_science }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_quiet_peace
+	x = 1
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		add_war_support = 0.025
+		add_political_power = 50
+		custom_effect_tooltip = plus_10_olenia_extermination
+		add_to_variable = {
+			global.extermination_var = 10
+		}
+	}
+}
+
+shared_focus = {
+	id = LYC_see_economic_problems
+	icon = GFX_goal_lyc_question
+	cost = 2.2
+	available = {
+		
+	}
+	prerequisite = { focus = LYC_back_to_hives focus = LYC_standalone_2 }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_quiet_peace
+	x = -4
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		add_stability = 0.05
+	}
+}
+
+shared_focus = {
+	id = LYC_support_local_business
+	icon = GFX_goal_lyc_factory
+	cost = 5
+	available = {
+		
+	}
+	prerequisite = { focus = LYC_see_economic_problems }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_quiet_peace
+	x = -5
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		add_ideas = LYC_small_business
+	}
+}
+
+shared_focus = {
+	id = LYC_demobilisation
+	icon = GFX_goal_lyc_demobilisation
+	cost = 5
+	available = {
+		
+	}
+	prerequisite = { focus = LYC_see_economic_problems }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_quiet_peace
+	x = -3
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		add_war_support = -0.05
+		every_owned_state = {
+			add_extra_state_shared_building_slots = 2
+		}
+		add_timed_idea = {
+			idea = LYC_demobilised_economy
+			days = 500
+		}
+		custom_effect_tooltip = LYC_demobilisation_tt
+	}
+}
+
+shared_focus = {
+	id = LYC_send_industrial_equipment
+	icon = GFX_goal_lyc_production
+	cost = 5
+	available = {
+		
+	}
+	prerequisite = { focus = LYC_see_economic_problems }
+	prerequisite = { focus = LYC_justify_olenian_occupation }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_quiet_peace
+	x = -1
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		OLE = {
+			add_offsite_building = { type = industrial_complex level = -3 }
+		}
+		add_offsite_building = { type = industrial_complex level = 3 }
+	}
+}
+
+shared_focus = {
+	id = LYC_upgrade_banks
+	icon = GFX_goal_lyc_money
+	cost = 5
+	available = {
+		
+	}
+	prerequisite = { focus = LYC_support_local_business }
+	prerequisite = { focus = LYC_demobilisation }
+	prerequisite = { focus = LYC_send_industrial_equipment }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_quiet_peace
+	x = -6
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		add_ideas = LYC_credits_idea
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = LYC_calm_protesters
+	icon = GFX_goal_lyc_handcuffs
+	cost = 5
+	available = {
+		has_country_flag = social_reformists_are_threat
+	}
+	prerequisite = { focus = LYC_support_local_business }
+	prerequisite = { focus = LYC_demobilisation }
+	prerequisite = { focus = LYC_send_industrial_equipment }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_quiet_peace
+	x = -4
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		add_political_power = -100
+		add_manpower = -10000
+		remove_ideas = LYC_afterwar_protests
+	}
+}
+
+shared_focus = {
+	id = LYC_support_borning
+	icon = GFX_goal_lyc_heart
+	cost = 5
+	available = {
+		
+	}
+	prerequisite = { focus = LYC_support_local_business }
+	prerequisite = { focus = LYC_demobilisation }
+	prerequisite = { focus = LYC_send_industrial_equipment }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_quiet_peace
+	x = -2
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		add_stability = 0.05
+		add_ideas = LYC_borning_idea
+	}
+}
+
+shared_focus = {
+	id = LYC_upgrade_life
+	icon = GFX_goal_lyc_megapolis
+	cost = 5
+	available = {
+		
+	}
+	prerequisite = { focus = LYC_upgrade_banks }
+	prerequisite = { focus = LYC_support_borning }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_quiet_peace
+	x = -3
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_upgrade_life"
+		add_timed_idea = {
+			idea = LYC_improvement_of_life_quality
+			days = 500
+		}
+		custom_effect_tooltip = LYC_upgrade_life_tt
+	}
+}
+
+shared_focus = {
+	id = LYC_create_universities
+	icon = GFX_goal_lyc_research
+	cost = 5
+	available = {
+		
+	}
+	prerequisite = { focus = LYC_upgrade_life }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_quiet_peace
+	x = -3
+	y = 8
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_upgrade_life"
+		add_research_slot = 1
+		add_political_power = -25
+	}
+}
+
+shared_focus = {
+	id = LYC_lyctidian_philosophy
+	icon = GFX_goal_lyc_research
+	cost = 5
+	available = {
+		
+	}
+	prerequisite = { focus = LYC_create_universities }
+	prerequisite = { focus = LYC_industry_of_lyctida }
+	ai_will_do = {
+		factor = 40
+	}
+	bypass = {
+		has_idea = proper_science_base
+	}
+	relative_position_id = LYC_quiet_peace
+	x = -4
+	y = 9
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_upgrade_life"
+		improve_science_base = yes
+	}
+}
+
+shared_focus = {
+	id = LYC_afterwar_military_reforms
+	icon = GFX_goal_lyc_helmet
+	cost = 5
+	available = {
+		
+	}
+	prerequisite = { focus = LYC_back_to_hives focus = LYC_standalone_2 }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_quiet_peace
+	x = 4
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_afterwar_military_reforms"
+		army_experience = 10
+	}
+}
+
+shared_focus = {
+	id = LYC_send_arms_factories
+	icon = GFX_goal_lyc_cogs_ak
+	cost = 5
+	available = {
+		
+	}
+	prerequisite = { focus = LYC_afterwar_military_reforms }
+	prerequisite = { focus = LYC_justify_olenian_occupation }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_quiet_peace
+	x = 1
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_send_arms_factories"
+		OLE = {
+			add_offsite_building = { type = arms_factory level = -3 }
+		}
+		add_offsite_building = { type = arms_factory level = 3 }
+	}
+}
+
+shared_focus = {
+	id = LYC_pojar_corpus
+	icon = GFX_goal_lyc_shield
+	cost = 5
+	available = {
+		
+	}
+	prerequisite = { focus = LYC_afterwar_military_reforms }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_quiet_peace
+	x = 3
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_pojar_corpus"
+		add_ideas = LYC_upgraded_army_idea
+	}
+}
+
+shared_focus = {
+	id = LYC_standartize_doctrines
+	icon = GFX_goal_lyc_garrison
+	cost = 5
+	available = {
+		
+	}
+	prerequisite = { focus = LYC_afterwar_military_reforms }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_quiet_peace
+	x = 5
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_kill_deers"
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.66
+			uses = 1
+			category = land_doctrine
+		}
+		add_doctrine_cost_reduction = {
+			name = air_doc_bonus
+			cost_reduction = 0.66
+			uses = 1
+			category = air_doctrine
+		}
+		custom_effect_tooltip = lyc_navy_doctrines_tt
+		hidden_effect = {
+			add_doctrine_cost_reduction = {
+				name = cat_base_strike
+				cost_reduction = 0.66
+				uses = 1
+				category = cat_base_strike
+			}
+			add_doctrine_cost_reduction = {
+				name = cat_fleet_in_being
+				cost_reduction = 0.66
+				uses = 1
+				category = cat_fleet_in_being
+			}
+			add_doctrine_cost_reduction = {
+				name = cat_trade_interdiction
+				cost_reduction = 0.66
+				uses = 1
+				category = cat_trade_interdiction
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = LYC_heavy_tanks
+	icon = GFX_goal_lyc_modern_panzer
+	cost = 5
+	available = {
+		
+	}
+	prerequisite = { focus = LYC_standartize_doctrines }
+	prerequisite = { focus = LYC_send_arms_factories }
+	prerequisite = { focus = LYC_pojar_corpus }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_quiet_peace
+	x = 2
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_heavy_tanks"
+		add_tech_bonus = {
+			name = armor_bonus
+			bonus = 1.0
+			uses = 1
+			category = cat_heavy_armor
+		}
+		custom_effect_tooltip = available_designer
+		show_ideas_tooltip = LYC_unique_tank_designer
+	}
+}
+
+shared_focus = {
+	id = LYC_magical_weapons
+	icon = GFX_goal_lyc_infantry_weapons
+	cost = 5
+	available = {
+		
+	}
+	prerequisite = { focus = LYC_standartize_doctrines }
+	prerequisite = { focus = LYC_send_arms_factories }
+	prerequisite = { focus = LYC_pojar_corpus }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_quiet_peace
+	x = 4
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_magical_weapons"
+		add_tech_bonus = {
+			name = infantry_weapons_bonus
+			bonus = 0.7
+			uses = 2
+			technology = magical_weapons
+		}
+	}
+}
+
+shared_focus = {
+	id = LYC_new_ordens
+	icon = GFX_goal_lyc_cut_deers_head
+	cost = 5
+	available = {
+		
+	}
+	prerequisite = { focus = LYC_standartize_doctrines }
+	prerequisite = { focus = LYC_send_arms_factories }
+	prerequisite = { focus = LYC_pojar_corpus }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_quiet_peace
+	x = 6
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_new_ordens"
+		add_ideas = LYC_antiolenian_orders
+	}
+}
+
+shared_focus = {
+	id = LYC_professional_army
+	icon = GFX_goal_lyc_genocide
+	cost = 5
+	available = {
+		
+	}
+	prerequisite = { focus = LYC_magical_weapons }
+	prerequisite = { focus = LYC_heavy_tanks }
+	prerequisite = { focus = LYC_new_ordens }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_quiet_peace
+	x = 3
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_professional_army"
+		swap_ideas = {
+			remove_idea = LYC_upgraded_army_idea
+			add_idea = LYC_upgraded_army_idea2
+		}
+	}
+}
+
+shared_focus = {
+	id = LYC_nuclear_tech
+	icon = GFX_goal_lyc_atom
+	cost = 5
+	available = {
+		
+	}
+	prerequisite = { focus = LYC_professional_army }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_quiet_peace
+	x = 3
+	y = 8
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_professional_army"
+		add_tech_bonus = {
+			name = secret_bonus
+			bonus = 1.0
+			uses = 1
+			category = nuclear
+		}
+	}
+}
+
+shared_focus = {
+	id = LYC_nuclear_race
+	icon = GFX_goal_lyc_nuclear_reactor
+	cost = 5
+	available = {
+		has_tech = nuclear_reactor
+	}
+	prerequisite = { focus = LYC_nuclear_tech }
+	prerequisite = { focus = LYC_optimise_gas_production }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_quiet_peace
+	x = 4
+	y = 9
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_professional_army"
+		set_country_flag = lyc_can_improve_nuclear_tech_flag
+		unlock_decision_tooltip = LYC_create_nuclear_reactors
+		unlock_decision_tooltip = LYC_create_nukes
+	}
+}
+
+shared_focus = {
+	id = LYC_industry_of_lyctida
+	icon = GFX_goal_lyc_steel
+	cost = 5
+	available = {
+		
+	}
+	prerequisite = { focus = LYC_upgrade_banks }
+	prerequisite = { focus = LYC_support_borning }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_quiet_peace
+	x = -5
+	y = 8
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_industry_of_lyctida"
+		add_ideas = LYC_better_industry_idea
+	}
+}
+
+shared_focus = {
+	id = LYC_optimise_gas_production
+	icon = GFX_goal_lyc_chemicals
+	cost = 5
+	available = {
+		
+	}
+	prerequisite = { focus = LYC_magical_weapons }
+	prerequisite = { focus = LYC_heavy_tanks }
+	prerequisite = { focus = LYC_new_ordens }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_quiet_peace
+	x = 5
+	y = 8
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_optimise_gas_production"
+		add_ideas = LYC_optimised_gas_idea
+	}
+}
+
+shared_focus = {
+	id = LYC_uber_hive
+	icon = GFX_goal_lyc_lyctida
+	cost = 5
+	available = {
+		
+	}
+	prerequisite = { focus = LYC_upgrade_life }
+	prerequisite = { focus = LYC_professional_army }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = LYC_quiet_peace
+	x = 0
+	y = 9
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_uber_hive"
+		set_victory_points = {
+			province = 195
+			value = 35
+		}
+		add_political_power = 250
+		309 = {
+			add_extra_state_shared_building_slots = 5
+			add_manpower = 350000
+		}	
+	}
+}
+
+shared_focus = {
+	id = LYC_navy_from_DTS
+	icon = GFX_goal_chn_hive_dockyards
+	cost = 5
+	available = {
+		NOT = {
+			has_war_with = DTS
+		}
+		OR = {
+			DTS = {
+				exists = yes
+			}
+			owns_state = 252
+		}
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	x = 0
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_navy_from_DTS"
+		302 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 2
+			}
+		}
+		add_political_power = -50
+		DTS = {
+			add_political_power = 50
+		}
+	}
+}
+
+shared_focus = {
+	id = LYC_convoy_armada
+	icon = GFX_goal_chn_man_shipping
+	cost = 5
+	available = {
+	
+	}
+	prerequisite = { focus = LYC_navy_from_DTS }
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = LYC_navy_from_DTS
+	x = -3
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_convoy_armada"
+		add_ideas = LYC_convoys_idea
+	}
+}
+
+shared_focus = {
+	id = LYC_hire_salesmans
+	icon = GFX_goal_chn_high_command_hat
+	cost = 5
+	available = {
+	
+	}
+	prerequisite = { focus = LYC_navy_from_DTS }
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = LYC_navy_from_DTS
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_hire_salesmans"
+		add_manpower = 2500
+		navy_experience = 5
+	}
+}
+
+shared_focus = {
+	id = LYC_ship_constructions
+	icon = GFX_goal_chn_battleships
+	cost = 5
+	available = {
+	
+	}
+	prerequisite = { focus = LYC_navy_from_DTS }
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = LYC_navy_from_DTS
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_ship_constructions"
+		add_timed_idea = {
+			idea = LYC_stolen_ship_blueprints_idea
+			days = 250
+		}
+	}
+}
+
+shared_focus = {
+	id = LYC_develop_dockyards
+	icon = GFX_goal_chn_hive_dockyards
+	cost = 5
+	available = {
+	
+	}
+	prerequisite = { focus = LYC_navy_from_DTS }
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = LYC_navy_from_DTS
+	x = 3
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_develop_dockyards"
+		302 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 2
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = LYC_navy_trainings
+	icon = GFX_goal_lyc_navy
+	cost = 5
+	available = {
+	
+	}
+	prerequisite = { focus = LYC_hire_salesmans }
+	prerequisite = { focus = LYC_ship_constructions }
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = LYC_navy_from_DTS
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_navy_trainings"
+		navy_experience = 25
+	}
+}
+
+
+shared_focus = {
+	id = LYC_forces_of_navy_invasion
+	icon = GFX_goal_chn_man_homecoming
+	cost = 5
+	available = {
+	
+	}
+	prerequisite = { focus = LYC_navy_trainings }
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = LYC_navy_from_DTS
+	x = -4
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_forces_of_navy_invasion"
+		add_tech_bonus = {
+			name = special_forces_bonus
+			bonus = 1.0
+			uses = 1
+			technology = marines
+			technology = marines2
+			technology = marines3
+		}
+	}
+}
+
+shared_focus = {
+	id = LYC_submarines
+	icon = GFX_goal_lyc_submarine
+	cost = 5
+	available = {
+	
+	}
+	prerequisite = { focus = LYC_navy_trainings }
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = LYC_navy_from_DTS
+	x = -2
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_submarines"
+		add_tech_bonus = {
+			name = DMT_subs
+			bonus = 1.0
+			uses = 1
+			category = ss_tech
+		}
+	}
+}
+
+shared_focus = {
+	id = LYC_esmins
+	icon = GFX_goal_lyc_small_ship
+	cost = 5
+	available = {
+	
+	}
+	prerequisite = { focus = LYC_navy_trainings }
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = LYC_navy_from_DTS
+	x = 0
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_esmins"
+		add_tech_bonus = {
+			name = DMT_destroyers
+			bonus = 1.0
+			uses = 1
+			category = dd_tech
+		}
+	}
+}
+
+shared_focus = {
+	id = LYC_cruisers
+	icon = GFX_goal_chn_destroyers
+	cost = 5
+	available = {
+	
+	}
+	prerequisite = { focus = LYC_navy_trainings }
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = LYC_navy_from_DTS
+	x = 2
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_cruisers"
+		add_tech_bonus = {
+			name = DMT_crusers
+			bonus = 1.0
+			uses = 1
+			category = cl_tech
+			category = ca_tech
+		}
+	}
+}
+
+shared_focus = {
+	id = LYC_navy_airbombers
+	icon = GFX_goal_chn_naval_bomber
+	cost = 5
+	available = {
+	
+	}
+	prerequisite = { focus = LYC_navy_trainings }
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = LYC_navy_from_DTS
+	x = 4
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_navy_airbombers"
+		
+	}
+}
+
+shared_focus = {
+	id = LYC_big_ships
+	icon = GFX_goal_chn_capital_ships
+	cost = 5
+	available = {
+	}
+	mutually_exclusive = { focus = LYC_careers }
+	prerequisite = { focus = LYC_submarines focus = LYC_cruisers focus = LYC_esmins }
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = LYC_navy_from_DTS
+	x = -1
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_big_ships"
+		add_tech_bonus = {
+			name = battleship_tech
+			bonus = 1.0
+			uses = 1
+			category = bb_tech
+			category = shbb_tech
+		}
+		add_ideas = LYC_big_ships_idea
+	}
+}
+
+shared_focus = {
+	id = LYC_careers
+	icon = GFX_goal_lyc_carreer
+	cost = 5
+	available = {
+	}
+	mutually_exclusive = { focus = LYC_big_ships }
+	prerequisite = { focus = LYC_submarines focus = LYC_cruisers focus = LYC_esmins }
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = LYC_navy_from_DTS
+	x = 1
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus LYC_careers"
+		add_tech_bonus = {
+			name = cv_bonus
+			bonus = 1.0
+			uses = 1
+			category = cv_tech
+		}
+		add_ideas = LYC_naval_air_fleet
+	}
+}

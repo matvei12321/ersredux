@@ -1,0 +1,25 @@
+
+state={
+	id=18
+	name="STATE_18"
+	resources={
+		steel=3
+		tungsten=10
+		chromium=3
+	}
+
+	history={
+		owner = PGS
+		add_core_of = PGS
+
+	}
+
+	provinces={
+		1870 3719 4772 10709 12566 12685
+	}
+	manpower=34900
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+	impassable=yes
+}

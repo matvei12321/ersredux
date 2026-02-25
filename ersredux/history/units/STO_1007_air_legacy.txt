@@ -1,0 +1,56 @@
+﻿air_wings = {
+	749 = {
+		medium_airship_equipment_0 = {
+			owner = "STO"
+			amount = 100
+		}
+		medium_airship_equipment_0 = {
+			owner = "STO"
+			amount = 100
+		}
+		medium_airship_equipment_0 = {
+			owner = "STO"
+			amount = 100
+		}
+		heavy_airship_equipment_0 = {
+			owner = "STO"
+			amount = 100
+		}
+		heavy_airship_equipment_0 = {
+			owner = "STO"
+			amount = 74
+		}
+		
+	884 = {
+		medium_airship_equipment_0 = {
+			owner = "STO"
+			amount = 100
+		}
+		heavy_airship_equipment_0 = {
+			owner = "STO"
+			amount = 80
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = medium_airship_equipment_0
+			creator = "STO"
+		}
+		requested_factories = 10
+		progress = 0.1
+		efficiency = 50
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = heavy_airship_equipment_0
+			creator = "STO"
+		}
+		requested_factories = 5
+		progress = 0.1
+		efficiency = 50
+	}
+}

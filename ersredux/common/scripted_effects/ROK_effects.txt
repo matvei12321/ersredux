@@ -1,0 +1,108 @@
+rok_plus_one_confederation_member = {
+	
+	if = {
+		limit = {
+			has_cosmetic_tag = ROK_confederation_1
+		}
+		set_cosmetic_tag = ROK_confederation_2
+	}
+	else_if = {
+		limit = {
+			has_cosmetic_tag = ROK_confederation_2
+		}
+		set_cosmetic_tag = ROK_confederation_3
+	}
+	else_if = {
+		limit = {
+			has_cosmetic_tag = ROK_confederation_3
+		}
+		set_cosmetic_tag = ROK_confederation_4
+	}
+	else_if = {
+		limit = {
+			has_cosmetic_tag = ROK_confederation_4
+		}
+		set_cosmetic_tag = ROK_confederation_5
+	}
+	else_if = {
+		limit = {
+			has_cosmetic_tag = ROK_confederation_5
+		}
+		set_cosmetic_tag = ROK_confederation_6
+	}
+	else_if = {
+		limit = {
+			has_cosmetic_tag = ROK_confederation_6
+		}
+		set_cosmetic_tag = ROK_confederation_7
+	}
+	else_if = {
+		limit = {
+			has_cosmetic_tag = ROK_confederation_7
+		}
+		set_cosmetic_tag = ROK_confederation_8
+	}
+
+}
+
+
+
+turn_to_ROK_confederacy_memeber = {
+	ROK = {
+		if = {
+			limit = {
+				has_dlc = "Together for Victory"
+			}
+			set_autonomy = {
+				target = ROOT
+				autonomy_state = autonomy_puppet
+			}
+			else = {
+				puppet = ROOT
+			}
+		}
+	}
+	
+	if = {
+		limit = {
+			tag = APL
+		}
+		set_cosmetic_tag = APL_ROK
+	}
+	if = {
+		limit = {
+			tag = MIN
+		}
+		set_cosmetic_tag = MIN_ROK
+	}
+	if = {
+		limit = {
+			tag = NGC
+		}
+		set_cosmetic_tag = NGC_ROK
+	}
+	if = {
+		limit = {
+			tag = GUA
+		}
+		set_cosmetic_tag = GUA_ROK
+	}
+	if = {
+		limit = {
+			tag = CLT
+		}
+		set_cosmetic_tag = CLT_ROK
+	}
+	if = {
+		limit = {
+			tag = HOR
+		}
+		set_cosmetic_tag = HOR_ROK
+	}
+	if = {
+		limit = {
+			tag = HOR
+		}
+		set_cosmetic_tag = BUF_ROK
+	}
+}

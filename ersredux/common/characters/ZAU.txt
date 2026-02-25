@@ -1,0 +1,49 @@
+characters={
+	ZAU_Haagenti={
+		name=ZAU_Haagenti
+		portraits={
+			civilian={
+				large="gfx/leaders/ZAU/ZAU_Haagenti.tga"
+			}
+		}
+		country_leader={
+			ideology=magocracy
+			traits={ ZAU_alhocolic }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		corps_commander={
+			traits={ unicorns_race_trait media_personality alhocolic }
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	ZAU_Stella_Imperium={
+		name=ZAU_Stella_Imperium
+		portraits={
+			civilian={
+				large="gfx/leaders/ZAU/ZAU_Stella.tga"
+			}
+		}
+		country_leader={
+			ideology=magocracy
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		corps_commander={
+			traits={ unicorns_race_trait media_personality }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=-1
+		}
+		gender = female
+	}
+}

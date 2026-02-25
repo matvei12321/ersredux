@@ -1,0 +1,203 @@
+PGS_civil_war_start_effect = {
+			
+			PGS = {
+				add_political_power = -300
+				complete_national_focus = PGS_civil_war_focus_started
+				load_focus_tree = pegasi_civil_war_2_focus_tree
+				remove_ideas = PGS_workers
+				add_ideas = PGS_civil_war_idea
+				add_popularity = {
+					ideology = communism
+					popularity = -0.1
+				}
+			}
+			
+			news_event = { id = ers_news.4 days = 1 }
+			set_global_flag = pegasi_civil_war_flag
+				
+			ANR = {
+				set_country_flag = anarchist_music_flag
+				transfer_state = 146
+				transfer_state = 324
+				transfer_state = 131
+				transfer_state = 169
+				transfer_state = 54
+				transfer_state = 133
+				transfer_state = 173
+				transfer_state = 172
+				transfer_state = 136
+				transfer_state = 175
+				transfer_state = 137
+				transfer_state = 318
+				transfer_state = 324
+				transfer_state = 343
+				transfer_state = 143
+				transfer_state = 174
+				transfer_state = 138
+				transfer_state = 1231
+				load_oob = "Anarchists_OOB"
+				add_ideas = PGS_civil_war_idea
+				add_ideas = PGS_tachankas_construction
+				add_ideas = PGS_stoitsism
+				add_ideas = better_science_base
+				declare_war_on = {
+					type = civil_war
+					target = PGS
+				}
+				set_technology = {
+					motorised_infantry = 1
+				}
+				add_equipment_to_stockpile = {
+					type = motorized_equipment_1
+					amount = 300
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 1000
+				}
+				add_equipment_to_stockpile = {
+					type = train_equipment_1
+					amount = 3
+				}
+				add_manpower = -280000
+				transfer_technology = yes
+			}
+			
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = PGS
+						is_in_array = {
+							state_original_cores = PGS
+						}
+					}
+				}
+				add_core_of = ANR
+			}
+}
+
+PGS_release_anarchist_state = {
+			
+			PGS = {
+				add_popularity = {
+					ideology = communism
+					popularity = -0.1
+				}
+			}
+
+			ANR = {
+				set_country_flag = anarchist_music_flag
+				transfer_state = 146
+				146 = { set_demilitarized_zone = no }
+				transfer_state = 324
+				324 = { set_demilitarized_zone = no }
+				transfer_state = 131
+				131 = { set_demilitarized_zone = no }
+				transfer_state = 169
+				169 = { set_demilitarized_zone = no }
+				transfer_state = 54
+				54= { set_demilitarized_zone = no }
+				transfer_state = 133
+				133 = { set_demilitarized_zone = no }
+				transfer_state = 173
+				273 = { set_demilitarized_zone = no }
+				transfer_state = 172
+				172 = { set_demilitarized_zone = no }
+				transfer_state = 136
+				136 = { set_demilitarized_zone = no }
+				transfer_state = 175
+				175 = { set_demilitarized_zone = no }
+				transfer_state = 137
+				137 = { set_demilitarized_zone = no }
+				transfer_state = 318
+				318G = { set_demilitarized_zone = no }
+				transfer_state = 324
+				324 = { set_demilitarized_zone = no }
+				transfer_state = 343
+				343 = { set_demilitarized_zone = no }
+				transfer_state = 143
+				143 = { set_demilitarized_zone = no }
+				transfer_state = 174
+				174 = { set_demilitarized_zone = no }
+				transfer_state = 138
+				138 = { set_demilitarized_zone = no }
+				transfer_state = 1231
+				1231 = { set_demilitarized_zone = no }
+				load_oob = "Anarchists_OOB"
+				add_ideas = PGS_civil_war_idea
+				add_ideas = PGS_tachankas_construction
+				add_ideas = PGS_stoitsism
+				add_ideas = better_science_base
+				set_technology = {
+					motorised_infantry = 1
+				}
+				add_equipment_to_stockpile = {
+					type = motorized_equipment_1
+					amount = 300
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 1000
+				}
+				add_equipment_to_stockpile = {
+					type = train_equipment_1
+					amount = 3
+				}
+				add_manpower = -280000
+				transfer_technology = yes
+			}
+			
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = PGS
+						is_in_array = {
+							state_original_cores = PGS
+						}
+					}
+				}
+				add_core_of = ANR
+			}
+}
+
+PGS_bop_descrease_hurricane_5 = {
+	add_power_balance_value = {
+		id = pgs_balance_of_power
+		value = -0.05
+	}
+}
+
+PGS_bop_increase_hurricane_5 = {
+	add_power_balance_value = {
+		id = pgs_balance_of_power
+		value = 0.05
+	}
+}
+
+PGS_bop_increase_hurricane_10 = {
+	add_power_balance_value = {
+		id = pgs_balance_of_power
+		value = 0.1
+	}
+}
+
+PGS_bop_increase_hurricane_10 = {
+	add_power_balance_value = {
+		id = pgs_balance_of_power
+		value = 0.1
+	}
+}
+
+PGS_bop_increase_hurricane_15 = {
+	add_power_balance_value = {
+		id = pgs_balance_of_power
+		value = 0.15
+	}
+}
+
+PGS_bop_increase_hurricane_20 = {
+	add_power_balance_value = {
+		id = pgs_balance_of_power
+		value = 0.20
+	}
+}

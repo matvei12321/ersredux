@@ -1,0 +1,30 @@
+UNC_puppet_influence = {
+	icon = GFX_skull_category
+	
+	allowed = {
+		original_tag = UNC
+		has_country_flag = unc_influence_puppets_flag
+	}
+	
+	priority = 10
+}
+
+UNC_war_with_STG = {
+	icon = GFX_skull_category
+	
+	allowed = {
+		original_tag = UNC
+		has_war_with = STG
+	}
+	
+	priority = 10
+}
+
+UNC_chess_games_decision = {
+	
+	allowed = {
+		original_tag = UNC
+	}
+	
+	priority = 10
+}

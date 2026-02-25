@@ -1,0 +1,81 @@
+capital = 47
+
+
+set_research_slots = 1
+starting_train_buffer = 2
+
+save_global_event_target_as = nuvo_griffonica_target
+
+oob = "NOZ_1007"
+add_ideas = { 
+changeling_race = 1
+	closed_economy
+	civilian_economy
+	poor_science_base
+	detached_country
+	lack_of_scientists
+	poverty
+	unknown_religion	
+	
+}
+recruit_character = NOZ_Ylbrix
+it_character = NOZ_Strasse
+
+set_technology = {
+  griffon_race = 1
+  melee_weapons = 1
+  melee_weapons1 = 1
+  pre_gw_artillery = 1
+  infantry_weapons = 1
+  infantry_weapons1 = 1
+  tech_recon = 1
+  trench_warfare = 1
+  interwar_antiair = 1
+  base_strike = 1
+}
+actually_fix_weapon_techs = yes #THIS HAS TO BE CALLED IN EVERY HISTORY FILE RIGHT AFTER MAIN set_technology!
+
+
+add_equipment_to_stockpile = {
+  type = melee_equipment_1
+  amount = 1600
+  producer = NOZ
+}
+
+set_convoys = 15
+set_popularities = {
+	democratic = 0
+	fascism = 50
+	communism = 0
+	neutrality = 50
+}
+set_politics = {
+  ruling_party = neutrality 
+  last_election = "1.10.10"
+  election_frequency = 36
+  elections_allowed = no
+}
+set_party_name = { 
+    ideology = neutrality 
+    long_name = NOZ_food_batch
+    name = NOZ_food_batch
+  }
+  set_party_name = { 
+    ideology = fascism
+    long_name = NOZ_Cult
+    name = NOZ_Cult
+  }
+  set_party_name = { 
+    ideology = communism
+    long_name = NGC_hive_KyltS_party_long
+    name = NGC_hive_KyltS_party_long
+  }
+  set_party_name = { 
+    ideology = democratic
+    long_name = NGC_hive_KyltS_party_long
+    name = NGC_hive_KyltS_party_long
+  }
+
+
+set_stability = 0.3
+set_war_support = 0.05

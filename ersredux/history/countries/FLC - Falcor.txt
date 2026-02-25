@@ -1,0 +1,65 @@
+capital = 530
+
+set_research_slots = 1
+starting_train_buffer = 2
+
+oob = "FLC_1007"
+
+save_global_event_target_as = falcor_target
+
+add_ideas = {
+	pre_industrial_society
+	big_science_base
+	poverty4
+	lack_of_scientists2
+	boreism
+	griffon_race
+	FLС_resistance
+}
+
+recruit_character = FLC_gabriele_dartiglio
+
+set_technology = {
+	griffon_race = 1
+	tech_knights = 1
+	melee_weapons = 1
+	melee_weapons1 = 1
+	pre_gw_artillery = 1
+	tech_griffon_army = 1
+	infantry_weapons = 1
+	tech_recon = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	tech_support = 1
+	tech_mountaineers = 1
+	basic_train = 1
+	tech_trucks = 1
+}
+
+actually_fix_weapon_techs = yes #THIS HAS TO BE CALLED IN EVERY HISTORY FILE RIGHT AFTER MAIN set_technology!
+
+add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 4000
+	producer = FLC
+}
+
+set_convoys = 0
+set_popularities = {
+	democratic = 10
+	fascism = 85
+	neutrality = 5
+}
+set_politics = {
+	ruling_party = fascism
+	last_election = "1.10.10"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+set_cosmetic_tag = FLC_resistanse
+
+add_manpower = 95836
+
+set_stability = 0.1
+set_war_support = 0.96

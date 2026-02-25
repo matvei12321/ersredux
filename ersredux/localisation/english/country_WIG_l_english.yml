@@ -1,0 +1,541 @@
+﻿l_english:
+
+    WIG:0"Wingbardy"
+    WIG_DEF:0 "Wingbardy Republic"
+    WIG_ADJ:0 "Wingbardysk."
+    WIG_despotism_DEF:0 "Wingbardy Kingdom"
+    WIG_despotism:0 "Wingbardy Kingdom"
+    WIG_rozenkampism:0 "Carfinian Republic"
+    WIG_garibald_talonuel:0 "Garibald Talonuel III"
+    WIG_talonieli_mio_name:0 "Taloneli Industries Concern"
+    WIG_tal_avto_zavod_mio_name:0 "Talontsky Automobile Plant"
+    WIG_regio_aeronautica_mio_name:0 "Regia Aeronautica"
+    WIG_regia_marina_mio_name:0 "Regia Marina"
+    
+    #national spirits
+    WIG_economic_crisis:0 "§RMost severe economic crisis§!"
+    WIG_economic_crisis_desc:0 "Years of stagnation have ultimately led Wingbardy to the worst §REconomic crisis§ in its history!."
+    WIG_economic_crisis_1:0 "§RMost severe economic crisis§!"
+    WIG_economic_crisis_1_desc:0 "Years of stagnation have ultimately led Wingbardy to the §REconomic crisis§!."
+    WIG_economic_crisis_2:0 "§tEconomic crisis§!"
+    WIG_economic_crisis_2_desc:0 "Years of stagnation have ultimately led Wingbardy to the §REconomic crisis§!."
+    WIG_economic_crisis_3:0 "§OMild Economic Crisis§!"
+    WIG_economic_crisis_3_desc:0 "Wingbardy is getting closer to emerging from the §REconomic crisis§!."
+    WIG_economic_crisis_4:0 "§YEcho of the Economic Crisis§!"
+    WIG_economic_crisis_4_desc:0 "The §REconomic crisis§! may have died down, but its echo still lives on."
+    
+    WIG_talonieli_subsidise:0 "Taloneli Subsidy"
+
+    WIG_alco_idea:0 "State monopoly"
+    
+    WIG_small_business_idea:0 "Small business support"
+    
+    WIG_falcor_resistance:0 "Young Falcor"
+    WIG_falcor_resistance_desc:0 "Young Falcor is a separatist organization fighting for the separation of Falcor from Wingbardia, not shying away from using terrorist methods"
+    
+    WIG_talkara_academy_idea:0 "Talkara Military Academy"
+    WIG_talkara_academy_idea_desc:0 ""
+    
+    WIG_trash_army_idea:0 "An ineffective army"
+    WIG_trash_army_idea_desc:0 "The Wingbardia army is only capable of suppressing peasant riots, because in 150 years as part of the IF it was not really reformed, arguing that the local garrison of Herzland would solve the problem if necessary. Well, well."
+
+    WIG_trash_army_idea_1:0 "An ineffective army"
+    WIG_trash_army_idea_1_desc:0 "The army of Wingbardia is capable of suppressing peasant riots, because in 150 years as part of the IF it was not really reformed, arguing that the local garrison of Herzland would solve the problem if necessary. Well, well."
+
+    WIG_trash_army_idea_2:0 "An ineffective army"
+    WIG_trash_army_idea_2_desc:0 "The army of Wingbardia is capable of suppressing peasant revolts, because in 150 years as part of the IF it has not been properly reformed, arguing that the local garrison of Herzland will solve the problem if necessary. Oh well."
+
+    WIG_trash_army_idea_3:0 "An ineffective army"
+    WIG_trash_army_idea_3_desc:0 "The army of Wingbardia is capable of suppressing peasant revolts, because in 150 years as part of the IF it has not been properly reformed, arguing that the local garrison of Herzland will solve the problem if necessary. Oh well."
+
+    WIG_modern_army_idea:0 "Modern Army"
+    WIG_modern_army_idea_desc:0 "After a series of reforms, the army of Wingbardia has transformed from backward to modern."
+        
+    WIG_unification_guns_idea:0 "Unification of rifles"
+    WIG_speed_ggf_idea:0 "We need to. More. FASTER."
+    
+    WIG_political_deadlock:0 "Political crisis"
+    # WIG_political_deadlock_desc:0 "Following the economy, the political system has also gone down. Numerous government resignations have practically killed it, and there is no way around reform." # needs to be rewritten
+    
+    WIG_field_hospitals_idea:0 "Field hospitals"
+    WIG_field_hospitals_idea_des:0 "The introduction of field hospitals has reduced casualties among the staff."
+    
+    WIG_emergency_state_idea_0:0 "State of Emergency"
+    WIG_emergency_state_idea_1:0 "State of Emergency"
+    
+    WIG_B_invests_from:0 "Investments from Wingbardy"
+    
+    #characters
+    WIG_alexander_kemerskai_char:0 "Marshal Kemerskai"
+    WIG_alexander_kemerskai_char_desc:0 "Alexander Kemerskai II, a Herzlander by origin and culture, was born in 964 in his family's estate near Vinnin. Being the youngest son, he did not count on an inheritance, and therefore, like any other young nobleman in his position, he rushed from one occupation to another. Fate led him to the artillery troops, in which he quickly made a career. In 1005, he was appointed to the post of military governor of Wingbardia, which he occupies to this day."
+    
+    WIG_parliament_char:0 "Parliament"
+    WIG_parliament_char_desc:0 "Parliament of Wingbardia"
+    
+    WIG_bikolini_char:0 "Giulio Bikolini"
+    WIG_bikolini_char:0 "Born in 954, the son of a town baker. From a young age, he became interested in politics, which led to him becoming the editor of a conservative political newspaper."
+    
+    #custom tooltips and flags, cosmetic tags
+    WIG_economic_crisis_bureau_tt:0 "Every §C3§! focus of the economic branch, the effect of the national spirit §REconomic crisis§! will decrease."
+    WIG_talonieli_mio_focus_tt:0 "As soon as the national spirit expires, we will have access to the §H"Taloneli Industries Concern"§!."
+    WIG_taz_mio_focus_tt:0 "Upon completion of the focus, we will have access to the §H"Talontsky Auto Plant"§!, but you will lose access to it if Talont is not under your control."
+    WIG_regia_aeronautica_mio_tt:0 "Upon completion of the focus, we will have access to the §H"Regio Aeronautica"§!."
+    WIG_arsenal_variable_moment_tt:0 "§H1000§! to §H2300§! Wingbardian. §HInfantry equipment§! will be added to the national reserve."
+    WIG_WIP_tt:0 "§RIN DEVELOPMENT§!"
+    WIG_king_speaks_tt:0 "§HTry not to skip days between focuses.§!"
+    WIG_kemerskai_bop_coup_tt:0 "§RKemerskai will attempt a coup.§!"
+    WIG_chaos_new_tree:0 "Loads a new focus tree."
+    WIG_chaos_orders_tt:0 "§Hthree§! knight divisions will spawn."
+    WIG_chaos_arm_tt:0 "§Htwo§! tank divisions will spawn."
+    WIG_chaos_karabineri_tt:0 "§Hthree§! mercenary divisions will appear"
+    WIG_chaos_conscription_tt:0 "§Hfive§! poorly trained infantry divisions will appear."
+    WIG_chaos_militia_tt:0 "§Hsix§! militia divisions will appear."
+    WIG_the_end_tt:0 "Thank you for playing! Check out the decisions after this event."
+    WIG_abyssinia_readiness_tt:0 "We are §H[?Root.WIG_abyssinia_readiness]§! percent ready to invade"
+    WIG_FRC_accepts:0 "Francistriae has agreed"
+    WIG_TUL_accepts:0 "Talusa has agreed"
+    
+    WIG_eco_flag_1:0 "Focus §HInvestments in Heavy Industry§! Completed"
+    WIG_eco_flag_2:0 "Focus §HTalAvtoZavod§! Completed"
+    WIG_eco_flag_3:0 "Focus §HVillage Electrification§! Completed"
+    WIG_regia_flag:0 "Focus Regio §HAeronautics§! Completed"
+    
+    # WIG_economic_bureau_flag_1:0 "First part of the economic plan completed"
+    # WIG_economic_bureau_flag_2:0 "Second part of the economic plan completed"
+    
+    WIG_falcor_resistance_active_modifier:0 "§rYoung Falcor§!"
+    WIG_falcor_resistance_active_modifier_desc:0 "§wTerrorist activity has been detected here§! §rYoung Falcor§!."
+    WIG_falcor_resistance_sleeping_modifier:0 "§rYoung Falcor§!"
+    WIG_falcor_resistance_sleeping_modifier_desc:0 "It appears the terrorists in this region have decided to lay low. §RFor now.§!"
+    WIG_karthin_button_tt:0 "Open the Karthin Empire map"
+    WIG_decisions_tt:0 "Check out the decisions."
+    WIG_beakolini_expansion_start_tt:0 "§HThis focus will be available after completing all three Beakolini focus lines.§!"
+    WIG_B_KT_army_trains_tt:0 "Countries that agree to join the Treaty of Carthage will receive §H40§! army experience."
+    
+    WIG_murrsia_DRG_tt:0 "§HREGION:§! Murcia\n\§HSTATUS:§! Under the control of the §8dragons§!"
+    WIG_murrsia_WIG_tt:0 "§HREGION:§! Murcia\n\§HSTATUS:§! Under §rs§! control"
+    WIG_catland_DRG_tt:0 "§HREGION:§! Northern Abyssinia\n\§HSTATUS:§! Under the control of the §8dragons§!"
+    WIG_catland_WIG_tt:0 "§HREGION:§! Northern Abyssinia\n\§HSTATUS:§! Under §rour§! control"
+    
+    WIGZEBABY_neutrality:0 "Wingbardian Abyssinia"
+    WIGZEBABY_neutrality_ADJ:0 "Abyssinian."
+    WIGZEBABY_neutrality_DEF:0 "Wingbardian Northwest Zebrica"
+    
+    WIG_beakolini_faction:0 "Carfinian Treaty"
+     
+    # parties
+
+    WIG_fascism_party:0 "NFVK"
+    WIG_fascism_party_long:0 "National Front for the Restoration of Carthia"
+    WIG_neutrality_party:0 "Cabinet of Ministers"
+    WIG_neutrality_party_long:0 "Cabinet of Ministers"
+    WIG_communism_party:0 "VSDRP"
+    WIG_communism_party_long:0 "Wingbard Social Democratic Labor Party"
+    WIG_democratic_party:0 "Small Parties"
+    WIG_konst_party:0 "CPV"
+    WIG_konst_party_long:0 "Wingbard Constitutionalist Party"
+    
+    #focus
+    WIG_economic_bureau_shared:0 "Wingbard Economic Development Bureau"
+    WIG_economic_bureau_shared_desc:0 ""
+    
+    wing_shit_happens:0 "Falcor War"
+    
+    WIG_train_griffano_falcor:0 "Griffano-Falcor Line"
+    WIG_train_griffano_falcor_desc:0 ""
+    
+    WIG_oulivetti_electronics:0 "Oulivetti Electronics"
+    WIG_oulivetti_electronics_desc:0 ""
+    
+    WIG_heavy_invest:0 "Investments in heavy industry"
+    WIG_heavy_invest_desc:0 ""
+    
+    WIG_squarona_ges:0 "Restoration of the Squarona Hydroelectric Power Station"
+    WIG_squarona_ges_desc:0 "The Squarona Hydroelectric Power Station has been in in a deplorable state, the locals suffer from a lack of electricity, which is why they use improvised sources."
+    
+    WIG_fezara_chromium:0 "Fezara Chrome"
+    WIG_fezara_chromium_desc:0 ""
+    
+    WIG_tal_avto_zavod:0 "TalAvtoZavod"
+    WIG_tal_avto_zavod_desc:0 "Talontsky Avto Zavod"
+    
+    WIG_train_fakochero_bloodtalon:0 "Fakochero-Bloodtalon Route"
+    WIG_train_fakochero_bloodtalon_desc:0 ""
+    
+    WIG_subsidise_talonieli:0 "Subsidies for Talonieli"
+    WIG_subsidise_talonieli_desc:0 ""
+    
+    WIG_small_business:0 "Small Business Support"
+    WIG_small_business_desc:0 ""
+    
+    WIG_mech_selkhoz:0 "Village Electrification"
+    WIG_mech_selkhoz_desc:0 ""
+    
+    WIG_economic_miracle:0 "Miracle on Folio"
+    WIG_economic_miracle_desc:0 ""
+    
+    W    IG_mech_mines:0 "Mine Mechanization"
+    WIG_mech_mines_desc:0 ""
+    
+    WIG_stal_soarento:0 "Soarento Steel"
+    WIG_stal_soarento_desc:0 ""
+    
+    WIG_black_gold:0 "Sweet Oil Gold"
+    WIG_black_gold_desc:0 ""
+    
+    WIG_regia_aeronautic_shared:0 "Regio Aeronautica"
+    WIG_regia_aeronautic_shared_desc:0 ""
+    
+    WIG_alco_monopoly:0 "State monopoly on alcohol"
+    WIG_alco_monopoly_desc:0 "State monopoly on alcohol is a great initiative to replenish the budget. Coupled with the minimum price for it, it will be even more effective."
+    
+    # WIG_southern_pearl:0 "Pearl of the South" # laziness
+    # WIG_southern_pearl_desc:0 ""
+    
+    WIG_regio_esercito_shared:0 "Regio Esercito"
+    WIG_regio_esercito_shared_desc:0 ""
+    
+    WIG_talkara_academy:0 "Talkar Military Academy"
+    WIG_talkara_academy_desc:0 "Sponsoring the Talkar Military Academy will improve the skills of our officers."
+
+    WIG_kemerskai_doctrine:0 "Kemerskaya Doctrine"
+    WIG_kemerskai_doctrine_desc:0 "Kemerskaya did not become a Marshal of Artillery for nothing at the age of forty-three. His words are worth listening to."
+
+    WIG_gun_konkurs:0 "The Grezzo Program"
+    WIG_gun_konkurs_desc:0 "The army needs a new, modern rifle."
+
+    WIG_vnii_tochmag:0 "VNII TochMag"
+    WIG_vnii_tochmag_desc:0 "The Wingbardian Research Institute of Precision Magicraft is one of the national treasures of Wingbardia and is currently in a deplorable state. This needs to be sorted out."
+
+    WIG_new_arty:0 "Update artillery"
+    WIG_new_arty_desc:0 "Artillery is the god of war, and if our god is lame, then he is useless."
+
+    WIG_modern_army:0 "Modern army"
+    WIG_modern_army_desc:0 ""
+
+    WIG_standart_militia:0 "Unification of rifles"
+    WIG_standart_militia_desc:0 "It's time to send the old rifles to the warehouses, or at least improve them."
+
+    WIG_national_arsenal:0 "Carfin Arsenal"
+    WIG_national_arsenal_desc:0 ""
+
+    WIG_gotta_go_fast:0 "Fast and Faster"
+    WIG_gotta_go_fast_desc:0 "Speed ​​is of the essence on the battlefield these days."
+
+    WIG_regia_marina_shared:0 "Regia Marina"
+    WIG_regia_marina_shared_desc:0 "Yes, I don't use a navy, how did you know?"
+
+    WIG_king_speaks_shared:0 "The King's Speech"
+    WIG_king_speaks_shared_desc:0 "Today, King Garibald Talonuel of Wingbardia will give a radio address on the future of the country."
+
+    WIG_call_parliament:0 "Re-elections to Parliament"
+    WIG_call_parliament_desc:0 "The King announced re-elections to Parliament in his recent speech."
+
+    WIG_commies_path:0 "VSDRP"
+
+    WIG_commies_path_desc:0 "The VSDRP won the elections."
+
+    WIG_trudovoi_kodeks:0 "Трудовой кодекс"
+    WIG_trudovoi_kodeks_desc:0 "В Вингбардии до сих пор нет четкого трудового законодательства, однако у многих стран Грифонии оно уже давно есть. Чем мы хуже?"
+    
+    WIG_grifsomol:0 "Молодёжные организации"
+    WIG_grifsomol_desc:0 "Создание молодёжных организаций поможет нам воспитать верных патриотов своей страны, своей великой родины - Вингбардии."
+    
+    WIG_increase_industrial:0 "Пятилетний план"
+    WIG_increase_industrial_desc:0 "С помощью пятилетнего плана развития экономики мы улучшим нестабильное экономическое положение Вингбардии."
+    
+    WIG_workers_samoupr:0 "Профсоюзы рабочих"
+    WIG_workers_samoupr_desc:0 ""После принятия закона о легитимизации профсоюзов рабочие будут уверены в том, что завтра их не уволят по надуманной причине, будут уверены в том, что свою плату они будут получать вовремя и соразмерно труду, будут уверены в том, что их права всегда соблюдены!" \n\- Джованни Гаччи, [GetYear]"
+    
+    WIG_nazi_path:0 "НФВК" # национал-популисты
+    WIG_nazi_path_desc:0 "На выборах победили НФВК."
+    
+    WIG_nationalise_heavy:0 "Национализация военпрома"
+    WIG_nationalise_heavy_desc:0 "Военная промышленность является важнейшей для национальной безопасности отраслью экономики, и нельзя допустить чтобы она попала ни в когти проклятых буржуев, стремящихся максимально съэкономить, ни в когти иностранных шпионов."
+    
+    WIG_free_food:0 "Раздача еды беднякам"
+    WIG_free_food_desc:0 "Раздача еды бедным слоям населения поможет им не помереть с голодухи, а нам повысит репутацию."
+    
+    WIG_empower_stazi:0 "Учреждение тайной полиции"
+    WIG_empower_stazi_desc:0 "Тайная полиция следит за каждым приезжим не-вингбардийцем, так, ни один антивингбардийский элемент не проникнет в наше общество."
+    
+    WIG_talont_massacre:0 "Roundup of the Insurgents"
+    WIG_talont_massacre_desc:0 "It's time to hold a couple of show raids on these creatures who call themselves "freedom fighters", but in reality are just terrorists destabilizing our society."
+
+    WIG_neutral_path:0 "CPV" # Constitutionalists
+    WIG_neutral_path_desc:0 "The CPV won the elections."
+
+    WIG_big_brain_time:0 "Citizenship for Scientists"
+    WIG_big_brain_time_desc:0 "Wingbardy is experiencing an acute shortage of young and promising minds, attracting them from poor countries by issuing citizenship can help solve this problem."
+
+    WIG_what_about_king:0 "New Constitution"
+    WIG_what_about_king_desc:0 "The current constitution is already outdated and requires either radical amendments or a complete rewrite."
+
+    WIG_falcor_is_good:0 "Autonomy for Falcor"
+    WIG_falcor_is_good_desc:0 "Falcor has been fighting against our authority for a long time. Perhaps a little autonomy will calm their ardor."
+
+    WIG_wing_spring:0 "Wingbard Spring"
+    WIG_wing_spring_desc:0 "Wingbardy under the CPV is turning from a wilderness and shadow of the former Carthaginian Empire into a modern country. Hooray!"
+
+    WIG_look_at_skies:0 "Skies Above"
+    WIG_look_at_skies_desc:0 "Skies Above"
+
+    WIG_wingpolis_aero:0 "Wingpolis Aero"
+    WIG_wingpolis_aero_desc:0 "Wingpolis Aero"
+
+    WIG_rocket_tech:0 "Jet Engines"
+    WIG_rocket_tech_desc:0 ""
+
+    W    IG_air_fighter:0 "Fighter Jets"
+    WIG_air_fighter_desc:0 ""
+
+    WIG_air_bombers:0 "Bomber Jets"
+    WIG_air_bombers_desc:0 ""
+
+    WIG_air_new_airbases:0 "New Airfields"
+    WIG_air_new_airbases_desc:0 ""
+
+    WIG_air_radar:0 "First Radars"
+    WIG_air_radar_desc:0 ""
+    
+    # WIG_hail_new_grover:0 "Long live the emperor!" # cut: I thought the sixth would die first, and then the seventh would be taken out
+    # WIG_hail_new_grover_desc:0 ""
+    
+    WIG_welcome_to_falcor:0 "Visit to Karfin"
+    WIG_welcome_to_falcor_desc:0 "The invitation has already been sent to the Emperor. All that remains is to wait for his arrival in our country. §RNothing bad will happen, right?§!"
+
+    WIG_chaos_shared:0 "Chaos in the Country"
+    WIG_chaos_shared_desc:0 "The country is paralyzed by Falcor's rebellion!"
+
+    WIG_chaos_emergency:0 "Martial Law"
+    WIG_chaos_emergency_desc:0 "Martial Law must be declared so that there is at least some order on the streets."
+
+    WIG_chaos_orders:0 "Summon the Orders"
+    WIG_chaos_orders_desc:0 "The Orders will help us in the war."
+
+    WIG_chaos_censorship:0 "Media Censorship"
+    WIG_chaos_censorship_desc:0 ""
+
+    WIG_chaos_arm:0 "Reopening Warehouses"
+    WIG_chaos_arm_desc:0 "There's a lot of gear in the warehouses. Looks like it's time to use it."
+
+    WIG_chaos_roll_out:0 "To the vehicles!"
+    WIG_chaos_roll_out_desc:0 ""
+
+    WIG_chaos_onwards:0 "Time to get to work"
+    WIG_chaos_onwards_desc:0 "Time to get to work."
+
+    WIG_chaos_conscription:0 "Emergency Call-up"
+    WIG_chaos_conscription_desc:0 "There are never enough divisions."
+
+    WIG_chaos_karabineri:0 "Francisco Carabinieri"
+    WIG_chaos_karabineri_desc:0 "Carabinieri are mercenaries who have fought all over the world, only a fool would doubt their experience."
+
+    WIG_chaos_diy_guns:0 "Homemade Workshops"
+    WIG_chaos_diy_guns_desc:0 "Homemade Workshops will help us make up for the shortage of guns."
+
+    WIG_chaos_work_for_hobos:0 "Work for the Homeless"
+    WIG_chaos_work_for_hobos_desc:0 ""
+    
+    WIG_chaos_war_loans:0 "War Loans"
+    WIG_chaos_war_loans_desc:0 "We need money for war, after all."
+
+    WIG_chaos_tanks:0 "Wonder Weapons"
+    WIG_chaos_tanks_desc:0 "The so-called "tanks" appeared during the Northern Civil War and proved their effectiveness. Why don't we use converted tractors against the rebels?"
+
+    W    IG_chaos_field_help:0 "Field Hospitals"
+    WIG_chaos_field_help_desc:0 ""
+
+    WIG_chaos_buy_guns:0 "Buy Weapons"
+    WIG_chaos_buy_guns_desc:0 "There is an obvious shortage of weapons in the warehouses. It would be a good idea to buy a batch of rifles from Manehattan."
+
+    WIG_chaos_militia:0 "Militia"
+    WIG_chaos_militia_desc:0 "The front needs soldiers, and nothing prevents us from raising militias."
+
+    WIG_chaos_kill_em_all:0 "Rope and Soap"
+    WIG_chaos_kill_em_all_desc:0 ""
+
+    WIG_fleet_1:0 "New Admiralty"
+    WIG_fleet_1_desc:0 ""
+
+    WIG_fleet_2:0 "Submarine Experiments"
+    WIG_fleet_2_desc:0 ""
+    
+    WIG_fleet_3:0 "Improved Plating"
+    WIG_fleet_3_desc:0 ""
+
+    WIG_fleet_4:0 "Large Calibers"
+    WIG_fleet_4_desc:0 ""
+
+    W    IG_fleet_5:0 "Talkar Shipyards"
+    WIG_fleet_5_desc:0 ""
+
+    WIG_fleet_6:0 "Sicameon Tactics"
+    WIG_fleet_6_desc:0 ""    
+    WIG_fleet_7:0 "Marines"
+    WIG_fleet_7_desc:0 "Natalia, Marines!"
+
+    WIG_fleet_8:0 ""
+    WIG_fleet_8_desc:0 ""
+
+    WIG_fleet_9:0 "Fleet Flagship"
+    WIG_fleet_9_desc:0 ""
+
+    WIG_beakolini_start:0 "Beakolini Coup"
+
+    WIG_beakolini_cats_1:0 "Southern Adventure"
+    WIG_beakolini_cats_1_desc:0 "
+
+    WIG_beakolini_cats_2:0 "Autonomy"
+    WIG_beakolini_cats_2_desc:0 "
+
+    WIG_beakolini_cats_3:0 "Ras Murcia"
+    WIG_beakolini_cats_3_desc:0 "
+
+    WIG_beakolini_cats_4:0 "Local Garrison"
+    WIG_beakolini_cats_4_desc:0 "
+
+    WIG_beakolini_cats_5:0 "Southern Triumph"
+    W    IG_beakolini_cats_5_desc:0 "
+
+    WIG_beakolini_cats_6:0 "Colony"
+    WIG_beakolini_cats_6_desc:0 "    
+    WIG_beakolini_cats_7:0 "Governor General"
+    WIG_beakolini_cats_7_desc:0 "
+
+    WIG_beakolini_cats_8:0 "Meowtekel-Meowak Road"
+    WIG_beakolini_cats_8_desc:0 "
+
+    WIG_beakolini_cats_9:0 "Tungsten Vein"
+    WIG_beakolini_cats_9_desc:0 "
+
+    WIG_beakolini_cats_10:0 "Assimilation of Cats"
+    WIG_beakolini_cats_10_desc:0 "
+
+    WIG_beakolini_internal_1:0 "Internal Problems"
+    WIG_beakolini_internal_1_desc:0 ""
+
+    WIG_beakolini_internal_2:0 "Restore the Golden reserve"
+    WIG_beakolini_internal_2_desc:0 ""
+
+    WIG_beakolini_internal_3:0 "Secular education"
+    WIG_beakolini_internal_3_desc:0 ""
+
+    WIG_beakolini_internal_4:0 "Radio in every home"
+    WIG_beakolini_internal_4_desc:0 ""
+
+    WIG_beakolini_internal_5:0 "Make slackers work" # factories
+    WIG_beakolini_internal_5_desc:0 ""
+
+    WIG_beakolini_internal_6:0 "Anti-parasite company" # factories + young ind. society
+    WIG_beakolini_internal_6_desc:0 ""
+
+    WIG_beakolini_internal_7:0 "Open new universities" # research slot
+    WIG_beakolini_internal_7_desc:0 ""    
+
+    WIG_beakolini_internal_8:0 "Elimination of illiteracy" # literacy +1
+    WIG_beakolini_internal_8_desc:0 ""
+
+    WIG_beakolini_internal_9:0 "Amendments to the constitution"
+    WIG_beakolini_internal_9_desc:0 ""
+
+    WIG_beakolini_internal_10:0 "Trains on schedule"
+    WIG_beakolini_internal_10_desc:0 ""
+
+    W    IG_beakolini_internal_11:0 "The country is in order"
+    WIG_beakolini_internal_11_desc:0 ""
+
+    WIG_beakolini_external_1:0 "The Treaty of Carthaginian"
+    WIG_beakolini_external_1_desc:0 ""
+
+    WIG_beakolini_external_2:0 "Taluza"
+    WIG_beakolini_external_2_desc:0 ""
+
+    WIG_beakolini_external_3:0 "Francistrija"
+    WIG_beakolini_external_3_desc:0 ""
+
+    WIG_beakolini_external_4:0 "Investment in Taluza"
+    WIG_beakolini_external_4_desc:0 ""
+
+    WIG_beakolini_external_5:0 "Military Pact with Taluza"
+    WIG_beakolini_external_5_desc:0 ""
+
+    WIG_beakolini_external_6:0 "Joint Exercises"
+    WIG_beakolini_external_6_desc:0 ""
+
+    # WIG_beakolini_external_7:0 ""
+    # WIG_beakolini_external_7_desc:0 ""
+
+    WIG_beakolini_external_8:0 "Investment in France"
+    WIG_beakolini_external_8_desc:0 ""
+
+    WIG_beakolini_external_9:0 "Military Pact with France"
+    WIG_beakolini_external_9_desc:0 ""
+
+    WIG_beakolini_external_10:0 "Southern Economic Union"
+    WIG_beakolini_external_10_desc:0 ""
+
+    WIG_beakolini_expansion_start:0 "Resurgence of the Empire"
+    WIG_beakolini_expansion_start_desc:0 ""
+
+    #events
+
+wig_kostyl_name_1:0 "CRUTCH, IGNORE"
+
+wig_politcs.1.t:0 "Elections to Parliament" # elections, elections, candidates...
+wig_politcs.1.d:0 "By decree of King Garibald III, elections were scheduled for February 19, 1007. And now, the ballots have been counted, the winners..."
+
+wig_politcs.1.a:0 "...VSDRP!"
+wig_politcs.1.b:0 "...NFVK!"
+wig_politcs.1.c:0 "...CPV!"
+
+wig_politcs.2.t:0 "Candidates for Victory"
+wig_politcs.2.d:0 "VSDRP - Vingbardian Social Democratic Labor Party defends workers' rights and social equality. The party arose under the influence of Aquileian republicanism and the ideas of Caramel Marx.\n\nNFVC - National Front for the Restoration of Carthia supports the ideals of protectionist economic doctrine and Carthinian nationalism - the idea of ​​​​reviving the greatness of the Carthinian Empire.\n\nCPV - Constitutionalist Party of Vingbardia for the creation of a constitutional monarchy in Vingbardia and supporters of the market economy."
+
+wig_politcs.2.a:0 "Hmm, interesting"
+
+wig_politcs.3.t:0 "Report"
+wig_politcs.3.d:0 "[GetDateText]\n\nURGENT\n\nTO THE CHIEF OF POLICE OF THE CITY OF FALCOR\n\nDuring a trip to Falcor, an attempt was made on the life of Archduke Grover the Seventh by an unknown person. An investigation is already underway. According to preliminary data, the terrorist was a member of the "Young Falcor" group. A curfew has been imposed in the city."
+
+wig_politcs.3.a:0 "That's all I needed..."
+
+wig_politcs.4.t:0 "In Falcor"
+wig_politcs.4.d:0 ""Here you go, Bart," said the griffin, handing his friend an old rifle.\n\n Bart took it and said, "Theo, are we going soon?"\n\n"We'll go as soon as the radio gives the signal." Theo replied.\n\nA few minutes later, the radio broadcast, "Rise up, Falcorians! It's time to gain freedom from these damned Wingbardian invaders! GLORY TO FALCOR!"\n\n"Did you hear that? Let's go. It's time to get to work." Theo said, after which he and Bart stood up and walked out of the house with their weapons."
+
+wig_politcs.4.a:0 ""The time has come for our freedom.""
+
+wig_politcs.5.t:0 "Coup"
+wig_politcs.5.d:0 "Morning in Carthina."
+wig_politcs.5.a:0 ""
+
+wig_politcs.7.t:0 "An Offer from Wingbardy"
+wig_politcs.7.d:0 "You should not be here."
+wig_politcs.7.a:0 "yes"
+wig_politcs.7.c:0 "no"
+
+wig_politcs.8.t:0 "An Offer from Wingbardy"
+wig_politcs.8.d:0 "You should not be here."
+wig_politcs.8.a:0 "yes"
+wig_politcs.8.c:0 "no"
+    
+    # decisions
+    WIG_kemerskai_power:0 "Kemerskaya Clique"
+    WIG_kemerskai_power_1:0 "Balance in favor of Kemerskaya"
+    WIG_kemerskai_power_2:0 "Advantage of Kemerskaya"
+    WIG_kemerskai_power_2:0 "Superiority of Kemerskaya"
+    
+    WIG_beakolini_power:0 "Supporters of Beakolini"
+    WIG_beakolini_power_1:0 "Advantage of Beakolini"
+    WIG_beakolini_power_2:0 "Superiority of Beakolini"
+    
+    WIG_bop_beakolini_dicktator_balance_of_power:0 "Situation in the General Staff"
+    
+    WIG_bop_chad_side:0 "aboba"
+    
+    WIG_bop_soy_0:0 "War"
+    WIG_bop_soy_0_desc:0 "PLUG"
+    
+    WING_shit:0 "Para bellum"
+    
+    # WIG_bop_soy_0:0 "wha?!"
+    # WIG_bop_chad_0:0 "Give a speech"

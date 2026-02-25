@@ -1,0 +1,67 @@
+capital = 16
+
+oob = "NEI_1007"
+
+set_research_slots = 1
+starting_train_buffer = 2
+
+add_manpower = 25000
+
+add_ideas = {
+	
+	NEI_people_of_the_sun
+	NEI_priests_of_day_sent
+	NEI_fanatism
+	NEI_irregular_army_idea
+	THESTRALS_potoh_not_invented
+	
+	
+	limited_conscription
+	tribal_society
+	low_economic_mobilisation
+	lack_of_scientists2
+	better_science_base
+	solarism
+}
+
+### LEADERS
+recruit_character = NEI_loyliada
+recruit_character = NEI_nobody
+recruit_character = NEI_sun_and_moon
+
+### ARMY
+recruit_character = NEI_field_marshal1
+recruit_character = NEI_corps_commander1
+recruit_character = NEI_corps_commander2
+recruit_character = NEI_corps_commander3
+
+set_technology = {
+	 
+	thestral_race = 1
+	melee_weapons = 1
+	tech_support = 1
+	tech_thestrals = 1
+}
+
+actually_fix_weapon_techs = yes #THIS HAS TO BE CALLED IN EVERY HISTORY FILE RIGHT AFTER MAIN set_technology!
+
+add_equipment_to_stockpile = {
+	type = melee_equipment_1
+	amount = 1500
+	producer = NEI
+}
+
+set_convoys = 0
+set_popularities = {
+	fascism = 85
+	neutrality = 15
+}
+set_politics = {
+	ruling_party = fascism
+	last_election = "1.10.10"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+set_stability = 0.2
+set_war_support = 0.4

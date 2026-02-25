@@ -1,0 +1,38 @@
+scripted_gui = {
+	Kreiger_leader_container = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "Kreiger_leader_container"
+		visible = {
+			tag = NGC
+		}
+		effects = {
+			Kreiger_leaders_container_click = {
+				if = {
+					limit = {
+						check_variable = { NGC_griffon_crown < 1 }
+					}
+					add_to_variable = {
+						NGC_griffon_crown = 1
+					}
+					set_politics = {
+      ruling_party = neutrality
+      elections_allowed = no
+    }
+				}
+				
+				else_if = {
+					limit = {
+						check_variable = { NGC_griffon_crown = 1 }
+					}
+					clear_variable = NGC_griffon_crown
+					set_politics = {
+      ruling_party = democratic
+      elections_allowed = no
+    }
+				}
+			}
+		}
+	}
+			
+}

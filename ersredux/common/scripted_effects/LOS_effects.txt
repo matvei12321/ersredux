@@ -1,0 +1,26 @@
+los_plus_1_monarchist_var = {
+	add_to_variable = { los_legicimicy_point = 1 }
+	custom_effect_tooltip = plus_1_los_legitimnost
+	add_to_variable = { los_monarchy_pp_factor_bonus_var = 0.05 }
+	add_to_variable = { los_monarchy_stability_bonus_var = 0.01 } 
+	add_to_variable = { los_monarchy_war_support_bonus_var = 0.01 }
+	add_to_variable = { los_monarchy_surrender_limit_bonus_var = 0.005 }
+}
+
+los_plus_2_monarchist_var = {
+	add_to_variable = { los_legicimicy_point = 2 }
+	custom_effect_tooltip = plus_5_los_legitimnost
+	add_to_variable = { los_monarchy_pp_factor_bonus_var = 0.1 }
+	add_to_variable = { los_monarchy_stability_bonus_var = 0.02 } 
+	add_to_variable = { los_monarchy_war_support_bonus_var = 0.02 }
+	add_to_variable = { los_monarchy_surrender_limit_bonus_var = 0.01 }
+}
+
+los_plus_5_monarchist_var = {
+	add_to_variable = { los_legicimicy_point = 5 }
+	custom_effect_tooltip = plus_5_los_legitimnost
+	add_to_variable = { los_monarchy_pp_factor_bonus_var = 0.25 }
+	add_to_variable = { los_monarchy_stability_bonus_var = 0.05 } 
+	add_to_variable = { los_monarchy_war_support_bonus_var = 0.05 }
+	add_to_variable = { los_monarchy_surrender_limit_bonus_var = 0.025 }
+}

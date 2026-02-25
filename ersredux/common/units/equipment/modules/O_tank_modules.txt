@@ -1,0 +1,50 @@
+equipment_modules = {
+
+	haber_lc_module = {
+		abbreviation = "hlc"
+		category = tank_small_main_armament
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = 40
+			hard_attack = 10
+			ap_attack = 15
+			build_cost_ic = 6
+			reliability = -0.2
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 1
+	}
+	
+	haber_mc_module = {
+		abbreviation = "hmc"
+		category = tank_medium_main_armament
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = 50
+			hard_attack = 15
+			ap_attack = 20
+			build_cost_ic = 8
+			reliability = -0.25
+			breakthrough = 6
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 1
+	}
+		
+	haber_hc_module = {
+		abbreviation = "hhc"
+		category = tank_heavy_main_armament
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = 60
+			hard_attack = 20
+			ap_attack = 25
+			build_cost_ic = 10
+			reliability = -0.25
+			breakthrough = 8
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 1
+	}
+}
+	

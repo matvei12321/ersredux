@@ -1,0 +1,32 @@
+state={
+	id=316
+	name="STATE_316"
+
+	provinces={
+		11167 11661 11690 11693 
+	}
+
+	manpower=2072308
+	state_category=large_city
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = VST
+		add_core_of = VST
+		add_claim_by = VRX
+
+		victory_points = { 11690 15 }
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 3
+			arms_factory = 2
+		}
+	}
+	
+	resources={
+		steel=7
+		tungsten=15
+		chromium=7
+	}
+}

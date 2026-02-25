@@ -1,0 +1,12 @@
+spriteTypes = {	
+	
+	spriteType = {
+		name = "GFX_cal_war_bet_pon"
+		texturefile = "gfx/interface/goals/GUA/cal_war_bet_pon.dds"
+	}
+	spriteType = {
+		name = "GFX_generic_stable_government"
+		texturefile = "gfx/interface/goals/GUA/generic_stable_government.dds"
+	}
+	
+}

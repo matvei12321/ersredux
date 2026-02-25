@@ -1,0 +1,27 @@
+state={
+	id=268
+	name="STATE_268"
+
+	provinces={
+		269 397 1595 3202 3303 3318 3339 3387 6341 7551 11743
+	}
+
+	manpower=1261850
+	state_category=wasteland
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = YAC
+		add_core_of = YAC
+		add_claim_by = YAK
+		add_claim_by = NAK
+		add_claim_by = JAK
+		add_claim_by = BAD
+		add_claim_by = SHA
+		add_claim_by = MNT
+	}
+
+	resources={
+		crystals = 28
+	}
+}

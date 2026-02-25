@@ -1,0 +1,21 @@
+ideas = {
+	
+	country= {
+		MIN_miners_idea = { 
+
+			removal_cost = -1
+			
+			picture = two_pickaxes
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				local_resources_factor = 0.15
+				consumer_goods_factor = -0.15
+				stability_factor = -0.05
+			}
+
+		}
+	}
+}

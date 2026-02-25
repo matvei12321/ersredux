@@ -1,0 +1,5 @@
+NGC_vrum_vrum = {
+	set_technology = {
+		motorcycle_tech = 1
+	}
+}

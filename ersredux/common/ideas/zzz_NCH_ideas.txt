@@ -1,0 +1,126 @@
+ideas = {
+country= {
+   NCH_Cult_of_the_Lamb = {
+			picture = HIE_world
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+
+				army_attack_factor = 0.05
+
+			}
+		}
+		
+	NCH_Dream_idea = {
+			picture = CTL_doctrineN2
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+
+				army_attack_factor = 0.05
+
+			}
+		}
+	NCH_Turnip_idea = {
+			picture = HIE_culling
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+
+				army_attack_factor = 0.05
+
+			}
+		}
+	NCH_Fish_idea = {
+			picture = viiramagic
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+
+				army_attack_factor = 0.05
+
+			}
+		}
+	}
+materiel_manufacturer = {
+		designer = yes
+
+		NCH_generic_infantry_equipment_manufacturer = {
+			picture = NCH_generic_gun
+
+			allowed = {
+				can_form_river_fed = yes
+			}
+			visible = {
+				OR = {
+					original_tag = NCH
+					has_country_flag = RIV_annexed_NCH
+				}
+			}
+			available = {
+				has_completed_focus = NCH_inf_weapons
+				hidden_trigger = {
+					OR = {
+						original_tag = NCH
+						has_country_flag = RIV_annexed_NCH
+					}
+				}
+			}
+
+			research_bonus = {
+				infantry_weapons = 0.08
+			}
+			traits = { infantry_equipment_manufacturer }
+		}
+
+		NCH_reichswaffen = {
+			picture = GRI_imperial_arms_co
+
+			allowed = {
+				original_tag = NCH
+			}
+			visible = { has_country_flag = NCH_griffon_rifles_flag }
+			available = { has_country_flag = NCH_griffon_rifles_flag }
+
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			traits = { infantry_equipment_manufacturer }
+		}
+
+		NCH_greda = {
+			picture = WNG_greda
+
+			allowed = {
+				original_tag = NCH
+			}
+			visible = { has_country_flag = NCH_greda_flag }
+			available = { has_country_flag = NCH_greda_flag }
+
+			research_bonus = {
+				artillery = 0.15
+			}
+			traits = { artillery_manufacturer }
+		}
+	}
+}

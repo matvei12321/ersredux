@@ -1,0 +1,27 @@
+characters={
+
+	HGE_ferdinand_dawnclaw={
+		name=HGE_ferdinand_dawnclaw
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/HGE/HGE_ferdinand.tga"
+				large="gfx/leaders/HGE/Ferdinand.tga"
+			}
+		}
+		country_leader={
+			traits={  }
+			ideology=stratocracy
+			expire="1965.1.1.1"
+			id=-1
+		}
+		corps_commander={
+			traits={ griffon_race_trait infantry_leader }
+			skill=3
+			attack_skill=4
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+}

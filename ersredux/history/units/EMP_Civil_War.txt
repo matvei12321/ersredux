@@ -1,0 +1,62 @@
+division_template = {
+	name = "Smert"
+	is_locked = yes
+
+	division_names_group = CRY_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 4 }
+	}
+}
+
+units = {
+	division = {
+		name = "1. Smert"
+		location = 11754
+		division_template = "Smert"
+	}
+	division = {
+		name = "2. Smert"
+		location = 3937
+		division_template = "Smert"
+	}
+	division = {
+		name = "3. Smert"
+		location = 676 # Ulm
+		division_template = "Smert"
+	}
+	division = {
+		name = "4. Smert"
+		location = 11583
+		division_template = "Smert"
+	}
+	division = {
+		name = "5. Smert"
+		location = 676
+		division_template = "Smert"
+	}
+	division = {
+		name = "6. Smert"
+		location = 637
+		division_template = "Smert"
+	}
+	division = {
+		name = "7. Smert"
+		location = 637
+		division_template = "Smert"
+	}
+	division = {
+		name = "8. Smert"
+		location = 637
+		division_template = "Smert"
+	}
+	division = {
+		name = "9. Smert"
+		location = 637
+		division_template = "Smert"
+	}
+}
+	

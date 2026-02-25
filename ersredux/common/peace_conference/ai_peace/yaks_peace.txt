@@ -1,0 +1,62 @@
+# Scripted AI desire for peace actions.
+# See documentation.info file for more detailed scripting information.
+
+peace_ai_desires = {
+
+    # 
+    yaks_just_eat_everything = {
+        peace_action_type = { puppet force_government liberate }
+        enable = {
+            OR = {
+                tag = YAC
+                tag = JAK
+                tag = NAK
+                tag = YAK
+                tag = MNT
+                tag = BAD
+                tag = SHA
+            }
+            FROM.FROM = {
+                OR = {
+                    tag = YAC
+                    tag = JAK
+                    tag = NAK
+                    tag = YAK
+                    tag = MNT
+                    tag = BAD
+                    tag = SHA
+                }
+            }
+        }
+
+        ai_desire = -200
+    }
+
+    yaks_just_eat_everything_2 = {
+        peace_action_type = { take_states }
+        enable = {
+            OR = {
+                tag = YAC
+                tag = JAK
+                tag = NAK
+                tag = YAK
+                tag = MNT
+                tag = BAD
+                tag = SHA
+            }
+            FROM.FROM = {
+                OR = {
+                    tag = YAC
+                    tag = JAK
+                    tag = NAK
+                    tag = YAK
+                    tag = MNT
+                    tag = BAD
+                    tag = SHA
+                }
+            }
+        }
+
+        ai_desire = 200
+    }
+}

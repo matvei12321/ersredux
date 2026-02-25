@@ -1,0 +1,31 @@
+state={
+	id=145
+	name="STATE_145"
+
+	provinces={
+		6066 9435 11065 11126 11409
+	}
+
+	manpower=230550
+	state_category = city
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = HRD
+		add_core_of = HRD
+
+		victory_points = { 6066 10 }
+		victory_points = { 11126 5 }
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 2
+		}
+	}
+
+	resources={
+		crystals = 31
+		steel = 9
+		coal = 20
+	}
+}

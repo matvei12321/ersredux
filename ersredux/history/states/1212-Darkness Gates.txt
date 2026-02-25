@@ -1,0 +1,18 @@
+state={
+	id=1212
+	name="STATE_1212"
+
+	provinces={
+		3325 3341 6389 9038 9083
+	}
+
+	manpower=15812
+	state_category=rural
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = HRD
+		add_core_of = HRD
+		victory_points = { 6389 1 }
+	}
+}

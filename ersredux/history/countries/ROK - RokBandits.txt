@@ -1,0 +1,72 @@
+capital = 38
+
+
+set_research_slots = 2
+starting_train_buffer = 2
+
+save_global_event_target_as = rok_target
+
+add_manpower = 15000
+
+recruit_character = ROK_octavia
+recruit_character = ROK_steel_horn
+recruit_character = ROK_iron_hoof
+recruit_character = ROK_joshua
+recruit_character = ROK_old_owl
+recruit_character = ROK_white_wing
+recruit_character = ROK_violina
+recruit_character = ROK_double_gun
+recruit_character = ROK_iris
+
+oob = "ROK_1007"
+
+
+add_ideas = { 
+
+	ROK_gunfighting
+	ROK_migration
+	ROK_bandit_queen
+	wild_south_west
+	
+	pandorism
+	
+	
+	agrarian_society
+	lack_of_scientists3
+	better_science_base
+	
+	
+	}
+
+set_technology = {
+	 
+	 earthpony_race = 1
+	melee_weapons = 1
+	melee_weapons1 = 1
+	infantry_weapons = 1
+	tech_support = 1
+	pre_gw_artillery = 1
+	basic_train = 1
+}
+actually_fix_weapon_techs = yes #THIS HAS TO BE CALLED IN EVERY HISTORY FILE RIGHT AFTER MAIN set_technology!
+
+
+add_equipment_to_stockpile = {
+	type = melee_equipment_1
+	amount = 1000
+	producer = ROK
+}
+
+set_popularities = {
+	fascism = 50
+	neutrality = 50
+}
+set_politics = {
+	ruling_party = fascism
+	last_election = "1.10.10"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+set_stability = 0.3
+set_war_support = 0.4

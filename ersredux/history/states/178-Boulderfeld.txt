@@ -1,0 +1,33 @@
+state={
+	id=178
+	name="STATE_178"
+
+	provinces={
+		849 928 947 3851 6038 6375 6912 7361 9139 9227 9921 11028 11081 11245 11848 11898 13282 13284 13285 13287 13290
+	}
+
+	manpower=544850
+	state_category=town
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = UNC
+		add_core_of = UNC
+		add_core_of = BRV
+		
+		victory_points = { 9227 5 }
+		victory_points = { 13285 5 }
+		victory_points = { 11081 5 }
+		
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+		}
+	}
+	
+	resources = {
+		steel = 4
+		tungsten=11
+	}
+}

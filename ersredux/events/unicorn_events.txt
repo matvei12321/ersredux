@@ -1,0 +1,690 @@
+﻿add_namespace = unc
+
+country_event = {		
+	id = unc.1 
+	immediate = {log = "[Root.GetName]: event unc.1"}
+	title = unc.1.t
+	desc = unc.1.d
+
+	picture = GFX_event_mlp_movie_canterlot1
+	
+	is_triggered_only = yes
+
+	option = {
+		name = unc.1.a 
+		add_stability = -0.03
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.02
+		}
+	}
+}
+
+country_event = {		
+	id = unc.2
+	immediate = {log = "[Root.GetName]: event unc.2"}
+	title = unc.2.t
+	desc = unc.2.d
+
+	picture = GFX_event_canterlot
+	
+	is_triggered_only = yes
+
+	option = {
+		name = unc.2.a
+	}
+}
+
+country_event = {		
+	id = unc.3
+	immediate = {log = "[Root.GetName]: event unc.3"}
+	title = unc.3.t
+	desc = unc.3.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = unc.3.a
+		UNC = {
+			country_event = { id = unc.4 days = 2 }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = unc.3.b
+		UNC = {
+			country_event = { id = unc.5 days = 2 }
+		}
+		ai_chance = {
+			factor = 2
+		}
+	}
+}
+
+country_event = {		
+	id = unc.4
+	immediate = {log = "[Root.GetName]: event unc.4"}
+	title = unc.4.t
+	desc = unc.4.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = unc.4.a
+		add_ideas = UNC_timed_trade_with_MNH
+	}
+}
+
+country_event = {		
+	id = unc.5
+	immediate = {log = "[Root.GetName]: event unc.5"}
+	title = unc.5.t
+	desc = unc.5.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = unc.5.a
+		add_political_power = -50
+	}
+}
+
+country_event = {		
+	id = unc.6
+	immediate = {log = "[Root.GetName]: event unc.6"}
+	title = unc.6.t
+	desc = unc.6.d
+	
+	picture = GFX_tito_maresucc_event
+	
+	is_triggered_only = yes
+
+	option = {
+		name = unc.6.a
+		white_peace = STG
+		transfer_state = 156
+		transfer_state = 157
+	}
+}
+
+country_event = {		
+	id = unc.7
+	immediate = {log = "[Root.GetName]: event unc.7"}
+	title = unc.7.t
+	desc = unc.7.d
+	
+	picture = GFX_tito_maresucc_event
+	
+	is_triggered_only = yes
+
+	option = {
+		name = unc.7.a
+		add_stability = -0.05
+		add_war_suport = -0.1
+	}
+}
+
+country_event = {		
+	id = unc.8
+	immediate = {log = "[Root.GetName]: event unc.8"}
+	title = unc.8.t
+	desc = unc.8.d
+	
+	picture = GFX_event_moon
+	
+	is_triggered_only = yes
+
+	option = {
+		name = unc.8.a
+		random_list = {	
+			50 = {
+				country_event = unc.9
+			}
+			50 = {
+				country_event = unc.10
+			}
+		}
+	}
+}
+
+country_event = {		
+	id = unc.9
+	immediate = {log = "[Root.GetName]: event unc.7"}
+	title = unc.9.t
+	desc = unc.9.d
+	
+	picture = GFX_event_devastation_nature1
+	
+	is_triggered_only = yes
+
+	option = {
+		name = unc.9.a
+		complete_national_focus = UNC_party_bad
+	}
+}
+
+country_event = {		
+	id = unc.10
+	immediate = {log = "[Root.GetName]: event unc.7"}
+	title = unc.10.t
+	desc = unc.10.d
+	
+	picture = GFX_event_canterlot
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = unc.10.a
+		complete_national_focus = UNC_party_good
+	}
+}
+
+country_event = {	 		### STG - PRINCESSUN RENAME	
+	id = unc.11
+	immediate = {log = "[Root.GetName]: event unc.7"}
+	title = unc.11.t
+	desc = unc.11.d
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = unc.11.a
+		set_province_name = {
+				id = 488
+				name =  ERS_STG_name
+			}
+		news_event = ers_news.15
+	}
+	
+	option = {
+		name = unc.11.b
+		set_province_name = {
+				id = 488
+				name =  ERS_severniy_name
+			}
+		news_event = ers_news.15
+	}
+	
+	option = {
+		name = unc.11.c
+		set_province_name = {
+				id = 488
+				name =  ERS_rev_name
+			}
+		news_event = ers_news.15
+	}
+	
+	option = {
+		name = unc.11.e
+		set_province_name = {
+				id = 488
+				name =  ERS_red_princess_name
+			}
+		news_event = ers_news.15
+	}
+	
+}
+
+country_event = {	# Chess with royal guys	
+	id = unc.12
+	immediate = {log = "[Root.GetName]: event unc.12"}
+	title = unc.12.t
+	desc = unc.12.d
+	
+	picture = GFX_event_chess_game
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = unc.12.a
+		hidden_effect = {
+			country_event = { id = unc.13 days = 2 }
+		}
+	}
+}
+
+country_event = {	# Chess with royal guys	- win
+	id = unc.13
+	immediate = {log = "[Root.GetName]: event unc.13"}
+	title = unc.13.t
+	desc = unc.13.d
+	
+	picture = GFX_event_chess_game
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = unc.13.a
+		set_country_flag = unc_won_chess_1
+		add_to_variable = { chess_win_var = 1 }
+	}
+}
+
+country_event = {	# Chess with vassals
+	id = unc.14
+	immediate = {log = "[Root.GetName]: event unc.14"}
+	title = unc.14.t
+	desc = unc.14.d
+	
+	picture = GFX_event_chess_game
+	
+	is_triggered_only = yes
+
+	option = {
+		name = unc.14.a
+		hidden_effect = {
+			country_event = { id = unc.15 days = 2 }
+		}
+	}
+}
+
+country_event = {	# Chess with vassals - choose 
+	id = unc.15
+	immediate = {log = "[Root.GetName]: event unc.15"}
+	title = unc.15.t
+	desc = unc.15.d
+	
+	picture = GFX_event_chess_game
+	
+	is_triggered_only = yes
+
+	option = {
+		name = unc.15.a
+		hidden_effect = {
+			random_list = {
+				70 = {
+					country_event = { id = unc.16 days = 2 }
+					}
+				30 = {
+					country_event = { id = unc.17 days = 2 }
+				}
+			}
+		}			
+	}
+	
+	option = {
+		name = unc.15.b
+		hidden_effect = {
+			random_list = {
+				50 = {
+					country_event = { id = unc.16 days = 2 }
+					}
+				50 = {
+					country_event = { id = unc.17 days = 2 }
+				}
+			}
+		}			
+	}
+}
+
+country_event = {	# Chess with vassals - win
+	id = unc.16
+	immediate = {log = "[Root.GetName]: event unc.16"}
+	title = unc.16.t
+	desc = unc.16.d
+	
+	picture = GFX_event_chess_game
+	
+	is_triggered_only = yes
+
+	option = {
+		name = unc.13.a
+		add_political_power = 1
+		set_country_flag = unc_won_chess_2
+		add_to_variable = { chess_win_var = 1 }
+	}
+}
+
+country_event = {	# Chess with vassals - loose
+	id = unc.17
+	immediate = {log = "[Root.GetName]: event unc.17"}
+	title = unc.17.t
+	desc = unc.17.d
+	
+	picture = GFX_event_chess_game
+	
+	is_triggered_only = yes
+
+	option = {
+		name = unc.17.a
+		add_political_power = -1
+		set_country_flag = unc_lost_chess_2
+		add_to_variable = { chess_lose_var = 1 }
+	}
+}
+
+country_event = {	# Chess with vassals - revansh
+	id = unc.18
+	immediate = {log = "[Root.GetName]: event unc.18"}
+	title = unc.18.t
+	desc = unc.18.d
+	
+	picture = GFX_event_chess_game
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = unc.18.a
+		add_political_power = -1
+		hidden_effect = {
+			country_event = { id = unc.15 days = 1 }
+		}
+	}
+}
+
+country_event = {	# minus monarchy stability
+	id = unc.19
+	immediate = {log = "[Root.GetName]: event unc.19"}
+	title = unc.19.t
+	desc = unc.19.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = unc.19.a
+		add_political_power = -15
+		add_stability = -0.025
+		swap_ideas = {
+			remove_idea = UNC_monarchy
+			add_idea = UNC_monarchy_1
+		}
+	}
+}
+
+country_event = {	# ask los to faction
+	id = unc.20
+	immediate = {log = "[Root.GetName]: event unc.20"}
+	title = unc.20.t
+	desc = unc.20.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = unc.20.a
+		UNC = {
+			give_guarantee = LOS
+		}
+		set_country_flag = los_will_join_unc_faction_flag
+		ai_chance = {
+			factor = 2
+		}
+	}
+	
+	option = {
+		name = unc.20.b
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {	# baron asks ponypower back
+	id = unc.21
+	immediate = {log = "[Root.GetName]: event unc.21"}
+	title = unc.21.t
+	desc = unc.21.d
+	
+	picture = GFX_event_fez
+
+	is_triggered_only = yes
+	
+	option = {
+		name = unc.21.a
+		add_manpower = -400
+	}
+	
+	option = {
+		name = unc.21.b
+		add_stability = -0.05
+		add_political_power = -50
+	}
+}
+
+country_event = {	# Way to Amore
+	id = unc.22
+	immediate = {log = "[Root.GetName]: event unc.22"}
+	title = unc.22.t
+	desc = unc.22.d
+	
+	picture = GFX_event_crystal_city
+	
+	is_triggered_only = yes
+
+	option = {
+		name = unc.22.a
+		hidden_effect = {
+			country_event = { id = unc.24 days = 1 }
+		}
+	}
+}
+
+country_event = {	# Way to Amore - fail
+	id = unc.23
+	immediate = {log = "[Root.GetName]: event unc.22"}
+	title = unc.23.t
+	desc = unc.23.d
+	
+	picture = GFX_event_crystal_city
+	
+	is_triggered_only = yes
+
+	option = {
+		name = unc.23.a
+		retire_character = UNC_king_platinum
+		add_stability = -0.25
+	}
+}
+
+country_event = {	# Way to Amore - succes - start of game
+	id = unc.24
+	immediate = {log = "[Root.GetName]: event unc.24"}
+	title = unc.24.t
+	desc = unc.24.d
+	
+	picture = GFX_event_crystal_city
+	
+	is_triggered_only = yes
+
+	option = {
+		name = unc.24.a
+		country_event = { id = unc.25 days = 1 }
+	}
+}
+
+country_event = {	# Game with Amore - 1
+	id = unc.25
+	immediate = {log = "[Root.GetName]: event unc.25"}
+	title = unc.25.t
+	desc = unc.25.d
+	
+	picture = GFX_event_chess_game
+	
+	is_triggered_only = yes
+
+	option = {
+		name = unc.25.a
+		hidden_effect = {
+			country_event { id = unc.27 days = 1 }
+		}
+	}
+	
+	option = {
+		name = unc.25.b
+		hidden_effect = {
+			country_event { id = unc.26 days = 1 }
+		}
+	}
+	
+	option = {
+		name = unc.25.c
+		hidden_effect = {
+			country_event { id = unc.27 days = 1 }
+		}
+	}
+}
+
+country_event = {	# Game with Amore - 2
+	id = unc.26
+	immediate = {log = "[Root.GetName]: event unc.26"}
+	title = unc.26.t
+	desc = unc.26.d
+	
+	picture = GFX_event_chess_game
+	
+	is_triggered_only = yes
+
+	option = {
+		name = unc.26.a
+		hidden_effect = {
+			country_event { id = unc.27 days = 1 }
+		}
+	}
+	option = {
+		name = unc.26.b
+		hidden_effect = {
+			country_event { id = unc.27 days = 1 }
+		}
+	}
+	option = {
+		name = unc.26.c
+		hidden_effect = {
+			country_event { id = unc.28 days = 1 }
+		}
+	}
+}
+
+country_event = {	# Game with Amore - lost
+	id = unc.27
+	immediate = {log = "[Root.GetName]: event unc.27"}
+	title = unc.27.t
+	desc = unc.27.d
+	
+	picture = GFX_event_chess_game
+	
+	is_triggered_only = yes
+
+	option = {
+		name = unc.27.a
+		set_country_flag = unc_lost_chess_2
+		add_to_variable = { chess_lose_var = 1 }
+		add_political_power = -10
+	}
+}
+
+country_event = {	# Game with Amore - win
+	id = unc.28
+	immediate = {log = "[Root.GetName]: event unc.28"}
+	title = unc.28.t
+	desc = unc.28.d
+	
+	picture = GFX_event_chess_game
+	
+	is_triggered_only = yes
+
+	option = {
+		name = unc.27.a
+		add_to_variable = { chess_win_var = 1 }
+	}
+}
+
+country_event = {	# Game with Amore - revansh
+	id = unc.29
+	immediate = {log = "[Root.GetName]: event unc.29"}
+	title = unc.29.t
+	desc = unc.29.d
+	
+	picture = GFX_event_chess_game
+	
+	is_triggered_only = yes
+
+	option = {
+		name = unc.29.a
+	}
+}
+
+country_event = {	# Sell Land - removed
+	id = unc.30
+	immediate = {log = "[Root.GetName]: event unc.30"}
+	title = unc.30.t
+	desc = unc.30.d
+	
+	is_triggered_only = yes
+
+	option = {
+		name = unc.30.a
+		
+	}
+}
+
+country_event = {	# Griffith
+	id = unc.31
+	immediate = {log = "[Root.GetName]: event unc.31"}
+	title = unc.31.t
+	desc = unc.31.d
+	
+	is_triggered_only = yes
+
+	option = {
+		name = unc.31.a
+		army_experience = 10
+		custom_effect_tooltip = accepted_griffith_flag_tt
+		set_country_flag = accepted_griffith_flag
+	}
+	
+	option = {
+		name = unc.31.b
+		add_political_power = 50
+		add_stability = -0.015
+	}
+}
+
+country_event = {	# Flavour - Charlotte 1
+	id = unc.32
+	immediate = {log = "[Root.GetName]: event unc.31"}
+	title = unc.32.t
+	desc = unc.32.d
+	
+	picture = GFX_event_camelot
+	
+	is_triggered_only = yes
+
+	option = {
+		name = unc.32.a
+	}
+}
+
+country_event = {	# Fillidelphya sluhi
+	id = unc.33
+	immediate = {log = "[Root.GetName]: event unc.31"}
+	title = unc.33.t
+	desc = unc.33.d
+	
+	picture = GFX_event_camelot
+	
+	is_triggered_only = yes
+
+	option = {
+		name = unc.33.a
+		add_stability = -0.05
+	}
+}
+
+country_event = {	# Flavour - Charlotte and Griffith 1
+	id = unc.34
+	immediate = {log = "[Root.GetName]: event unc.31"}
+	title = unc.34.t
+	desc = unc.34.d
+	
+	picture = GFX_event_camelot
+	
+	is_triggered_only = yes
+
+	option = {
+		name = unc.34.a
+	}
+}

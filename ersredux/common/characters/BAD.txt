@@ -1,0 +1,18 @@
+characters = {
+	BAD_leader={
+		name=BAD_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			desc="BAD_leader_DESC"
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		gender = male
+	}
+}

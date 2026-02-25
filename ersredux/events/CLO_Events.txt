@@ -1,0 +1,182 @@
+add_namespace = CLO
+
+country_event = {
+    id = CLO.1
+	immediate = {log = "[Root.GetName]: event CLO.1"}
+    title = "CLO.1.t"
+    desc = "CLO.1.d"
+    trigger = {
+        has_completed_focus = CLO_renewal_of_cloudbury
+    }
+    immediate = {
+        add_resource_production = { resource = food amount = 0.15 }
+    }
+    option = {
+        name = "CLO.1.a"
+        ai_chance = { factor = 100 }
+    }
+}
+
+country_event = {
+    id = CLO.2
+	immediate = {log = "[Root.GetName]: event CLO.2"}
+    title = "CLO.2.t"
+    desc = "CLO.2.d"
+    trigger = {
+        has_completed_focus = CLO_development_of_craft_guilds
+    }
+    immediate = {
+        add_resource_production = { resource = materials amount = 0.10 }
+    }
+    option = {
+        name = "CLO.2.a"
+        ai_chance = { factor = 100 }
+    }
+}
+
+country_event = {
+    id = CLO.3
+	immediate = {log = "[Root.GetName]: event CLO.3"}
+    title = "CLO.3.t"
+    desc = " CLO.3.d"
+    trigger = {
+        has_completed_focus = CLO_strengthening_trade_caravan
+    }
+    immediate = {
+        add_trade_income = 0.20
+        reduce_trade_raid_risk = 0.15
+    }
+    option = {
+        name = "CLO.3.a"
+        ai_chance = { factor = 100 }
+    }
+}
+
+country_event = {
+    id = CLO.4
+	immediate = {log = "[Root.GetName]: event CLO.4"}
+    title = "CLO.4.t"
+    desc = "CLO.4.d"
+    trigger = {
+        has_completed_focus = CLO_construction_of_defensive_bastions
+    }
+    immediate = {
+        add_planet_defense = 0.25
+    }
+    option = {
+        name = "CLO.4.a"
+        ai_chance = { factor = 100 }
+    }
+}
+
+country_event = {
+    id = CLO.5
+	immediate = {log = "[Root.GetName]: event CLO.5"}
+    title = "CLO.5.t"
+    desc = "CLO.5.d"
+    trigger = {
+        has_completed_focus = CLO_formation_of_militia
+    }
+    immediate = {
+        add_militia_size = 0.15
+        add_mobilization_speed = 0.10
+    }
+    option = {
+        name = "CLO.5.a"
+        ai_chance = { factor = 100 }
+    }
+}
+
+country_event = {
+    id = CLO.6
+	immediate = {log = "[Root.GetName]: event CLO.6"}
+    title = "CLO.6.t"
+    desc = "CLO.6.d"
+    trigger = {
+        has_completed_focus = CLO_creation_of_patrol_fleet
+    }
+    immediate = {
+        add_naval_patrol = 0.15
+        reduce_piracy_risk = 0.15
+    }
+    option = {
+        name = "CLO.6.a"
+        ai_chance = { factor = 100 }
+    }
+}
+
+country_event = {
+    id = CLO.7
+	immediate = {log = "[Root.GetName]: event CLO.7"}
+    title = "CLO.7.t"
+    desc = "CLO.7.d"
+    trigger = {
+        has_completed_focus = CLO_noble_councils_and_alliances
+    }
+    immediate = {
+        add_loyalty = 0.10
+        reduce_rebellion_risk = 0.10
+    }
+    option = {
+        name = "CLO.7.a"
+        ai_chance = { factor = 100 }
+    }
+}
+
+country_event = {
+    id = CLO.8
+	immediate = {log = "[Root.GetName]: event CLO.8"}
+    title = "CLO.8.t"
+    desc = "CLO.8.d"
+    trigger = {
+        has_completed_focus = CLO_investment_in_education_and_culture
+    }
+    immediate = {
+        reduce_unrest = 0.10
+        add_production_efficiency = 0.05
+    }
+    option = {
+        name = "CLO.8.a"
+        ai_chance = { factor = 100 }
+    }
+}
+
+country_event = {
+    id = CLO.9
+	immediate = {log = "[Root.GetName]: event CLO.9"}
+    title = "CLO.9.t"
+    desc = "CLO.9.d"
+    trigger = {
+        has_completed_focus = CLO_expansion_of_diplomatic_relations
+    }
+    immediate = {
+        # Здесь можно прописать конкретные бонусы, например:
+        add_trade_bonus = yes
+        add_military_support_bonus = yes
+    }
+    option = {
+        name = "CLO.9.a"
+        ai_chance = { factor = 100 }
+    }
+}
+
+country_event = {
+    id = CLO.10
+	immediate = {log = "[Root.GetName]: event CLO.10"}
+    title = "CLO.10.t"
+    desc = "CLO.10.d"
+    trigger = {
+        has_completed_focus = CLO_great_fair_of_cloudbury
+    }
+    immediate = {
+        add_one_time_income = 500
+        add_reputation = 0.30
+    }
+    option = {
+        name = "CLO.10.a"
+        ai_chance = { factor = 100 }
+    }
+}
+
+
+###

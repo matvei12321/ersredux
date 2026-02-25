@@ -1,0 +1,16 @@
+characters={
+	AUR_cecile_gaudreau={
+		name=AUR_char_gaudreau
+		portraits={
+			civilian={
+				large="gfx/leaders/AUR/Cecile.tga"
+			}
+		}
+		gender = female
+		country_leader={
+			ideology=liberalism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

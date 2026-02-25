@@ -1,0 +1,28 @@
+state={
+	id=25
+	name="STATE_25"
+
+	provinces={
+		336 3991 4084 4097 7008 7215 7908 8046 11987 12018 12842 13074
+	}
+
+	manpower=1619500
+	state_category=pastoral
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = YKL
+		add_core_of = YKL
+		
+		victory_points = { 11987 10 }
+		
+		buildings = {
+			industrial_complex = 1
+			arms_factory = 2
+		}
+	}
+
+	resources={
+		rubber=20
+	}
+}

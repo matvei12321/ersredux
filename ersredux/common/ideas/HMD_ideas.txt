@@ -1,0 +1,45 @@
+ideas = {
+
+	country = {
+		HMD_radio_silence = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = CHN_political_divisions
+			modifier = {
+				stability_factor = -1.0
+				war_support_factor = -1.0
+				research_speed_factor = -1.0
+				local_resources_factor = -1.0
+				training_time_factor = 1.0
+				PRODUCTION_SPEED_BUILDINGS_FACTOR = -1.0
+				conscription_factor = -1.0
+				INDUSTRIAL_CAPACITY_FACTORY = -1.0
+				industrial_capacity_dockyard = -1.0
+				political_power_factor = -1.0
+				monthly_population = -1.0
+			}
+		}
+
+		HMD_one_mind = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = CHN_political_divisions
+			modifier = {
+				conscription_factor = 0.25
+				monthly_population = 0.5
+				non_core_manpower = -1.0
+				industrial_capacity_factory = 0.25
+				research_speed_factor = 0.2
+			}
+		}
+	}
+}
+

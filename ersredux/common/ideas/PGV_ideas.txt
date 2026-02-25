@@ -1,0 +1,42 @@
+ideas = {
+
+	country = {
+		PGV_minorities = {
+			
+			allowed = {
+				always = no
+			}
+			picture = nimbusia_blue
+			modifier = {
+				army_core_defence_factor = -0.2
+				stability_factor = -0.1
+				monthly_population = -0.1
+			}
+		}
+		
+		PGV_legends_of_wind = {
+			
+			allowed = {
+				always = no
+			}
+			picture = generic_victors_of_ww1
+			modifier = {
+				war_support_factor = 0.1
+				army_speed_factor = 0.05
+				conscription = 0.02
+			}
+		}
+		
+		PGV_olenian_industrial_methods = {
+			
+			allowed = {
+				always = no
+			}
+			picture = OLE_raising_dissent
+			modifier = {
+				PRODUCTION_SPEED_BUILDINGS_FACTOR = -0.1
+			}
+		}
+	}
+}
+

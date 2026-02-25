@@ -1,0 +1,399 @@
+characters = {
+	UNC_king_platinum={
+		name=UNC_king_platinum
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			desc="KING_PLATINUM_DESC"
+			ideology=despotism
+			traits={ old_king }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		gender = male
+	}
+	
+	UNC_unknown_leader_of_unp = {
+		name=UNC_unknown_leader_of_unp
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=ultranationalism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		gender = male
+	}
+	
+	UNC_victoria_ouren = {
+		name=UNC_victoria_ouren
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=harmonic_magocracy
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		gender = male
+	}
+	
+	UNC_rarity={
+		name=UNC_rarity
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/UNC/ers_rarity_advisor.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = UNC_rarity_token
+			cost = 150
+			allowed = {
+				original_tag = UNC
+			}
+			traits = { ers_aristortcat_trait }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		gender = female
+	}
+	
+	UNC_trixie={
+		name=UNC_trixie
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/UNC/ers_trixie_advisor.tga"		# horny as fuck
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = UNC_trixie_token
+			desc = "UNC_trixie_desc"
+			cost = 150
+			allowed = {
+				original_tag = UNC
+			}
+			traits = {
+				smooth_talking_con_man
+				backroom_windbag
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		gender = female
+	}
+	
+	UNC_twilight={
+		name=UNC_twilight
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/UNC/ers_twilight_advisor.dds"
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = UNC_twilight_token
+			cost = 150
+			desc = "UNC_twilight_desc"
+			allowed = {
+				original_tag = UNC
+			}
+			traits = {
+				technocrat
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		gender = female
+	}
+	
+	UNC_tesla={
+		name=UNC_tesla
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/UNC/tesla_advisor.tga"
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = UNC_tesla_token
+			desc = "UNC_tesla_desc"
+			cost = 200
+			allowed = {
+				original_tag = UNC
+			}
+			research_bonus = {
+				jet_technology = 0.1
+				electronics = 0.15
+			}
+			traits = {
+				ers_talanted_researcher
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		gender = female
+	}
+	
+	
+	
+	 ###################################
+	#### Field Marshals and Generals ####
+	 ###################################
+	
+	
+	UNC_field_marshal_1={
+		name=UNC_field_marshal_1
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/unknown_advisor2.dds"
+				large="gfx/leaders/UNC/ers_shining_armor.tga"
+			}
+		}
+		field_marshal={
+			traits={ unicorns_race_trait media_personality trait_guard_general organisational_leader }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+		gender = male
+	}
+	
+	UNC_field_marshal_2={
+		name=UNC_field_marshal_2
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/unknown_advisor2.dds"
+				large="gfx/leaders/UNC/unc_leader_generic_female_2.tga"
+			}
+		}
+		field_marshal={
+			traits={ unicorns_race_trait media_personality adaptable fascist_sympathizer }
+			skill=3
+			attack_skill=1
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=2
+		}
+		gender = male
+	}
+	
+	UNC_corps_commander_1={
+		name=UNC_corps_commander_1
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/unknown_advisor2.dds"
+				large="gfx/leaders/UNC/unc_leader_generic_1.tga"
+			}
+		}
+		corps_commander={
+			traits={ unicorns_race_trait inflexible_strategist politically_connected bearer_of_artillery }
+			skill=3
+			attack_skill=4
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+		}
+		gender = male
+	}
+	UNC_corps_commander_2={
+		name=UNC_corps_commander_2
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/unknown_advisor2.dds"
+				large="gfx/leaders/UNC/unc_leader_generic_female.tga"
+			}
+		}
+		corps_commander={
+			traits={ unicorns_race_trait trait_cautious trait_focused }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=5
+			logistics_skill=2
+		}
+		gender = male
+	}
+	UNC_corps_commander_3={
+		name=UNC_corps_commander_3
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/unknown_advisor2.dds"
+				large="gfx/leaders/UNC/unc_leader_generic_4.tga"
+			}
+		}
+		corps_commander={
+			traits={ unicorns_race_trait politically_connected engineer_officer fascist_sympathizer }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=5
+			logistics_skill=2
+		}
+		gender = male
+	}
+	UNC_corps_commander_4={
+		name=UNC_corps_commander_4
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/unknown_advisor2.dds"
+				large="gfx/leaders/UNC/unc_leader_generic_2.tga"
+			}
+		}
+		corps_commander={
+			traits={ unicorns_race_trait politically_connected trait_reckless }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+		}
+		gender = male
+	}
+	UNC_corps_commander_5={
+		name=UNC_corps_commander_5
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/unknown_advisor2.dds"
+				large="gfx/leaders/UNC/cute_guard.tga"
+			}
+		}
+		corps_commander={
+			traits={ unicorns_race_trait cute_mare_trait }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+		gender = female
+	}
+	UNC_corps_commander_6={
+		name=UNC_corps_commander_6
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/unknown_advisor2.dds"
+				large="gfx/leaders/UNC/unc_leader_generic_female.tga"
+			}
+		}
+		corps_commander={
+			traits={ unicorns_race_trait bearer_of_artillery fascist_sympathizer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+		gender = male
+	}
+	UNC_corps_commander_7={
+		name=UNC_corps_commander_7
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/unknown_advisor2.dds"
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		corps_commander={
+			traits={ unicorns_race_trait air_force_commander }
+			skill=3
+			attack_skill=4
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+		}
+		gender = male
+	}
+	UNC_corps_commander_8={
+		name=UNC_corps_commander_8
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/unknown_advisor2.dds"
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		corps_commander={
+			traits={ unicorns_race_trait medical_expert }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
+		}
+		gender = male
+	}
+	UNC_corps_commander_9={
+		name=UNC_corps_commander_9
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/unknown_advisor2.dds"
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		corps_commander={
+			traits={ unicorns_race_trait artillery_officer engineer_officer }
+			skill=1
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=3
+		}
+		gender = male
+	}
+	UNC_corps_commander_10={
+		name=UNC_corps_commander_10
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/unknown_advisor2.dds"
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		corps_commander={
+			traits={ unicorns_race_trait fascist_sympathizer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+		gender = male
+	}
+	
+	
+	fucking_griffith={
+		name=fucking_griffith
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/griffith_advisor.tga"
+				large="gfx/leaders/Griffith_portrait.tga"
+			}
+		}
+		corps_commander={
+			traits={ pegasi_race_trait media_personality organizer brilliant_strategist promising_general infantry_leader adaptable }
+			skill=5
+			attack_skill=6
+			defense_skill=5
+			planning_skill=6
+			logistics_skill=4
+			visible = { has_country_flag = accepted_griffith_flag }
+		}
+		gender = male
+	}
+}

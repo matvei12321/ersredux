@@ -1,0 +1,13 @@
+spriteTypes = {
+	frameAnimatedSpriteType = {
+    	name = "GFX_shield_flag_animated"
+    	texturefile = "gfx/interface/flag_overlay_animated.dds"
+    	noOfFrames = 27
+    	legacy_lazy_load = yes
+    	transparencecheck = yes
+    	animation_rate_fps = 8
+    	looping = yes
+    	play_on_show = yes
+    	pause_on_loop = 0.0
+	}
+}

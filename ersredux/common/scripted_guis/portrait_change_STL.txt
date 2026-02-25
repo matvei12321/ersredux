@@ -1,0 +1,61 @@
+scripted_gui = {
+	change_starlight_container = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "change_starlight_container"
+		visible = {
+			tag = STL
+			has_government = communism
+		}
+		effects = {
+			change_starlight_container_button_click = {
+				if = {
+					limit = {
+						check_variable = { stl_starlight_portrait_variable < 1 }
+					}
+					add_to_variable = {
+						stl_starlight_portrait_variable = 1
+					}
+					STL_starlight = {
+						set_portraits = {
+							civilian = {
+								large = "gfx/leaders/STL/STL_starlight2.tga"
+							}
+						}
+					}
+				}
+				
+				else_if = {
+					limit = {
+						check_variable = { stl_starlight_portrait_variable = 1 }
+					}
+					add_to_variable = {
+						stl_starlight_portrait_variable = 1
+					}
+					STL_starlight = {
+						set_portraits = {
+							civilian = {
+								large = "gfx/leaders/STL/STL_starlight3.tga"
+							}
+						}
+					}
+				}
+				
+				else_if = {
+					limit = {
+						check_variable = { stl_starlight_portrait_variable = 2 }
+					}
+					clear_variable = stl_starlight_portrait_variable
+					STL_starlight = {
+						set_portraits = {
+							civilian = {
+								large = "gfx/leaders/STL/STL_starlight1.tga"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+			
+}

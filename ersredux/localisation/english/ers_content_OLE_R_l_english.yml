@@ -1,0 +1,74 @@
+﻿l_russian:
+
+ ##### COUNTRY
+
+ OLR: 0 "Olenian National Liberation Front"
+ OLR_DEF: 0 "Olenian National Liberation Front"
+ OLR_ADJ:0 "Olenian"
+
+ ##### PARTIES
+ 
+ OLR_neutrality_party:0 "OPD"
+ OLR_neutrality_party_long:0 "Olenian Guerrilla Movement"
+ OLR_democratic_party:0 "OPD"
+ OLR_democratic_party_long:0 "Olenian Guerrilla Movement"
+ OLR_fascism_party:0 "OPD"
+ OLR_fascism_party_long:0 "Olenian Guerrilla Movement"
+ OLR_communism_party:0 "OPD"
+ OLR_communism_party_long:0 "The Olenian Partisan Movement"
+
+ ##### CHARACTERS
+ 
+ 
+ 
+ 
+ 
+ ##### NATIONAL FOCUS
+ 
+ OLE_R_beats_of_heart_tell_me_im_not_dead:0 "Heartbeats tell me that I'm not dead"
+ OLE_R_beats_of_heart_tell_me_im_not_dead_desc:0 "WE STILL HAVE THE STRENGTH TO FIGHT WE STILL HAVE THE STRENGTH TO FIGHT WE STILL HAVE THE STRENGTH TO FIGHT WE STILL HAVE THE STRENGTH TO FIGHT"
+ OLE_R_i_see_dawn_through_my_burned_eyes:0 "Through burnt eyelids I see the dawn"
+ OLE_R_i_see_dawn_through_my_burned_eyes_desc:0 "The sun continues to shine and rise every day, but it gets dimmer every day. We can still see the light. When the last ray of sunlight goes out, we will find the Sun inside ourselves. The darkness will be blinded, we only need to fight to the end.But even if we lose the battle, there is no turning back. We will go forward, and even losing battle after battle, we will continue on our way. Because all other roads are closed.\n\All that remains is to go to meet death itself."
+ OLE_R_i_open_my_eyes_and_see_it:0 "I open my eyes, there is a man standing over me"
+
+ OLE_R_great_horror_that_has_no_name:0 "The Great Horror that has no name"
+ OLE_R_great_horror_that_has_no_name_desc:0 "It's a monster - a monster with no name! A monster who knows no good. The queen who will be destroyed."
+ OLE_R_they_came_like_snow_drop:0 "They came like an avalanche, like a Black Stream"
+ OLE_R_they_came_like_snow_drop_desc:0 "The nauseating bugs attacked us unexpectedly when we weren't ready for it. We did not plan a defense against them. But it would be useless. A stream of black fire from the east rained down on us, and there was nothing we could do. We didn't have a plan. And now we have nothing but one abstract goal. Live. To die for others to live. Memorize the names of others so they don't forget themselves.\n\n We remember. We remember that the fawn's name was Jarno, and those sisters were Kata and Suvi. And we will not let the black fire take away this memory from us."
+ OLE_R_they_crashed_us:0 "They just swept us away and trampled us into the mud"
+
+ OLE_R_our_signs_are_burried:0 "All our banners and pennants are driven into the sand"
+
+ OLE_R_they_destroyed_everything:0 "They destroyed everything"
+ OLE_R_they_destroyed_everything_desc:0 "There is nothing left that belonged to us before. Our honor is trampled, our houses are burned, but our spirit is not broken. It's not over yet. These insect-like scum will not be able to break our spirit. AS LONG AS THE LAST DEER IS ALIVE, OLENIA IS ALIVE. Let them destroy everything. Let's not have anything to fight for anymore. Well, let it be.\n\n We will fight just to live."
+ OLE_R_they_killed_all_of_us:0 "They killed all of us"
+ OLE_R_they_killed_all_of_us_desc:0 ""
+
+ ##### DECISIONS 
+
+
+ ##### CONCERNS
+
+ 
+ ##### IDEAS
+ OLE_R_in_the_ashes:0 "A ray of light in the middle of ashes"
+ OLE_R_mobilisation:0 "Mobilization of everything that exists"
+ 
+ #### OOB
+ 
+ #### COSMETIC TAGS
+ 
+ #### TOOLTIPS
+ 
+ olenian_resistance_tt:0 "§The Kenyan Resistance will start operating somewhere in the regions of Sakara§!.\n\n§Resist the decision to immediately humiliate them§!... or\n\r Reap the fruits of what you have created§!."
+
+ #### Factions
+
+ #### TRAITS 
+ 
+ 
+ #### EVENTS
+ 
+ olenian_resistance.1.t:0 "Resistance"
+ olenian_resistance.1.d:0 "Krieger was not particularly concerned about the state of the garrisons in his protectorate. "A steely will and a victorious spirit will allow the Lyctidians to defeat any enemies in their path," he always said when it came to the army. However, his administrative assistants, who did all the paperwork, were getting more and more worried every day. The weapon disappears. Warehouses with provisions are burning down. The patrolmen leave for the post and do not return. Similar news came from the most remote corners of Olenia, from where the changeling camps had not yet been properly established.But no one reported this to Krieger - everyone was afraid. Or they just knew it was useless.\n\n"But you, brethren, are not in darkness, so that the day may find you like a thief."\n\n--- Somewhere in one of the coastal settlements of Olenia ---\n\n- So, what are the successes of the fifth detachment?\n\n- The Changeling warehouse with provisions was blown up. It seems they kept their weapons in the same place with other supplies. Now we are waiting for news about the bombing of the railway tracks.\n\n- Excellent. Keep up the good work. And yes, I hope you haven't forgotten? What do you think the names of the stars in the sky would be?\n\n is a good question. I think even the gods know the answer, because every star is a monster.\n\n- Great. You can go now.\n\n- That's right, Queen Velvet!"
+ olenian_resistance.1.A:0" Resistance? Unacceptable!"

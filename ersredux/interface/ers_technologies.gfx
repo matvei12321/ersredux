@@ -1,0 +1,179 @@
+spriteTypes = {
+	# RACE  TECH
+	
+	
+	
+	
+	
+	spriteType = {
+		name = "GFX_pegasi_folder_tab"
+		textureFile = "gfx/interface/techtree/techtree_magic_pegasi_tab.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_chem_tech_folder_tab"
+		textureFile = "gfx/interface/techtree/techtree_chem_tech_tab.tga"
+		noOfFrames = 2
+	}
+	
+	###Thestrals
+	SpriteType = {
+		name = "GFX_tech_thestrals_medium"
+		texturefile = "gfx/interface/technologies/thestrals.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_thestrals2_medium"
+		texturefile = "gfx/interface/technologies/thestrals2.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_thestrals3_medium"
+		texturefile = "gfx/interface/technologies/thestrals3.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_thestrals4_medium"
+		texturefile = "gfx/interface/technologies/thestrals4.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_thestrals5_medium"
+		texturefile = "gfx/interface/technologies/thestrals5.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_thestrals6_medium"
+		texturefile = "gfx/interface/technologies/thestrals6.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_mountain_children_medium"
+		texturefile = "gfx/interface/technologies/mountain_children.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_jungle_exploration_medium"
+		texturefile = "gfx/interface/technologies/jungle_exploration.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_24_7_production_medium"
+		texturefile = "gfx/interface/technologies/24_7_production.dds"
+	}
+
+	
+	SpriteType = {
+		name = "GFX_toxic_research_medium"
+		texturefile = "gfx/interface/technologies/chem/toxic_research.tga"
+	}
+	SpriteType = {
+		name = "GFX_industrial_gas_using_medium"
+		texturefile = "gfx/interface/technologies/chem/industrial_gas_using.tga"
+	}
+	SpriteType = {
+		name = "GFX_chemical_weapons_tech_medium"
+		texturefile = "gfx/interface/technologies/chemical_equipment.tga"
+	}
+	SpriteType = {
+		name = "GFX_optimised_protection_measures_medium"
+		texturefile = "gfx/interface/technologies/chem/chemical_protection.tga"
+	}
+	
+	
+	SpriteType = {
+		name = "GFX_air_chem_war_medium"
+		texturefile = "gfx/interface/technologies/chem/chemical_air.tga"
+	}
+	SpriteType = {
+		name = "GFX_haber_cannon_nsb_medium"
+		texturefile = "gfx/interface/technologies/chem/chemical_tank.tga"
+	}
+	SpriteType = {
+		name = "GFX_haber_cannon_nonsb_medium"
+		texturefile = "gfx/interface/technologies/chem/chemical_tank.tga"
+	}
+	SpriteType = {
+		name = "GFX_corrosive_waste_medium"
+		texturefile = "gfx/interface/technologies/chem/chemical_corrosia.tga"
+	}
+	SpriteType = {
+		name = "GFX_maximise_chem_prod_medium"
+		texturefile = "gfx/interface/technologies/chem/ultra_gassing.tga"
+	}
+	
+	
+	
+	SpriteType = {
+		name = "GFX_pegasi_unit_tech_medium"
+		texturefile = "gfx/interface/technologies/pegasi/pegasi_armor.tga"
+	}
+	SpriteType = {
+		name = "GFX_flight_techinque_1_medium"
+		texturefile = "gfx/interface/technologies/pegasi/pegasi_flight1.tga"
+	}
+	SpriteType = {
+		name = "GFX_flight_techinque_2_medium"
+		texturefile = "gfx/interface/technologies/pegasi/pegasi_flight2.tga"
+	}
+	SpriteType = {
+		name = "GFX_flight_techinque_3_medium"
+		texturefile = "gfx/interface/technologies/pegasi/pegasi_flight3.tga"
+	}
+	SpriteType = {
+		name = "GFX_land_pegasi_equipment_medium"
+		texturefile = "gfx/interface/technologies/pegasi/pegasi_earth1.tga"
+	}
+	SpriteType = {
+		name = "GFX_smithing_technology_medium"
+		texturefile = "gfx/interface/technologies/pegasi/pegasi_blacksmiths.tga"
+	}
+	SpriteType = {
+		name = "GFX_land_pegasi_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/pegasi/pegasi_earth2.tga"
+	}
+	SpriteType = {
+		name = "GFX_exowings_medium"
+		texturefile = "gfx/interface/technologies/pegasi/exo_wings.tga"
+	}
+	SpriteType = {
+		name = "GFX_universal_combination_medium"
+		texturefile = "gfx/interface/technologies/pegasi/pegasi_combination.tga"
+	}
+	SpriteType = {
+		name = "GFX_heat_tech_medium"
+		texturefile = "gfx/interface/technologies/pegasi/pegasi_heat_control.tga"
+	}
+	SpriteType = {
+		name = "GFX_cold_tech_medium"
+		texturefile = "gfx/interface/technologies/pegasi/pegasi_cold_control.tga"
+	}
+	SpriteType = {
+		name = "GFX_weather_control_medium"
+		texturefile = "gfx/interface/technologies/pegasi/weather_control.tga"
+	}
+	
+	
+	
+	
+	
+	SpriteType = {
+		name = "GFX_pegasi_folder_background"
+		texturefile = "gfx/interface/techtree/pegasi_folder_bg.tga"
+	}
+	SpriteType = {
+		name = "GFX_chemical_folder_background"
+		texturefile = "gfx/interface/techtree/chemical_folder.tga"
+	}
+	
+	
+	
+	
+	
+	SpriteType = {
+		name = "GFX_chemical_weapons_tech_medium"
+		texturefile = "gfx/interface/technologies/chem/chemical_equipment1.tga"
+	}
+	SpriteType = {
+		name = "GFX_zver_1_chem_rifle_medium"
+		texturefile = "gfx/interface/technologies/chem/chemical_equipment2.tga"
+	}
+	SpriteType = {
+		name = "GFX_strategical_bd_launcher_medium"
+		texturefile = "gfx/interface/technologies/chem/chemical_equipment2.tga"
+	}
+	
+	
+}

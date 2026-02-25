@@ -1,0 +1,20 @@
+desert_annex_cat = {
+	icon = EQS_militias_cat
+	
+	priority = 50
+	
+	allowed = {
+			OR = {
+				controls_state = 89
+				controls_state = 78
+				controls_state = 44
+				controls_state = 47
+				controls_state = 49
+				controls_state = 94
+				controls_state = 38
+				controls_state = 21
+			}
+	}
+	
+	visible_when_empty = no
+}

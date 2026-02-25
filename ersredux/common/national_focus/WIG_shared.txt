@@ -1,0 +1,2605 @@
+
+shared_focus = {
+		id = WIG_economic_bureau_shared
+		icon = GFX_goal_WNG_industrial_project2
+		cost = 4
+		x = 5
+		y = 0
+		completion_reward = {
+			custom_effect_tooltip = WIG_economic_crisis_bureau_tt
+			set_country_flag = WIG_economic_bureau_flag
+		}
+		available = {
+			NOT = {has_idea = WIG_political_deadlock}
+		}
+	}
+
+shared_focus = {
+		id = WIG_regio_esercito_shared
+		icon = GFX_goal_Royal_Wingbardian_Army_1
+		completion_reward = {
+			army_experience = 25
+			}
+		available = {
+			NOT = {has_idea = WIG_political_deadlock}
+		}			
+		cost = 2
+		x = 20
+		y = 0
+	}
+
+	shared_focus = {
+		id = WIG_train_griffano_falcor
+		icon = GFX_goal_WNG_rail
+		cost = 2
+		prerequisite = {
+			focus = WIG_economic_bureau_shared
+		}
+
+		available = {
+			NOT = {has_idea = WIG_political_deadlock}
+		}
+		completion_reward = {
+			build_railway = {
+				level = 2
+				build_only_on_allied = yes
+			controller_priority = {
+				base = 1
+				modifier = {
+				tag = WIG
+				add = 2
+				}
+			}
+			fallback = yes
+			path = { 6991 10472 6669 4731 4847 7754 }
+			start_province = 6991
+			target_province = 7754
+			}
+			374 = {
+				set_building_level = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		available = {
+			has_war = no
+		}
+		x = 2
+		y = 1
+
+	}
+	shared_focus = {
+		id = WIG_oulivetti_electronics
+		icon = GFX_goal_WNG_sciencefair
+		cost = 2
+		prerequisite = {
+			focus = WIG_train_griffano_falcor
+		}
+		available = {
+			has_war = no
+		}
+		x = 2
+		y = 2
+		completion_reward = {
+		add_tech_bonus = {
+			bonus = 2.0
+			uses = 3
+			category = electronics
+			}
+		}
+	}
+	shared_focus = {
+		id = WIG_heavy_invest
+		icon = GFX_goal_WNG_works
+		cost = 2
+		prerequisite = {
+			focus = WIG_oulivetti_electronics
+		}	
+		completion_reward = {
+			set_country_flag = WIG_eco_flag_1
+			swap_ideas = {
+				remove_idea = WIG_economic_crisis
+				add_idea = WIG_economic_crisis_1
+			}
+			372 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+			}
+			371 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+			}			
+		}
+		available = {
+			has_war = no
+		}		
+		x = 2
+		y = 3
+	}
+	shared_focus = {
+		id = WIG_squarona_ges
+		icon = GFX_goal_dam
+		cost = 2
+		prerequisite = {
+			focus = WIG_economic_bureau_shared
+		}
+		available = {
+			has_country_flag = WIG_eco_flag_1
+			has_war = no
+		}
+		completion_reward = {
+			add_ideas = WIG_squarona_ges
+				375 = { add_extra_state_shared_building_slots = 2}
+		}		
+		x = 4
+		y = 1
+
+	}
+	shared_focus = {
+		id = WIG_fezara_chromium
+		icon = GFX_goal_WNG_riches
+		cost = 2
+		prerequisite = {
+			focus = WIG_squarona_ges
+		}
+		available = {
+			has_war = no
+		}	
+		completion_reward = {
+			add_resource = {
+				type = chromium
+				amount = 12
+				state = 370
+			}
+		}
+		x = 4
+		y = 2
+
+	}
+	shared_focus = {
+		id = WIG_tal_avto_zavod
+		icon = GFX_goal_Automobile_Production
+		cost = 2
+		prerequisite = {
+			focus = WIG_fezara_chromium
+		}
+		completion_reward = {
+			set_country_flag = WIG_eco_flag_2
+			swap_ideas = {
+				remove_idea = WIG_economic_crisis_1
+				add_idea = WIG_economic_crisis_2
+			}
+			custom_effect_tooltip = WIG_taz_mio_focus_tt
+		}
+		available = {
+			has_war = no
+		}
+		x = 4
+		y = 3
+
+	}
+	shared_focus = {
+		id = WIG_train_fakochero_bloodtalon
+		icon = GFX_goal_WNG_rail
+		cost = 2
+		prerequisite = {
+			focus = WIG_heavy_invest
+		}
+		prerequisite = {
+			focus = WIG_tal_avto_zavod
+		}
+		available = {
+			has_war = no
+
+		}
+		completion_reward = {
+			build_railway = {
+				level = 1
+				build_only_on_allied = yes
+			controller_priority = {
+				base = 1
+				modifier = {
+				tag = WIG
+				add = 2
+				}
+			}
+			fallback = yes
+			path = { 92 3157 9102 }
+			start_province = 92
+			target_province = 9102
+			}	
+		}
+		x = 3
+		y = 4
+
+	}
+	shared_focus = {
+		id = WIG_subsidise_talonieli
+		icon = GFX_WNG_B_prod
+		cost = 6
+		prerequisite = {
+			focus = WIG_economic_bureau_shared
+		}
+		available = {
+			has_country_flag = WIG_eco_flag_2
+			has_war = no
+		}	
+		completion_reward = {
+			add_timed_idea = {
+				idea = WIG_talonieli_subsidise
+				days = 90
+			}
+			set_country_flag = WIG_flag_talonieli
+		custom_effect_tooltip = WIG_talonieli_mio_focus_tt
+		}
+		x = 6
+		y = 1
+
+	}
+	shared_focus = {
+		id = WIG_small_business
+		icon = GFX_WNG_B_local
+		cost = 5
+		prerequisite = {
+			focus = WIG_subsidise_talonieli
+		}
+		available = {
+			has_war = no
+		}
+		completion_reward = {
+			add_ideas = { WIG_small_business_idea }
+		}
+		x = 6
+		y = 2
+
+	}
+	shared_focus = {
+		id = WIG_mech_selkhoz
+		icon = GFX_focus_generic_electricity
+		cost = 6
+		prerequisite = {
+			focus = WIG_small_business
+		}		
+		completion_reward = {
+			set_country_flag = WIG_eco_flag_3
+			swap_ideas = {
+				remove_idea = WIG_economic_crisis_2
+				add_idea = WIG_economic_crisis_3
+			}		
+			swap_ideas = {
+				remove_idea = pre_industrial_society
+				add_idea = outdated_industry
+			}
+		}
+		available = {
+			has_war = no
+		}
+		x = 6
+		y = 3
+
+	}
+	shared_focus = {
+		id = WIG_mech_mines
+		icon = GFX_goal_WNG_works
+		cost = 3
+		prerequisite = {
+			focus = WIG_economic_bureau_shared
+		}
+		available = {
+			has_country_flag = WIG_eco_flag_3
+			has_war = no
+		}
+		completion_reward = {
+
+			add_resource = {
+				type = aluminium
+				amount = 10
+				state = 369
+			}	
+			add_resource = {
+				type = tungsten
+				amount = 16
+				state = 369
+			}				
+			add_resource = {
+				type = steel
+				amount = 10
+				state = 371
+			}				
+			add_resource = {
+				type = aluminium
+				amount = 10
+				state = 371
+			}			
+		}
+		x = 8
+		y = 1
+
+	}
+	shared_focus = {
+		id = WIG_stal_soarento
+		icon = GFX_goal_WNG_steel
+		cost = 4
+		prerequisite = {
+			focus = WIG_mech_mines
+		}
+		available = {
+			has_war = no
+		}
+		completion_reward = {
+			add_resource = {
+				type = steel
+				amount = 10
+				state = 369
+			}			
+		}
+		x = 8
+		y = 2
+
+	}
+	shared_focus = {
+		id = WIG_black_gold
+		icon = GFX_WNG_B_oil
+		cost = 3
+		prerequisite = {
+			focus = WIG_stal_soarento
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = WIG_economic_crisis_3
+				add_idea = WIG_economic_crisis_4
+			}
+			add_resource = {
+				type = oil
+				amount = 10
+				state = 375
+			}			
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = 	cat_synth_oil
+			}
+		}
+		available = {
+			has_war = no
+		}
+		x = 8
+		y = 3
+
+	}
+	shared_focus = {
+		id = WIG_regia_aeronautic_shared
+		icon = GFX_goal_Royal_Air_Force_2
+		cost = 2
+		available = {
+			has_war = no
+			}
+		completion_reward = {
+			custom_effect_tooltip = WIG_regia_aeronautica_mio_tt
+			set_country_flag = WIG_regia_flag
+		}
+		available = {
+			NOT = {has_idea = WIG_political_deadlock}
+		}		
+		x = 25
+		y = 0
+
+	}
+	shared_focus = {
+		id = WIG_economic_miracle
+		icon = GFX_goal_WNG_balance
+		cost = 10
+		prerequisite = {
+			focus = WIG_alco_monopoly
+		}
+		prerequisite = {
+			focus = WIG_train_fakochero_bloodtalon
+		}		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = WIG_economic_crisis_4
+				add_idea = WIG_economic_miracle
+			}
+		}
+		x = 5
+		y = 5
+		available = {
+			has_war = no
+		}
+	}	
+	shared_focus = {
+		id = WIG_alco_monopoly
+		icon = GFX_goal_GEO_wine 
+		cost = 4
+		prerequisite = {
+			focus = WIG_mech_selkhoz
+		}
+		prerequisite = {
+			focus = WIG_black_gold
+		}		
+		completion_reward = {
+			add_ideas = {WIG_alco_idea}
+		}
+		x = 7
+		y = 4
+		available = {
+			has_war = no
+		}
+	}	
+# military
+	shared_focus = {
+		id = WIG_talkara_academy
+		icon = GFX_goal_officers
+		cost = 5
+		prerequisite = {
+			focus =  WIG_regio_esercito_shared
+		}
+		completion_reward = {
+			add_ideas = { WIG_talkara_academy_idea }
+		}		
+		x = 20
+		y = 1
+
+	}
+	shared_focus = {
+		id = WIG_kemerskai_doctrine
+		icon = GFX_goal_national_artillery
+		cost = 4
+		prerequisite = {
+			focus = WIG_talkara_academy
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = { 
+				cost_reduction = 1
+				uses = 2
+				category = cat_superior_firepower
+			}
+			hidden_effect = {
+				swap_ideas = {
+					remove_idea = WIG_trash_army_idea
+					add_idea = WIG_trash_army_idea_1
+			}
+		}
+		}
+
+		x = 20
+		y = 2
+	}
+	shared_focus = {
+		id = WIG_vnii_tochmag
+		icon = GFX_goal_technological_supremacy
+		cost = 2
+		prerequisite = {
+			focus = WIG_kemerskai_doctrine
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = radar_tech
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = computing_tech
+			}
+		}
+		x = 21
+		y = 3
+	}
+
+	shared_focus = {
+		id = WIG_gun_konkurs
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		cost = 4
+		prerequisite = {
+			focus = WIG_kemerskai_doctrine
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.5
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+		x = 19
+		y = 3
+	}		
+	shared_focus = {
+		id = WIG_new_arty
+		icon = GFX_goal_artillery_factories
+		cost = 4
+		prerequisite = {
+			focus = WIG_gun_konkurs
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = artillery
+			}
+		}		
+		x = 19
+		y = 4
+	}	
+	shared_focus = {
+		id = WIG_standart_militia
+		icon = GFX_goal_conscription
+		cost = 4
+		prerequisite = {
+			focus = WIG_new_arty
+		}
+		completion_reward = {
+			add_ideas = {WIG_unification_guns_idea}
+			
+			hidden_effect = {
+				IF = { 
+					limit = {has_idea = WIG_trash_army_idea_1}
+					swap_ideas = {
+						remove_idea = WIG_trash_army_idea_1
+						add_idea = WIG_trash_army_idea_2
+					}
+				}
+				else_if = {
+					limit = {NOT = {has_idea = WIG_trash_army_idea_1} }
+					swap_ideas = {
+						remove_idea = WIG_trash_army_idea_2
+						add_idea = WIG_trash_army_idea_3
+					}
+				}
+				else = { add_political_power = 1}
+			}
+		}
+		x = 19
+		y = 5 
+	}
+	shared_focus = {
+		id = WIG_national_arsenal
+		icon = GFX_goal_national_arsenal
+		cost = 4
+		prerequisite = {
+			focus = WIG_vnii_tochmag
+		}
+		completion_reward = {
+			371 = {
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = arms_factory
+						level = 4
+						instant_build = yes
+					}
+			}
+			set_temp_variable = { arsenal_gunz = 1}
+			randomize_temp_variable = {
+				var = arsenal_gunz
+#				disrtibution = uniform
+				min = 1000
+				max = 2300
+			}
+			custom_effect_tooltip = WIG_arsenal_variable_moment_tt # оно по другому 0 снаряги показывает
+
+			hidden_effect = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = var:arsenal_gunz
+					producer = WIG
+				}
+			}
+		}		
+		x = 21
+		y = 4
+	}	
+	shared_focus = {
+		id = WIG_gotta_go_fast
+		icon = GFX_truck_gen
+		cost = 4
+		prerequisite = {
+			focus = WIG_national_arsenal
+		}
+		completion_reward = {
+			add_ideas = {WIG_speed_ggf_idea}
+			
+			hidden_effect = {
+				IF = { 
+					limit = {has_idea = WIG_trash_army_idea_1}
+					swap_ideas = {
+						remove_idea = WIG_trash_army_idea_1
+						add_idea = WIG_trash_army_idea_2
+					}
+				}
+				else_if = {
+					limit = { NOT = {has_idea = WIG_trash_army_idea_1} }
+					swap_ideas = {
+						remove_idea = WIG_trash_army_idea_2
+						add_idea = WIG_trash_army_idea_3
+					}
+				}
+				else = {add_political_power=1}
+			}			
+
+		}
+		x = 21
+		y = 5
+	}		
+	shared_focus = {
+		id =  WIG_modern_army
+		icon = GFX_goal_WNG_royalarmy
+		cost = 10
+		prerequisite = {
+			focus = WIG_standart_militia
+		}
+		prerequisite = {
+			focus = WIG_gotta_go_fast
+		}		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = WIG_trash_army_idea_3
+				add_idea = WIG_modern_army_idea
+			}
+		}
+		x = 20
+		y = 6
+	}	
+#aero	air
+	shared_focus = {
+		id = WIG_wingpolis_aero
+		icon = GFX_goal_new_airforce
+		cost = 4
+		prerequisite = {
+			focus = WIG_look_at_skies 
+		}
+		completion_reward = { 
+			random_owned_state = { 
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				} 
+			}
+		}
+		x = 25
+		y = 2
+	}
+	
+	shared_focus = {
+		id = WIG_look_at_skies
+		icon = GFX_goal_POL_recon_aircraft
+		cost = 3
+		prerequisite = {
+			focus = WIG_regia_aeronautic_shared
+		}
+		available = {
+		
+		}
+		completion_reward = {
+			air_experience = 25
+		}
+		x = 25
+		y = 1
+	}
+	shared_focus = {
+		id = WIG_air_fighter
+		icon = GFX_goal_generic_air_fighter2_new
+		cost = 3
+		prerequisite = {
+			focus = WIG_wingpolis_aero
+		}
+		mutually_exclusive = { focus = WIG_air_bombers }		
+		available = {
+		
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = light_fighter
+			}
+		}
+		x = 24
+		y = 3
+	}
+	shared_focus = {
+		id = WIG_air_new_airbases
+		icon = GFX_goal_generic_air_CAS_new
+		cost = 3
+		prerequisite = {
+			focus = WIG_air_fighter
+			focus = WIG_air_bombers			
+		}	
+		available = {
+		
+		}
+		completion_reward = { 
+			random_owned_state = { 
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				} 
+			}
+		}		
+		x = 25
+		y = 4
+	}
+	shared_focus = {
+		id = WIG_air_radar
+		icon = GFX_goal_generic_radar
+		cost = 3
+		prerequisite = {
+			focus = WIG_air_new_airbases
+		}
+		available = {
+		
+		}
+		x = 25
+		y = 5
+	}
+	shared_focus = {
+		id = WIG_air_bombers
+		icon = GFX_goal_generic_air_tactical_bomber_new
+		cost = 3
+		prerequisite = {
+			focus = WIG_wingpolis_aero
+		}
+		mutually_exclusive = { focus = WIG_air_fighter }
+		available = {
+		
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = tactical_bomber
+			}
+		}
+		x = 26
+		y = 3
+	}
+	shared_focus = {
+		id = WIG_rocket_tech
+		icon = GFX_goal_Jet_Engine_Research
+		cost = 3
+
+		prerequisite = {
+			focus = WIG_air_radar
+		}
+		available = {
+			date = 1011.1.1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = jet_technology
+				category = rocketry
+			}
+		}
+		x = 25
+		y = 6
+	}
+#fleet	
+	shared_focus = {
+		id = WIG_regia_marina_shared
+		icon = GFX_goal_WNG_royalnavy
+		cost = 1 
+		available = {
+		
+		}
+		x = 15
+		y = 0
+		available = {
+			NOT = {has_idea = WIG_political_deadlock}
+		}	
+	
+	}
+	shared_focus = {
+		id = WIG_fleet_1
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 1 
+		prerequisite = {
+			focus = WIG_regia_marina_shared
+		}
+		
+		available = {
+		
+		}
+		
+		completion_reward = { 
+			navy_experience = 20
+		}
+		x = 15
+		y = 1
+	}
+		
+
+	shared_focus = {
+		id = WIG_fleet_2
+		icon = GFX_goal_generic_navy_submarine
+		cost = 1 
+		prerequisite = {
+			focus = WIG_fleet_1
+		}
+		
+		available = {
+		
+		}
+	
+		completion_reward = {
+			add_tech_bonus = {
+			    name = navy_bonus
+			    bonus = 1.0
+			    uses = 2
+			    category = ss_tech
+		    }		
+		}
+		x = 15
+		y = 2
+	}
+
+	shared_focus = {
+		id = WIG_fleet_3
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 1 
+		prerequisite = {
+			focus = WIG_fleet_2
+		}
+		
+		available = {
+		
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = navy_bonus
+				bonus = 1.0
+				uses = 2
+				technology = basic_cruiser_armor_scheme
+				technology = basic_heavy_armor_scheme
+				technology = improved_heavy_armor_scheme
+			}
+		}		
+		x = 14
+		y = 3
+	}
+
+	shared_focus = {
+		id = WIG_fleet_4
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 1 
+		prerequisite = {
+			focus = WIG_fleet_2
+		}
+		
+		available = {
+		
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = navy_bonus
+				bonus = 3.0
+				uses = 1
+				technology = basic_heavy_battery
+				technology = improved_heavy_battery
+				technology = advanced_heavy_battery
+			}
+		}		
+		x = 16
+		y = 3
+	}
+	
+	shared_focus = {
+		id = WIG_fleet_5
+		icon = GFX_goal_generic_occupy_states_coastal
+		cost = 1 
+		prerequisite = {
+			focus = WIG_fleet_3
+		}
+		
+		available = {
+		
+		}
+		
+		completion_reward = { 
+		372 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		x = 14
+		y = 5
+	}
+	
+	shared_focus = {
+		id = WIG_fleet_6
+		icon = GFX_focus_sic_flag
+		cost = 1 
+		prerequisite = {
+			focus = WIG_fleet_4
+		}
+		
+		available = {
+		
+		}
+		completion_reward = { 
+			add_ideas = FAT_grand_strategy_game
+		}		
+		x = 16
+		y = 5
+	}
+	
+	shared_focus = {
+		id = WIG_fleet_7
+		icon = GFX_goal_generic_amphibious_assault
+		cost = 1 
+		prerequisite = {
+			focus = WIG_fleet_3
+		}
+		prerequisite = {
+			focus = WIG_fleet_4
+		}
+		
+		available = {
+		
+		}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus WIG_fleet_7"
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				add_doctrine_cost_reduction = {
+					name = special_forces_bonus
+					cost_reduction = 0.75
+					uses = 1
+					category = cat_marines_doctrine
+				}
+				add_tech_bonus = {
+					name = special_forces_bonus
+					bonus = 0.75
+					uses = 1
+					category = marine_tech
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = special_forces_bonus
+					bonus = 1.0
+					uses = 1
+					category = marine_tech
+				}
+			}
+		}		
+		x = 15
+		y = 4
+	}	
+	
+	shared_focus = {
+		id = WIG_fleet_9
+		icon = GFX_goal_battleship
+		cost = 1 
+		prerequisite = {
+			focus = WIG_fleet_7
+		}
+		prerequisite = {
+			focus = WIG_fleet_6
+		}
+		prerequisite = {
+			focus = WIG_fleet_5
+		}
+		
+		available = {
+		
+		}
+		completion_reward = {
+			custom_effect_tooltip = TRD_battleship_tp
+			hidden_effect = {
+			    if = {
+	                limit = {
+		                has_dlc = "Man the Guns"
+	                }
+	                load_oob = "TRD_chancellor"
+			    }
+	            else = {
+		            load_oob = "TRD_chancellor_2"
+				}
+			}
+		}
+		x = 15
+		y = 6
+	}
+
+#starting_politic	
+	
+	shared_focus = {
+		id = WIG_king_speaks_shared
+		icon = GFX_goal_WNG_re
+		
+		completion_reward = {
+			add_political_power = 150
+			custom_effect_tooltip = WIG_king_speaks_tt
+		}	
+		cost = 0.5
+		x = 37
+		y = 0
+	}
+	shared_focus = {
+		id = WIG_call_parliament
+		icon = GFX_goal_WNG_parliament
+		prerequisite = {
+			focus = WIG_king_speaks_shared
+		}
+		select_effect = {
+			country_event = { 
+				id = wig_politcs.2
+				days = 1
+			}
+		} 
+		completion_reward = {
+			country_event = wig_politcs.1
+		}	
+		cost = 7.2
+		x = 37
+		y = 1
+	}	
+	shared_focus = {
+		id = WIG_commies_path
+		icon = GFX_goal_WNG_COM_ps
+		prerequisite = {
+			focus = WIG_call_parliament
+		}
+		available = {always = no}		
+		completion_reward = {
+
+		}	
+		cost = 1
+		x = 32
+		y = 2
+	}	
+	shared_focus = {
+		id = WIG_trudovoi_kodeks
+		icon = GFX_goal_WNG_COM_const
+		prerequisite = {
+			focus = WIG_commies_path
+		}
+		
+		completion_reward = {
+			add_stability = 0.15
+			add_political_power = 150
+		}	
+		cost = 7.2
+		x = 31
+		y = 3
+	}	
+	shared_focus = {
+		id = WIG_grifsomol
+		icon = GFX_goal_WNG_COM_edu
+		prerequisite = {
+			focus = WIG_commies_path
+		}
+		
+		completion_reward = {
+			add_stability = 0.15
+			add_political_power = 150
+		}	
+		cost = 2.9
+		x = 33
+		y = 3
+	}	
+	shared_focus = {
+		id = WIG_increase_industrial
+		icon = GFX_goal_WNG_COM_5plan
+		prerequisite = {
+			focus = WIG_grifsomol
+		}		
+		prerequisite = {
+			focus = WIG_trudovoi_kodeks
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = WIG_WIP_tt
+		}	
+		cost = 4.3
+		x = 32
+		y = 4
+	}	
+	shared_focus = {
+		id = WIG_workers_samoupr
+		icon = GFX_goal_WNG_COM_normalcy
+		prerequisite = {
+			focus = WIG_increase_industrial
+		}
+		
+		completion_reward = {
+			add_stability = 0.15
+			add_political_power = 150
+		}	
+		cost = 6.5
+		x = 32
+		y = 5
+	}	
+	shared_focus = {
+		id = WIG_nazi_path
+		icon = GFX_goal_WNG_eagle
+		prerequisite = {
+			focus = WIG_call_parliament
+		}
+		available = {always = no}		
+		completion_reward = {
+		}	
+		cost = 1
+		x = 37
+		y = 2
+	}	
+	shared_focus = {
+		id = WIG_nationalise_heavy
+		icon = GFX_goal_factory_complex
+		prerequisite = {
+			focus = WIG_nazi_path
+		}
+		
+		completion_reward = {
+			random_owned_state = { 
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+					} 
+			}
+			random_owned_state = { 
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+					} 
+			}
+		}	
+		cost = 7.2
+		x = 36
+		y = 3
+	}	
+	shared_focus = {
+		id = WIG_free_food
+		icon = GFX_goal_PAL_Food_Import
+		prerequisite = {
+			focus = WIG_nazi_path
+		}
+		
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 100
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.06
+			}
+		}	
+		cost = 2.9
+		x = 38
+		y = 3
+	}	
+	shared_focus = {
+		id = WIG_empower_stazi
+		icon = GFX_WNG_B_ovra
+		prerequisite = {
+			focus = WIG_free_food
+		}
+		prerequisite = {
+			focus = WIG_nationalise_heavy
+		}
+		
+		completion_reward = {
+			create_intelligence_agency = {
+				name = "SIM"
+				icon = GFX_intelligence_agency_logo_wng
+			}			
+		}	
+		cost = 4.3
+		x = 37
+		y = 4
+	}	
+	shared_focus = {
+		id = WIG_talont_massacre
+		icon = GFX_WNG_B_fal
+		prerequisite = {
+			focus = WIG_empower_stazi
+		}
+		
+		completion_reward = {
+			530 = {remove_dynamic_modifier = { modifier = WIG_falcor_resistance_sleeping_modifier } }
+		}	
+		cost = 6.5
+		x = 37
+		y = 5
+	}	
+	shared_focus = {
+		id = WIG_neutral_path
+		icon = GFX_goal_WNG_moderate
+		prerequisite = {
+			focus = WIG_call_parliament
+		}
+		available = {always = no}
+		
+		completion_reward = {
+		}	
+		cost = 1
+		x = 42
+		y = 2
+	}	
+	shared_focus = {
+		id = WIG_big_brain_time
+		icon = GFX_goal_WNG_education
+		prerequisite = {
+			focus = WIG_neutral_path
+		}
+		
+		completion_reward = {
+			add_research_slot = 1
+		}	
+		cost = 7.2
+		x = 41
+		y = 3
+	}	
+	shared_focus = {
+		id = WIG_what_about_king
+		icon = GFX_goal_WNG_absolute
+		prerequisite = {
+			focus = WIG_neutral_path
+		}
+		
+		completion_reward = {
+			add_stability = 0.15
+		}	
+		cost = 2.9
+		x = 43
+		y = 3
+	}	
+	shared_focus = {
+		id = WIG_falcor_is_good
+		icon = GFX_focus_generic_treaty_red
+		prerequisite = {
+			focus = WIG_what_about_king
+		}	
+		prerequisite = {
+			focus = WIG_big_brain_time
+		}
+		
+		completion_reward = {
+			remove_ideas = {WIG_falcor_resistance}
+			custom_effect_tooltip = WIG_WIP_tt
+		}	
+		cost = 4.3
+		x = 42
+		y = 4
+	}	
+	shared_focus = {
+		id = WIG_wing_spring
+		icon = GFX_goal_WNG_wing_rise
+		prerequisite = {
+			focus = WIG_falcor_is_good
+		}
+		
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 200
+		}	
+		cost = 6.5
+		x = 42
+		y = 5
+	}	
+	shared_focus = {
+		id = WIG_welcome_to_falcor
+		icon = GFX_goal_WNG_night
+		prerequisite = {
+			focus = WIG_talont_massacre
+			focus = WIG_wing_spring
+			focus = WIG_workers_samoupr
+		}
+		
+		completion_reward = {
+			country_event = wig_politcs.4
+		}	
+		cost = 0.5
+		x = 37
+		y = 6
+	}
+# chaos
+	shared_focus = {
+		id = WIG_chaos_shared
+		icon = GFX_goal_WNG_fal
+		bypass = { 
+			country_exists = FLC
+		}
+		completion_reward = {
+
+		}	
+		
+		cost = 0.5
+		x = 36
+		y = 0
+	}
+	
+	shared_focus = {
+		id = WIG_chaos_emergency
+		icon = GFX_focus_generic_treaty_black
+		cost = 1.5
+		prerequisite = {
+			focus = WIG_chaos_shared
+		}
+		completion_reward = {
+			add_ideas = {WIG_emergency_state_idea_0}
+		}
+		x = 36
+		y = 1
+	}	
+	shared_focus = {
+		id = WIG_chaos_censorship
+		icon = GFX_zebra_censor
+		cost = 2.9
+		prerequisite = {
+			focus = WIG_chaos_emergency
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = WIG_emergency_state_idea_0
+				add_idea = WIG_emergency_state_idea_1
+				}
+		}
+		x = 36
+		y = 2
+	}
+	shared_focus = {
+		id = WIG_chaos_arm
+		icon = GFX_goal_griffon_arms_focus_com
+		cost = 2.9
+		prerequisite = {
+			focus = WIG_chaos_emergency
+		}
+		available = {
+			has_completed_focus = WIG_chaos_censorship
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 2500
+				producer = WIG
+			}				
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 400
+				producer = WIG
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment_0
+				amount = 200
+				producer = WIG
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 500
+				producer = WIG
+			}
+				
+		}
+		x = 38
+		y = 2
+		}	
+	shared_focus = {
+		id = WIG_chaos_orders # ордена
+		icon = GFX_goal_griffon_knights
+		cost = 2.9
+		prerequisite = {
+			focus = WIG_chaos_emergency
+		}
+		available = {
+			has_completed_focus = WIG_chaos_arm
+		}
+		completion_reward = {
+			custom_effect_tooltip = WIG_chaos_orders_tt
+			hidden_effect = {
+				load_oob = "WIG_orders"
+			}
+		}
+		x = 34
+		y = 2
+	}
+	shared_focus = {
+		id = WIG_chaos_roll_out
+		icon = GFX_truck_gen
+		cost = 1.5
+		prerequisite = {
+			focus = WIG_chaos_censorship
+		}		
+		prerequisite = {
+			focus = WIG_chaos_arm
+		}
+		prerequisite = {
+			focus = WIG_chaos_orders
+		}
+		completion_reward = {
+			custom_effect_tooltip = WIG_chaos_new_tree
+			mark_focus_tree_layout_dirty = yes
+			declare_war_on = { 
+				target = FLC
+				type = annex_everything
+			}
+			hidden_effect = {
+				country_ event = {
+					wig_politcs.5
+					days = 4
+				}
+			}
+		}
+		x = 36
+		y = 3
+	}
+	shared_focus = {
+		id = WIG_chaos_onwards
+		icon = GFX_goal_generic_attack_falcor
+		prerequisite = {
+			focus = WIG_chaos_roll_out
+		}
+		bypass = { has_completed_focus = WIG_chaos_roll_out }
+		allow_branch = { 
+			has_completed_focus = WIG_chaos_roll_out
+		}
+		cost = 1		
+		
+		x = 36
+		y = 4
+	}
+	shared_focus = {
+		id = WIG_chaos_conscription
+		icon = GFX_goal_conscription
+		cost = 1
+		prerequisite = {
+			focus = WIG_chaos_onwards
+		}
+		completion_reward = {
+			custom_effect_tooltip = WIG_chaos_conscription_tt
+			hidden_effect = {
+				load_oob = "WIG_emergency_draft"
+			}
+		}
+		x = 34
+		y = 5
+	}	
+	shared_focus = {
+		id = WIG_chaos_work_for_hobos
+		icon = GFX_goal_griffon_labour_plunger
+		cost = 1
+		prerequisite = {
+			focus = WIG_chaos_conscription
+		}
+		completion_reward = {
+			add_offsite_building = { 
+				type = arms_factory level = 2
+			}
+		}
+		x = 35
+		y = 6
+	}	
+	shared_focus = {
+		id = WIG_chaos_karabineri
+		icon = GFX_goal_MAF_Merc_Pilots 
+		cost = 1
+		prerequisite = {
+			focus = WIG_chaos_onwards
+		}
+		completion_reward = {
+			custom_effect_tooltip = WIG_chaos_karabineri_tt
+			hidden_effect = {
+				load_oob = "WIG_karabineri"
+			}
+		}		
+		x = 36
+		y = 5
+	}
+	shared_focus = {
+		id = WIG_chaos_tanks
+		icon = GFX_focus_generic_army_tanks2
+		cost = 1
+		prerequisite = {
+			focus = WIG_chaos_conscription
+		}
+		completion_reward = {
+			custom_effect_tooltip = WIG_chaos_arm_tt
+			hidden_effect = {
+				load_oob = "WIG_wunderwaffe"
+			}
+		}
+		x = 33
+		y = 7
+	}
+	shared_focus = {
+		id = WIG_chaos_field_help
+		icon = GFX_goal_generic_hospitals
+		cost = 1
+		prerequisite = {
+			focus = WIG_chaos_work_for_hobos
+		}
+		completion_reward = {
+			add_ideas = {WIG_field_hospitals_idea}
+		}
+		x = 35
+		y = 7
+	}	
+	shared_focus = {
+		id = WIG_chaos_diy_guns
+		icon = GFX_goal_generic_bits_gun
+		cost = 1
+		prerequisite = {
+			focus = WIG_chaos_onwards
+		}
+		completion_reward = {
+			add_offsite_building = { 
+				type = arms_factory level = 2
+			}
+		}
+		x = 38
+		y = 5
+	}
+	shared_focus = {
+		id = WIG_chaos_war_loans
+		icon = GFX_goal_bag_of_money_pony_griffon
+		cost = 1
+		prerequisite = {
+			focus = WIG_chaos_diy_guns
+		}
+		completion_reward = {
+			add_timed_idea = { 
+				idea = FLO_loan_idea
+				days = 90
+			}
+		}
+		x = 37
+		y = 6
+	}
+	shared_focus = {
+		id = WIG_chaos_buy_guns
+		icon = GFX_goal_arms_sales
+		cost = 1
+		prerequisite = {
+			focus = WIG_chaos_war_loans
+		}
+		completion_reward = {
+			create_purchase_contract = {
+				seller = MNH
+				buyer = FROM
+				civilian_factories = 2
+				equipment = {
+					type = infantry_equipment_0
+					amount = 1500
+				}
+			}
+		}
+		x = 37
+		y = 7
+	}
+	shared_focus = {
+		id = WIG_chaos_militia
+		icon = GFX_goal_griffon_levy
+		cost = 1
+		prerequisite = {
+			focus = WIG_chaos_diy_guns
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = WIG_chaos_militia_tt
+			hidden_effect = {
+				load_oob = "WIG_militia"		
+			}
+		}
+		x = 39
+		y = 7
+	}
+	shared_focus = {
+		id = WIG_chaos_kill_em_all
+		icon = GFX_focus_indy_bound_by_blood
+		available = {NOT = {country_exists = FLC}}
+		prerequisite = {
+			focus = WIG_chaos_field_help
+		}
+		prerequisite = {
+			focus = WIG_chaos_tanks
+		}
+		prerequisite = {
+			focus = WIG_chaos_militia
+		}
+		prerequisite = {
+			focus = WIG_chaos_buy_guns
+		}		
+		prerequisite = {
+			focus = WIG_chaos_karabineri
+		}
+		cost = 1		
+		
+		completion_reward = {
+			country_event = ending.1
+		}
+		
+		x = 36
+		y = 8
+	}
+#beakolini	
+	shared_focus = {
+		id = WIG_beakolini_start
+		icon = GFX_goal_WNG_meet_beakolini
+		available = {NOT = {country_exists = FLC}}
+		cost = 1		
+		
+		completion_reward = {
+			remove_ideas = {WIG_political_deadlock}
+		}
+		
+		x = 40
+		y = 0
+	}
+
+	shared_focus = {
+		id = WIG_beakolini_cats_1 # find fuel
+		icon = GFX_focus_generic_military_mission
+		available = {
+			has_completed_focus = WIG_beakolini_internal_11 
+		}
+		cost = 1		
+		relative_position_id = WIG_beakolini_start
+		prerequisite = {
+			focus = WIG_beakolini_start
+		}
+		completion_reward = {
+			set_country_flag = WIG_south_attempt_decision_flag
+			custom_effect_tooltip = WIG_decisions_tt
+		}
+		
+		x = -8
+		y = 1
+	}
+
+	shared_focus = {
+		id = WIG_beakolini_cats_2
+		icon = GFX_goal_WNG_selfrule
+		available = {
+
+		}
+		cost = 1		
+		relative_position_id = WIG_beakolini_cats_1
+		prerequisite = {
+			focus = WIG_beakolini_cats_1
+		}
+		mutually_exclusive = { focus = WIG_beakolini_cats_6 }
+		completion_reward = {
+			
+		}
+		
+		x = -1
+		y = 1
+	}
+
+	shared_focus = {
+		id = WIG_beakolini_cats_3
+		icon = GFX_goal_WNG_ras
+		available = {
+
+		}
+		cost = 1
+		relative_position_id = WIG_beakolini_cats_2
+		prerequisite = {
+			focus = WIG_beakolini_cats_2
+			focus = WIG_beakolini_cats_6
+		}
+		completion_reward = {
+			
+		}
+		
+		x = 1
+		y = 1
+	}
+
+	shared_focus = {
+		id = WIG_beakolini_cats_4
+		icon = GFX_goal_WNG_col_troops
+		available = {
+
+		}
+		cost = 1		
+		relative_position_id = WIG_beakolini_cats_3
+		prerequisite = {
+			focus = WIG_beakolini_cats_3
+		}
+		completion_reward = {
+			
+		}
+		
+		x = 0
+		y = 1	
+	}
+
+	shared_focus = {
+		id = WIG_beakolini_cats_5
+		icon = GFX_goal_WNG_triumph_zebrica
+		available = {
+
+		}
+		cost = 1		
+		relative_position_id = WIG_beakolini_cats_4
+		prerequisite = {
+			focus = WIG_beakolini_cats_4
+		}
+		prerequisite = {
+			focus = WIG_beakolini_cats_10
+			focus = WIG_beakolini_cats_9
+		}
+		
+		completion_reward = {
+			
+		}
+		
+		x = 0
+		y = 1
+	}
+
+	shared_focus = {
+		id = WIG_beakolini_cats_6
+		icon = GFX_goal_WNG_aby_lion
+		available = {
+
+		}
+		cost = 1		
+		relative_position_id = WIG_beakolini_cats_1
+		prerequisite = {
+			focus = WIG_beakolini_cats_1
+		}
+		mutually_exclusive = { focus = WIG_beakolini_cats_2 }
+		completion_reward = {
+			
+		}
+		
+		x = 1
+		y = 1
+	}
+
+	shared_focus = {
+		id = WIG_beakolini_cats_7
+		icon = GFX_goal_WNG_military_rule
+		available = {
+
+		}
+		cost = 1		
+		relative_position_id = WIG_beakolini_cats_6
+		prerequisite = {
+			focus = WIG_beakolini_cats_6
+		}
+		completion_reward = {
+			
+		}
+		
+		x = 1
+		y = 1
+	}
+
+	shared_focus = {
+		id = WIG_beakolini_cats_8
+		icon = GFX_goal_WNG_rail
+		available = {
+
+		}
+		cost = 1		
+		relative_position_id = WIG_beakolini_cats_2
+		prerequisite = {
+			focus = WIG_beakolini_cats_2
+		}
+		completion_reward = {
+			
+		}
+		
+		x = -1
+		y = 1
+	}
+
+	shared_focus = {
+		id = WIG_beakolini_cats_9
+		icon = GFX_goal_WNG_riches
+		available = {
+
+		}
+		cost = 1		
+		relative_position_id = WIG_beakolini_cats_8
+		prerequisite = {
+			focus = WIG_beakolini_cats_8
+		}
+		completion_reward = {
+			
+		}
+		
+		x = 0
+		y = 1
+	}
+
+	shared_focus = {
+		id = WIG_beakolini_cats_10
+		icon = GFX_goal_WNG_feline_assym
+		available = {
+
+		}
+		cost = 1		
+		relative_position_id = WIG_beakolini_cats_7
+		prerequisite = {
+			focus = WIG_beakolini_cats_7
+		}
+		completion_reward = {
+			
+		}
+		
+		x = 0
+		y = 1
+	}
+	
+	shared_focus = {
+		id = WIG_beakolini_expansion_start
+		icon = GFX_goal_WNG_larp
+		cost = 1		
+		relative_position_id = WIG_beakolini_start
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = WIG_beakolini_expansion_start_tt
+				always = no
+			}
+			has_completed_focus = WIG_beakolini_cats_5
+			has_completed_focus = WIG_beakolini_internal_11
+			has_completed_focus = WIG_beakolini_external_10 
+		}	
+		completion_reward = {
+			mark_focus_tree_layout_dirty = yes
+			set_power_balance = {
+				id = WIG_bop_beakolini_dicktator_balance_of_power 
+			}
+		}
+		
+		x = 0
+		y = 6
+	}
+		
+	shared_focus = {
+		id = WIG_beakolini_expansion_start_1
+		icon = GFX_goal_WNG_meet_beakolini
+		available = {
+
+		}
+		allow_branch = { 
+			has_completed_focus = WIG_beakolini_expansion_start
+		}
+		cost = 1		
+		relative_position_id = WIG_beakolini_expansion_start
+		prerequisite = {
+			focus = WIG_beakolini_expansion_start
+		}
+	
+		completion_reward = {
+			
+		}
+		
+		x = 0
+		y = 1
+	}
+	
+	shared_focus = {
+		id = WIG_beakolini_expansion_1
+		icon = GFX_goal_WNG_meet_beakolini
+		available = {
+
+		}
+		cost = 1		
+		relative_position_id = WIG_beakolini_expansion_start_1
+		prerequisite = {
+			focus = WIG_beakolini_expansion_start_1
+		}
+		completion_reward = {
+			
+		}
+		
+		x = -1
+		y = 1
+	}
+	
+	shared_focus = {
+		id = WIG_beakolini_expansion_2
+		icon = GFX_goal_WNG_meet_beakolini
+		available = {
+
+		}
+		cost = 1		
+		relative_position_id = WIG_beakolini_expansion_1
+		prerequisite = {
+			focus = WIG_beakolini_expansion_1
+		}
+		completion_reward = {
+			
+		}
+		
+		x = -1
+		y = 1
+	}
+	
+	shared_focus = {
+		id = WIG_beakolini_expansion_3
+		icon = GFX_goal_WNG_meet_beakolini
+		available = {
+
+		}
+		cost = 1		
+		relative_position_id = WIG_beakolini_expansion_1
+		prerequisite = {
+			focus = WIG_beakolini_expansion_1
+		}	
+		prerequisite = {
+			focus = WIG_beakolini_expansion_4
+		}
+		completion_reward = {
+			
+		}
+		
+		x = 1
+		y = 1
+	}
+	
+	shared_focus = {
+		id = WIG_beakolini_expansion_4
+		icon = GFX_goal_WNG_meet_beakolini
+		available = {
+
+		}
+		cost = 1		
+		relative_position_id = WIG_beakolini_expansion_start_1
+		prerequisite = {
+			focus = WIG_beakolini_expansion_start_1
+		}
+		completion_reward = {
+			
+		}
+		
+		x = 1
+		y = 1
+	}
+	
+	shared_focus = {
+		id = WIG_beakolini_expansion_5
+		icon = GFX_goal_WNG_meet_beakolini
+		available = {
+
+		}
+		cost = 1		
+		relative_position_id = WIG_beakolini_expansion_4
+		prerequisite = {
+			focus = WIG_beakolini_expansion_4
+		}
+		completion_reward = {
+			
+		}
+		
+		x = 1
+		y = 1
+	}
+
+	
+	shared_focus = {
+		id = WIG_beakolini_expansion_6
+		icon = GFX_goal_WNG_meet_beakolini
+		available = {
+
+		}
+		cost = 1		
+		relative_position_id = WIG_beakolini_expansion_3
+		prerequisite = {
+			focus = WIG_beakolini_expansion_3
+		}
+		completion_reward = {
+			
+		}
+		
+		x = 1
+		y = 1
+	}
+
+	
+	shared_focus = {
+		id = WIG_beakolini_expansion_7
+		icon = GFX_goal_WNG_meet_beakolini
+		available = {
+
+		}
+		cost = 1		
+		relative_position_id = WIG_beakolini_expansion_3
+		prerequisite = {
+			focus = WIG_beakolini_expansion_3
+		}
+		completion_reward = {
+			
+		}
+		
+		x = -1
+		y = 1
+	}
+
+	shared_focus = {
+		id = WIG_beakolini_internal_1
+		icon = GFX_PAP_roman_senate
+		available = {
+
+		}
+		cost = 1		
+		relative_position_id = WIG_beakolini_start
+		prerequisite = {
+			focus = WIG_beakolini_start
+		}
+		completion_reward = {
+			
+		}
+		
+		x = 0
+		y = 1
+	}
+
+	shared_focus = {
+		id = WIG_beakolini_internal_2
+		icon = GFX_goal_gold
+		available = {
+
+		}
+		cost = 1		
+		relative_position_id = WIG_beakolini_internal_1
+		prerequisite = {
+			focus = WIG_beakolini_internal_1
+		}
+		completion_reward = {
+			add_political_power = -100
+			add_stability = 0.05
+		}
+		
+		x = -2
+		y = 1
+	}
+
+	shared_focus = {
+		id = WIG_beakolini_internal_3
+		icon = GFX_goal_education
+		available = {
+
+		}
+		cost = 1		
+		relative_position_id = WIG_beakolini_internal_2
+		prerequisite = {
+			focus = WIG_beakolini_internal_2
+		}
+		completion_reward = {
+			increase_society_development_gradual = yes
+		}
+		
+		x = 0
+		y = 1
+	}
+
+	shared_focus = {
+		id = WIG_beakolini_internal_4
+		icon = GFX_goal_radio
+		available = {
+
+		}
+		cost = 1		
+		relative_position_id = WIG_beakolini_internal_3
+		prerequisite = {
+			focus = WIG_beakolini_internal_3
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = radar_tech
+			}
+		}
+		
+		x = 0
+		y = 1
+	}
+
+	shared_focus = {
+		id = WIG_beakolini_internal_5
+		icon = GFX_goal_factory_complex
+		available = {
+
+		}
+		cost = 1		
+		relative_position_id = WIG_beakolini_internal_1
+		prerequisite = {
+			focus = WIG_beakolini_internal_1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}			
+		}
+		
+		x = 0
+		y = 1
+	}
+
+	shared_focus = {
+		id = WIG_beakolini_internal_6
+		icon = GFX_goal_generic_lau_industry
+		available = {
+
+		}
+		cost = 1		
+		relative_position_id = WIG_beakolini_internal_5
+		prerequisite = {
+			focus = WIG_beakolini_internal_5
+		}
+		completion_reward = {
+			decrease_poverty = yes
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		
+		x = 0
+		y = 1
+	}
+
+	shared_focus = {
+		id = WIG_beakolini_internal_7
+		icon = GFX_goal_PAN_Create_the_Universidad_de_Panama
+		available = {
+
+		}
+		cost = 1		
+		relative_position_id = WIG_beakolini_internal_6
+		prerequisite = {
+			focus = WIG_beakolini_internal_6
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+		
+		x = 0
+		y = 1
+	}
+
+	shared_focus = {
+		id = WIG_beakolini_internal_8
+		icon = GFX_WNG_B_book
+		available = {
+
+		}
+		cost = 1		
+		relative_position_id = WIG_beakolini_internal_1
+		prerequisite = {
+			focus = WIG_beakolini_internal_1
+		}
+		completion_reward = {
+			decrease_illiteracy = yes				
+		}
+		
+		x = 2
+		y = 1
+	}
+
+	shared_focus = {
+		id = WIG_beakolini_internal_9
+		icon = GFX_WIG_B_purple_treaty
+		available = {
+
+		}
+		cost = 1		
+		relative_position_id = WIG_beakolini_internal_8
+		prerequisite = {
+			focus = WIG_beakolini_internal_8
+		}
+		completion_reward = {
+			set_stability = 0.1
+		}
+		
+		x = 0
+		y = 1
+	}
+
+	shared_focus = {
+		id = WIG_beakolini_internal_10
+		icon = GFX_WNG_B_train
+		available = {
+
+		}
+		cost = 1		
+		relative_position_id = WIG_beakolini_internal_9
+		prerequisite = {
+			focus = WIG_beakolini_internal_9
+		}
+		completion_reward = {
+			add_ideas = WNG_trains_run_on_time_idea
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}			
+		}
+		
+		x = 0
+		y = 1
+	}
+
+	shared_focus = {
+		id = WIG_beakolini_internal_11
+		icon = GFX_WNG_B_base
+		available = {
+
+		}
+		cost = 1		
+		relative_position_id = WIG_beakolini_internal_7
+		prerequisite = {
+			focus = WIG_beakolini_internal_4
+		}
+		prerequisite = {
+			focus = WIG_beakolini_internal_7
+		}
+		prerequisite = {
+			focus = WIG_beakolini_internal_10
+		}
+
+		completion_reward = {
+			
+		}
+		
+		x = 0
+		y = 1
+	}
+
+	shared_focus = {
+		id = WIG_beakolini_external_1
+		icon = GFX_goal_WNG_the_karthinian_restoration
+		available = {
+			has_completed_focus = WIG_beakolini_cats_5
+		}
+		cost = 1
+		relative_position_id = WIG_beakolini_start
+		prerequisite = {
+			focus = WIG_beakolini_start
+		}
+
+
+		completion_reward = {
+			create_faction = WIG_beakolini_faction
+		}
+		
+		x = 8
+		y = 1
+	}
+
+	shared_focus = {
+		id = WIG_beakolini_external_2
+		icon = GFX_WIG_B_talouse
+		available = {
+
+		}
+		cost = 1		
+		relative_position_id = WIG_beakolini_external_1
+		prerequisite = {
+			focus = WIG_beakolini_external_1
+		}
+
+
+		completion_reward = {
+			TUL = {
+				country_event = {
+					id = wig_politcs.7
+					days = 1
+				}
+			}			
+		}
+		
+		x = -1
+		y = 1
+	}
+
+	shared_focus = {
+		id = WIG_beakolini_external_3
+		icon = GFX_WIG_B_francistria
+		available = {
+
+		}
+		cost = 1		
+		relative_position_id = WIG_beakolini_external_1
+		prerequisite = {
+			focus = WIG_beakolini_external_1
+		}
+
+
+		completion_reward = {
+			FRC = {
+				country_event = {
+					id = wig_politcs.8
+					days = 1
+				}
+			}			
+		}
+		
+		x = 1
+		y = 1
+	}
+
+	shared_focus = {
+		id = WIG_beakolini_external_4
+		icon = GFX_Goal_YUN_The_Mountain_Economy
+		available = {
+			has_country_flag = WIG_TUL_accepts
+		}
+		cost = 1		
+		relative_position_id = WIG_beakolini_external_2
+		prerequisite = {
+			focus = WIG_beakolini_external_2
+		}
+		bypass = {
+			has_country_flag = WIG_TUL_denied
+		}
+
+		completion_reward = {
+			TUL = {	
+				add_timed_idea = {
+					days = 100
+					idea = WIG_B_invests_from
+				}
+			}
+		}
+		
+		x = -1
+		y = 1
+	}
+
+	shared_focus = {
+		id = WIG_beakolini_external_5
+		icon = GFX_WIG_B_talouse_pact
+		available = {
+			has_country_flag = WIG_TUL_accepts
+		}
+		cost = 1		
+		relative_position_id = WIG_beakolini_external_4
+		prerequisite = {
+			focus = WIG_beakolini_external_4
+		}
+		bypass = {
+			has_country_flag = WIG_TUL_denied
+		}
+
+		completion_reward = {
+			WIG = {
+				add_to_faction = TUL
+			}			
+		}
+		
+		x = 0
+		y = 1
+	}
+
+	shared_focus = {
+		id = WIG_beakolini_external_6
+		icon = GFX_goal_griffon_soldier
+		available = {
+			OR = {
+				has_country_flag = WIG_TUL_accepts
+				has_country_flag = WIG_FRC_accepts
+			}
+		}
+		cost = 1		
+		relative_position_id = WIG_beakolini_external_1
+		prerequisite = {
+			focus = WIG_beakolini_external_2
+		}
+		prerequisite = {
+			focus = WIG_beakolini_external_3
+		}
+
+
+		completion_reward = {
+			custom_effect_tooltip = WIG_B_KT_army_trains_tt
+			hidden_effect = {
+				IF = {
+					limit = {
+						has_country_flag = WIG_FRC_accepts
+						has_country_flag = WIG_TUL_accepts
+					}	
+					TUL = { army_experience = 40 }
+					FRC = { army_experience = 40 }
+					WIG = { army_experience = 40 }
+				}
+				else_if = {
+					limit = {
+						has_country_flag = WIG_TUL_accepts
+					}
+					TUL = { army_experience = 40 }
+					WIG = { army_experience = 40 }	
+				}
+				else_if = {
+					limit = { 
+						has_country_flag = WIG_FRC_accepts						
+					}
+					FRC = { army_experience = 40 }
+					WIG = { army_experience = 40 }					
+				}
+				else = {
+					add_political_power = 1
+				}
+			}
+		}
+		
+		x = 0
+		y = 2
+	}
+
+	shared_focus = {
+		id = WIG_beakolini_external_8
+		icon = GFX_goal_state_economy
+		available = {
+			has_country_flag = WIG_FRC_accepts
+		}
+
+		cost = 1		
+		relative_position_id = WIG_beakolini_external_3
+		prerequisite = {
+			focus = WIG_beakolini_external_3
+		}
+		bypass = {
+			has_country_flag = WIG_FRC_denied
+		}
+
+		completion_reward = {
+			FRC = {	
+				add_timed_idea = {
+					days = 100
+					idea = WIG_B_invests_from
+				}
+			}
+		}
+		
+		x = 1
+		y = 1
+	}
+
+	shared_focus = {
+		id = WIG_beakolini_external_9
+		icon = GFX_WIG_B_francistria_pact
+		available = {
+			has_country_flag = WIG_FRC_accepts
+		}
+		cost = 1		
+		relative_position_id = WIG_beakolini_external_8
+		prerequisite = {
+			focus = WIG_beakolini_external_8
+		}
+		bypass = {
+			has_country_flag = WIG_FRC_denied
+		}
+
+		completion_reward = {
+			WIG = {
+				add_to_faction = FRC
+			}
+		}
+		
+		x = 0
+		y = 1
+	}
+
+	shared_focus = {
+		id = WIG_beakolini_external_10
+		icon = GFX_goal_generic_karthin_empire
+		available = {
+
+		}
+		cost = 1		
+		relative_position_id = WIG_beakolini_external_1
+		prerequisite = {
+			focus = WIG_beakolini_external_9
+		}
+		prerequisite = {
+			focus = WIG_beakolini_external_5
+		}
+
+
+		completion_reward = {
+			
+		}
+		
+		x = 0
+		y = 4
+	}
+
+	shared_focus = {
+		id = WIG_beakolini_avenge_848
+		icon = GFX_goal_WNG_kilgri
+		available = {
+
+		}
+		cost = 1		
+		relative_position_id = WIG_beakolini_expansion_3
+		prerequisite = {
+			focus = WIG_beakolini_expansion_7
+		}
+		prerequisite = {
+			focus = WIG_beakolini_expansion_6
+		}
+		prerequisite = {
+			focus = WIG_beakolini_expansion_3
+		}
+
+
+		completion_reward = {
+			if = {	
+				limit = {
+					HRZ = {owns_state = 382}
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = HRZ
+				}
+			}
+			else_if = {
+				limit = {
+					HKR = {owns_state = 382}
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = HKR
+				}
+			}
+			else_if = {
+				limit = {
+					HRR = {owns_state = 382}
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = HRR
+				}
+			}
+			else = {
+				limit = {
+					HGE = {owns_state = 382}
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = HGE
+				}
+			}
+
+		}
+		
+		x = 0
+		y = 2
+	}
+

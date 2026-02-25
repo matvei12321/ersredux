@@ -1,0 +1,94 @@
+﻿l_russian:
+ SE_prekrasnoye_daleko_title:0 "Объединение Эквуса"
+ SE_prekrasnoye_daleko_desc:0 ""Тебя всегда будут любить, тебя всегда будут помнить. Ты никогда не станешь старше".\n\n— Надпись на могиле неизвестного эквестрийского солдата"
+ SE_prekrasnoye_daleko_reaction:0 "Ничто не спасёт маленьких пони"
+ 
+ SE_nuclear_title:0 "Единый Эквус получает ядерное оружие"
+ SE_nuclear_desc:0 ""Я уже сплю и вижу наши первые ядерные испытания. Первым полигоном будет Грифенхейм! Ха-ха, шутка. Шутка ведь, правда?"\n\n— Твайлайт Спаркл"
+ SE_nuclear_reaction:0 "Узри, как горит мир"
+ 
+ SE_dodge_city_collapse_1_title:0 "Судьба Додж-Сити"
+ SE_dodge_city_collapse_1_desc:0 "Иногда лучше не знать ничего, чем знать хоть что-то.\n\n— Вольный путешественник, побывавший в Додж-Сити"
+ SE_dodge_city_collapse_1_reaction:0 "Спи спокойно"
+ 
+ SE_anarchy_title:0 "Победа анархистов"
+ SE_anarchy_desc:0 "Власть рождает свиней и паразитов - да здравствует анархия!\n\n— Элеферий"
+ SE_anarchy_reaction:0 "Мать порядка"
+ 
+ SE_warkhan_war_title:0 "Война ханов"
+ SE_warkhan_war_desc:0 "Настоящий як - воин. Он сокрушит любого, кто встанет на его пути, даже если это будет стоить чьей-то жизни. Вернее, особенно, если это будет стоить чьей-то жизни.\n\n— Алесий Крузов, северянский расовед"
+ SE_warkhan_war_reaction:0 "Я слышу бой барабанов..."
+ 
+ SE_little_dark_age_title:0 "Хаос в Пандории"
+ SE_little_dark_age_desc:0 "Однажды нам придётся ответить за свои деяния, и Богиня не будет так милосердна."
+ SE_little_dark_age_reaction:0 "Ящик открылся"
+ 
+ SE_starlight_unification_title:0 "§RОбъединение Северяны§!"
+ SE_starlight_unification_desc:0 "Я не говорю о Рае. Рай - ложная фантазия религиозных фанатиков. Но НАШЕ общество ближе всех других вещей в мире к тому, что можно назвать Раем. §RУтопия§!.\n\n— Старлайт Глиммер"
+ SE_starlight_unification_reaction:0 "Подчинись воле Народа.."
+ 
+ SE_changeling_hehemony_collapse_title:0 "Коллапс гегемонии Чейнджлингов"
+ SE_changeling_hehemony_collapse_desc:0 "Возможно, никто из нас не выживет в борьбе за Фатерхайв.\n\n— §gГенерал Триммель§!"
+ SE_changeling_hehemony_collapse_reaction:0 "Wir sind verloren"
+ 
+ SE_lyc_ole_war_title:0 "Нападение Ликтиды на Олению"
+ SE_lyc_ole_war_desc:0 "Нет никаких "низших" и "высших" рас. Просто некоторые... заслуживают уничтожения. Это и есть справедливость!\n\n— Ауранция, королева Ликтиды"
+ SE_lyc_ole_war_reaction:0 "Тихий улей пробуждается..."
+ 
+ SE_red_changelings_rise_title:0 "Восстание Рабочих"
+ SE_red_changelings_rise_desc:0 "Идёт война. И ЭТО ВОЙНА ПРОТИВ ТЕБЯ, ПРОЛЕТАРИАТ!\n\n— Голд Маффин"
+ SE_red_changelings_rise_reaction:0 "Рабочий, ты слышишь его?"
+ 
+ SE_dwtd_title:0 "Падение Ордена"
+ SE_dwtd_desc:0 "Исповедь? Обожаю играть в исповедь. Расскажи мне о своих грехах.\n\n— Отец Миллениан"
+ SE_dwtd_reaction:0 "Танцуй с мёртвыми"
+ 
+ SE_soldat_title:0 "Объединение народов пони"
+ SE_soldat_unification_desc:0 "Война - это поединок воли. Если ты не готов пожертвовать всем, значит, ты уже проиграл.\n\n— Андреас Харрикейн"
+ SE_soldat_reaction:0 "Готов служить своей стране!"
+ 
+ SE_frost_is_here_title:0 "Холод здесь"
+ SE_frost_is_here_desc:0 "ЧТО БЫЛО — ТО БУДЕТ, ЧТО БУДЕТ — ТО БЫЛО.\n\n— Королева Спектр"
+ SE_frost_is_here_reaction:0 "И ты уснёшь в объятьях Снежной Королевы"
+ 
+ SE_marx_revival_title:0 "Возвращение Маркс"
+ SE_marx_revival_desc:0 "БУРЖУИ!\nЯ МАРКС!\nЯ ВЕРНУЛАСЬ!\nВАМ ВСЕМ ПИЗ-"
+ SE_marx_revival_reaction:0 "Всё идёт по плану"
+ 
+ SE_chrysalis_unification_title:0 "Объединение Ульев"
+ SE_chrysalis_unification_desc:0 "Если вы отступите — столкнётесь со смертью. Если не будете сражаться — с бесчестьем.\n\n— Королева Кризалис"
+ SE_chrysalis_unification_reaction:0 "Хайль Кризалис!"
+ 
+ SE_aurantia_unification_title:0 "Объединение Ульев"
+ SE_aurantia_unification_desc:0 "Один философ сказал: "Принцип "Око за око" сделает мир слепым." Если такова цена справедливости, то такой исход меня устраивает.\n\n— Королева Ауранция"
+ SE_aurantia_unification_reaction:0 "Хайль Ауранция!"
+ 
+ SE_olenians_extinction_title:0 "Исчезновение Олении"
+ SE_olenians_extinction_desc:0 ""
+ SE_olenians_extinction_reaction:0 "..."
+ 
+ SE_red_sun_title:0 "Создание Солнечной Фестралии"
+ SE_red_sun_desc:0 "Через свет я получаю силу, через силу я получаю могущество, чтобы сразить Твоих врагов, с этой мощью я надеюсь встретить день снова, но если я паду, это во имя Твоё, и под Сиянием твоим я найду покой в Твоих золотых лучах...\n\n— Молитва Нейгуа"
+ SE_red_sun_reaction:0 "Восславьте Солнце!"
+ 
+ SE_armed_sage_thestralia_title:0 "Объединение Эквестрии"
+ SE_armed_sage_thestralia_desc:0 "Хоть мир и полон несправедливости, но нам под силу изменить его. Не нужно полагаться на высшие силы, когда в наших копытах есть величайший инструмент и оружие - разум.\n\n— Армед Сейдж"
+ SE_armed_sage_thestralia_reaction:0 "Навстречу будущему!"
+ 
+ SE_second_north_zebrican_war_title:0 "Вторая Северозебриканская война"
+ SE_second_north_zebrican_war_desc:0 "Пока Арис стоит на страже покоя Гиппогрифии, и пока там, где нужно умирать, будут арисцы, Гиппогрифия будет стоять.\n\n— Оушен Бриз"
+ SE_second_north_zebrican_war_reaction:0 "Тепловой контакт!"
+ 
+ 
+ 
+ SE_the_great_war_title:0 "Великая Война"
+ SE_the_great_war_desc:0 "[the_great_war_desc]"
+ SE_the_great_war_reaction:0 "Это п*здец"
+ 
+ the_great_war_desc_armed_sage:0 "Победа социализма не сойдет, как день с неба.\n\n— Армед Сейдж"
+ the_great_war_desc_default:0 "Война - это поединок воли. Если ты не готов пожертвовать всем, значит, ты уже проиграл.\n\n— Андреас Харрикейн"
+ 
+ 
+ 
+ 
+ 

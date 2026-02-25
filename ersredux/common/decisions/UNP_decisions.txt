@@ -1,0 +1,78 @@
+UNP_plague_cat = {
+	UNP_no_plague_day = {
+		icon = GFX_decision_megaphone
+		available = {
+			has_country_flag = plague_is_cured
+		}
+		visible = {
+			tag = UNP
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision UNP_no_plague_day"
+			custom_effect_tooltip = plague_is_destroyed_tt
+			add_stability = 0.1
+			add_political_power = 200
+			add_named_threat = {
+				name = no_plague_day
+				threat = -10
+			}
+			UNC = {
+				country_event = plague.4
+			}
+		}
+	}
+	
+	UNP_hire_guards = {
+		icon = GFX_decision_megaphone
+		available = {
+			has_completed_focus = UNP_send_soldiers
+		}
+		visible = {
+			tag = UNP
+		}
+		
+		cost = 35
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision UNP_hire_guards"
+			custom_effect_tooltip = UNP_add_guards_tt
+		}
+	}
+	
+	UNP_hire_workers = {
+		icon = GFX_decision_megaphone
+		available = {
+			has_completed_focus = UNP_propaganda
+		}
+		visible = {
+			tag = UNP
+		}
+		
+		cost = 35
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision UNP_hire_workers"
+			custom_effect_tooltip = UNP_add_workers_tt
+			
+		}
+	}
+	
+	
+	UNP_hire_doctors = {
+		icon = GFX_decision_megaphone
+		available = {
+			has_completed_focus = UNP_scientists
+		}
+		visible = {
+			tag = UNP
+		}
+		
+		cost = 35
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision UNP_hire_doctors"
+			custom_effect_tooltip = UNP_add_doctors_tt
+			
+		}
+	}
+}

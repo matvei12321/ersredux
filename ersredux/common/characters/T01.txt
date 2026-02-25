@@ -1,0 +1,30 @@
+characters={
+	T01_pustota={
+		name=T01_pustota
+		portraits={
+			civilian={
+				large = "gfx/leaders/ZRS/Wilderness.tga"
+			}
+		}
+		country_leader={
+			ideology=anarchism
+			expire=1965.1.1.1
+			id=-1
+		}		
+		country_leader={
+			ideology=socialism
+			expire=1965.1.1.1
+			id=-1
+		}
+		country_leader={
+			ideology=leninism
+			expire=1965.1.1.1
+			id=-1
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire=1965.1.1.1
+			id=-1
+		}
+	}
+}

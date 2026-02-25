@@ -1,0 +1,16 @@
+spriteTypes = {
+	#### Unit leader trait icons ####
+	spriteType = {
+		name = "GFX_trait_pegasi_race_trait"
+		texturefile = "gfx/interface/traits/race/pegasi_race_trait.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_unicorns_race_trait"
+		texturefile = "gfx/interface/traits/race/unicorns_race_trait.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_krieger_trait"
+		texturefile = "gfx/interface/traits/generals/krieger_trait.dds"
+	}
+}

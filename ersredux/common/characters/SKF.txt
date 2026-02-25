@@ -1,0 +1,17 @@
+characters={
+
+	SKF_genevieve_guildedwing={
+		name=SKF_genevieve_guildedwing
+		portraits={
+			civilian={
+				large="gfx/leaders/SKF/Genevieve.tga"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		gender = female
+	}
+}

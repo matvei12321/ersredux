@@ -1,0 +1,92 @@
+﻿
+units = {
+	fleet = {
+		name = "Unicornian Royal Sea Fleet"
+		naval_base = 920
+		task_force = {
+			name = "Unicornian Royal Sea Fleet"
+			location = 920 # Freeside
+	
+			#Battleships
+			ship = { name = "Battleship King" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_2 = { amount = 1 owner = UNC version_name = "Platinum Class" } } }
+			ship = { name = "Battleship Queen" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_2 = { amount = 1 owner = UNC version_name = "Platinum Class" } } }
+			ship = { name = "Battleship Princess" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_2 = { amount = 1 owner = UNC version_name = "Platinum Class" } } }
+			
+			#Cruisers
+			ship = { name = "Light Cruiser-1" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = UNC version_name = "Guardian Class"} } }
+			ship = { name = "Light Cruiser-2" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = UNC version_name = "Guardian Class"} } }
+			ship = { name = "Light Cruiser-3" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = UNC version_name = "Guardian Class"} } }
+			ship = { name = "Light Cruiser-4" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = UNC version_name = "Guardian Class"} } }
+			ship = { name = "Light Cruiser-5" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = UNC version_name = "Guardian Class"} } }
+			ship = { name = "Light Cruiser-6" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = UNC version_name = "Guardian Class"} } }
+			ship = { name = "Light Cruiser-7" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = UNC version_name = "Guardian Class"} } }
+			ship = { name = "Light Cruiser-8" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = UNC version_name = "Guardian Class"} } }
+			ship = { name = "Light Cruiser-9" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = UNC version_name = "Guardian Class"} } }
+			ship = { name = "Light Cruiser-10" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = UNC version_name = "Guardian Class"} } }
+			ship = { name = "Heavy Cruiser-1" definition = heavy_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = UNC version_name = "Magic Class"} } }
+			ship = { name = "Heavy Cruiser-2" definition = heavy_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = UNC version_name = "Magic Class"} } }
+			ship = { name = "Heavy Cruiser-3" definition = heavy_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = UNC version_name = "Magic Class"} } }
+			ship = { name = "Heavy Cruiser-4" definition = heavy_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = UNC version_name = "Magic Class"} } }
+			ship = { name = "Heavy Cruiser-5" definition = heavy_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = UNC version_name = "Magic Class"} } }
+			ship = { name = "Heavy Cruiser-6" definition = heavy_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = UNC version_name = "Magic Class"} } }
+			ship = { name = "Heavy Cruiser-7" definition = heavy_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = UNC version_name = "Magic Class"} } }
+			
+			
+			#Destroyers
+			ship = { name = "Destroyer-1" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = UNC version_name = "Canterlot Class"} } }
+			ship = { name = "Destroyer-2" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = UNC version_name = "Canterlot Class"} } }
+			ship = { name = "Destroyer-3" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = UNC version_name = "Canterlot Class"} } }
+			ship = { name = "Destroyer-4" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = UNC version_name = "Canterlot Class"} } }
+			ship = { name = "Destroyer-5" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = UNC version_name = "Canterlot Class"} } }
+			ship = { name = "Destroyer-6" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = UNC version_name = "Canterlot Class"} } }
+			ship = { name = "Destroyer-7" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = UNC version_name = "Canterlot Class"} } }
+			ship = { name = "Destroyer-8" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = UNC version_name = "Canterlot Class"} } }
+			ship = { name = "Destroyer-9" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = UNC version_name = "Canterlot Class"} } }
+			ship = { name = "Destroyer-10" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = UNC version_name = "Canterlot Class"} } }
+			ship = { name = "Destroyer-11" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = UNC version_name = "Canterlot Class"} } }
+			ship = { name = "Destroyer-12" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = UNC version_name = "Canterlot Class"} } }
+			ship = { name = "Destroyer-13" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = UNC version_name = "Canterlot Class"} } }
+			ship = { name = "Destroyer-14" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = UNC version_name = "Canterlot Class"} } }
+			ship = { name = "Destroyer-15" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = UNC version_name = "Canterlot Class"} } }
+			ship = { name = "Destroyer-16" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = UNC version_name = "Canterlot Class"} } }
+			ship = { name = "Destroyer-17" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = UNC version_name = "Canterlot Class"} } }
+			ship = { name = "Destroyer-18" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = UNC version_name = "Canterlot Class"} } }
+		}
+	}
+	
+	fleet = {
+		name = "Destroyer Group"
+		naval_base = 4080
+		task_force = {
+			name = "Lead Cruisers"
+			location = 4080
+	
+			#Cruisers
+			ship = { name = "Light Cruiser-2.1" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = UNC version_name = "Guardian Class"} } }
+			ship = { name = "Light Cruiser-2.2" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = UNC version_name = "Guardian Class"} } }
+			ship = { name = "Heavy Cruiser-2.1" definition = heavy_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = UNC version_name = "Magic Class"} } }
+		}
+		
+		task_force = {
+			name = "Destroyers Group"
+			location = 4080
+			
+			#Destroyers
+			ship = { name = "Destroyer-2.1" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = UNC version_name = "Canterlot Class"} } }
+			ship = { name = "Destroyer-2.2" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = UNC version_name = "Canterlot Class"} } }
+			ship = { name = "Destroyer-2.3" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = UNC version_name = "Canterlot Class"} } }
+			ship = { name = "Destroyer-2.4" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = UNC version_name = "Canterlot Class"} } }
+			ship = { name = "Destroyer-2.5" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = UNC version_name = "Canterlot Class"} } }
+			ship = { name = "Destroyer-2.6" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = UNC version_name = "Canterlot Class"} } }
+			ship = { name = "Destroyer-2.7" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = UNC version_name = "Canterlot Class"} } }
+			ship = { name = "Destroyer-2.8" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = UNC version_name = "Canterlot Class"} } }
+			ship = { name = "Destroyer-2.9" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = UNC version_name = "Canterlot Class"} } }
+			ship = { name = "Destroyer-2.10" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = UNC version_name = "Canterlot Class"} } }
+			ship = { name = "Destroyer-2.11" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = UNC version_name = "Canterlot Class"} } }
+			ship = { name = "Destroyer-2.12" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = UNC version_name = "Canterlot Class"} } }
+			ship = { name = "Destroyer-2.13" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = UNC version_name = "Canterlot Class"} } }
+			ship = { name = "Destroyer-2.14" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = UNC version_name = "Canterlot Class"} } }
+			ship = { name = "Destroyer-2.15" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = UNC version_name = "Canterlot Class"} } }
+		}
+	}
+}

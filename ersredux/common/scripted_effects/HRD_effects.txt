@@ -1,0 +1,42 @@
+
+hrd_minus_50_piety = {
+	add_to_variable = {
+		hrd_piety_count = -50
+	}
+	custom_effect_tooltip = hrd_minus_50_piety_tt
+}
+
+hrd_minus_10_piety = {
+	add_to_variable = {
+		hrd_piety_count = -10
+	}
+	custom_effect_tooltip = hrd_minus_10_piety_tt
+}
+
+hrd_plus_10_piety = {
+	add_to_variable = {
+		hrd_piety_count = 10
+	}
+	custom_effect_tooltip = hrd_plus_10_piety_tt
+}
+
+hrd_plus_20_piety = {
+	add_to_variable = {
+		hrd_piety_count = 20
+	}
+	custom_effect_tooltip = hrd_plus_20_piety_tt
+}
+
+hrd_plus_50_piety = {
+	add_to_variable = {
+		hrd_piety_count = 50
+	}
+	custom_effect_tooltip = hrd_plus_50_piety_tt
+}
+
+hrd_plus_100_piety = {
+	add_to_variable = {
+		hrd_piety_count = 100
+	}
+	custom_effect_tooltip = hrd_plus_100_piety_tt
+}

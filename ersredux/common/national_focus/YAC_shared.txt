@@ -1,0 +1,855 @@
+shared_focus = {
+	id = YAC_war_win
+	icon = GFX_goal_yac_win
+	cost = 1.5
+	available = {
+		owns_state = 139
+		owns_state = 140
+		owns_state = 77
+		owns_state = 317
+		owns_state = 255
+		owns_state = 254
+		owns_state = 257
+		owns_state = 11
+		owns_state = 267
+		owns_state = 256
+		owns_state = 273
+		owns_state = 346
+		owns_state = 280
+		owns_state = 276
+		owns_state = 347
+		owns_state = 270
+		owns_state = 268
+	}
+		
+	offset = {
+		x = 0
+		y = -10
+		trigger = {
+			has_completed_focus = YAC_war_win
+			has_game_rule = {
+				rule = obsolete_focus_branches_visibility
+				option = HIDE
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	x = 10
+	y = 9
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAC_war_win"
+		hidden_effect = { 
+			country_event = { id = yac.3 days = 50  }
+		}
+		country_event = { id = yac.1 days = 1 } 
+		mark_focus_tree_layout_dirty = yes
+		if = {
+			limit = {
+				has_idea = YAK_WARKHAN_attack_idea
+			}
+			remove_ideas = YAK_WARKHAN_attack_idea
+		}
+		if = {
+			limit = {
+				has_idea = YAK_WARKHAN_defence_idea
+			}
+			remove_ideas = YAK_WARKHAN_defence_idea
+		}
+		if = {
+			limit = {
+				has_idea = YAK_WARKHAN_construction_idea
+			}
+			remove_ideas = YAK_WARKHAN_construction_idea
+		}
+		if = {
+			limit = {
+				has_idea = YAK_WARKHAN_production_idea
+			}
+			remove_ideas = YAK_WARKHAN_production_idea
+		}
+		if = {
+			limit = {
+				has_idea = YAK_WARKHAN_army_speed_idea
+			}
+			remove_ideas = YAK_WARKHAN_army_speed_idea
+		}
+		if = {
+			limit = {
+				has_idea = YAK_WARKHAN_bunker_idea
+			}
+			remove_ideas = YAK_WARKHAN_bunker_idea
+		}
+		if = {
+			limit = {
+				has_idea = YAK_WARKHAN_equipment_capture
+			}
+			remove_ideas = YAK_WARKHAN_equipment_capture
+		}
+		if = {
+			limit = {
+				has_idea = YAK_WARKHAN_conscription_idea
+			}
+			remove_ideas = YAK_WARKHAN_conscription_idea
+		}
+		if = {
+			limit = {
+				has_idea = YAK_WARKHAN_resistence_idea
+			}
+			remove_ideas = YAK_WARKHAN_resistence_idea
+		}
+		if = {
+			limit = {
+				has_idea = YAK_WARKHAN_reliability_idea
+			}
+			remove_ideas = YAK_WARKHAN_reliability_idea
+		}
+		if = {
+			limit = {
+				has_idea = YAK_WARKHAN_war_drums_idea
+			}
+			remove_ideas = YAK_WARKHAN_war_drums_idea
+		}
+		if = {
+			limit = {
+				has_idea = YAK_WARKHAN_attack_YAK_idea
+			}
+			remove_ideas = YAK_WARKHAN_attack_YAK_idea
+		}
+		if = {
+			limit = {
+				has_idea = YAK_WARKHAN_attack_JAK_idea
+			}
+			remove_ideas = YAK_WARKHAN_attack_JAK_idea
+		}
+		if = {
+			limit = {
+				has_idea = YAK_WARKHAN_attack_NAK_idea
+			}
+			remove_ideas = YAK_WARKHAN_attack_NAK_idea
+		}
+		if = {
+			limit = {
+				has_idea = YAK_WARKHAN_attack_YAC_idea
+			}
+			remove_ideas = YAK_WARKHAN_attack_YAC_idea
+		}
+		if = {
+			limit = {
+				has_idea = YAK_WARKHAN_attack_MNT_idea
+			}
+			remove_ideas = YAK_WARKHAN_attack_MNT_idea
+		}
+		if = {
+			limit = {
+				has_idea = YAK_WARKHAN_attack_SHA_idea
+			}
+			remove_ideas = YAK_WARKHAN_attack_SHA_idea
+		}
+		if = {
+			limit = {
+				has_idea = YAK_WARKHAN_attack_BAD_idea
+			}
+			remove_ideas = YAK_WARKHAN_attack_BAD_idea
+		}
+
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+
+shared_focus = {
+	id = YAC_basis_of_communism
+	icon = GFX_goal_red_eagle_two
+	cost = 2.9
+	prerequisite = { focus = YAC_war_win }
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = YAC_war_win
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAC_basis_of_communism"
+		add_stability =-0.025
+		add_political_power = 50
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+
+shared_focus = {
+	id = YAC_basis_of_new_society
+	icon = GFX_goal_revolution_tools
+	cost = 2.9
+	prerequisite = { focus = YAC_war_win }
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = YAC_war_win
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAC_basis_of_new_society"
+		custom_effect_tooltip = yac_basis_of_new_society_tt
+		add_stability = -0.1
+		add_popularity = {
+			ideology = communism
+			popularity = -0.05
+		}
+		add_war_support = 0.05
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+
+shared_focus = {
+	id = YAC_equal_property
+	icon = GFX_goal_socialist_industry
+	cost = 4.4
+	prerequisite = { focus = YAC_basis_of_communism }
+	prerequisite = { focus = YAC_basis_of_new_society }
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = YAC_war_win
+	x = -2
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAC_equal_property"
+		add_political_power = 75
+		11 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		254 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		256 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+	search_filters = {  }
+}
+
+shared_focus = {
+	id = YAC_burn_moneys
+	icon = GFX_goal_yac_burn_moneys
+	cost = 4.4
+	prerequisite = { focus = YAC_equal_property}
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = YAC_war_win
+	x = -4
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAC_burn_moneys"
+		add_ideas = YAC_no_money
+		decrease_poverty = yes
+		country_event = { id = yac_flavour.2 days = 5 }
+	}
+	search_filters = {  }
+}
+
+shared_focus = {
+	id = YAC_agrarian_industry
+	icon = GFX_goal_yac_agrarian_industry
+	cost = 4.4
+	prerequisite = { focus = YAC_equal_property}
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = YAC_war_win
+	x = -2
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAC_agrarian_industry"
+		add_ideas = YAC_agrarian_industry_idea
+		country_event = { id = yac_flavour.1 days = 5 }
+	}
+	search_filters = {  FOCUS_FILTER_INDUSTRY }
+}
+
+shared_focus = {
+	id = YAC_religious_colkhoz
+	icon = GFX_goal_yac_religious_communism
+	cost = 4.4
+	prerequisite = { focus = YAC_agrarian_industry }
+	prerequisite = { focus = YAC_burn_moneys }
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = YAC_war_win
+	x = -7
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAC_agrarian_industry"
+		add_ideas = YAC_colkhoz_idea
+	}
+	search_filters = {  FOCUS_FILTER_INDUSTRY }
+}
+
+shared_focus = {
+	id = YAC_nationalisation
+	icon = GFX_goal_yac_factories
+	cost = 4.4
+	prerequisite = { focus = YAC_agrarian_industry }
+	prerequisite = { focus = YAC_burn_moneys }
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = YAC_war_win
+	x = -5
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAC_agrarian_industry"
+		custom_effect_tooltip = YAC_nationalisation_tt
+		add_political_power = 50
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+			}
+		}
+	}
+	search_filters = {  FOCUS_FILTER_INDUSTRY }
+}
+
+shared_focus = {
+	id = YAC_more_red_guns
+	icon = GFX_goal_yac_rifles_factory
+	cost = 4.4
+	prerequisite = { focus = YAC_agrarian_industry }
+	prerequisite = { focus = YAC_burn_moneys }
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = YAC_war_win
+	x = -3
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAC_agrarian_industry"
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 500
+		}
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+			}
+		}
+	}
+	search_filters = {  FOCUS_FILTER_INDUSTRY }
+}
+
+shared_focus = {
+	id = YAC_miners_villages
+	icon = GFX_goal_yac_resources
+	cost = 4.4
+	prerequisite = { focus = YAC_religious_colkhoz }
+	prerequisite = { focus = YAC_nationalisation }
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = YAC_war_win
+	x = -8
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAC_agrarian_industry"
+		custom_effect_tooltip = YAC_miners_villages_tt
+		add_ideas = YAC_miners_villages_idea
+		random_owned_controlled_state = {
+			add_resource = {
+				type = steel
+				amount = 15
+			}
+			add_resource = {
+				type = aluminium
+				amount = 10
+			}
+			add_resource = {
+				type = crystals
+				amount = 7
+			}
+		}
+	}
+	search_filters = {  FOCUS_FILTER_INDUSTRY }
+}
+
+shared_focus = {
+	id = YAC_no_class_utopy
+	icon = GFX_goal_yac_utopia
+	cost = 4.4
+	prerequisite = { focus = YAC_religious_colkhoz }
+	prerequisite = { focus = YAC_nationalisation }
+	mutually_exclusive = { focus = YAC_sheyak_pyramid }
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = YAC_war_win
+	x = -6
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAC_agrarian_industry"
+		add_ideas = YAC_no_class_utopy_idea
+		decrease_poverty = yes
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+			}
+		}
+	}
+	search_filters = {  FOCUS_FILTER_INDUSTRY }
+}
+
+shared_focus = {
+	id = YAC_sheyak_pyramid
+	icon = GFX_goal_yac_pyramid
+	cost = 4.4
+	prerequisite = { focus = YAC_religious_colkhoz }
+	prerequisite = { focus = YAC_nationalisation }
+	mutually_exclusive = { focus = YAC_no_class_utopy }
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = YAC_war_win
+	x = -4
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAC_agrarian_industry"
+		add_ideas = YAC_sheyak_pyramid_idea
+		decrease_poverty = yes
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+			}
+		}
+	}
+	search_filters = {  FOCUS_FILTER_INDUSTRY }
+}
+
+
+
+
+
+shared_focus = {
+	id = YAC_shamans
+	icon = GFX_goal_holy_communism
+	cost = 4.4
+	prerequisite = { focus = YAC_basis_of_communism }
+	prerequisite = { focus = YAC_basis_of_new_society }
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = YAC_war_win
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAC_shamans"
+		country_event = yac.2
+	}
+	search_filters = {  }
+}
+
+shared_focus = {
+	id = YAC_spread_marks_personality
+	icon = GFX_goal_yac_marks_hidden
+	cost = 4.4
+	prerequisite = { focus = YAC_shamans }
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = YAC_war_win
+	x = 0
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAC_spread_marks_personality"
+		swap_ideas = {
+			remove_idea = YAC_primitive_esoterism
+			add_idea = YAC_modern_esoterism
+		}
+		country_event = { id = yac_flavour.3 days = 5 }
+	}
+	search_filters = {  }
+}
+
+shared_focus = {
+	id = YAC_religion
+	icon = GFX_goal_yac_sun
+	cost = 4.4
+	prerequisite = { focus = YAC_spread_marks_personality }
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = YAC_war_win
+	x = -1
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAC_religion"
+		swap_ideas = {
+			remove_idea = ers_atheism
+			add_idea = ers_yak_religion
+		}
+		add_political_power = 50
+	}
+	search_filters = {  }
+}
+
+shared_focus = {
+	id = YAC_spread_marks_books
+	icon = GFX_goal_yac_books
+	cost = 4.4
+	prerequisite = { focus = YAC_spread_marks_personality }
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = YAC_war_win
+	x = 1
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAC_spread_marks_books"
+		decrease_illiteracy = yes
+	}
+	search_filters = {  }
+}
+
+shared_focus = {
+	id = YAC_alt_history
+	icon = GFX_goal_yac_alt_history
+	cost = 4.4
+	prerequisite = { focus = YAC_religion }
+	prerequisite = { focus = YAC_spread_marks_books }
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = YAC_war_win
+	x = -2
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAC_alt_history"
+		add_ideas = YAC_alt_history_idea
+	}
+	search_filters = {  }
+}
+
+shared_focus = {
+	id = YAC_holy_portraits
+	icon = GFX_goal_yac_marks_portrait
+	cost = 4.4
+	prerequisite = { focus = YAC_religion }
+	prerequisite = { focus = YAC_spread_marks_books }
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = YAC_war_win
+	x = 0
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAC_holy_portraits"
+		add_ideas = YAC_marks_portrait
+		add_stability = 0.05
+		add_political_power = 100
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+		country_event = { id = yac_flavour.5 days = 5 }
+	}
+	search_filters = {  }
+}
+
+shared_focus = {
+	id = YAC_communes
+	icon = GFX_goal_yac_syndicalism
+	cost = 4.4
+	prerequisite = { focus = YAC_religion }
+	prerequisite = { focus = YAC_spread_marks_books }
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = YAC_war_win
+	x = 2
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAC_communes"
+		add_manpower = 25000
+		add_war_support = 0.1
+	}
+	search_filters = {  }
+}
+
+
+
+shared_focus = {
+	id = YAC_party_propaganda
+	icon = GFX_goal_commune_politics
+	cost = 4.4
+	prerequisite = { focus = YAC_basis_of_communism }
+	prerequisite = { focus = YAC_basis_of_new_society }
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = YAC_war_win
+	x = 2
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAC_party_propaganda"
+		swap_ideas = {
+			remove_idea = YAC_homeland_of_revolution
+			add_idea = YAC_homeland_of_revolution_2
+		}
+		add_manpower = 10000
+	}
+	search_filters = {  }
+}
+
+shared_focus = {
+	id = YAC_safety
+	icon = GFX_goal_yac_flag_and_ak
+	cost = 4.4
+	prerequisite = { focus = YAC_party_propaganda }
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = YAC_war_win
+	x = 2
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAC_safety"
+		if = {
+			limit = {
+				has_dlc = "La Resistance"
+			}
+			if = {
+				limit = {
+					has_intelligence_agency = no
+				}
+				create_intelligence_agency = {
+					name = "Red Marks Order"
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_dlc = "La Resistance"
+			}
+			add_ideas = YAC_safety_lar
+		}
+		else = {
+			add_ideas = YAC_safety_no_lar
+		}
+		country_event = { id = yac_flavour.4 days = 5 }
+	}
+	search_filters = {  }
+}
+
+shared_focus = {
+	id = YAC_yak_commissars
+	icon = GFX_goal_yac_shoot_ya
+	cost = 4.4
+	prerequisite = { focus = YAC_party_propaganda }
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = YAC_war_win
+	x = 4
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAC_yak_commissars"
+		add_ideas = YAK_commissars
+		country_event = { id = yac_flavour.6 days = 5 }
+	}
+	search_filters = {  }
+}
+
+shared_focus = {
+	id = YAC_the_web
+	icon = GFX_goal_yac_web
+	cost = 4.4
+	prerequisite = { focus = YAC_yak_commissars }
+	prerequisite = { focus = YAC_safety }
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = YAC_war_win
+	x = 3
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAC_yak_commissars"
+		custom_effect_tooltip = YAC_the_web_tt
+		add_ideas = YAC_the_web_idea
+		every_owned_state = {
+			limit = {
+				NOT = {
+					state = 255
+				}
+			}
+			add_manpower = -45000
+		}
+	}
+	search_filters = {  }
+}
+
+shared_focus = {
+	id = YAC_100_perc_party_membership
+	icon = GFX_goal_yac_check_list
+	cost = 4.4
+	prerequisite = { focus = YAC_yak_commissars }
+	prerequisite = { focus = YAC_safety }
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = YAC_war_win
+	x = 5
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAC_yak_commissars"
+		add_stability = 0.05
+		add_political_power = 100
+		add_popularity = {
+			ideology = communism
+			popularity = 0.1
+		}
+	}
+	search_filters = {  }
+}
+
+shared_focus = {
+	id = YAC_support_churches
+	icon = GFX_goal_yac_tample
+	cost = 4.4
+	prerequisite = { focus = YAC_yak_commissars }
+	prerequisite = { focus = YAC_safety }
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = YAC_war_win
+	x = 7
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAC_yak_commissars"
+		add_political_power = -100
+		custom_effect_tooltip = YAC_support_churches_tt
+	}
+	search_filters = {  }
+}
+
+shared_focus = {
+	id = YAC_yac_nationalism
+	icon = GFX_goal_yac_ultranationalism
+	cost = 4.4
+	prerequisite = { focus = YAC_100_perc_party_membership }
+	prerequisite = { focus = YAC_support_churches }
+	mutually_exclusive = { focus = YAC_yac_international_inquisition }
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = YAC_war_win
+	x = 4
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAC_yak_commissars"
+		add_stability = 0.05
+		add_ideas = YAC_brotherhood_and_nationalism_idea
+		every_owned_state = {
+			add_manpower = -5000
+		}
+	}
+	search_filters = {  }
+}
+
+shared_focus = {
+	id = YAC_yac_international_inquisition
+	icon = GFX_goal_yac_inquisition
+	cost = 4.4
+	prerequisite = { focus = YAC_100_perc_party_membership }
+	prerequisite = { focus = YAC_support_churches }
+	mutually_exclusive = { focus = YAC_yac_nationalism }
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = YAC_war_win
+	x = 6
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAC_yak_commissars"
+		add_war_support = 0.05
+		add_ideas = YAC_international_inquisition_idea
+		every_owned_state = {
+			add_manpower = -5000
+		}
+	}
+	search_filters = {  }
+}
+
+shared_focus = {
+	id = YAC_yac_upgraded_culture
+	icon = GFX_goal_yac_culture
+	cost = 4.4
+	prerequisite = { focus = YAC_100_perc_party_membership }
+	prerequisite = { focus = YAC_support_churches }
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = YAC_war_win
+	x = 8
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAC_yak_commissars"
+		add_ideas = YAC_updated_spirit_idea
+	}
+	search_filters = {  }
+}
+
+
+
+
+
+
+
+
+
+
+
+shared_focus = {
+	id = YAC_crusade
+	icon = GFX_goal_yac_search
+	cost = 4.4
+	prerequisite = { focus = YAC_alt_history }
+	prerequisite = { focus = YAC_holy_portraits }
+	prerequisite = { focus = YAC_communes }
+	available = {
+		has_country_flag = yac_can_start_revival
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = YAC_war_win
+	x = 0
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus YAC_crusade"
+		custom_effect_tooltip = yac_search_for_marx_decisions_unlocked_tt
+	}
+	search_filters = {  }
+}

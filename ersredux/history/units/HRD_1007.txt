@@ -1,0 +1,86 @@
+﻿division_template = {
+	name = "Holy Division"			#Infantry Division -
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	division = {
+		name = "White Hawk"
+		location = 6066
+		division_template = "Holy Division"
+		start_experience_factor = 0.3 
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Holy Tigers"
+		location = 6389
+		division_template = "Holy Division"
+		start_experience_factor = 0.3 
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Inqusition"
+		location = 6066
+		division_template = "Holy Division"
+		start_experience_factor = 0.3 
+		start_equipment_factor = 1.0
+	}
+	
+	division = {
+		name = "Inqusition"
+		location = 11065
+		division_template = "Holy Division"
+		start_experience_factor = 0.3 
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Inqusition"
+		location = 9038
+		division_template = "Holy Division"
+		start_experience_factor = 0.3 
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Inqusition"
+		location = 11409
+		division_template = "Holy Division"
+		start_experience_factor = 0.3 
+		start_equipment_factor = 1.0
+	}
+	
+	division = {
+		name = "Purple Hooves"
+		location = 6389
+		division_template = "Holy Division"
+		start_experience_factor = 0.3 
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Holy Sons"
+		location = 6389
+		division_template = "Holy Division"
+		start_experience_factor = 0.3 
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Spirits"
+		location = 6389
+		division_template = "Holy Division"
+		start_experience_factor = 0.3 
+		start_equipment_factor = 1.0
+	}
+}

@@ -1,0 +1,39 @@
+
+STL_fight_STG_resistance_cat = {
+	icon = GFX_decision_category_hammer_and_horseshoe
+	
+	allowed = {
+		tag = STL
+	}
+	
+	visible = {
+		OR = {
+			has_completed_focus = ers_STL_starlight_knows
+			has_completed_focus = ers_STL_local_power
+		}
+	}
+	visible_when_empty = yes
+	priority = 150
+	
+}
+
+STL_unification_cat = {
+	icon = GFX_decision_category_hammer_and_horseshoe
+	
+	allowed = {
+		tag = STL
+	}
+	
+	visible_when_empty = yes
+	
+}
+
+STL_economic_politics_cat = {
+	icon = GFX_decision_category_military_operation
+	
+	allowed = {
+		tag = STL
+	}
+	
+	priority = 75
+}

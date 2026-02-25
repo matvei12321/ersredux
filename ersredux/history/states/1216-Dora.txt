@@ -1,0 +1,29 @@
+state={
+	id=1216
+	name="STATE_1216"
+
+	provinces={
+		268 293 969 3340 6257 9388 9425 11219 11587 
+	}
+
+	manpower=151571
+	state_category=town
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = ERP
+		add_core_of = ERP
+
+		victory_points = { 9388 3 }
+
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+	}
+	
+	
+	resources={
+		steel=2
+	}
+}

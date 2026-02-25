@@ -1,0 +1,18 @@
+characters = {
+	CHL_leader={
+		name=CHL_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/CHL/Caklamant.tga"
+			}
+		}
+		country_leader={
+			desc="CHL_leader_desc"
+			ideology=neofeudalism
+			traits={ uyaruli_killer }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		gender = male
+	}
+}

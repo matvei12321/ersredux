@@ -1,0 +1,11 @@
+HIP_building_khiva_cat = {
+	icon = GFX_decision_helmet2
+	allowed = {
+			tag = HIP
+	}
+	visible = {
+				
+	}
+	visible_when_empty = yes
+	priority = 300
+}

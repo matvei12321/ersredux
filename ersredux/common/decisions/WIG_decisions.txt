@@ -1,0 +1,405 @@
+WIG_bop_beakolini_category = {
+	WIG_bop_soy_0 = {
+
+		icon = generic_form_nation
+
+		activation = {
+			tag = WIG
+			has_war = yes
+			
+		}
+		is_good = no
+		fire_only_once = no
+		cost = 1
+		days_mission_timeout = 120
+#		days_remove = 120
+		available = {
+			always = no
+		}
+
+		modifier = {
+			power_balance_weekly = -0.005
+		}
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	WIG_bop_chad_0 = {
+
+		icon = generic_form_nation
+
+		visible = {
+			tag = WIG
+			has_government = neutrality
+		}
+		fire_only_once = no
+		cost = 1
+		days_remove = 5
+		days_re_enable = 45
+		available = {
+			original_tag = WIG
+		}
+
+		complete_effect = {
+			add_power_balance_value = {
+				id = WIG_bop_beakolini_dicktator_balance_of_power
+				value = 0.1
+			}			
+		}
+		ai_will_do = {
+			factor = 200
+		}
+	}
+
+	WIG_bop_chad_1 = {
+
+		icon = generic_form_nation
+
+		visible = {
+			tag = WIG
+			has_government = neutrality
+		}
+		fire_only_once = no
+		is_good = yes
+		cost = 1
+		days_remove = 25
+		selectable_mission = yes
+		available = {
+			original_tag = WIG
+		}
+		timeout_effect = {
+			add_power_balance_modifier = {
+				id = WIG_bop_beakolini_dicktator_balance_of_power
+				modifier = 0.1
+			}			
+		}
+		modifier = {
+			power_balance_weekly = 0.015
+		}
+		ai_will_do = {
+			factor = 200
+		}
+	}
+
+
+}
+
+FLC_zaglushka_start = {
+	FLC_shit_0 = {
+
+		icon = generic_form_nation
+
+		fire_only_once = yes
+		cost = 1
+		days_mission_timeout = 7
+		available = {
+			has_government = neutrality
+		}
+
+		timeout_effect = {
+			FLC = {
+				transfer_state = 549
+				transfer_state = 533
+				load_oob = "FLC_start_0"			
+				load_oob = "FLC_start_0"			
+			}
+			549 = {set_demilitarized_zone = no}
+			533 = {set_demilitarized_zone = no}			
+			549 = {remove_dynamic_modifier = {modifier =  WIG_falcor_resistance_active_modifier} }
+			533 = {remove_dynamic_modifier = WIG_falcor_resistance_sleeping_modifier}
+		}
+		ai_will_do = {
+			factor = 70
+		}
+	}
+	FLC_shit_1 = {
+
+		icon = generic_form_nation
+
+		fire_only_once = yes
+		cost = 1
+		days_mission_timeout = 14
+		available = {
+			has_government = neutrality
+		}
+
+		timeout_effect = {
+			FLC = {
+				transfer_state = 529
+				transfer_state = 409
+				load_oob = "FLC_start_1"
+				load_oob = "FLC_start_1"
+			}
+			529 = {set_demilitarized_zone = no}
+			409 = {set_demilitarized_zone = no}
+			529 = {remove_dynamic_modifier = {modifier =  WIG_falcor_resistance_sleeping_modifier} }
+			409 = {remove_dynamic_modifier = {modifier =  WIG_falcor_resistance_active_modifier} }
+		}
+		ai_will_do = {
+			factor = 70
+		}
+	}
+	FLC_shit_2 = {
+
+		icon = generic_form_nation
+
+		fire_only_once = yes
+		cost = 1
+		days_mission_timeout = 21
+		available = {
+			has_government = neutrality
+		}
+
+		timeout_effect = {
+			FLC = {
+				transfer_state = 503
+				transfer_state = 393
+				load_oob = "FLC_start_2"
+				load_oob = "FLC_start_2"
+			}
+			503 = {set_demilitarized_zone = no}
+			393 = {set_demilitarized_zone = no}			
+			503 = {remove_dynamic_modifier = {modifier =  WIG_falcor_resistance_active_modifier} }
+			393 = {remove_dynamic_modifier = {modifier =  WIG_falcor_resistance_active_modifier} }
+		}
+		
+		ai_will_do = {
+			factor = 70
+		}
+	}
+	FLC_shit_3 = {
+
+		icon = generic_form_nation
+
+		fire_only_once = yes
+		cost = 1
+		days_mission_timeout = 28
+		available = {
+			has_government = neutrality
+		}
+
+		timeout_effect = {
+			FLC = {
+				transfer_state = 392
+				transfer_state = 504
+				transfer_state = 528
+				load_oob = "FLC_start_3"
+				load_oob = "FLC_start_3"
+			}
+			504 = {set_demilitarized_zone = no}
+			528 = {set_demilitarized_zone = no}
+			392 = {set_demilitarized_zone = no}			
+			504 = {remove_dynamic_modifier = {modifier =  WIG_falcor_resistance_active_modifier} }
+			392 = {remove_dynamic_modifier = {modifier =  WIG_falcor_resistance_sleeping_modifier} }
+		}
+		ai_will_do = {
+			factor = 70
+		}
+	}
+	
+FLC_shit_4 = {
+
+		icon = generic_form_nation
+
+		fire_only_once = yes
+		cost = 1
+		days_mission_timeout = 1
+		available = {
+			has_government = neutrality
+		}
+
+		timeout_effect = {
+#			country_event = wig_debug.11
+		}
+	}
+
+}
+
+WIG_south_attempt = {
+	WIG_stage_1 = {
+
+		icon = generic_form_nation
+
+		fire_only_once = no
+		cost = 1
+		days_remove = 0
+		available = {
+			always = no
+		}
+		visible = {
+			NOT = {
+				has_country_flag = WIG_south_attempt_stage_2
+				has_country_flag = WIG_south_attempt_stage_3
+			}
+			has_country_flag = WIG_south_attempt_decision_flag
+		}
+
+		complete_effect = {
+			
+		}
+	}
+	WIG_stage_2 = {
+
+		icon = generic_form_nation
+
+		fire_only_once = no
+		cost = 1
+		days_remove = 0
+		available = {
+			always = no
+		}
+		visible = {
+			has_country_flag = WIG_south_attempt_stage_2
+			has_country_flag = WIG_south_attempt_decision_flag
+			NOT = {
+				has_country_flag = WIG_south_attempt_stage_3
+			}	
+		}
+
+		complete_effect = {
+			
+		}
+	}
+	WIG_stage_3 = {
+
+		icon = generic_form_nation
+
+		fire_only_once = no
+		cost = 1
+		days_remove = 0
+		available = {
+			always = no
+		}
+		visible = {
+			has_country_flag = WIG_south_attempt_stage_3
+			has_country_flag = WIG_south_attempt_decision_flag
+			NOT = {
+				has_country_flag = WIG_south_attempt_stage_3
+			}	
+		
+		}
+
+		complete_effect = {
+			
+		}
+	}
+	
+	WIG_south_noticement_debug = { # план местности
+
+		icon = generic_form_nation
+
+		fire_only_once = no
+		cost = 1
+		days_remove = 0
+		available = {
+	#		has_country_flag = WIG_south_attempt_decision_flag
+		}
+		visible = {
+			OR = {
+				has_country_flag = WIG_cats_menu_murrsia_drg_selected
+				has_country_flag = WIG_cats_menu_murrsia_wig_selected
+				has_country_flag = WIG_cats_menu_catland_drg_selected
+				has_country_flag = WIG_cats_menu_catland_wig_selected				
+			}
+			is_debug = yes
+		}
+
+		complete_effect = {
+			set_variable = { 
+				WIG.WIG_abyssinia_readiness = 0
+			}
+			clamp_variable = {
+				var = WIG.WIG_abyssinia_readiness
+				min = 0
+				max = 100
+			}
+		}
+	}
+	WIG_south_noticement_1 = { # план местности
+
+		icon = generic_form_nation
+
+		fire_only_once = no
+		cost = 1
+		days_remove = 0
+		available = {
+	#		has_country_flag = WIG_south_attempt_decision_flag
+			has_equipment = {
+				infantry_equipment > 700
+			}
+		}
+		visible = {
+			check_variable = {
+			    var = my_var
+				value = 5
+				compare = less_than_or_equals
+			}
+			OR = {
+				has_country_flag = WIG_cats_menu_murrsia_drg_selected
+				has_country_flag = WIG_cats_menu_murrsia_wig_selected
+				has_country_flag = WIG_cats_menu_catland_drg_selected
+				has_country_flag = WIG_cats_menu_catland_wig_selected				
+			}
+		}
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -700
+				producer = WIG
+			}
+			add_to_variable = { 
+				var = WIG.WIG_abyssinia_readiness
+				value = 10
+			}
+			clamp_variable = {
+				var = WIG.WIG_abyssinia_readiness
+				min = 0
+				max = 100
+			}
+			
+			add_to_variable = { 
+				var = WIG.WIG_south_noticement_1
+				value = 1
+			}
+			clamp_variable = {
+				var = WIG.WIG_south_noticement_1
+				min = 0
+				max = 5
+			}
+		}
+	}
+	WIG_south_noticement_2 = {
+
+		icon = generic_form_nation
+
+		fire_only_once = yes
+		cost = 1
+		days_remove = 0
+		available = {
+	#		has_country_flag = WIG_south_attempt_decision_flag
+			always = yes
+		}
+		visible = {
+			OR = {
+				has_country_flag = WIG_cats_menu_murrsia_drg_selected
+				has_country_flag = WIG_cats_menu_murrsia_wig_selected
+				has_country_flag = WIG_cats_menu_catland_drg_selected
+				has_country_flag = WIG_cats_menu_catland_wig_selected	
+			}
+		}
+
+		complete_effect = {
+			add_to_variable = { 
+				var = WIG.WIG_abyssinia_readiness
+				value = 15
+			}
+			clamp_variable = {
+				var = WIG.WIG_abyssinia_readiness
+				min = 0
+				max = 100
+			}
+		}
+	}
+
+}

@@ -1,0 +1,24 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_CLT_valentine"
+		texturefile = "gfx/leaders/CLT/CLT_valentine.tga"
+	}
+
+	spriteType = {
+		name = "GFX_YAC_marks_leader"
+		texturefile = "gfx/leaders/YAC/marx_leader.tga"
+	}
+	spriteType = {
+		name = "GFX_YAC_marks_leader_hat"
+		texturefile = "gfx/leaders/YAC/marx_leader_hat.tga"
+	}
+	spriteType = {
+		name = "GFX_YAC_marks_sus"
+		texturefile = "gfx/leaders/YAC/marks_sus.tga"
+	}
+	
+
+
+	
+}

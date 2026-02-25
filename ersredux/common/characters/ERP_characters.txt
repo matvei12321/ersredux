@@ -1,0 +1,713 @@
+characters = {
+	ERP_priests={
+		name=ERP_priests
+		portraits={
+			civilian={
+				large="gfx/leaders/ERP/priests.dds"
+			}
+		}
+		country_leader={
+			desc="PRIESTS_DESC"
+			ideology=theocracy_subideology
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	ERP_silva={
+		name=ERP_silva
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/ERP/hopestar_advisor.tga"
+			}
+			civilian={
+				large="gfx/leaders/ERP/hopestar.tga"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ERP_silva_token
+			cost = 150
+			allowed = {
+				original_tag = ERP
+			}
+			available = {
+				has_government = democratic
+			}
+			traits = {
+				democratic_reformer
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		country_leader={
+			desc="SILVA_DESC"
+			ideology=harmonic_libertarianism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	ERP_martis={
+		name=ERP_martis
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/ERP/luter_advisor.tga"
+			}
+			civilian={
+				large="gfx/leaders/ERP/luter.tga"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = ERP_luter_token
+			cost = 150
+			allowed = {
+				original_tag = ERP
+			}
+			available = {
+				has_government = communism
+			}
+			traits = {
+				ambitious_union_boss
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		country_leader={
+			desc="LUTER_DESC"
+			ideology=syndicalism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+
+	ERP_alpha={
+		name=ERP_alpha
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/ERP/alpha_advisor.tga"
+			}
+			civilian={
+				large="gfx/leaders/ERP/alpha.tga"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = ERP_alpha_token
+			cost = 150
+			allowed = {
+				original_tag = ERP
+			}
+			available = {
+				has_government = fascism
+			}
+			traits = {
+				national_propagandist
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		country_leader={
+			desc="ALPHA_DESC"
+			ideology=national_protectionism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	ERP_rose={
+		name=ERP_rose
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/ERP/erp_rose_advisor.tga"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = ERP_rose_token
+			cost = 150
+			allowed = {
+				original_tag = ERP
+			}
+			visible = {
+				
+			}
+			traits = {
+				quiet_pony_trait
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	ERP_swifty_main={
+		name=ERP_swifty_main
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/ERP/swifty_main.tga"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = ERP_swifty_main_token
+			cost = 150
+			allowed = {
+				original_tag = ERP
+			}
+			visible = {
+				
+			}
+			traits = {
+				railroad_enthusiast
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	
+	ERP_bloody_rem={
+		name=ERP_bloody_rem
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/ERP/bloody_rem.tga"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = ERP_nighty_spark_token
+			cost = 150
+			allowed = {
+				original_tag = ERP
+			}
+			available = {  
+				has_government = fascism
+			}
+			visible = {
+				
+			}
+			traits = {
+				esoterist
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	ERP_applejack = {
+		name=ERP_applejack
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/ERP/ers_applejack_advisor.tga"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = ERP_applejack_token
+			desc = "ers_applejack_advisor_desc"
+			cost = 150
+			allowed = {
+				original_tag = ERP
+			}
+			available = {  
+				has_completed_focus = OUR_INDUSTRY_BELONGS_TO_US
+			}
+			visible = {
+				
+			}
+			traits = {
+				ers_agressive_industrialist
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	ERP_father_mirina={
+		name=ERP_father_mirina
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_unknown_advisor.dds"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = ERP_father_mirina
+			cost = 150
+			allowed = {
+				original_tag = ERP
+			}
+			visible = {
+				has_completed_focus = ERP_holy_ministers
+			}
+			traits = {
+				anti_communist_crusader
+			}
+			modifier = {
+				war_support_factor = 0.05
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	ERP_father_faint_lord={
+		name=ERP_father_faint_lord
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_unknown_advisor.dds"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = ERP_father_faint_lord_token
+			cost = 150
+			allowed = {
+				original_tag = ERP
+			}
+			visible = {
+				has_completed_focus = ERP_holy_ministers
+			}
+			traits = {
+				political_plotter
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	ERP_father_neverglide={
+		name=ERP_father_neverglide
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_unknown_advisor.dds"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = ERP_father_neverglide_token
+			cost = 150
+			allowed = {
+				original_tag = ERP
+			}
+			visible = {
+				has_completed_focus = ERP_holy_ministers
+			}
+			traits = {
+				propaganda_expert
+			}
+			modifier = {
+				drift_defence_factor = 0.05
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	ERP_father_fever_dream={
+		name=ERP_father_fever_dream
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_unknown_advisor.dds"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = ERP_father_fever_dream_token
+			cost = 150
+			allowed = {
+				original_tag = ERP
+			}
+			visible = {
+				has_completed_focus = ERP_holy_ministers
+			}
+			traits = {
+				backroom_backstabber
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	ERP_nobody = {
+		name=ERP_nobody
+		portraits = {
+			civilian={
+				large="gfx/leaders/leader_unknown.tga"
+			}
+		}
+	}
+	
+	
+	##### Army
+	
+	##### Field Marshal
+	
+	ERP_field_marshal_1={
+		name=ERP_field_marshal_1
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_unknown_advisor.dds"
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		field_marshal={
+			traits={ logistics_wizard politically_connected earthponies_race_trait trickster }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+
+	##### Commander
+	
+	ERP_corps_commander_1={		### Lucky Core
+		name=ERP_corps_commander_1
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_unknown_advisor.dds"
+				large="gfx/leaders/generic_earthponies/generic_earthpony_character2.tga"
+			}
+		}
+		corps_commander={
+			traits={ fortress_buster bearer_of_artillery earthponies_race_trait }
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+	
+	ERP_corps_commander_2={		### Thunder Light
+		name=ERP_corps_commander_2
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_unknown_advisor.dds"
+				large="gfx/leaders/generic_earthponies/generic_earthpony_character1.tga"
+			}
+		}
+		corps_commander={
+			traits={ trait_mercenary_commander war_hero infantry_leader pegasi_race_trait }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	ERP_corps_commander_3={
+		name=ERP_corps_commander_3
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_unknown_advisor.dds"
+				large="gfx/leaders/generic_earthponies/generic_earthpony_character3.tga"
+			}
+		}
+		corps_commander={
+			traits={ earthponies_race_trait cute_mare_trait career_officer }
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=4
+		}
+	}
+
+	ERP_corps_commander_4={
+		name=ERP_corps_commander_4
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_unknown_advisor.dds"
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		corps_commander={
+			traits={ earthponies_race_trait expert_improviser }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+		}
+	}
+
+	ERP_corps_commander_5={
+		name=ERP_corps_commander_5
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_unknown_advisor.dds"
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		corps_commander={
+			traits={ earthponies_race_trait career_officer determined_innovator }
+			skill=1
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+
+	ERP_corps_commander_6={
+		name=ERP_corps_commander_5
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_unknown_advisor.dds"
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		corps_commander={
+			traits={ earthponies_race_trait fascist_sympathizer }
+			skill=1
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+
+	ERP_ban={
+		name=ERP_ban
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/ERP/ban_advisor.tga"
+				large="gfx/leaders/ERP/ban.tga"
+			}
+		}
+		corps_commander={
+			traits={ unicorns_race_trait expert_improviser air_force_commander }
+			skill=1
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+		}
+	}
+	
+	
+	#### ADVISORS
+	
+	#### THEORISTS
+	
+	ERP_nighty_spark={
+		name=ERP_nighty_spark
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/ERP/nighty_spark.tga"
+			}
+		}
+		
+		advisor={
+			slot = theorist
+			idea_token = ERP_nighty_spark_token
+			cost = 200
+			allowed = {
+				original_tag = ERP
+			}
+			visible = {
+				
+			}
+			traits = {
+				military_modernizer
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	ERP_mirage={
+		name=ERP_mirage
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_unknown_advisor.dds"
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		
+		advisor={
+			slot = theorist
+			idea_token = ERP_mirage_token
+			cost = 150
+			allowed = {
+				original_tag = ERP
+			}
+			available = {  
+			
+			}
+			visible = {
+				
+			}
+			traits = {
+				air_warfare_theorist
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	#### High command
+	
+	ERP_rina={
+		name=ERP_rina
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_unknown_advisor.dds"
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = ERP_rina
+			cost = 150
+			allowed = {
+				original_tag = ERP
+			}
+			available = {  
+			
+			}
+			visible = {
+				
+			}
+			traits = {
+				army_infantry_1
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	ERP_little_gun={
+		name=ERP_little_gun
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_unknown_advisor.dds"
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = ERP_little_gun
+			cost = 150
+			allowed = {
+				original_tag = ERP
+			}
+			available = {  
+			
+			}
+			visible = {
+				
+			}
+			traits = {
+				army_regrouping_1
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	#### Army chief
+	
+	ERP_terra={
+		name=ERP_terra
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_unknown_advisor.dds"
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = ERP_terra
+			cost = 150
+			allowed = {
+				original_tag = ERP
+			}
+			available = {  
+			
+			}
+			visible = {
+				
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	ERP_loyyd={
+		name=ERP_loyyd
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_unknown_advisor.dds"
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = ERP_loyyd
+			cost = 150
+			allowed = {
+				original_tag = ERP
+			}
+			available = {  
+			
+			}
+			visible = {
+				
+			}
+			traits = {
+				army_chief_defensive_2
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

@@ -1,0 +1,18 @@
+characters = {
+NOZ_Ylbrix={
+    name=NOZ_Ylbrix
+    portraits={
+      civilian={
+        large="gfx/leaders/NGC/NGC_Chair.tga"
+      }
+    }
+    country_leader={
+      desc=""
+      ideology= despotism
+      traits={governor_of_Zona }
+      expire="1965.1.1.1"
+      id=-1
+    }
+    gender = male
+      }
+  }	  

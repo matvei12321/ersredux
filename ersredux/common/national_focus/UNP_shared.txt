@@ -1,0 +1,469 @@
+
+shared_focus = {
+	id = UNP_reports
+	icon = GFX_goal_plague_question
+	cost = 1
+	x = 7
+	y = 0
+	available = {  		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNP_reports"
+		country_event = plague.1
+	}
+	ai_will_do = { factor = 10 }
+}
+	
+shared_focus = {
+	id = UNP_on_streets
+	icon = GFX_goal_plague_factories_question
+	prerequisite = { focus = UNP_reports }
+	cost = 1
+	x = 7
+	y = 1
+	available = {  
+			
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNP_on_streets"
+		country_event = plague.2
+	}
+	ai_will_do = { factor = 10 }
+}
+	
+shared_focus = {
+	id = UNP_first_plan
+	prerequisite = { focus = UNP_on_streets }
+	icon = GFX_goal_danglar_plan
+	cost = 1
+	x = 7
+	y = 2
+	available = {
+			
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNP_first_plan"
+		country_event = plague.3
+		add_political_power = 5
+	}
+	ai_will_do = { factor = 10 }
+}
+	
+shared_focus = {
+	id = UNP_send_soldiers
+	prerequisite = { focus = UNP_first_plan }
+	icon = GFX_focus_generic_little_entente
+	cost = 3
+	x = 3
+	y = 3
+	available = {	
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNP_send_soldiers"
+		add_manpower = 500
+	}
+	ai_will_do = { factor = 10 }
+}
+	
+shared_focus = {
+	id = UNP_look_for_equipment
+	prerequisite = { focus = UNP_send_soldiers }
+	icon = GFX_goal_generic_support_equipment
+	cost = 3
+	x = 1
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNP_look_for_equipment"
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 450
+		}
+	}
+	ai_will_do = { factor = 10 }
+}
+	
+shared_focus = {
+	id = UNP_shoot_some_targets
+	prerequisite = { focus = UNP_send_soldiers }
+	icon = GFX_goal_secret_agents
+	cost = 3
+	x = 5
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNP_look_for_equipment"
+		country_event = { id = plague.6 days = 2 }
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = UNP_soldiers_loyalty
+	prerequisite = { focus = UNP_send_soldiers }
+	icon = GFX_goal_unicorn_soldier
+	cost = 3
+	x = 3
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNP_look_for_equipment"
+		army_experience = 15		
+	}
+	ai_will_do = { factor = 10 }
+}
+	
+shared_focus = {
+	id = UNP_clear_soldiers
+	prerequisite = { focus = UNP_soldiers_loyalty }
+	prerequisite = { focus = UNP_shoot_some_targets }
+	prerequisite = { focus = UNP_look_for_equipment }
+	icon = GFX_goal_skull_fortification
+	cost = 3
+	x = 3
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNP_look_for_equipment"
+		add_manpower = -200
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.02
+		}
+	}
+	ai_will_do = { factor = 10 }
+}
+	
+shared_focus = {
+	id = UNP_propaganda
+	prerequisite = { focus = UNP_first_plan }
+	icon = GFX_goal_plague_propaganda
+	cost = 3
+	x = 7
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNP_first_plan"		
+		add_stability = 0.05
+		country_event = plague.5
+	}
+	ai_will_do = { factor = 10 }
+}
+	
+shared_focus = {
+	id = UNP_chas
+	prerequisite = { focus = UNP_propaganda }
+	icon = GFX_goal_generic_more_territorial_claims
+	cost = 3
+	x = 7
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNP_chas"
+		add_ideas = UNP_chas_idea
+	}	
+	ai_will_do = { factor = 10 }
+}
+	
+shared_focus = {
+	id = UNP_graves
+	prerequisite = { focus = UNP_chas }
+	icon = GFX_goal_graveyard
+	cost = 3
+	x = 7
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNP_chas"
+		add_ideas = UNP_graveyards_idea
+		swap_ideas = {
+			remove_idea = UNP_plague
+			add_idea = UNP_plague_1
+		}
+	}	
+	ai_will_do = { factor = 10 }
+}
+	
+shared_focus = {
+	id = UNP_step_two
+	prerequisite = { focus = UNP_graves	}
+	prerequisite = { focus = UNP_clear_soldiers	}
+	prerequisite = { focus = UNP_segregation_illness focus = UNP_segregation_race }
+	icon = GFX_goal_agency
+	cost = 3
+	x = 7
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNP_chas"
+		custom_effect_tooltip = ers_focus_no_effect
+	}	
+	ai_will_do = { factor = 10 }
+}
+	
+shared_focus = {
+	id = UNP_scientists
+	prerequisite = { focus = UNP_first_plan }
+	icon = GFX_goal_Chemical_Death_5
+	cost = 3
+	x = 10
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNP_first_plan"
+			add_ideas = UNP_researches
+		}
+	ai_will_do = { factor = 10 }
+}
+	
+shared_focus = {
+	id = UNP_segregation
+	prerequisite = { focus = UNP_scientists }
+	icon = GFX_goal_plague_experiments
+	cost = 3
+	x = 10
+	y = 4
+	completion_reward = {
+	log = "[GetDateText]: [Root.GetName]: Focus UNP_segregation"
+		swap_ideas = {
+			remove_idea = UNP_researches
+			add_idea = UNP_researches_2
+		}
+		if = {
+			limit = {
+				NOT = {	has_global_flag = warcrimes_disabled }
+			}
+			add_to_variable = {
+				ROOT_warcrimes_count = 1
+			}
+			custom_effect_tooltip = plus_1_warcrimes_tt
+		}
+	}
+	ai_will_do = { factor = 10 }
+}
+	
+shared_focus = {
+	id = UNP_segregation_race
+	prerequisite = { focus = UNP_segregation }
+	mutually_exclusive = { focus = UNP_segregation_illness }
+	icon = GFX_goal_skull_treaty
+	cost = 3
+	x = 9
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNP_segregation"
+			add_ideas = UNP_race_segregation_idea
+		}
+	ai_will_do = { factor = 10 }
+}
+	
+shared_focus = {
+	id = UNP_segregation_illness
+	prerequisite = { focus = UNP_segregation }
+	mutually_exclusive = { focus = UNP_segregation_race }
+	icon = GFX_goal_generic_land_reform
+	cost = 3
+	x = 11
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNP_segregation"
+			add_ideas = UNP_good_segregation_idea
+		}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = UNP_fight_with_criminals
+	prerequisite = { focus = UNP_step_two }
+	icon = GFX_goal_skull_cannon
+	cost = 5
+	relative_position_id = UNP_step_two
+	x = -6
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNP_segregation"
+		add_war_support = 0.075
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.1
+		}
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = UNP_fucking_pegasi
+	prerequisite = { focus = UNP_fight_with_criminals }
+	icon = GFX_goal_No_Half_Measures
+	cost = 5
+	relative_position_id = UNP_fight_with_criminals
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNP_segregation"
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = UNP_fucking_earthponies
+	prerequisite = { focus = UNP_fight_with_criminals }
+	icon = GFX_goal_guillotine
+	cost = 5
+	relative_position_id = UNP_fight_with_criminals
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNP_segregation"
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = UNP_burn_griffonian_district
+	prerequisite = { focus = UNP_fucking_earthponies }
+	prerequisite = { focus = UNP_fucking_pegasi }
+	icon = GFX_goal_burn
+	cost = 5
+	relative_position_id = UNP_fight_with_criminals
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNP_segregation"
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = UNP_public_convinction
+	prerequisite = { focus = UNP_burn_griffonian_district }
+	icon = GFX_goal_shadow_government
+	cost = 5
+	relative_position_id = UNP_fight_with_criminals
+	x = 0
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNP_segregation"
+		
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = UNP_chres_polojeniye
+	prerequisite = { focus = UNP_step_two }
+	icon = GFX_tank_H
+	cost = 3
+	relative_position_id = UNP_step_two
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNP_segregation"
+		add_political_power = 75
+		add_stability = 0.15
+		12 = {
+			set_demilitarized_zone = no
+		}
+		if = {
+			limit = {
+				NOT = {	has_global_flag = warcrimes_disabled }
+			}
+			add_to_variable = {
+				ROOT_warcrimes_count = 5
+			}
+			custom_effect_tooltip = plus_5_warcrimes_tt
+		}
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = UNP_keep_researches
+	prerequisite = { focus = UNP_step_two }
+	icon = GFX_goal_supremacy_of_will
+	cost = 3
+	relative_position_id = UNP_step_two
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNP_segregation"
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = UNP_problems_of_keepings
+	prerequisite = { focus = UNP_step_two }
+	icon = GFX_goal_arms_dealing
+	cost = 5
+	relative_position_id = UNP_step_two
+	x = 6
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNP_segregation"
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = UNP_good_food
+	prerequisite = { focus = UNP_problems_of_keepings }
+	mutually_exclusive = { focus = UNP_economia }
+	icon = GFX_goal_cake_or_death
+	cost = 5
+	relative_position_id = UNP_problems_of_keepings
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNP_segregation"
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = UNP_barter
+	prerequisite = { focus = UNP_good_food }
+	icon = GFX_goal_bag_of_money_pony
+	cost = 5
+	relative_position_id = UNP_problems_of_keepings
+	x = -1
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNP_segregation"
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = UNP_economia
+	prerequisite = { focus = UNP_problems_of_keepings }
+	mutually_exclusive = { focus = UNP_good_food }
+	icon = GFX_goal_coffee_boom
+	cost = 5
+	relative_position_id = UNP_problems_of_keepings
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNP_segregation"
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = UNP_soup
+	prerequisite = { focus = UNP_economia }
+	icon = GFX_goal_ers_hunger
+	cost = 5
+	relative_position_id = UNP_problems_of_keepings
+	x = 1
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNP_segregation"
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = UNP_survival_tips
+	prerequisite = { focus = UNP_soup focus = UNP_barter }
+	icon = GFX_goal_skull_cannon
+	cost = 5
+	relative_position_id = UNP_problems_of_keepings
+	x = 0
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNP_segregation"
+	}
+	ai_will_do = { factor = 10 }
+}

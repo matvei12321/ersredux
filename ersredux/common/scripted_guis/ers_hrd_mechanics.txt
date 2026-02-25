@@ -1,0 +1,14 @@
+scripted_gui = {
+
+	hrd_piety_container = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "hrd_piety_container"
+		visible = {
+			tag = HRD
+		}
+		effects = {
+			
+		}
+	}
+}

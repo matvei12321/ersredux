@@ -1,0 +1,17 @@
+characters = {
+	ER3_comrade_mauser={
+		name=ER3_comrade_mauser
+		portraits={
+			civilian={
+				large="gfx/leaders/ER3/mauser.tga"
+			}
+		}
+		country_leader={
+			desc="ER3_comrade_mauser_DESC"
+			ideology=national_communism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

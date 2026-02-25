@@ -1,0 +1,161 @@
+characters = {
+
+	GUA_leader={
+		name=GUA_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/GUA/Ikskacin.tga"
+			}
+		}
+		country_leader={
+			desc="GUA_leader_desc"
+			ideology=tribal_council
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		gender = male
+	}
+	
+	GUA_Fascist={
+		name=GUA_Fascist
+		portraits = {
+			civilian = {
+				large="gfx/leaders/GUA/GUA_Fascist.tga"
+			}
+}	 
+		country_leader={
+			desc="GUA_Fascist_desc"
+			ideology=raidism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		gender = male
+	}
+
+	GUA_Communistka={
+		name= GUA_Communistka
+		portraits={
+			civilian={
+				large="gfx/leaders/GUA/GUA_Communistka.tga"
+			}
+		}
+		country_leader={
+			desc=" GUA_Communistka_desc"
+			ideology=capital_communism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		gender = female
+	}
+
+	NGC_quisling={
+		name=NGC_quisling
+		portraits={
+			civilian={
+				large="gfx/leaders/GUA/NGC_quisling.tga"
+			}
+		}
+		country_leader={
+			desc="NGC_quisling_desc"
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		gender = male
+	}
+	
+		GUA_democrat={
+		name=GUA_democrat
+		portraits={
+			civilian={
+				large="gfx/leaders/GUA/GUA_democrat.tga"
+			}
+		}
+		country_leader={
+			desc="GUA_democrat_desc"
+			ideology=pacifism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		gender = female
+	}
+	
+GUA_Sovet={
+name=GUA_Sovet
+portraits={
+army={
+small="gfx/interface/ideas/advisors/GUA/GUA_Sovet.tga"
+}
+}
+advisor={
+slot = political_advisor
+idea_token = GUA_Sovet
+ledger = army
+allowed = {
+original_tag = GUA
+}
+traits = {
+war_industrialist
+}
+cost = 125
+ai_will_do = {
+factor = 2.000
+}
+}
+}
+
+GUA_Sovet1={
+name=GUA_Sovet1
+portraits={
+army={
+small="gfx/interface/ideas/advisors/GUA/GUA_Sovet1.tga"
+}
+}
+advisor={
+slot = political_advisor
+idea_token = GUA_Sovet1
+ledger = army
+allowed = {
+original_tag = GUA
+}
+traits = {
+quiet_pony_trait
+}
+cost = 125
+ai_will_do = {
+factor = 2.000
+}
+}
+}
+
+GUA_Sovet2={
+name=GUA_Sovet2
+portraits={
+army={
+small="gfx/interface/ideas/advisors/GUA/GUA_Sovet2.tga"
+}
+}
+advisor={
+slot = political_advisor
+idea_token = GUA_Sovet2
+ledger = army
+allowed = {
+original_tag = GUA
+}
+traits = {
+rearmament_proponent
+}
+cost = 125
+ai_will_do = {
+factor = 2.000
+}
+}
+}
+
+}
+	

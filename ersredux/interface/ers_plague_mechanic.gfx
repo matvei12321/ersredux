@@ -1,0 +1,14 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_plague_open_button"
+		texturefile = "gfx/interface/decisions/skull_decision_category.dds"
+	}
+	spriteType = {
+		name = "GFX_plague_bg"
+		texturefile = "gfx/interface/unp/plague_bg.dds"
+	}
+	
+	
+	
+}

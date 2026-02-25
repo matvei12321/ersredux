@@ -1,0 +1,28 @@
+TST_expedition_category = {
+
+	TST_expedition = {
+        allowed = {
+            tag = TST
+        }
+        icon = GFX_decision_category_generic_magic
+        fire_only_once = yes
+        days_remove = 100
+        modifier = {
+            
+        }
+        remove_effect = {
+			custom_effect_tooltip = TST_expedition_tt
+			hidden_effect = {
+				country_event = {
+					id = armed_sage.500
+					days = 1
+				}
+			}
+        }
+        cancel_trigger = {
+        }
+        cancel_effect = {
+        }
+    }
+
+}

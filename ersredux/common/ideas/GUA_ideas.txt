@@ -1,0 +1,349 @@
+ideas = {
+
+country= {
+white_armyq = {
+
+picture = white_army
+allowed = {
+tag = GUA
+}
+
+modifier = {
+war_support_factor = -0.30
+army_speed_factor = -0.4
+army_attack_factor = -0.4
+army_defence_factor = -0.6
+}
+}
+}
+
+country= {
+white_armyw = {
+
+picture = white_army
+allowed = {
+tag = GUA
+}
+
+modifier = {
+war_support_factor = -0.15
+army_speed_factor = -0.2
+army_attack_factor = -0.2
+army_defence_factor = -0.3
+}
+}
+}
+
+country= {
+white_armye = {
+
+picture = white_army
+allowed = {
+tag = GUA
+}
+
+modifier = {
+war_support_factor = -0.05
+army_speed_factor = -0.1
+army_attack_factor = -0.1
+army_defence_factor = -0.1
+}
+}
+}
+
+country= {
+white_armyr = {
+
+picture = white_army
+allowed = {
+tag = GUA
+}
+
+modifier = {
+war_support_factor = 0.15
+army_speed_factor = 0.15
+army_attack_factor = 0.25
+army_defence_factor = 0.15
+experience_gain_army = 0.02
+}
+}
+}
+
+country= {
+batpower_start_4 = {
+
+picture = batpower_start_4
+allowed = {
+tag = GUA
+}
+
+modifier = {
+stability_factor = -0.4
+research_speed_factor = -0.6
+political_power_factor = -0.3
+monthly_population = -0.3
+}
+}
+}
+
+country= {
+batpower_start_3 = {
+
+picture = batpower_start_3
+allowed = {
+tag = GUA
+}
+
+modifier = {
+stability_factor = -0.2
+research_speed_factor = -0.2
+political_power_factor = -0.1
+monthly_population = -0.1
+}
+}
+}
+
+country= {
+batpower_start_2 = {
+
+picture = batpower_start_2
+allowed = {
+tag = GUA
+}
+
+modifier = {
+stability_factor = -0.1
+research_speed_factor = -0.1
+political_power_factor = 0.05
+monthly_population = 0.05
+}
+}
+}
+
+country= {
+batpower_start = {
+
+picture = batpower_start
+allowed = {
+tag = GUA
+}
+
+modifier = {
+stability_factor = 0.1
+research_speed_factor = 0.2
+political_power_factor = 0.20
+monthly_population = 0.1
+}
+}
+}
+
+country= {
+PLB_mat_fer_research = {
+
+picture = PLB_mat_fer_research
+allowed = {
+tag = GUA
+}
+modifier = {
+research_speed_factor = 0.1
+}
+}
+}
+
+country= {
+BAT_loyalty_test = {
+
+picture = BAT_loyalty_test
+allowed = {
+tag = GUA
+}
+
+modifier = {
+political_power_gain = 0.35
+neutrality_drift = 0.05
+}
+}
+}
+
+country= {
+HIP_sunset_atoll_idea = {
+
+picture = HIP_sunset_atoll_idea
+allowed = {
+tag = GUA
+}
+
+modifier = {
+political_power_gain = 0.45
+stability_factor = 0.30
+}
+}
+}
+
+country = {
+HIP_f_sun = {
+
+picture = HIP_f_sun
+allowed = {
+tag = GUA
+}
+
+modifier = {
+political_power_gain = 0.35
+stability_factor = 0.20
+}
+}
+}
+
+country = {
+GUA_Pizdec_V_Pravitelstve = {
+
+picture = black_sun_purple_fire
+allowed = {
+tag = GUA
+}
+
+modifier = {
+political_power_gain = -0.15
+stability_factor = -0.30
+neutrality_drift = +0.01
+communism_drift = +0.02
+fascism_drift = +0.02
+}
+}
+}
+
+country = {
+GUA_Pizdec_V_School = {
+
+picture = SRF_geshtaalt_question
+allowed = {
+tag = GUA
+}
+
+modifier = {
+research_speed_factor = -0.25
+}
+}
+}
+
+country = {
+GUA_Pizdec_V_promke_infrastrukture = {
+
+picture = ZAU_out_industry
+allowed = {
+tag = GUA
+}
+
+modifier = {
+production_speed_buildings_factor = -0.20
+industrial_capacity_factory = -0.20
+}
+}
+}
+
+country = {
+GUA_Maliy_Pizdec_V_School = {
+
+picture = SRF_geshtaalt_question 
+allowed = {
+tag = GUA
+}
+
+modifier = {
+research_speed_factor = -0.10
+}
+}
+}
+
+country = {
+GUA_Maliy_Pizdec_V_promke_infrastrukture = {
+
+picture = ZAU_out_industry
+allowed = {
+tag = GUA
+}
+
+modifier = {
+production_speed_buildings_factor = -0.10
+industrial_capacity_dockyard = -0.05
+industrial_capacity_factory = -0.10
+}
+}
+}
+
+country = {
+GUA_Nedolnie_voennie = {
+
+picture = black_baron
+allowed = {
+tag = GUA
+}
+
+modifier = {
+war_support_factor = -0.15
+attrition = +0.20
+}
+}
+}
+
+country = {
+GUA_Menie_Nedolnie_voennie = {
+
+picture = black_baron
+allowed = {
+tag = GUA
+}
+
+modifier = {
+war_support_factor = -0.10
+attrition = +0.10
+}
+}
+}
+
+country = {
+GUA_Nedolnie_communisti = {
+
+picture = burning_skull_knife
+allowed = {
+tag = GUA
+}
+
+modifier = {
+monthly_population = -0.30
+stability_factor = -0.25
+}
+}
+}
+
+country = {
+GUA_Menie_Nedolnie_communisti = {
+
+picture = burning_skull_knife
+allowed = {
+tag = GUA
+}
+
+modifier = {
+monthly_population = -0.15
+stability_factor = -0.15
+}
+}
+}
+
+country = {
+GUA_Ebanutiy_kredit = {
+
+picture = cash_banned
+allowed = {
+tag = GUA
+}
+
+modifier = {
+research_speed_factor = -0.25
+stability_weekly_factor = -0.10
+production_factory_efficiency_gain_factor = -0.20
+}
+}
+}

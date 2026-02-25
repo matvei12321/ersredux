@@ -1,0 +1,339 @@
+bookmarks = {
+	bookmark = {
+		name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 1007.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "YAC"
+		default = yes
+		
+
+		
+		"HRZ"={
+			history = "ers_HRZ_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				HRZ_communst_problem 
+				HRZ_trade_contract_for_HRZ 
+				HRZ_out_industry 
+				
+			}
+			focuses = {
+			HRZ_Grover_vii
+			HRZ_raut
+			HRZ_go_to_Aquila
+			}
+		}
+		
+		"PGS"={
+			history = "PGS_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				PGS_dead_monarchy
+				PGS_workers
+				PGS_stoitsism
+				
+			}
+			focuses = {
+				PGS_military_trap
+				PGS_peacemakers
+				PGS_order_restored_question_mark
+			}
+		}
+		
+						"CHN"={
+			
+			history = "ers_CHN_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				political_divisions
+				CHN_army_reorganization
+				changelings_leader
+				
+			}
+			focuses = {
+				CHN_family_problems
+				CHN_light_ruling
+				CHN_heavy_ruling
+			}
+		}
+		
+		"LYC"={
+			history = "LYC_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				LYC_social_problems_ignored
+				LYC_industrial_hive
+				LYC_our_enemies_idea
+			}
+			focuses = {
+				LYC_our_queen
+				LYC_kill_deers
+				LYC_wait
+			}
+		}
+		
+			"TST"={
+			history = "ers_TST_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+			TST_river_caravans
+			TST_night_vs_day_religion
+			TST_low_peasant_discontent_idea
+			}
+			focuses = {
+			TST_listen_to_the_nobility
+			TST_listen_to_the_peasants
+			TST_listen_to_the_clergy
+			}
+		}
+		
+				"---"={
+			history = "RANDOM_GATHERING_STORM_DESC"
+		}
+
+		# minors ####
+		"ERP"={
+		minor = yes
+			history = "ERP_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				ERP_religion_crysis
+				ERP_overpopulation
+				ERP_economic_dependence_balance
+			}
+			focuses = {
+				ERP_harmony_final
+				ERP_communists_final
+				ERP_fascism_final
+			}
+		}
+				"YAC"={
+				minor = yes
+			history = "ers_YAK_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
+				YAK_resilience
+				YAC_homeland_of_revolution
+				YAC_primitive_esoterism
+			}
+			focuses = {
+				YAC_spread_marks_personality
+				YAC_holy_portraits
+				YAC_spread_marks_books
+			}
+		}
+	
+		"NEI"={
+			minor = yes
+			history = "NEI_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				NEI_people_of_the_sun
+				NEI_priests_of_day_sent
+				NEI_fanatism
+			}
+			focuses = {
+				NEI_People_Of_The_Sun
+				NEI_Tail_Of_The_Skies
+				NEI_Sun_VS_Moon
+			}
+		}
+		
+		"UNC"={
+			minor = yes
+			history = "UNC_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				UNC_monarchy
+				UNC_intelligents
+				UNC_workers
+			}
+			focuses = {
+				
+			}
+		}
+		
+		"ROK"={
+			minor = yes
+			history = "ROK_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				ROK_gunfighting
+				ROK_migration
+				ROK_bandit_queen
+			}
+			focuses = {
+				ROK_home
+				ROK_gambit
+				ROK_moneys
+			}
+		}
+		"CRY"={
+			minor = yes
+			history = "ers_CRY_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				CRY_crystal_state
+				CRY_pacifism
+				CRY_pan_ponyism
+			}
+			focuses = {
+				CRY_ers_protect_state
+				CRY_ers_state_arsenal
+				CRY_ers_secret_weapon
+			}
+		}
+		"PRG"={
+			minor = yes
+			history = "PRA_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				PRG_shors_idea
+				PRG_grimmler_idea
+				PRA_revansh
+			}
+			focuses = {
+				PRA_start
+				PRA_my_country
+				PRA_not_my_business
+			}
+		}
+		
+		"VRX"={
+			minor = yes
+			history = "VRX_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				VRX_military_hive
+				changelings_low_puppet
+			}
+			focuses = {
+				VRX_war_queen
+				VRX_talk_to_vesalipolis_queen
+				VRX_next_step
+			}
+		}		
+		
+		"LOS"={
+			minor = yes
+			history = "LOS_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				LOS_petty_army
+				LOS_national_republicans
+				LOS_food_problem
+			}
+			focuses = {
+				LOS_old_new_home_d
+				LOS_monarchist_still_believing
+				LOS_democrats
+			}
+		}
+		"STL"={
+			minor = yes
+			history = "STL_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
+				STL_ers_equality
+			}
+			focuses = {
+				ers_STL_our_town
+				ers_STL_raid
+				ers_STL_military_attack_STG
+			}
+		}
+		"CLT"={
+			minor = yes
+			history = "CLT_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				CLT_cultists
+				CLT_no_ruling
+			}
+			focuses = {
+				CLT_horrors_of_the_unknown
+			}
+		}
+		
+		"UNP"={
+			minor = yes
+			history = "UNP_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				UNP_plague
+			}
+			focuses = {
+				UNP_reports
+				UNP_on_streets
+				UNP_first_plan
+			}
+		}
+		"MNH"={
+			minor = yes
+			history = "MNH_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				MNH_money_society_idea
+				MNH_fnf_leadership
+				MNH_no_army
+			}
+			focuses = {
+				
+			}
+		}
+		"STG"={
+			minor = yes
+			history = "MNH_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
+			    severe_famine
+				incomplete_industrialization
+			}
+			focuses = {
+				after_elections
+				after_conditions
+				after_new_leaders
+			}
+		}
+		"SVR"={
+			minor = yes
+			history = "MNH_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				SVR_belaya_armiya
+				SVR_chorniy_baron
+			}
+			focuses = {
+				SVR_partnyorynonedruzya
+				SVR_drugayacarica
+				SVR_vynuzhdennyysoyuz
+			}
+		}
+		"OLE"={
+			minor = yes
+			history = "MNH_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+				OLE_stalliongrad_support
+				OLE_approach_helvia
+				OLE_capitalism
+			}
+		}
+
+
+
+
+
+
+
+
+		
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

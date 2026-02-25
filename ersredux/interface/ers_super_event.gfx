@@ -1,0 +1,140 @@
+spriteTypes = {
+		
+	#################
+	#	Interface	#
+	#################
+		
+	corneredTileSpriteType = {
+		name = "GFX_tiled_window_bigevent_border"
+		size= { x=192 y=243 }
+		textureFile = "gfx//interface//tiles//tiled_window_bigevent_border.dds"
+		borderSize = { x=64 y=71 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {
+		name = "GFX_superevent_text_underlay"
+		textureFile = "gfx//interface//superevent_text_underlay.dds"
+	}
+	
+	corneredTileSpriteType = {
+		name = "GFX_tiled_window_1b_no_border"
+		size= { x=192 y=192 }
+		textureFile = "gfx/interface/tiles/tiled_bg.dds"
+		borderSize = { x=64 y=64 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	
+	textSpriteType = {
+		name = "GFX_button_399x34"
+		texturefile = "gfx//interface//button_399x34.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	
+	#############################
+	#	Super Events Pictures	#
+	#############################
+	
+	spriteType = {
+		name = "GFX_super_event_custom_you_did_it"
+		textureFile = "gfx//superevent_pictures//you_did_it.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_super_event_custom_superevent_dwtd"
+		textureFile = "gfx//superevent_pictures//dwtd.tga"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_super_event_custom_superevent_nuclear"
+		textureFile = "gfx//superevent_pictures//superevent_nuclear.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_super_event_custom_superevent_nuclear"
+		textureFile = "gfx//superevent_pictures//superevent_nuclear.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_super_event_custom_superevent_dodge_city_collapse_1"
+		textureFile = "gfx//superevent_pictures//dodge_city_collapse_1.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_super_event_custom_superevent_anarchy"
+		textureFile = "gfx//superevent_pictures//anarchy_superevent.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_super_event_custom_superevent_warkhan_war"
+		textureFile = "gfx//superevent_pictures//warkhan_war.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_super_event_custom_superevent_starlight_unification"
+		textureFile = "gfx//superevent_pictures//starlight_unification.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_super_event_custom_superevent_changeling_hehemony_collapse"
+		textureFile = "gfx//superevent_pictures//changeling_hehemony_collapse.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_super_event_custom_superevent_lyc_ole_war"
+		textureFile = "gfx//superevent_pictures//lyctida_attack_2.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_super_event_custom_superevent_red_changelings_rise"
+		textureFile = "gfx//superevent_pictures//red_changelings_rise.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_super_event_custom_superevent_frost_is_here"
+		textureFile = "gfx//superevent_pictures//frost_is_here.tga"
+	}
+	spriteType = {
+		name = "GFX_super_event_marx_revival"
+		textureFile = "gfx//superevent_pictures//marx_revival.tga"
+	}
+	spriteType = {
+		name = "GFX_super_event_chrysalis_unification"
+		textureFile = "gfx//superevent_pictures//changelings_hehemony_chrysalis.tga"
+	}
+	spriteType = {
+		name = "GFX_super_event_aurantia_unification"
+		textureFile = "gfx//superevent_pictures//changelings_hehemony_aurantia.tga"
+	}
+	spriteType = {
+		name = "GFX_super_event_argynnis_unification"
+		textureFile = "gfx//superevent_pictures//changelings_hehemony_argynnis.tga"
+	}
+	spriteType = {
+		name = "GFX_super_event_olenians_extinction"
+		textureFile = "gfx//superevent_pictures//olenians_extinction.tga"
+	}
+	spriteType = {
+		name = "GFX_super_event_red_sun"
+		textureFile = "gfx//superevent_pictures//solar_thestralia.tga"
+	}
+	spriteType = {
+		name = "GFX_super_event_the_great_war"
+		textureFile = "gfx//superevent_pictures//the_great_war.tga"
+	}
+	spriteType = {
+		name = "GFX_super_event_armed_sage_thestralia"
+		textureFile = "gfx//superevent_pictures//armed_sage_thestralia.tga"
+	}
+	spriteType = {
+		name = "GFX_super_event_soldat"
+		textureFile = "gfx//superevent_pictures//soldat.tga"
+	}
+	spriteType = {
+		name = "GFX_super_event_second_north_zebrican_war"
+		textureFile = "gfx//superevent_pictures//second_north_zebrican_war.tga"
+	}
+}

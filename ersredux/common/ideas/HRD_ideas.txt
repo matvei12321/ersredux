@@ -1,0 +1,215 @@
+ideas = {
+
+	country = {
+		HRD_shield_of_hope_idea = {
+			
+			picture = hrd_shield_of_hope
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				ARMY_CORE_DEFENCE_FACTOR = 0.075
+				democratic_drift = 0.02
+				conscription = 0.05
+			}
+		}
+		
+		HRD_shield_of_hope_idea_2 = {
+			
+			picture = hrd_shield_of_hope_2			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				ARMY_CORE_ATTACK_FACTOR = 0.025
+				ARMY_CORE_DEFENCE_FACTOR = 0.1
+				democratic_drift = 0.01
+				conscription = 0.075
+				training_time_factor = -0.05
+				war_support_factor = 0.025				
+			}
+		}
+		
+		HRD_corrupted_priests = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = SPR_seize_the_gold_reserves
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = 0.1
+				consumer_goods_factor = -0.1
+			}
+		}
+		
+		HRD_dont_sell_papers = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = SPR_seize_the_gold_reserves
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				stability_factor = 0.1
+			}
+		}
+		
+		HRD_sell_papers = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = SPR_seize_the_gold_reserves
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				stability_factor = -0.1
+				political_power_gain = 0.45
+				consumer_goods_factor = -0.2
+			}
+		}
+		
+		HRD_abbatstvo_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = SPR_seize_the_gold_reserves
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				stability_factor = -0.1
+				resistance_growth = -0.05
+				war_support_factor = 0.05
+				non_core_manpower = -0.02
+			}
+		}
+		
+		HRD_knights_conscription = {
+			
+			picture = generic_army
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				conscription_factor = 0.1
+				training_time_factor = -0.05
+				army_org_factor = 0.035
+			}
+		}
+		
+		HRD_read_read_read = {
+			
+			picture = Generic_Harmonist_Constitution
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				research_speed_factor = 0.025
+				political_power_gain = -0.05
+			}
+		}
+		
+		HRD_peace_idea = {
+			
+			picture = Generic_Harmonist_Constitution
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				conscription = -0.02
+				production_speed_industrial_complex_factor = 0.035
+				stability_weekly = 0.002
+				political_power_gain = 0.25
+				war_support_factor = -0.015
+			}
+		}
+		
+		
+		
+		
+		
+		
+		HRD_god_go_beyond = {
+			
+			picture = hrd_shield_of_hope
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				local_resources_factor = 2.0
+				war_support_factor = 2.0
+				stability_factor = 2.0
+				training_time_factor = -0.5
+				justify_war_goal_time = -0.5
+				weekly_manpower = 5000
+				PRODUCTION_SPEED_BUILDINGS_FACTOR = 2.0
+				conscription = 2.0
+				ARMY_SPEED_FACTOR = 2.0
+				ARMY_ATTACK_FACTOR = 2.0
+				ARMY_DEFENCE_FACTOR = 2.0
+				INDUSTRIAL_CAPACITY_FACTORY = 2.0
+				industrial_capacity_dockyard = 2.0
+				RESEARCH_SPEED_FACTOR = 0.5
+				political_power_factor = 2.0
+				custom_modifier_tooltip = HRD_god_go_beyond_tt
+			}
+		}
+	}
+}
+

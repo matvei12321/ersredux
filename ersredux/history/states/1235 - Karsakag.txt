@@ -1,0 +1,35 @@
+state={
+	id=1235
+	name="STATE_1235"
+
+	provinces={
+		357 3347 6295 6370 9267 9389 11375 11252
+	}
+
+	manpower=2305319
+	state_category=rural
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = YAC
+		add_core_of = YAC
+		add_claim_by = YAK
+		add_claim_by = NAK
+		add_claim_by = JAK
+		add_claim_by = BAD
+		add_claim_by = SHA
+		add_claim_by = MNT
+
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 1
+		}
+
+		victory_points = { 9267 6 }
+	}
+	
+	resources = {
+		steel = 12
+	}
+}

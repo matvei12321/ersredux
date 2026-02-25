@@ -1,0 +1,383 @@
+division_template = {
+	name = "Garrison Unit"
+	regiments = {					
+		infantry = { x = 0 y = 0 }	
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+
+	priority = 0 # garrison
+}
+division_template = {
+	name = "Storm Legion"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Mountain Division"		
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }	
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+	}
+	
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	##### Imperial Army #####
+	##### TBK ######
+	division = {
+		location = 18280
+		division_template = "Storm Legion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division = {
+		location = 18265
+		division_template = "Storm Legion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division = {
+		location = 18289
+		division_template = "Garrison Unit"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		location = 18209
+		division_template = "Garrison Unit"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		location = 18228
+		division_template = "Garrison Unit"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	
+	
+	
+	division = {
+		location = 18590
+		division_template = "Garrison Unit"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division = {
+		location = 18673
+		division_template = "Garrison Unit"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	
+	
+	division = {
+		location = 18273
+		division_template = "Storm Legion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division = {
+		location = 18266
+		division_template = "Storm Legion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division = {
+		location = 18288
+		division_template = "Storm Legion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division = {
+		location = 18237
+		division_template = "Storm Legion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division = {
+		location = 18272
+		division_template = "Storm Legion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division = {
+		location = 18264
+		division_template = "Storm Legion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division = {
+		location = 18223
+		division_template = "Garrison Unit"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division = {
+		location = 18278
+		division_template = "Garrison Unit"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division = {
+		location = 17980
+		division_template = "Garrison Unit"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	
+	
+	division = {
+		location = 18248
+		division_template = "Storm Legion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division = {
+		location = 18231
+		division_template = "Storm Legion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division = {
+		location = 18910
+		division_template = "Storm Legion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division = {
+		location = 18225
+		division_template = "Mountain Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division = {
+		location = 18272
+		division_template = "Mountain Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division = {
+		location = 18272
+		division_template = "Mountain Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	
+	
+	division = {
+		location = 18647
+		division_template = "Mountain Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	
+	
+	division = {
+		location = 16521
+		division_template = "Garrison Unit"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division = {
+		location = 16521
+		division_template = "Garrison Unit"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division = {
+		location = 18290
+		division_template = "Garrison Unit"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division = {
+		location = 16521
+		division_template = "Storm Legion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	
+	
+	
+	
+	division = {
+		location = 19526
+		division_template = "Garrison Unit"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	
+	division = {
+		location = 19569
+		division_template = "Garrison Unit"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	
+	division = {
+		location = 16874
+		division_template = "Garrison Unit"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	
+	
+	division = {
+		location = 18974
+		division_template = "Storm Legion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division = {
+		location = 18974
+		division_template = "Garrison Unit"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	
+	division = {
+		location = 18970
+		division_template = "Storm Legion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division = {
+		location = 18970
+		division_template = "Garrison Unit"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	
+	
+	
+	division = {
+		location = 13080
+		division_template = "Storm Legion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division = {
+		location = 13080
+		division_template = "Garrison Unit"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division = {
+		location = 13080
+		division_template = "Garrison Unit"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division = {
+		location = 13080
+		division_template = "Garrison Unit"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	
+	
+	division = {
+		location = 19036
+		division_template = "Mountain Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division = {
+		location = 19036
+		division_template = "Mountain Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division = {
+		location = 19036
+		division_template = "Mountain Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division = {
+		location = 19036
+		division_template = "Garrison Unit"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	
+	
+	
+	
+	
+	division = {
+		location = 15285
+		division_template = "Storm Legion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division = {
+		location = 15285
+		division_template = "Mountain Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division = {
+		location = 15285
+		division_template = "Mountain Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "STO"
+		}
+		requested_factories = 15
+		progress = 0.1
+		efficiency = 40
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "VRX" }
+		requested_factories = 10
+		progress = 0.40
+		efficiency = 35
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "STO"
+		}
+		requested_factories = 8
+		progress = 0.1
+		efficiency = 30
+	}
+}

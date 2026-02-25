@@ -1,0 +1,18 @@
+characters = {
+NCN_Lox={
+    name=NCN_Lox
+    portraits={
+      civilian={
+        large="gfx/leaders/NGC/Dalzollene.tga"
+      }
+    }
+    country_leader={
+      desc="NCN_Lox_desc"
+      ideology=nazism
+      traits={ warmonger}
+      expire="1965.1.1.1"
+      id=-1
+    }
+    gender = male
+      }
+  }	  

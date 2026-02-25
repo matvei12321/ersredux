@@ -1,0 +1,99 @@
+
+warcrimes_count_low = {
+	enable = {
+		always = yes
+	}
+	stability_factor = -0.025
+	war_support_factor = -0.025
+	conscription = 0.002
+	improve_relations_maintain_cost_factor = 0.1
+	RESISTANCE_GROWTH = -0.025
+	RESISTANCE_ACTIVITY_FACTOR = -0.05
+}
+
+warcrimes_count_medium = {
+	enable = {
+		always = yes
+	}
+	stability_factor = -0.075
+	war_support_factor = -0.075
+	conscription = 0.005
+	improve_relations_maintain_cost_factor = 0.2
+	RESISTANCE_GROWTH = -0.05
+	RESISTANCE_ACTIVITY_FACTOR = -0.1
+	non_core_manpower = -0.05
+}
+
+warcrimes_count_high = {
+	enable = {
+		always = yes
+	}
+	stability_factor = -0.075
+	war_support_factor = -0.075
+	conscription = 0.01
+	improve_relations_maintain_cost_factor = 0.3
+	RESISTANCE_GROWTH = -0.1
+	RESISTANCE_ACTIVITY_FACTOR = -0.15
+	non_core_manpower = -0.1
+}
+
+
+
+
+
+non_fascism_warcrimes_count_low = {
+	enable = {
+		always = yes
+	}
+	stability_factor = -0.025
+	political_power_factor = -0.05
+	improve_relations_maintain_cost_factor = 0.1
+}
+
+fascism_warcrimes_count_low = {
+	enable = {
+		always = yes
+	}
+	war_support_factor = 0.025
+	army_core_attack_factor = 0.025
+	army_core_defence_factor = 0.025
+	mobilization_speed = 0.05
+}
+
+non_fascism_warcrimes_count_medium = {
+	enable = {
+		always = yes
+	}
+	stability_factor = -0.05
+	political_power_factor = -0.1
+	improve_relations_maintain_cost_factor = 0.25
+}
+
+fascism_warcrimes_count_medium = {
+	enable = {
+		always = yes
+	}
+	war_support_factor = 0.05
+	army_core_attack_factor = 0.05
+	army_core_defence_factor = 0.05
+	mobilization_speed = 0.1
+}
+
+non_fascism_warcrimes_count_high = {
+	enable = {
+		always = yes
+	}
+	stability_factor = -0.1
+	political_power_factor = -0.15
+	improve_relations_maintain_cost_factor = 0.5
+}
+
+fascism_warcrimes_count_high = {
+	enable = {
+		always = yes
+	}
+	war_support_factor = 0.1
+	army_core_attack_factor = 0.1
+	army_core_defence_factor = 0.1
+	mobilization_speed = 0.15
+}

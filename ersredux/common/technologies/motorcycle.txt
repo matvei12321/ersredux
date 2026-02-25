@@ -1,0 +1,22 @@
+technologies = {
+
+	motorcycle_tech = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1007
+
+		enable_subunits = {
+			motorcycle_recon
+			motorcycle_units
+        }
+
+		enable_equipments = {
+			motorcycle_equipment_0
+		}
+		
+	}
+}

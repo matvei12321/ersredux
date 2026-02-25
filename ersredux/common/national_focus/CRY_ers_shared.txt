@@ -1,0 +1,613 @@
+
+shared_focus = {
+	id = CRY_ers_protect_state
+	icon = GFX_goal_cry_ers_soldier
+	cost = 2
+	x = 7
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus  ERP_start_elections"
+		army_experience = 10
+		add_manpower = 6500
+		344 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+			}
+		}
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = CRY_ers_pre_attack
+	icon = GFX_goal_cry_ers_offence
+	prerequisite = { focus = CRY_ers_protect_state }
+	mutually_exclusive = { focus = CRY_ers_defence }
+	cost = 8
+	relative_position_id = CRY_ers_protect_state
+	x = -3
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus  ERP_start_elections"
+		add_ideas = CRY_agressive_protectors
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = CRY_ers_air_trainings
+	icon = GFX_goal_cry_ers_airplane
+	prerequisite = { focus = CRY_ers_protect_state }
+	cost = 3
+	relative_position_id = CRY_ers_protect_state
+	x = -7
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus  ERP_start_elections"
+		air_experience = 15
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = CRY_ers_navy_trainings
+	icon = GFX_goal_cry_ers_ship
+	prerequisite = { focus = CRY_ers_protect_state }
+	cost = 3
+	available = {
+		any_controlled_state_is_coastal = yes
+	}
+	relative_position_id = CRY_ers_protect_state
+	x = 7
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus  ERP_start_elections"
+		navy_experience = 15
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = CRY_ers_defence
+	icon = GFX_goal_cry_ers_defence
+	prerequisite = { focus = CRY_ers_protect_state }
+	mutually_exclusive = { focus = CRY_ers_pre_attack }
+	cost = 8
+	relative_position_id = CRY_ers_protect_state
+	x = 3
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus  ERP_start_elections"
+		add_ideas = CRY_protectors
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = CRY_ers_planning_stratefy
+	icon = GFX_goal_cry_ers_arrow_and_hat
+	prerequisite = { focus = CRY_ers_defence }
+	mutually_exclusive = { focus = CRY_ers_manpower_strategy }
+	cost = 8
+	relative_position_id = CRY_ers_protect_state
+	x = 2
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus  ERP_start_elections"
+		add_doctrine_cost_reduction = {
+			name = cat_grand_battle_plan
+			cost_reduction = 0.5
+			uses = 2
+			category = cat_grand_battle_plan
+		}
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = CRY_ers_manpower_strategy
+	icon = GFX_goal_cry_eqs_hat
+	prerequisite = { focus = CRY_ers_defence }
+	mutually_exclusive = { focus = CRY_ers_planning_stratefy }
+	cost = 8
+	relative_position_id = CRY_ers_protect_state
+	x = 4
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus  ERP_start_elections"
+		add_doctrine_cost_reduction = {
+			name = cat_mass_assault
+			cost_reduction = 0.5
+			uses = 2
+			category = cat_mass_assault
+		}
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = CRY_ers_defence_comitte
+	icon = GFX_goal_cry_forts
+	prerequisite = { focus = CRY_ers_planning_stratefy focus = CRY_ers_manpower_strategy }
+	cost = 8
+	relative_position_id = CRY_ers_protect_state
+	x = 3
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus  ERP_start_elections"
+	
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = CRY_ers_okop
+	icon = GFX_goal_cry_list
+	prerequisite = { focus = CRY_ers_planning_stratefy }
+	prerequisite = { focus = CRY_ers_defence_comitte }
+	cost = 8
+	relative_position_id = CRY_ers_protect_state
+	x = 2
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus  ERP_start_elections"
+		add_ideas = CRY_dig_in_idea
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = CRY_ers_partisans
+	icon = GFX_goal_cry_eqs_hat
+	prerequisite = { focus = CRY_ers_manpower_strategy }
+	prerequisite = { focus = CRY_ers_defence_comitte }
+	cost = 8
+	relative_position_id = CRY_ers_protect_state
+	x = 4
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus  ERP_start_elections"
+		add_ideas = CRY_manpower_idea
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = CRY_ers_tank_strategy
+	icon = GFX_goal_cry_heavy_tanks
+	prerequisite = { focus = CRY_ers_pre_attack }
+	mutually_exclusive = { focus = CRY_ers_artillery_strategy }
+	cost = 8
+	relative_position_id = CRY_ers_protect_state
+	x = -4
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus  ERP_start_elections"
+		add_doctrine_cost_reduction = {
+			name = cat_mobile_warfare
+			cost_reduction = 0.5
+			uses = 2
+			category = cat_mobile_warfare
+		}
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = CRY_ers_no_mercy
+	icon = GFX_goal_cry_ers_blood
+	prerequisite = { focus = CRY_ers_tank_strategy focus = CRY_ers_artillery_strategy }
+	cost = 8
+	relative_position_id = CRY_ers_protect_state
+	x = -3
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus  ERP_start_elections"
+		add_ideas = CRY_no_mercy_idea
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = CRY_ers_project
+	icon = GFX_goal_cry_ers_tank
+	prerequisite = { focus = CRY_ers_tank_strategy }
+	prerequisite = { focus = CRY_ers_no_mercy }
+	cost = 8
+	relative_position_id = CRY_ers_protect_state
+	x = -4
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus  ERP_start_elections"
+		add_tech_bonus = {
+			name = armor_bonus
+			bonus = 3.0
+			uses = 1
+			category = cat_heavy_armor
+		}
+		add_tech_bonus = {
+			name = armor_bonus
+			bonus = 0.75
+			uses = 1
+			category = cat_medium_armor
+		}
+		add_tech_bonus = {
+			name = armor_bonus
+			bonus = 0.75
+			uses = 1
+			category = cat_light_armor
+		}
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = CRY_ers_artillery_strategy
+	icon = GFX_goal_cry_ers_artillery
+	prerequisite = { focus = CRY_ers_pre_attack }
+	mutually_exclusive = { focus = CRY_ers_tank_strategy }
+	cost = 8
+	relative_position_id = CRY_ers_protect_state
+	x = -2
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus  ERP_start_elections"
+		add_doctrine_cost_reduction = {
+			name = cat_superior_firepower
+			cost_reduction = 0.5
+			uses = 2
+			category = cat_superior_firepower
+		}
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = CRY_ers_magical_bullets
+	icon = GFX_goal_cry_ers_magic_canon
+	prerequisite = { focus = CRY_ers_artillery_strategy }
+	prerequisite = { focus = CRY_ers_no_mercy }
+	cost = 8
+	relative_position_id = CRY_ers_protect_state
+	x = -2
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus  ERP_start_elections"
+		add_ideas = CRY_magic_artillery
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = CRY_ers_opolcheniye
+	icon = GFX_goal_cry_ers_hooves
+	prerequisite = { focus = CRY_ers_defence focus = CRY_ers_pre_attack }
+	cost = 5
+	relative_position_id = CRY_ers_protect_state
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus  ERP_start_elections"
+		hidden_effect = {
+			load_oob = "CRY_opolcheniye"
+		}
+		custom_effect_tooltip = cry_ers_opolcheniye_tt
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = CRY_ers_centralized_strategy
+	icon = GFX_goal_cry_ers_army_centralized
+	prerequisite = { focus = CRY_ers_opolcheniye }
+	mutually_exclusive = { focus = CRY_ers_decentralized_strategy }
+	cost = 8
+	relative_position_id = CRY_ers_protect_state
+	x = -1
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus  ERP_start_elections"
+		add_ideas = CRY_centralized_strategy
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = CRY_ers_decentralized_strategy
+	icon = GFX_goal_cry_ers_army_decentralized
+	prerequisite = { focus = CRY_ers_opolcheniye }
+	mutually_exclusive = { focus = CRY_ers_centralized_strategy }
+	cost = 8
+	relative_position_id = CRY_ers_protect_state
+	x = 1
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus  ERP_start_elections"
+		add_ideas = CRY_decentralized_strategy
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = CRY_ers_military_trainingds
+	icon = GFX_goal_cry_military
+	prerequisite = { focus = CRY_ers_opolcheniye }
+	prerequisite = { focus = CRY_ers_project focus = CRY_ers_magical_bullets focus = CRY_ers_okop focus = CRY_ers_partisans }
+	cost = 8
+	relative_position_id = CRY_ers_protect_state
+	x = 0
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus  ERP_start_elections"
+		army_experience = 10
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = CRY_ers_secret_snowburi_base
+	icon = GFX_goal_cry_rocketry
+	prerequisite = { focus = CRY_ers_military_trainingds }
+	cost = 8
+	available = {
+		owns_state = 142
+	}
+	relative_position_id = CRY_ers_military_trainingds
+	x = -5
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus  ERP_start_elections"
+		add_tech_bonus = {
+			name = rocketry
+			bonus = 0.65
+			uses = 2
+			category = rocketry
+		}
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = CRY_ers_secret_weapon
+	icon = GFX_goal_cry_ers_radioactive
+	prerequisite = { focus = CRY_ers_secret_snowburi_base }
+	cost = 8
+	relative_position_id = CRY_ers_military_trainingds
+	x = -5
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus  ERP_start_elections"
+		add_tech_bonus = {
+			name = secret_bonus
+			bonus = 1.0
+			uses = 1
+			category = nuclear
+		}
+		
+		add_threat = 1
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = CRY_ers_radiodivisions
+	icon = GFX_goal_cry_ers_radio
+	prerequisite = { focus = CRY_ers_military_trainingds }
+	cost = 8
+	relative_position_id = CRY_ers_military_trainingds
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus  ERP_start_elections"
+		add_ideas = CRY_support_equipment
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = CRY_ers_magic_rifles
+	icon = GFX_goal_cry_military
+	prerequisite = { focus = CRY_ers_military_trainingds }
+	cost = 8
+	relative_position_id = CRY_ers_military_trainingds
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus  ERP_start_elections"
+		add_ideas = CRY_overharged_equipment
+		add_tech_bonus = {
+			name = infantry_weapons_bonus
+			bonus = 1.0
+			uses = 1
+			technology = magical_weapons
+		}
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = CRY_ers_rubrum_complex
+	icon = GFX_goal_cry_ers_industry
+	prerequisite = { focus = CRY_ers_military_trainingds }
+	cost = 8
+	available = {
+		owns_state = 151
+	}
+	relative_position_id = CRY_ers_military_trainingds
+	x = 5
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus  ERP_start_elections"
+		151 = {
+			add_extra_state_shared_building_slots = 4
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 4
+			}
+		}
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = CRY_ers_rubrum_complex_upgrade
+	icon = GFX_goal_cry_ers_industry_upgrade
+	prerequisite = { focus = CRY_ers_rubrum_complex }
+	cost = 8
+	relative_position_id = CRY_ers_military_trainingds
+	x = 5
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus  ERP_start_elections"
+		add_ideas = CRY_rubrum_complex
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = CRY_ers_crystal_granades
+	icon = GFX_goal_cry_ers_grenade
+	prerequisite = { focus = CRY_ers_radiodivisions }
+	prerequisite = { focus = CRY_ers_secret_snowburi_base }
+	cost = 8
+	relative_position_id = CRY_ers_military_trainingds
+	x = -3
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus  ERP_start_elections"
+		add_ideas = CRY_crystal_grenades_idea
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = CRY_ers_modern_doctrine
+	icon = GFX_goal_cry_gunfactories
+	prerequisite = { focus = CRY_ers_radiodivisions }
+	prerequisite = { focus = CRY_ers_magic_rifles }
+	cost = 8
+	relative_position_id = CRY_ers_military_trainingds
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus  ERP_start_elections"
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.5
+			uses = 2
+			category = land_doctrine
+		}
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = CRY_ers_specops
+	icon = GFX_goal_cry_military
+	prerequisite = { focus = CRY_ers_magic_rifles }
+	prerequisite = { focus = CRY_ers_rubrum_complex }
+	cost = 8
+	relative_position_id = CRY_ers_military_trainingds
+	x = 3
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus  ERP_start_elections"
+		add_ideas = CRY_specops_idea
+		add_tech_bonus = {
+			name = special_forces_bonus
+			bonus = 0.5
+			uses = 3
+			category = special_forces_tech
+		}
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = CRY_ers_stormtropers
+	icon = GFX_goal_cry_ers_anti_tank
+	prerequisite = { focus = CRY_ers_crystal_granades }
+	prerequisite = { focus = CRY_ers_modern_doctrine }
+	prerequisite = { focus = CRY_ers_specops }
+	cost = 8
+	relative_position_id = CRY_ers_military_trainingds
+	x = -2
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus  ERP_start_elections"
+		add_tech_bonus = {
+			name = cat_anti_tank
+			bonus = 0.5
+			uses = 2
+			category = cat_anti_tank
+		}
+		add_tech_bonus = {
+			name = cat_anti_air
+			bonus = 0.5
+			uses = 2
+			category = cat_anti_air
+		}
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = CRY_ers_state_arsenal
+	icon = GFX_goal_cry_factory
+	prerequisite = { focus = CRY_ers_crystal_granades }
+	prerequisite = { focus = CRY_ers_modern_doctrine }
+	prerequisite = { focus = CRY_ers_specops }
+	cost = 8
+	relative_position_id = CRY_ers_military_trainingds
+	x = 0
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus  ERP_start_elections"
+		add_ideas = CRY_military_industry_idea
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = CRY_ers_crystal_armour
+	icon = GFX_goal_cry_ers_defence
+	prerequisite = { focus = CRY_ers_crystal_granades }
+	prerequisite = { focus = CRY_ers_modern_doctrine }
+	prerequisite = { focus = CRY_ers_specops }
+	cost = 8
+	relative_position_id = CRY_ers_military_trainingds
+	x = 2
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus  ERP_start_elections"
+		
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = CRY_ers_research_upgrade
+	icon = GFX_goal_cryacademy
+	prerequisite = { focus = CRY_ers_crystal_armour }
+	prerequisite = { focus = CRY_ers_stormtropers }
+	cost = 8
+	relative_position_id = CRY_ers_military_trainingds
+	x = 0
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus  ERP_start_elections"
+		if = {
+			limit = {
+				amount_research_slots < 5
+			}
+			add_research_slot = 1
+		}
+	}
+	ai_will_do = { factor = 10 }
+}

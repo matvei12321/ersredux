@@ -1,0 +1,29 @@
+state={
+	id=1214
+	name="STATE_1214"
+
+	provinces={
+		878 922 936 6967 9888 9902 9919 11842
+	}
+
+	manpower=59371
+	state_category=rural
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = PGS
+		add_core_of = PGS
+
+		victory_points = { 9888 1 }
+
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+	}
+	
+	
+	resources={
+		steel=5
+	}
+}

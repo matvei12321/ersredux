@@ -1,0 +1,241 @@
+ANR_beer_politics = {
+	ANR_palyenoye_pivo = {
+		allowed = {
+			tag = ANR
+		}
+		ai_will_do = {
+			factor = 200
+		}
+		icon = rifles
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = need_less_26_bear
+			}
+			check_variable = {
+				ANR.beer_variable < 26
+			}
+		}
+		visible = {
+			NOT = {
+				has_country_flag = makes_palyonka
+			}
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision ANR_stability_decision"
+			add_to_variable = { ANR.beer_variable_production_var = 10 }
+			custom_effect_tooltip = ANR_palyenoye_pivo_tt
+			set_country_flag = makes_palyonka
+		}
+	}
+	
+	ANR_stop_palyenoye_pivo = {
+		allowed = {
+			tag = ANR
+		}
+		ai_will_do = {
+			factor = 200
+		}
+		icon = rifles
+		available = {
+		
+		}
+		visible = {
+			has_country_flag = makes_palyonka
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision ANR_stability_decision"
+			add_to_variable = { ANR.beer_variable_production_var = -10 }
+			custom_effect_tooltip = ANR_stop_palyenoye_pivo_tt
+			clr_country_flag = makes_palyonka
+		}
+	}
+}
+
+
+ANR_civil_war_cat = {
+	ANR_pegasi_unification = {
+		allowed = {
+			tag = ANR
+		}
+		ai_will_do = {
+			factor = 2000
+		}
+		icon = pegasus_wing
+		available = {
+			66 = {
+				is_owned_by = ANR
+			}
+			14 = {
+				is_owned_by = ANR
+			}
+			170 = {
+				is_owned_by = ANR
+			}
+			175 = {
+				is_owned_by = ANR
+			}
+			custom_trigger_tooltip = {
+				tooltip = need_more_than_99_bear
+			}
+			check_variable = {
+				ANR.beer_variable > 99
+			}
+		}
+		priority = 10
+		fire_only_once =  yes
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision PGS_civil_war_time"
+			custom_effect_tooltip = minus_100_beer_tt
+			add_to_variable = {
+				ANR.beer_variable = -100
+			}
+			set_cosmetic_tag = ANR_pegasi_unified
+			news_event = { id = ers_news.35 days = 1 }
+		}
+	}
+	
+	ANR_stability_decision = {
+		allowed = {
+			tag = ANR
+		}
+		ai_will_do = {
+			factor = 200
+		}
+		icon = rifles
+		available = {
+			has_completed_focus = ANR_decisions_focus
+			has_war = yes
+		}
+		visible = {
+			has_war_with = PGS
+		}
+		days_re_enable = 50
+		cost = 10
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision ANR_stability_decision"
+			add_stability = 0.05
+			add_popularity = {
+				ideology = communism
+				popularity = -0.01
+			}
+		}
+	}
+	ANR_war_support_decision = {
+		allowed = {
+			tag = ANR
+		}
+		ai_will_do = {
+			factor = 200
+		}
+		icon = rifles
+		available = {
+			has_completed_focus = ANR_decisions_focus
+			has_war = yes
+		}
+		visible = {
+			has_war_with = PGS
+		}
+		days_re_enable = 50
+		cost = 10
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision ANR_war_support_decision"
+			add_war_support = 0.05
+			add_popularity = {
+				ideology = communism
+				popularity = -0.01
+			}
+		}
+	}
+	
+	ANR_equipment_decision = {
+		allowed = {
+			tag = ANR
+		}
+		ai_will_do = {
+			factor = 200
+		}
+		icon = rifles
+		available = {
+			has_completed_focus = ANR_decisions_focus
+			has_completed_focus = ANR_find_guns
+			has_war = yes
+		}
+		visible = {
+			has_war_with = PGS
+		}
+		days_re_enable = 50
+		cost = 10
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision ANR_equipment_decision"
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 200
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = -0.01
+			}
+		}
+	}
+	
+	ANR_generals_meeting_decision = {
+		allowed = {
+			tag = ANR
+		}
+		ai_will_do = {
+			factor = 200
+		}
+		icon = rifles
+		available = {
+			has_completed_focus = ANR_decisions_focus
+			has_completed_focus = ANR_again_not_ok
+			has_war = yes
+		}
+		visible = {
+			has_war_with = PGS
+		}
+		priority = 10
+		days_re_enable = 50
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision ANR_generals_meeting_decision"
+			add_political_power = 35
+			army_experience = 10
+			add_popularity = {
+				ideology = communism
+				popularity = -0.01
+			}
+		}
+	}
+	
+	ANR_partizans_decision = {
+		allowed = {
+			tag = ANR
+		}
+		ai_will_do = {
+			factor = 400
+		}
+		icon = rifles
+		available = {
+			has_completed_focus = ANR_partizans
+			has_war = yes
+		}
+		visible = {
+			has_war_with = PGS
+		}
+		priority = 10
+		fire_only_once =  yes
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision ANR_partizans_decision"
+			hidden_effect = {
+				load_oob = "Anarchists_partizans"
+			}
+			custom_effect_tooltip = anr_partisans_tt
+			PGS = {
+				add_stability = -0.035
+			}
+		}
+	}
+	
+}

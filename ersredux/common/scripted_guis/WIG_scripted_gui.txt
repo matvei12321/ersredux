@@ -1,0 +1,345 @@
+scripted_gui = {
+	WIG_abyssinia_gui = {
+		window_name = "WIG_abyssinia_window" 
+		context_type = player_context
+
+		visible = {
+			has_country_flag = WIG_south_attempt_flag
+			is_player = yes
+		}
+
+		effects = {
+			close_button_click = {
+				clr_country_flag = WIG_south_attempt_flag
+			}
+		}
+
+		triggers = {
+			TUL_free_visible = {
+				NOT = {
+					WIG = {owns_state = 366}
+				}
+			}
+			TUL_annexed_visible = {
+				WIG = {owns_state = 366}
+			}
+			
+			FRC_free_visible = { 
+				NOT = {
+					WIG = {owns_state = 515}
+				}
+			}
+			FRC_annexed_visible = {
+				WIG = {owns_state = 515}
+			}
+			
+			SCM_free_visible = {
+				NOT = {
+					WIG = { owns_state = 445}
+				}
+			}
+			SCM_annexed_visible = {
+				WIG = { owns_state = 445} 
+			}
+			
+			CIO_free_visible = {
+				NOT = {
+					WIG = {owns_state = 507}
+					WIG = {owns_state = 671}
+				}			
+			}
+			CIO_annexed_visible = {
+				WIG = {owns_state = 507}
+				WIG = {owns_state = 671}		
+
+			}
+			
+			AST_free_visible = {
+				NOT = {
+					OR = {
+						WIG = {owns_state = 386}
+						AST = {is_puppet_of = WIG}
+					}
+				}
+			}
+			AST_annexed_visible = {
+				OR = {
+					WIG = {owns_state = 386}
+					AST = {is_puppet_of = WIG}
+				}
+			}
+			
+			PRY_free_visible = {
+				NOT = {
+					OR = {
+						AND = {
+							WIG = { owns_state = 385}
+							WIG = { owns_state = 508}
+						}
+						PRY = { is_puppet_of = WIG}
+					}	
+				}
+			}
+			PRY_annexed_visible = {
+				OR = {
+					AND = {
+						WIG = { owns_state = 385}
+						WIG = { owns_state = 508}
+					}
+					PRY = { is_puppet_of = WIG}
+				}
+			}
+			
+			fuckd_up_visible = {
+				OR = {
+					NOT = {
+						OR = {
+							has_government = fascism
+							has_government = neutrality
+						}
+					}
+					WIG = {is_subject = yes}
+				}
+			}
+
+		}
+
+		dynamic_lists = {
+		}
+
+		properties = {
+		}
+
+		ai_enabled = {
+			always = no
+		}
+
+		ai_test_interval = 290  # The higher, the long it takes the ai to do actions
+		ai_test_variance = 0.5
+
+		ai_check = {
+		}
+
+		ai_check_scope = {
+		}
+
+		ai_weights = {
+		}
+	}
+}
+scripted_gui = {
+	WIG_the_button = {
+		window_name = "WIG_karthin_button" 
+		context_type = player_context
+
+		visible = {
+			has_country_flag = WIG_karthin_button_flag
+			is_player = yes
+			tag = wig
+		}
+
+		effects = {
+			open_button_click = {
+				if = {
+					limit = {
+						has_country_flag = WIG_south_attempt_flag
+					}
+					clr_country_flag = WIG_south_attempt_flag
+				}
+				else = {
+					set_country_flag = WIG_south_attempt_flag
+				}
+			}
+		}
+
+		triggers = {
+
+		}
+
+		dynamic_lists = {
+
+		}
+
+		properties = {
+		}
+
+		ai_enabled = {
+			always = no
+		}
+
+		ai_test_interval = 290  # The higher, the long it takes the ai to do actions
+		ai_test_variance = 0.5
+
+		ai_check = {
+		}
+
+		ai_check_scope = {
+		}
+
+		ai_weights = {
+		}
+	}
+}
+
+scripted_gui = {
+	WIG_cats_menu = {
+		window_name = "WIG_cats_menu" 
+		context_type = decision_category
+
+		visible = {
+			has_country_flag = WIG_south_attempt_decision_flag
+			is_player = yes
+			tag = wig
+		}
+
+		effects = {
+			catland_DRG_click = {
+				set_country_flag = WIG_cats_menu_catland_drg_selected
+				IF = {
+					limit = { 
+						has_country_flag = WIG_cats_menu_murrsia_drg_selected
+					}
+					clr_country_flag = WIG_cats_menu_murrsia_drg_selected
+				}
+				IF = {
+					limit = { 
+						has_country_flag = WIG_cats_menu_murrsia_wig_selected
+					}
+					clr_country_flag = WIG_cats_menu_murrsia_wig_selected
+				}				
+			}			
+			murrsia_DRG_click = {
+				set_country_flag = WIG_cats_menu_murrsia_drg_selected
+				IF = {
+					limit = { 
+						has_country_flag = WIG_cats_menu_catland_drg_selected
+					}
+					clr_country_flag = WIG_cats_menu_catland_drg_selected
+				}
+				IF = {
+					limit = { 
+						has_country_flag = WIG_cats_menu_murrsia_wig_selected
+					}
+					clr_country_flag = WIG_cats_menu_murrsia_wig_selected
+				}				
+			}			
+			catland_WIG_click = {
+				set_country_flag = WIG_cats_menu_catland_wig_selected
+				IF = {
+					limit = { 
+						has_country_flag = WIG_cats_menu_murrsia_wig_selected
+					}
+					clr_country_flag = WIG_cats_menu_murrsia_wig_selected
+				}
+				IF = {
+					limit = { 
+						has_country_flag = WIG_cats_menu_catland_drg_selected
+					}
+					clr_country_flag = WIG_cats_menu_catland_drg_selected
+				}
+			}			
+			murrsia_WIG_click = {
+				set_country_flag = WIG_cats_menu_murrsia_wig_selected
+				IF = {
+					limit = { 
+						has_country_flag = WIG_cats_menu_catland_wig_selected
+					}
+					clr_country_flag = WIG_cats_menu_catland_wig_selected
+				}
+				IF = {
+					limit = { 
+						has_country_flag = WIG_cats_menu_catland_drg_selected
+					}
+					clr_country_flag = WIG_cats_menu_catland_drg_selected
+				}
+			
+			}
+		}
+
+		triggers = {
+			murrsia_WIG_visible = {
+				WIG = { owns_state = 784 }
+			}			
+			catland_WIG_visible = { 
+				WIG = { owns_state = 1200 }
+				WIG = { owns_state = 1201 }
+			}
+			murrsia_DRG_visible = { 
+				NOT = {	
+					WIG = { owns_state = 784 }
+				}
+			}			
+			catland_DRG_visible = { 
+				NOT = {
+					WIG = { owns_state = 1201 }
+				}
+			}
+			murrsia_selected_visible = {
+				OR = {
+					has_country_flag = WIG_cats_menu_murrsia_drg_selected
+					has_country_flag = WIG_cats_menu_murrsia_wig_selected
+				}
+				NOT = {
+					has_country_flag = WIG_cats_menu_catland_drg_selected
+					has_country_flag = WIG_cats_menu_catland_wig_selected				
+				}
+			}
+			catland_selected_visible = {
+			OR = {
+				has_country_flag = WIG_cats_menu_catland_drg_selected
+				has_country_flag = WIG_cats_menu_catland_wig_selected
+			}
+		}
+			
+			catland_controlled_by_us_visible = {
+				WIG = { owns_state = 784 }
+				WIG = { owns_state = 1200 }
+				WIG = { owns_state = 1201 }
+				set_country_flag = WIG_cats_menu_catland_wig_selected		
+				
+			}
+			catland_controlled_by_dragons_visible = {
+				NOT = {
+						WIG = { owns_state = 1200}
+				}
+					has_country_flag = WIG_cats_menu_catland_drg_selected		
+			}
+					murrsia_controlled_by_us_visible = {
+						WIG = { owns_state = 784 }#
+						has_country_flag = WIG_cats_menu_murrsia_wig_selected
+			}
+			murrsia_controlled_by_dragons_visible = {
+				NOT = {	
+					WIG = { owns_state = 784 }
+				}
+				has_country_flag = WIG_cats_menu_murrsia_drg_selected
+			}
+					}
+
+		dynamic_lists = {
+
+		}
+
+		properties = {
+			WIG_abyssinia_readiness_progressbar = {
+				frame = WIG.WIG_abyssinia_readiness
+			}
+		}
+
+		ai_enabled = {
+			always = no
+		}
+
+		ai_test_interval = 290  # The higher, the long it takes the ai to do actions
+		ai_test_variance = 0.5
+
+		ai_check = {
+		}
+
+		ai_check_scope = {
+		}
+
+		ai_weights = {
+		}
+	}
+}

@@ -1,0 +1,42 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			
+			# CHN focus backgrounds
+			LYC = {
+				set_variable = { show_background = 1 }
+			}
+			CHN = {
+				set_variable = { show_background = 1 }
+			}
+			VRX = {
+				set_variable = { show_background = 1 }
+			}
+			DTS = {
+				set_variable = { show_background = 1 }
+			}
+			LYC = {
+				set_variable = { show_background = 1 }
+			}
+			SRF = {
+				set_variable = { show_background = 1 }
+			}
+			CHC = {
+				set_variable = { show_background = 1 }
+			}
+			
+			NEI = {
+				set_variable = { show_background = 2 }
+			}
+			PGS = {
+				set_variable = { show_background = 3 }
+			}
+			LOS = {
+				set_variable = { show_background = 3 }
+			}
+			PGV = {
+				set_variable = { show_background = 3 }
+			}
+		}
+	}
+}

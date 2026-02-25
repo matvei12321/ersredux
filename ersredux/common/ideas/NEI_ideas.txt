@@ -1,0 +1,341 @@
+ideas = {
+	
+	country= {
+		NEI_people_of_the_sun = {
+			removal_cost = -1
+			picture = SOL_sunrise_sparkle
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				war_support_factor = 0.05
+				 army_attack_factor = 0.025
+				heat_attrition_factor = -0.15
+			}
+
+		}
+		
+		NEI_priests_of_day_sent = {
+			available = {
+				NOT = {
+					has_war_with = TST
+				}
+			}
+			removal_cost = -1
+			picture = FAR_NCH_trade
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_factor = -0.15
+				custom_modifier_tooltip = nei_priests_of_day_sent_tt
+			}
+		}
+		
+		NEI_fanatism = { 
+			picture = nei_sun_eye
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.1
+				army_org_factor = -0.05
+				conscription_factor = 0.04
+			}
+		}
+		NEI_fanatism_inner_beliefs = { 
+			picture = nei_sun_eye
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.05
+				conscription_factor = 0.04
+				army_core_defence_factor = 0.1
+			}
+		}
+		NEI_fanatism_agression = { 
+			picture = nei_sun_eye
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = 0.05
+				conscription_factor = 0.04
+				army_attack_factor = 0.1
+			}
+		}
+		NEI_temporary_hunger = { 
+			picture = nei_birb
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.05
+				production_speed_buildings_factor = -0.1
+				consumer_goods_factor = 0.15
+				political_power_gain = -0.15
+			}
+		}
+		NEI_original_tales_idea = { 
+			picture = nei_scrolls
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				fascism_drift = 0.01
+				political_power_gain = 0.15
+				army_morale_factor = 0.075
+			}
+		}
+		NEI_non_original_tales_idea = {
+			picture = nei_scrolls
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = 0.025
+				political_power_gain = 0.45
+				political_advisor_cost_factor = -0.1
+			}
+		}
+		NEI_pojertvovaniya_idea = {
+			picture = nei_sun_money
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = -0.1
+				weekly_manpower = -25
+			}
+		}
+		NEI_integration_in_tst = {
+			picture = nei_sun_money
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_factor = 0.05
+				neutrality_drift = 0.01
+				stability_factor = 0.1
+				war_support_factor = -0.025
+			}
+		}
+		NEI_smithing_idea = {
+			picture = solar_steel
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				industrial_capacity_factory = 0.1
+				PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR = 0.05
+			}
+		}
+		NEI_solar_swords_idea = {
+			picture = solar_swords
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					breakthrough = 0.05
+					soft_attack = 0.1
+					build_cost_ic = 0.025
+					instant = yes
+				}
+			}
+		}
+		NEI_solar_armor_idea = {
+			picture = solar_shield
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					reliability = 0.15
+					build_cost_ic = 0.025
+				}
+			}
+		}
+		NEI_TST_raids_idea = {
+			picture = nei_sun_money
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.05
+				weekly_manpower = -100
+				production_speed_buildings_factor = -0.1
+			}
+		}
+		NEI_furious_flame_idea = {
+			picture = nei_sun_money
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				conscription_factor = 0.03
+				army_speed_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = TST
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		NEI_irregular_army_idea = {
+			picture = irregular_tribal_army
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				training_time_factor = 0.1
+				army_morale_factor = -0.05
+				MAX_PLANNING_FACTOR = -0.1
+				weekly_manpower = 150
+			}
+		}
+		NEI_irregular_army_quality_idea = {
+			picture = irregular_tribal_army
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				training_time_factor = 0.1
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				MAX_PLANNING_FACTOR = -0.1
+			}
+		}
+		NEI_irregular_army_quantity_idea = {
+			picture = irregular_tribal_army
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				training_time_factor = 0.05
+				army_morale_factor = -0.05
+				conscription = 0.01
+				MAX_PLANNING_FACTOR = -0.1
+				weekly_manpower = 500
+			}
+		}
+		NEI_magic_army_idea = {
+			picture = nei_birb
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				recon_factor = 0.10
+				supply_consumption_factor = -0.15
+			}
+		}
+		
+		NEI_power_of_god_idea = {
+			picture = super_sun
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_speed_factor = 0.05
+				army_org_factor = 0.05
+				training_time_factor = -0.05
+				experience_gain_army_factor = 0.15
+				conscription = 0.02
+			}
+		}
+		
+		NEI_justification_bonus_idea = {
+			picture = super_sun
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				justify_war_goal_time = -0.75
+			}
+		}
+		
+		NEI_thinking_thestrals_idea = {
+			picture = solar_thinkers
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_gain = 0.10
+				research_speed_factor = 0.07
+			}
+		}
+		
+		NEI_rich_earth_idea = {
+			picture = earth_idea
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				local_resources_factor = 0.08
+				monthly_population = 0.05
+			}
+		}
+		NEI_collectivism_idea = {
+			picture = SOL_Protect_the_Weak_idea
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		NEI_mango_in_every_house_idea = {
+			picture = SOL_Protect_the_Weak_idea
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				custom_modifier_tooltip = mango_in_every_house_tt
+				stability_factor = 0.05
+				consumer_goods_factor = 0.1
+				compliance_growth = 0.05
+			}
+		}
+		
+		
+	}	
+		
+	
+	country = {
+		THESTRALS_potoh_not_invented = {
+			picture = generic_poroh_not_invented
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			research_bonus = {
+				infantry_weapons = -0.8
+			}
+		}
+	}
+}

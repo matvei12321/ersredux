@@ -1,0 +1,133 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_warcrimes_icon"
+		texturefile = "gfx/interface/topbar/warcrimes.tga"
+	}
+
+
+
+	spriteType = {
+		name = "GFX_hrd_piety_texticon"
+		texturefile = "gfx/texticons/hrd_piety_texticon.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_alert_texticon_icon"
+		texturefile = "gfx/texticons/alert_texticon.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_small_crown_icon"
+		texturefile = "gfx/texticons/small_crown_icon.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_hehemony_small_icon"
+		texturefile = "gfx/texticons/hehemony_small_icon.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_beer_small_icon"
+		texturefile = "gfx/texticons/beer_small_icon.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_chibi_chrysalis_crown"
+		texturefile = "gfx/texticons/changelings_hehemony/chibi_chrysalis_crown.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_NGC_griffon_crown"
+		texturefile = "gfx/texticons/changelings_hehemony/NGC_griffon_crown.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_chibi_argynnis_crown"
+		texturefile = "gfx/texticons/changelings_hehemony/chibi_argynnis_crown.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_chibi_aurantia_crown"
+		texturefile = "gfx/texticons/changelings_hehemony/chibi_aurantia_crown.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_chibi_helvia_crown"
+		texturefile = "gfx/texticons/changelings_hehemony/chibi_helvia_crown.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_chibi_yahria_crown"
+		texturefile = "gfx/texticons/changelings_hehemony/chibi_yahria_crown.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_chibi_volistad_crown"
+		texturefile = "gfx/texticons/changelings_hehemony/unused_chibi_volistad_crown.tga"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_ole_ez_burning1"
+		texturefile = "gfx/texticons/ole_ez_burning1.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ole_ez_burning2"
+		texturefile = "gfx/texticons/ole_ez_burning2.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ole_ez_burning3"
+		texturefile = "gfx/texticons/ole_ez_burning3.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ole_ez_burning4"
+		texturefile = "gfx/texticons/ole_ez_burning4.tga"
+		legacy_lazy_load = no
+	}
+	
+	
+	spriteType = {
+		name = "GFX_ole_ez_burning_text_icon"
+		texturefile = "gfx/texticons/ole_ez_burning_text_icon.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ole_ez_nuking_text_icon"
+		texturefile = "gfx/texticons/ole_ez_nuking_text_icon.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ole_ez_toxic_text_icon"
+		texturefile = "gfx/texticons/ole_ez_toxic_text_icon.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ole_ez_ruins_text_icon"
+		texturefile = "gfx/texticons/ole_ez_ruins_text_icon.tga"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_pmc_text_icon"
+		texturefile = "gfx/texticons/MNH/pmc_texticon.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ff_text_icon"
+		texturefile = "gfx/texticons/MNH/ff_texticon.tga"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_marks_portrait_texticon"
+		texturefile = "gfx/texticons/YAC/marks_portrait_texticon.tga"
+		legacy_lazy_load = no
+	}
+
+	
+	
+}

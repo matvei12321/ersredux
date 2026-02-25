@@ -1,0 +1,1442 @@
+
+shared_focus = {
+	id = UNC_United_Kingdom
+	icon = GFX_goal_unc_kingdom
+	cost = 2
+	x = 10
+	y = 0
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_United_Kingdom"
+		add_stability = 0.03
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.02
+		}
+	}
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = UNC_And_Its_Happy_Ponies
+	icon = GFX_goal_unc_happy_mare
+	prerequisite = { focus = UNC_United_Kingdom }
+	cost = 1
+	relative_position_id = UNC_United_Kingdom
+	x = 0
+	y = 1
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_And_Its_Happy_Ponies"
+		country_event = unc.1 
+	}
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = UNC_Royal_Business
+	icon = GFX_focus_rom_royal_dictatorship
+	prerequisite = { focus = UNC_And_Its_Happy_Ponies }
+	cost = 1
+	relative_position_id = UNC_United_Kingdom
+	x = 0
+	y = 2
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_Royal_Business"
+		add_political_power = 100
+	}
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = UNC_Peasants
+	icon = GFX_focus_rom_royal_dictatorship
+	prerequisite = { focus = UNC_Royal_Business }
+	cost = 1
+	relative_position_id = UNC_United_Kingdom
+	x = -3
+	y = 3
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_Royal_Business"
+		
+	}
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = UNC_Traders
+	icon = GFX_focus_rom_royal_dictatorship
+	prerequisite = { focus = UNC_Royal_Business }
+	cost = 1
+	relative_position_id = UNC_United_Kingdom
+	x = -1
+	y = 3
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_Royal_Business"
+		
+	}
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = UNC_Aristocrats
+	icon = GFX_focus_rom_royal_dictatorship
+	prerequisite = { focus = UNC_Royal_Business }
+	cost = 1
+	relative_position_id = UNC_United_Kingdom
+	x = 1
+	y = 3
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_Royal_Business"
+		
+	}
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = UNC_Militaries
+	icon = GFX_focus_rom_royal_dictatorship
+	prerequisite = { focus = UNC_Royal_Business }
+	cost = 1
+	relative_position_id = UNC_United_Kingdom
+	x = 3
+	y = 3
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_Royal_Business"
+		
+	}
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = UNC_Think_About_Simple_Ponies
+	icon = GFX_focus_rom_royal_dictatorship
+	prerequisite = { focus = UNC_Peasants }
+	prerequisite = { focus = UNC_Traders } 
+	cost = 1
+	mutually_exclusive = { focus = UNC_Prioritize_Trade_Guilds }
+	relative_position_id = UNC_United_Kingdom
+	x = -4
+	y = 4
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_Royal_Business"
+		
+	}
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = UNC_Prioritize_Trade_Guilds
+	icon = GFX_focus_rom_royal_dictatorship
+	prerequisite = { focus = UNC_Peasants }
+	prerequisite = { focus = UNC_Traders } 
+	cost = 1
+	mutually_exclusive = { focus = UNC_Think_About_Simple_Ponies }
+	relative_position_id = UNC_United_Kingdom
+	x = -2
+	y = 4
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_Royal_Business"
+		
+	}
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = UNC_Court_Ponies
+	icon = GFX_focus_rom_royal_dictatorship
+	prerequisite = { focus = UNC_Peasants focus = UNC_Traders focus = UNC_Aristocrats focus = UNC_Militaries }
+	cost = 1
+	relative_position_id = UNC_United_Kingdom
+	x = 0
+	y = 4
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_Royal_Business"
+		
+	}
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = UNC_Conscription_Peasants
+	icon = GFX_focus_rom_royal_dictatorship
+	prerequisite = { focus = UNC_Aristocrats }
+	prerequisite = { focus = UNC_Militaries } 
+	cost = 1
+	mutually_exclusive = { focus = UNC_Lower_Army_Budget }
+	relative_position_id = UNC_United_Kingdom
+	x = 2
+	y = 4
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_Royal_Business"
+		
+	}
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = UNC_Lower_Army_Budget
+	icon = GFX_focus_rom_royal_dictatorship
+	prerequisite = { focus = UNC_Aristocrats }
+	prerequisite = { focus = UNC_Militaries } 
+	cost = 1
+	mutually_exclusive = { focus = UNC_Conscription_Peasants }
+	relative_position_id = UNC_United_Kingdom
+	x = 4
+	y = 4
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_Royal_Business"
+		
+	}
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = UNC_Eat_Cupcakes
+	icon = GFX_focus_rom_royal_dictatorship
+	prerequisite = { focus = UNC_Think_About_Simple_Ponies } 
+	cost = 1
+	relative_position_id = UNC_United_Kingdom
+	x = -5
+	y = 5
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_Royal_Business"
+		
+	}
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = UNC_Servants_Of_God
+	icon = GFX_goal_hrd_order
+	prerequisite = { focus = UNC_Think_About_Simple_Ponies focus = UNC_Prioritize_Trade_Guilds } 
+	cost = 1
+	relative_position_id = UNC_United_Kingdom
+	x = -3
+	y = 5
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_Royal_Business"
+		
+	}
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = UNC_Wonders_Of_Capitalism
+	icon = GFX_focus_rom_royal_dictatorship
+	prerequisite = { focus = UNC_Prioritize_Trade_Guilds } 
+	cost = 1
+	relative_position_id = UNC_United_Kingdom
+	x = -1
+	y = 5
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_Royal_Business"
+		
+	}
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = UNC_Economia
+	icon = GFX_focus_rom_royal_dictatorship
+	prerequisite = { focus = UNC_Conscription_Peasants } 
+	cost = 1
+	relative_position_id = UNC_United_Kingdom
+	x = 1
+	y = 5
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_Royal_Business"
+		
+	}
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = UNC_Glorious_Parades
+	icon = GFX_focus_rom_royal_dictatorship
+	prerequisite = { focus = UNC_Conscription_Peasants focus = UNC_Lower_Army_Budget } 
+	cost = 1
+	relative_position_id = UNC_United_Kingdom
+	x = 3
+	y = 5
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_Royal_Business"
+		
+	}
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = UNC_Sell_Ships
+	icon = GFX_focus_rom_royal_dictatorship
+	prerequisite = { focus = UNC_Lower_Army_Budget } 
+	cost = 1
+	relative_position_id = UNC_United_Kingdom
+	x = 5
+	y = 5
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_Royal_Business"
+		
+	}
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = UNC_Masterskaya_Mira
+	icon = GFX_focus_rom_royal_dictatorship
+	prerequisite = { focus = UNC_Servants_Of_God }
+	prerequisite = { focus = UNC_Eat_Cupcakes focus = UNC_Wonders_Of_Capitalism }
+	cost = 1
+	relative_position_id = UNC_United_Kingdom
+	x = -2
+	y = 6
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_Royal_Business"
+		
+	}
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = UNC_Young_Princess
+	icon = GFX_focus_rom_royal_dictatorship
+	prerequisite = { focus = UNC_Court_Ponies }
+	cost = 1
+	relative_position_id = UNC_United_Kingdom
+	x = 0
+	y = 6
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_Royal_Business"
+		
+	}
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = UNC_Undefeatable
+	icon = GFX_focus_rom_royal_dictatorship
+	prerequisite = { focus = UNC_Economia focus = UNC_Sell_Ships }
+	prerequisite = { focus = UNC_Glorious_Parades }
+	cost = 1
+	relative_position_id = UNC_United_Kingdom
+	x = 2
+	y = 6
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_Royal_Business"
+		
+	}
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = UNC_Grand_Galloping_Gala
+	icon = GFX_goal_unc_grand_gala
+	prerequisite = { focus = UNC_Masterskaya_Mira }
+	prerequisite = { focus = UNC_Young_Princess }
+	prerequisite = { focus = UNC_Undefeatable }
+	cost = 1
+	relative_position_id = UNC_United_Kingdom
+	x = 0
+	y = 7
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_Royal_Business"
+		
+	}
+	ai_will_do = { factor = 40 }
+}
+
+
+
+
+
+
+
+
+shared_focus = {
+	id = UNC_royal_busyness
+	icon = GFX_goal_unc_kingdom
+	cost = 2
+	x = 15
+	y = 0
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_royal_busyness"
+		add_stability = 0.03
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.02
+		}
+	}
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = UNC_people_busyness
+	icon = GFX_goal_generic_pony_unity
+	prerequisite = { focus = UNC_royal_busyness }
+	cost = 1
+	relative_position_id = UNC_royal_busyness
+	x = 0
+	y = 1
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_royal_busyness"
+		country_event = unc.1 
+	}
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = UNC_look_around
+	icon = GFX_focus_rom_royal_dictatorship
+	prerequisite = { focus = UNC_people_busyness }
+	cost = 1
+	relative_position_id = UNC_royal_busyness
+	x = 0
+	y = 2
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_royal_busyness"
+		add_political_power = 100
+	}
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = UNC_our_neibghours
+	icon = GFX_goal_unc_planet
+	prerequisite = { focus = UNC_look_around }
+	cost = 3
+	relative_position_id = UNC_royal_busyness
+	x = 9
+	y = 3
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_royal_busyness"
+		add_political_power = 50
+	}
+	ai_will_do = { factor = 35 }
+}
+
+
+shared_focus = {
+	id = UNC_wild_pegasi
+	icon = GFX_goal_generic_pony_pegasus
+	prerequisite = { focus = UNC_our_neibghours }
+	cost = 3
+	relative_position_id = UNC_our_neibghours
+	x = -3
+	y = 1
+	available = {  
+	}
+	bypass = {
+		PGS = {
+			OR = {
+				has_capitulated = yes
+				has_government = democratic
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_royal_busyness"
+		custom_effect_tooltip = mojet_osudit_pegasov_flag
+	}
+	ai_will_do = { factor = 35 }
+}
+
+shared_focus = {
+	id = UNC_support_los
+	icon = GFX_goal_los_shield
+	prerequisite = { focus = UNC_wild_pegasi}
+	cost = 3
+	relative_position_id = UNC_our_neibghours
+	x = -2
+	y = 3
+	available = {  
+	}
+	bypass = {
+		LOS = {
+			OR = {
+				has_capitulated = yes
+				has_government = fascism
+				has_government = communism
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_royal_busyness"
+		LOS = {
+			country_event = { id = unc.20 days = 2 }
+		}
+		custom_effect_tooltip = los_will_join_faction
+	}
+	ai_will_do = { factor = 35 }
+}
+
+shared_focus = {
+	id = UNC_wild_thestrals
+	icon = GFX_goal_kill_bats
+	prerequisite = { focus = UNC_international_council }
+	cost = 3
+	relative_position_id = UNC_our_neibghours
+	x = 1
+	y = 2
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_royal_busyness"
+		PRG = {
+			add_ideas = UNC_prance_defence
+		}
+	}
+	ai_will_do = { factor = 35 }
+}
+
+shared_focus = {
+	id = UNC_ERP
+	icon = GFX_focus_generic_diplomatic_treaty_pony
+	prerequisite = { focus = UNC_our_neibghours }
+	cost = 3
+	relative_position_id = UNC_our_neibghours
+	x = 4
+	y = 1
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_royal_busyness"
+	}
+	ai_will_do = { factor = 35 }
+}
+
+shared_focus = {
+	id = UNC_keep_guarantee_for_ERP
+	icon = GFX_goal_protect_earthponies
+	prerequisite = { focus = UNC_ERP }
+	cost = 3
+	mutually_exclusive = { focus = UNC_dont_keep_guarantee_for_ERP }
+	relative_position_id = UNC_our_neibghours
+	x = 5
+	y = 2
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_royal_busyness"
+	}
+	ai_will_do = { factor = 35 }
+}
+
+shared_focus = {
+	id = UNC_dont_keep_guarantee_for_ERP
+	icon = GFX_focus_generic_diplomatic_treaty_pony
+	prerequisite = { focus = UNC_ERP }
+	cost = 3
+	mutually_exclusive = { focus = UNC_keep_guarantee_for_ERP }
+	relative_position_id = UNC_our_neibghours
+	x = 3
+	y = 2
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_royal_busyness"
+		diplomatic_relation = {
+			country = ERP
+			relation = guarantee
+			active = no
+		}
+		add_war_support = 0.02
+	}
+	ai_will_do = { factor = 35 }
+}
+
+shared_focus = {
+	id = UNC_ask_to_puppet_ERP
+	icon = GFX_goal_generic_intelligence_exchange
+	prerequisite = { focus = UNC_keep_guarantee_for_ERP }
+	cost = 3
+	relative_position_id = UNC_our_neibghours
+	x = 5
+	y = 3
+	available = {  
+		NOT = {
+			ERP = {
+				OR = {
+					has_war = yes
+					has_government = fascism
+				}
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_royal_busyness"
+	}
+	ai_will_do = { factor = 35 }
+}
+
+shared_focus = {
+	id = UNC_crystal_ponies
+	icon = GFX_goal_princess_amore
+	prerequisite = { focus = UNC_international_council }
+	cost = 3
+	relative_position_id = UNC_our_neibghours
+	x = -1
+	y = 2
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_royal_busyness"
+		give_guarantee = CRY
+	}
+	ai_will_do = { factor = 35 }
+}
+
+shared_focus = {
+	id = UNC_international_council
+	icon = GFX_globe_arrow
+	prerequisite = { focus = UNC_our_neibghours }
+	cost = 3
+	relative_position_id = UNC_our_neibghours
+	x = 0
+	y = 1
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_royal_busyness"
+		swap_ideas = {
+			remove_idea = UNC_closed_politics_idea
+			add_idea = UNC_closed_politics_idea_1
+		}
+	}
+	ai_will_do = { factor = 35 }
+}
+
+shared_focus = {
+	id = UNC_griffons
+	icon = GFX_goal_generic_dangerous_deal_pony_griffon
+	prerequisite = { focus = UNC_international_council }
+	prerequisite = { focus = UNC_dont_keep_guarantee_for_ERP focus = UNC_keep_guarantee_for_ERP }
+	cost = 3
+	relative_position_id = UNC_our_neibghours
+	x = 2
+	y = 3
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_royal_busyness"
+	}
+	ai_will_do = { factor = 35 }
+}
+
+shared_focus = {
+	id = UNC_olenians
+	icon = GFX_goal_ole_velvet
+	prerequisite = { focus = UNC_wild_thestrals }
+	prerequisite = { focus = UNC_crystal_ponies }
+	cost = 3
+	relative_position_id = UNC_our_neibghours
+	x = 0
+	y = 3
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_royal_busyness"
+	}
+	ai_will_do = { factor = 35 }
+}
+
+shared_focus = {
+	id = UNC_changelings_threat
+	icon = GFX_goal_The_Greatest_Threat
+	prerequisite = { focus = UNC_olenians }
+	prerequisite = { focus = UNC_support_los }
+	prerequisite = { focus = UNC_griffons }
+	cost = 3
+	relative_position_id = UNC_our_neibghours
+	x = 0
+	y = 5
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_royal_busyness"
+		news_event = { id = ers_news.24 days = 1 }
+	}
+	ai_will_do = { factor = 35 }
+}
+
+
+shared_focus = {
+	id = UNC_inside
+	icon = GFX_goal_agency
+	prerequisite = { focus = UNC_look_around }
+	cost = 3
+	relative_position_id = UNC_royal_busyness
+	x = 0
+	y = 3
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_royal_busyness"
+	}
+	ai_will_do = { factor = 50 }
+}
+
+shared_focus = {
+	id = UNC_aristocrats
+	icon = GFX_goal_monarchy_money
+	prerequisite = { focus = UNC_look_around }
+	cost = 3
+	relative_position_id = UNC_royal_busyness
+	x = -2
+	y = 3
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_royal_busyness"
+		add_ideas = UNC_corrupted_aristocrats_idea_1
+	}
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = UNC_servants_of_god
+	icon = GFX_goal_hrd_order
+	prerequisite = { focus = UNC_aristocrats }
+	cost = 3
+	relative_position_id = UNC_royal_busyness
+	x = -3
+	y = 4
+	available = {  
+	
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_royal_busyness"
+		add_stability = 0.05
+		add_war_support = 0.05
+		HRD = {
+			add_political_power = 25
+		}
+	}
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = UNC_more_aristocrats
+	icon = GFX_goal_cash_and_cap
+	prerequisite = { focus = UNC_aristocrats }
+	cost = 5
+	relative_position_id = UNC_royal_busyness
+	x = -1
+	y = 4
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_royal_busyness"
+		add_political_power = 200
+		add_stability = 0.05
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.03
+		}
+	}
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = UNC_peasants
+	icon = GFX_goal_ers_production
+	prerequisite = { focus = UNC_servants_of_god }
+	cost = 3
+	relative_position_id = UNC_royal_busyness
+	x = -2
+	y = 5
+	available = {  
+	
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_royal_busyness"
+		add_timed_idea = {
+			idea = UNC_think_about_people_idea
+			days = 300
+		}
+	}
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = UNC_young_princess
+	icon = GFX_goal_action_francaise
+	prerequisite = { focus = UNC_inside }
+	prerequisite = { focus = UNC_more_aristocrats }
+	cost = 3
+	relative_position_id = UNC_royal_busyness
+	x = 0
+	y = 5
+	available = {  
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_royal_busyness"
+		custom_effect_tooltip = princess_in_3_years	
+	}
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = UNC_check_the_industry
+	icon = GFX_goal_unc_develop_factories
+	prerequisite = { focus = UNC_look_around }
+	cost = 3
+	relative_position_id = UNC_royal_busyness
+	x = 2
+	y = 3
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_royal_busyness"
+		3 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		74 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+			
+	}
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = UNC_lower_army
+	icon = GFX_goal_unc_lower_army
+	prerequisite = { focus = UNC_check_the_industry }
+	cost = 3
+	relative_position_id = UNC_royal_busyness
+	x = 3
+	y = 4
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_royal_busyness"
+		add_ideas = UNC_little_conscription
+	}
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = UNC_lower_training
+	icon = GFX_goal_minus_army
+	prerequisite = { focus = UNC_lower_army }
+	cost = 3
+	relative_position_id = UNC_royal_busyness
+	x = 2
+	y = 5
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_royal_busyness"
+		army_experience = -10
+		add_ideas = UNC_less_trainings
+	}
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = UNC_industry_researches
+	icon = GFX_goal_industry_air
+	prerequisite = { focus = UNC_check_the_industry }
+	cost = 5
+	relative_position_id = UNC_royal_busyness
+	x = 1
+	y = 4
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_royal_busyness"
+		add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+	}
+	search_filters = { FOCUS_FILTER_RESEARCH }
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = UNC_party
+	icon = GFX_goal_champagne_party
+	prerequisite = { focus = UNC_young_princess }
+	prerequisite = { focus = UNC_peasants }
+	prerequisite = { focus = UNC_industry_researches }
+	prerequisite = { focus = UNC_lower_training }
+	cost = 3
+	relative_position_id = UNC_royal_busyness
+	x = 0
+	y = 6
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_royal_busyness"
+		country_event = { id = unc.8 days = 5 }
+	}
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = UNC_party_bad
+	icon = GFX_goal_skull_treaty2
+	prerequisite = { focus = UNC_party }
+	relative_position_id = UNC_royal_busyness
+	mutually_exclusive = { focus = UNC_party_good }
+	cost = 0
+	x = -1
+	y = 7
+	available = {  
+		always = no
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_royal_busyness"
+		add_stability = -0.1
+		hidden_effect = {
+			news_event = ers_news.7
+		}
+	}
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = UNC_party_bad_2
+	icon = GFX_goal_shadow_government
+	prerequisite = { focus = UNC_party_bad }
+	relative_position_id = UNC_royal_busyness
+	cost = 0.8
+	x = -1
+	y = 8
+	available = {  
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_royal_busyness"
+	}
+	ai_will_do = { factor = 80 }
+}
+
+shared_focus = {
+	id = UNC_party_good
+	icon = GFX_goal_collaborate_local_elites_pony
+	prerequisite = { focus = UNC_party }
+	relative_position_id = UNC_royal_busyness
+	mutually_exclusive = { focus = UNC_party_bad }
+	cost = 0
+	x = 1
+	y = 7
+	available = {  
+		always = no
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_royal_busyness"
+		add_stability = 0.1
+		hidden_effect = {
+			news_event = ers_news.8
+		
+		}
+	}
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = UNC_party_good_2
+	icon = GFX_goal_rct_expand_the_city
+	prerequisite = { focus = UNC_party_good }
+	relative_position_id = UNC_royal_busyness
+	cost = 0.8
+	x = 1
+	y = 8
+	available = {  
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_royal_busyness"
+	}
+	ai_will_do = { factor = 80 }
+}
+
+shared_focus = {
+	id = UNC_fin
+	icon = GFX_goal_great_unicornia
+	prerequisite = { focus = UNC_party_bad_2 focus = UNC_party_good_2 }
+	prerequisite = { focus = UNC_alliance }
+	prerequisite = { focus = UNC_changelings_threat }
+	relative_position_id = UNC_royal_busyness
+	cost = 0.8
+	x = 0
+	y = 10
+	available = {  
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_royal_busyness"
+		custom_effect_tooltip = ers_focus_no_effect
+		country_event = ending.1
+	}
+	ai_will_do = { factor = 80 }
+}
+
+
+shared_focus = {
+	id = UNC_problem_moments
+	icon = GFX_goal_unicornia_puppets
+	prerequisite = { focus = UNC_look_around }
+	cost = 3
+	relative_position_id = UNC_royal_busyness
+	x = -9
+	y = 3
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_royal_busyness"
+		country_event = unc.2
+	}
+	ai_will_do = { factor = 30 }
+}
+
+shared_focus = {
+	id = UNC_our_puppets
+	icon = GFX_goal_ers_puppet
+	prerequisite = { focus = UNC_problem_moments }
+	cost = 3
+	relative_position_id = UNC_problem_moments
+	x = 0
+	y = 1
+	available = {  
+	
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_royal_busyness"
+		set_country_flag = unc_influence_puppets_flag
+		custom_effect_tooltip = can_influence_puppets_tt
+	}
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = UNC_plague_focus
+	icon = GFX_goal_plague_question
+	prerequisite = { focus = UNC_problem_moments }
+	cost = 3
+	relative_position_id = UNC_problem_moments
+	x = 3
+	y = 1
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_royal_busyness"
+		UNP = {
+			add_stability = 0.1
+		}
+	}
+	ai_will_do = { factor = 50 }
+}
+
+shared_focus = {
+	id = UNC_hide_plague_info
+	icon = GFX_goal_Barkaran_Democracy
+	prerequisite = { focus = UNC_plague_focus }
+	cost = 3
+	relative_position_id = UNC_problem_moments
+	x = 2
+	y = 3
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_royal_busyness"
+		custom_effect_tooltip = hide_plague_info_tt
+	}
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = UNC_prance_problem
+	icon = GFX_goal_close_prance
+	prerequisite = { focus = UNC_our_puppets }
+	cost = 3
+	relative_position_id = UNC_problem_moments
+	x = 1
+	y = 2
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_royal_busyness"
+		PRG = {
+			add_autonomy_ratio = {
+				value = -0.1
+				localization = EQC_patriation
+			}
+		}
+	}
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = UNC_SVR_problem
+	icon = GFX_TRM_kolchak_cap
+	prerequisite = { focus = UNC_our_puppets }
+	cost = 3
+	relative_position_id = UNC_problem_moments
+	x = -1
+	y = 2
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_royal_busyness"
+		SVR = {
+			add_autonomy_ratio = {
+				value = -0.1
+				localization = EQC_patriation
+			}
+			166 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = UNC_northern_puppets
+	icon = GFX_goal_civil_service
+	prerequisite = { focus = UNC_STG_no focus = UNC_STG_yes }
+	prerequisite = { focus = UNC_SVR_problem }
+	cost = 3
+	relative_position_id = UNC_problem_moments
+	x = -2
+	y = 3
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_royal_busyness"
+		653 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		168 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		229 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		227 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		158 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+
+	}
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = UNC_MNH_problem
+	icon = GFX_goal_f_and_f
+	prerequisite = { focus = UNC_prance_problem }
+	prerequisite = { focus = UNC_SVR_problem }
+	cost = 3
+	relative_position_id = UNC_problem_moments
+	x = 0
+	y = 3
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_royal_busyness"
+		MNH = {
+			country_event = unc.3
+		}
+	}
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = UNC_alliance
+	icon = GFX_goal_unicornia_puppets
+	prerequisite = { focus = UNC_MNH_problem }
+	prerequisite = { focus = UNC_northern_puppets }
+	prerequisite = { focus = UNC_hide_plague_info }
+	cost = 3
+	relative_position_id = UNC_problem_moments
+	x = 0
+	y = 5
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_royal_busyness"
+		create_faction = unicornia_faction
+		add_to_faction = MNH
+		if = {	
+			limit = {
+				LOS = {
+					has_country_flag = los_will_join_unc_faction_flag
+				}
+			}
+			add_to_faction = LOS
+		}
+	}
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = UNC_STG_problem
+	icon = GFX_goal_communism_cloud
+	prerequisite = { focus = UNC_problem_moments }
+	cost = 3
+	relative_position_id = UNC_problem_moments
+	x = -4
+	y = 1
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_royal_busyness"
+		add_popularity = {
+			ideology = communism
+			popularity = -0.05
+		}
+	}
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = UNC_STG_yes
+	icon = GFX_goal_ideology_communist
+	prerequisite = { focus = UNC_STG_problem }
+	mutually_exclusive = { focus = UNC_STG_no }
+	cost = 3
+	relative_position_id = UNC_problem_moments
+	x = -3
+	y = 2
+	available = {  
+		STG = {	exists = yes }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_royal_busyness"
+		news_event = { id = ers_news.6 days = 2 }
+		STG = {
+			add_stability = 0.05
+			add_war_support = -0.05
+		}
+		diplomatic_relation = {
+			country = STG
+			relation = non_aggression_pact
+			active = yes
+		}
+		diplomatic_relation = {
+			country = STG
+			relation = military_access
+			active = yes
+		}
+		diplomatic_relation = {
+			country = STG
+			relation = docking_rights
+			active = yes
+		}
+		end_puppet = SVR
+		
+		SVR = {
+			transfer_navy = {
+				target = UNC
+			}
+			send_equipment_fraction = {
+				value = 0.3
+				target = UNC
+			}
+			add_stability = -0.05
+			add_war_support = 0.15
+			add_political_power = 300
+		}
+		add_stability = 0.05
+		add_war_support = -0.05	
+		
+		UNC = {
+			transfer_state = 67
+			transfer_state = 661
+			
+			if = { limit = { UMF = { exists = yes } }
+				transfer_state = 333
+			}
+		}
+	}
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = UNC_STG_no
+	icon = GFX_goal_broken_red_star
+	prerequisite = { focus = UNC_STG_problem }
+	mutually_exclusive = { focus = UNC_STG_yes }
+	cost = 3
+	relative_position_id = UNC_problem_moments
+	x = -5
+	y = 2
+	available = {  
+		fascism > 0.05
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_royal_busyness"
+		send_embargo = STG
+		create_wargoal = {
+				type = puppet_wargoal_focus
+				target = STG
+			}
+		custom_effect_tooltip = finish_war_faster_tt
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = UNC_baycall_reintegration
+	icon = GFX_zebra_remove_socialism
+	prerequisite = { focus = UNC_STG_no }
+	cost = 11
+	relative_position_id = UNC_problem_moments
+	x = -5
+	y = 3
+	available = {  
+		owns_state = 156
+		owns_state = 157
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UNC_royal_busyness"
+			156 = {
+				add_core_of = UNC
+			}
+			157 = {
+				add_core_of = UNC
+			}
+	}
+	ai_will_do = { factor = 10 }
+}

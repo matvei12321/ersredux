@@ -1,0 +1,40 @@
+
+characters={
+	STO_storm_king={
+		name=STO_storm_king
+		portraits={
+			civilian={
+				large="gfx/leaders/STO/storm_king.tga"
+			}
+		}
+		country_leader={
+			ideology = nazism
+			traits = { dictator empire_builder }
+			expire="1.1.1.1"
+			id=-1
+			traits = {
+				
+			}
+		}
+		country_leader={
+			ideology = despotism
+			expire="1.1.1.1"
+			id=-1
+		}
+		
+	}
+	
+	
+	
+	STO_tempest_shadow={
+		name=STO_tempest_shadow
+		portraits={
+			civilian={
+				large="gfx/leaders/STO/STO_tempest_shadow.tga"
+			}
+		}
+	
+		
+		
+	}
+}

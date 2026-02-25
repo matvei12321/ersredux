@@ -1,0 +1,54 @@
+﻿
+division_template = {
+	name = "Red Severyana Volunteers"			#Infantry Division - kek
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		artillery = { x = 1 y = 2 }
+		artillery = { x = 1 y = 3 }
+	}
+
+	support = {
+		artillery = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+	priority = 1
+}
+
+units = {
+	division = {
+		name = "Red Severyana Volunteers"
+		location = 488
+		division_template = "Red Severyana Volunteers"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "Red Severyana Volunteers"
+		location = 488
+		division_template = "Red Severyana Volunteers"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "Red Severyana Volunteers"
+		location = 488
+		division_template = "Red Severyana Volunteers"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "Red Severyana Volunteers"
+		location = 488
+		division_template = "Red Severyana Volunteers"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "Red Severyana Volunteers"
+		location = 488
+		division_template = "Red Severyana Volunteers"
+		start_experience_factor = 0.5
+	}
+}

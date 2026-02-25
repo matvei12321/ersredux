@@ -1,0 +1,329 @@
+shared_focus = {
+	id = HRZ_raut
+	icon = GFX_goal_HRZ_raut
+	cost = 6.50
+	x = 8
+	y = 0
+	ai_will_do = {
+		factor = 40
+	}
+	available = {  
+		NOT = {
+			has_country_flag = Grover_vii_death
+		}
+	}
+	select_effect = {
+		country_event = { id = HRZ.1  days = 20}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus HRZ_raut"
+		country_event = { id = HRZ.2 }
+	}
+}
+shared_focus = {
+	id = HRZ_go_to_Aquila
+	icon = GFX_goal_to_go_Aquila
+	cost = 5
+	x = 8
+	y = 1
+	prerequisite = { focus = HRZ_raut }
+	ai_will_do = {
+		factor = 40 
+	}
+	available = {
+		NOT = {
+			has_country_flag = Grover_vii_death
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus HRZ_go_to_Aquila"
+		country_event = { id = HRZ.4 hours = 5 }
+	}
+}
+shared_focus = {
+	id = HRZ_AUR_army_training
+	icon = GFX_goal_HRZ_AUR_army_training
+	cost = 5
+	x = 7
+	y = 2
+	prerequisite = { focus = HRZ_go_to_Aquila }
+	ai_will_do = {
+		factor = 20
+	}
+	available = {
+		NOT = {
+			has_country_flag = Grover_vii_death
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus HRZ_AUR_army_training"
+		HRZ = {
+			army_experience = 25
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.25
+				uses = 1
+				category = land_doctrine
+			}
+		}
+		AUR = {
+			army_experience = 25
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.25
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+}
+shared_focus = {
+	id = HRZ_AUR_fleet_training
+	icon = GFX_goal_HRZ_AUR_fleet_training
+	cost = 5
+	x = 9
+	y = 2
+	prerequisite = { focus = HRZ_go_to_Aquila }
+	ai_will_do = {
+		factor = 20
+	}
+	available = {
+		NOT = {
+			has_country_flag = Grover_vii_death
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GFX_goal_HRZ_AUR_fleet_training"
+		HRZ = {
+			navy_experience = 25
+			add_doctrine_cost_reduction = {
+				name = naval_doc_bonus
+				cost_reduction = 0.25
+				uses = 1
+				category = naval_doctrine
+			}
+		}
+		AUR = {
+			navy_experience = 25
+			add_doctrine_cost_reduction = {
+				name = naval_doc_bonus
+				cost_reduction = 0.25
+				uses = 1
+				category = naval_doctrine
+			}
+		}
+	}
+}
+shared_focus = {
+	id = HRZ_AUR_cash_finance
+	icon = GFX_goal_HRZ_AUR_cash_finance
+	cost = 5
+	x = 8
+	y = 3
+	prerequisite = { focus = HRZ_AUR_army_training }
+	prerequisite = { focus = HRZ_AUR_fleet_training }
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_country_flag = Grover_vii_death
+		}
+	}
+	select_effect = {
+		hidden_effect = {
+			country_event = { id = HRZ.6 days = 16 }
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GFX_goal_HRZ_AUR_fleet_training"
+		405 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		434 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		447 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		
+	}
+}
+shared_focus = {
+	id = HRZ_go_to_Wingbard
+	icon = GFX_goal_go_to_Wingbard
+	cost = 5
+	x = 8
+	y = 4
+	prerequisite = { focus = HRZ_AUR_cash_finance }
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_country_flag = Grover_vii_death
+		}
+	}
+	select_effect = {
+		hidden_effect = {
+			country_event = { id = HRZ.7 days = 10 }
+		}
+	}
+	completion_reward = {
+		custom_effect_tooltip = HRZ_wingbard_go
+	}
+}
+shared_focus = {
+	id = HRZ_Wingbard_fabric_HRZ
+	icon = GFX_goal_Wingbard_fabric_HRZ
+	cost = 5
+	x = 7
+	y = 5
+	prerequisite = { focus = HRZ_go_to_Wingbard }
+	ai_will_do = {
+		factor = 20
+	}
+	available = {
+		NOT = {
+			has_country_flag = Grover_vii_death
+		}
+	}
+	completion_reward = {
+		375 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		504 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		437 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		582 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+shared_focus = {
+	id = HRZ_Wingbard_war_factories_HRZ
+	icon = GFX_goal_Wingbard_war_factories_HRZ
+	cost = 5
+	x = 9
+	y = 5
+	prerequisite = { focus = HRZ_go_to_Wingbard }
+	ai_will_do = {
+		factor = 20
+	}
+	available = {
+		NOT = {
+			has_country_flag = Grover_vii_death
+		}
+	}
+	completion_reward = {
+		371 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		374 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		423 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		665 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+shared_focus = {
+	id = HRZ_Grover_vi
+	icon = GFX_goal_HRZ_Grover_vi
+	cost = 5
+	x = 8
+	y = 6
+	prerequisite = { focus = HRZ_Wingbard_fabric_HRZ }
+	prerequisite = { focus = HRZ_Wingbard_war_factories_HRZ }
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_country_flag = Grover_vii_death
+		}
+	}
+	completion_reward = {
+		country_event = { id = HRZ.12 }
+	}
+}
+shared_focus = {
+	id = HRZ_Grover_vii
+	icon = GFX_goal_Hail_Grover_vii_1
+	cost = 5
+	x = 8
+	y = 7
+	prerequisite = { focus = HRZ_Grover_vi }
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_country_flag = Grover_vii_death
+		}
+	}
+	completion_reward = {
+		custom_effect_tooltip = HRZ_Hail_Grover_vii
+	}
+}

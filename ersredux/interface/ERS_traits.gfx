@@ -1,0 +1,11 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_trait_grover_erzherzog"
+		texturefile = "gfx/interface/traits/personal/trait_grover_erzherzog.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_alhocolic"
+		texturefile = "gfx/interface/traits/personal/trait_alhocolic.dds"
+	}
+}

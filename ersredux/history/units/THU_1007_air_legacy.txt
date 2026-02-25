@@ -1,0 +1,16 @@
+﻿air_wings = {
+	1139 = {
+		medium_airship_equipment_0 = {
+			owner = "THU"
+			amount = 100
+		}
+		medium_airship_equipment_0 = {
+			owner = "THU"
+			amount = 88
+		}
+		heavy_airship_equipment_0 = {
+			owner = "THU"
+			amount = 72
+		}
+	}
+}

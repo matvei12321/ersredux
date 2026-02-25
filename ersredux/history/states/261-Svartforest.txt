@@ -1,0 +1,25 @@
+state={
+	id=261
+	name="STATE_261"
+
+	provinces={
+		1441 1678 4569 6719 7458 10391 10516 12221
+	}
+
+	manpower=736810
+	state_category = town
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = DTS
+		add_core_of = DTS
+
+		victory_points = { 6719 5 }
+
+		buildings = {
+			infrastructure = 2
+			arms_factory = 2
+			industrial_complex = 2
+		}
+	}
+}

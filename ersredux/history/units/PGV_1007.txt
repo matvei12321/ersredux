@@ -1,0 +1,176 @@
+﻿division_template = {
+	name = "Stark Hovar Division"			#Stark Hovar Division - kek
+	division_names_group = OLE_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Kunglig Vakt"			#RoyalGuards
+	division_names_group = OLE_GRD_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+
+	support = {
+	}
+	priority = 2
+}
+division_template = {
+	name = "Ryhmä"			#Garrison
+	division_names_group = OLE_GAR_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+
+	support = {
+	}
+	priority = 0
+}
+division_template = {
+	name = "Skogvaktare Väpnad Grupp"			#Elites ahahahaha
+	division_names_group = OLE_ELT_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+	priority = 2
+}
+division_template = {
+	name = "Elite Bergsklättrare"			#mountaineers
+	division_names_group = OLE_MTN_01
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 511
+		division_template = "Ryhmä"
+		start_experience_factor = 0.3 }
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6412
+		division_template = "Ryhmä"
+		start_experience_factor = 0.15 }
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6311
+		division_template = "Stark Hovar Division"
+		start_experience_factor = 0.3 }
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 2064
+		division_template = "Stark Hovar Division"
+		start_experience_factor = 0.25 }
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 11160
+		division_template = "Stark Hovar Division"
+		start_experience_factor = 0.2 }
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 511
+		division_template = "Ryhmä"
+		start_experience_factor = 0.3 }
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10754
+		division_template = "Stark Hovar Division"
+		start_experience_factor = 0.25 }
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3455
+		division_template = "Elite Bergsklättrare"
+		start_experience_factor = 0.4 }
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9680
+		division_template = "Elite Bergsklättrare"
+		start_experience_factor = 0.4 }
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 585
+		division_template = "Skogvaktare Väpnad Grupp"
+		start_experience_factor = 0.3 }
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 585
+		division_template = "Skogvaktare Väpnad Grupp"
+		start_experience_factor = 0.15 }
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 13145
+		division_template = "Skogvaktare Väpnad Grupp"
+		start_experience_factor = 0.2 }
+	
+	
+
+}
+
+### Starting Production ###

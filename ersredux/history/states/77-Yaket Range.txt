@@ -1,0 +1,32 @@
+
+state={
+	id=77
+	name="STATE_77"
+	resources={
+		steel=30
+		aluminium=4
+		tungsten=64
+		crystals=5
+	}
+
+	history={
+		owner = MNT
+		add_core_of = MNT
+		add_claim_by = YAK
+		add_claim_by = YAC
+		add_claim_by = JAK
+		add_claim_by = BAD
+		add_claim_by = SHA
+		add_claim_by = NAK
+
+	}
+
+	provinces={
+		831 4527 4540 7615 
+	}
+	manpower=15600
+	buildings_max_level_factor=1.000
+	impassable=yes
+	state_category=wasteland
+	local_supplies=0.000
+}

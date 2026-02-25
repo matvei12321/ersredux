@@ -1,0 +1,17 @@
+state={
+	id=1221
+	name="STATE_1221"
+
+	provinces={
+		1752 4759 6722 7877
+	}
+
+	manpower=4159
+	state_category=rural
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = PGV
+		add_core_of = PGV
+	}
+}

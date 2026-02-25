@@ -1,0 +1,248 @@
+CLT_fucking_madness_cat = {
+	
+	CLT_priests_coming = {
+		icon = GFX_decision_fire
+		available = {
+			has_completed_focus = CLT_destroy_priests
+		}
+		activation = { has_country_flag = CLT_has_to_destroy_priests_flag }
+		priority = 10
+		visible = {
+			NOT = {
+				OR = {
+					has_government = democratic
+					has_government = neutrality
+					has_government = commuism
+					has_country_flag = clt_priests_are_killed_flag
+				}
+			}
+		}
+		modifier = { 
+			democratic_drift = 0.01 
+		}
+		is_good = no
+		days_mission_timeout = 45
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision PGS_civil_war_time"
+			country_event = dodge.16
+		}
+		complete_effect = {
+			country_event = dodge.18
+		}
+	}
+	
+	CLT_shiza_1 = {
+		icon = GFX_decision_white_thing
+		available = {
+			
+		}
+		fire_only_once = yes
+		cost = 25
+		visible = {
+			always = yes
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision CLT_shiza_1"
+			country_event = dodge.6
+		}
+	}
+	CLT_shiza_2 = {
+		icon = GFX_decision_white_thing
+		available = {
+			
+		}
+		fire_only_once = yes
+		cost = 25
+		visible = {
+			always = yes
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision CLT_shiza_2"
+			country_event = dodge.9
+		}
+	}
+	CLT_shiza_3 = {
+		icon = GFX_decision_white_thing
+		available = {
+			
+		}
+		fire_only_once = yes
+		cost = 10
+		visible = {
+			always = yes
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision CLT_shiza_3"
+			country_event = dodge.10
+		}
+	}
+	
+	CLT_shiza_4 = {
+		icon = GFX_decision_white_thing
+		available = {
+			
+		}
+		fire_only_once = yes
+		cost = 25
+		visible = {
+			always = yes
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: DecisionCLT_shiza_4"
+			country_event = dodge.11
+		}
+	}
+	
+	CLT_shiza_5 = {
+		icon = GFX_decision_white_thing
+		available = {
+			
+		}
+		fire_only_once = yes
+		cost = 25
+		visible = {
+			always = yes
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision CLT_shiza_5"
+			country_event = dodge.14
+		}
+	}
+	
+	CLT_shiza_6 = {
+		icon = GFX_decision_white_thing
+		available = {
+			
+		}
+		fire_only_once = yes
+		cost = 25
+		visible = {
+			always = yes
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision CLT_shiza_6"
+			country_event = dodge.5
+			custom_effect_tooltip = clt_shiza_6_tt
+		}
+	}
+	CLT_shiza_7 = {
+		icon = GFX_decision_white_thing
+		available = {
+			
+		}
+		fire_only_once = yes
+		cost = 25
+		visible = {
+			always = yes
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision CLT_shiza_7"
+			custom_effect_tooltip = minus_vith_variable_tt
+			add_to_variable = { CLT_vith_variable = -1 }		
+		}
+	}
+	
+	CLT_shiza_8 = {
+		icon = GFX_decision_white_thing
+		available = {
+			
+		}
+		fire_only_once = yes
+		cost = 30
+		visible = {
+			always = yes
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision CLT_shiza_8"
+			country_event = dodge.8
+		}
+	}
+	
+	CLT_shiza_9 = {
+		icon = GFX_decision_white_thing
+		available = {
+			
+		}
+		fire_only_once = yes
+		cost = 25
+		visible = {
+			always = yes
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision CLT_shiza_9"
+			add_manpower = -999999
+		}
+	}
+	CLT_shiza_10 = {
+		icon = GFX_decision_white_thing
+		available = {
+			
+		}
+		fire_only_once = yes
+		cost = 25
+		visible = {
+			always = yes
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision CLT_shiza_10"
+			add_manpower = -999999
+		}
+	}
+	
+	CLT_shiza_11 = {
+		icon = GFX_decision_white_thing
+		available = {
+			
+		}
+		fire_only_once = yes
+		cost = 25
+		visible = {
+			always = yes
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision CLT_shiza_11"
+			add_manpower = -999999
+		}
+	}
+	
+	CLT_shiza_12 = {
+		icon = GFX_decision_white_thing
+		available = {
+			
+		}
+		fire_only_once = yes
+		cost = 25
+		visible = {
+			always = yes
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision CLT_shiza_12"
+			add_manpower = -999999
+		}
+	}
+	
+}

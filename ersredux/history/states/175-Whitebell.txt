@@ -1,0 +1,32 @@
+state={
+	id=175
+	name="STATE_175"
+
+	provinces={
+		289 323 700 3668 4463 4477 4545 6293 6701 9241 9323 9351 10454 11241 12434 13180
+	}
+
+	manpower=1345000
+	state_category=metropolis
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = PGS
+		add_core_of = PGS
+		
+		set_demilitarized_zone = yes
+
+		victory_points = { 9351 20 }
+
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+		}
+	}
+	
+	resources = {
+		oil=12
+		steel=21
+		tungsten=20
+	}
+}

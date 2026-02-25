@@ -1,0 +1,21 @@
+state={
+	id=1241
+	name="STATE_1241"
+	
+	provinces={
+		1954 4865 12573 4668 3231 1862 12134 7756 7827 
+	}
+
+	manpower=1166007
+	state_category=rural
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = CLO
+		add_core_of = CLO
+
+		buildings = {
+			infrastructure = 2
+		}
+	}
+}

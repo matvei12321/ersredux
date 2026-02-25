@@ -1,0 +1,262 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_goal_dts_race_equality"
+		texturefile = "gfx/interface/goals/DTS/goal_dts_race_equality.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_dts_rifles"
+		texturefile = "gfx/interface/goals/DTS/goal_dts_rifles.tga"
+	}
+	spriteType = {
+		name = "GFX_goal_dts_trimmel"
+		texturefile = "gfx/interface/goals/DTS/goal_dts_trimmel.tga"
+	}
+
+
+
+
+
+
+	spriteType = {
+			name = "GFX_goal_goal_chn_changeling_army"
+			texturefile = "gfx/interface/goals/DTS/goal_chn_changeling_army.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_goal_helvia"
+			texturefile = "gfx/interface/goals/DTS/goal_helvia.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_goal_chn_money"
+			texturefile = "gfx/interface/goals/DTS/goal_chn_money.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_goal_chn_panzer_iii"
+			texturefile = "gfx/interface/goals/DTS/goal_chn_panzer_iii.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_goal_chn_air_production"
+			texturefile = "gfx/interface/goals/DTS/goal_chn_air_production.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_goal_chn_hive_dockyards"
+			texturefile = "gfx/interface/goals/DTS/goal_chn_hive_dockyards.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_goal_chn_oil"
+			texturefile = "gfx/interface/goals/DTS/goal_chn_oil.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_goal_chn_fortify"
+			texturefile = "gfx/interface/goals/DTS/goal_chn_fortify.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_goal_lyc_office"
+			texturefile = "gfx/interface/goals/DTS/goal_lyc_office.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_goal_lyc_steel"
+			texturefile = "gfx/interface/goals/DTS/goal_lyc_steel.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_goal_chn_officer_hat"
+			texturefile = "gfx/interface/goals/DTS/goal_chn_officer_hat.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_dts_factory"
+			texturefile = "gfx/interface/goals/DTS/goal_dts_factory.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_dts_man_business"
+			texturefile = "gfx/interface/goals/DTS/goal_dts_man_business.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_dts_queens_tower"
+			texturefile = "gfx/interface/goals/DTS/goal_dts_queens_tower.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_dts_eqs"
+			texturefile = "gfx/interface/goals/DTS/goal_dts_eqs.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_dts_money"
+			texturefile = "gfx/interface/goals/DTS/goal_dts_money.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_focus_freedom_to_Ditrisiym"
+			texturefile = "gfx/interface/goals/DTS/focus_freedom_to_Ditrisiym.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_dts_reorg"
+			texturefile = "gfx/interface/goals/DTS/goal_dts_reorg.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_DTS_mafia_units"
+			texturefile = "gfx/interface/goals/DTS/DTS_mafia_units.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_dts_death_or_dishonour"
+			texturefile = "gfx/interface/goals/DTS/goal_dts_death_or_dishonour.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_dts_production"
+			texturefile = "gfx/interface/goals/DTS/goal_dts_production.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_dts_bullets"
+			texturefile = "gfx/interface/goals/DTS/goal_dts_bullets.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_tds_clocks"
+			texturefile = "gfx/interface/goals/DTS/goal_tds_clocks.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_dts_globe"
+			texturefile = "gfx/interface/goals/DTS/goal_dts_globe.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_goal_WIP"
+			texturefile = "gfx/interface/goals/DTS/goal_WIP.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_Otchet_del"
+			texturefile = "gfx/interface/goals/DTS/Otchet_del.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_Ditrisium_country"
+			texturefile = "gfx/interface/goals/DTS/Ditrisium_country.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_The_goodest_sovet"
+			texturefile = "gfx/interface/goals/DTS/The_goodest_sovet.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_dts_new_queen"
+			texturefile = "gfx/interface/goals/DTS/goal_dts_new_queen.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_Argynnis_focus"
+			texturefile = "gfx/interface/goals/DTS/Argynnis_focus.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_Chrysalis_focus"
+			texturefile = "gfx/interface/goals/DTS/Chrysalis_focus.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_Aurantia_focus"
+			texturefile = "gfx/interface/goals/DTS/Aurantia_focus.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_Yaria_focus"
+			texturefile = "gfx/interface/goals/DTS/Yaria_focus.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_Argynnis_focus_destroy"
+			texturefile = "gfx/interface/goals/DTS/Argynnis_focus_destroy.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_dts_no_nationalism"
+			texturefile = "gfx/interface/goals/DTS/dts_no_nationalism.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_Army_panzerjager"
+			texturefile = "gfx/interface/goals/DTS/Army_panzerjager.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_goal_dts_jager"
+			texturefile = "gfx/interface/goals/DTS/goal_dts_jager.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_goal_dts_train"
+			texturefile = "gfx/interface/goals/DTS/goal_dts_train.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_goal_dts_production"
+			texturefile = "gfx/interface/goals/DTS/goal_dts_production.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_goal_dts_swords"
+			texturefile = "gfx/interface/goals/DTS/goal_dts_swords.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_goal_dts_no_revenge"
+			texturefile = "gfx/interface/goals/DTS/goal_dts_no_revenge.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_goal_dts_join_olenia"
+			texturefile = "gfx/interface/goals/DTS/goal_dts_join_olenia.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_dts_eekp"
+			texturefile = "gfx/interface/goals/DTS/goal_dts_eekp.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_dts_magic"
+			texturefile = "gfx/interface/goals/DTS/dts_magic.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_dst_crystals"
+			texturefile = "gfx/interface/goals/DTS/goal_dst_crystals.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_dts_magic_research"
+			texturefile = "gfx/interface/goals/DTS/goal_dts_magic_research.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_dts_soryph_hive"
+			texturefile = "gfx/interface/goals/DTS/dts_soryph_hive.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_dts_technocraty"
+			texturefile = "gfx/interface/goals/DTS/dts_technocraty.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_dts_research_plus"
+			texturefile = "gfx/interface/goals/DTS/dts_research_plus.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_dts_magic_weapons"
+			texturefile = "gfx/interface/goals/DTS/dts_magic_weapons.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_dts_vesalipolis"
+			texturefile = "gfx/interface/goals/DTS/dts_vesalipolis.tga"
+	}
+	spriteType = {
+			name = "GFX_goal_dts_hive_buracrat"
+			texturefile = "gfx/interface/goals/DTS/dts_hive_buracrat.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_dts_optimize_bur"
+			texturefile = "gfx/interface/goals/DTS/dts_optimize_bur.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_dts_chrysalis_new_queen"
+			texturefile = "gfx/interface/goals/DTS/dts_chrysalis_new_queen.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_dts_yaria_new_queen"
+			texturefile = "gfx/interface/goals/DTS/dts_yaria_new_queen.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_dts_new_city"
+			texturefile = "gfx/interface/goals/DTS/dts_new_city.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_goal_dts_space_manpower"
+			texturefile = "gfx/interface/goals/DTS/goal_dts_space_manpower.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_dts_help"
+			texturefile = "gfx/interface/goals/DTS/dts_help.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_dts_scientific_reserch"
+			texturefile = "gfx/interface/goals/DTS/dts_scientific_reserch.dds"
+	}
+	spriteType = {
+			name = "GFX_goal_dts_dinner_of_queen"
+			texturefile = "gfx/interface/goals/DTS/dts_dinner_of_queen.dds"
+	}
+	
+}

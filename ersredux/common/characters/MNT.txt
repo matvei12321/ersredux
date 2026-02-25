@@ -1,0 +1,18 @@
+characters = {
+	MNT_khan_uyaruli={
+		name=MNT_khan_uyaruli
+		portraits={
+			civilian={
+				large="gfx/leaders/MNT/khan_uyaruli.tga"
+			}
+		}
+		country_leader={
+			desc="uyaruli_desc"
+			ideology=fundamentalism
+			traits={ ers_anti_prigressivist ers_shaman_militarist uyaruli_killer }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		gender = male
+	}
+}

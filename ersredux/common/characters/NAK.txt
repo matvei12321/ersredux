@@ -1,0 +1,25 @@
+characters={
+	NAK_khan_leeroy={
+		name=NAK_khan_leeroy
+		portraits={
+			army={
+				large="gfx/leaders/JAK/Khan_Leeroy.tga"
+				small=GFX_idea_JAK_khan_leeroy
+			}
+		}
+		field_marshal={
+			traits={ yak_race_trait offensive_doctrine }
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

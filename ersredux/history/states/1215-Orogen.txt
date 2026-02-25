@@ -1,0 +1,29 @@
+state={
+	id=1215
+	name="STATE_1215"
+
+	provinces={
+		651 669 3493 3549 6547 6644 11631
+	}
+
+	manpower=59371
+	state_category=town
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = PRG
+		add_core_of = PRG
+
+		victory_points = { 3493 1 }
+
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+	}
+	
+	
+	resources={
+		steel=2
+	}
+}

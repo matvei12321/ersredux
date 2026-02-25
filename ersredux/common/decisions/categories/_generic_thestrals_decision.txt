@@ -1,0 +1,22 @@
+thestrals_generic_decisions_cat = {
+	icon = GFX_decision_cat_thestralia
+	
+	allowed = {
+		OR = {
+			original_tag = NEI
+			original_tag = PLP
+			original_tag = YKL
+			original_tag = YUK
+			original_tag = CHL
+			original_tag = RZR
+			original_tag = NIG
+			original_tag = GUA
+			original_tag = SND
+			original_tag = MES
+			original_tag = STR
+			original_tag = SLT
+		}
+	}
+	visible_when_empty = yes
+	priority = 600
+}

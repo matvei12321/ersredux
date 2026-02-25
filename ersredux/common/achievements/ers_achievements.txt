@@ -1,0 +1,117 @@
+unique_id = ers_achievements
+
+tryn_trava_achievement = {
+    possible = {
+        # classic triggers used in all vanilla achievements
+        difficulty > 1
+        has_start_date < 1007.01.02
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+		tag = ANR
+    }
+    
+    happened = {
+		owns_state = 170
+    }    
+}
+
+warkhan_unifier_achievement = {
+    possible = {
+        # classic triggers used in all vanilla achievements
+        difficulty > 1
+        has_start_date < 1007.01.02
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+		OR = {
+			tag = YAK
+			tag = JAK
+			tag = NAK
+			tag = MNT
+			tag = YAC
+			tag = BAD
+			tag = SHA
+		}
+	}
+    
+    happened = {
+		custom_trigger_tooltip = {
+			tooltip = won_yak_war 
+			has_war = no
+			has_global_flag = yak_civ_war_flag
+		}
+			
+    }    
+}
+
+friendship_is_magic_achievement = {
+	possible = {
+        # classic triggers used in all vanilla achievements
+        difficulty > 1
+        has_start_date < 1007.01.02
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+		tag = ERP
+	}
+    
+    happened = {
+		ERP = {
+			has_government = democratic
+		}
+    }    
+}
+
+i_had_enough_achievement = {
+	possible = {
+        # classic triggers used in all vanilla achievements
+        difficulty > 1
+        has_start_date < 1007.01.02
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+		tag = CLT
+	}
+    
+    happened = {
+		DED = {
+			has_government = fascism
+		}
+    }    
+}
+
+get_one_dodge_ending = {
+	possible = {
+        # classic triggers used in all vanilla achievements
+        difficulty > 1
+        has_start_date < 1007.01.02
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+		tag = CLT
+	}
+    
+    happened = {
+		CLT = {
+			has_country_flag = clt_ending_flag
+		}
+    }    
+}
+
+war_criminal = {
+	possible = {
+        # classic triggers used in all vanilla achievements
+        difficulty > 1
+        has_start_date < 1007.01.02
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+	}
+    
+    happened = {
+		custom_trigger_tooltip = {
+			tooltip = more_than_499_warcrimes 
+			is_ai = NO
+			check_variable = {
+				ROOT_warcrimes_count > 499
+			}
+		}
+		NOT = {	has_country_flag = extermination_flag }
+		NOT = {	has_global_flag = warcrimes_disabled }
+    }    
+}

@@ -1,0 +1,35 @@
+characters={
+	HRR_artour_monte={
+		name=HRR_artour_monte
+		portraits={
+			civilian={
+				large="gfx/leaders/HRR/HRR_artour_monte.tga"
+			}
+		}
+		country_leader={
+			traits={ }
+			ideology=liberalism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	HRR_Lore_hau = {
+		name = HRR_Lore_hau
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/advisors/HRR/HRR_republic_bird.dds"
+				large = "gfx/leaders/HRR/HRR_republic_bird.tga"
+			}
+		}
+		corps_commander = {
+			traits={ griffon_race_trait infantry_leader }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+		gender = female
+	}
+}

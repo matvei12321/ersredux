@@ -1,0 +1,818 @@
+STG_unit_production = {
+	allowed = {
+		original_tag = STG
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = 1
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = paratroopers
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = mountaineers
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = marines
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = cavalry
+		value = -100
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = motorized
+		value = 2
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = mechanized
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 3
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 75
+	}
+
+	# Naval unit factors
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = 15
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = submarine
+		value = 50
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = screen_ship
+		value = 20
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = convoy
+		value = 20
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = naval_bomber
+		value = -50
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = infantry
+		value = 50
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = anti_tank
+		value = 20
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = anti_air
+		value = 25
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = artillery
+		value = 40
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = armor
+		value = -10
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = motorized
+		value = -10
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories #Build these up over time, don't stall
+		id = anti_air
+		value = 2
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = artillery
+		value = 4
+	}
+
+	ai_strategy = { #added to railway gun define (set to 0 by default, increased in default strategies)
+		type = railway_gun_divisions_ratio
+		value = 1
+	}
+
+}
+
+STG_mess_with_UNC = {
+    allowed = {
+        original_tag = STG
+    }
+    enable = {
+        country_exists = UNC
+    }
+    abort = {
+        
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+		type = contain
+		id = UNC
+		value = 200
+	}
+}
+
+STG_invade_SVR = {
+    allowed = {
+        original_tag = STG
+    }
+    enable = {
+        country_exists = SVR
+    }
+    abort = {
+        
+    }
+    abort_when_not_enabled = yes
+	
+    ai_strategy = {
+		type = declare_war
+		id = SVR
+		value = 200
+	}
+}
+
+STG_prepare_attack_cw = 
+{
+	allowed = {
+        original_tag = STG
+    }
+    enable = {
+        country_exists = SVR
+		NOT = 
+		{
+			country_exists = STL
+			country_exists = UMF
+		}
+    }
+    abort = {
+        
+    }
+    abort_when_not_enabled = yes
+	
+    ai_strategy = {
+		type = declare_war
+		id = SVR
+		value = 200
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = SVR
+		value = 100
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = UNC
+		value = 100
+	}
+}
+
+STG_anti_armor = {
+	allowed = {
+		original_tag = STG
+	}
+	enable = {
+		ai_wants_divisions > 5 #Decreasing the amount of motorized the AI wants
+
+		any_enemy_country = {
+			ROOT = {
+				estimated_intel_max_armor = {
+					tag = PREV
+					value > 25
+				}
+			}
+		}
+	}
+	abort = {
+		ai_wants_divisions < 6 #Decreasing the amount of motorized the AI wants
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = motorized
+		value = 15
+	}
+}
+
+STG_armored_production = {
+	allowed = {
+		original_tag = STG
+	}
+	enable = {
+		date > 1010.1.1
+		ai_wants_divisions > 10 #Decreasing the amount of tanks the AI wants
+	}
+	abort = {
+		OR = {
+			ai_wants_divisions < 10 #Decreasing the amount of tanks the AI wants
+		}
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 2
+	}
+}
+
+STG_halt_light_armor_production_in_transitioning = {
+	allowed = {
+		original_tag = STG
+	}
+	enable = {
+		has_template_majority_unit = medium_armor
+		OR = {
+			has_equipment = { light_tank_chassis > 600 }
+			date > 1010.1.1
+		}
+	}
+	abort = {
+		always = no  # once we start we never go back to light armor
+	}
+
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = light_tank_chassis
+		value = -100
+	}
+	
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = medium_tank_chassis
+		value = 50
+	}
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = artillery
+		value = -50 #downprio this for some more tanks
+	}
+	
+}
+
+STG_stockpile_less_early_game = {
+	allowed = {
+		original_tag = STG
+	}
+
+	enable = {
+		date < 1010.1.1
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = equipment_stockpile_surplus_ratio
+		value = -20 # reduce while we build up in case of CZE or Austria issues
+	}
+}
+
+
+STG_highered_armored_production = {
+	allowed = {
+		original_tag = STG
+	}
+	enable = {
+		num_of_military_factories > 50
+	}
+	abort = {
+		num_of_military_factories < 50
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 2
+	}
+}
+
+STG_how_about_some_more_transport_planes = {
+	allowed = {
+		original_tag = STG
+	}
+	enable = {
+		num_of_military_factories > 60
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = air_transport
+		value = 1
+	}
+}
+
+
+STG_template_design = {
+	allowed = {
+		original_tag = STG
+	}
+	enable = {
+		date < 1010.1.1
+	}
+	abort = {
+		date > 1010.1.1
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = infantry
+		value = 20
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = artillery
+		value = 20
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = motorized
+		value = -50
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = cavalry
+		value = -100
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = light_armor
+		value = 30
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = heavy_armor
+		value = -50
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = paratroopers
+		value = -50
+	}
+}
+
+STG_industry_we_are_the_baddies = {
+	allowed = {
+		original_tag = STG
+	}
+	enable = {
+		date > 1008.1.1
+	}
+	abort={
+		date > 1010.1.1
+	}
+
+	ai_strategy = {
+		type = added_military_to_civilian_factory_ratio
+		value = 50
+	}
+	ai_strategy = {
+		type = air_factory_balance
+		value = 100
+	}
+}
+
+STG_industry_we_are_the_baddies_2 = {
+	allowed = {
+		original_tag = STG
+	}
+	enable = {
+		date > 1010.1.1
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = added_military_to_civilian_factory_ratio
+		value = 20
+	}
+}
+
+STG_industry_we_are_the_baddies_but_not_yet = {
+	allowed = {
+		original_tag = STG
+	}
+	enable = {
+		date < 1008.1.1
+	}
+	abort={
+		date > 1008.1.1
+	}
+
+	ai_strategy = {
+		type = air_factory_balance
+		value = 110
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 3
+	}
+}
+
+STG_wants_civ = {
+	allowed = {
+		original_tag = STG
+	}
+	enable = {
+		date < 1008.1.1
+		has_war = no
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = building_target
+		id = industrial_complex
+		value = 59
+	}
+}
+STG_wants_synth = {
+	allowed = {
+		original_tag = STG
+	}
+	enable = {
+		date > 1009.1.1
+		has_war = no
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = building_target
+		id = synthetic_refinery
+		value = 8
+	}
+}
+
+STG_have_some_train_production = {
+	allowed = {
+		original_tag = STG
+	}
+
+	enable = {
+		date > 1008.1.1
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = train
+		value = 1  # Always have some production of trains
+	}
+}
+
+STG_xp_upgrade_spending_land = {
+	allowed = {
+		original_tag = STG
+	}
+
+	enable = {
+		date < 1010.1.1
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = land_xp_spend_priority
+		id = upgrade_xp_cutoff
+		value = 100
+	}
+}
+
+STG_dont_upgrade_to_weapons_3_too_early = {
+	allowed = {
+		original_tag = STG
+	}
+	enable = {
+		is_historical_focus_on = yes
+		has_equipment = { infantry_equipment < 30000 }
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = production_upgrade_desire_offset
+		id = infantry_equipment_3
+		value = -100
+	}
+}
+
+STG_build_more_cas_to_invade_russia = {
+	allowed = {
+		original_tag = STG
+	}
+	enable = {
+		is_historical_focus_on = yes
+		FRA = {
+			has_capitulated = yes
+		}
+		date > 1010.1.1
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = cas
+		value = 45
+	}
+}
+
+STG_make_some_radar_1 = {
+	allowed = {
+		original_tag = STG
+	}
+	enable = {
+		has_war_with_major = yes  # Oy, we need some radar tech!
+	}
+
+	abort = {
+		has_tech = radio_detection
+	}
+
+	ai_strategy = {
+		type = research_weight_factor
+		id = radio_detection
+		value = 2000
+	}
+}
+
+STG_make_some_radar_2 = {
+	allowed = {
+		original_tag = STG
+	}
+	enable = {
+		has_tech = radio_detection
+	}
+
+	abort = {
+		has_tech = decimetric_radar
+	}
+
+	ai_strategy = {
+		type = research_weight_factor
+		id = decimetric_radar
+		value = 2000
+	}
+}
+
+STG_make_some_radar_3 = {
+	allowed = {
+		original_tag = STG
+	}
+	enable = {
+		has_tech = decimetric_radar
+	}
+
+	abort = {
+		has_tech = improved_decimetric_radar
+	}
+
+	ai_strategy = {
+		type = research_weight_factor
+		id = improved_decimetric_radar
+		value = 200
+	}
+} # After this, you're on your own chaps
+
+
+bba_air_prod_1 = {
+	# TODO BFW:
+	allowed = { original_tag = STG }
+	enable = {
+		date < 1010.1.1
+	}
+
+	abort_when_not_enabled = yes
+
+	# Air unit factors
+	ai_strategy = {
+		type = unit_ratio
+		id = fighter
+		value = 200
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = fighter
+		value = 15
+	}
+
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = fighter
+		value = 6  # STGmany needs a minimum production of fighters
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = cas
+		value = 15
+	}
+
+ 	ai_strategy = {
+		type = equipment_production_factor
+		id = cas
+		value = 10
+	}
+
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = cas
+		value = 3  # STGmany needs a minimum production of CAS planes
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = naval_bomber
+		value = 5
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = tactical_bomber
+		value = 10
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = tactical_bomber
+		value = 5
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = strategic_bomber
+		value = 1
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = strategic_bomber
+		value = 1
+	}
+
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = large_plane_airframe
+		value = 0
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = heavy_fighter
+		value = 2
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = heavy_fighter
+		value = 2
+	}
+
+}
+
+bba_air_prod_2 = {
+	# TODO BFW:
+	allowed = { original_tag = STG }
+	enable = {
+		date > 1010.1.1
+	}
+	abort_when_not_enabled = yes
+
+	#Air unit factors
+	ai_strategy = {
+		type = unit_ratio
+		id = fighter
+		value = 300
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = fighter
+		value = 25
+	}
+
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = fighter
+		value = 8
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = cas
+		value = 15
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = cas
+		value = 15
+	}
+
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = cas
+		value = 3
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = naval_bomber
+		value = 5
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = tactical_bomber
+		value = 15
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = tactical_bomber
+		value = 5
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = strategic_bomber
+		value = 1
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = strategic_bomber
+		value = 0
+	}
+
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = large_plane_airframe
+		value = 0
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = heavy_fighter
+		value = 3
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = heavy_fighter
+		value = 3
+	}
+
+}

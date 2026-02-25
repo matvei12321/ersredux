@@ -1,0 +1,43 @@
+DTS_reduce_mafia = {
+	custom_effect_tooltip = DTS_reduce_mafia_tt
+	if = {
+		limit = {
+			has_idea = DTS_mafia_war_3
+		}
+		swap_ideas = {
+			remove_idea = DTS_mafia_war_3
+			add_idea = DTS_mafia_war_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = DTS_mafia_war_2
+		}
+		swap_ideas = {
+			remove_idea = DTS_mafia_war_2
+			add_idea = DTS_mafia_war_1
+		}
+	}
+	
+}
+DTS_mafia_increase = {
+	if = {
+		limit = {
+			has_idea = DTS_mafia_war_1
+		}
+		swap_ideas = {
+			remove_idea = DTS_mafia_war_1
+			add_idea = DTS_mafia_war_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = DTS_mafia_war_2
+		}
+		swap_ideas = {
+			remove_idea = DTS_mafia_war_2
+			add_idea = DTS_mafia_war_3
+		}
+	}
+	
+}

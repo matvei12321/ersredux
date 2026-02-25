@@ -1,0 +1,232 @@
+﻿#Точка
+shared_focus = {
+    id = NZZ_Hana_Wam
+    icon = GFX_goal_The_Commissioner_knows
+    x = 30
+    y = 0
+    cost = 1  
+     completion_reward = {
+	country_event = ngc.1
+		add_ideas = NGC_Smert_mozga 
+	}
+}
+shared_focus = {
+    id = NZZ_Hana_Wam1
+    icon = GFX_goal_Desires
+	prerequisite = { focus = NZZ_Hana_Wam }
+    x = 2
+    y = 1
+    cost = 1 
+relative_position_id = NZZ_Hana_Wam
+     completion_reward = {
+	 add_ideas = NGC_Smert_tela
+	
+	}
+}
+shared_focus = {
+    id = NZZ_Hana_Wam2
+    icon = GFX_goal_Fears
+	prerequisite = { focus = NZZ_Hana_Wam }
+    x = 0
+    y = 1
+    cost = 1 
+relative_position_id = NZZ_Hana_Wam
+     completion_reward = {
+	 87 = {
+			add_building_construction = {
+				type = bunker
+				level = 3
+				instant_build = yes
+				province = 9103
+			}
+			add_building_construction = {
+				type = bunker
+				level = 2
+				instant_build = yes
+				province = 13210
+			}
+			add_building_construction = {
+				type = bunker
+				level = 4
+				instant_build = yes
+				province = 9174
+			}
+			add_building_construction = {
+				type = bunker
+				level = 4
+				instant_build = yes
+				province = 11029
+			}
+
+	}
+	87 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+}
+}
+shared_focus = {
+    id = NZZ_Hana_Wam3
+    icon = GFX_goal_Dreams
+	prerequisite = { focus = NZZ_Hana_Wam }
+    x = -2
+    y = 1
+    cost = 1 
+relative_position_id = NZZ_Hana_Wam
+     completion_reward = {
+	 87 = {
+			add_resource = {
+				type = ubber
+				amount = 25
+			}
+		}
+
+	}
+}
+shared_focus = {
+    id = NZZ_Hana_Wam4
+    icon = GFX_goal_Pray
+	prerequisite = { focus = NZZ_Hana_Wam2 }
+	prerequisite = { focus = NZZ_Hana_Wam1 }
+    x = 1
+    y = 1
+    cost = 1 
+relative_position_id = NZZ_Hana_Wam2
+     completion_reward = {
+	 add_ideas = NGC_Smert_mozga2
+	}
+}
+shared_focus = {
+    id = NZZ_Hana_Wam5
+    icon = GFX_goal_Listen
+	prerequisite = { focus = NZZ_Hana_Wam2 }
+	prerequisite = { focus = NZZ_Hana_Wam3 }
+    x = -1
+    y = 1
+    cost = 1 
+relative_position_id = NZZ_Hana_Wam2
+     completion_reward = {
+	 add_ideas = NGC_Smert_mozga1
+	}
+}
+shared_focus = { 
+    id = NZZ_Hana_Wam6
+    icon = GFX_goal_IDOLOZE
+	prerequisite = { focus = NZZ_Hana_Wam4 }
+	prerequisite = { focus = NZZ_Hana_Wam5 }
+    x = -1
+    y = 1
+    cost = 1 
+relative_position_id = NZZ_Hana_Wam4
+     completion_reward = {
+	 add_ideas = NGC_Smert_mozga3
+	}
+}
+#Гражданка в Нуве
+shared_focus = {
+    id = NZZ_Hahahahahahahahah
+    icon = GFX_goal_The_Commissioner_knows
+    x = 30
+    y = 0
+    cost = 1  
+     completion_reward = {
+	 create_faction = NGC_Kain_Shit
+	 load_oob = NGC_Zona_Z_Civil_War
+	}
+}
+shared_focus = {
+    id = NZZ_Hahahahahahahahah1
+    icon = GFX_goal_Desires
+	prerequisite = { focus = NZZ_Hahahahahahahahah }
+    x = 2
+    y = 1
+    cost = 1 
+relative_position_id = NZZ_Hahahahahahahahah
+     completion_reward = {
+	}
+}
+shared_focus = {
+    id = NZZ_Hahahahahahahahah2
+    icon = GFX_goal_Desires
+	prerequisite = { focus = NZZ_Hahahahahahahahah }
+    x = -2
+    y = 1
+    cost = 1 
+relative_position_id = NZZ_Hahahahahahahahah
+     completion_reward = {
+ }
+}
+shared_focus = {
+    id = NZZ_Hahahahahahahahah3
+    icon = GFX_goal_Desires
+	prerequisite = { focus = NZZ_Hahahahahahahahah }
+    x = 0
+    y = 1
+    cost = 1 
+relative_position_id = NZZ_Hahahahahahahahah
+     completion_reward = {
+	  NOZ = {
+			country_event = NGC_Zona_Z.3
+		} 
+	GUA = {
+			country_event = NGC_Zona_Z.2
+		} 
+	}
+	}
+shared_focus = {
+    id = NZZ_Hahahahahahahahah4
+    icon = GFX_goal_Desires
+	prerequisite = { focus = NZZ_Hahahahahahahahah3 }
+    x = 0
+    y = 3
+    cost = 5
+relative_position_id = NZZ_Hahahahahahahahah3
+     completion_reward = {
+	}
+}
+shared_focus = {
+    id = NZZ_Hahahahahahahahah5
+    icon = GFX_goal_Desires
+	prerequisite = { focus = NZZ_Hahahahahahahahah3 }
+    x = -3
+    y = 3
+    cost = 5
+relative_position_id = NZZ_Hahahahahahahahah3
+     completion_reward = {
+	 declare_war_on = {
+			target = NGC
+			type = annex_everything
+		}
+	declare_war_on = {
+			target = YGY
+			type = annex_everything
+		}
+	declare_war_on = {
+			target = NCN
+			type = annex_everything
+		}
+	}
+}
+shared_focus = {
+    id = NZZ_Hahahahahahahahah6
+    icon = GFX_goal_Desires
+	prerequisite = { focus = NZZ_Hahahahahahahahah3 }
+    x = 3
+    y = 3
+    cost = 5
+relative_position_id = NZZ_Hahahahahahahahah3
+     completion_reward = {
+	 declare_war_on = {
+			target = NGC
+			type = annex_everything
+		}
+	declare_war_on = {
+			target = NCN
+			type = annex_everything
+		}
+	}
+}

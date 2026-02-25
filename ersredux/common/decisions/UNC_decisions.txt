@@ -1,0 +1,203 @@
+UNC_puppet_influence = {
+	UNC_strike_prance_nationalists = {
+		icon = GFX_decision_megaphone
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		days_re_enable = 70
+		visible = {
+			always = yes
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision UNC_strike_prance_nationalisits"
+			PRG = {
+				add_popularity = {
+					ideology = fascism
+					popularity = -0.03
+				}
+				add_autonomy_ratio = {
+					value = -0.03
+					localization = EQC_patriation
+				}
+				add_war_support = -0.02
+			}
+		}
+		cost = 50
+	}
+	
+	UNC_strike_svr_communists = {
+		icon = GFX_decision_megaphone
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		days_re_enable = 70
+		visible = {
+			always = yes
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision UNC_strike_svr_communists"
+			SVR = {
+				add_popularity = {
+					ideology = communism
+					popularity = -0.03
+				}
+				add_autonomy_ratio = {
+					value = -0.03
+					localization = EQC_patriation
+				}
+				add_stability = 0.02
+			}
+		}
+		cost = 50
+	}
+}
+
+UNC_war_with_STG = {
+	UNC_finish_war_faster = {
+		icon = GFX_decision_megaphone
+		
+		activation = {
+			
+		}
+		
+		available = {
+			STG = {
+				surrender_progress > 0.1
+			}
+		}
+		
+		is_good = no
+		days_mission_timeout = 35
+		
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision UNC_finish_war_faster"
+			white_peace = STG
+			country_event = unc.7
+		}
+		complete_effect = {
+			country_event = unc.6
+		}
+	}
+}
+UNC_chess_games_decision = {
+	UNC_chess_games_1 = {
+		
+		available = {
+			NOT = {
+				has_country_flag = unc_won_chess_1
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		fire_only_once = no
+		days_re_enable = 5
+		visible = {
+			always = yes
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision UNC_chess_games_1"
+			country_event = unc.12
+		}
+		cost = 10
+	}
+	
+	UNC_chess_games_2 = {
+		
+		available = {
+			NOT = {
+				has_country_flag = unc_won_chess_2
+			}
+			has_country_flag = unc_won_chess_1
+		}
+		ai_will_do = {
+			factor = 75
+			modifier = {
+				has_country_flag = unc_lost_chess_w
+				factor = 150
+			}
+		}
+		fire_only_once = no
+		days_re_enable = 5
+		visible = {
+			always = yes
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision UNC_chess_games_2"
+				if = {
+					limit = {
+						has_country_flag = unc_lost_chess_2
+					}
+					country_event = { id = unc.18 days = 1 }
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = unc_lost_chess_2
+						}
+					}
+					country_event = { id = unc.14 days = 1 }
+				}
+		}
+		cost = 10
+	}
+	UNC_chess_games_3 = {
+		
+		available = {
+			NOT = {
+				has_country_flag = unc_won_chess_3
+			}
+			has_country_flag = unc_won_chess_2
+		}
+		ai_will_do = {
+			factor = 75
+		}
+		fire_only_once = no
+		days_re_enable = 5
+		visible = {
+			always = yes
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision UNC_chess_games_3"
+			if = {
+					limit = {
+						has_country_flag = unc_lost_chess_3
+					}
+					country_event = { id = unc.24 days = 1 }
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = unc_lost_chess_3
+						}
+					}
+					country_event = { id = unc.22 days = 1 }
+				}
+		}
+		cost = 10
+	}
+	UNC_chess_games_4 = {
+		
+		available = {
+			has_country_flag = unc_won_chess_3
+		}
+		ai_will_do = {
+			factor = 75
+		}
+		fire_only_once = no
+		days_re_enable = 5
+		visible = {
+			always = yes
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision UNC_chess_games_4"
+		}
+		cost = 10
+	}
+}

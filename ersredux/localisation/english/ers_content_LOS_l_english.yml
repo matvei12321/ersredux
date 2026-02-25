@@ -1,0 +1,113 @@
+﻿l_english:
+
+ ##### PARTIES
+ LOS_fascism_party:0 "HP"
+ LOS_fascism_party_long:0 "National Republican Party"
+ LOS_neutrality_party:0 "Monarchist exiles"
+ LOS_neutrality_party_long:0 "Monarchist exiles"
+ LOS_communism_party:0 "Workers' Union"
+ LOS_communism_party_long:0 "Workers' Union"
+ LOS_democratic_party:0 "Benevolent aristocracy"
+ LOS_democratic_party_long:0 "Benevolent aristocracy
+ 
+ 
+ ##### CHARACTERS
+ LOS_amidis:0 "Orion Amidis"
+ LOS_othon_pangalos:0 "Otho Pangalos"
+ LOS_pavlos_metaxas:0 "Pavlos Metaxas"
+ LOS_spyros_soutsos:0 "Spyros Sotos"
+ 
+ ##### NATIONAL FOCUS
+ 
+ 
+ ##### IDEAS
+ 
+ LOS_dynamic_monarchy:0 "Arius Neos"
+ LOS_dynamic_monarchy_desc:0 "The more legitimacy points you have, the higher the bonuses will be."
+ LOS_regency_council_1:0 "Regency Council"
+ LOS_knights:0 "Noble groups"
+ LOS_against_PGS_idea:0 "Fighting evil"
+ LOS_PONY_RIGHT_IDEA:0 "Rights for all ponies"
+ LOS_migrants:0 "Increased immigration support from [PGS.getname]"
+ LOS_petty_army:0 "Pathetic army"
+ LOS_petty_army_desc:0 "The nobles and common Pegasi fled to the south, while the professional military remained on the side of the traitor Hurricane junta. Because of this, our militia, which we hardly call an army, suffers from experienced personnel."
+ LOS_national_republicans:0 "National Republicans"
+ LOS_national_republicans_desc:0 "Some of those Pegasi who support the idea of freedom and an anti-stratocratic system adhere to the ideas of nationalism and superiority of Pegasi, and some of them are so radical that they almost call for the overthrow of our "weak regime."In any case, we are the right Democrats, and they are the wrong ones."
+ LOS_food_problem:0 "Empty storage"
+ LOS_food_problem_desc:0 "We are experiencing certain supply problems, which is why we have to save on resources and food."
+ 
+ #### DECISIONS
+
+ LOS_monarch_cat:0 "§3Los Pegasus§! - monarchists"
+ LOS_monarch_cat_desc:0 "The monarchists who fled to Las Pegasus seek to restore the former dynasty and return the monarch to the throne of the ruler of the united Pegasus lands. Unlike the like-minded people who remained in Pegasopolis, they are not so belligerent and cruel and prefer to have influence on the decisions of the monarch.\n\n£small_crown_icon §Pieces of legitimacy of our monarch:§! §Y[?LOS.los_legicimicy_point]§!\n\n For every legitimacy point:\n +5% gain in political power\n +1% stability\n +1% support for war\n +0.5% surrender limit\n\NIF the number of points is changed, the parameters of the heir can be changed §More! and § Solutions.§!"
+ LOS_founds:0 "In search of a new king"
+ LOS_monarchist_documents_dec:0 "Unveil evidence"
+ LOS_monarchist_war_speech_dec:0 "Speech of War"
+ LOS_monarchist_peace_speech_dec:0 "Speech of Peace"
+ LOS_civil_war_in_our_homeland_cat:0 "War for our Motherland"
+ LOS_annex_civ_war_territories:0 "Sudden strike"
+ 
+ plus_1_los_legitimnost:0 "Добавит £small_crown_icon §G1 очко легитимности§!"
+ plus_2_los_legitimnost:0 "Добавит £small_crown_icon §G2 очка легитимности§!"
+ plus_5_los_legitimnost:0 "Добавит £small_crown_icon §G5 очков легитимности§!"
+ 
+ call_to_PGS_tt:0 "\n§R Low§! £small_crown_icon §Legitimacy§! will give §Rdebuffs§! from the found heir. At §G High §! §Legitimacy§! Monarch will give bonuses, as well as unlock Special solutions.§!"
+ 
+ 
+ 
+ #### OOB
+ 
+ #### COSMETIC TAGS
+ 
+ #### TRAITS
+ royal_canselarist:0 "Former Royal Clerk"
+ 
+ #### TOOLTIPS
+ has_more_20_legicimicy_points:0 "£small_crown_icon §G Pieces of legitimacy§! greater than or equal to Y20!"
+ has_more_9_legicimicy_points:0 "£small_crown_icon §G Pieces of legitimacy§! greater than or equal to Y10!"
+ has_more_5_legicimicy_points:0 "£small_crown_icon §G Pieces of legitimacy§! greater than or equal to Y5!"
+ can_invade_PGS_as_rev:0 " Can interfere §R on the side§! Revolutionaries"
+ los_started_monarchy_mechanical:0 "The mechanics are active.small_crown_icon §Legitimacy§!"
+ los_available_in_20_days:0"\This decision can be made again after §Y20 days§!."
+ 
+ #### Faction
+
+ #### EVENTS
+ 
+ los.1.t:0 "Hope"
+ los.1.d:0 "- Are you sure that it is... him?\n\The republic leader was finally sent a photo and information about the true heir of the blue blood. But the result turned out to be... not exactly what he expected.\n\n- Mr. Orion, we've checked all the facts ourselves several times. Yes, this fifteen-year-old pegasus lived and was raised in a peasant family. But his belonging to the dynasty is indisputably confirmed by this royal decree that we have found.\n\Porion was shown a document with the royal seal and signature. Amidis had worked in the king's office for many years, and knew better than anyone how to determine the authenticity of the royal seal. There is no doubt that this is not a fake.\n\nThe document contains the king's thoughts on the upcoming rebellion. It was as if he knew that a catastrophe was coming for his family, and ordered the evacuation of several of his children to the estates of loyal nobles far from the capital. That was the whole decree. Unfortunately, the aforementioned estates, along with the heirs of the Neos dynasty, were burned down during the revolution, but one of the sons of Neos ended up in a peasant village in the region of Arkedonia under unknown circumstances. Local peasants, seeing the royal carriage, attacked and looted it, but found a very young foal. They saved him, sheltered him, and raised him like a family. But even though the royal document was right in front of him, Orion was doubtful.\n\n- We can still be wrong. One of the signs of belonging to the Neos dynasty is a birthmark in the shape of a star on his neck...\n\n- Present, Mr. Orion. You seem tired. Don't bother, we monarchists will take that stallion under our protection and responsibility. This is a real holiday for us..."
+ los.1.a:0 "New ray of light"
+ 
+ los.5.t:0 "New Constitution"
+ los.5.d:0 "Our republican-tyrannical-royalist government is capable of defending its ideals, but so far we have provided protection only to Pegasi. Recently, the issue of creating a new constitution has been acute, which, in fact, would be just a collection of our past laws, but in it all rights would belong not only to pegasi, but also to unicorns and Earth ponies.However, not all monarchists support such a democratic idea. They suggest recognizing that other ponies have a basic right to life, a name, and so on, but pegasi will have more privileges.\n\nwhose are generally unhappy with the proposal to create a new law and do not want dirty earth ponies and selfish unicorns to be in the same legal position as Pegasi."
+ los.5.a:0 "All ponies, go ahead!"
+ los.5.b:0 "There is no such thing as democracy."
+ los.5.c:0 "So that the earthly pony is equal to the one who controls the sky? Ugh!"
+
+ los.6.t:0 "Training"
+ los.6.d:0 "The new heir was raised by peasants - and therefore the monarchists needed... reconfigure his way of thinking. To teach the basics of governance, the principles of monarchical power. The leader of the republic, as the former head of the royal Chancellery, could greatly help in this.\n\PS Does Orion agree to participate in Christopher's management training?"
+ los.6.a:0 "Yes"
+ kris_will_get_political_bonus:0 "§The heir§! will receive §G An additional bonus§! in C5% of the increase in political power.§!"
+ los.6.b:0 "No"
+
+ los.7.t:0 "Offer of cooperation"
+ los.7.d:0 "Our expectations were fulfilled - after the victory of the Democratic Movement in Pandoria, the dictatorship of the theocracy was overthrown, and the current leader, the Earth pony Silva Hopestar, does not seem to mind cooperating with other races. Should we try to cooperate?"
+ los.7.a:0 "Send Silva a letter with a proposal for mutual defense."
+ los.7.b:0 "We will deal with our problems alone."
+
+ los.8.t:0 "Offer of cooperation"
+ los.8.d:0 "After winning the election, Silva became a little more fussy than before. While she was getting used to her office and arranging it so that its interior suited the status of the office of the ruler of a democratic country, she completely forgot to check the letters addressed to her.\n\n- Argh, what is it...Silva quickly started checking the mail that had been delivered over the previous few days. And among the congratulations from her loved ones and threatening letters from her enemies, she found an official letter from the Republic of Las Pegasus. In it, Orion Amidis, the head of the republic, suggested that Silva conclude a mutual defense pact - a "Democratic Bloc" to protect each other's interests against external threats."
+ los.8.a:0 "Hooray! New friends!"
+ los.8.b:0 "We will handle our problems alone."
+
+ los.9.t:0 "Pandora agrees"
+ los.9.d:0"Silva Hopestar finally sent a reply letter - she agrees to form an alliance. Our countries have already opened their borders to each other."
+ los.9.a:0 "Great!"
+
+ los.10.t:0 "Pandora refuses"
+ los.10.d:0 "Silva Hopestar finally sent a reply letter - she does not agree to form an alliance."
+ los.10.a:0 "Annoying."
+ los.10.b:0 "To hell with Earth ponies! We can protect ourselves!"
+ 
+ 
+ #### SCRIPTED GUI

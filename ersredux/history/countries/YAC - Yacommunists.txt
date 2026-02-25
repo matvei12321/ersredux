@@ -1,0 +1,67 @@
+﻿capital = 1235
+
+oob = "YAC_1007"
+
+set_research_slots = 3
+
+set_technology = {
+	melee_weapons = 1
+	melee_weapons1 = 1
+	pre_gw_artillery = 1
+	infantry_weapons = 1
+	gw_artillery = 1
+	tech_recon = 1
+	tech_support = 1
+	tech_mountaineers = 1
+	yak_race = 1
+}
+actually_fix_weapon_techs = yes #THIS HAS TO BE CALLED IN EVERY HISTORY FILE RIGHT AFTER MAIN set_technology!
+
+add_opinion_modifier = { target = NAK modifier = yak_warkhan_opinion }
+add_opinion_modifier = { target = JAK modifier = yak_warkhan_opinion }
+add_opinion_modifier = { target = YAK modifier = yak_warkhan_opinion }
+add_opinion_modifier = { target = BAD modifier = yak_warkhan_opinion }
+add_opinion_modifier = { target = SHA modifier = yak_warkhan_opinion }
+add_opinion_modifier = { target = MNT modifier = yak_warkhan_opinion }
+
+set_popularities = {
+	communism = 70
+	neutrality = 30
+}
+set_politics = {
+	ruling_party = communism
+	last_election = "1000.10.10"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+recruit_character = YAC_chieftess
+recruit_character = YAC_marx_leader
+
+recruit_character = YAC_priest_advisor1
+recruit_character = YAC_priest_advisor2
+recruit_character = YAC_priest_advisor3
+recruit_character = YAC_priest_advisor4
+
+
+
+
+add_ideas = {
+	agrarian_society
+	YAK_resilience
+	lack_of_scientists2
+	poverty3
+	better_science_base
+	
+	YAC_homeland_of_revolution
+	YAC_primitive_esoterism
+	ers_atheism
+}
+
+set_stability = 0.35
+set_war_support = 0.4
+
+
+set_rule = {
+	can_generate_female_aces = yes
+}

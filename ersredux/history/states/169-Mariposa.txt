@@ -1,0 +1,31 @@
+state={
+	id=169
+	name="STATE_169"
+
+	provinces={
+		236 306 371 560 1753 3210 3278 6280 6359 6413 9342 11229 11285 11325 11336
+	}
+
+	manpower=146280
+	state_category = rural
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = PGS
+		add_core_of = PGS
+		
+		set_demilitarized_zone = yes
+
+		victory_points = { 6280 5 }
+
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	
+	resources = {
+		oil=4
+		steel = 5
+		aluminium = 3
+	}
+}

@@ -1,0 +1,99 @@
+﻿
+division_template = {
+	name = "Industrial Deathbringers"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+	priority = 2
+}
+
+division_template = {
+	name = "Adeptus Mechanoids"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+
+	}
+	support = {
+	}
+	priority = 1
+}
+
+units = {
+	division = {
+		name = "Industrial Deathbringers"
+		location = 11399
+		division_template = "Industrial Deathbringers"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Industrial Deathbringers"
+		location = 11399
+		division_template = "Industrial Deathbringers"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Industrial Deathbringers"
+		location = 9508
+		division_template = "Industrial Deathbringers"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "Industrial Deathbringers"
+		location = 11399
+		division_template = "Industrial Deathbringers"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Industrial Deathbringers"
+		location = 9508
+		division_template = "Industrial Deathbringers"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "Industrial Deathbringers"
+		location = 3434
+		division_template = "Industrial Deathbringers"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	
+	division = {
+		name = "Adeptus Mechanoids"
+		location = 3434
+		division_template = "Adeptus Mechanoids"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Adeptus Mechanoids"
+		location = 3434
+		division_template = "Adeptus Mechanoids"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Adeptus Mechanoids"
+		location = 9508
+		division_template = "Adeptus Mechanoids"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	
+	
+}

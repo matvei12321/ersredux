@@ -1,0 +1,72 @@
+
+soundeffect = {
+	name = hive_created
+	loop = no
+	sounds = {
+		sound = hive_created
+	}
+	is3d = no
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 1.5
+}
+
+soundeffect = {
+	name = hive_enemy_capitulated
+	loop = no
+	sounds = {
+		sound = hive_enemy_capitulated
+	}
+	is3d = no
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 1.5
+}
+
+soundeffect = {
+	name = hive_war_declaration
+	loop = no
+	sounds = {
+		sound = hive_war_declaration
+	}
+	is3d = no
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 1.5
+}
+
+soundeffect = {
+	name = soundeffect_gun_shot
+	loop = no
+	sounds = {
+		sound = soundeffect_gun_shot
+		}
+	is3d = no
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 1.5
+}
+
+soundeffect = {
+	name = soundeffect_march
+	loop = no
+	sounds = {
+		sound = soundeffect_march
+		}
+	is3d = no
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 1.5
+}
+
+soundeffect = {
+	name = ui_research_tab_chem_tech
+	loop = no
+	sounds = {
+		sound = ui_research_tab_chem_tech
+	}
+	is3d = no
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 1.5
+}

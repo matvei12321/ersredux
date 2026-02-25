@@ -1,0 +1,188 @@
+shared_focus = {
+	id = REF_focus1
+	icon = GFX_goal_focus1
+	cost = 2
+	x = 8
+	y = 0
+	ai_will_do = {
+		factor = 40
+	}
+	select_effect = {
+		country_event = { id = REF.1  days = 7}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus REF_focus1"
+		country_event = { id = REF.2 }
+	}
+}
+shared_focus = {
+	id = REF_focus2
+	icon = GFX_goal_focus2
+	cost = 1
+	x = 9
+	y = 1
+	prerequisite = { focus = REF_focus1 }
+	ai_will_do = {
+		factor = 40 
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus REF_focus2"
+		country_event = { id = REF.3 }
+	}
+}
+shared_focus = {
+	id = REF_focus3
+	icon = GFX_goal_focus3
+	cost = 1
+	x = 7
+	y = 1
+	prerequisite = { focus = REF_focus1 }
+	available = {
+        has_completed_focus = REF_focus2
+    }
+	ai_will_do = {
+		factor = 40 
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus REF_focus3"
+		country_event = { id = REF.4 }
+	}
+}
+shared_focus = {
+	id = REF_focus4
+	icon = GFX_goal_focus4
+	cost = 1
+	x = 5
+	y = 1
+	prerequisite = { focus = REF_focus1 }
+	available = {
+        has_completed_focus = REF_focus3
+    }
+	ai_will_do = {
+		factor = 40 
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus REF_focus4"
+		country_event = { id = REF.5 }
+	}
+}
+shared_focus = {
+	id = REF_focus5
+	icon = GFX_goal_focus5
+	cost = 1
+	x = 11
+	y = 1
+	prerequisite = { focus = REF_focus1 }
+	available = {
+        has_completed_focus = REF_focus4
+    }
+	ai_will_do = {
+		factor = 40 
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus REF_focus5"
+		country_event = { id = REF.6 }
+	}
+}
+shared_focus = {
+	id = REF_focus6
+	icon = GFX_goal_focus6
+	cost = 4
+	x = 8
+	y = 2
+	prerequisite = { focus = REF_focus1 }
+	available = {
+        has_completed_focus = REF_focus5
+    }
+	ai_will_do = {
+		factor = 40
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus REF_focus6"
+		country_event = { id = REF.7 }
+	}
+}
+
+shared_focus = {
+	id = REF_step2
+	icon = GFX_goal_focus1
+	cost = 2
+	x = 16
+	y = 0
+	select_effect = {
+		country_event = { id = REF.8  days = 7}
+	}
+	available = {
+        has_completed_focus = REF_focus6
+    }
+	ai_will_do = {
+		factor = 40
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus REF_step2"
+		country_event = { id = REF.9 }
+	}
+}
+shared_focus = {
+	id = REF_step3
+	icon = GFX_goal_focus1
+	cost = 2
+	x = 18
+	y = 0
+	available = {
+		has_completed_focus = REF_step2
+    }
+	ai_will_do = {
+		factor = 40
+	}
+	select_effect = {
+		country_event = { id = REF.10  days = 7}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus REF_step3"
+		country_event = { id = REF.11 }
+	}
+}
+shared_focus = {
+	id = REF_step4
+	icon = GFX_goal_focus1
+	cost = 3
+	x = 17
+	y = 1
+	prerequisite = { 
+					focus = REF_step2
+					focus = REF_step3
+				}
+	available = {
+        has_completed_focus = REF_step2
+		has_completed_focus = REF_step3
+    }
+	ai_will_do = {
+		factor = 40
+	}
+	select_effect = {
+		country_event = { id = REF.12  days = 7}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus REF_step4"
+		country_event = { id = REF.13 }
+		add_timed_ideas = {
+		idea = finance_police 
+		days = 15
+	}
+}
+shared_focus = {
+	id = REF_step5
+	icon = GFX_goal_focus1
+	cost = 3
+	x = 17
+	y = 2
+	prerequisite = { focus = REF_step4 }
+	ai_will_do = {
+		factor = 40
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus REF_step5"
+
+	}
+}

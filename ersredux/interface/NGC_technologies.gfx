@@ -1,0 +1,6 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_motorcycle_tech_medium"
+		texturefile = "gfx/interface/technologies/ngc.dds"
+	}
+}

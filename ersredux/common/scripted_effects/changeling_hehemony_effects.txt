@@ -1,0 +1,119 @@
+minus_100_hehemony_unity = {
+	add_to_variable = {
+		global.ers_chn_unity_var = -100.0
+	}
+	clamp_variable = {
+		var = global.ers_chn_unity_var
+		min = 0
+		max = 100
+	}
+	custom_effect_tooltip = minus_10_chn_unity_tt
+}
+
+minus_10_hehemony_unity = {
+	add_to_variable = {
+		global.ers_chn_unity_var = -10.0
+	}
+	clamp_variable = {
+		var = global.ers_chn_unity_var
+		min = 0
+		max = 100
+	}
+	custom_effect_tooltip = minus_10_chn_unity_tt
+}
+
+minus_5_hehemony_unity = {
+	add_to_variable = {
+		global.ers_chn_unity_var = -5.0
+	}
+	clamp_variable = {
+		var = global.ers_chn_unity_var
+		min = 0
+		max = 100
+	}
+	custom_effect_tooltip = minus_5_chn_unity_tt
+}
+
+minus_2_5_hehemony_unity = {
+	add_to_variable = {		
+		global.ers_chn_unity_var = -2.5
+	}
+	clamp_variable = {
+		var = global.ers_chn_unity_var
+		min = 0
+		max = 100
+	}
+	custom_effect_tooltip = minus_2_5_chn_unity_tt
+}
+
+minus_1_hehemony_unity = {
+	add_to_variable = {		
+		global.ers_chn_unity_var = -1
+	}
+	clamp_variable = {
+		var = global.ers_chn_unity_var
+		min = 0
+		max = 100
+	}
+	custom_effect_tooltip = minus_1_chn_unity_tt
+}
+
+plus_1_hehemony_unity = {
+	add_to_variable = {
+		global.ers_chn_unity_var = 1
+	}
+	clamp_variable = {
+		var = global.ers_chn_unity_var
+		min = 0
+		max = 100
+	}
+	custom_effect_tooltip = plus_1_chn_unity_tt
+}
+
+plus_2_hehemony_unity = {
+	add_to_variable = {
+		global.ers_chn_unity_var = 2
+	}
+	clamp_variable = {
+		var = global.ers_chn_unity_var
+		min = 0
+		max = 100
+	}
+	custom_effect_tooltip = plus_2_chn_unity_tt
+}
+
+plus_2_5_hehemony_unity = {
+	add_to_variable = {
+		global.ers_chn_unity_var = 2.5
+	}
+	clamp_variable = {
+		var = global.ers_chn_unity_var
+		min = 0
+		max = 100
+	}
+	custom_effect_tooltip = plus_2_5_chn_unity_tt
+}
+
+plus_5_hehemony_unity = {
+	add_to_variable = {
+		global.ers_chn_unity_var = 5.0
+	}
+	clamp_variable = {
+		var = global.ers_chn_unity_var
+		min = 0
+		max = 100
+	}
+	custom_effect_tooltip = plus_5_chn_unity_tt
+}
+
+plus_10_hehemony_unity = {
+	add_to_variable = {
+		global.ers_chn_unity_var = 10.0
+	}
+	clamp_variable = {
+		var = global.ers_chn_unity_var
+		min = 0
+		max = 100
+	}
+	custom_effect_tooltip = plus_10_chn_unity_tt
+}

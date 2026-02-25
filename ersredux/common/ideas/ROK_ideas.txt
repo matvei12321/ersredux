@@ -1,0 +1,632 @@
+ideas = {
+
+	country = {
+		ROK_gunfighting = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = ers_revolver
+			
+			removal_cost = -1
+			
+			modifier = {
+				monthly_population = -0.1
+				army_attack_factor = 0.1
+				army_speed_factor = 0.05
+				attrition = -0.05
+			}
+		}
+		
+		ROK_gunfighting_1 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = ers_revolver
+			
+			removal_cost = -1
+			
+			modifier = {
+				monthly_population = -0.15
+				army_attack_factor = 0.15
+				army_speed_factor = 0.1
+				attrition = -0.1
+				political_power_gain = -0.45
+				stability_factor = -0.05
+			}
+		}
+		
+		ROK_gunfighting_2 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = ers_revolver
+			
+			removal_cost = -1
+			
+			modifier = {
+				monthly_population = -0.05
+				army_attack_factor = 0.05
+				army_speed_factor = 0.05
+				attrition = -0.05
+			}
+		}
+		
+		ROK_gunfighting_3 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = ers_revolver
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				attrition = -0.025
+				political_power_gain = 0.25
+				stability_factor = 0.05
+			}
+		}
+		
+		ROK_migration = {
+			
+			allowed = {
+				always = no
+			}
+
+			picture = pony_militarization
+			
+			removal_cost = -1
+			
+			modifier = {
+				weekly_manpower = 100
+				stability_factor = -0.2
+				war_support_factor = -0.15
+			}
+		}
+		
+		ROK_bandit_queen = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = oktavia
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.2
+				conscription_factor = -0.2
+				industrial_capacity_factory = -0.1
+				production_speed_buildings_factor = -0.20
+			}
+		}
+		
+		ROK_bandit_queen_1 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = oktavia
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.1
+				attrition = -0.1
+				war_support_factor = 0.15
+			}
+		}
+		
+		ROK_drujina = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.02
+				army_core_defence_factor = 0.1
+			}
+		}
+		
+		ROK_fillies_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				monthly_population = -0.1
+				conscription_factor = 0.05
+				army_defence_factor = 0.025
+				army_attack_factor = 0.025
+			}
+		}
+		
+		ROK_telegraphs_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				attrition = -0.05
+				army_speed_factor = 0.1
+				army_org_factor = 0.05
+			}
+		}
+		
+		ROK_legend_killers = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = oktavia
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.1
+				RESISTANCE_GROWTH = -0.1
+			}
+		}
+		
+		ROK_silver_law = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.075
+				attrition = -0.05
+			}
+		}
+		
+		ROK_radio_silence = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = ers_radio
+			
+			removal_cost = -1
+			
+			modifier = {
+				weekly_manpower = -100
+				monthly_population = -0.2
+				attrition = 0.2
+			}
+		}
+		
+		ROK_ruined_country = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = unhappy_army_2
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.25
+				stability_factor = -0.2
+				monthly_population = -0.1
+			}
+		}
+		
+		ROK_bad_banditism = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = burning_skull_knife
+			
+			removal_cost = -1
+			
+			modifier = {
+				weekly_manpower = -100
+				consumer_goods_factor = 0.2
+				local_resources_factor = -0.2
+			}
+		}
+		
+		ROK_buro_of_migration = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				weekly_manpower = 150
+				monthly_population = 0.1
+				political_power_factor = -0.1
+			}
+		}
+		
+		ROK_honest_concurents_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = 0.05
+				PRODUCTION_FACTORY_MAX_EFFICIENCY_FACTOR = -0.1
+			}
+		}
+		
+		ROK_extra_idea = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.15
+				production_speed_buildings_factor = 0.15
+				ENEMY_OPERATIVE_DETECTION_CHANCE_FACTOR = 0.2
+				monthly_population = -0.4
+				political_power_factor = -0.2
+			}
+		}
+
+		ROK_planned_economy_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = HIP_stock
+			modifier = {
+				political_power_factor = 0.05
+				economy_cost_factor = -0.15
+				trade_laws_cost_factor = -0.15
+			}
+		}
+
+		ROK_clean_among_us_idea = {
+				
+			allowed = {
+				always = no
+			}
+			removal_cost = -1	
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_democratic_drift_bonus
+				
+			modifier = {
+				stability_factor = 0.075
+				war_support_factor = 0.075
+				political_power_factor = 0.05
+				army_org_factor = 0.1
+			}
+		}
+		
+		ROK_constitution_idea = {
+				
+			allowed = {
+				original_tag = ROK
+			}
+			removal_cost = -1	
+			picture = generic_political_support
+			modifier = {
+				political_power_factor = 0.1
+				conscription = 0.02
+				research_speed_factor = 0.035
+				consumer_goods_factor = 0.15
+			}
+		}
+		
+		ROK_casino_always_wins = {
+				
+			allowed = {
+				original_tag = ROK
+			}
+			removal_cost = -1
+			picture = chi_wargaming_division
+			modifier = {
+				stability_factor = -0.05
+				consumer_goods_factor = -0.15
+				political_power_gain = 0.15
+			}
+		}
+		
+		ROK_contracts_idea = {
+				
+			allowed = {
+				original_tag = ROK
+			}
+			removal_cost = -1	
+			equipment_bonus = {
+				infantry_equipment = {
+					reliability  = -0.1
+					build_cost_ic = -0.25
+					breakthrough = 0.1
+					instant = yes
+				}
+			}
+		}
+		
+		ROK_okhranka = {
+				
+			allowed = {
+				original_tag = ROK
+			}
+				
+			modifier = {
+				stability_factor = 0.045
+				COMPLIANCE_GROWTH = 0.1
+				consumer_goods_factor = 0.05
+				ENEMY_OPERATIVE_CAPTURE_CHANCE_FACTOR = 0.15
+				political_power_factor = -0.1
+			
+			}
+		}
+		
+		ROK_civilian_professions_idea = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = ers_revolver
+						
+			modifier = {
+				consumer_goods_factor = -0.3
+				political_power_gain = -0.5
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+		
+		ROK_equestrian_court = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+				COMPLIANCE_GROWTH = 0.1
+				RESISTANCE_GROWTH = -0.1
+			}
+		}
+		
+		ROK_appleloosa_oasis = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				monthly_population = 0.15
+				local_resources_factor = 0.1
+			}
+		}
+		
+		ROK_constitution_of_force_idea = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_political_support
+			modifier = {
+				monthly_population = 0.05
+				conscription_factor = 0.15
+				local_resources_factor = 0.075
+				mobilization_speed = 0.125
+				consumer_goods_factor = 0.1
+				conscription = 0.05
+			}
+		}
+		
+		ROK_constitution_of_peace_idea = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_political_support
+			modifier = {
+				monthly_population = 0.2
+				conscription_factor = -0.05
+				local_resources_factor = 0.2
+				research_speed_factor = 0.05
+				stability_factor = 0.035
+			}
+		}
+		
+		ROK_patriotism_idea = {
+			
+			allowed = {
+				always = no
+			}
+			picture = pony_militarization
+			removal_cost = -1
+			modifier = {
+				conscription = 0.05
+				training_time_factor = -0.1
+				industrial_capacity_factory = 0.1
+				army_attack_factor = 0.05
+			}
+		}
+		
+		ROK_blackstone_mines = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				local_resources_factor = 0.2
+			}
+			equipment_bonus = {
+				magical_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+		}
+		
+		ROK_griffons_trading_idea = {
+			
+			allowed = {
+				always = no
+			}
+			picture = Generic_bank_idea_icon
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.15
+				political_power_factor = 0.1
+				monthly_population = 0.1
+				research_speed_factor = 0.05
+			}
+			
+		}
+		
+		ROK_allow_citizenship = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = pony_passport
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.035
+				monthly_population = 0.1
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.05
+			}
+			
+		}
+		
+		ROK_guaranteeing = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			modifier = {
+				GUARANTEE_TENSION = -1.0
+				GUARANTEE_COST = -0.5
+			}
+			
+		}
+		
+		ROK_small_business = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			research_bonus = {
+				industry = 0.1
+			}
+			
+			modifier = {
+				stability_factor = 0.05
+				consumer_goods_factor = 0.05
+			}
+			
+		}
+		
+		ROK_industry_support = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+		
+		ROK_arms_factory_support = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+		
+		
+		ROK_drinking_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.05
+				COMPLIANCE_GROWTH = 0.05
+				monthly_population = -0.05
+			}
+		}
+
+		ROK_hor_museum_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.05
+				political_power_cost = -0.05
+				stability_factor = 0.05
+				improve_relations_maintain_cost_factor = -0.15
+			}
+		}
+	}
+}
+

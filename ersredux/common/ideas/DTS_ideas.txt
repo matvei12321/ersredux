@@ -1,0 +1,513 @@
+ideas = {
+
+
+	country = {
+		DTS_loyal_mafia = {
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			picture = dts_mafia
+			modifier = {
+				stability_factor = -0.05
+				research_speed_factor = -0.05
+				local_resources_factor = 0.075
+				PRODUCTION_SPEED_BUILDINGS_FACTOR = 0.05
+				industrial_capacity_dockyard = 0.05
+				political_power_factor = 0.1
+			}
+		}
+		DTS_mafia_war_0 = {
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			picture = dts_mafia_no
+			modifier = {
+				political_power_factor = 0.07
+				stability_factor = 0.05
+			}
+		}
+		DTS_industrial_customers_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+		
+			picture = hat_and_cash
+			
+			modifier = {
+				PRODUCTION_SPEED_BUILDINGS_FACTOR = 0.1
+			}
+		}
+		
+		DTS_weapon_customers_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+		
+			picture = hat_and_cash
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
+			}
+		}
+		
+		DTS_CHN_attache = {
+			allowed = {
+				always = yes
+			}
+			available = {
+				has_government = fascism
+				has_country_flag = DTS_CHN_attache
+			}
+			removal_cost = -1
+			picture = idea_send_attache
+			modifier = {
+				research_speed_factor = 0.03
+				war_support_factor = 0.05
+				army_org = 3
+				experience_gain_army = 0.20
+			}
+		}
+		DTS_CHN_complex = {
+			allowed = {
+				always = yes
+			}
+			available = {
+				has_government = fascism
+				has_country_flag = DTS_CHN_complex
+			}
+			removal_cost = -1
+			picture = IRE_heavy_industry
+			modifier = {
+				production_speed_arms_factory_factor = 0.07
+				production_factory_efficiency_gain_factor = 0.07
+				production_factory_max_efficiency_factor = 0.07
+			}
+		}
+		DTS_prodaja = {
+			allowed = {
+				always = yes
+			}
+			available = {
+				has_government = fascism
+				has_country_flag = DTS_prodaja
+			}
+			removal_cost = -1
+			picture = upgrade_apple_idea
+			targeted_modifier = {
+				tag = CHN
+				cic_to_target_factor = 0.15
+				extra_trade_to_target_factor = 0.15
+				trade_cost_for_target_factor = -0.1
+				consumer_goods_factor = -0.15
+			}
+		}
+			
+		DTS_loyalty_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+		
+			picture = hat_and_cash
+			
+			modifier = {
+				political_power_gain = 0.25
+				stability_factor = 0.035
+				war_support_factor = 0.035
+				conscription_factor = 0.08
+			}
+		}
+		DTS_research_customers_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+		
+			picture = hat_and_cash
+			
+			modifier = {
+				research_speed_factor = 0.025
+			}
+		}
+		DTS_administed = {
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			picture = Generic_bank_idea_icon
+				on_add = {
+					add_to_variable = {
+						global.chn_unity_weekly_var = -0.10
+					}
+				}
+				on_remove = {
+					add_to_variable = {
+						global.chn_unity_weekly_var = 0.10
+					}
+				}
+			modifier = {
+				custom_modifier_tooltip = DTS_administed_tt
+			}
+		}
+		DTS_money_for_everythings = {
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			picture = idea_dts_money
+			modifier = {
+				consumer_goods_factor = -0.2
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				production_speed_buildings_factor = 0.10
+				global_building_slots_factor = 0.30
+				political_power_gain  = -0.40
+			}
+		}
+		DTS_black_squads_idea = {
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			picture = burning_skull_knife
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor  = 0.05
+				conscription = 0.0020
+				army_attack_factor = 0.05
+			}
+		}
+		DTS_strong_org = {
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			picture = idea_hard_org
+			modifier = {
+				army_org_factor = 0.10
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+			}
+		}
+		DTS_reorg_prom_idea = {
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			picture = idea_POL_succesful_four_year_plan
+			modifier = {
+				global_building_slots_factor = 0.30
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		DTS_prom_unit = {
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			picture = Generic_bank_idea_icon
+			modifier = {
+				fascism_drift = 0.10
+				production_speed_buildings_factor = 0.07
+				political_power_factor = 0.20
+			}
+		}
+		DTS_mass_producshen = {
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			picture = dts_industrial_prod
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.10
+				production_factory_max_efficiency_factor = 0.10
+			}
+		}
+		DTS_arbeiter_unit = {
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			picture = factory_with_cog
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.10
+				production_factory_max_efficiency_factor = 0.10
+				production_speed_buildings_factor = 0.07 
+			}
+		}
+		DTS_clock_plus = {
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			picture = idea_dts_clock
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_speed_buildings_factor = 0.10
+				communism_drift = 0.15
+			}
+		}
+		DTS_prom_iron_copito = {
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			picture = dts_prom
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_speed_buildings_factor = 0.10
+				global_building_slots_factor = 0.10
+				fascism_drift = 0.07
+				communism_drift = 0.07
+			}
+		}
+		DTS_for_free = {
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			picture = dts_for_free
+			modifier = {
+				army_attack_factor = 0.10
+				army_defence_factor = 0.10
+				army_org_factor = 0.15
+			}
+		}
+		DTS_helvia_not_good_prav = {
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			picture = Generic_bank_idea_icon
+			modifier = {
+				political_power_factor = -0.40
+				army_org_factor = -0.10
+				army_attack_factor = -0.10
+				army_defence_factor = -0.10
+				stability_factor = -0.40
+				war_support_factor = -0.40
+				resistance_target = 0.2
+			}
+		}
+		DTS_angry_mafia = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			picture = hat_and_cash
+			modifier = {
+				stability_factor = -0.10
+				research_speed_factor = -0.07
+				local_resources_factor = -0.075
+				PRODUCTION_SPEED_BUILDINGS_FACTOR = -0.05
+				industrial_capacity_dockyard = -0.05
+				political_power_factor = -0.05
+			}
+		}
+		DTS_mafia_war_3 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			picture = hat_and_cash
+			modifier = {
+				army_attack_factor = -0.07
+				army_defence_factor = -0.07
+				weekly_manpower = -150
+				political_power_factor = -0.20
+				PRODUCTION_SPEED_BUILDINGS_FACTOR = -0.10
+				resistance_activity = 0.10
+			}
+		}
+		DTS_mafia_war_2 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			picture = hat_and_cash
+			modifier = {
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+				weekly_manpower = -50
+				political_power_factor = -0.05
+				PRODUCTION_SPEED_BUILDINGS_FACTOR = -0.03
+			}
+		}
+		DTS_mafia_war_1 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			picture = hat_and_cash
+			modifier = {
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+				political_power_factor = -0.05
+			}
+		}
+		DTS_vrax_military_base = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			picture = CHN_heer_billeting_scheme
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				army_morale_factor = 0.05
+				experience_gain_army = 0.05
+			}
+		}
+		DTS_vrax_factory = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			picture = dts_vrax_prod
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		DTS_helvia_help_prav = {
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			picture = Generic_bank_idea_icon
+			modifier = {
+				political_power_factor = -0.15
+				army_org_factor = -0.05
+				stability_factor = -0.15
+				war_support_factor = -0.15
+				resistance_target = 0.2
+			}
+		}
+		DTS_LYC_factory = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			picture = dts_lyctida_prod
+			modifier = {
+				consumer_goods_factor = -0.15
+				production_speed_buildings_factor = 0.10
+			}
+		}
+		DTS_KKPS = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			picture = dts_prom
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				
+			}
+		}
+		DTS_magic_exp = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			picture = CHN_scientific_research_bloc
+			modifier = {
+				political_power_factor = -0.05
+				research_speed_factor = 0.05
+			}
+			research_bonus = {
+				magical_tech = 0.12
+			}
+		}
+		DTS_Soryph_1 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			picture = Soryph_hive
+			modifier = {
+				research_speed_factor = 0.03
+			}
+		}
+		DTS_Soryph_2 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			picture = Soryph_hive
+			modifier = {
+				research_speed_factor = 0.03
+				political_power_factor = -0.05
+				stability_factor = 0.05
+			}
+		}
+		DTS_soryph_ins = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			picture = CHN_science
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+		DTS_vesalipolis_town = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			picture = Vesalipolis_hive
+			modifier = {
+				political_power_factor = 0.10
+				global_building_slots_factor = 0.10
+				stability_factor = 0.07
+				war_support_factor = 0.05
+				compliance_growth = 0.05
+			}
+		}
+		DTS_Yaria_Chrysalis_inst = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			picture = CHN_science
+			modifier = {
+				research_speed_factor = 0.05
+			}
+			research_bonus = {
+				magical_tech = 0.15
+				
+			}
+		}
+	}
+}

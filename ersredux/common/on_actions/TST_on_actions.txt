@@ -1,0 +1,113 @@
+on_actions = {
+
+	on_startup = {
+	
+		effect = {
+		
+			TST = {
+				country_event = {id = tst.9 }
+				country_event = {id = armed_sage.9 days = 45 }
+			}
+		
+		}
+	
+	}
+	
+	on_capitulation = {
+
+	}
+	
+	on_capitulation_immediate = {
+		effect = {
+			if = {
+				limit = {
+					AND = {
+						OR = {
+							tag = NEI
+							tag = PLP
+							tag = YKL
+							tag = YUK
+							tag = CHL
+							tag = RZR
+							tag = NIG
+							tag = GUA
+							tag = SND
+							tag = MES
+							tag = STR
+							tag = SLT
+						}
+						has_war_with = TST
+						TST = {
+							has_country_flag = thestralian_war
+						}
+					}
+				}
+				TST = {
+					annex_country = {
+					target = ROOT
+					transfer_troops = no
+					}
+				}
+			}
+			else_if = {
+			limit = {
+				AND = {
+					ROOT = { original_tag = ROK }
+					FROM = { original_tag = TST }
+				}
+			}
+			FROM = {
+				country_event = {
+					id = armed_sage.104
+					days = 20
+				}
+			}
+			}
+			else_if = {
+				limit = {
+					original_tag = GUA
+					NGS = {
+						exists = yes
+						has_capitulated = no
+						has_war_with = FROM
+						NOT = {
+						is_neighbor_of = FROM
+						}
+						NOT = {
+							any_owned_state = {
+								is_controlled_by = FROM
+							}
+						}
+						#all_owned_state = {
+						#	is_fully_controlled_by = EQC
+						#}
+					}
+				}
+				every_country = {
+					limit = {
+						OR = {
+							FROM = { tag = TST }
+							is_in_faction_with = TST
+						}
+					}
+					white_peace = NGS
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						AND = {
+							original_tag = ANR
+							has_completed_focus = ANR_sing_revolution
+						}
+					}
+				}
+				every_core_state = {
+					add_core_of = ANR
+				}
+			}
+		}
+	}
+	
+
+}	

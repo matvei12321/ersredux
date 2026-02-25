@@ -1,0 +1,78 @@
+characters = {
+	WIG_garibald_talonuel = {
+		name = WIG_garibald_talonuel
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/WIG/portrait_wingbardy_garibald_talonuel.tga"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+}
+characters = {
+	WIG_alexander_kemerskai={
+		name = WIG_alexander_kemerskai_char
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/WIG/portrait_WIG_Kemerskai.tga"
+				small = "gfx/interface/ideas/WIG/Kemerskai_adv.tga"
+			}
+		}
+#		country_leader = {
+#			ideology = dengism # DENGIST PATH? YO KEMERSKAI! YO KEMERSKAI! YO KEMERSKAI! YO KEMERSKAI! YO KEMERSKAI! YO KEMERSKAI! YO KEMERSKAI! YO KEMERSKAI! YO KEMERSKAI! YO KEMERSKAI! YO KEMERSKAI! а вообще это заглушка
+#			desc = WIG_alexander_kemerskai_char_desc
+#			expire = "1965.1.1.1"
+#			id = -1
+#		}
+		field_marshal = {
+			skill = 5
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = WIG_alexander_kemerskai_token
+			ledger = civilian
+			traits = { kemerskai_advisor_trait }
+			can_be_fired = no
+		}
+	}
+}
+
+characters = {
+	WIG_parliament={
+		name = WIG_parliament_char
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/WIG/portrait_WIG_Kemerskai.tga"
+			}
+		}
+		country_leader = {
+			ideology = despotism #national_protectionism
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+}
+
+characters = {
+	WIG_bikolini={
+		name = WIG_bikolini_char
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/WNG/portrait_wingbardy_giulio_beakolini_before.tga"
+			}
+		}
+		country_leader = {
+			ideology = national_protectionism
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+}

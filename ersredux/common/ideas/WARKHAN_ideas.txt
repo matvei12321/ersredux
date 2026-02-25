@@ -1,0 +1,382 @@
+ideas = {
+
+	country = {
+		YAK_WARKHAN_attack_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_scw_intervention_nationalists_focus
+
+			modifier = {
+				army_core_attack_factor = 0.05
+				army_infantry_attack_factor = 0.1
+			}
+		}
+	}
+	
+	country = {
+		YAK_WARKHAN_defence_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = ast_naval_auxiliary_patrol
+			
+			modifier = {
+				army_core_defence_factor = 0.05
+				army_infantry_defence_factor = 0.1
+			}
+		}
+	}
+	
+	country = {
+		YAK_WARKHAN_construction_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = man_five_year_plan_industry
+			
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				consumer_goods_factor = -0.15
+				stability_factor = -0.025
+			}
+		}
+	}
+	
+	country = {
+		YAK_WARKHAN_production_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = man_five_year_plan_industry
+			
+			modifier = {
+				industrial_capacity_factory = 0.15
+				stability_factor = -0.025
+			}
+		}
+	}
+	
+	country = {
+		YAK_WARKHAN_army_speed_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_motorized_focus
+			
+			modifier = {
+				army_speed_factor = 0.1
+				org_loss_when_moving = -0.1
+			}
+		}
+	}
+	
+	country = {
+		YAK_WARKHAN_bunker_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_wall_line
+
+			modifier = {
+				production_speed_bunker_factor = 0.15
+				army_defence_factor = 0.05
+				EXPERIENCE_LOSS_FACTOR = -0.05
+			}
+		}
+	}
+	
+	country = {
+		YAK_WARKHAN_equipment_capture = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_infantry_equipment_manufacturer_2
+			
+			modifier = {
+				EQUIPMENT_CAPTURE = 0.1
+			}
+		}
+	}
+	
+	country = {
+		YAK_WARKHAN_conscription_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = hun_secret_rearmament
+			
+			modifier = {
+				army_org_factor = -0.05
+				conscription = 0.01
+				conscription_factor = 0.1
+				training_time_factor = -0.05
+			}
+		}
+	}
+	
+	country = {
+		YAK_WARKHAN_resistence_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_morale_bonus
+
+			removal_cost = -1
+			modifier = { 
+				war_stability_factor = 0.05
+				war_support_factor = 0.05
+				resistance_target_on_our_occupied_states = 0.15
+			}
+		}
+	}
+	
+	country = {
+		YAK_WARKHAN_reliability_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			equipment_bonus = {
+				infantry_equipment = {
+					reliability  = 0.12
+					build_cost_ic = 0.05
+					instant = yes
+				}
+			}
+		}
+	}
+	
+	country = {
+		YAK_WARKHAN_attack_YAK_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			targeted_modifier = {
+				tag = YAK
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.05
+			}
+		}
+	}
+	
+	country = {
+		YAK_WARKHAN_attack_JAK_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			targeted_modifier = {
+				tag = JAK
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.05
+			}
+		}
+	}
+	
+	country = {
+		YAK_WARKHAN_attack_YAC_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			targeted_modifier = {
+				tag = YAC
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.05
+			}
+		}
+	}
+	
+	country = {
+		YAK_WARKHAN_attack_NAK_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			targeted_modifier = {
+				tag = NAK
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.05
+			}
+		}
+	}
+	
+	country = {
+		YAK_WARKHAN_attack_SHA_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			targeted_modifier = {
+				tag = SHA
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.05
+			}
+		}
+	}
+	
+	country = {
+		YAK_WARKHAN_attack_BAD_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			targeted_modifier = {
+				tag = BAD
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.05
+			}
+		}
+	}
+	
+	country = {
+		YAK_WARKHAN_attack_MNT_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			targeted_modifier = {
+				tag = MNT
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.05
+			}
+		}
+	}
+	
+	country = {
+		YAK_WARKHAN_war_drums_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				ARMY_MORALE_FACTOR = 0.1	
+				army_org_factor = 0.05
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					breakthrough = 0.1
+					instant = yes
+				}
+			}
+			equipment_bonus = {
+				artillery_equipment = {
+					breakthrough = 0.1
+					instant = yes
+				}
+			}
+		}
+	}
+	
+	
+
+}

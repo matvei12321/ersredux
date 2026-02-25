@@ -1,0 +1,97 @@
+﻿
+division_template = {
+	name = "National Communistic Division"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+	priority = 2
+}
+
+division_template = {
+	name = "National Communistic Guard"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+
+	}
+	support = {
+	}
+	priority = 1
+}
+
+units = {
+	division = {
+		name = "National Communistic Division"
+		location = 6789
+		division_template = "National Communistic Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "National Communistic Division"
+		location = 6789
+		division_template = "National Communistic Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "National Communistic Division"
+		location = 11593
+		division_template = "National Communistic Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "National Communistic Guard"
+		location = 6789
+		division_template = "National Communistic Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "National Communistic Guard"
+		location = 6789
+		division_template = "National Communistic Guard"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "National Communistic Guard"
+		location = 11593
+		division_template = "National Communistic Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "National Communistic Division"
+		location = 3770
+		division_template = "National Communistic Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "National Communistic Division"
+		location = 3770
+		division_template = "National Communistic Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "National Communistic Division"
+		location = 11833
+		division_template = "National Communistic Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	
+}

@@ -1,0 +1,36 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "Kreiger_leader_container"
+		position = {x=0 y=0}
+		size = {width=380 height=120}
+		orientation = upper_left
+		
+		buttonType = {
+			name = "Kreiger_leaders_container"
+			position = {x=380 y=4 }
+			quadTextureSprite = "GFX_NGC_griffon_crown"
+			clicksound = click_default
+			orientation = UPPER_LEFT
+			pdx_tooltip = "Kreiger_leaders_portrait_desc"
+		}
+	}
+	
+	containerWindowType = {
+		name = "Dresler_leader_container"
+		position = {x=0 y=0}
+		size = {width=380 height=120}
+		orientation = upper_left
+		
+		buttonType = {
+			name = "Dresler_leader_container_button"
+			position = {x=328 y=150 }
+			quadTextureSprite = "GFX_evolutionary"
+			clicksound = click_default
+			orientation = UPPER_LEFT
+			pdx_tooltip = "Dresler_leader_container_desc"
+		}
+	}
+
+
+}

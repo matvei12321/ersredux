@@ -1,0 +1,49 @@
+characters = {
+	HMD_radio_silence_leader={
+		name=HMD_radio_silence_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/HMD/HMD_radio_silence_leader.tga"
+			}
+		}
+		country_leader={
+			desc="HMD_radio_silence_leader_desc"
+			ideology=total_anarchism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			desc="HMD_radio_silence_leader_desc"
+			ideology=nazism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			desc="HMD_radio_silence_leader_desc"
+			ideology=leninism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			desc="HMD_radio_silence_leader_desc"
+			ideology=liberalism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		gender = male
+	}
+
+	HMD_hive_mind={
+		name=HMD_hive_mind
+		portraits={
+			civilian={
+				large="gfx/leaders/HMD/HMD_hive_mind.tga"
+			}
+		}
+	}
+
+}

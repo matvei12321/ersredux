@@ -1,0 +1,17 @@
+characters={
+	GFN_gilda={
+		name=GFN_gilda
+		portraits={
+			civilian={
+				large="gfx/leaders/GFN/Gilda.dds"
+			}
+		}
+		
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		gender = female
+	}
+}

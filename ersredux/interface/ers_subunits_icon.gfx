@@ -1,0 +1,66 @@
+spriteTypes = {
+	
+	spriteType = { name = "GFX_unit_chem_infantry_brigade_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/chem_infantry_unit.tga" 
+		noOfFrames = 2 
+	}
+	spriteType = { name = "GFX_unit_chem_infantry_unit_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_chem_infantry_unit.tga" 
+		noOfFrames = 2 
+	}
+	spriteType = { name = "GFX_unit_chem_infantry_unit_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/chem_infantry_unit.tga" 				####
+	}
+	
+	spriteType = { name = "GFX_unit_chem_infantry_support_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/chem_infantry_support.tga" 
+		noOfFrames = 2 
+	}
+	
+	
+	spriteType = {
+		name = "GFX_chem_infantry_unit_icon_small"
+		texturefile = "gfx/texticons/chem_infantry_unit.tga"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_nato_chem_infantry_unit_icon_small"
+		texturefile = "gfx/texticons/nato_chem_infantry_unit.tga"
+		legacy_lazy_load = no
+	}
+	
+	###Thestrals
+	
+	spriteType = { name = "GFX_unit_thestrals_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/unit_thestrals_infantry_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_thestrals_icon_medium_white"							textureFile = "gfx/interface/counters/divisions_small/onmap_unit_thestrals_infantry_icon.dds" noOfFrames = 2 }
+	
+	spriteType = {
+		name = "GFX_nato_unit_thestrals_icon_small"
+		texturefile = "gfx/texticons/nato_unit_thestrals_infantry_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_unit_thestrals_icon_small"
+		texturefile = "gfx/texticons/unit_thestrals_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	
+	
+	#### Custom Icons
+	spriteType = {
+		name = "GFX_div_templ_72_small"										
+		textureFile = "gfx/interface/counters/divisions_small/custom_template_thestrals_sun.tga"
+	}
+	spriteType = {
+		name = "GFX_div_templ_72_large"
+		textureFile = "gfx/interface/counters/divisions_large/custom_template_thestrals_sun.tga"
+	}
+	
+	
+	
+	
+	
+}

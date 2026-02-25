@@ -1,0 +1,552 @@
+division_template = {
+	name = "Infanteriebrigade"			#Infantry Division
+	division_names_group = HRZ_Inf_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Garde-Division" 		#Guard Division
+	division_names_group = HRZ_Gar_01
+	priority = 2
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		artillery_brigade = { x = 2 y = 0 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Gepanzerte Brigade" 	#Panzer Division
+	division_names_group = HRZ_Pzr_01
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Panzergrenadier"		#Motories Division
+	division_names_group = HRZ_mot_01
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Gebirgsjäger"			#Mountains Division
+	division_names_group = HRZ_Mnt_01
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 0 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Ritterdivision" 		#Knight
+	division_names_group = HRZ_Kni_01
+	regiments = {
+		knights = { x = 0 y = 0 }
+		knights = { x = 1 y = 0 }
+		knights = { x = 0 y = 1 }
+		knights = { x = 1 y = 1 }
+	}
+	support = {
+		artillery_brigade = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Garnisonsdivisionen"
+	division_names_group = HRZ_Gan_01
+	priority = 0
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+units = {
+	division = { 	
+			location = 11410
+			division_template = "Infanteriebrigade"
+			start_experience_factor = 0.1
+			start_equipment_factor = 1.0
+	}
+	division = { 	
+			location = 13224
+			division_template = "Infanteriebrigade"
+			start_experience_factor = 0.1
+			start_equipment_factor = 1.0
+	}
+	division = { 	
+			location = 7757
+			division_template = "Infanteriebrigade"
+			start_experience_factor = 0.1
+			start_equipment_factor = 1.0
+	}
+	division = { 	
+			location = 4734
+			division_template = "Infanteriebrigade"
+			start_experience_factor = 0.1
+			start_equipment_factor = 1.0
+	}
+	division = { 	
+			location = 1027
+			division_template = "Infanteriebrigade"
+			start_experience_factor = 0.1
+			start_equipment_factor = 1.0
+	}
+	division = { 	
+			location = 12691
+			division_template = "Infanteriebrigade"
+			start_experience_factor = 0.1
+			start_equipment_factor = 1.0
+	}
+	division = { 	
+			location = 906
+			division_template = "Infanteriebrigade"
+			start_experience_factor = 0.1
+			start_equipment_factor = 1.0
+	}
+	division = { 	
+			location = 7192
+			division_template = "Infanteriebrigade"
+			start_experience_factor = 0.1
+			start_equipment_factor = 1.0
+	}
+	
+	division = { 	
+			location = 10025
+			division_template = "Infanteriebrigade"
+			start_experience_factor = 0.1
+			start_equipment_factor = 1.0
+	}
+	division = { 	
+			location = 4347
+			division_template = "Infanteriebrigade"
+			start_experience_factor = 0.1
+			start_equipment_factor = 1.0
+	}
+	division = { 	
+			location = 4347
+			division_template = "Infanteriebrigade"
+			start_experience_factor = 0.1
+			start_equipment_factor = 1.0
+	}
+	division = { 	
+			location = 4347
+			division_template = "Infanteriebrigade"
+			start_experience_factor = 0.1
+			start_equipment_factor = 1.0
+	}
+	division = { 	
+			location = 8072
+			division_template = "Infanteriebrigade"
+			start_experience_factor = 0.1
+			start_equipment_factor = 1.0
+	}
+	division = { 	
+			location = 7823
+			division_template = "Infanteriebrigade"
+			start_experience_factor = 0.1
+			start_equipment_factor = 1.0
+	}
+	division = { 	
+			location = 6224
+			division_template = "Infanteriebrigade"
+			start_experience_factor = 0.1
+			start_equipment_factor = 1.0
+	}
+	division = { 	
+			location = 1963
+			division_template = "Infanteriebrigade"
+			start_experience_factor = 0.1
+			start_equipment_factor = 1.0
+	}
+	
+	division = { 	
+			location = 12882
+			division_template = "Infanteriebrigade"
+			start_experience_factor = 0.1
+			start_equipment_factor = 1.0
+	}
+	division = { 	
+			location = 12882
+			division_template = "Infanteriebrigade"
+			start_experience_factor = 0.1
+			start_equipment_factor = 1.0
+	}
+	division = { 	
+			location = 8072
+			division_template = "Infanteriebrigade"
+			start_experience_factor = 0.1
+			start_equipment_factor = 1.0
+	}
+	division = { 	
+			location = 12691
+			division_template = "Infanteriebrigade"
+			start_experience_factor = 0.1
+			start_equipment_factor = 1.0
+	}
+	division = { 	
+			location = 7192
+			division_template = "Infanteriebrigade"
+			start_experience_factor = 0.1
+			start_equipment_factor = 1.0
+	}
+	division = { 	
+			location = 4777
+			division_template = "Infanteriebrigade"
+			start_experience_factor = 0.1
+			start_equipment_factor = 1.0
+	}
+	division = { 	
+			location = 4747
+			division_template = "Infanteriebrigade"
+			start_experience_factor = 0.1
+			start_equipment_factor = 1.0
+	}
+	division = { 	
+			location = 10872
+			division_template = "Infanteriebrigade"
+			start_experience_factor = 0.1
+			start_equipment_factor = 1.0
+	}
+	
+	division = { 	
+			location = 4404
+			division_template = "Infanteriebrigade"
+			start_experience_factor = 0.1
+			start_equipment_factor = 1.0
+	}
+	division = { 	
+			location = 1166
+			division_template = "Infanteriebrigade"
+			start_experience_factor = 0.1
+			start_equipment_factor = 1.0
+	}
+	division = { 	
+			location = 10042
+			division_template = "Infanteriebrigade"
+			start_experience_factor = 0.1
+			start_equipment_factor = 1.0
+	}
+	division = { 	
+			location = 10537
+			division_template = "Infanteriebrigade"
+			start_experience_factor = 0.1
+			start_equipment_factor = 1.0
+	}
+	division = { 	
+			location = 8053
+			division_template = "Infanteriebrigade"
+			start_experience_factor = 0.1
+			start_equipment_factor = 1.0
+	}
+	division = { 	
+			location = 13002
+			division_template = "Infanteriebrigade"
+			start_experience_factor = 0.1
+			start_equipment_factor = 1.0
+	}
+	division = { 	
+			location = 12769
+			division_template = "Infanteriebrigade"
+			start_experience_factor = 0.1
+			start_equipment_factor = 1.0
+	}
+	division = { 	
+			location = 10372
+			division_template = "Infanteriebrigade"
+			start_experience_factor = 0.1
+			start_equipment_factor = 1.0
+	}
+	division = { 	
+			location = 10803
+			division_template = "Infanteriebrigade"
+			start_experience_factor = 0.1
+			start_equipment_factor = 1.0
+	}
+	division = { 	
+			location = 12763
+			division_template = "Infanteriebrigade"
+			start_experience_factor = 0.1
+			start_equipment_factor = 1.0
+	}
+	division = { 	
+			location = 12763
+			division_template = "Infanteriebrigade"
+			start_experience_factor = 0.1
+			start_equipment_factor = 1.0
+	}
+	
+	
+	
+	division = { 	
+			location = 10537
+			division_template = "Garde-Division"
+			start_experience_factor = 0.5
+			start_equipment_factor = 1.0
+	}
+	division = { 	
+			location = 7274
+			division_template = "Garde-Division"
+			start_experience_factor = 0.5
+			start_equipment_factor = 1.0
+	}
+	division = { 	
+			location = 9195
+			division_template = "Garde-Division"
+			start_experience_factor = 0.5
+			start_equipment_factor = 1.0
+	}
+	division = { 	
+			location = 4071
+			division_template = "Garde-Division"
+			start_experience_factor = 0.5
+			start_equipment_factor = 1.0
+	}
+	division = { 	
+			location = 12882
+			division_template = "Garde-Division"
+			start_experience_factor = 0.5
+			start_equipment_factor = 1.0
+	}
+	division = { 	
+			location = 12882
+			division_template = "Garde-Division"
+			start_experience_factor = 0.5
+			start_equipment_factor = 1.0
+	}
+	division = { 	
+			location = 4190
+			division_template = "Garde-Division"
+			start_experience_factor = 0.5
+			start_equipment_factor = 1.0
+	}
+	
+	
+	
+	division = { 	
+			location = 12594
+			division_template = "Gepanzerte Brigade" 
+			start_experience_factor = 0.1
+			start_equipment_factor = 1.0
+	}
+	division = { 	
+			location = 4089
+			division_template = "Gepanzerte Brigade" 
+			start_experience_factor = 0.1
+			start_equipment_factor = 1.0
+	}
+	division = { 	
+			location = 10555
+			division_template = "Gepanzerte Brigade" 
+			start_experience_factor = 0.1
+			start_equipment_factor = 0.7
+	}
+	
+	
+	
+	
+	division = { 	
+			location = 13224
+			division_template = "Panzergrenadier"
+			start_experience_factor = 0.1
+			start_equipment_factor = 1.0
+	}
+	division = { 	
+			location = 12643
+			division_template = "Panzergrenadier"
+			start_experience_factor = 0.1
+			start_equipment_factor = 1.0
+	}
+	division = { 	
+			location = 10890
+			division_template = "Panzergrenadier"
+			start_experience_factor = 0.1
+			start_equipment_factor = 1.0
+	}
+	division = { 	
+			location = 4157
+			division_template = "Panzergrenadier"
+			start_experience_factor = 0.1
+			start_equipment_factor = 1.0
+	}
+	division = { 	
+			location = 12523
+			division_template = "Panzergrenadier"
+			start_experience_factor = 0.1
+			start_equipment_factor = 1.0
+	}
+	
+	
+	
+	division = { 	
+			location = 4528
+			division_template = "Gebirgsjäger"
+			start_experience_factor = 0.1
+			start_equipment_factor = 1.0
+	}
+	division = { 	
+			location = 8207
+			division_template = "Gebirgsjäger"
+			start_experience_factor = 0.1
+			start_equipment_factor = 1.0
+	}
+	division = { 	
+			location = 6482
+			division_template = "Gebirgsjäger"
+			start_experience_factor = 0.1
+			start_equipment_factor = 1.0
+	}
+	
+	
+	
+	
+	division = { 	
+			location = 10537
+			division_template = "Ritterdivision"
+			start_experience_factor = 0.1
+			start_equipment_factor = 1.0
+	}
+	division = { 	
+			location = 7192
+			division_template = "Ritterdivision"
+			start_experience_factor = 0.1
+			start_equipment_factor = 1.0
+	}
+}
+air_wings = {
+	382 = {
+		small_plane_airframe_0 = {
+			owner = "HRZ"
+			amount = 100
+			version_name = "Fluggerät Heureka"
+		}
+		small_plane_airframe_0 = {
+			owner = "HRZ"
+			amount = 30
+			version_name = "Fluggerät Heureka"
+		}
+	}
+	380 = {
+		small_plane_airframe_0 = {
+			owner = "HRZ"
+			amount = 100
+			version_name = "Fluggerät Heureka"
+		}
+		medium_plane_airframe_0 = {
+			owner = "HRZ"
+			amount = 40
+			version_name = "Early Bomber"
+		}
+	}
+	
+	581 = {
+		small_plane_airframe_0 = {
+			owner = "HRZ"
+			amount = 50
+			version_name = "Fluggerät Heureka"
+		}
+		medium_plane_airframe_0 = {
+			owner = "HRZ"
+			amount = 20
+			version_name = "Early Bomber"
+		}
+	}
+}
+
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "HRZ"
+		}
+		requested_factories = 1
+		progress = 0.86
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "HRZ"
+		}
+		requested_factories = 1
+		progress = 0.67
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "HRZ"
+		}
+		requested_factories = 1
+		progress = 0.25
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "HRZ"
+		}
+		requested_factories = 1
+		progress = 0.70
+		efficiency = 30
+	}
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_chassis_1
+			version_name = "Leichterpanzer I Crona"
+			creator = "HRZ"
+		}
+		requested_factories = 1
+		progress = 0.12
+		efficiency = 10
+	}
+	add_equipment_production = {
+		equipment = {
+			type = small_plane_airframe_0
+			version_name = "Fluggerät Heureka"
+			creator = "HRZ"
+		}
+		requested_factories = 1
+		progress = 0.10
+		efficiency = 15
+	}
+}
+	
+	
+	
+	
+	
+}

@@ -1,0 +1,26 @@
+state={
+	id=1224
+	name="STATE_1224"
+
+	provinces={
+		693 696 1373 6711 10225 10294 12184 12212 12415
+	}
+
+	manpower=203100
+	state_category = town
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = ROK
+		add_core_of = ROK
+		
+		victory_points = { 1373 6 }
+		
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	resources = {
+	}
+}

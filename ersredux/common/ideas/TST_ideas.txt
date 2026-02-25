@@ -1,0 +1,361 @@
+ideas = {
+	country = {
+	
+		TST_night_vs_day_religion = {
+			available = {
+				NOT = {
+					has_war_with = NEI
+				}
+			}
+			allowed = {
+				original_tag = TST
+			}
+			removal_cost = -1
+			picture = FAR_NCH_trade
+			modifier = {
+				war_support_factor = -0.05
+				stability_factor = -0.1
+				fascism_drift = 0.01
+				custom_modifier_tooltip = nei_priests_of_day_sent_tt
+			}
+		}
+		
+		TST_poison_idea = {
+			allowed = {
+				original_tag = TST
+			}
+			removal_cost = -1
+			picture = specops
+			modifier = {
+				army_attack_factor = 0.1
+				army_org_factor = -0.05
+				army_speed_factor = -0.05
+			}
+		}
+		
+		TST_river_caravans = {
+			allowed = {
+				original_tag = TST
+			}
+			removal_cost = -1
+			picture = chi_hyper_inflation
+			modifier = {
+				consumer_goods_factor = -0.02
+				trade_opinion_factor = 0.25
+			}
+		}
+		
+		TST_great_tribal = {
+			allowed = {
+				original_tag = TST
+			}
+			removal_cost = -1
+			picture = generic_intel_bonus
+			modifier = {
+				political_power_gain = 0.2
+			}
+		}
+	
+	TST_low_peasant_discontent_idea = {
+		picture = unhappy_army
+		allowed = {
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		available = {
+		}
+		modifier = {
+			stability_factor = -0.1
+			war_support_factor = -0.1
+			conscription_factor = -0.1
+			monthly_population = -0.1
+			communism_drift = 0.01
+			democratic_drift = 0.01
+		}
+	}
+	
+	TST_medium_peasant_discontent_idea = {
+		picture = unhappy_army_2
+		allowed = {
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		available = {
+		}
+		modifier = {
+			stability_factor = -0.2
+			war_support_factor = -0.2
+			conscription_factor = -0.2
+			monthly_population = -0.2
+			communism_drift = 0.02
+			democratic_drift = 0.02
+		}
+	}
+	
+	TST_strong_peasant_discontent_idea = {
+		picture = unhappy_army_3
+		allowed = {
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		available = {
+		}
+		modifier = {
+			stability_factor = -0.4
+			war_support_factor = -0.4
+			conscription_factor = -0.4
+			monthly_population = -0.4
+			communism_drift = 0.04
+			democratic_drift = 0.04
+		}
+	}
+	
+	TST_readjustment_of_economy = {
+		picture = TRO_zarza_ind
+		allowed = {
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		available = {
+		}
+		modifier = {
+			production_speed_buildings_factor = -0.15
+			industrial_capacity_factory = -0.15
+			industrial_capacity_dockyard = -0.15
+			consumer_goods_factor = 0.2
+		}
+	}
+	
+	TST_progressive_tax_idea = {
+		picture = WNG_balanced
+		allowed = {
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		available = {
+		}
+		modifier = {
+			consumer_goods_factor = -0.15
+			production_factory_max_efficiency_factor = 0.05
+		}
+	}
+	
+	TST_serfdom_idea_1 = {
+		picture = pony_enslaved
+		allowed = {
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		available = {
+		}
+		modifier = {
+		}
+	}
+	
+	
+	
+	
+	
+	
+	### Armed Sage ideas
+	
+	### Билль о правах
+	TST_Armed_Sage_declaration_of_equality_idea = {
+		picture = pos_theory2
+		allowed = {
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		available = {
+		}
+		modifier = {
+			compliance_growth = 0.1
+			communism_drift = 0.03
+			stability_factor = 0.05
+		}
+	}
+	
+	### Островок надежды
+	TST_Armed_Sage_island_of_hope_idea = {
+		picture = island_of_hope
+		allowed = {
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		available = {
+		}
+		modifier = {
+			monthly_population = 0.3
+			weekly_manpower = 300
+		}
+	}
+	
+	### Островок надежды
+	TST_Armed_Sage_island_of_hope_idea1 = {
+		picture = island_of_hope
+		allowed = {
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		available = {
+		}
+		modifier = {
+			monthly_population = 0.15
+			weekly_manpower = 150
+		}
+	}
+	
+	### Современная фестральская армия
+	TST_Armed_Sage_modern_army_idea = {
+		picture = modern_army
+		allowed = {
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		available = {
+		}
+		modifier = {
+			land_night_attack = 0.2
+			army_speed_factor = 0.1
+			org_loss_when_moving = -0.1
+			terrain_penalty_reduction = 0.1
+		}
+	}
+	
+	###Укротители природы
+	TST_Armed_Sage_tamers_of_nature_idea = {
+		picture = tamers_of_nature
+		allowed = {
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		available = {
+		}
+		modifier = {
+			acclimatization_cold_climate_gain_factor = 0.1
+			acclimatization_hot_climate_gain_factor = 0.1
+			terrain_penalty_reduction = 0.1
+			land_night_attack = 0.1
+			naval_night_attack = 0.1
+			air_night_penalty = -0.1
+			local_resources_factor = 0.1
+			global_building_slots_factor = 0.1
+		}
+	}
+	
+	###Проект "Альфа"
+	TST_Armed_Sage_project_alpha_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = HIP_SIR_ARI_building_panopticons
+			equipment_bonus = {
+				magical_weapons = {
+					build_cost_ic = -0.1
+					reliability = 0.1
+					instant = yes
+				}
+			}
+		}
+	
+	###Культурное возрождение
+	TST_Armed_Sage_cultural_revival_idea = {
+		picture = cultural_revival
+		allowed = {
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		available = {
+		}
+		modifier = {
+			communism_drift = 0.05	
+			research_speed_factor = 0.1
+			stability_weekly = 0.001
+		}
+	}
+	
+	###Общедоступная медицина
+	TST_Armed_Sage_public_medicine_idea = {
+		picture = public_medicine
+		allowed = {
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		available = {
+		}
+		modifier = {
+			consumer_goods_factor = -0.1
+			monthly_population = 0.1
+			attrition = -0.1
+		}
+	}
+	
+	###Средства массовой информации
+	TST_Armed_Sage_mass_media_idea = {
+		picture = STG_propaganda
+		allowed = {
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		available = {
+		}
+		modifier = {
+			communism_drift = 0.03
+			political_power_gain = 0.2
+			compliance_growth = 0.1
+		}
+	}
+	
+	###Современное производство
+	TST_Armed_Sage_modern_production_idea = {
+		picture = HIE_build
+		allowed = {
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		available = {
+		}
+		modifier = {
+			industrial_capacity_dockyard = 0.1
+			industrial_capacity_factory = 0.1
+			production_factory_max_efficiency_factor = 0.1
+			production_factory_efficiency_gain_factor = 0.05
+		}
+	}
+	
+	}
+}

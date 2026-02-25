@@ -1,0 +1,147 @@
+capital = 170
+
+oob = "PGS_1007"
+
+set_research_slots = 3
+starting_train_buffer = 3
+
+save_global_event_target_as = pegasi_puppet_target
+
+add_to_variable = { used_factory_cores = 2 } 
+
+
+set_power_balance = {
+	id = pgs_balance_of_power
+	left_side = PGS_council_side
+	right_side = PGS_hurricane_side
+	#set_default = yes
+	set_value = -0.85
+}
+
+# Political Advisors
+recruit_character = PGS_magnus_olister
+recruit_character = PGS_survivor
+recruit_character = PGS_moondowner
+recruit_character = PGS_rainbow_dash
+recruit_character = PGS_vidiris
+recruit_character = PGS_kaylo_nestor
+
+
+# Leaders
+
+recruit_character = PGS_hurrikane
+recruit_character = PGS_still_will
+recruit_character = PGS_fluttershy
+
+
+# Political power
+
+recruit_character = PGS_stormbreeze
+recruit_character = PGS_arcadia
+recruit_character = PGS_crouly
+recruit_character = PGS_amintas
+recruit_character = PGS_demos_fortis
+recruit_character = PGS_solidus_rei
+recruit_character = PGS_christofer
+recruit_character = PGS_cataclysm
+recruit_character = PGS_cratos_eifirus
+recruit_character = PGS_kristeria
+recruit_character = PGS_derpy
+recruit_character = PGS_orion_icarus
+recruit_character = PGS_demokridias
+recruit_character = PGS_heaven_dimos
+
+# Army 
+recruit_character = PGS_pavlos_metaxas
+recruit_character = PGS_markos_gonatas
+
+# Theorist 
+recruit_character = PGS_shadow_pen
+recruit_character = PGS_georgios_kanaris
+recruit_character = PGS_eugenia_sarafis
+
+# Air chiefs
+recruit_character = PGS_air_chief_1
+recruit_character = PGS_air_chief_2
+recruit_character = PGS_air_chief_3
+
+# High command
+
+recruit_character = PGS_nikolaos_riezis
+recruit_character = PGS_zheodoros_zaimis
+recruit_character = PGS_antonia_manos
+recruit_character = PGS_sotiris_pangalos
+
+
+add_opinion_modifier = { target = UNC modifier = jerks }
+				
+add_ideas = { 
+	
+	PGS_dead_monarchy
+	PGS_workers
+	PGS_stoitsism
+	idea_rainbow_factory
+	ERS_main_nation
+	
+	lack_of_scientists3
+	pre_industrial_society
+	poverty5
+	ers_pegasism
+	
+	low_economic_mobilisation
+	extensive_conscription
+	closed_economy
+}
+
+set_technology = {
+	 
+	pegasi_race = 1
+	tech_support = 1
+	tech_pegasi = 1
+	melee_weapons = 1
+	melee_weapons1 = 1
+	infantry_weapons = 1
+	tech_recon = 1
+	basic_train = 1
+	pre_gw_artillery = 1
+	motorised_infantry = 1
+}
+actually_fix_weapon_techs = yes #THIS HAS TO BE CALLED IN EVERY HISTORY FILE RIGHT AFTER MAIN set_technology!
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_submarine = 1
+		early_light_cruiser = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+	}
+}
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1.10.10"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+set_popularities = {
+	neutrality = 4
+	democratic = 11
+	fascism = 49
+	communism = 36
+}
+
+
+set_stability = 0.4
+set_war_support = 0.3
+

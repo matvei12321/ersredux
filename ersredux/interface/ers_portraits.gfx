@@ -1,0 +1,134 @@
+spriteTypes = {
+	
+	### Generic Thestral Country Leaders ###  
+	
+	
+	
+	
+	spriteType = {
+		name = "GFX_portrait_generic_thestral_character1"
+		textureFile = "gfx/leaders/generic_thestrals/generic_thestral_character1.tga"
+	}
+	spriteType = {
+		name = "GFX_portrait_generic_thestral_character2"
+		textureFile = "gfx/leaders/generic_thestrals/generic_thestral_character2.tga"
+	}
+	spriteType = {
+		name = "GFX_portrait_generic_thestral_character3"
+		textureFile = "gfx/leaders/generic_thestrals/generic_thestral_character3.tga"
+	}
+	spriteType = {
+		name = "GFX_portrait_generic_thestral_character4"
+		textureFile = "gfx/leaders/generic_thestrals/generic_thestral_character4.tga"
+	}
+	spriteType = {
+		name = "GFX_portrait_generic_thestral_character5"
+		textureFile = "gfx/leaders/generic_thestrals/generic_thestral_character5.tga"
+	}
+	spriteType = {
+		name = "GFX_portrait_generic_thestral_character6"
+		textureFile = "gfx/leaders/generic_thestrals/generic_thestral_character6.tga"
+	}
+	spriteType = {
+		name = "GFX_portrait_generic_thestral_character7"
+		textureFile = "gfx/leaders/generic_thestrals/generic_thestral_character7.tga"
+	}
+	spriteType = {
+		name = "GFX_portrait_generic_thestral_character8"
+		textureFile = "gfx/leaders/generic_thestrals/generic_thestral_character8.tga"
+	}
+	spriteType = {
+		name = "GFX_portrait_generic_thestral_character9"
+		textureFile = "gfx/leaders/generic_thestrals/generic_thestral_character9.tga"
+	}
+	spriteType = {
+		name = "GFX_portrait_generic_thestral_character10"
+		textureFile = "gfx/leaders/generic_thestrals/generic_thestral_character10.tga"
+	}
+	spriteType = {
+		name = "GFX_portrait_generic_thestral_character11"
+		textureFile = "gfx/leaders/generic_thestrals/generic_thestral_character11.tga"
+	}
+	spriteType = {
+		name = "GFX_portrait_generic_thestral_character12"
+		textureFile = "gfx/leaders/generic_thestrals/generic_thestral_character12.tga"
+	}
+	spriteType = {
+		name = "GFX_portrait_generic_thestral_character13"
+		textureFile = "gfx/leaders/generic_thestrals/generic_thestral_character13.tga"
+	}
+
+
+
+	
+	### Generic Unicorn Generals ###  
+	spriteType = {
+		name = "GFX_portrait_unicorn_generic_1"
+		textureFile = "gfx/leaders/UNC/unc_leader_generic_1.tga"
+	}
+	spriteType = {
+		name = "GFX_portrait_unicorn_generic_1_small"
+		textureFile = "gfx/interface/ideas/advisors/unicorn_generic/unc_leader_generic_1_small.tga"
+	}
+	spriteType = {
+		name = "GFX_portrait_unicorn_generic_2"
+		textureFile = "gfx/leaders/UNC/unc_leader_generic_2.tga"
+	}
+	spriteType = {
+		name = "GFX_portrait_unicorn_generic_2_small"
+		textureFile = "gfx/interface/ideas/advisors/unicorn_generic/unc_leader_generic_2_small.tga"
+	}
+	spriteType = {
+		name = "GFX_portrait_unicorn_generic_3"
+		textureFile = "gfx/leaders/UNC/unc_leader_generic_3.tga"
+	}
+	spriteType = {
+		name = "GFX_portrait_unicorn_generic_3_small"
+		textureFile = "gfx/interface/ideas/advisors/unicorn_generic/unc_leader_generic_3_small.tga"
+	}
+	spriteType = {
+		name = "GFX_portrait_unicorn_generic_4"
+		textureFile = "gfx/leaders/UNC/unc_leader_generic_4.tga"
+	}
+	spriteType = {
+		name = "GFX_portrait_unicorn_generic_4_small"
+		textureFile = "gfx/interface/ideas/advisors/unicorn_generic/unc_leader_generic_4_small.tga"
+	}
+	spriteType = {
+		name = "GFX_portrait_unicorn_generic_female"
+		textureFile = "gfx/leaders/UNC/unc_leader_generic_female.tga"
+	}
+	spriteType = {
+		name = "GFX_portrait_unicorn_generic_female_small"
+		textureFile = "gfx/leaders/UNC/unc_leader_generic_female_small.tga"
+	}
+	spriteType = {
+		name = "GFX_portrait_unicorn_generic_female_2"
+		textureFile = "gfx/leaders/UNC/unc_leader_generic_female_2.tga"
+	}
+	spriteType = {
+		name = "GFX_portrait_unicorn_generic_female_2_small"
+		textureFile = "gfx/leaders/UNC/unc_leader_generic_female_2_small.tga"
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	spriteType = {
+		name = "GFX_portrait_its_me"
+		textureFile = "gfx/leaders/LYC/its_me.tga"
+	}
+
+	
+}

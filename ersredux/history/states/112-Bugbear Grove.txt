@@ -1,0 +1,23 @@
+state={
+	id=112
+	name="STATE_112"
+
+	provinces={
+		542 910 6548 6875 9510 9525 9597 9692 9907 11582 11790
+	}
+
+	manpower=316510
+	state_category=pastoral
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = NIG
+		add_core_of = NIG
+		
+		victory_points = { 9525 5 }
+
+		buildings = {
+			infrastructure = 1
+		}
+	}
+}

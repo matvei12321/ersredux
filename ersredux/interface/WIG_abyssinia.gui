@@ -1,0 +1,355 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "WIG_karthin_button"
+		position = { x = 1301 y = 518}	
+		size = { width = 800 height= 650 }
+		orientation = center
+		origo = center
+		fade_time = 100
+		moveable = no
+		fade_type = linear
+		click_to_front = no
+		clipping = yes
+		
+#		background = {
+#			name = "Background"		
+	#		quadTextureSprite ="GFX_WIG_abyssinia_scripted_gui_karthin_button"
+#		}
+ 
+		buttonType ={
+			name ="open_button"
+			spriteType = "GFX_WIG_abyssinia_scripted_gui_karthin_button" 
+			position = { x = 0 y = 0 }
+			Orientation = "UPPER_LEFT" 
+			pdx_tooltip = WIG_karthin_button_tt
+		}	
+	}
+}
+
+guiTypes = {
+
+	containerWindowType = {
+		name = "WIG_abyssinia_window"
+		position = { x = 0 y = 0}	
+		size = { width = 800 height= 650 }
+		orientation = center
+		origo = center
+		fade_time = 500
+		moveable = yes
+		fade_type = linear
+		click_to_front = no
+		clipping = no
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		show_sound = drawer_ev
+		
+		background = {
+			name = "Background"		
+			quadTextureSprite ="GFX_WIG_abyssinia_scripted_gui_window_background"
+		}
+ 
+		buttonType ={
+			name ="close_button"
+			spriteType = "GFX_NV_btn_close" 
+			position = { x = 890 y = -2	}
+			Orientation = "UPPER_LEFT" 
+		}	
+		#karta
+		containerWindowType = {
+			position = { x = 0 y = -130 }
+			size = { width = 800 height= 650 }
+			Orientation = "UPPER_LEFT"
+
+			iconType = {
+				name = "TUL_free" 
+				spriteType = "GFX_WIG_abyssinia_scripted_gui_window_talouse" 
+				position = { x = 100 y = 400 }
+				Orientation = "UPPER_LEFT"
+			}
+		
+			iconType = {
+				name = "TUL_annexed" 
+				spriteType = "GFX_WIG_abyssinia_scripted_gui_window_talouse_annexed" 
+				position = { x = 100 y = 400 }
+				Orientation = "UPPER_LEFT"
+			}
+
+			iconType = {
+				name = "Thats_you_bro" 
+				spriteType = "GFX_WIG_abyssinia_scripted_gui_window_wingbardia" 
+				position = { x = 331 y = 450 }
+				Orientation = "UPPER_LEFT"
+			}
+			
+			iconType = {
+				name = "Thats_also_you_bro" 
+				spriteType = "GFX_WIG_abyssinia_scripted_gui_window_falcor" 
+				position = { x = 464 y = 385 }
+				Orientation = "UPPER_LEFT"
+			}
+			
+			iconType = {
+				name = "FRC_free" 
+				spriteType = "GFX_WIG_abyssinia_scripted_gui_window_francistria" 
+				position = { x = 321 y = 330 }
+				Orientation = "UPPER_LEFT"
+			}
+			
+			iconType = {
+				name = "FRC_annexed" 
+				spriteType = "GFX_WIG_abyssinia_scripted_gui_window_francistria_annexed" 
+				position = { x = 321 y = 330 }
+				Orientation = "UPPER_LEFT"
+			}
+			
+			iconType = {
+				name = "SCM_free" 
+				spriteType = "GFX_WIG_abyssinia_scripted_gui_window_sicameon" 
+				position = { x = 516 y = 438 }
+				Orientation = "UPPER_LEFT"
+			}
+			
+			iconType = {
+				name = "SCM_annexed" 
+				spriteType = "GFX_WIG_abyssinia_scripted_gui_window_sicameon_annexed" 
+				position = { x = 516 y = 438 }
+				Orientation = "UPPER_LEFT"
+			}
+			
+			iconType = {
+				name = "AST_free" 
+				spriteType = "GFX_WIG_abyssinia_scripted_gui_window_mino" 
+				position = { x = 695 y = 472 }
+				Orientation = "UPPER_LEFT"
+			}	
+		
+			iconType = {
+				name = "AST_annexed" 
+				spriteType = "GFX_WIG_abyssinia_scripted_gui_window_mino_annexed" 
+				position = { x = 695 y = 472 }
+				Orientation = "UPPER_LEFT"
+			}	
+			
+			iconType = {
+				name = "CIO_free" 
+				spriteType = "GFX_WIG_abyssinia_scripted_gui_window_cyanolisia" 
+				position = { x = 604 y = 379 }
+				Orientation = "UPPER_LEFT"
+			}
+			
+			iconType = {
+				name = "CIO_annexed" 
+				spriteType = "GFX_WIG_abyssinia_scripted_gui_window_cyanolisia_annexed" 
+				position = { x = 604 y = 379 }
+				Orientation = "UPPER_LEFT"
+			}
+			
+			iconType = {
+				name = "PRY_free" 
+				spriteType = "GFX_WIG_abyssinia_scripted_gui_window_prywen" 
+				position = { x = 659 y = 310 }
+				Orientation = "UPPER_LEFT"
+			}			
+			
+			iconType = {
+				name = "PRY_annexed" 
+				spriteType = "GFX_WIG_abyssinia_scripted_gui_window_prywen_annexed" 
+				position = { x = 659 y = 310 }
+				Orientation = "UPPER_LEFT"
+			}			
+			
+			iconType = {
+				name = "fuckd_up" 
+				spriteType = "GFX_WIG_success_scripted_gui" 
+				position = { x = 0 y = 100 }
+				Orientation = "UPPER_LEFT"
+			}
+		}
+
+
+		instantTextboxType = {
+			name = "country_title"
+			position = { x = 100 y = 56	}
+			font = "hoi_24header"
+			borderSize = {x = 0 y = 0}
+			text = "Карфинская Империя"
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = yes
+		}
+	}
+}
+
+guiTypes = {
+
+	containerWindowType = {
+		name = "WIG_cats_menu"
+	#	position = { x = -100 y = 0}	
+		size = { width = 800 height= 500 }
+		fade_time = 1
+		moveable = no
+#		background = {
+#			name = "Background"		
+#			quadTextureSprite ="GFX_WIG_abyssinia_scripted_gui_window_scroll_bg"
+#		}
+ 
+		buttonType ={
+			name ="catland_DRG"
+			spriteType = "GFX_WIG_abyssinia_scripted_gui_Catland_drg" 
+			position = { x = 300 y = 100 }
+			Orientation = "UPPER_LEFT" 
+			pdx_tooltip = WIG_catland_DRG_tt
+		}	
+		buttonType ={
+			name ="catland_WIG"
+			spriteType = "GFX_WIG_abyssinia_scripted_gui_Catland_wig" 
+			position = { x = 300 y = 100 }
+			Orientation = "UPPER_LEFT" 
+			pdx_tooltip = WIG_catland_WIG_tt
+		}		
+		buttonType ={
+			name ="murrsia_DRG"
+			spriteType = "GFX_WIG_abyssinia_scripted_gui_Murrsia_drg" 
+			position = { x = 40 y = 100 }
+			Orientation = "UPPER_LEFT" 
+			pdx_tooltip = WIG_murrsia_DRG_tt
+		}	
+		buttonType ={
+			name ="murrsia_WIG"
+			spriteType = "GFX_WIG_abyssinia_scripted_Murrsia_wig" 
+			position = { x = 40 y = 100 }
+			Orientation = "UPPER_LEFT" 
+			pdx_tooltip = WIG_murrsia_WIG_tt
+		}	
+
+		instantTextboxType = {
+			name = "text_WIG_abyssinian_campain"
+			position = { x = 150 y = 0 }
+			font = "vic_36"
+			borderSize = {x = 0 y = 0}
+			text = "Абиссинская Кампания"
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = yes
+		}
+		instantTextboxType = {
+			name = "what_is_selected"
+			position = { x = 80 y = 300 }
+			font = "vic_36"
+			borderSize = {x = 0 y = 0}
+			text = "Выбрано:"
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = yes
+		}
+		instantTextboxType = {
+			name = "murrsia_selected"
+			position = { x = 100 y = 330 }
+			font = "hoi_24header"
+			borderSize = {x = 0 y = 0}
+			text = "Мурсия"
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = yes
+		}
+		instantTextboxType = {
+			name = "catland_selected"
+			position = { x = 50 y = 330 }
+			font = "hoi_24header"
+			borderSize = {x = 0 y = 0}
+			text = "Северная Абиссиния"
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = yes
+		}
+		instantTextboxType = {
+			name = "status_of_selected"
+			position = { x = 350 y = 300 }
+			font = "vic_36"
+			borderSize = {x = 0 y = 0}
+			text = "Статус:"
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = yes
+		}
+		instantTextboxType = {
+			name = "catland_controlled_by_dragons"
+			position = { x = 290 y = 330 }
+			font = "hoi_24header"
+			borderSize = {x = 0 y = 0}
+			text = "Под контролем Драконов"
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = yes
+		}
+		instantTextboxType = {
+			name = "catland_controlled_by_us"
+			position = { x = 300 y = 330 }
+			font = "hoi_24header"
+			borderSize = {x = 0 y = 0}
+			text = "Под нашим контролем"
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = yes
+		}
+		instantTextboxType = {
+			name = "murrsia_controlled_by_dragons"
+			position = { x = 290 y = 330 }
+			font = "hoi_24header"
+			borderSize = {x = 0 y = 0}
+			text = "Под контролем Драконов"
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = yes
+		}
+		instantTextboxType = {
+			name = "murrsia_controlled_by_us"
+			position = { x = 300 y = 330 }
+			font = "hoi_24header"
+			borderSize = {x = 0 y = 0}
+			text = "Под нашим контролем"
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = yes
+		}
+		
+		containerWindowType = {
+			name = "WIG_abyssinia_readiness_progressbar_window"
+			position = {x = 0 y = 420}
+			size = { width = 500 height = 50 }
+
+			containerWindowType = {
+				name = "Progress Bar"
+				position = { x = 78 y = 8 }
+				iconType = {
+					name = "WIG_abyssinia_readiness_progressbar"
+					spriteType = "GFX_WIG_abyssinia_readiness_progressbar"
+					position = { x = 0 y = 0 }
+				}
+			}
+			instantTextBoxType = {
+				name = "Progress Percentage"
+				font = "hoi_36header"
+				format = center
+				position = { x = 196 y = 6 }
+				maxWidth = 100
+				text = "[?Root.WIG_abyssinia_readiness|0]%"
+			}
+			instantTextBoxType = {
+				name = "Prercentage"
+				font = "hoi_36header"
+				format = center
+				position = { x = 150 y = -40 }
+				text = "Наша готовность"
+			}
+			iconType = {
+				name = "Progress Bar Frame"
+				spriteType = "GFX_KIS_progress_bar_frame"
+				position = { x = 65 y = 0 }
+
+#				pdx_tooltip = WIG_abyssinia_readiness_tt
+			}
+		}
+	}
+}	

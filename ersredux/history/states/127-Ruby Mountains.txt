@@ -1,0 +1,22 @@
+state={
+	id=127
+	name="STATE_127"
+
+	provinces={
+		979 10685 11874 12276 12456 13162
+	}
+
+	manpower=13001
+	state_category=wasteland
+	buildings_max_level_factor=1.00
+	impassable=yes
+
+	history={
+		owner = PGS
+		add_core_of = PGS
+	}
+
+	resources={
+		crystals=10
+	}
+}

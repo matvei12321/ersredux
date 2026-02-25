@@ -1,0 +1,49 @@
+characters = {
+	CLD_nothing={
+		name=CLD_nothing
+		portraits={
+			civilian={
+				large = "GFX_CLD_nothing_Snowing"
+			}
+		}
+		country_leader={
+			desc="CLD_nothing_desc"
+			ideology=total_anarchism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		
+		country_leader={
+			desc="CLD_nothing_desc"
+			ideology=leninism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			desc="CLD_nothing_desc"
+			ideology=liberalism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	CLD_spectre={
+		name=CLD_spectre
+		portraits={
+			civilian={
+				large = "gfx/leaders/CLD/Spectre_ers.tga"
+			}
+		}
+		country_leader={
+			desc="CLD_spectre_desc"
+			ideology=magocracy
+			traits={ ers_windigo_queen }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+}

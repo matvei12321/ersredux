@@ -1,0 +1,598 @@
+shared_focus = {
+	id = DTS_queen_focus
+	icon = GFX_goal_helvia
+	cost = 2
+	x = 8
+	y = 1
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DTS_queen_focus"
+		add_political_power = 50
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = DTS_richest_changeling
+	icon = GFX_goal_dts_queens_tower
+	cost = 2
+	available = {  
+		
+	}
+	prerequisite = { focus = DTS_queen_focus }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = DTS_queen_focus
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DTS_richest_changeling"
+		add_stability = 0.025
+		252 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = DTS_expand_busyness
+	icon = GFX_goal_dts_man_business
+	cost = 2
+	available = {  
+		add_political_power = 100
+	}
+	prerequisite = { focus = DTS_richest_changeling }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = DTS_queen_focus
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DTS_richest_changeling"
+		
+		
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = DTS_weapon_customer
+	icon = GFX_goal_vrx_rifles
+	cost = 2
+	available = {  
+		
+	}
+	prerequisite = { focus = DTS_expand_busyness }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = DTS_queen_focus
+	x = -6
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DTS_richest_changeling"
+		add_opinion_modifier = { target = VRX modifier = trade_buddies }
+		add_ideas = DTS_weapon_customers_idea
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = DTS_industrial_complex
+	icon = GFX_goal_lyc_factory
+	cost = 2
+	available = {  
+		
+	}
+	prerequisite = { focus = DTS_expand_busyness }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = DTS_queen_focus
+	x = -2
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DTS_richest_changeling"
+		add_opinion_modifier = { target = LYC modifier = trade_buddies }
+		add_ideas = DTS_industrial_customers_idea
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = DTS_guarantee_loyalty
+	icon = GFX_goal_chn_chrysalis_parade
+	cost = 2
+	available = {  
+		
+	}
+	prerequisite = { focus = DTS_expand_busyness }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = DTS_queen_focus
+	x = 2
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DTS_richest_changeling"
+		add_opinion_modifier = { target = CHN modifier = trade_buddies }
+		add_ideas = DTS_loyalty_idea
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = DTS_research_customer
+	icon = GFX_goal_srf_research
+	cost = 2
+	available = {  
+		
+	}
+	prerequisite = { focus = DTS_expand_busyness }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = DTS_queen_focus
+	x = 6
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DTS_richest_changeling"
+		add_opinion_modifier = { target = SRF modifier = trade_buddies }
+		add_ideas = DTS_research_customers_idea
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = DTS_start_distancing_from_chn
+	icon = GFX_goal_dts_factory
+	cost = 2
+	available = {  
+		
+	}
+	prerequisite = { focus = DTS_weapon_customer }
+	prerequisite = { focus = DTS_industrial_complex }
+	prerequisite = { focus = DTS_guarantee_loyalty }
+	prerequisite = { focus = DTS_research_customer }
+	mutually_exclusive = { focus = DTS_open_shops_in_vesalipolis }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = DTS_queen_focus
+	x = -4
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DTS_richest_changeling"
+		remove_opinion_modifier = { target = CHN modifier = trade_buddies }
+		minus_2_5_hehemony_unity = yes
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = DTS_show_her_real_face
+	icon = GFX_goal_dts_factory
+	cost = 2
+	available = {  
+		
+	}
+	prerequisite = { focus = DTS_start_distancing_from_chn }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = DTS_queen_focus
+	x = -4
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DTS_richest_changeling"
+		remove_ideas = DTS_loyalty_idea
+		hidden_effect = {
+			remove_ideas = changelings_medium_puppet
+		}
+		add_ideas = changelings_low_puppet
+		minus_5_hehemony_unity = yes
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = DTS_open_shops_in_vesalipolis
+	icon = GFX_goal_dts_money
+	cost = 2
+	available = {  
+		
+	}
+	prerequisite = { focus = DTS_weapon_customer }
+	prerequisite = { focus = DTS_industrial_complex }
+	prerequisite = { focus = DTS_guarantee_loyalty }
+	prerequisite = { focus = DTS_research_customer }
+	mutually_exclusive = { focus = DTS_start_distancing_from_chn }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = DTS_queen_focus
+	x = 4
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DTS_richest_changeling"
+		add_opinion_modifier = { target = CHN modifier = trade_buddies.1 }
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = DTS_invest_in_vesalipolis
+	icon = GFX_goal_dts_money
+	cost = 2
+	available = {  
+		
+	}
+	prerequisite = { focus = DTS_open_shops_in_vesalipolis }
+	mutually_exclusive = { focus = DTS_start_distancing_from_chn }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = DTS_queen_focus
+	x = 4
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DTS_richest_changeling"
+		CHN = { 
+		add_timed_idea =  {
+			idea = CHN_Ditrisiym_invest
+			days = 100
+			}
+		}
+	}
+	ai_will_do = { factor = 10 }
+}
+
+###New Developer###
+shared_focus = {	
+	id = DTS_focus1
+	icon = GFX_goal_dts_man_business
+	cost = 2
+	prerequisite = { focus = DTS_show_her_real_face }
+	ai_will_do = { factor = 40 }
+	relative_position_id = DTS_queen_focus
+	x = -5
+	y = 6
+	completion_reward = { 
+		add_ideas = DTS_administed
+	}
+}
+shared_focus = {
+	id = DTS_focus2
+	icon = GFX_goal_dts_trimmel
+	cost = 3
+	prerequisite = { focus = DTS_show_her_real_face }
+	ai_will_do = { factor = 40 }
+	relative_position_id = DTS_queen_focus
+	x = -3
+	y = 6
+	completion_reward = { 
+		hidden_effect = {
+			set_country_flag = DTS_extra_queen_division
+		}
+		custom_effect_tooltip = DTS_extra_queen_division
+	}
+}
+shared_focus = {
+	id = DTS_focus3
+	icon = GFX_goal_helvia
+	cost = 3
+	prerequisite = { focus = DTS_focus1 }
+	prerequisite = { focus = DTS_focus2 }
+	ai_will_do = { factor = 40 }
+	relative_position_id = DTS_queen_focus
+	x = -4
+	y = 7
+	completion_reward = {
+		hidden_effect = {
+			set_country_flag = DTS_visible_hehemony
+		}
+		custom_effect_tooltip = DTS_visible_hehemony_tt
+	}
+}
+
+# Military Investment
+shared_focus = {
+	id = DTS_focus4
+	icon = GFX_goal_dts_eekp
+	cost = 4
+	prerequisite = { focus = DTS_invest_in_vesalipolis }
+	mutually_exclusive = { focus = DTS_focus5 }
+	ai_will_do = { factor = 20 }
+	relative_position_id = DTS_invest_in_vesalipolis
+	x = -3
+	y = 1
+	completion_reward = {
+		CHN = { add_timed_idea = { idea = DTS_military_invest days = 120 } }
+	}
+}
+shared_focus = {
+	id = DTS_focus5 
+	icon = GFX_goal_chn_air_production
+	cost = 3
+	prerequisite = { focus = DTS_invest_in_vesalipolis }
+	mutually_exclusive = { focus = DTS_focus4 }
+	ai_will_do = { factor = 20 }
+	relative_position_id = DTS_invest_in_vesalipolis
+	x = 3
+	y = 1
+	completion_reward = {
+		CHN = { add_timed_idea = { idea = DTS_peace_invest days = 120} }
+	}
+}
+shared_focus = {
+	id = DTS_focus6
+	icon = GFX_goal_dts_factory
+	cost = 4
+	prerequisite = { focus = DTS_focus4 }
+	ai_will_do = { factor = 40 }
+	relative_position_id =  DTS_invest_in_vesalipolis 
+	x = -4
+	y = 2
+	completion_reward = {
+		CHN = {
+			251 = {	
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+				}
+			}	
+		}
+	}
+}
+shared_focus = {
+	id = DTS_focus7
+	icon = GFX_goal_chn_officer_hat
+	cost = 4
+	prerequisite = { focus = DTS_focus6 }
+	ai_will_do = { factor = 40 }
+	relative_position_id = DTS_invest_in_vesalipolis
+	x = -4
+	y = 3
+	completion_reward = {
+		set_country_flag = DTS_CHN_attache
+		add_timed_idea = { idea = DTS_CHN_attache days = 100 }
+		CHN = { add_timed_idea { idea = DTS_CHN_attache days = 100 } }
+	}
+}
+shared_focus = {
+	id = DTS_focus8
+	icon = GFX_goal_dts_factory
+	cost = 4
+	prerequisite = { focus = DTS_focus5 }
+	ai_will_do = { factor = 40 }
+	relative_position_id = DTS_invest_in_vesalipolis
+	x = 4
+	y = 2
+	completion_reward = {
+		CHN = {
+			251 = {	
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+				}
+			}	
+		}
+	}
+}
+shared_focus = {
+	id = DTS_focus9
+	icon = GFX_goal_dts_factory
+	cost = 4
+	prerequisite = { focus = DTS_focus8 }
+	ai_will_do = { factor = 40 }
+	relative_position_id = DTS_invest_in_vesalipolis
+	x = 4
+	y = 3
+	completion_reward = {
+	hidden_effect = {
+		set_country_flag = DTS_CHN_complex }
+		add_timed_idea = { idea = DTS_CHN_complex days = 100 }
+		CHN = { add_timed_idea = { idea = DTS_CHN_complex days = 100} }
+	}
+}
+shared_focus = {
+	id = DTS_focus10
+	icon = GFX_goal_lyc_steel
+	cost = 4
+	prerequisite = { focus = DTS_focus5 }
+	ai_will_do = { factor = 40 }
+	relative_position_id = DTS_invest_in_vesalipolis
+	x = 2
+	y = 2
+	completion_reward = { 
+		set_country_flag = DTS_prodaja
+		add_timed_idea = { idea = DTS_prodaja days = 100 }
+	}
+}
+shared_focus = {
+	id = DTS_focus11
+	icon = GFX_goal_chn_hive_dockyardse_shine
+	cost = 4
+	prerequisite = { focus = DTS_focus10 }
+	ai_will_do = { factor = 40 }
+	relative_position_id = DTS_invest_in_vesalipolis
+	x = 2
+	y = 3
+	completion_reward = {
+		252 = {
+			add_building_construction = {
+				type = naval_base
+				province = 6289
+				level = 3
+				instant_build = yes
+			}
+		}
+	}
+}
+shared_focus = {
+	id = DTS_focus12
+	icon = GFX_goal_chn_fortify
+	cost = 4
+	prerequisite = { focus = DTS_focus11 }
+	prerequisite = { focus = DTS_focus9 }
+	ai_will_do = { factor = 40 }
+	relative_position_id = DTS_invest_in_vesalipolis
+	x = 3
+	y = 4
+	completion_reward = {
+		252 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		304 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		305 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		plus_5_hehemony_unity = yes
+		
+	}
+}
+shared_focus = { 
+	id = DTS_focus13
+	icon = GFX_goal_chn_hive_dockyardse_shine
+	cost = 4
+	prerequisite = { focus = DTS_focus4 }
+	ai_will_do = { factor = 40 }
+	relative_position_id = DTS_invest_in_vesalipolis
+	x = -2
+	y = 2
+	completion_reward = {
+		252 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		304 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		305 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+shared_focus = {
+	id = DTS_focus14
+	icon = GFX_goal_chn_oil
+	cost = 4
+	prerequisite = { focus = DTS_focus13 }
+	ai_will_do = { factor = 40 }
+	relative_position_id = DTS_invest_in_vesalipolis
+	x = -2
+	y = 3
+	completion_reward = {
+		305 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = synthetic_refinery
+				level = 1
+				instant_build = yes
+			}
+			add_resource = {
+				type = oil
+				amount = 12
+			}
+		}
+	}
+}
+shared_focus = {
+	id = DTS_focus15
+	icon = GFX_goal_chn_fortify
+	cost = 4
+	prerequisite = { focus = DTS_focus14 }
+	prerequisite = { focus = DTS_focus7 }
+	relative_position_id = DTS_invest_in_vesalipolis
+	x = -3
+	y = 4
+	completion_reward = {
+		252 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		304 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		305 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+shared_focus = {
+	id = DTS_focus16
+	icon = GFX_goal_helvia
+	cost = 5
+	prerequisite = { focus = DTS_focus15 OR = DTS_focus12 }
+	ai_will_do = { factor = 40 }
+	relative_position_id = DTS_invest_in_vesalipolis
+	x = 0 
+	y = 5
+	completion_reward = {
+		hidden_effect = {
+			remove_country_flag = DTS_CHN_attache
+			remove_country_flag = DTS_CHN_complex
+			remove_country_flag = DTS_prodaja
+			remove_ideas = changelings_medium_puppet
+		}
+		add_ideas = changelings_high_puppet 
+	}
+}

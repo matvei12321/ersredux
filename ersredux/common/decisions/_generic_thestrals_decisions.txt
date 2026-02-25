@@ -1,0 +1,385 @@
+thestrals_generic_decisions_cat = {
+	create_poroh = {
+		icon = GFX_decision_poroh
+		available = {
+			OR = {
+				num_of_factories > 14
+				has_completed_focus = FES_dubina
+				has_completed_focus = NEI_See_In_Future
+			}
+		}
+		visible = {
+			has_idea = THESTRALS_potoh_not_invented
+		}
+		cost = 5
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 200
+		}
+		modifier = {
+			research_speed_factor = 0.33
+		}
+		
+		days_remove = 50
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision buy_equipment_from_mnh"
+			remove_ideas = THESTRALS_potoh_not_invented
+			if = {
+				limit = {
+					NOt = {
+						has_technolohy = melee_weapons1
+					}
+					
+					set_technology = {
+						melee_weapons1 = 1
+					}
+				}
+			}
+		}
+	}
+	
+	
+	integrate_TST = {
+		
+		available = {
+			NOT = {
+				tag = NEI
+			}
+			owns_state = 348
+			owns_state = 350
+			owns_state = 36
+			owns_state = 30
+		}
+		visible = {
+			NOT = {
+				tag = TST
+			}
+		}
+		cost = 80
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 200
+		}
+		days_remove = 60
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision buy_equipment_from_mnh"
+			TST = { add_to_ROOT_potential_cores = yes }
+		}
+	}
+	
+	integrate_CHL = {
+		
+		
+		available = {
+			owns_state = 32
+			owns_state = 86
+			owns_state = 26
+		}
+		visible = {
+			NOT = {
+				tag = CHL
+			}
+		}
+		cost = 60
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 200
+		}
+		days_remove = 60
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision buy_equipment_from_mnh"
+			CHL = { add_to_ROOT_potential_cores = yes }
+		}
+	}
+	
+	integrate_RZR = {
+		
+		
+		available = {
+			owns_state = 27
+			owns_state = 28
+			owns_state = 82
+			owns_state = 13
+		}
+		visible = {
+			NOT = {
+				tag = RZR
+			}
+		}
+		cost = 100
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 200
+		}
+		days_remove = 60
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision buy_equipment_from_mnh"
+			RZR = { add_to_ROOT_potential_cores = yes }
+		}
+	}
+	
+	integrate_SLT = {
+		
+		available = {
+			owns_state = 31
+			owns_state = 90
+		}
+		visible = {
+			NOT = {
+				tag = RZR
+			}
+		}
+		cost = 40
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 200
+		}
+		days_remove = 60
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision buy_equipment_from_mnh"
+			SLT = { add_to_ROOT_potential_cores = yes }
+		}
+	}
+	
+	integrate_SND = {
+		
+		available = {
+			owns_state = 37
+			owns_state = 17
+			owns_state = 1225
+			owns_state = 84
+			owns_state = 35
+		}
+		visible = {
+			NOT = {
+				tag = SND
+			}
+		}
+		cost = 100
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 200
+		}
+		days_remove = 60
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision buy_equipment_from_mnh"
+			SND = { add_to_ROOT_potential_cores = yes }
+		}
+	}
+	
+	integrate_YUK = {
+		
+		available = {
+			owns_state = 221
+		}
+		visible = {
+			NOT = {
+				tag = YUK
+			}
+		}
+		cost = 20
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 200
+		}
+		days_remove = 60
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision buy_equipment_from_mnh"
+			YUK = { add_to_ROOT_potential_cores = yes }
+			add_ideas = YUK_gardens
+		}
+	}
+	
+	integrate_NIG = {
+	
+		available = {
+			owns_state = 23
+			owns_state = 120
+			owns_state = 113
+			owns_state = 63
+			owns_state = 112
+			owns_state = 115
+			owns_state = 116
+		}
+		visible = {
+			NOT = {
+				tag = NIG
+			}
+		}
+		cost = 140
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 200
+		}
+		days_remove = 60
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision buy_equipment_from_mnh"
+			NIG = { add_to_ROOT_potential_cores = yes }
+		}
+	}
+	
+	integrate_STR = {
+		
+		available = {
+			owns_state = 351
+			owns_state = 33
+			owns_state = 34
+		}
+		visible = {
+			NOT = {
+				tag = STR
+			}
+		}
+		cost = 60
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 200
+		}
+		days_remove = 60
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision buy_equipment_from_mnh"
+			STR = { add_to_ROOT_potential_cores = yes }
+		}
+	}
+	
+	integrate_YKL = {
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		available = {
+			owns_state = 52
+			owns_state = 25
+		}
+		visible = {
+			NOT = {
+				tag = MES
+			}
+		}
+		cost = 40
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 200
+		}
+		days_remove = 60
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision buy_equipment_from_mnh"
+			YKL = { add_to_ROOT_potential_cores = yes }
+		}
+	}
+
+	integrate_MES = {
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		available = {
+			owns_state = 15
+		}
+		visible = {
+			NOT = {
+				tag = MES
+			}
+		}
+		cost = 20
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 200
+		}
+		days_remove = 60
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision buy_equipment_from_mnh"
+			MES = { add_to_ROOT_potential_cores = yes }
+		}
+	}
+	
+	integrate_SIR = {
+		
+		available = {
+			owns_state = 50
+			owns_state = 81
+		}
+		visible = {
+			NOT = {
+				tag = SIR
+			}
+		}
+		cost = 40
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 200
+		}
+		days_remove = 60
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision buy_equipment_from_mnh"
+			SIR = { add_to_ROOT_potential_cores = yes }
+		}
+	}
+	
+	integrate_GUA = {
+	
+		available = {
+			owns_state = 80
+			owns_state = 19
+			owns_state = 1229
+		}
+		visible = {
+			NOT = {
+				tag = GUA
+			}
+		}
+		cost = 60
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 200
+		}
+		days_remove = 60
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision buy_equipment_from_mnh"
+			GUA = { add_to_ROOT_potential_cores = yes }
+		}
+	}
+	
+	
+	
+	
+	
+	integrate_PLP = {
+		
+		
+		available = {
+			owns_state = 353
+		}
+		visible = {
+			NOT = {
+				tag = PLP
+			}
+		}
+		cost = 40
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 200
+		}
+		days_remove = 30
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision buy_equipment_from_mnh"
+			PLP = { add_to_ROOT_potential_cores = yes }
+		}
+	}
+}

@@ -1,0 +1,22 @@
+defined_text = {
+	name = GetFocusBG
+	text = {
+		trigger = {
+			check_variable = { show_background = 1 }
+		}
+		localization_key = "GFX_changelings_focus_background"
+	}
+	text = {
+		trigger = {
+			check_variable = { show_background = 2 }
+		}
+		localization_key = "GFX_neigua_focus_background"
+	}
+	text = {
+		trigger = {
+			check_variable = { show_background = 3 }
+		}
+		localization_key = "GFX_pegasi_focus_background"
+	}
+
+}

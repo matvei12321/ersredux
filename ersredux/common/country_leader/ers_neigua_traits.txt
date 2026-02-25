@@ -1,0 +1,41 @@
+@tier1 = 30
+@tier2 = 20
+@tier3 = 10
+
+leader_traits = {
+
+	########################## From first event
+	
+	loyliada_cruel_trait = {
+		random = no
+		stability_factor = -0.05
+		war_support_factor = 0.05
+	}
+	
+	loyliada_nice_trait = {
+		random = no
+		stability_factor = 0.05
+		war_support_factor = -0.05
+	}
+	
+	loyliada_mistiryous_trait = {
+		random = no
+		army_intel_to_others = -25.0
+		civilian_intel_to_others = -25.0
+	}
+	
+	########################## From second event
+	
+	loyliada_brave_trait = {
+		random = no
+		conscription_factor = 0.05
+		army_morale_factor = 0.025
+	}
+	
+	loyliada_worker_trait = {
+		random = no
+		political_power_gain = 0.35
+		research_speed_factor = 0.05
+	}
+	
+}

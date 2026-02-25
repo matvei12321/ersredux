@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_adler_kippler"
+		textureFile = "gfx/leaders/CLO/adler_kippler.tga"
+	}
+}
+	

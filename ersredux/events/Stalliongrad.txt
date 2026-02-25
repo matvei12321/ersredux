@@ -1,0 +1,279 @@
+﻿add_namespace = RSVR_rsvr
+
+#Революционное отступление
+country_event = {
+	id = RSVR_rsvr.1
+	title = RSVR_rsvr.1.t
+	desc = RSVR_rsvr.1.d
+
+	picture = RSVR__-951
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = RSVR_rsvr.1.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 1 }
+		
+		hidden_effect = {
+			
+		}
+	}
+	option = {
+		name = RSVR_rsvr.1.b
+		trigger = {
+			
+		}
+		ai_chance = { factor = 1 }
+		
+		hidden_effect = {
+			
+		}
+	}
+	option = {
+		name = RSVR_rsvr.1.c
+		trigger = {
+			
+		}
+		ai_chance = { factor = 1 }
+		
+		hidden_effect = {
+			
+		}
+	}
+}
+
+#Враги повсюду
+country_event = {
+	id = RSVR_rsvr.2
+	title = RSVR_rsvr.2.t
+	desc = RSVR_rsvr.2.d
+
+	picture = RSVR__-577
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = RSVR_rsvr.2.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 1 }
+		add_political_power = -150
+add_popularity = {
+    ideology = communism
+    popularity = -0.1
+}
+retire_character = STG_gold_muffin
+		hidden_effect = {
+			
+		}
+	}
+	option = {
+		name = RSVR_rsvr.2.b
+		trigger = {
+			
+		}
+		ai_chance = { factor = 1 }
+		army_experience = -10
+navy_experience = -10
+air_experience = -10
+add_command_power = -10
+retire_character = STG_veronika_krasnova
+
+
+		hidden_effect = {
+			
+		}
+	}
+	option = {
+		name = RSVR_rsvr.2.c
+		trigger = {
+			
+		}
+		ai_chance = { factor = 1 }
+		add_manpower = -50000
+
+add_stability = -0.1
+add_war_support = -0.1
+
+
+		hidden_effect = {
+			
+		}
+	}
+}
+
+#Когда карточный домик рушится...
+country_event = {
+	id = RSVR_rsvr.3
+	title = RSVR_rsvr.3.t
+	desc = RSVR_rsvr.3.d
+
+	picture = RSVR_hoCUGSTW-798
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = RSVR_rsvr.3.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 1 }
+		add_command_power = 25
+
+add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = -500
+}
+		hidden_effect = {
+			
+		}
+	}
+	option = {
+		name = RSVR_rsvr.3.b
+		trigger = {
+			
+		}
+		ai_chance = { factor = 1 }
+		add_political_power = -100
+
+add_war_support = 0.05
+
+
+		hidden_effect = {
+			
+		}
+	}
+	option = {
+		name = RSVR_rsvr.3.c
+		trigger = {
+			
+		}
+		ai_chance = { factor = 1 }
+		add_popularity = {
+    ideology = communism
+    popularity = -0.25
+}
+
+add_stability = 0.05
+
+
+		hidden_effect = {
+			
+		}
+	}
+}
+
+#У кровати умирающего
+country_event = {
+	id = RSVR_rsvr.4
+	title = RSVR_rsvr.4.t
+	desc = RSVR_rsvr.4.d
+
+	picture = RSVR_LtmBbhYl-504
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = RSVR_rsvr.4.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 1 }
+		add_popularity = {
+    ideology = fascism
+    popularity = 0.05
+}
+		hidden_effect = {
+			
+		}
+	}
+	option = {
+		name = RSVR_rsvr.4.b
+		trigger = {
+			
+		}
+		ai_chance = { factor = 1 }
+		add_popularity = {
+    ideology = democratic
+    popularity = 0.05
+}
+		hidden_effect = {
+			
+		}
+	}
+	option = {
+		name = RSVR_rsvr.4.c
+		trigger = {
+			
+		}
+		ai_chance = { factor = 1 }
+		add_popularity = {
+    ideology = neutrality
+    popularity = 0.05
+}
+		hidden_effect = {
+			
+		}
+	}
+}
+
+#Смерть Вождя
+country_event = {
+	id = RSVR_rsvr.5
+	title = RSVR_rsvr.5.t
+	desc = RSVR_rsvr.5.d
+
+	picture = RSVR__-849
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = RSVR_rsvr.5.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 1 }
+		add_stability = -0.1
+add_war_support = 0.05
+set_province_name = {
+    id = 488
+    name = STG_Altigrad
+}
+
+
+		hidden_effect = {
+			
+		}
+	}
+	option = {
+		name = RSVR_rsvr.5.b
+		trigger = {
+			
+		}
+		ai_chance = { factor = 1 }
+		add_stability = -0.05
+set_province_name = {
+    id = 488
+    name = STG_Altigrad
+}
+		hidden_effect = {
+			
+		}
+	}
+	option = {
+		name = RSVR_rsvr.5.c
+		trigger = {
+			
+		}
+		ai_chance = { factor = 1 }
+		add_stability = -0.1
+add_political_power = 100
+set_province_name = {
+    id = 488
+    name = STG_Altigrad
+}
+
+		hidden_effect = {
+			
+		}
+	}
+}

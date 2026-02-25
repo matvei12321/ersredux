@@ -1,0 +1,118 @@
+add_namespace = anr
+
+country_event = {		### Fuck im drunk
+	id = anr.1 
+	immediate = {log = "[Root.GetName]: event anr.1"}
+	title = anr.1.t
+	desc = anr.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = anr.1.a
+		add_country_leader_trait = shores_alcocholic
+	}
+}
+
+country_event = {		### Pinkie Ears
+	id = anr.2 
+	immediate = {log = "[Root.GetName]: event anr.1"}
+	title = anr.2.t
+	desc = anr.2.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = anr.2.a
+	}
+}
+
+country_event = {		### now we drink
+	id = anr.3 
+	immediate = {log = "[Root.GetName]: event anr.1"}
+	title = anr.3.t
+	desc = anr.3.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = anr.3.a
+		custom_effect_tooltip = now_drink_beer_flag_tt
+		add_to_variable = { ANR.beer_variable_production_var = -5 }
+		set_country_flag = now_drink_beer_flag
+	}
+}
+
+country_event = {		### banditism after civil war
+	id = anr.4 
+	immediate = {log = "[Root.GetName]: event anr.4"}
+	title = anr.4.t
+	desc = anr.4.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = anr.4.a
+		add_ideas = ANR_uncontrollable_banditism
+		hidden_effect = {
+			random_owned_state = {
+				set_demilitarized_zone = yes
+			}
+			random_owned_state = {
+				set_demilitarized_zone = yes
+			}
+			random_owned_state = {
+				set_demilitarized_zone = yes
+			}
+			random_owned_state = {
+				set_demilitarized_zone = yes
+			}
+			random_owned_state = {
+				set_demilitarized_zone = yes
+			}
+		}
+		custom_effect_tooltip = random_5_states_become_demilitarized_tt
+	}
+}
+
+country_event = {	#### Kill Hurricane
+	id = anr.5 
+	immediate = {log = "[Root.GetName]: event anr.1"}
+	title = anr.5.t
+	desc = anr.5.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = anr.5.a
+		add_manpower = -1
+		hidden_effect = {
+			scoped_sound_effect = "soundeffect_gun_shot"
+		}
+	}
+}
+
+country_event = {	#### Flavor event
+	id = anr.6
+	immediate = {log = "[Root.GetName]: event anr.1"}
+	title = anr.6.t
+	desc = anr.6.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = anr.6.a
+		random_list = {
+			50 = {
+				add_manpower = -1
+				hidden_effect = {
+					scoped_sound_effect = "soundeffect_gun_shot"
+				}
+			}
+			50 = {
+			}
+		}
+	}
+}
+
+

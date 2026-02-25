@@ -1,0 +1,74 @@
+#	focus = { 
+#		id
+#		icon
+#		cost = 
+#		prerequisite = {
+#		
+#		}
+#		available = {
+#		
+#		}
+#	}
+
+focus_tree = {
+	id = WIG_starting_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = WIG
+		}
+	}
+	continuous_focus_position = {x = 4500 y = 2250 }
+	default = no
+	shared_focus = WIG_economic_bureau_shared
+	shared_focus = WIG_regio_esercito_shared
+	shared_focus = WIG_king_speaks_shared
+	shared_focus = WIG_regia_aeronautic_shared
+	shared_focus = WIG_regia_marina_shared
+} 
+
+#chaos
+focus_tree = {
+
+	id = wing_shit_happens
+	country = {
+		factor = 0
+		modifier = {
+			always = no
+		}
+	}
+	continuous_focus_position = {x = 4500 y = 2250 }
+	default = no
+	
+	shared_focus = WIG_economic_bureau_shared
+	shared_focus = WIG_regio_esercito_shared
+	shared_focus = WIG_regia_aeronautic_shared
+	shared_focus = WIG_regia_marina_shared
+	shared_focus = WIG_chaos_shared
+}
+
+#beakolini
+focus_tree = {
+
+	id = WIG_beakolini_tree
+	country = {
+		factor = 0
+		modifier = {
+			always = no
+		}
+	}
+	continuous_focus_position = {x = 4500 y = 2250 }
+	default = no
+	
+	shared_focus = WIG_economic_bureau_shared
+	shared_focus = WIG_regio_esercito_shared
+	shared_focus = WIG_regia_aeronautic_shared
+	shared_focus = WIG_regia_marina_shared
+	shared_focus = WIG_beakolini_start	
+	shared_focus = WIG_beakolini_expansion_start
+}
+
+
+	
+	

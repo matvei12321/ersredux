@@ -1,0 +1,29 @@
+state={
+	id=51
+	name="STATE_51"
+
+	provinces={
+		660 684 690 3484 3663 3676 9551 9617 9660 11520 11539 11554 11619 11646 11663 11679
+	}
+
+	manpower=651400
+	state_category=town
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = HOR
+		add_core_of = HOR
+
+		victory_points = { 11646 5 }
+
+		buildings = {
+			arms_factory = 2
+			industrial_complex = 2
+			infrastructure = 1
+		}
+	}
+
+	resources={
+		chromium=14
+	}
+}

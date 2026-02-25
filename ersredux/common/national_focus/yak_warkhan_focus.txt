@@ -1,0 +1,24 @@
+focus_tree = {
+	id = yak_warkhan_focus_tree
+	
+	continuous_focus_position = { x = 2200 y = 10 }
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 50
+			OR = {
+				tag = MNT
+				tag = SHA
+				tag = BAD
+				tag = NAK
+				tag = YAK
+				tag = JAK
+			}
+		}
+	}
+	
+	shared_focus = YAK_WARKHAN_start
+	
+}
+

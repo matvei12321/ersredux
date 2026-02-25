@@ -1,0 +1,110 @@
+
+######======================================================================######
+######====================== IMPORTANT MESSAGE =============================######
+######======================================================================######
+#    When adding a new subideology, please add an entry of the subideology in    #
+# common/scripted_localisation/EAW_subideology_display_scripted_localisation.txt #
+######======================================================================######
+
+
+ideologies = {
+     
+	democratic = {
+		types = {
+		
+		     = {
+			}
+			
+		    liberalism = {
+			}
+			
+			hive_mind_democratic = {
+				can_be_randomly_selected = no
+			}
+
+			pacifism = {
+				can_be_randomly_selected = no
+			}
+			momentalism = {
+			}
+			
+			national_evolutionism = {
+			}
+			socialism = {
+			}
+			alicornrule = {
+				can_be_randomly_selected = no
+			}
+			tribal_federation = {
+				can_be_randomly_selected = no
+			}
+			harmonic_theocracy = {
+			    can_be_randomly_selected = no
+			}
+			holy_order_h = {
+			    can_be_randomly_selected = no
+			}
+			harmonic_libertarianism = {
+				can_be_randomly_selected = no
+			}
+			harmonic_magocracy = {
+				can_be_randomly_selected = no
+			}
+			harmonic_constitutionalism = {
+				can_be_randomly_selected = no
+			}
+			social_banditry = {
+				can_be_randomly_selected = no
+			}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_DEMOCRATIC_1"
+			"FACTION_NAME_DEMOCRATIC_2"
+			"FACTION_NAME_DEMOCRATIC_3"
+			"FACTION_NAME_DEMOCRATIC_4"
+			"FACTION_NAME_DEMOCRATIC_5"
+			"FACTION_NAME_DEMOCRATIC_6"
+		}
+
+		# color = { 183 255 251 }
+		
+		color = { 226 247 255 }
+		
+		rules = {
+			can_declare_war_on_same_ideology = no
+			can_force_government = no
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+			can_create_collaboration_government = no
+		}
+
+		can_host_government_in_exile = yes
+
+		war_impact_on_world_tension = 0.25 #harmonists are nice people
+		faction_impact_on_world_tension = 0.1
+
+		modifiers = {
+			generate_wargoal_tension = 0.50
+			join_faction_tension = 0.50
+			guarantee_tension = 0.50
+			annex_cost_factor = 0.2
+			send_volunteer_divisions_required = -0.25
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 10.0
+			navy_intel_to_others = 20.0
+			airforce_intel_to_others = 10.0
+			exodus_occupier_appeal = 0.1
+			exodus_national_appeal = 0.1
+		}
+
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+		}
+		can_be_boosted = yes
+		ai_democratic = yes # uses the democratic AI behaviour
+	}
+}

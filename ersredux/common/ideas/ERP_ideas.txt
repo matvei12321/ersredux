@@ -1,0 +1,961 @@
+ideas = {
+
+	country = {
+		ERP_economic_dependence_balance = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+				tag = ERP
+			}
+
+			picture = erp_dependence_balance
+			
+			modifier ={
+			}
+			
+			
+			targeted_modifier = {
+				tag = UNC
+				mic_to_target_factor = 0.1
+				cic_to_target_factor = 0.1
+			}
+			targeted_modifier = {
+				tag = PGS
+				mic_to_target_factor = 0.1
+				cic_to_target_factor = 0.1
+			}
+		}
+	}
+	
+	country = {
+		ERP_economic_dependence_pegasi_priority = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+				tag = ERP
+			}
+
+			picture = erp_dependence_balance
+			
+			modifier ={
+			}
+			
+			
+			targeted_modifier = {
+				tag = UNC
+				mic_to_target_factor = 0.05
+				cic_to_target_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = PGS
+				mic_to_target_factor = 0.1
+				cic_to_target_factor = 0.1
+			}
+		}
+	}
+	
+	country = {
+		ERP_economic_dependence_low = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+				tag = ERP
+			}
+
+			picture = erp_dependence_balance
+			
+			modifier ={
+			}
+			
+			
+			targeted_modifier = {
+				tag = UNC
+				mic_to_target_factor = 0.05
+				cic_to_target_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = PGS
+				mic_to_target_factor = 0.05
+				cic_to_target_factor = 0.05
+			}
+		}
+	}
+	
+	country = {
+		ERP_economic_dependence_unicorns_priority = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+				tag = ERP
+			}
+
+			picture = erp_dependence_balance
+			
+			modifier ={
+			}
+			
+			
+			targeted_modifier = {
+				tag = UNC
+				mic_to_target_factor = 0.1
+				cic_to_target_factor = 0.1
+			}
+			targeted_modifier = {
+				tag = PGS
+				mic_to_target_factor = 0.05
+				cic_to_target_factor = 0.05
+			}
+		}
+	}
+	
+	country = {
+		ERP_religion_crysis = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_religion
+			
+			available = {
+				tag = ERP
+			}
+
+			modifier = {
+				stability_factor = -0.05
+				fascism_drift = 0.01
+				democratic_drift = 0.01
+				communism_drift = 0.01
+			}
+			
+		}
+	}
+	
+	country = {
+		ERP_born_of_republic = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_religion
+			
+			available = {
+				tag = ERP
+			}
+
+			modifier = {
+				fascism_drift = 0.02
+				democratic_drift = 0.02
+				communism_drift = 0.02
+			}
+			
+		}
+	}
+	
+	country = {
+		ERP_overpopulation = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = tfv_can_conscription_crisis
+			available = {
+				always = yes
+			}
+
+			modifier = {
+				supply_consumption_factor = 0.3
+				stability_factor = -0.05
+				monthly_population = -0.25
+				global_building_slots_factor = -0.35
+			}
+			
+		}
+	}
+	
+	country = {
+		ERP_overpopulation_program_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = tfv_can_conscription_crisis
+			available = {
+				always = yes
+			}
+
+			modifier = {
+				political_power_factor = -0.25
+				supply_consumption_factor = 0.15
+				monthly_population = -0.25
+				global_building_slots_factor = -0.35
+			}
+			
+		}
+		
+		ERP_overpopulation_program_idea_1 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = tfv_can_conscription_crisis
+			available = {
+				always = yes
+			}
+
+			modifier = {
+				political_power_factor = -0.25
+				supply_consumption_factor = 0.15
+				monthly_population = -0.25
+				global_building_slots_factor = -0.2
+			}
+			
+		}
+		
+		ERP_overpopulation_program_idea_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = tfv_can_conscription_crisis
+			available = {
+				always = yes
+			}
+
+			modifier = {
+				political_power_factor = -0.15
+				supply_consumption_factor = 0.15
+				monthly_population = -0.2
+				global_building_slots_factor = -0.15
+			}
+		}
+		
+		ERP_overpopulation_program_idea_3 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = tfv_can_conscription_crisis
+			available = {
+				always = yes
+			}
+
+			modifier = {
+				political_power_factor = -0.05
+				supply_consumption_factor = 0.05
+				monthly_population = -0.2
+				global_building_slots_factor = -0.1
+			}
+		}
+
+	}
+	
+	country = {
+		ERP_overpopulation_arms_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = tfv_can_conscription_crisis
+			available = {
+				always = yes
+			}
+
+			modifier = {
+				war_support_factor = -0.05
+				industrial_capacity_factory = 0.1
+			}
+			
+		}
+	}
+	
+	country = {
+		ERP_overpopulation_industrial_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = tfv_can_conscription_crisis
+			available = {
+				always = yes
+			}
+
+			modifier = {
+				stability_factor = -0.05
+				production_speed_buildings_factor = 0.1
+			}
+			
+		}
+	}
+	
+	country = {
+		ERP_infrastructure_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_build_infrastructure
+			available = {
+				always = yes
+			}
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.15
+			}
+			
+		}
+	}
+	
+	country = {
+		ERP_super_industry = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_exploit_mines
+			available = {
+				always = yes
+			}
+
+			modifier = {
+				production_speed_buildings_factor = 0.25
+			}
+			
+		}
+	}
+	
+	country = {
+		ERP_church_fascism_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = SPR_masters_of_our_own_fate
+			available = {
+				always = yes
+			}
+
+			modifier = {
+				political_power_gain = 0.05
+				stability_factor = 0.05
+				fascism_drift = 0.01
+			}
+			
+		}
+	}
+	
+	country = {
+		ERP_church_holy_nation_idea = {
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				always = yes
+			}
+			picture = erp_religion_fascism
+			modifier = {
+				political_power_gain = 0.05
+				stability_factor = 0.05
+				fascism_drift = 0.01
+				stability_weekly = 0.005
+				war_support_weekly = 0.005
+			}
+			
+		}
+	}
+	
+	country = {
+		ERP_church_holy_industry_idea = {
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				always = yes
+			}
+			picture = erp_religion_fascism
+			modifier = {
+				political_power_gain = 0.05
+				stability_factor = 0.05
+				local_resources_factor = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+			
+		}
+	}
+	
+	country = {
+		ERP_church_holy_industry_and_nation_idea = {
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				always = yes
+			}
+			picture = erp_religion_fascism
+			modifier = {
+				local_resources_factor = 0.05
+				stability_weekly = 0.005
+				war_support_weekly = 0.005
+				production_speed_buildings_factor = 0.05
+				political_power_gain = 0.05
+				stability_factor = 0.05
+			}
+			
+		}
+	}
+	
+	country = {
+		
+		ERP_expansionism = {
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				always = yes
+			}
+			picture = erp_defensive_expansionism
+			modifier = {
+				justify_war_goal_time = -0.1
+				generate_wargoal_tension = -0.15
+				war_support_factor = 0.025
+				political_power_gain = -0.15
+			}
+		}
+		
+		ERP_national_brigades_idea = {
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				always = yes
+			}
+			picture = erp_storm_brigades
+			modifier = {
+				army_org_factor = 0.05
+				conscription = 0.02
+				conscription_factor = 0.1
+			}
+			
+		}
+		
+		ERP_radicals_idea = {
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			
+			picture = burning_skull_knife
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+				always = yes
+			}
+
+			modifier = {
+				army_org_factor = -0.05
+				stability_factor = -0.05
+				war_support_factor = -0.05
+				production_speed_buildings_factor = -0.1
+				research_speed_factor = -0.05
+			}
+			
+		}
+		
+		ERP_radicals_accepted_idea = {
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				always = yes
+			}
+			picture = skull_knife
+			modifier = {
+				army_org_factor = -0.05
+				stability_factor = -0.025
+				war_support_factor = 0.05
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.025
+				conscription = 0.01
+			}
+		}
+		
+		ERP_national_hate_idea = {
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				always = yes
+			}
+			picture = erp_work_for_great_goal
+			modifier = {
+				army_core_attack_factor = 0.04
+				conscription_factor = 0.03
+				industrial_capacity_factory = 0.06
+			}
+		}
+		
+		ERP_mysticism_army = {
+
+			allowed = {
+				always = no
+			}
+			
+			picture = black_sun_purple_fire
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+				always = yes
+			}
+
+			modifier = {
+				army_morale_factor = -0.05
+				monthly_population = -0.1
+				army_org_factor = -0.1
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				army_speed_factor = 0.05
+			}
+		}
+		
+		ERP_fascism_industry = {
+
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_production_bonus
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+				always = yes
+			}
+
+			modifier = {
+				consumer_goods_factor = -0.15
+				stability_factor = -0.05
+			}
+		}
+	}
+}
+
+ideas = {
+	industrial_concern = {
+		ERP_crossfou_concern = {
+			
+			allowed = {
+				original_tag = ERP
+
+			}
+			
+			picture = erp_crossfou_concern_picture
+			
+			available = {
+				has_completed_focus = ERP_industrial_council_of_crossfou
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				industry = 0.15
+			}
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.125
+			}
+				
+			traits = { industrial_concern }
+		}
+		
+		ERP_trotland_concern = {
+			
+			allowed = {
+				original_tag = ERP
+
+			}
+			
+			picture = erp_trotland_concern_picture
+			
+			available = {
+				has_completed_focus = ERP_industrial_council_of_trotland
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				industry = 0.15
+			}
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_speed_arms_factory_factor = 0.1
+			}
+				
+			traits = { industrial_concern }
+		}
+	}
+	
+	
+	country = {
+		ERP_dig_in_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = tfv_can_conscription_crisis
+			available = {
+				always = yes
+			}
+
+			modifier = {
+				dig_in_speed_factor = 0.1
+				MAX_DIG_IN_FACTOR = 0.2
+			}
+			
+		}
+		
+		ERP_training_time_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = specops
+			available = {
+				always = yes
+			}
+
+			modifier = {
+				TRAINING_TIME_FACTOR = -0.05
+				XP_GAIN_ARMY = 0.05
+			}
+			
+		}
+	}
+	
+	country = {
+		ERP_hunger_idea = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = tfv_can_conscription_crisis
+			available = {
+				always = yes
+			}
+			
+			modifier = {
+				consumer_goods_factor = 0.45
+				production_speed_buildings_factor = -0.2
+				political_power_factor = -0.5
+			}
+		}
+		
+		ERP_hunger_idea_2 = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = tfv_can_conscription_crisis
+			available = {
+				always = yes
+			}
+			
+			modifier = {
+				consumer_goods_factor = 0.30
+				production_speed_buildings_factor = -0.15
+				political_power_factor = -0.35
+			}
+		}
+		
+		ERP_hunger_idea_3 = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = tfv_can_conscription_crisis
+			available = {
+				always = yes
+			}
+			
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = -0.05
+				political_power_factor = -0.15
+			}
+		}
+		
+		ERP_hunger_solved_fascism = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = tfv_can_conscription_crisis
+			available = {
+				always = yes
+			}
+			
+			modifier = {
+				political_power_gain= -0.5
+				stability_factor = -0.04
+				monthly_population = -0.05
+				fascism_drift = -0.01
+			}
+		}
+
+	}
+	
+	country = {
+		ERP_resources_idea = {
+		
+			allowed = {
+				always = no
+			}
+
+			picture = generic_exploit_mines
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+				always = yes
+			}
+			
+			modifier = {
+				local_resources_factor = 0.15
+			}
+		}
+		
+		ERP_equipment_idea = {
+		
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_infantry_equipment_manufacturer_3
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+				always = yes
+			}
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					reliability = 0.1
+					build_cost_ic = -0.10
+					instant = yes
+				}
+			}
+		}
+		
+		ERP_timed_arms_factory_idea = {
+		
+			allowed = {
+				always = no
+			}
+
+			picture = generic_war_preparation
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+				always = yes
+			}
+			
+			modifier = {
+				political_power_gain = -0.15
+				production_speed_arms_factory_factor = 0.15
+			}
+		}
+	}
+	
+	country = {
+		ERP_light_air_research_idea = {
+		
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_fighter_production_diverted
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+				always = yes
+			}
+			
+			modifier = {
+				light_air_research_factor = 0.05
+				air_air_superiority_attack_factor = 0.1
+				air_air_superiority_defence_factor = 0.1
+			}
+		}
+		
+		ERP_paratroopers_idea = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+				always = yes
+			}
+			
+			modifier = {
+				extra_paratrooper_supply_grace = 24
+			}
+		}
+	}
+	
+
+}

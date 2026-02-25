@@ -1,0 +1,400 @@
+ideas = {
+
+	country = {
+		
+		STL_ers_equality = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = stl_equality
+			
+			available = {
+				always = yes
+			}
+
+			modifier = {
+				political_power_gain = 0.05
+				army_core_defence_factor = 0.15
+				communism_drift = 0.01
+				drift_defence_factor = 0.9
+			}
+			
+		}
+		
+		idea_STL_peoners = {
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			picture = pioneer
+			modifier = {
+				TRAINING_TIME_FACTOR = -0.1
+				PRODUCTION_SPEED_BUILDINGS_FACTOR = 0.05
+			}
+		}
+		idea_STL_peoners_2 = {
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			picture = pioneer2
+			modifier = {
+				monthly_population = -0.05
+				conscription_factor = 0.05
+				industrial_capacity_factory = 0.075
+				TRAINING_TIME_FACTOR = -0.1
+				PRODUCTION_SPEED_BUILDINGS_FACTOR = 0.065
+			}
+		}
+		
+		idea_STL_buro = {
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			picture = stl_agency
+			modifier = {
+				POLITICAL_POWER_FACTOR = 0.1
+			}
+		}
+	
+		idea_STL_purge = {
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			picture = chi_army_corruption
+			modifier = {
+				WEEKLY_MANPOWER = -200
+				STABILITY_WEEKLY = -0.02
+				POLITICAL_POWER_GAIN = -0.25
+				communism_drift = 0.01
+			}
+		}
+
+		STL_courage = {
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			available = {
+				STG = {
+					exixts = yes
+				}
+			}
+			picture = stl_crush_communism
+			targeted_modifier = {
+				tag = STG
+				attack_bonus_against = 2.0
+			}
+			modifier = {
+				experience_gain_army_factor = 0.15
+			}
+		}
+
+		STL_our_needs_idea = {
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			picture = stl_pyramid_cog
+			modifier = {
+				consumer_goods_factor = -0.1
+				stability_factor = -0.05
+			}
+		}
+	}
+	
+	country = {
+		STL_isolatsia = {
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			picture = generic_reserve_divisions
+			modifier = {
+				production_speed_bunker_factor = 0.25
+				production_speed_anti_air_building_factor = 0.25
+				army_core_defence_factor = 0.1
+				MAX_DIG_IN_FACTOR = 2.5
+			}
+		}
+	}
+	
+	country = {
+	
+		STL_more_guns_idea = {
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			available = {
+				STG = {
+					exixts = yes
+				}
+			}
+			picture = generic_license_production
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+			equipment_bonus = {
+				support_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+		
+		
+		STL_prepared_attack_idea = { 
+			removal_cost = -1
+			allowed = {
+				original_tag = STL
+			}
+			available = {
+				STG = {
+					exixts = yes
+				}
+			}
+			picture = officers_purged
+			modifier = {
+				war_support_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = STG
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.1
+			}
+		}
+		
+		STL_no_more_lazyness = {
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			picture = generic_production_bonus
+			modifier = {
+				consumer_goods_factor = -0.15
+			}
+		}
+		
+		STL_society_works_idea = {
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			picture = generic_flexible_foreign_policy
+			modifier = {
+				production_speed_infrastructure_factor = 0.1
+				production_speed_industrial_complex_factor = 0.035
+				production_speed_arms_factory_factor = 0.035
+			}
+		}
+		
+		STL_collective_mind = {
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+			}
+			
+			picture = stl_smile
+			
+			modifier = {
+				army_org_factor = 0.05
+				LOCAL_ORG_REGAIN = 0.1
+				army_attack_factor = 0.025
+			}
+		}
+		
+		STL_STG_threatened = {
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+			}
+
+			modifier = {
+				defensive_war_stability_factor = -0.1
+				weekly_manpower = -50
+			}
+			targeted_modifier = {
+				tag = STL
+				defense_bonus_against = -0.1
+			}
+		}
+		
+		STL_army_will = {
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+			}
+
+			modifier = {
+				dig_in_speed_factor = 0.05
+				ARMY_INFANTRY_DEFENCE_FACTOR = 0.05
+				ORG_LOSS_WHEN_MOVING = 0.025
+			}
+		}
+		
+		idea_STL_collaborants = {
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			picture = stl_correcting_opinion
+			modifier = {
+				stability_factor = -0.05
+				compliance_growth = 0.1
+				resistance_growth = -0.1
+				monthly_population = -0.05
+			}
+		}
+		
+		stl_army_comitte_idea = {
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			picture = stl_correcting_opinion
+			modifier = {
+				experience_gain_army_factor = 0.05
+				army_morale = 1
+				ARMY_INFANTRY_DEFENCE_FACTOR = 0.05
+				ARMY_INFANTRY_ATTACK_FACTOR = 0.05
+			}
+		}
+		
+		stl_army_simping_for_starlight_idea = {
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			picture = stl_correcting_opinion
+			modifier = {
+				war_support_factor = 0.05
+				weekly_manpower = 100
+			}
+		}
+		
+		stl_nice_police_idea = {
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			picture = stl_correcting_opinion
+			modifier = {
+				stability_factor = -0.05
+				monthly_population = -0.05
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					suppression_factor = 0.15
+					instant = yes
+				}
+			}
+		}
+		stl_ban_anticommunist_books_idea = {
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			picture = stl_correcting_opinion
+			modifier = {
+				stability_weekly = -0.005
+				stability_factor = -0.15
+				communism_drift = 0.1
+				drift_defence_factor = -0.1
+			}
+		}
+		stl_starlight_books_idea = {
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			picture = stl_correcting_opinion
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = 0.45
+				communism_drift = 0.05
+			}
+		}
+		stl_ministry_books_idea = {
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			picture = stl_correcting_opinion
+			modifier = {
+				stability_factor = -0.055
+				research_speed_factor = 0.04
+				communism_drift = 0.05
+			}
+		}
+		stl_taken_resources_idea = {
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			picture = stl_correcting_opinion
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_industrial_complex_factor = 0.05
+				land_reinforce_rate = 0.02
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		
+		stl_huge_propaganda_idea = {
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			picture = stl_correcting_opinion
+			modifier = {
+				war_stability_factor = 0.05
+				war_support_factor = 0.1
+				political_power_cost = -0.05
+				political_power_gain = 0.2
+			}
+		}
+
+		stl_no_great_life = {
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			picture = stl_correcting_opinion
+			modifier = {
+				stability_factor = -0.05
+				monthly_population = -0.05
+				production_speed_arms_factory_factor = 0.05
+				production_speed_dockyard_factor = 0.05
+				production_lack_of_resource_penalty_factor = -0.1
+				industry_free_repair_factor = 0.05
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+		
+	}
+}

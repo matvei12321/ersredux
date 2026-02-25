@@ -1,0 +1,16 @@
+
+scripted_gui = {
+	warcrimes = {
+		context_type = player_context
+		window_name = "warcrimes_container"
+		visible = {
+			always = yes
+			NOT = {
+				has_global_flag = warcrimes_disabled
+			}
+		}
+
+		effects = {
+		}
+	}
+}

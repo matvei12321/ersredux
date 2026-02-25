@@ -1,0 +1,45 @@
+scripted_gui = {
+
+	plague_open_container = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "plague_open_container"
+		visible = {
+			tag = UNP
+		}
+		effects = {
+			plague_open_button_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_variable = open_plague_menu_variable
+							}
+						}
+					set_variable = { 
+						open_plague_menu_variable = 1 }
+					}
+				else = {
+					clear_variable = open_plague_menu_variable
+				}
+			}
+		}
+	}
+	
+	plague_menu = {
+		context_type = player_context
+
+		window_name = "plague_menu_container"
+
+		visible = {
+			has_variable = open_plague_menu_variable
+		}
+		
+		effects = {
+		
+			close_button_click = {
+				clear_variable = open_plague_menu_variable
+			}
+		}
+	}
+			
+}

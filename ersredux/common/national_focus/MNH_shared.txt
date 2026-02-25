@@ -1,0 +1,407 @@
+shared_focus = {
+	id = MNH_flim
+	icon = GFX_goal_mnh_flim
+	cost = 2.2
+	x = 8
+	y = 0
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DTS_queen_focus"
+		add_political_power = 50
+		custom_effect_tooltip = mnh_flim_flam_tt
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = MNH_flam
+	icon = GFX_goal_mnh_flam
+	cost = 2.2
+	x = 12
+	y = 0
+	available = {  
+		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DTS_queen_focus"
+		add_political_power = 50
+		custom_effect_tooltip = mnh_flim_flam_tt
+	}
+	ai_will_do = { factor = 10 }
+}
+
+
+shared_focus = {
+	id = MNH_sponsore_pmc
+	icon = GFX_goal_Dare_to_Die_Corps
+	cost = 4.4
+	available = {  
+		
+	}
+	prerequisite = { focus = MNH_flam }
+	prerequisite = { focus = MNH_flim }
+	mutually_exclusive = { focus = MNH_guards_of_the_federation }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = MNH_flim
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DTS_richest_changeling"
+		swap_ideas = {
+			remove_idea = MNH_no_army
+			add_idea = MNH_no_army_upgraded
+		}
+		add_to_variable = {
+			military_companies_loyalty = 5
+			military_companies_money = 500
+			fnf_money = -500
+		}
+		custom_effect_tooltip = mnh_plus_5_pmc_loyalty
+		custom_effect_tooltip = mnh_plus_500_pmc_money
+		custom_effect_tooltip = mnh_minus_500_fnf_money
+
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = MNH_guards_of_the_federation
+	icon = GFX_goal_mnh_guards_of_federation
+	cost = 4.4
+	available = {  
+		
+	}
+	prerequisite = { focus = MNH_flam }
+	prerequisite = { focus = MNH_flim }
+	mutually_exclusive = { focus = MNH_sponsore_pmc }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = MNH_flim
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DTS_richest_changeling"
+		add_ideas = MNH_guards_of_federation_idea
+		add_manpower = 15000
+		add_to_variable = {
+			military_companies_loyalty = -10
+			fnf_money = -250
+		}
+		custom_effect_tooltip = mnh_minus_10_pmc_loyalty
+		custom_effect_tooltip = mnh_minus_250_fnf_money
+		
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = MNH_raise_taxes
+	icon = GFX_goal_gold_up
+	cost = 4.4
+	available = {  
+		
+	}
+	prerequisite = { focus = MNH_flam }
+	prerequisite = { focus = MNH_flim }
+	mutually_exclusive = { focus = MNH_free_money }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = MNH_flim
+	x = 3
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DTS_richest_changeling"
+		add_stability = 0.025
+		
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = MNH_free_money
+	icon = GFX_goal_mnh_libertarian_snake
+	cost = 4.4
+	available = {  
+		
+	}
+	prerequisite = { focus = MNH_flam }
+	prerequisite = { focus = MNH_flim }
+	mutually_exclusive = { focus = MNH_raise_taxes }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = MNH_flim
+	x = 5
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DTS_richest_changeling"
+		add_stability = 0.025
+		
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = MNH_weapon_privatisation
+	icon = GFX_focus_ETH_freedom_at_gunpoint
+	cost = 4.4
+	available = {  
+		
+	}
+	prerequisite = { focus = MNH_sponsore_pmc focus =  MNH_guards_of_the_federation }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = MNH_flim
+	x = -2
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DTS_richest_changeling"
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 1250
+		}
+		add_tech_bonus = {
+			name = infantry_weapons_bonus
+			bonus = 0.35
+			uses = 1
+			category = infantry_weapons
+		}
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = MNH_war_is_our_client
+	icon = GFX_goal_mnh_give_war_a_chance
+	cost = 4.4
+	available = {  
+		
+	}
+	prerequisite = { focus = MNH_weapon_privatisation }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = MNH_flim
+	x = -2
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DTS_richest_changeling"
+		75 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+			
+			
+		}
+		
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = MNH_take_and_rule
+	icon = GFX_goal_ancap
+	cost = 4.4
+	available = {  
+		
+	}
+	prerequisite = { focus = MNH_sponsore_pmc focus =  MNH_guards_of_the_federation }
+	prerequisite = { focus = MNH_raise_taxes focus =  MNH_free_money }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = MNH_flim
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DTS_richest_changeling"
+		add_stability = 0.025
+		
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = MNH_libertarian_spirit
+	icon = GFX_goal_mnh_libertarianism
+	cost = 4.4
+	available = {  
+		
+	}
+	prerequisite = { focus = MNH_sponsore_pmc focus =  MNH_guards_of_the_federation }
+	prerequisite = { focus = MNH_raise_taxes focus =  MNH_free_money }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = MNH_flim
+	x = 2
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DTS_richest_changeling"
+		add_war_support = 0.1
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = MNH_fight_monopoly
+	icon = GFX_goal_tax_slave
+	cost = 4.4
+	available = {  
+		
+	}
+	prerequisite = { focus = MNH_sponsore_pmc focus =  MNH_guards_of_the_federation }
+	prerequisite = { focus = MNH_raise_taxes focus =  MNH_free_money }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = MNH_flim
+	x = 4
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DTS_richest_changeling"
+		
+		
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = MNH_deal
+	icon = GFX_goal_arms_sales
+	cost = 4.4
+	available = {  
+		
+	}
+	prerequisite = { focus = MNH_take_and_rule }
+	prerequisite = { focus = MNH_libertarian_spirit }
+	prerequisite = { focus = MNH_fight_monopoly }
+	mutually_exclusive = { focus = MNH_gone_wrong }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = MNH_flim
+	x = 1
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DTS_richest_changeling"
+		add_stability = 0.025
+		
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = MNH_gone_wrong
+	icon = GFX_goal_bankruptcy
+	cost = 4.4
+	available = {  
+		
+	}
+	prerequisite = { focus = MNH_take_and_rule }
+	prerequisite = { focus = MNH_libertarian_spirit }
+	prerequisite = { focus = MNH_fight_monopoly }
+	mutually_exclusive = { focus = MNH_deal }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = MNH_flim
+	x = 3
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DTS_richest_changeling"
+		add_stability = 0.025
+		
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = MNH_industry_privatisation
+	icon = GFX_goal_munitions_factories
+	cost = 4.4
+	available = {  
+		
+	}
+	prerequisite = { focus = MNH_raise_taxes focus = MNH_free_money }
+	mutually_exclusive = { focus = MNH_deal }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = MNH_flim
+	x = 6
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DTS_richest_changeling"
+		add_stability = -0.025
+		add_political_power = 35
+		75 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}
+		}
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = MNH_joy_industry
+	icon = GFX_goal_gambling
+	cost = 4.4
+	available = {  
+		
+	}
+	prerequisite = { focus = MNH_industry_privatisation }
+	mutually_exclusive = { focus = MNH_deal }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = MNH_flim
+	x = 6
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DTS_richest_changeling"
+		add_stability = 0.025
+		
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = MNH_rinocheck
+	icon = GFX_goal_mnh_anarcho_capitalism
+	cost = 4.4
+	available = {  
+		
+	}
+	prerequisite = { focus = MNH_war_is_our_client }
+	prerequisite = { focus = MNH_deal focus = MNH_gone_wrong }
+	prerequisite = { focus = MNH_joy_industry }
+	mutually_exclusive = { focus = MNH_deal }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = MNH_flim
+	x = 2
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DTS_richest_changeling"
+		add_political_power = 250
+		
+	}
+	ai_will_do = { factor = 10 }
+}
+

@@ -1,0 +1,50 @@
+guitypes = {
+	containerwindowtype = {
+		name = "LYC_EZ_extermination_gui"
+		size = { width = 100%% height = 185 }
+		
+		instanttextboxtype = {
+			name = "OLE_extermination_name"
+			position = { x = 30 y = 0 }
+			text = OLE_extermination_name
+			font = "hoi_36header"
+			format = center
+			maxwidth = 438
+			maxheight = 30
+		}
+		containerwindowtype = {
+			name = "progbar_container"
+			position = { x = 43 y = 40 }
+			icontype = {
+				name = "extermination_bar"
+				quadtexturesprite = "GFX_OLE_extermination_bar"
+				position = { x = 5 y = 4 }
+				alwaystransparent = yes
+			}
+			icontype = {
+				name = "frame"
+				spritetype = "GFX_OLE_extermination_bar_frame"
+				pdx_tooltip = GFX_OLE_extermination_bar_tt
+			}
+			
+		}
+		instanttextboxtype = {
+			name = "description"
+			position = { x = 11 y = 124 }
+			text = LYC_EZ_extermination_desc
+			font = "hoi_18mbs"
+			format = left
+			maxwidth = 482
+		}
+		instanttextboxtype = {
+			name = "OLE_extermination_percent"
+			position = { x = 0 y = 0 }
+			text = "[?global.extermination_var]%"
+			font = "hoi_36header"
+			format = center
+			maxwidth = 438
+			maxheight = 30
+			position = { x = 35 y = 87 }
+		}
+	}
+}

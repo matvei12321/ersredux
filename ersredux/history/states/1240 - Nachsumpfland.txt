@@ -1,0 +1,27 @@
+state={
+	id=1240
+	name="STATE_1240"
+
+	provinces={
+		3078 12791 10740 5044 4796 4797 8097 2104 10809 12811 7747 6897 5061 12745 
+	}
+
+	manpower=389547
+	state_category=rural
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = CLO
+		add_core_of = CLO
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			
+			12745 = {
+				dam = 1
+			}
+			
+		}
+	}
+}

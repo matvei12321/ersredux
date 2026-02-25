@@ -1,0 +1,541 @@
+﻿l_russian:
+
+    WIG:0"Вингбардия"
+    WIG_DEF:0 "Республика Вингбардия"
+    WIG_ADJ:0 "Вингбардийск."    
+    WIG_despotism_DEF:0 "Королевство Вингбардия"
+    WIG_despotism:0 "Королевство Вингбардия"
+#   WIG_rozenkampism:0 "Карфинская Республика" # перехотелось делать штрассеристов
+    WIG_garibald_talonuel:0"Гарибальд Талонуэль III"
+    WIG_talonieli_mio_name:0 "Концерн Талониели Индастриз"
+    WIG_tal_avto_zavod_mio_name:0 "Талонтский АвтоЗавод"
+    WIG_regio_aeronautica_mio_name:0 "Региa Аэронафтика"
+    WIG_regia_marina_mio_name:0 "Региа Марина"
+#нацдухи
+    WIG_economic_crisis:0 "§RСильнейший экономический кризис§!"
+    WIG_economic_crisis_desc:0 "Годы стагнации в конечном счёте привели Вингбардию к сильнейшему в её истории §RЭкономическому кризису§!."
+    WIG_economic_crisis_1:0 "§RСильный экономический кризис§!"
+    WIG_economic_crisis_1_desc:0 "Годы стагнации в конечном счёте привели Вингбардию к §RЭкономическому кризису§!."
+    WIG_economic_crisis_2:0 "§tЭкономический кризис§!"
+    WIG_economic_crisis_2_desc:0 "Годы стагнации в конечном счёте привели Вингбардию к §RЭкономическому кризису§!."
+    WIG_economic_crisis_3:0 "§OСлабый экономический кризис§!"
+    WIG_economic_crisis_3_desc:0 "Вингбардия всё ближе к выходу из §RЭкономического кризиса§!."    
+    WIG_economic_crisis_4:0 "§YЭхо экономического кризиса§!"
+    WIG_economic_crisis_4_desc:0 "Пусть §RЭкономический кризис§! уже сошёл на нет, однако его эхо всё ещё живо."
+
+    WIG_talonieli_subsidise:0 "Субсдирование Талониели"
+
+    WIG_alco_idea:0 "Госалкомонополия"
+
+    WIG_small_business_idea:0 "Поддержка малого бизнеса"
+    
+    WIG_falcor_resistance:0 "Молодой Фалькор"
+    WIG_falcor_resistance_desc:0 "Молодой Фалькор - сепаратистская организация, борящаяся за отделение Фалькора от Вингбардии, не гнушающаяся применять террористические методы"
+    
+    WIG_talkara_academy_idea:0 "Талькарская Военная Академия"
+    WIG_talkara_academy_idea_desc:0 ""
+    
+    WIG_trash_army_idea:0 "Небоеспособная армия"
+    WIG_trash_army_idea_desc:0 "Армия Вингбардии способна разве что подавлять крестьянские бунты, ведь за 150 лет в составе ИФ её толком не реформировали, аргументируя это тем, что местный гарнизон Герцланда в случае чего решит проблему. Ну-ну."
+        
+    WIG_trash_army_idea_1:0 "Небоеспособная армия"
+    WIG_trash_army_idea_1_desc:0 "Армия Вингбардии способна разве что подавлять крестьянские бунты, ведь за 150 лет в составе ИФ её толком не реформировали, аргументируя это тем, что местный гарнизон Герцланда в случае чего решит проблему. Ну-ну."
+   
+    WIG_trash_army_idea_2:0 "Небоеспособная армия"
+    WIG_trash_army_idea_2_desc:0 "Армия Вингбардии способна разве что подавлять крестьянские бунты, ведь за 150 лет в составе ИФ её толком не реформировали, аргументируя это тем, что местный гарнизон Герцланда в случае чего решит проблему. Ну-ну."
+    
+    WIG_trash_army_idea_3:0 "Небоеспособная армия"
+    WIG_trash_army_idea_3_desc:0 "Армия Вингбардии способна разве что подавлять крестьянские бунты, ведь за 150 лет в составе ИФ её толком не реформировали, аргументируя это тем, что местный гарнизон Герцланда в случае чего решит проблему. Ну-ну."
+        
+    WIG_modern_army_idea:0 "Современная армия"
+    WIG_modern_army_idea_desc:0 "После ряда реформ армия Вингбардии из отсталой превратилась в современную."
+    
+    WIG_unification_guns_idea:0 "Унификация винтовок"
+    WIG_speed_ggf_idea:0 "Надо. Ещё. БЫСТРЕЕ."
+    
+    WIG_political_deadlock:0 "Политический кризис"
+#   WIG_political_deadlock_desc:0 "Вслед за экономикой полетела вниз и политическая система. Множество отставок правительств, практически убила её, и без реформы тут никак не обойтись." # надо переписать
+
+    WIG_field_hospitals_idea:0 "Полевые госпиталя"
+    WIG_field_hospitals_idea_des:0 "Внедрение полевых госпиталей позволило сократить потери среди состава."
+    
+    WIG_emergency_state_idea_0:0 "Чрезвычайное положение"
+    WIG_emergency_state_idea_1:0 "Чрезвычайное положение"
+    
+    WIG_B_invests_from:0 "Инвестиции от Вингбардии"
+#characters
+    WIG_alexander_kemerskai_char:0 "Маршал Кемерскай"
+    WIG_alexander_kemerskai_char_desc:0 "Александр Кемерскай Второй, герцландец по происхождению и культурной принадлежности, родился в 964 году в усадьбе своей семьи близ Виннина. Будучи самым младшим сыном он не расчитывал на наследство, а поэтому, как любой другой юный дворянин оказавшийся в его положении метался от одного занятия к другому. Судьба привела его в артиллерийские войска, в которой он быстро сделал карьеру. В 1005 году его назначили на пост военного губернтора Вингбардии, который он занимет и по сей день."
+    
+    WIG_parliament_char:0 "Парламент"
+    WIG_parliament_char_desc:0 "Парламент Вингбардии"
+    
+    WIG_bikolini_char:0 "Джулио Биколини"
+    WIG_bikolini_char:0 "Родился в 954 году сыном городского пекаря. С юных лет интерисовался политикой, благодаря чему стал редактором политической газеты консервативных взглядов."
+#кастом тултипы и флаги, косметик тэги
+    WIG_economic_crisis_bureau_tt:0 "Каждые §C3§! фокуса экономической ветки эффект от нацдуха §RЭкономический кризис§! будет снижаться."
+    WIG_talonieli_mio_focus_tt:0 "Как только истечёт нацдух, нам откроется ВПО §H"Концерн Талониели Индастриз"§!." 
+    WIG_taz_mio_focus_tt:0 "По завершении фокуса нам станет доступен ВПО §H"Талонтский Авто Завод"§!, но вы потеряете доступ к нему если Талонт будет не под вашим контролем."
+    WIG_regia_aeronautica_mio_tt:0 "По завершении фокуса нам откроется ВПО §H"Регио Аэронафтика"§!."
+    WIG_arsenal_variable_moment_tt:0 "От §H1000§! до §H2300§! Вингбардийск. §HПехотное снаряжение§! будет добавлено в государственный запас."
+    WIG_WIP_tt:0 "§RВ РАЗРАБОТКЕ§!"
+    WIG_king_speaks_tt:0 "§HСтарайтесь не пропускать дни между фокусами.§!"
+    WIG_kemerskai_bop_coup_tt:0 "§RКемерскай предпримет попытку переворота.§!"
+    WIG_chaos_new_tree:0 "Загрузит новую ветку фокусов."
+    WIG_chaos_orders_tt:0 "Появится §Hтри§! дивизии рыцарей."
+    WIG_chaos_arm_tt:0 "Появится §Hдве§! танковых дивизии."
+    WIG_chaos_karabineri_tt:0 "Появится §Hтри§! дивизии наёмников"
+    WIG_chaos_conscription_tt:0 "Появится §Hпять§! плохо обученных пехотных дивиизий."
+    WIG_chaos_militia_tt:0 "Появится §Hшесть§! дивизий ополчения."  
+    WIG_the_end_tt:0 "Спасибо за игру! Загляните в решения после этого ивента."
+    WIG_abyssinia_readiness_tt:0 "Мы готовы ко вторжению на §H[?Root.WIG_abyssinia_readiness]§! процентов"
+    WIG_FRC_accepts:0 "Францистрия согласилась"
+    WIG_TUL_accepts:0 "Талуза согласилась"
+    
+    WIG_eco_flag_1:0 "Фокус §HИнвестиции в тяжёлую промышленность§! выполнен"
+    WIG_eco_flag_2:0 "Фокус §HТалАвтоЗавод§! выполнен"
+    WIG_eco_flag_3:0 "Фокус §HЭлектрификация сёл§! выполнен"
+    WIG_regia_flag:0 "Фокус Регио §HАэронафтика§! выполнен"
+    
+#   WIG_economic_bureau_flag_1:0 "Первая часть экономического плана выполнена"
+#   WIG_economic_bureau_flag_2:0 "Вторая часть экономического плана выполнена"
+
+    WIG_falcor_resistance_active_modifier:0 "§rМолодой Фалькор§!"
+    WIG_falcor_resistance_active_modifier_desc:0 "§wЗдесь была замечена активность террористической организации§! §rМолодой Фалькор§!."
+    WIG_falcor_resistance_sleeping_modifier:0 "§rМолодой Фалькор§!"
+    WIG_falcor_resistance_sleeping_modifier_desc:0 "Похоже, что террористы в данном регионе решили залечь на дно. §RПока что.§!"
+    WIG_karthin_button_tt:0 "Открыть карту Карфинской Империи"
+    WIG_decisions_tt:0 "Загляните в решения."
+    WIG_beakolini_expansion_start_tt:0 "§HДанный фокус будет доступен после завершения всех трёх веток фокусов Биколини.§!"
+    WIG_B_KT_army_trains_tt:0 "Страны, согласившиеся на вступление в Карфинский Договор, получат §H40§! единиц опыта армии."
+    
+    WIG_murrsia_DRG_tt:0 "§HРЕГИОН:§! Мурсия\n\§HСТАТУС:§! Под контролем §8драконов§!"
+    WIG_murrsia_WIG_tt:0 "§HРЕГИОН:§! Мурсия\n\§HСТАТУС:§! Под §rнашим§! контролем"
+    WIG_catland_DRG_tt:0 "§HРЕГИОН:§! Северная Абиссиния\n\§HСТАТУС:§! Под контролем §8драконов§!"
+    WIG_catland_WIG_tt:0 "§HРЕГИОН:§! Северная Абиссиния\n\§HСТАТУС:§! Под §rнашим§! контролем"
+    
+    WIGZEBABY_neutrality:0 "Вингбардийская Абиссиния"
+    WIGZEBABY_neutrality_ADJ:0 "Абиссинск."
+    WIGZEBABY_neutrality_DEF:0 "Вингбардийская Северо-Западная Зебрика"
+    
+    WIG_beakolini_faction:0 "Карфинский Договор"
+# партии
+
+    WIG_fascism_party:0 "НФВК"
+    WIG_fascism_party_long:0 "Национальный Фронт Восстановления Карфинии"
+    WIG_neutrality_party:0 "Кабинет министров"
+    WIG_neutrality_party_long:0 "Кабинет министров"
+    WIG_communism_party:0 "ВСДРП"
+    WIG_communism_party_long:0 "Вингбардийская Социал-Демократическая Рабочая Партия"
+    WIG_democratic_party:0 "Малочисленные партии"
+    WIG_konst_party:0 "КПВ"
+    WIG_konst_party_long:0 "Конституционалистская Партия Вингбардии"
+# фокусы
+    WIG_economic_bureau_shared:0 "Бюро развития экономики Вингбардии"
+    WIG_economic_bureau_shared_desc:0 ""
+    
+    wing_shit_happens:0 "Фалькорская Война"
+    
+    WIG_train_griffano_falcor:0 "Линия Гриффано-Фалькор"
+    WIG_train_griffano_falcor_desc:0 ""
+    
+    WIG_oulivetti_electronics:0 "Оуливетти Электроникс"
+    WIG_oulivetti_electronics_desc:0 ""
+    
+    WIG_heavy_invest:0 "Инвестиции в тяжёлую промышленность"
+    WIG_heavy_invest_desc:0 ""
+    
+    WIG_squarona_ges:0 "Реставрация Скваронской ГЭС"
+    WIG_squarona_ges_desc:0 "Скваронская ГЭС уже который год находится в плачевном состоянии, местные страдают от нехватки электроэнергии, из-за чего пользуются её импровизированными источниками."
+    
+    WIG_fezara_chromium:0 "Фезарский хром"
+    WIG_fezara_chromium_desc:0 ""
+    
+    WIG_tal_avto_zavod:0 "ТалАвтоЗавод"
+    WIG_tal_avto_zavod_desc:0 "Талонтский Авто Завод"
+    
+    WIG_train_fakochero_bloodtalon:0 "Путь Факочеро-Бладталон"
+    WIG_train_fakochero_bloodtalon_desc:0 ""
+    
+    WIG_subsidise_talonieli:0 "Субсидии для Талониели"
+    WIG_subsidise_talonieli_desc:0 ""
+
+    WIG_small_business:0 "Поддержка малого бизнеса"
+    WIG_small_business_desc:0 ""
+
+    WIG_mech_selkhoz:0 "Электрификация сёл"
+    WIG_mech_selkhoz_desc:0 ""
+    
+    WIG_economic_miracle:0 "Чудо на Фолио"
+    WIG_economic_miracle_desc:0 ""
+    
+    WIG_mech_mines:0 "Механизация шахт"
+    WIG_mech_mines_desc:0 ""
+    
+    WIG_stal_soarento:0 "Сталь Соаренто"
+    WIG_stal_soarento_desc:0 ""
+    
+    WIG_black_gold:0 "Сладкое нефтезолото"
+    WIG_black_gold_desc:0 ""
+    
+    WIG_regia_aeronautic_shared:0 "Регио Аэронафтика"
+    WIG_regia_aeronautic_shared_desc:0 ""
+    
+    WIG_alco_monopoly:0 "Госмонополия на алкоголь"
+    WIG_alco_monopoly_desc:0 "Государственная монополия на алкоголь - прекрасная инициатива для пополнения бюджета. В купе с минимальной ценой на оный она будет ещё эффективней."
+    
+#   WIG_southern_pearl:0 "Жемчужина Юга" # лень
+#   WIG_southern_pearl_desc:0 ""
+    
+    WIG_regio_esercito_shared:0 "Регио Езерчито"
+    WIG_regio_esercito_shared_desc:0 ""
+    
+    WIG_talkara_academy:0 "Талькарская военная академия"
+    WIG_talkara_academy_desc:0 "Спонсирование Талькарскоое военной академии позволит улучшить навыки наших офицеров."
+    
+    WIG_kemerskai_doctrine:0 "Доктрина Кемерская"
+    WIG_kemerskai_doctrine_desc:0 "Кемерскай не просто так в свои сорок три года стал маршалом артиллерии. К его словам стоит прислушаться."
+    
+    WIG_gun_konkurs:0 "Программа "Греццо""
+    WIG_gun_konkurs_desc:0 "Армии нужна новая, современная винтовка."
+    
+    WIG_vnii_tochmag:0 "ВНИИ ТочМаг"
+    WIG_vnii_tochmag_desc:0 "Вингбардийский Научно-исследовательский институт Точного Магостроения является одним из национальных достояний Вингбардии сейчас находится в плачевном состоянии. С этим нужно разбираться."
+    
+    WIG_new_arty:0 "Обновить артиллерию"
+    WIG_new_arty_desc:0 "Артиллерия - бог войны, а если наш бог хромой - то он бесполезен."
+    
+    WIG_modern_army:0 "Современная армия"
+    WIG_modern_army_desc:0 ""
+    
+    WIG_standart_militia:0 "Унификация винтовок"
+    WIG_standart_militia_desc:0 "Пора уже отправить старые винтовки на склады, или хотя бы доработать их."
+    
+    WIG_national_arsenal:0 "Карфинский арсенал"
+    WIG_national_arsenal_desc:0 ""
+    
+    WIG_gotta_go_fast:0 "Быстро и ещё быстрее"
+    WIG_gotta_go_fast_desc:0 "Скорость в наше время решает крайне многое на поле боя."
+
+    WIG_regia_marina_shared:0 "Региа Марина"
+    WIG_regia_marina_shared_desc:0 "да, я не пользуюсь флотом, как ты узнал?"
+
+    WIG_king_speaks_shared:0 "Речь короля"
+    WIG_king_speaks_shared_desc:0 "Сегодня, король Вингбардии Гарибальд Талонуэль выступит по радио с речью о будущем страны."
+    
+    WIG_call_parliament:0 "Перевыборы в парламент"
+    WIG_call_parliament_desc:0 "Король в своей недавней речи объявил о перевыборах в парламент."
+    
+    WIG_commies_path:0 "ВСДРП" 
+    WIG_commies_path_desc:0 "На выборах победили ВСДРП."
+    
+    WIG_trudovoi_kodeks:0 "Трудовой кодекс"
+    WIG_trudovoi_kodeks_desc:0 "В Вингбардии до сих пор нет четкого трудового законодательства, однако у многих стран Грифонии оно уже давно есть. Чем мы хуже?"
+    
+    WIG_grifsomol:0 "Молодёжные организации"
+    WIG_grifsomol_desc:0 "Создание молодёжных организаций поможет нам воспитать верных патриотов своей страны, своей великой родины - Вингбардии."
+    
+    WIG_increase_industrial:0 "Пятилетний план"
+    WIG_increase_industrial_desc:0 "С помощью пятилетнего плана развития экономики мы улучшим нестабильное экономическое положение Вингбардии."
+    
+    WIG_workers_samoupr:0 "Профсоюзы рабочих"
+    WIG_workers_samoupr_desc:0 ""После принятия закона о легитимизации профсоюзов рабочие будут уверены в том, что завтра их не уволят по надуманной причине, будут уверены в том, что свою плату они будут получать вовремя и соразмерно труду, будут уверены в том, что их права всегда соблюдены!" \n\- Джованни Гаччи, [GetYear]"
+    
+    WIG_nazi_path:0 "НФВК" # национал-популисты
+    WIG_nazi_path_desc:0 "На выборах победили НФВК."
+    
+    WIG_nationalise_heavy:0 "Национализация военпрома"
+    WIG_nationalise_heavy_desc:0 "Военная промышленность является важнейшей для национальной безопасности отраслью экономики, и нельзя допустить чтобы она попала ни в когти проклятых буржуев, стремящихся максимально съэкономить, ни в когти иностранных шпионов."
+    
+    WIG_free_food:0 "Раздача еды беднякам"
+    WIG_free_food_desc:0 "Раздача еды бедным слоям населения поможет им не помереть с голодухи, а нам повысит репутацию."
+    
+    WIG_empower_stazi:0 "Учреждение тайной полиции"
+    WIG_empower_stazi_desc:0 "Тайная полиция следит за каждым приезжим не-вингбардийцем, так, ни один антивингбардийский элемент не проникнет в наше общество."
+    
+    WIG_talont_massacre:0 "Облава на инсургентов"
+    WIG_talont_massacre_desc:0 "Пора устроить парочку показательных облав на этих тварей, зовущих себя "борцами за свободу", а на деле являющихся лишь терроистами, дестабилизирующими наше общество."
+    
+    WIG_neutral_path:0 "КПВ" # Конституционалисты
+    WIG_neutral_path_desc:0 "На выборах победили КПВ."
+    
+    WIG_big_brain_time:0 "Гражданства учёным"
+    WIG_big_brain_time_desc:0 "Вингбардия испытывает острую нехватку молодых и перспективных умов, привлечение оных из бедных стран путём выдачи гражданства может помочь а решении этой проблемы."
+
+    WIG_what_about_king:0 "Новая конституция"
+    WIG_what_about_king_desc:0 "Ныне действуюзая конституция уже устарела и требует либо кардинальных правок, либо полной переписки."
+    
+    WIG_falcor_is_good:0 "Автономия Фалькору"
+    WIG_falcor_is_good_desc:0 "Фалькор уже давно борется против нашей власти. Возможно, небольшая автономия утихомирит их пыл."
+    
+    WIG_wing_spring:0 "Вингбардийская Весна"
+    WIG_wing_spring_desc:0 "Вингбардия при КПВ превращается из глуши и тени былой Карфинской империи в современную страну. Ура!"
+    
+    WIG_look_at_skies:0 "Небеса над нами"
+    WIG_look_at_skies_desc:0 "Небеса над нами"
+    
+    WIG_wingpolis_aero:0 "Вингполис Аэро"
+    WIG_wingpolis_aero_desc:0 "Вингполис Аэро"
+    
+    WIG_rocket_tech:0 "Реактивные двигатели"
+    WIG_rocket_tech_desc:0 ""
+    
+    WIG_air_fighter:0 "Ставка на истребители"
+    WIG_air_fighter_desc:0 ""
+    
+    WIG_air_bombers:0 "Ставка на бомбардировщики"
+    WIG_air_bombers_desc:0 ""
+    
+    WIG_air_new_airbases:0 "Новые аэродромы"
+    WIG_air_new_airbases_desc:0 ""
+
+    WIG_air_radar:0 "Первые радары"
+    WIG_air_radar_desc:0 ""
+#    WIG_hail_new_grover:0 "Да здравствует император!" # вырезано: я думал, что сначала сдохнет шестой, а потом грохнут седьмого
+#    WIG_hail_new_grover_desc:0 ""
+    
+    WIG_welcome_to_falcor:0 "Визит в Карфин"
+    WIG_welcome_to_falcor_desc:0 "Приглашение уже отправлено императору. Осталось дождаться его приезда в нашу страну. §RНичего плохо ведь не произойдёт, правда?§!"
+    
+    WIG_chaos_shared:0 "Хаос в стране"
+    WIG_chaos_shared_desc:0 "Страна парализованна восстанием Фалькора!"
+    
+    WIG_chaos_emergency:0 "Военное положение"
+    WIG_chaos_emergency_desc:0 "Необходимо ввести военное положение, дабы на улицах был хоть какой-то порядок."
+    
+    WIG_chaos_orders:0 "Призвать ордена"
+    WIG_chaos_orders_desc:0 "Ордена нам помогут в войне."
+    
+    WIG_chaos_censorship:0 "Цензура СМИ"
+    WIG_chaos_censorship_desc:0 ""
+    
+    WIG_chaos_arm:0 "Расконсервация складов"
+    WIG_chaos_arm_desc:0 "На складах скопилось много снаряжения. Кажись, пора его использовать."
+    
+    WIG_chaos_roll_out:0 "По машинам!"
+    WIG_chaos_roll_out_desc:0 ""
+    
+    WIG_chaos_onwards:0 "Пора за дело"
+    WIG_chaos_onwards_desc:0 "Пора за дело."
+    
+    WIG_chaos_conscription:0 "Экстренный призыв"
+    WIG_chaos_conscription_desc:0 "Дивизий никогда не бывает мало."
+    
+    WIG_chaos_karabineri:0 "Францистрийские Карабинери"
+    WIG_chaos_karabineri_desc:0 "Карабинери - наёмники, которые воевали по всему миру, в их опыте сомневаться будет лишь глупец."
+    
+    WIG_chaos_diy_guns:0 "Кустарные мастерские"
+    WIG_chaos_diy_guns_desc:0 "Кустарные мастерские помогут нам восполнить нехватку стволов."
+    
+    WIG_chaos_work_for_hobos:0 "Работа для бездомных"
+    WIG_chaos_work_for_hobos_desc:0 ""
+    
+    WIG_chaos_war_loans:0 "Военный займ"
+    WIG_chaos_war_loans_desc:0 "На войну нужны деньги, как-никак."
+    
+    WIG_chaos_tanks:0 "Чудо-оружие"
+    WIG_chaos_tanks_desc:0 "Так называемые "танки" появлись во время Северянской гражданской войны и доказали свою эффективность. Почему-бы и нам не применить переоборудованные трактора против повстанцев?"
+    
+    WIG_chaos_field_help:0 "Полевые госпиталя"
+    WIG_chaos_field_help_desc:0 ""
+    
+    WIG_chaos_buy_guns:0 "Закупка оружия"
+    WIG_chaos_buy_guns_desc:0 "На складах очевидна нехватка оружия. Неплохо будет закупить партию винтовок у Мэйнхеттена."
+    
+    WIG_chaos_militia:0 "Ополчение"
+    WIG_chaos_militia_desc:0 "Фронту нужны солдаты, а поднять ополченцев нам ничего не мешает."
+
+    WIG_chaos_kill_em_all:0 "Верёвка и мыло"
+    WIG_chaos_kill_em_all_desc:0 ""
+    
+    WIG_fleet_1:0 "Новый Адмиралитет"
+    WIG_fleet_1_desc:0 ""
+    
+    WIG_fleet_2:0 "Эксперименты с подлодками"
+    WIG_fleet_2_desc:0 ""
+    
+    WIG_fleet_3:0 "Улучшенная обшивка"
+    WIG_fleet_3_desc:0 ""
+    
+    WIG_fleet_4:0 "Большие калибры"
+    WIG_fleet_4_desc:0 ""
+    
+    WIG_fleet_5:0 "Талькарские верфи"
+    WIG_fleet_5_desc:0 ""
+    
+    WIG_fleet_6:0 "Тактики Сикамеона"
+    WIG_fleet_6_desc:0 ""
+    
+    WIG_fleet_7:0 "Морская пехота"
+    WIG_fleet_7_desc:0 "Наталья, морская пехота!"
+    
+    WIG_fleet_8:0 ""
+    WIG_fleet_8_desc:0 ""
+    
+    WIG_fleet_9:0 "Флагман флота"
+    WIG_fleet_9_desc:0 ""
+    
+    WIG_beakolini_start:0 "Переворот Биколини"
+    
+    WIG_beakolini_cats_1:0 "Южная Авантюра"
+    WIG_beakolini_cats_1_desc:0 "
+    
+    WIG_beakolini_cats_2:0 "Автономия"
+    WIG_beakolini_cats_2_desc:0 "
+    
+    WIG_beakolini_cats_3:0 "Рас Мурсии"
+    WIG_beakolini_cats_3_desc:0 "
+    
+    WIG_beakolini_cats_4:0 "Местный Гарнизон"
+    WIG_beakolini_cats_4_desc:0 "
+    
+    WIG_beakolini_cats_5:0 "Южный Триумф"
+    WIG_beakolini_cats_5_desc:0 "
+    
+    WIG_beakolini_cats_6:0 "Колония"
+    WIG_beakolini_cats_6_desc:0 "
+    
+    WIG_beakolini_cats_7:0 "Генерал-губернатор"
+    WIG_beakolini_cats_7_desc:0 "
+    
+    WIG_beakolini_cats_8:0 "Дорога Мяутекель-Мяуак"
+    WIG_beakolini_cats_8_desc:0 "
+    
+    WIG_beakolini_cats_9:0 "Вольфрамовая жила"
+    WIG_beakolini_cats_9_desc:0 "
+    
+    WIG_beakolini_cats_10:0 "Ассимиляция котов"
+    WIG_beakolini_cats_10_desc:0 "
+    
+    WIG_beakolini_internal_1:0 "Внутренние проблемы"
+    WIG_beakolini_internal_1_desc:0 ""
+
+    WIG_beakolini_internal_2:0 "Восстановить золотой резерв"
+    WIG_beakolini_internal_2_desc:0 ""
+
+    WIG_beakolini_internal_3:0 "Светское образование"
+    WIG_beakolini_internal_3_desc:0 ""
+
+    WIG_beakolini_internal_4:0 "Радио в каждый дом"
+    WIG_beakolini_internal_4_desc:0 ""
+    
+
+    WIG_beakolini_internal_5:0 "Заставить бездельников работать" # заводы
+    WIG_beakolini_internal_5_desc:0 ""
+
+    WIG_beakolini_internal_6:0 "Анти-тунеядческая компания" # заводы + молодое индустр. общество
+    WIG_beakolini_internal_6_desc:0 ""
+
+    WIG_beakolini_internal_7:0 "Открыть новые университеты" # слот исследований
+    WIG_beakolini_internal_7_desc:0 ""
+
+
+    WIG_beakolini_internal_8:0 "Ликвидация безграмотности" # грамотность +1
+    WIG_beakolini_internal_8_desc:0 ""
+
+    WIG_beakolini_internal_9:0 "Правки в конституцию" 
+    WIG_beakolini_internal_9_desc:0 ""
+
+    WIG_beakolini_internal_10:0 "Поезда по расписанию"
+    WIG_beakolini_internal_10_desc:0 ""
+
+    WIG_beakolini_internal_11:0 "Страна в порядке"
+    WIG_beakolini_internal_11_desc:0 ""
+
+    
+    WIG_beakolini_external_1:0 "Карфинский Договор"
+    WIG_beakolini_external_1_desc:0 ""
+        
+    WIG_beakolini_external_2:0 "Талуза"
+    WIG_beakolini_external_2_desc:0 ""
+         
+    WIG_beakolini_external_3:0 "Францистрия"
+    WIG_beakolini_external_3_desc:0 ""    
+    
+    WIG_beakolini_external_4:0 "Инвестиции в Талузу"
+    WIG_beakolini_external_4_desc:0 ""
+      
+    WIG_beakolini_external_5:0 "Военный пакт с Талузой"
+    WIG_beakolini_external_5_desc:0 ""
+      
+    WIG_beakolini_external_6:0 "Совместные учения"
+    WIG_beakolini_external_6_desc:0 ""
+      
+#    WIG_beakolini_external_7:0 ""
+#    WIG_beakolini_external_7_desc:0 ""
+      
+    WIG_beakolini_external_8:0 "Инвестиции в Францистрию"
+    WIG_beakolini_external_8_desc:0 ""
+      
+    WIG_beakolini_external_9:0 "Военный пакт с Францистрией"
+    WIG_beakolini_external_9_desc:0 ""
+      
+    WIG_beakolini_external_10:0 "Южный Экономический Союз"
+    WIG_beakolini_external_10_desc:0 ""
+    
+    WIG_beakolini_expansion_start:0 "Возрождение империи"
+    WIG_beakolini_expansion_start_desc:0 ""
+    
+
+#ивенты
+
+    wig_kostyl_name_1:0 "КОСТЫЛЬ, ИГНОРИРУЙТЕ"
+    
+    wig_politcs.1.t:0 "Выборы в парламент" # выборы, выборы, кандидаты...
+    wig_politcs.1.d:0 "Указом короля Гарибальда III, было назначено проведение выборов на 19 февраля 1007. И вот, биллютени подсчитаны, победили..."
+        
+    wig_politcs.1.a:0 "...ВСДРП!"
+    wig_politcs.1.b:0 "...НФВК!"
+    wig_politcs.1.c:0 "...КПВ!" 
+    
+    wig_politcs.2.t:0 "Кандидаты на победу"
+    wig_politcs.2.d:0 "ВСДРП - Вингбардийская Социал-Демократическая Рабочая Партия отстаивает права рабочих и социальное равенство. Партия возникла под влиянием аквилейского республиканизма и идей Карамель Маркс.\n\nНФВК - Национальный Фронт Восстановления Карфинии поддерживает идеалы протекционистской экономической доктрины и карфинский национализм - идею о возрождении величия Карфинской Империи.\n\nКПВ - Конституционалистская Партия Вингбардии за создание конституциональной монархии в Вингбардии и приверженцы рыночной экономики."
+    
+    wig_politcs.2.a:0 "Хм, интересно"
+    
+    wig_politcs.3.t:0 "Рапорт"
+    wig_politcs.3.d:0 "[GetDateText]\n\nСРОЧНО\n\nНАЧАЛЬНИКУ ПОЛИЦИИ ГОРОДА ФАЛЬКОР\n\nВо время поездки в Фалькор, неизвестным было совершенно покушение на жизнь Эрцгерцога Гровера Седьмого. Уже ведётся расследование. По предварительным данным, террорист состоял в группировке "Молодой Фалькор". В городе введён комендантский час."
+    
+    wig_politcs.3.a:0 "Этого не хватало..."
+    
+    wig_politcs.4.t:0 "В Фалькоре"
+    wig_politcs.4.d:0 ""Держи, Барт" - сказал грифон, передавая своему другу старое ружьё.\n\n Барт взял его и сказал: "Тео, скоро начинаем?"\n\n"Как по радио передадут сигнал, так и пойдём." - ответил ему Тео.\n\nСпустя несколько минут, по радио передавали: "Восстаньте, фалькорцы! Настало время обрести свободу от этих проклятых вингбардийских захватчиков! СЛАВА ФАЛЬКОРУ!"\n\n"Слышал? Пошли. Пора за дело." - произнёс Тео, после чего он, а за ним и Барт встали и вышли с оружием из дому."
+    wig_politcs.4.a:0 ""Настало время нашей свободы.""   
+
+    wig_politcs.5.t:0 "Переворот"
+    wig_politcs.5.d:0 "Утро в Карфине. "
+    wig_politcs.5.a:0 ""
+    
+    wig_politcs.7.t:0 "Предложение от Вингбардии"
+    wig_politcs.7.d:0 "Ты не должен быть здесь."
+    wig_politcs.7.a:0 "да"
+    wig_politcs.7.c:0 "не"    
+    
+    wig_politcs.8.t:0 "Предложение от Вингбардии"
+    wig_politcs.8.d:0 "Ты не должен быть здесь."
+    wig_politcs.8.a:0 "да"
+    wig_politcs.8.c:0 "не"
+    
+    
+# решения
+    WIG_kemerskai_power:0 "Клика Кемерская"
+    WIG_kemerskai_power_1:0 "Перевес в сторону Кемерская"
+    WIG_kemerskai_power_2:0 "Преимущество Кемерская"
+    WIG_kemerskai_power_2:0 "Превосходство Кемерская"
+    
+    
+    WIG_beakolini_power:0 "Сторонники Биколини"
+    WIG_beakolini_power_1:0 "Преимущество Биколини"
+    WIG_beakolini_power_2:0 "Превосходство Биколини"
+    
+    WIG_bop_beakolini_dicktator_balance_of_power:0 "Обставновка в Генштабе"
+    
+    WIG_bop_chad_side:0 "aboba"
+    
+    WIG_bop_soy_0:0 "Война"
+    WIG_bop_soy_0_desc:0 "ЗАГЛУШКА"
+    
+    WING_shit:0 "Para bellum"
+    
+#    WIG_bop_soy_0:0 "шо?!"
+#    WIG_bop_chad_0:0 "Выступить с речью"

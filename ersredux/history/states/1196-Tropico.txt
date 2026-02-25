@@ -1,0 +1,20 @@
+state={
+	id=1196
+	name="STATE_1196"
+	provinces={
+		2404 2403 2380 2379 2378 2377 
+	}
+	resources={
+		rubber = 5
+	}
+	history={
+		owner = MER
+		add_core_of = MER
+		victory_points={
+			2379 15
+		}
+	}
+	manpower=18544
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

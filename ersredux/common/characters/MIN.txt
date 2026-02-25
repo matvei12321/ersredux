@@ -1,0 +1,63 @@
+characters = {
+
+	MIN_pinkie={
+		name=MIN_pinkie
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/MIN/ers_pinkie_advisor.tga"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = MIN_pinkie_token
+			cost = 150
+			allowed = {
+				owns_state = 87
+			}
+			available = {
+				owns_state = 87
+			}
+			visible = {
+				
+			}
+			traits = {
+				blackstones_miner
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		gender = female
+	}
+	
+	MIN_limestone={
+		name=MIN_limestone
+		portraits={
+			civilian={
+				large="gfx/leaders/MIN/limestone_pie_leader.tga"
+			}
+		}
+		country_leader={
+			desc="MIN_limestone_desc"
+			ideology=nazism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			desc="ers_limestone_pie_desc"
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			desc="ers_limestone_pie_desc"
+			ideology=liberalism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		gender = female
+	}
+}

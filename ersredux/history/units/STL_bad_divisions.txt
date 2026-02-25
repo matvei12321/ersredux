@@ -1,0 +1,30 @@
+﻿
+units = {
+	division = {
+		name = "Shtrafnoy Batalion Smertnikov"
+		location = 3335
+		division_template = "Equality Militia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Shtrafnoy Batalion Smertnikov"
+		location = 3335
+		division_template = "Equality Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Shtrafnoy Batalion Smertnikov"
+		location = 3335
+		division_template = "Equality Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Shtrafnoy Batalion Smertnikov"
+		location = 3335
+		division_template = "Equality Division"
+		start_experience_factor = 0.1
+	}
+	
+	
+	
+}

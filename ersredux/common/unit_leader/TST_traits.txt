@@ -1,0 +1,31 @@
+leader_traits = {
+
+	armed_sage_trait = {
+		type = land
+		trait_type = personality_trait
+		
+		unit_type = {
+			type = magical_infantry
+			type = magical_motorized
+			type = magical_mechanized
+		}
+		
+		new_commander_weight = {
+			factor = 0
+		}
+
+		modifier = {
+		modifier_army_sub_unit_magical_infantry_attack_factor = 0.1
+		modifier_army_sub_unit_magical_infantry_defence_factor = 0.1
+		modifier_army_sub_unit_magical_infantry_speed_factor = 0.1
+		modifier_army_sub_unit_magical_motorized_attack_factor = 0.1
+		modifier_army_sub_unit_magical_motorized_defence_factor = 0.1
+		modifier_army_sub_unit_magical_motorized_speed_factor = 0.1
+		modifier_army_sub_unit_magical_mechanized_attack_factor = 0.1
+		modifier_army_sub_unit_magical_mechanized_defence_factor = 0.1
+		modifier_army_sub_unit_magical_mechanized_speed_factor = 0.1
+		}
+		
+	}
+	
+}

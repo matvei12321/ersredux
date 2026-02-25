@@ -1,0 +1,27 @@
+ANR_civil_war_cat = {
+	
+	allowed = {
+		tag = ANR
+		
+	}
+	icon = GFX_decision_category_military_operation
+	
+	visible = {
+	
+	}
+	priority = 10
+}
+
+ANR_beer_politics = {
+	
+	allowed = {
+		tag = ANR
+		
+	}
+	
+	visible = {
+	
+	}
+	priority = 1000
+	visible_when_empty = yes
+}

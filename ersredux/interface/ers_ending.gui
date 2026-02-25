@@ -1,0 +1,63 @@
+guiTypes = {
+	
+	containerWindowType = {
+		name = "ers_ending"
+		size = { width = 600 height = 510}
+		position = { x=-283 y=-297 }
+		Orientation = center
+		moveable = yes
+		clipping = no
+		show_sound = menu_open_window
+		hide_sound = menu_close_window
+		instantTextboxType = {
+			name = "ending_picture"
+			text = "[get_current_ending_picture]"
+			position = { x = 300 y = 138 }
+		}
+		iconType = {
+			name = "bgewwe"
+ 			spriteType = "GFX_ending_base_bg"
+ 			position = { x=0 y=0 }
+ 			clipping = yes
+ 		}
+		#[get_current_ending_picture]
+		Background = {
+			name = "Background"
+			quadTextureSprite = "GFX_ending_base_bg"
+		}
+		
+		instantTextboxType = {
+			name = "ers_the_end"
+			position = { x=167 y=60 }
+			font = "hoi_20bs"
+			text = "ers_the_end"
+			maxWidth = 300
+			maxHeight = 432
+			#fixedsize = yes
+			scrollbartype = "standardtext_slider"
+		}
+		instantTextboxType = {
+			name = "ers_ending_text"
+			position = { x=30 y=100 }
+			font = "hoi_20bs"
+			text = "[ers_ending_text_loc]"
+			maxWidth = 286
+			maxHeight = 400
+			#fixedsize = yes
+			scrollbartype = "standardtext_slider"
+		}
+		
+		
+		buttonType = {
+			name = "ers_ending_next_button"
+			buttonText = NEXT
+			buttonFont = "hoi_16mbs"
+			position = { x=367 y=483 }
+			quadTextureSprite = "GFX_slider_202"
+			clicksound = click_default
+			orientation = UPPER_LEFT
+		}
+		
+		
+	}
+}

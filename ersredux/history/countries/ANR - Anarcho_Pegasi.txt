@@ -1,0 +1,58 @@
+capital = 175
+
+set_research_slots = 3
+starting_train_buffer = 3
+
+save_global_event_target_as = anarcho_pegasi_puppet_target
+
+recruit_character = ANR_still_will
+recruit_character = ANR_liria
+recruit_character = ANR_pink_ears
+recruit_character = ANR_nefroniya
+recruit_character = ANR_odysseya
+recruit_character = ANR_orissariy
+
+
+add_ideas = { 
+	
+	lack_of_scientists3
+	pre_industrial_society
+	poverty5
+	ers_pegasism
+	
+	partial_economic_mobilisation
+	extensive_conscription
+}
+
+set_technology = {
+	 
+	pegasi_race = 1
+	tech_support = 1
+	tech_pegasi = 1
+	melee_weapons = 1
+	melee_weapons1 = 1
+	infantry_weapons = 1
+	basic_train = 1
+	pre_gw_artillery = 1
+	motorised_infantry = 1
+}
+actually_fix_weapon_techs = yes #THIS HAS TO BE CALLED IN EVERY HISTORY FILE RIGHT AFTER MAIN set_technology!
+
+
+
+set_popularities = {
+
+	anarchism = 72
+	democratic = 6
+	neutrality = 15
+	fascism = 7
+}
+set_politics = {
+	ruling_party = anarchism
+	last_election = "1.10.10"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+set_stability = 0.3
+set_war_support = 0.75

@@ -1,0 +1,30 @@
+
+state={
+	id=234
+	name="STATE_234"
+	resources={
+		oil=4.000
+	}
+
+	history={
+		owner = UMF
+		add_core_of = UMF
+		victory_points = {
+			3159 5 
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+
+		}
+
+	}
+
+	provinces={
+		3159 3311 6104 6213 6289 6313 6405 
+	}
+	manpower=291998
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

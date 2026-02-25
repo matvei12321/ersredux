@@ -1,0 +1,436 @@
+ideas = {
+
+	country = {
+	
+		ANR_wild_ride = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = anarchist_truck
+			
+			modifier = {
+				production_factory_max_efficiency_factor = -0.1
+				industrial_capacity_factory = 0.125
+				army_speed_factor = 0.075
+				army_attack_factor = 0.025
+			}
+			equipment_bonus = {
+				motorized_equipment = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+			}
+		}
+		
+		ANR_motivation_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+			}
+			
+			modifier = {
+				ARMY_ORG_FACTOR = 0.45
+				ARMY_ORG_REGAIN = 0.25
+				org_loss_when_moving = -0.5
+				army_speed_factor = 0.35
+				army_attack_factor = 0.5
+				ai_focus_aggressive_factor = 100
+			}
+		}
+		
+		
+		ANR_drinking_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			on_add = {
+				hidden_effect = {
+					ROOT = {
+						add_to_variable = {
+							beer_variable_production_var = -10
+						}
+					}
+				}
+			}
+			on_remove = {
+				hidden_effect = {
+					ROOT = {
+						add_to_variable = {
+							beer_variable_production_var = 10
+						}
+					}
+				}
+			}
+			picture = vodka
+			
+			modifier = {
+				political_power_gain = -0.4
+				army_morale_factor = 0.075
+				research_speed_factor = -0.025
+				army_speed_factor = 0.025
+				army_attack_factor = 0.025
+				army_defence_factor = -0.025
+				stability_factor = 0.05
+				custom_modifier_tooltip = minus_10_beer_monthly_tt
+			}
+		}
+		
+		ANR_only_who_worked_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			on_add = {
+				hidden_effect = {
+					ROOT = {
+						add_to_variable = {
+							beer_variable_production_var = -5
+						}
+					}
+				}
+			}
+			on_remove = {
+				hidden_effect = {
+					ROOT = {
+						add_to_variable = {
+							beer_variable_production_var = 5
+						}
+					}
+				}
+			}
+			picture = vodka
+			
+			modifier = {
+				army_morale_factor = 0.05
+				army_speed_factor = 0.025
+				army_attack_factor = 0.025
+				stability_factor = 0.025
+				custom_modifier_tooltip = minus_5_beer_monthly_tt
+			}
+		}
+		
+		ANR_drinking_idea_for_all = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			on_add = {
+				hidden_effect = {
+					ROOT = {
+						add_to_variable = {
+							beer_variable_production_var = 15
+						}
+					}
+				}
+			}
+			on_remove = {
+				hidden_effect = {
+					ROOT = {
+						add_to_variable = {
+							beer_variable_production_var = 15
+						}
+					}
+				}
+			}
+			picture = vodka
+			
+			modifier = {
+				political_power_gain = -0.8
+				army_morale_factor = 0.1
+				research_speed_factor = -0.05
+				army_speed_factor = 0.055
+				army_attack_factor = 0.055
+				army_defence_factor = -0.05
+				stability_factor = 0.075
+				custom_modifier_tooltip = minus_15_beer_monthly_tt
+			}
+		}
+		
+		ANR_ultrasex_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = MAN_framed_heart
+			
+			modifier = {
+				monthly_population = 0.45
+				stability_factor = -0.1
+			}
+		}
+		
+		ANR_treasure_for_everyone = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_deal_with_the_devil
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				stability_factor = -0.025
+			}
+		}
+		
+		ANR_anarchic_power_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = broken_resistance
+			removal_cost = -1
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.05
+				army_org_factor = -0.035
+				conscription = 0.02
+			}
+		}
+		
+		ANR_stop_politika_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = HEL_free_toilers_of_adelart
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.75
+				war_support_factor = 0.1
+				mobilization_speed = 0.10
+				drift_defence_factor = -0.5
+			}
+		}
+		
+		ANR_stop_state_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_syndicalism_drift_bonus
+			removal_cost = -1
+			modifier = {
+				trade_laws_cost_factor = -0.90
+				mobilization_laws_cost_factor = -0.90
+				stability_factor = -0.025
+				war_support_factor = -0.025
+			}
+		}
+		
+		ANR_more_guns_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = ast_volunteer_defence_corps
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		
+		ANR_march_to_farsh = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = jap_the_unthinkable_option
+			removal_cost = -1
+			modifier = {
+				conscription = 0.05
+				monthly_population = -0.08
+			}
+		}
+		
+		ANR_sing_revolution_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = HEL_intellectual_guidance_idea
+			removal_cost = -1
+			modifier = {
+				training_time_army_factor = -0.05
+				land_reinforce_rate = 0.05
+				army_speed_factor = 0.05
+			}
+		}
+		
+		ANR_uncontrollable_banditism = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = HEL_anarchia_mama
+			removal_cost = -1
+			modifier = {
+				stability_weekly = -0.005
+				weekly_manpower = -500
+				conscription_factor = -0.25
+				war_support_factor = -0.3
+			}
+		}
+		
+		ANR_uncontrollable_banditism_1 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = HEL_anarchia_mama
+			
+			modifier = {
+				weekly_manpower = -200
+				war_support_factor = -0.1
+				training_time_army_factor = -0.05
+			}
+		}
+		
+		ANR_international_revolutionaries = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = hol_haven_of_tolerance
+			removal_cost = -1
+			modifier = {
+				send_volunteer_size = 8
+				send_volunteer_divisions_required = -0.50
+				send_volunteers_tension = -0.20
+				non_core_manpower = 0.03
+			}
+		}
+		
+		ANR_desorganisation_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = chi_incompetent_officers
+			removal_cost = -1
+			modifier = {
+				army_org_factor = -0.1
+				army_morale_factor = 0.035
+				COMMAND_ABILITIES_COST_FACTOR = -0.1
+				max_planning = -0.50
+			}
+		}
+		
+		ANR_farmers_to_raders = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = chi_incompetent_officers
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.02
+				stability_factor = -0.05
+				monthly_population = -0.05
+				army_core_attack_factor = 0.025
+				army_core_defence_factor = 0.025
+				political_power_gain = -0.25
+			}
+		}
+		
+		ANR_destroy_occipied_territories = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = chi_incompetent_officers
+			removal_cost = -1
+			modifier = {
+				resistance_growth = -0.15
+				compliance_growth = 0.15
+				production_speed_buildings_factor = -0.1
+				local_resources_factor = -0.15
+			}
+		}
+	}
+}

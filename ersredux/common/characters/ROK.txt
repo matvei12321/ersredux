@@ -1,0 +1,219 @@
+characters={
+	ROK_octavia = {
+		name=ROK_octavia
+		portraits={
+			civilian={
+				large="gfx/leaders/ROK/ers_octavia.tga"
+			}
+			army = {
+				large="gfx/leaders/ROK/ers_octavia.tga"
+			}
+		}
+		
+		field_marshal={
+			traits={ earthponies_race_trait harsh_leader }
+			skill=2
+			attack_skill=1
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+		
+		country_leader={
+			desc="ROK_octavia_desc"
+			ideology=bandit
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	ROK_steel_horn = {
+		name=ROK_steel_horn
+		portraits={
+			civilian={
+				large="gfx/leaders/ROK/ers_Sheriff.tga"
+			}
+		}
+		
+		country_leader={
+			desc="ROK_horn_DESC"
+			ideology=despotism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	ROK_iron_hoof = {
+		name=ROK_iron_hoof
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+			army={
+				small="gfx/interface/ideas/idea_unknown_advisor.dds"
+			}
+		}
+		
+		advisor={
+			slot = theorist
+			idea_token = ROK_iron_hoof
+			cost = 150
+			allowed = {
+				original_tag = ROK
+			}
+			available = {
+				has_country_flag = rok_iron_hoof_unlocked
+			}
+			traits = {
+				ROK_iron_hoof_trait
+			}
+			research_bonus = {
+				infantry_weapons = 0.1
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	
+	#### Corps Commanders
+	
+	ROK_iris = {
+		name=ROK_iris
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/UNC/tesla_advisor.tga"
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		
+		corps_commander={
+			traits={ earthponies_race_trait planning_skill }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	
+	ROK_joshua = {
+		name=ROK_joshua
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/UNC/tesla_advisor.tga"
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		
+		corps_commander={
+			visible = {
+				has_country_flag = rok_joshua_unlocked_flag
+			}
+			traits={ earthponies_race_trait adaptable }
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	
+	ROK_old_owl = {
+		name=ROK_old_owl_name
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/UNC/tesla_advisor.tga"
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		
+		corps_commander={
+			visible = {
+				has_country_flag = rok_old_owl_unlocked_flag
+			}
+			traits={ rok_old_owl_trait pegasi_race_trait organisatrice }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	
+	ROK_violina = {
+		name=ROK_violina
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/UNC/tesla_advisor.tga"
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		
+		corps_commander={
+			visible = {
+				has_country_flag = rok_new_guard_flag
+			}
+			traits={ earthponies_race_trait }
+			skill=2
+			attack_skill=1
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	
+	ROK_white_wing = {
+		name=ROK_white_wing
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/UNC/tesla_advisor.tga"
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		
+		corps_commander={
+			visible = {
+				has_country_flag = rok_new_guard_flag
+			}
+			traits={ pegasi_race_trait }
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	
+	ROK_double_gun = {
+		name=ROK_double_gun
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/UNC/tesla_advisor.tga"
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		
+		field_marshal={
+			visible = {
+				has_country_flag = rok_new_guard_flag
+			}
+			traits={ earthponies_race_trait }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+}

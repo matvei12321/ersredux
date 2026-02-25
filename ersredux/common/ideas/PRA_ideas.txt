@@ -1,0 +1,353 @@
+ideas = {
+	country= {
+		PRG_shors_idea = { 
+
+			picture = ROM_king_carol_ii_hedonist
+
+			removal_cost = -1
+				
+			allowed = {
+				original_tag = PRG
+			}
+		
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+		}
+	}
+	
+	country= {
+		PRG_grimmler_idea = { 
+
+			removal_cost = -1
+				
+			picture = prane_burning
+			
+			allowed = {
+				original_tag = PRG
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				stability_factor = -0.1
+				MONTHLY_POPULATION = -0.05
+				global_building_slots_factor = -0.25
+				political_power_gain = -0.8
+			}
+		}
+		
+		PRG_kommite = { 
+
+			removal_cost = -1
+
+			
+			allowed = {
+				original_tag = PRG
+			}
+		
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = -1.0
+			}
+		}
+		
+		PRA_revansh = { 
+
+			removal_cost = -1
+
+			
+			picture = pra_skull
+			
+			allowed = {
+				original_tag = PRG
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				drift_defence_factor = -0.1
+				stability_factor = -0.1
+				fascism_drift = 0.02
+			}
+		}
+		
+		PRA_peasants_support_1 = { 
+
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = PRG
+			}
+		
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+
+			modifier = {
+				conscription = -0.05
+				mobilization_speed = -0.1
+				communism_drift = 0.01
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		
+		PRA_aristocrats_support_1 = { 
+
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = PRG
+			}
+		
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+
+			modifier = {
+				conscription = 0.05
+				mobilization_speed = 0.1
+				neutrality_drift = 0.01
+				industrial_capacity_factory = -0.05
+				production_speed_buildings_factor = -0.1
+			}
+		}
+		
+		PRA_fight_with_fascism = { 
+
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = PRG
+			}
+		
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+
+			modifier = {
+				fascism_drift = -0.01
+			}
+		}
+		
+		PRA_vs_fascism_conscription = { 
+
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = PRG
+			}
+		
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+
+			modifier = {
+				conscription = 0.05
+				TRAINING_TIME_ARMY_FACTOR = -0.5
+				stability_factor = -0.1
+			}
+		}
+		
+		PRA_peasant_taxes = { 
+
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = PRG
+			}
+		
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+
+			modifier = {
+				consumer_goods_factor = -0.1
+				stability_factor = 0.05
+			}
+		}
+		
+		PRA_aristocrats_1_idea = { 
+
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = PRG
+			}
+		
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.1
+				stability_factor = -0.05
+				weekly_manpower = 300
+				political_power_gain = 0.04
+			}
+		}
+		
+		PRA_we_know_our_economy_sucks = { 
+
+			removal_cost = -1
+			
+			picture = LEC_exhausted_reserves
+			
+			allowed = {
+				original_tag = PRG
+			}
+		
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+
+			modifier = {
+				consumer_goods_factor = -0.15
+				production_speed_buildings_factor = -0.1
+			}
+		}
+		
+		PRA_banned_communism = { 
+
+			removal_cost = -1
+			
+			picture = jap_the_unthinkable_option
+			
+			allowed = {
+				original_tag = PRG
+			}
+		
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+
+			modifier = {
+				stability_factor = 0.05
+				communism_drift = -0.05
+				communism_acceptance = -50
+			}
+		}
+		
+		PRA_fascism_army_org_100_days = { 
+
+			removal_cost = -1
+			
+			available = {
+				has_civil_war = yes
+			}
+			
+			picture = MEX_politicised_army
+			
+			allowed = {
+				original_tag = PRG
+			}
+			
+			modifier = {
+				army_org_factor = 0.1
+			}
+		}
+		
+		PRA_fascism_army_attack_and_defence_100_days = { 
+
+			removal_cost = -1
+			
+			available = {
+				has_civil_war = yes
+			}
+			
+			picture = FRA_national_mobilization_focus
+			
+			allowed = {
+				original_tag = PRG
+			}
+			
+			modifier = {
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+				army_speed_factor = 0.025
+			}
+		}
+		
+		PRA_fascism_hope_idea_100_days = { 
+
+			removal_cost = -1
+			
+			available = {
+				has_civil_war = yes
+			}
+			
+			picture = FRA_scw_intervention_republicans_focus
+			
+			allowed = {
+				original_tag = PRG
+			}
+			
+			modifier = {
+				conscription_factor = 0.1
+				stability_factor = 0.025
+				dig_in_speed_factor = 0.1
+				army_morale_factor = 0.1
+			}
+		}
+		
+		PRA_synthes_idea = { 
+
+			removal_cost = -1
+
+			
+			picture = pra_skull
+			
+			allowed = {
+				original_tag = PRG
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				fascism_drift = 0.01
+				communism_drift = 0.01
+				democratic_drift = 0.01
+				neutrality_drift = 0.01
+				conscription = 0.05
+				conscription_factor = 0.1
+				stability_factor = 0.1
+				war_support_factor = 0.15
+			}
+		}
+	}
+}

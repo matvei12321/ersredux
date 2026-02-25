@@ -1,0 +1,596 @@
+Soc_thestralia = {
+
+
+	Soc_thestralia_create = {
+		icon = red_star
+		available = {
+			AND = {
+			
+				OR = {
+					owns_state = 30
+					any_allied_country = {
+						owns_state = 30
+					}
+				}
+			
+				OR = {
+					owns_state = 16
+					any_allied_country = {
+						owns_state = 16
+					}
+				}
+				
+				OR = {
+					owns_state = 25
+					any_allied_country = {
+						owns_state = 25
+					}
+				}
+				
+				OR = {
+					owns_state = 353
+					any_allied_country = {
+						owns_state = 353
+					}
+				}
+				
+				OR = {
+					owns_state = 221
+					any_allied_country = {
+						owns_state = 221
+					}
+				}
+				
+				OR = {
+					owns_state = 33
+					any_allied_country = {
+						owns_state = 33
+					}
+				}
+				
+				OR = {
+					owns_state = 15
+					any_allied_country = {
+						owns_state = 15
+					}
+				}
+				
+				OR = {
+					owns_state = 32
+					any_allied_country = {
+						owns_state = 32
+					}
+				}
+				
+				OR = {
+					owns_state = 50
+					any_allied_country = {
+						owns_state = 50
+					}
+				}
+				
+				OR = {
+					owns_state = 80
+					any_allied_country = {
+						owns_state = 80
+					}
+				}
+				
+				OR = {
+					owns_state = 113
+					any_allied_country = {
+						owns_state = 113
+					}
+				}
+				
+				OR = {
+					owns_state = 84
+					any_allied_country = {
+						owns_state = 84
+					}
+				}
+				
+				OR = {
+					owns_state = 13
+					any_allied_country = {
+						owns_state = 13
+					}
+				}
+				
+				OR = {
+					owns_state = 31
+					any_allied_country = {
+						owns_state = 31
+					}
+				}
+
+				
+
+				
+			}
+		}
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			base = 100
+		}
+		visible = {
+			AND = {
+				has_government = communism
+				NOT = {
+					has_country_flag = TST_thestralia_united
+				}
+			}
+		}
+		complete_effect = {
+		
+			news_event = {
+				id = armed_sage_news.2
+				days = 1
+			}
+			set_cosmetic_tag = TST_Armed_Sage_thestralia
+			set_country_flag = TST_thestralia_united
+			if = {
+				limit = {
+					has_country_leader = {
+					character = TST_Armed_Sage
+					ruling_only = yes
+					}
+				}
+				set_country_leader_ideology = futurist_socialism
+				TST_Armed_Sage = {
+					set_portraits = {
+						army = { 
+							###small ="MySmallCharacterGFX" 
+							large ="GFX_Armed_Sage_1" 
+						}
+						civilian = { 
+							###small ="MySmallCharacterGFX" 
+							large ="GFX_Armed_Sage_1"  
+						}
+					}
+				}
+			}
+			hidden_effect = {
+			
+				swap_ideas = {
+					remove_idea = TST_Armed_Sage_island_of_hope_idea
+					add_idea = TST_Armed_Sage_island_of_hope_idea1
+				}
+			
+				every_country = {
+					if = {
+						limit = {
+							is_in_faction_with = TST
+						}
+						TST = {
+							annex_country = {
+								target = PREV
+								transfer_troops = yes
+							}
+						}
+						every_core_state = { 
+							add_core_of = TST
+						}
+					}
+				}
+		
+			}
+			
+		}
+	}
+	
+	Soc_equestria_create = {
+		icon = GFX_decision_equestrian_union
+		available = {
+			owns_state = 30
+			owns_state = 123
+			owns_state = 170
+			owns_state = 74
+			owns_state = 153
+			owns_state = 344
+		}
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			base = 100
+		}
+		visible = {
+			AND = {
+				has_country_flag = TST_thestralia_united
+				OR = {
+					has_completed_focus = TST_Armed_Sage_focus_26
+					has_completed_focus = TST_Armed_Sage_focus_27
+				}
+			}
+		}
+		complete_effect = {
+		
+			country_event = {
+				id = armed_sage.107
+				days = 1
+			}
+			
+			
+			
+		}
+	}
+	
+	Soc_thestralia_drg = {
+		icon = red_star
+		available = {
+			owns_state = 25
+		}
+		cost = 50
+		ai_will_do = {
+			base = 100
+		}
+		visible = {
+			AND = {
+				owns_state = 25
+				NOT = {
+					owns_state = 79
+				}
+			}
+		}
+		complete_effect = {
+			
+			start_border_war = {
+			change_state_after_war = no
+				attacker = {
+					state = 25
+					num_provinces = 2
+					modifier = 1
+					dig_in_factor = 0
+					terrain_factor = 0
+					on_win = armed_sage.25
+					on_lose = armed_sage.26
+				}	
+				defender = {
+					state = 79
+					num_provinces = 3
+				}
+			}
+			
+		}
+	}
+	
+	TST_integrate_NEI = {
+		icon = red_star
+		available = {
+		}
+		cost = 40 fire_only_once = yes
+		ai_will_do = {
+			base = 100
+		}
+		visible = {
+			AND = {
+				has_completed_focus = TST_Armed_Sage_focus_5
+				16 = {
+					AND = {
+						is_owned_by = TST
+						NOT = {
+							is_core_of = TST
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			NEI = { add_to_ROOT_potential_cores = yes }
+		}
+	}
+	
+	TST_integrate_YKL = {
+		icon = red_star
+		available = {
+		}
+		cost = 40 fire_only_once = yes
+		ai_will_do = {
+			base = 100
+		}
+		visible = {
+			AND = {
+				has_completed_focus = TST_Armed_Sage_focus_5
+				25 = {
+					AND = {
+						is_owned_by = TST
+						NOT = {
+							is_core_of = TST
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			YKL = { add_to_ROOT_potential_cores = yes }
+		}
+	}
+	
+	TST_integrate_PLP = {
+		icon = red_star
+		available = {
+		}
+		cost = 40 fire_only_once = yes
+		ai_will_do = {
+			base = 100
+		}
+		visible = {
+			AND = {
+				has_completed_focus = TST_Armed_Sage_focus_5
+				353 = {
+					AND = {
+						is_owned_by = TST
+						NOT = {
+							is_core_of = TST
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			PLP = { add_to_ROOT_potential_cores = yes }
+		}
+	}
+	
+	TST_integrate_YUK = {
+		icon = red_star
+		available = {
+		}
+		cost = 40 fire_only_once = yes
+		ai_will_do = {
+			base = 100
+		}
+		visible = {
+			AND = {
+				has_completed_focus = TST_Armed_Sage_focus_5
+				221 = {
+					AND = {
+						is_owned_by = TST
+						NOT = {
+							is_core_of = TST
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			YUK = { add_to_ROOT_potential_cores = yes }
+		}
+	}
+	
+	TST_integrate_STR = {
+		icon = red_star
+		available = {
+		}
+		cost = 40 fire_only_once = yes
+		ai_will_do = {
+			base = 100
+		}
+		visible = {
+			AND = {
+				has_completed_focus = TST_Armed_Sage_focus_5
+				33 = {
+					AND = {
+						is_owned_by = TST
+						NOT = {
+							is_core_of = TST
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			STR = { add_to_ROOT_potential_cores = yes }
+		}
+	}
+	
+	TST_integrate_CHL = {
+		icon = red_star
+		available = {
+		}
+		cost = 40 fire_only_once = yes
+		ai_will_do = {
+			base = 100
+		}
+		visible = {
+			AND = {
+				has_completed_focus = TST_Armed_Sage_focus_5
+				32 = {
+					AND = {
+						is_owned_by = TST
+						NOT = {
+							is_core_of = TST
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			CHL = { add_to_ROOT_potential_cores = yes }
+		}
+	}
+	
+	TST_integrate_MES = {
+		icon = red_star
+		available = {
+		}
+		cost = 40 fire_only_once = yes
+		ai_will_do = {
+			base = 100
+		}
+		visible = {
+			AND = {
+				has_completed_focus = TST_Armed_Sage_focus_5
+				15 = {
+					AND = {
+						is_owned_by = TST
+						NOT = {
+							is_core_of = TST
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			MES = { add_to_ROOT_potential_cores = yes }
+		}
+	}
+	
+	TST_integrate_SIR = {
+		icon = red_star
+		available = {
+		}
+		cost = 40 fire_only_once = yes
+		ai_will_do = {
+			base = 100
+		}
+		visible = {
+			AND = {
+				has_completed_focus = TST_Armed_Sage_focus_5
+				50 = {
+					AND = {
+						is_owned_by = TST
+						NOT = {
+							is_core_of = TST
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			SIR = { add_to_ROOT_potential_cores = yes }
+		}
+	}
+	
+	TST_integrate_GUA = {
+		icon = red_star
+		available = {
+		}
+		cost = 40 fire_only_once = yes
+		ai_will_do = {
+			base = 100
+		}
+		visible = {
+			AND = {
+				has_completed_focus = TST_Armed_Sage_focus_5
+				80 = {
+					AND = {
+						is_owned_by = TST
+						NOT = {
+							is_core_of = TST
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			GUA = { add_to_ROOT_potential_cores = yes }
+		}
+	}
+	
+	TST_integrate_SND = {
+		icon = red_star
+		available = {
+		}
+		cost = 40 fire_only_once = yes
+		ai_will_do = {
+			base = 100
+		}
+		visible = {
+			AND = {
+				has_completed_focus = TST_Armed_Sage_focus_5
+				84 = {
+					AND = {
+						is_owned_by = TST
+						NOT = {
+							is_core_of = TST
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			SND = { add_to_ROOT_potential_cores = yes }
+		}
+	}
+	
+	TST_integrate_NIG = {
+		icon = red_star
+		available = {
+		}
+		cost = 40 fire_only_once = yes
+		ai_will_do = {
+			base = 100
+		}
+		visible = {
+			AND = {
+				has_completed_focus = TST_Armed_Sage_focus_5
+				113 = {
+					AND = {
+						is_owned_by = TST
+						NOT = {
+							is_core_of = TST
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			NIG = { add_to_ROOT_potential_cores = yes }
+		}
+	}
+	
+	TST_integrate_RZR = {
+		icon = red_star
+		available = {
+		}
+		cost = 40 fire_only_once = yes
+		ai_will_do = {
+			base = 100
+		}
+		visible = {
+			AND = {
+				has_completed_focus = TST_Armed_Sage_focus_5
+				13 = {
+					AND = {
+						is_owned_by = TST
+						NOT = {
+							is_core_of = TST
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			RZR = { add_to_ROOT_potential_cores = yes }
+		}
+	}
+	
+	TST_integrate_SLT = {
+		icon = red_star
+		available = {
+		}
+		cost = 40 fire_only_once = yes
+		ai_will_do = {
+			base = 100
+		}
+		visible = {
+			AND = {
+				has_completed_focus = TST_Armed_Sage_focus_5
+				31 = {
+					AND = {
+						is_owned_by = TST
+						NOT = {
+							is_core_of = TST
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			SLT = { add_to_ROOT_potential_cores = yes }
+		}
+	}
+	
+}

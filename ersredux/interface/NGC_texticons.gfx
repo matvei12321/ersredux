@@ -1,0 +1,16 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_unit_motorcycle_units_icon_small"
+		texturefile = "gfx/texticons/cycle.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_motorcycle_recon_icon_small"
+		texturefile = "gfx/texticons/support.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+}

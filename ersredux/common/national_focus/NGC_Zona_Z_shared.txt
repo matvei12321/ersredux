@@ -1,0 +1,34 @@
+focus_tree = {
+	id =  NZZ_Pisos
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 0
+			tag = NGC_Zona_Z
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 550 y = 1800 }
+	
+		shared_focus = NZZ_Hana_Wam
+	
+}
+focus_tree = {
+	id =  NZZ_Plan_Z
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 0
+			tag = NGC
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 550 y = 1800 }
+	
+		shared_focus = NZZ_Hahahahahahahahah
+	
+}

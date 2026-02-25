@@ -1,0 +1,31 @@
+SRF_special_projects_cat = {
+	icon = GFX_decision_cat_research
+	allowed = {
+		tag = SRF
+		
+	}
+	
+	visible = {
+		
+	}
+	visible_when_empty = yes
+	priority = 200
+}
+
+SRF_project_gestaalt_category = {
+	icon = GFX_decision_cat_research
+	allowed = {
+		always = yes	
+	}
+	
+	visible = {
+		has_idea = changeling_race
+		owns_state = 262
+		NOT = {
+			#tag = SRF
+			has_country_flag = changeling_stop_hive_mind_path
+		}
+	}
+	visible_when_empty = yes
+	priority = 200
+}

@@ -1,0 +1,170 @@
+
+hip_calculate_incident_chance = {
+	if = {
+		limit = {
+			check_variable = {
+				HIP_incident_chance = 1
+			}
+			random_list = {
+				90 = {
+
+				}
+				10 = {
+					hip_start_khiva_incident = yes
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				HIP_incident_chance = 2
+			}
+			random_list = {
+				80 = {
+
+				}
+				20 = {
+					hip_start_khiva_incident = yes
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				HIP_incident_chance = 3
+			}
+			random_list = {
+				70 = {
+
+				}
+				30 = {
+					hip_start_khiva_incident = yes
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				HIP_incident_chance = 4
+			}
+			random_list = {
+				60 = {
+
+				}
+				40 = {
+					hip_start_khiva_incident = yes
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				HIP_incident_chance = 5
+			}
+			random_list = {
+				50 = {
+
+				}
+				50 = {
+					hip_start_khiva_incident = yes
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				HIP_incident_chance = 6
+			}
+			random_list = {
+				40 = {
+
+				}
+				60 = {
+					hip_start_khiva_incident = yes
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				HIP_incident_chance = 7
+			}
+			random_list = {
+				30 = {
+
+				}
+				70 = {
+					hip_start_khiva_incident = yes
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				HIP_incident_chance = 8
+			}
+			random_list = {
+				20 = {
+
+				}
+				80 = {
+					hip_start_khiva_incident = yes
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				HIP_incident_chance = 9
+			}
+			random_list = {
+				10 = {
+
+				}
+				90 = {
+					hip_start_khiva_incident = yes
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				HIP_incident_chance = 10
+			}
+			random_list = {
+				0 = {
+
+				}
+				100 = {
+					hip_start_khiva_incident = yes
+				}
+			}
+		}
+	}
+}
+
+hip_start_khiva_incident = {
+	random_list = {
+		35 = {
+			country_event = ers_hip.5	# Small Incident
+		}
+		40 = {
+			country_event = ers_hip.6	# Medium Incident
+		}
+		20 = {
+			country_event = ers_hip.7	# Huge Incident
+		}
+		5 = {
+			country_event = ers_hip.8	# Catastrophe
+		}
+	}
+}

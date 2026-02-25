@@ -1,0 +1,394 @@
+characters={
+	VRX_queen_argynnis = {
+		name=chn_queen_argynnis
+		portraits={
+			army={
+				small="gfx/interface/ideas/chn_queen_argynnis.dds"
+			}
+			civilian={
+				large="gfx/leaders/VRX/ers_argynnis.dds"
+			}
+		}
+		allowed_civil_war = {
+			has_government = fascism
+		}	
+		
+		country_leader={
+			desc="ERS_ARGYNNIS_DESC"
+			ideology=nazism
+			traits={ queen_argynnis ers_ambiguous }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	VRX_queen_arantida = {
+		name=VRX_queen_arantida
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		allowed_civil_war = {
+			has_government = fascism
+		}	
+	}
+	VRX_manti_ligiosa={
+		name=VRX_manti_ligiosa
+		portraits={
+			army={
+				large="gfx/leaders/CHN/Manti_Ligiosa.tga"
+				small="gfx/interface/ideas/Advisors/CHN/idea_Manti_Ligiosa.tga"
+			}
+		}
+		corps_commander={
+		visible = {
+				has_country_flag = VRX_new_guard_flag
+			}
+			traits={ career_officer changeling_race_trait }
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=605
+		}
+	}
+VRX_tetti_rhombi{
+		name=VRX_tetti_rhombi
+		portraits={
+			army={
+				large="gfx/leaders/CHN/Tetti_Rhombi.tga"
+				small="gfx/interface/ideas/Advisors/CHN/idea_Tetti_Rhombi.tga"
+			}
+		}
+		corps_commander={
+		visible = {
+				has_country_flag = VRX_new_guard_flag
+			}
+			traits={ bleeding_heart changeling_race_trait }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	
+	
+	
+	VRX_Sovetnic ={
+		name=VRX_Sovetnic
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/VRX/VRX_Alstrig.tga"
+			}
+		}
+		advisor={
+		can_be_fired = no
+			slot = political_advisor
+			idea_token = VRX_Sovetnic
+			allowed = {
+				original_tag = VRX
+			}
+			traits = {
+				VRX_Alstrig_traits
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	VRX_Sovetnic1 ={
+		name=VRX_Sovetnic1
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/VRX/VRX_Zogus.tga"
+			}
+		}
+		advisor={
+		can_be_fired = no
+			slot = political_advisor
+			idea_token = VRX_Sovetnic1
+			allowed = {
+				original_tag = VRX
+			}
+			traits = {
+				VRX_Zogus_traits 
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	VRX_Sovetnic2 ={
+		name=VRX_Sovetnic2
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/VRX/VRX_El_Asunus.tga"
+			}
+		}
+		advisor={
+		can_be_fired = no
+			slot = political_advisor
+			idea_token = VRX_Sovetnic2
+			allowed = {
+				original_tag = VRX
+			}
+			traits = {
+				VRX_El_Asunus_traits
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	VRX_Sovetnic3 ={
+		name=VRX_Sovetnic3
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/VRX/VRX_Cherchers.tga"
+			}
+		}
+		advisor={
+		can_be_fired = no
+			slot = political_advisor
+			idea_token = VRX_Sovetnic3
+			allowed = {
+				original_tag = VRX
+			}
+			traits = {
+				VRX_Cherchers_traits
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	VRX_Sovetnic4 ={
+		name=VRX_Sovetnic4
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/VRX/VRX_Nuchaos.tga"
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = VRX_Sovetnic4
+			ledger = army
+			cost = 150
+			allowed = {
+				original_tag = VRX
+			}
+			traits = {
+				blitzkrieg_theorist
+			}
+		}		
+	}
+	VRX_Sovetnic5 ={
+		name=VRX_Sovetnic5
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/VRX/VRX_Haltz.tga"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = VRX_Sovetnic5
+			cost = 100
+			traits = {
+				army_chief_reform_2
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	VRX_Sovetnic6 ={
+		name=VRX_Sovetnic6
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/VRX/VRX_Regelst.tga"
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = VRX_Sovetnic6
+			ledger = army
+			cost = 150
+			allowed = {
+				original_tag = VRX
+			}
+			traits = {
+				military_theorist
+			}
+		}		
+	}
+	VRX_Sovetnic7 ={
+		name=VRX_Sovetnic7
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/VRX/VRX_Shotrelch.tga"
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = VRX_Sovetnic7
+			ledger = army
+			cost = 150
+			allowed = {
+				original_tag = VRX
+			}
+			traits = {
+				air_warfare_theorist
+			}
+		}		
+	}
+	VRX_Sovetnic8 ={
+		name=VRX_Sovetnic8
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/VRX/VRX_Zikrest.tga"
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = VRX_Sovetnic8
+			ledger = army
+			cost = 150
+			allowed = {
+				original_tag = VRX
+			}
+			traits = {
+				naval_theorist
+			}
+		}		
+	}
+	VRX_Sovetnic9 ={
+		name=VRX_Sovetnic9
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/VRX/VRX_Ernest.tga"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = VRX_Sovetnic9
+			ledger = army
+			cost = 100
+			allowed = {
+				original_tag = VRX
+			}
+			traits = {
+				army_armored_2
+			}
+		}		
+	}
+	VRX_Sovetnic10 ={
+		name=VRX_Sovetnic10
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/VRX/VRX_CoolBien.tga"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = VRX_Sovetnic10
+			ledger = army
+			cost = 100
+			allowed = {
+				original_tag = VRX
+			}
+			traits = {
+				army_armored_2
+			}
+		}		
+	}
+	
+	#Стервы
+	VRX_queen_yaria = {
+		name=VRX_queen_yaria
+		portraits={
+			army={
+				small= GFX_idea_CHN_queen_yaria
+			}
+		}
+		allowed_civil_war = {
+			has_government = fascism
+		}	
+		advisor={
+		 visible = {
+				has_country_flag = VRX_new_yaria
+			}	
+			slot = political_advisor
+			idea_token = VRX_queen_yaria
+			allowed = {
+				original_tag = VRX
+			}
+			available = {
+				has_government = fascism
+			}
+			research_bonus = {
+				magical_tech = 0.05
+			}
+			traits = {
+				queen_yaria
+			}
+		}
+	}
+	VRX_queen_helvia = {
+		name=VRX_queen_helvia
+		portraits={
+			army={
+				small= GFX_idea_CHN_queen_helvia
+			}
+		}
+		allowed_civil_war = {
+			has_government = fascism
+		}		
+		advisor={
+		visible = {
+				has_country_flag = VRX_new_helvia
+			}
+			slot = political_advisor
+			idea_token = VRX_queen_helvia
+			allowed = {
+				original_tag = VRX
+			}
+			available = {
+				has_government = fascism
+			}
+			traits = {
+				queen_helvia
+			}
+		}
+	}
+	VRX_queen_aurantia = {
+		name=VRX_queen_aurantia
+		portraits={
+			army={
+				small= GFX_idea_CHN_queen_aurantia
+			}
+		}
+		allowed_civil_war = {
+			has_government = fascism
+		}		
+		advisor={
+			visible = {
+				has_country_flag = VRX_new_aurantia
+			}
+			slot = political_advisor
+			idea_token = VRX_queen_aurantia
+			allowed = {
+				original_tag = VRX
+			}
+			available = {
+				has_government = fascism
+			}
+			traits = {
+				queen_aurantia
+			}
+		}
+	}
+}

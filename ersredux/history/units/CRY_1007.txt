@@ -1,0 +1,141 @@
+﻿division_template = {
+	name = "Crystal Division"			#Infantry Division - kek
+	division_names_group = CRY_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 0 y = 3 }
+	}
+
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Royal Guards"			#RoyalGuards
+	division_names_group = CRY_GRD_01
+	template_counter = 8
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+	}
+
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+	priority = 2
+}
+division_template = {
+	name = "Militia Regiment"			#Infantry Division - kek
+	division_names_group = CRY_GAR_01
+	template_counter = 3
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+	}
+	priority = 0
+}
+
+units = {
+	division = {
+		name = "Crystal Guards I"
+		location = 489
+		division_template = "Royal Guards"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Crystal Guards II"
+		location = 489
+		division_template = "Royal Guards"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7 
+	}
+	division = {
+		name = "Crystal Guards III"
+		location = 489
+		division_template = "Royal Guards"
+		start_experience_factor = 0.1 
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Crystal Guards IV"
+		location = 11109
+		division_template = "Royal Guards"
+		start_experience_factor = 0.1 
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Crystal Guards V"
+		location = 11109
+		division_template = "Royal Guards"
+		start_experience_factor = 0.1 
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Crystal Division I"
+		location = 10323
+		division_template = "Crystal Division"
+		start_experience_factor = 0.1 
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Crystal Division II"
+		location = 265
+		division_template = "Crystal Division"
+		start_experience_factor = 0.2 
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Crystal Division III"
+		location = 9485
+		division_template = "Crystal Division"
+		start_experience_factor = 0.1 
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Crystal Division IV"
+		location = 9485
+		division_template = "Crystal Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Crystal Division V"
+		location = 3305
+		division_template = "Crystal Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.7
+	}
+}
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "CRY"
+		}
+		requested_factories = 5
+		progress = 0.86
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "CRY" }
+		requested_factories = 3
+		progress = 0.10
+		efficiency = 50
+	}
+}

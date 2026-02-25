@@ -1,0 +1,94 @@
+﻿l_russian:
+ 
+ ##### PARTIES
+ MNH_anarchism_party:0 "Союз торговых гильдий"
+ MNH_anarchism_party_long:0 "Союз торговых гильдий"
+ MNH_democratic_party:0 "СЛЭ"
+ MNH_democratic_party_long:0 "Союз либерализаторов экономики"
+ MNH_communism_party:0 "РКП"
+ MNH_communism_party_long:0 "Рабочая Капиталистическая Партия"
+ MNH_fascism_party:0 "ЧВК"
+ MNH_fascism_party_long:0 "Частные военные компании"
+ 
+ ##### CHARACTERS
+ 
+ MNH_mirashon:0 "Оливер Мирашон"
+ 
+ 
+ ##### NATIONAL FOCUS
+ #------main tree
+ 
+ MNH_flim:0 "Флим, гениальный маркетолог"
+ MNH_flim_desc:0 "WIP"
+ MNH_flam:0 "Флем, безжалостный капиталист"
+ MNH_flam_desc:0 "WIP"
+ MNH_sponsore_pmc:0 "Спонсировать Частные Военные Организации"
+ MNH_sponsore_pmc_desc:0 "WIP"
+ MNH_guards_of_the_federation:0 "Гвардия Федерации"
+ MNH_guards_of_the_federation_desc:0 "WIP"
+ MNH_raise_taxes:0 "Поднять Налоги"
+ MNH_raise_taxes_desc:0 "WIP"
+ MNH_free_money:0 "Копыта Прочь от Моих Денег!"
+ MNH_free_money_desc:0 "WIP"
+ MNH_weapon_privatisation:0 "Приватизация Огнестрельного Оружия"
+ MNH_weapon_privatisation_desc:0 "WIP"
+ MNH_war_is_our_client:0 "Война - Наш Лучший Клиент"
+ MNH_war_is_our_client_desc:0 "WIP"
+ MNH_take_and_rule:0 "Забирай и Властвуй"
+ MNH_take_and_rule_desc:0 "WIP"
+ MNH_libertarian_spirit:0 "Теория Либертариев"
+ MNH_libertarian_spirit_desc:0 "WIP"
+ MNH_industry_privatisation:0 "Приватизация Фабрик"
+ MNH_industry_privatisation_desc:0 "WIP"
+ MNH_joy_industry:0 "Индустрия Развлечений"
+ MNH_joy_industry_desc:0 "WIP"
+ MNH_fight_monopoly:0 "Борьба с Нежелательными Монополиями"
+ MNH_fight_monopoly_desc:0 "WIP"
+ MNH_deal:0 "Крупная Сделка"
+ MNH_deal_desc:0 "WIP"
+ MNH_gone_wrong:0 "Обернулась Провалом"
+ MNH_gone_wrong_desc:0 "WIP"
+ MNH_rinocheck:0 "Рынок Всегда в Выигрыше"
+ MNH_rinocheck_desc:0 "WIP"
+ 
+ 
+ 
+ ##### DECISIONS 
+ MNH_companies_cat:0 "Деньги и Власть"
+ MNH_companies_cat_desc:0 "Власть в  §Y[ROOT.getnamewithflag]§! достаётся тому, кто имеет самый большой капитал. Если одна из организаций получает слишком много ресурсов и нелояльна, она может принести ряд проблем.\n\n£GFX_harmony_texticon   Лояльность СЛЭ : §Y[?MNH.els_loyalty]%§!\n            Ресурсы СЛЭ: §Y[?MNH.els_money]§!\nЛиберализаторы экономики - это те предприниматели, которые недовольны текущей экономической политикой Федерации. Они выступают за снижение уровня зверства капитала и улучшение условий жизни простого народа.\n----------------------------\n£GFX_evolutionary   Лояльность капитал-коммунистов : §Y[?MNH.capital_communists_loyalty]%§!\n            Ресурсы капитал-коммунистов: §Y[?MNH.capital_communists_money]§!\n            Ресурсы СЛЭ: §Y[?MNH.els_money]§!\nКапитал-коммунисты считают, что капитал, производимый рабочим классом, должен распределяться между всеми поровну, а налоги должны быть уничтожены как таковые.\n----------------------------\n£GFX_pmc_text_icon   Лояльность Военных Корпораций: §Y[?MNH.military_companies_loyalty]%§!\n            Ресурсы Военных Корпораций: §Y[?MNH.military_companies_money]§!\n----------------------------\n£GFX_ff_text_icon   Лояльность F&F (TM): §Y100%§!\n            Ресурсы F&F (TM): §Y[?MNH.fnf_money]§!"
+ 
+ 
+ ##### IDEAS
+ MNH_no_army:0 "Опора на наёмников"
+ MNH_no_army_upgraded:0 "Опора на наёмников"
+ MNH_no_army_tt:0 "§RНельзя обучать, удалять и изменять дивизии\nЧтобы получить дивизии, нужно нанимать наёмников из§! §gчастных военных корпораций§!"
+ MNH_money_society_idea:0 "Общество денег"
+ MNH_money_society_idea_desc:0 ""
+ MNH_trading_for_buyer:0 "Оплата товара"
+ MNH_trading_for_MNH:0 "Мейнхеттенская глобальная торговля"
+ MNH_trading_for_MNH_desc:0 "Каждая успешная сделка даёт бонус в виде:\n\n§W-§!   §Y-0,50%§! §Wфабрик народного потребления;§!\n§W-§!   §G+0.20§! §Wприроста политической власти;§!\n\nВ течение §Y75 дн.§!"
+ MNH_fnf_leadership:0 "Союз Торговых Гильдий - неформальное лидерство F&F"
+ MNH_fnf_leadership_desc:0 "У Торговых Гильдий до сих пор не было лидеров, по крайней мере, на бумаге. Но на деле, ведущую роль уже давно играют компании, имеющие самый большой капитал, и на данный момент, это организация двух богатейших братьев в Юникорнии - F&F (TM)."
+ 
+ MNH_guards_of_federation_idea:0 "Гвардия Федерации"
+   
+ 
+ #### OOB
+ 
+ #### COSMETIC TAGS
+ 
+ #### TOOLTIPS
+ mnh_flim_flam_tt:0 "§CЭти двое стоят друг друга§!."
+ mnh_minus_10_pmc_loyalty:0 "Уменьшить §Yлояльность§! £GFX_pmc_text_icon §1частных военных корпораций§! на §R10§!"
+ mnh_plus_5_pmc_loyalty:0 "Увеличить §Yлояльность§! £GFX_pmc_text_icon §1частных военных корпораций§! на §G5§!"
+ mnh_plus_500_pmc_money:0 "Увеличить §Yресурсы§! £GFX_pmc_text_icon §1частных военных корпораций§! §G500§!"
+ 
+ mnh_minus_500_fnf_money:0 "Уменьшить §Yресурсы§! £GFX_ff_text_icon §YF&F§! на §R500§!"
+ mnh_minus_250_fnf_money:0 "Уменьшить §Yресурсы§! £GFX_ff_text_icon §YF&F§! на §R250§!"
+ 
+ 
+ 
+ #### EVENTS
+ 
+ #### SCRIPTED GUI
+ 

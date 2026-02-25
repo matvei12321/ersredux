@@ -1,0 +1,714 @@
+
+characters = {
+  #Лидеры 
+  NGC_kriger={        #Крайгер
+    name=NGC_kriger
+    portraits={
+      civilian={
+        large="gfx/leaders/NGC/kriger.tga"
+      }
+    }
+    country_leader={
+      desc="kriger_desc"
+      ideology=despotism
+      traits={ NGC_kriger_trait helvia_peaceful_life }
+      expire="1965.1.1.1"
+      id=-1
+    }
+    gender = male
+  }
+  
+   
+   NGC_Cap={       #Капибара коммунист
+    name=NGC_Cap
+    portraits={
+      civilian={
+        large="gfx/leaders/NGC/Cap.tga"
+      }
+    }
+    country_leader={
+      desc="NGC_Cap_desc"
+      ideology=marxism
+      traits={ }
+      expire="1965.1.1.1"
+      id=-1
+    }
+    gender = male
+  }
+#########################################
+#########################################
+######################################### 
+     NGC_Ger_Drem ={
+		#name=NGC_Ger_Drem
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/NCH/NCH_Who.tga"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			desc="NGC_Ger_Drem_desc"
+			idea_token = NGC_Ger_Drem
+			allowed = {
+				original_tag = NGC
+			}
+			traits = {
+				
+			}
+		}
+	}
+	
+	 NGC_Zulgus ={
+		#name=NGC_Zulgus
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/NGC/idea_Unknown_Griffon.tga"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			desc="NGC_Zulgus_desc"
+			idea_token = NGC_Zulgus
+			allowed = {
+				original_tag = NGC
+			}
+			traits = {
+				NGC_mussolini_minister_of_education
+			}
+		}
+	}
+	
+	
+     NGC_Shredder={
+		#name=NGC_Shredder
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/NGC/idea_Unknown_Griffon.tga"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			desc="NGC_Shredder_desc"
+			idea_token = NGC_Shredder
+			allowed = {
+				original_tag = NGC
+			}
+			traits = {
+				NGC_modernist_architect
+			}
+		}
+	}
+	
+   NGC_Steiner ={
+		#name=NGC_Steiner
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/NGC/idea_Unknown_Griffon.tga"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			desc="NGC_Steiner_desc"
+			idea_token = NGC_Steiner
+			allowed = {
+				original_tag = NGC
+			}
+			traits = {
+				NGC_head_of_political_police
+			}
+		}
+	}
+	
+    NGC_Rudolf ={
+		#name=NGC_Rudolf
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/NGC/idea_Rudolf.tga" 
+			}
+		}
+		advisor={
+			slot = political_advisor
+			desc="NGC_Rudol_desc"
+			idea_token = NGC_Rudolf
+			allowed = {
+				original_tag = NGC
+			}
+			traits = {
+				NGC_pacifist_diplomat
+			}
+		}
+	}
+	
+   NGC_G_Gair ={
+		#name=NGC_G_Gair
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/NCH/NCH_Who.tga"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			desc="NGC_G_Gair_desc"
+			idea_token = NGC_G_Gair
+			allowed = {
+				original_tag = NGC
+			}
+			traits = {
+				NGC_Gaz_consul
+			}
+		}
+	}
+	
+   NGC_Selfring_von_Othos ={
+		#name=NGC_Selfring_von_Othos
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/NGC/idea_Unknown_Griffon.tga"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			desc="NGC_Selfring_von_Othos_desc"
+			idea_token = NGC_Selfring_von_Othos
+			allowed = {
+				original_tag = NGC
+			}
+			traits = {
+				NGC_Selfring_von_Othos_trai
+			}
+		}
+	}
+	
+	
+  NGC_Taras ={
+		#name=NGC_Taras
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/NGC/idea_Unknown_Griffon.tga"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			desc="NGC_Taras_desc"
+			idea_token = NGC_Taras
+			allowed = {
+				original_tag = NGC
+			}
+			traits = {
+				NGC_Taras_king
+			}
+		}
+	}
+	
+  NCH_captain_Proudmoore ={
+		#name=NCH_captain_Proudmoore
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/NGC/idea_Unknown_Griffon.tga"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			desc="NCH_captain_Proudmoore_desc"
+			idea_token = NCH_captain_of_industry
+			allowed = {
+				original_tag = NGC
+			}
+			traits = {
+				NCH_coffee_king
+			}
+		}
+	}
+	NCH_Quisling ={ #Квислинг
+		#name=NCH_Quisling
+		portraits={
+			army={
+					small="gfx/interface/ideas/advisors/NGC/idea_Unknown_Griffon.tga"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			desc="NCH_Quisling_desc"
+			idea_token = NCH_captain_of_industry
+			allowed = {
+				original_tag = NGC
+			}
+			traits = {
+				NCH_intelligence_officer
+			}
+		}
+	}
+	NCH_Hellmut ={
+		#name=NCH_Hellmut
+		portraits={
+			army={
+					small="gfx/interface/ideas/advisors/NGC/NGC_idea_Grif.tga"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			desc="NCH_Hellmut_desc"
+			idea_token = NCN_travel_enthusiast
+			allowed = {
+				original_tag = NGC
+			}
+			traits = {
+				NCN_travel_enthusiast
+			}
+		}
+	}
+
+	
+  #Советники
+   NGC_walther_funk={   #Ульбрих
+		name=NGC_walther_funk
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/NGC/NGC_Ulbrix.tga"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = NGC_walther_funk
+			traits = {
+				air_chief_ground_support_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.05
+			}
+		}	
+	}
+	
+	NGC_Fanatic={                            #Лилит
+		name=NGC_Fanatic
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/NGC/NGC_Fanatic2.tga"
+			}
+		}
+		advisor={
+			visible = {
+				has_country_flag = NGC_Kylt_sovet1
+			}
+			slot = theorist
+			idea_token = NGC_Fanatic
+			allowed = {
+				original_tag = NGC
+			}
+			on_add = { 
+            NGC = {
+                set_country_flag = FIRSTGOI1
+               }
+		  if = {
+limit = {
+has_country_flag = FIRSTGOI
+has_country_flag = SECONDGOI
+has_country_flag = FIRSTGOI1
+}
+country_event = ngc.666
+}
+        }
+			traits = {
+				blitzkrieg_theorist
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	
+	
+	NGC_Fanatic1={                       #Лэса
+		name=NGC_Fanatic1
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/NGC/NGC_Fanatic3.tga"
+			}
+		}
+		advisor={
+		visible = {
+				has_country_flag = NGC_Kylt_sovet2
+			}
+			slot = army_chief
+			idea_token = NGC_Fanatic1
+			allowed = {
+				original_tag = NGC
+			}
+		on_add = { 
+            NGC = {
+                set_country_flag = FIRSTGOI
+               }
+		  if = {
+limit = {
+has_country_flag = FIRSTGOI
+has_country_flag = SECONDGOI
+has_country_flag = FIRSTGOI1
+}
+country_event = ngc.666
+}
+        }
+	
+			traits = {
+				mobile_warfare_expert
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	
+	NGC_Fanatic2={             #Мила
+		name=NGC_Fanatic2
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/NGC/NGC_Fanatic.tga"
+			}
+		}
+		advisor={
+		visible = {
+				has_country_flag = NGC_Kylt_sovet
+			}
+			slot = political_advisor
+			idea_token = NGC_Fanatic2
+			allowed = {
+				original_tag = NGC
+			}
+			on_add = { 
+            NGC = {
+                set_country_flag = SECONDGOI
+               }
+		  if = {
+limit = {
+has_country_flag = FIRSTGOI
+has_country_flag = SECONDGOI
+has_country_flag = FIRSTGOI1
+}
+country_event = ngc.666
+}
+        }
+			traits = {
+				quiet_pony_trait
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+  
+	  NGC_Wtirlis_funk={         #Вернер
+		name=NGC_Wtirlis_funk
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/NGC/NGC_Verner.tga"
+				large="gfx/leaders/NGC/portrait_NOR_vidkun_quisling_2.tga"
+			}
+		}
+		corps_commander={
+		desc= "NGC_quisling_desc"
+			traits={ }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
+		}
+		advisor={
+		desc= "NGC_quisling_desc"
+			slot = political_advisor
+			idea_token = Wtirlisr_funk
+			allowed = {
+				original_tag = NGC
+			}
+			traits = {
+			NGC_expansionist_policies
+				ideological_crusader
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	
+	NGC_Dressler={       #Дреслер
+		name=NGC_Dressler
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/NGC/Leger.tga"
+				large="gfx/leaders/NGC/Dresler_NGC.tga"
+			}
+		}
+				country_leader={
+			desc="NGC_Dressler"
+			ideology=national_evolutionism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		advisor={
+		can_be_fired = no
+			slot = political_advisor
+			idea_token = NGC_Dressler
+			allowed = {
+				original_tag = NGC
+			}
+			traits = {
+				NGC_rearmament_proponent 
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	NGC_Richthofen={    #Рикгофен
+		name=NGC_Richthofen
+		desc="NGC_Richthofen_desc"
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/NGC/NGC_Edward_Richthofen.tga"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = NGC_Richthofen
+			allowed = {
+				original_tag = NGC
+			}
+			traits = {
+				esoterist
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	
+  NGC_heisenberg={    #Каппингеймер
+		name=NGC_heisenberg
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/NGC/NGC_heisenberg.tga"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = NGC_heisenberg
+			ledger = army
+			allowed = {
+				original_tag = NGC
+			}
+			research_bonus = {
+				nuclear = 0.150
+			}
+			traits = {
+			NGC_Kapi_trait
+			 
+				
+			}
+		}
+	}
+	
+  NGC_Ximi={        #Хими
+		name=NGC_Ximi
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/NGC/NGC_Chair.tga"
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = NGC_Ximi
+			ledger = army
+			allowed = {
+				original_tag = NGC
+			}
+			traits = {
+				military_modernizer
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+	}
+	
+	
+	
+  	NGC_Komik={          #Ферденант
+		name=NGC_Komik
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/NGC/NGC_Chair.tga"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = ferdinand_schorner
+			ledger = army
+			allowed = {
+				original_tag = NGC
+			}
+			traits = {
+				army_infantry_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+	}
+  
+  
+  
+#########################################
+#########################################
+######################################### 
+
+#Генералы
+  NGC_Komisar ={       #Каин
+		name=NGC_Komisar
+		portraits={
+			army={
+			    large= "gfx/leaders/NGC/Kain.tga"
+				small="gfx/interface/ideas/advisors/NGC/NGC_Komisar.tga"
+			}
+		}
+			advisor={
+			slot = high_command
+			idea_token = NGC_Komisar
+			ledger = army
+			allowed = {
+				original_tag = NGC
+			}
+			traits = {
+				NGC_Kommisar
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+			corps_commander={
+			traits={ trait_the_butcher trait_lunatic krieger_trait alhocolic}
+			skill=5
+			attack_skill=6
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=5065
+		}
+		
+	}
+  
+  NGC_isabella = {       #Изабела
+		name=NGC_isabella
+		portraits={
+			army={
+				large="gfx/leaders/NGC/isabella.tga"
+				small="gfx/interface/ideas/advisors/NGC/ers_isabella_advisor.tga"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = NGC_isabella
+			allowed = {
+				original_tag = NGC
+			}
+			traits = {
+				NGC_minister_of_defense
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}	
+	}
+	
+	NGC_Fili = {  #фили
+		name=NGC_Fili
+		portraits={
+			army={
+				large="gfx/leaders/NGC/Fili.tga"
+			}
+		}
+		corps_commander={
+			traits={artillery_specialist  thestral_race_trait trait_reckless}
+			skill=1
+			attack_skill=3
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=1
+		}
+	}
+	
+	NGC_G_Ginmlera ={ #Гимлиера
+		name=NGC_G_Ginmlera
+		portraits={
+			army={
+				large="gfx/leaders/NGC/Sara.tga"
+			}
+		}
+		corps_commander={
+			traits={ unicorns_race_trait cute_mare_trait }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+		gender = female
+	}
+	NGC_Oswald={
+		name=NGC_Oswald
+		portraits={
+			army={
+				 large= "gfx/leaders/NGC/NGC_Oswald.tga"
+				small="gfx/interface/ideas/advisors/NGC/NGC_helmuthS.tga"
+			}
+		}
+		field_marshal={
+			traits={ harsh_leader infantry_officer }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=5038
+		}
+		advisor={
+			slot = army_chief
+			idea_token = NGC_Oswald
+			allowed = {
+				original_tag = NGC
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	NGC_helmuth={
+		name=NGC_helmuth
+		portraits={
+			army={
+				 large= "gfx/leaders/NGC/NGC_helmuth.tga"
+			}
+		}
+		corps_commander={
+			traits={ bearer_of_artillery ambusher defensive_doctrine }
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=5052
+		}
+	}
+}
+
+	
+	
+	
+	

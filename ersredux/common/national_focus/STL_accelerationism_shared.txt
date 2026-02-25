@@ -1,0 +1,96 @@
+
+shared_focus = {
+	id = ers_STL_from_generation_of_roses
+	icon = GFX_goal_stl_time_feather_bangs_2
+	cost = 4.4
+	x = 5
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_our_town"
+		add_manpower = 50000
+		add_war_support = 0.1
+		add_command_power = 50
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.1
+		}
+	}
+}
+
+shared_focus = {
+	id = ers_STL_what_was_lost_because_of_the_time
+	icon = GFX_goal_stl_time_uroboros_eye
+	cost = 4.4
+	relative_position_id = ers_STL_from_generation_of_roses
+	x = -2 
+	y = 1
+	prerequisite = { focus = ers_STL_from_generation_of_roses }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_our_politics"
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+			}
+		}
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = ers_STL_i_want_it_be_saved_from_forgotness
+	icon = GFX_goal_stl_time_shield
+	cost = 4.4
+	relative_position_id = ers_STL_from_generation_of_roses
+	x = 2 
+	y = 1
+	prerequisite = { focus = ers_STL_from_generation_of_roses }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_our_politics"
+		add_timed_idea = {
+			idea = STL_time_civil_war_idea
+			days = 200
+		}
+	}
+}
+
+shared_focus = {
+	id = ers_STL_the_one_with_no_sign
+	icon = GFX_goal_stl_time_skull
+	cost = 4.4
+	relative_position_id = ers_STL_from_generation_of_roses
+	x = 0 
+	y = 2
+	prerequisite = { focus = ers_STL_i_want_it_be_saved_from_forgotness }
+	prerequisite = { focus = ers_STL_what_was_lost_because_of_the_time }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_our_politics"
+		
+	}
+}
+
+shared_focus = {
+	id = ers_STL_time_must_be_punished
+	icon = GFX_goal_stl_time_clocks
+	cost = 4.4
+	available = {
+		has_war = no
+	}
+	relative_position_id = ers_STL_from_generation_of_roses
+	x = 0 
+	y = 3
+	prerequisite = { focus = ers_STL_the_one_with_no_sign }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ers_STL_our_politics"
+		custom_effect_tooltip = ers_focus_no_effect
+	}
+}
+
+

@@ -1,0 +1,18 @@
+Yak_unification_war_cat = {
+	icon = GFX_decision_category_yak_empire
+	
+	allowed = {
+		OR= {
+			original_tag = MNT
+			original_tag = JAK
+			original_tag = YAK
+			original_tag = YAC
+			original_tag = NAK
+			original_tag = SHA
+			original_tag = BAD
+			tag = EMP
+		}
+	}
+	
+	priority = 10
+}

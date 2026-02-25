@@ -1,0 +1,27 @@
+nei_calculate_the_year = {
+    if = {
+		limit = {
+    		NOT = {
+				has_completed_focus = NEI_Milost_Of_Gods
+			}
+		}
+    	random_list = {
+			50 = {
+				country_event = { id = neigua.4 days = 100 }
+			}
+			50 = {
+				add_stability = 0.05
+				}
+		}
+	}
+	else = {
+		random_list = {
+			25 = {
+				country_event = { id = neigua.4 days = 100 }
+			}
+			75 = {		
+			    add_stability = 0.05
+            }
+		}
+	}
+}

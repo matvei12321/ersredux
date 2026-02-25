@@ -1,0 +1,19 @@
+characters = {
+	RZR_leader={
+		name=RZR_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/RZR/ksoko.tga"
+			}
+		}
+		country_leader={
+			desc=""
+			ideology=nazism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		gender = male
+	}
+
+}

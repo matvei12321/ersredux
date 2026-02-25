@@ -1,0 +1,12 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_goal_WIG_soy"
+		texturefile = "gfx/interface/goals/WIG/WIG_bop_soy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_WIG_chad"
+		texturefile = "gfx/interface/goals/WIG/WIG_bop_chad.tga"
+	}
+}

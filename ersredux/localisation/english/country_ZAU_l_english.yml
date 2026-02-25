@@ -1,0 +1,36 @@
+﻿l_english:
+    ###Country###
+    ZAU:0"Zauberstaat"
+    ZAU_DEF:0"Zauberstaat"
+    ZAU_ADJ:0"Zauberstaat"
+    ###Persanal###
+    ZAU_Haagenti:0"Haagenti"
+    ZAU_Stella_Imperium:0"Stella"
+   
+    ###Trait of personal###
+    ZAU_alhocolic:0"Alcoholic \n§gThis leader really likes to drink and have fun evening get-togethers with friends. Isn't power given to us for relaxation?§!"
+    alhocolic:0"Alcoholic"
+    alhocolic_desc:0"Alcoholic!"
+   
+    ###Ideas###
+    ZAU_no_electriacal2:0"No electricity"
+    ZAU_no_electriacal2_desc:0"In this country there is practically no electricity and places of its production, and a light bulb is perceived as a miracle by most of the country's residents"
+    ZAU_society_disintegration2:0"Idle aristocracy"
+    ZAU_society_disintegration2_desc:0"In this country, only the aristocracy has the opportunity to be an officer, which includes griffins and unicorns who have proven themselves to be powerful magicians... Well, that was once true. Now the aristocracy here is synonymous with laziness, the title itself is passed on by inheritance, which means that the children of aristocrats have no reason to strain themselves. The aristocracy constantly throws luxurious feasts and parties, from which, naturally, the local population and the state do not get rich, and if you remember that only aristocrats can be officers, the army gets it too..."
+    ZAU_army_disintegration2:0"Army disintegration"
+    ZAU_army_disintegration2_desc:0"Following the officers and aristocrats, the soldiers are also doing who knows what, and there are no officers at their posts anyway. Many soldiers don't understand what they're doing here, and most likely, in the event of war, many will simply go home"
+    ZAU_out_industry:0"10th century industry"
+    ZAU_out_industry_desc:0"The industry here is long outdated"
+    
+    ###Party###
+    ZAU_neutrality_short_start:0"Council of Nobility"
+    ZAU_neutrality_long_start:0"§WCouncil of Nobility§!§W\n-------------------------\n§W"Ratdesadels" is the second most important advisory body under the King. In fact, it only unites all the nobles around the King, so the nobles do not have any power at the state level.§ \n"
+    
+    ZAU_fascism_short_start:0"Council of Haagenti Supporters"
+    ZAU_fascism_long_start:0"§WCouncil of Haagenti Supporters§!§W\n-------------------------\n§WThere is a special advisory body under the King, the "Ratdermagier", which includes the royal family, that is, at the moment Stella, as well as the most powerful magicians who have received all 4 insignia...that is, this council includes only 6 unicorns and one griffin. They are the ones who determine the nature of foreign and domestic policy, influencing Haagenti, who, as is known, is not very interested in the state of affairs in the state§ \n"
+    
+    ZAU_communism_short_start:0"§RNon't exist!§"
+    ZAU_communism_long_start:0"§RNon't exist!§!§W\n--------------------------\n§WOfficially, there are no communists here and the government even refuses to admit that such an ideology exists at all. But this is all official, in fact, everyone understands that the number of communists among ordinary poor people§ §Ris steadily growing§ \n"
+    
+    ZAU_democratic_short_start:0"§RNon't exist!§"
+    ZAU_democratic_long_start:0"§RDon't exist!§!§W\n--------------------------\nThe government does not recognize this ideology and considers it absolutely strange. Officially, this ideology simply does not exist in the state, but everyone understands that the official position does not express the real situation§ \n"    

@@ -1,0 +1,25 @@
+characters={
+	Dremes = {
+		name=Dremes
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/CHN/dremes.tga"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = idea_chndremes
+			desc = "CHN_dremes_desc"
+			allowed = {
+				original_tag = CHN
+			}
+			traits = {
+				governor_of_zebica
+			}
+			ai_will_do = {
+				factor = 1.5
+			}
+		}
+	}
+}

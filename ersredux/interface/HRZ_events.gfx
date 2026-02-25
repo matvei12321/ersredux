@@ -1,0 +1,62 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_HRZ_event_writen_mail"
+		texturefile = "gfx/event_pictures/HRZ_event_writen_mail.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_griffenheim"
+		texturefile = "gfx/event_pictures/event_griffenheim.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_HRZ_event_fon_knighprode"
+		texturefile = "gfx/event_pictures/HRZ_event_fon_knighprode.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_event_Aquila"
+		texturefile = "gfx/event_pictures/event_Aquila.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_hight_Aquila"
+		texturefile = "gfx/event_pictures/event_night_Aquila.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Night_sky"
+		texturefile = "gfx/event_pictures/Night_sky.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Grover_vii_is_death"
+		texturefile = "gfx/event_pictures/Grover_vii_is_death.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_Grover_vi_death"
+		texturefile = "gfx/event_pictures/event_Grover_vi_death.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_republican_solders"
+		texturefile = "gfx/event_pictures/event_republican_solders.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_event_go_civil_war"
+		texturefile = "gfx/event_pictures/event_go_civil_war.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_HRZ_civil_war"
+		texturefile = "gfx/event_pictures/event_HRZ_civil_war.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_civil_war_in_Herzhland"
+		texturefile = "gfx/event_pictures/civil_war_in_Herzhland.dds"
+	}
+}

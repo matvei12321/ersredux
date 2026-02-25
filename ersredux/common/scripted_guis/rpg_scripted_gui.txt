@@ -1,0 +1,47 @@
+#documentation
+#GUI REQUIERES INITIALISED ARRAYS!!!
+#use pvp_player array to store tokens of characters (token:character) for player - for opponent any other way
+#use pvp_player_hp to store character hp and pvp_player_energy - for stamina
+scripted_gui = {
+	countrypoliticsview_ideology_info = {
+		context_type = player_context
+		window_name = "rpg_1vs1_container"
+		visible = {
+			check_variable = {
+				rpg_1vs1 > 0
+			}
+		}
+		triggers = {
+			HP_visible = {
+				check_variable = {
+					pvp_player_hp^0 > 0
+				}
+			}
+			ENERGY_visible = {
+				check_variable = {
+					pvp_player_energy^0 > 0
+				}
+			}
+		}
+		effects = {
+			clt_fight_text_1_button_click = {}
+			
+			
+			LEFT_UP_ACTION_click = {}
+			LEFT_DOWN_ACTION_click = {}
+			RIGHT_UP_ACTION_click = {}
+			RIGHT_DOWN_ACTION_click = {}
+		}
+		properties = {
+			player_portrait = {
+				image = "GFX_[?pvp_player^0.GetTokenKey]"
+			}
+			HP = {
+				frame = pvp_player_hp^0
+			}
+			ENERGY = {
+				frame = pvp_player_energy^0
+			}
+		}
+	}
+}

@@ -1,0 +1,17 @@
+scripted_gui = {
+	LYC_EZ_extermination_gui = {
+		window_name = "LYC_EZ_extermination_gui"
+		context_type = decision_category
+		properties = {
+			extermination_bar = {
+				frame = global.extermination_var
+			}
+			cap_indicator = {
+				x = cap_indicator_x
+			}
+			cap_text = {
+				x = cap_text_x
+			}
+		}
+	}
+}

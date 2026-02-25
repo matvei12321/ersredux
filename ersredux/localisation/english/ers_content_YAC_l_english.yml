@@ -1,0 +1,304 @@
+﻿l_english:
+
+ ##### PARTIES
+
+ ##### CHARACTERS
+ YAC_marx_leader:0 "Caramel Marx, the great Khan of the Proletariat"
+ YAC_chieftess_desc:0 ""Hooch chadal tavcher bane. Ta miniy duudlagig sonsozh, huleen avakhyn tould bi yamar ch soriltyg taswerlehad balag bayna, Marx! Hiik zuil mash their baina..."n\Nchiftess started out as a simple Yak-partisan who was close to the ideas of freedom and universal equality. There is no exact information on when and in what setting she became acquainted with the works of Caramel Marx, but they had a powerful influence on her. She was inspired by a great struggle-a struggle not just for the freedom of the proletariat... and for something more, something bright.Fighting among the guerrillas against the Jyakistan nationalists, Chieftess achieved recognition and became the leader of small territories in Shitedgasar. Then she led the offensive against Karsakag. It was a bloody battle, but the Shayak clique emerged victorious, liberating an important city from the tyranny of Khan Bradford. Then the southern part of the khanate was cut off from the capital's Kerekh Davsag, and the Communists finished off the scattered groups of Yaks. Chieftess attempted to attack Kerekh Davsag, but was forced to sign an armistice agreement, as were other Yak khanates. But it still means that the other varkhans have recognized the Socialist Republic of Yakov as a full-fledged enemy, and Chieftess is looking forward to being able to complete the revolutionary campaign. But he definitely won't limit himself to Kerekh Davsag alone..."
+ 
+ YAC_priest_advisor1:0 "Hervidz"
+ YAC_priest_advisor2:0 "Yigrid"
+ YAC_priest_advisor3:0 "Brignard"
+ YAC_priest_advisor4:0 "Archibald"
+
+
+
+
+ ##### NATIONAL FOCUS
+ 
+ YAC_war_win:0 "The crushing victory of the Revolution"
+ YAC_war_win_desc:0 "We won! Red Khan Chieftess led us to victory! Now it's time to start preparing for a real revolution."
+ YAC_basis_of_communism:0 "Fundamentals of Communism"
+ YAC_basis_of_communism_desc:0 "Freedom and equality. The working class will never suffer again."
+ YAC_basis_of_new_society:0 "Fundamentals of the new Society"
+ YAC_basis_of_new_society_desc:0 ""
+ yac_basis_of_new_society_tt:0 "Unblocks solutions to Political purges!"
+ YAC_equal_property:0 "Common property"
+ YAC_equal_property_desc:0 ""
+ YAC_shamans:0 "Shamanism"
+ YAC_shamans_desc:0 "We use our shamans to communicate with the spirits of the revolution, but the main goals we pursue are:.. Only the shamans of Mathan Krikha can do this. They should not be harmed under any pretext. To ensure their safety, we should keep them under guard until they agree to cooperate with us."
+ YAC_party_propaganda:0 "Party propaganda"
+ YAC_party_propaganda_desc:0 ""
+ YAC_spread_marks_personality:0 "How big is Her personality"
+ YAC_spread_marks_personality_desc:0 "We don't know what Marx was like during her lifetime. But we can definitely say that she respected the Yakut culture and was an excellent leader.Unfortunately, not many Yaks know about the existence of such a bright personality. We need to tell everyone about her."
+ YAC_religion:0 "People's faith in Her"
+ YAC_religion_desc:0 "The spirit of Marx will deign to descend into our world only if we believe in Her. No gods, no lords, for only Marx can be called God."
+ YAC_spread_marks_books:0 "Books that She wrote"
+ YAC_spread_marks_books_desc:0 "Caramel Marx wrote the greatest book in history, Capital. In fact, this is the only book that should be distributed among the people. Not the false "Teaching of Baradur", not the heretical writings of the Yakrun people, but the sacred "Capital".Anyone who is found reading or having any literature other than Capital will be punished, and that book will be burned."
+ YAC_agrarian_industry:0 "Agriculture"
+ YAC_agrarian_industry_desc:0 "Industrialization leads to the stratification of society and the emergence of such an ulcer as the bourgeoisie. Marx wrote in Capital that the working class should rise up to fight the bourgeoisie, but why allow them to appear at all? By spitting in the face of the smoky factories, we will make sure that the bourgeoisie never appears. Everyone will work within the framework of the new agrarian economic policy."
+ YAC_burn_moneys:0 "Destroy money"
+ YAC_burn_moneys_desc:0 "Money is the basis of capital, capital is the basis of a destructive slave system. We will fight the capitalist system by destroying the monetary currency."
+ YAC_religious_colkhoz:0 "Religious collective farms"
+ YAC_religious_colkhoz_desc:0 "Our goal is to unite yaks to increase productivity, and this will be realized through the creation of collective farms. Agricultural work in the field shoulder to shoulder with comrades is what can unite ordinary citizens."
+ YAC_nationalization:0 "Nationalization of handicraft industry"
+ YAC_nationalisation_desc:0 "WIP"
+ YAC_more_red_guns:0 "More red bangs"
+ YAC_more_red_guns_desc:0 "WIP"
+ YAC_miners_villages:0 "Establish mining towns"
+ YAC_miners_villages_desc:0 "WIP"
+ yac_noclass_utopy:0 "Classless utopia"
+ yac_noclass_utopy_desc:0 "Every worker has his own needs, and no one should leave offended. In our glorious state, the construction of true communism will begin, in which every Yak will be able to feel connected by a single goal, even with the highest members of the PKK."
+ YAC_sheyak_pyramid:0 "Pyramid of Shayak"
+ YAC_sheyak_pyramid_desc:0 "Every worker has his own needs to be met, and this task is taken over by the state. But it is impossible to please everyone at once, so Sheyak has developed a special social pyramid, according to which certain categories of citizens will receive more privileges in our society than others. At the top of the pyramid are priests and members of the General Council of the PKK, in the middle are ordinary workers, and at the very bottom are former criminals, deserters, parasites and foreigners who have not brought much benefit to the state [ROOT.getname]."
+
+
+
+ 
+ YAC_safety:0 "Ensure security"
+ YAC_safety_desc:0 "WIP"
+ YAC_yak_commissars:0 "Yak Commissars"
+ YAC_yak_commissars_desc:0 "WIP"
+ YAC_the_web:0 "Network"
+ YAC_the_web_desc:0 "WIP"
+ YAC_100_perc_party_membership:0 "One hundred percent party membership"
+ YAC_100_perc_party_membership_desc:0 "WIP"
+ YAC_support_churches:0 "Church Integration"
+ YAC_support_churches_desc:0 "WIP"
+ YAC_yac_nationalism:0 "Workers' brotherhood and Nationalism"
+ YAC_yac_nationalism_desc:0 "WIP"
+ YAC_yac_international_inquisition:0 "International Inquisition"
+ YAC_yac_international_inquisition_desc:0 "WIP"
+ YAC_yac_upgraded_culture:0 "Updated culture"
+ YAC_yac_upgraded_culture_desc:0 "WIP"
+
+
+ YAC_alt_history:0 "The real story"
+ YAC_alt_history_desc:0 "Many people believe that Caramel Marx was a revolutionary from one of the unicorn countries. She allegedly participated in some Northern revolutions, and then disappeared.But that's a lie.Caramel Marks was a great khan. She united the Yako peoples from Winnipeg to Oitjiljin. She ruled the great khaganate in accordance with her Marxist idea of workers' equality, expanding the empire of the proletarian to the entire Equus. At one point, it took over the continents of Gryphonia and Zebrica, and the whole world shone in the rays of true communism. But the envious capitalists destroyed the workers' empire and meanly eliminated Marx herself. Since then, the imperial ponies and griffins have gained independence from the Yaks, and the Yaks themselves have found themselves on the verge of an era of fragmentation.That's the story. That's the truth."
+ YAC_holy_portraits:0 "Sacred portraits"
+ YAC_holy_portraits_desc:0 "The portrait of Caramel Marks should be placed in every government building in the most prominent place. Every Yak should see the mother of the revolution with his own eyes every day, so that the thought that she will return will never leave anyone. Sacred portraits should always be in perfect condition and cleaned regularly. If it is discovered that Her portrait has been desecrated, it will amount to high treason."
+ YAC_communes:0 "Autonomous communities"
+ YAC_communes_desc:0 "WIP"
+ YAC_crusade:0 "Find what we need"
+ YAC_crusade_desc:0 "The shamans finally told Chieftess what they needed to get in order for Marx to return to this world. It's time to send our yaks on a search."
+ 
+ 
+ 
+ ##### IDEAS 
+ 
+ YAC_alt_history_idea:0 "The real story"
+ YAC_alt_history_idea_desc:0 "Many people believe that Caramel Marx was a revolutionary from one of the unicorn countries. She allegedly participated in some Northern revolutions, and then disappeared.But that's a lie. Brazen and unscientific.Caramel Marks was a great khan. She united the Yako peoples from Winnipeg to Oitjiljin. She ruled the great khaganate in accordance with her Marxist idea of workers' equality, expanding the empire of the proletarian to the entire Equus. At one point, it took over the continents of Gryphonia and Zebrica, and the whole world shone in the rays of true communism. But the envious capitalists destroyed the workers' empire and meanly eliminated Marx herself. Since then, the imperial ponies and griffins have gained independence from the Yaks, and the Yaks themselves have found themselves on the verge of an era of fragmentation.That's the story. This is the truth."
+ YAC_homeland_of_revolution:0 "Revolutionary consciousness"
+ YAC_homeland_of_revolution_desc:0 "We, the Yaks of Karsagak, have adopted a revolutionary way of life... No, we adopted a revolutionary mind to bring freedom to our people."
+ YAC_homeland_of_revolution_2:0 "Revolutionary consciousness II"
+ YAC_homeland_of_revolution_2_desc:0 "We, the Yaks of Karsagak, have adopted a revolutionary way of life... No, we adopted a revolutionary mind to bring freedom to our people."
+ YAC_primitive_esoterism:0 "Red esotericism"
+ YAC_primitive_esoterism_desc:0 "It is worth recognizing that the world revolution has failed. There are only a couple of socialist countries left of communism, and we are one of the few. The Caramel Marks case, which was launched many years ago, has failed.\n\n§But if we can get her back!..."
+ YAC_modern_esoterism:0 "Red esoterism"
+ YAC_modern_esoterism_desc:0 "It is worth recognizing that the world revolution has failed. There are only a couple of socialist countries left of communism, and we are one of the few. The Caramel Marks case, which was launched many years ago, has failed.\n\n§But if we can get it back!..."
+ YAC_no_money:0 "Destruction of the monetary currency"
+ YAC_agrarian_industry_idea:0 "Agrarian Society"
+ YAC_agrarian_industry_idea_desc:0 "Industrialization leads to the stratification of society and the appearance of such an ulcer as the bourgeoisie. Marx wrote in Capital that the working class should rise up to fight the bourgeoisie, but why allow them to appear at all? By spitting in the face of the smoky factories, we will make sure that the bourgeoisie never appears. Everyone will work within the framework of the new agrarian economic policy."
+ YAC_safety_lar:0 "Secure the regime"
+ YAC_safety_no_lar:0 "Secure the regime"
+ YAK_commissars:0 "Red Commissars"
+ YAC_marks_portrait:0 "Portrait of Marx"
+ YAC_total_war:0 "War for Marx"
+ YAC_miners_villages_idea:0 "Mining villages"
+ YAC_colkhoz_idea:0 "Collective farming groups"
+ YAC_no_class_utopy_idea:0 "Avant-garde hierarchy"
+ YAC_sheyak_pyramid_idea:0 "Pyramid of the needs of the working classes"
+ YAC_brotherhood_and_nationalism_idea:0 "Spiritual nationalist communism with elements of self-sufficiency"
+ YAC_international_inquisition_idea:0 "Extremus Ultimus"
+ YAC_updated_spirit_idea:0 "Elevation of the Spirit"
+ YAC_the_web_idea:0 "Network"
+
+ 
+ ##### DECISIONS 
+ 
+ YAC_purify_BAD:0 "Burn the Bara'dur library"
+ YAC_purify_BAD_desc:0 "This stupid old yak Baradur built an entire library, which he imported books from all over the world, including the "Teachings of Baradur" themselves. Our revolutionary security committee recognizes this collection of text as heretical writings, after which we will get rid of them and destroy the legacy of the stupidest yak in history."
+ YAC_purify_JAK:0 "Hang the nationalists"
+ YAC_purify_JAK_desc:0 "The Yakistanis were the first people we rebelled against as simple guerrillas, but now we are a great socialist state. It is necessary to hunt down the remnants of Bradford loyalists and bring them to a fair trial."
+ YAC_purify_MNT:0 "Destroy pagan sanctuaries"
+ YAC_purify_MNT_desc:0 "The Yakrun people worship the terrible deity Yakrun, making more and more sacrifices every day. We will end this barbaric tradition of worshipping the god of madness, and begin by banning the worship of Yakrun and destroying all altars dedicated to him."
+ YAC_purify_NAK:0 "Demolish monuments of the old regime"
+ YAC_purify_YAK:0 "Demolish monuments of the old regime"
+
+ YAC_search_marks_corpse_decision:0 "Search for Marx's remains in the region [FROM.getname]"
+
+ 
+ YAC_marks_revival_cat:0 "Cult of Marx"
+ YAC_marks_revival_cat_desc:0 "We believe that she will come back.\n\n We hope.\n\n We are waiting."
+ YAC_decisions_cat:0 "Yaks-Chief's Policy"
+ YAC_MARKS:0 "Get up, you damned bastard..."
+ YAC_MARKS_desc:0 "This solution is not a full-fledged part of the content and serves as a placeholder for further mechanics of esoteric communism. There is no more full-fledged content..."
+ YAC_MARKS_tt:0 "MARX, RISE UP, LIBERATE THE WORLD OF THE PROLETARIAT.IT HAS NOT BEEN TESTED AND MAY LEAD TO UNFORESEEN CONSEQUENCES IN THE FORM OF SEVERING THE CONNECTION BETWEEN THE WORLD OF THE LIVING AND THE WORLD OF THE DEAD."
+ YAC_ritual_decision:0 "Ritual"
+ YAC_economic_development:0 "Nationalization of the region's industry [FROM.getname]"
+ YAC_create_mining_villages:0 "Establish a mining village in the region [FROM.getname]"
+
+ #### OOB
+ 
+ #### COSMETIC TAGS
+ 
+ YAC_unified_final:0 "White Working Horde"
+ YAC_unified_final_DEF:0 "The Great White Horde of Working Peoples"
+ YAC_unified_final_ADJ:0 Rabocordynsk
+
+ ### TRAITS
+
+ yac_priest_advisor1_trait: 0 "Political Shaman"
+ yac_priest_advisor2_trait: 0 "Shaman-economic reformer"
+ yac_priest_advisor3_trait: 0 "Berserk Shaman"
+ yac_priest_advisor4_trait: 0 "Shaman the Executioner"
+ 
+
+ #### TOOLTIPS
+ yac_marks_changable_portrait_tt:0 "§Allows you to change the £marks_portrait_texticon portrait of Marx§!"
+ change_marks_portrait_desc:0 "Change the portrait of Caramel Marx"
+ yac_marx_search_tt:0 "Our agents will begin searching for the remains of Caramel Marks in this region.\n\n£alert_texticon_icon §The more regions we explored, the higher the chance of search success§!.\n"
+ 
+ yac_marx_search_finish_tt:0 "Our agents will return with news..."
+ yac_is_searching_marx_corpse:0 "Looking for the remains of Marx in another region"
+ yac_state_is_researched_tt:0 "§Rudalite§! region §Y[FROM.getname]§! possible to search for"
+ yac_can_start_revival:0 "Chief has a new action plan!"
+ yac_search_for_marx_decisions_unlocked_tt:0 "Will open special solutions!"
+ yac_search_for_marx_event_tt:0 "§A team of the most dedicated Marx Jacob search engines will be formed§!).The guards were ordered to sew a robe so that it would exactly repeat the clothes of Marx in the portrait."
+ yac_add_holy_corpse_tt:0 "Add §Assimilated Remains§!"
+ yac_has_holy_corpse:0 "Possesses § Assimilated Remains§!"
+ give_marks_corpse_to_shamans_tt:0 "§UTelo Marx§! it will be handed over to the shamans."
+ yac_event_10_tt:0 "§CAUTION: The probability of success is very low. You should strengthen your faith, comrades!.\n\n§To strengthen your faith, read the following prayer aloud and believe in Marx§!.\n\n§SMarks, namaig sons, ene delhiid ir. Marx, chiniy unench zartz chamaig duudazh bayna. Ogloo earth serahed miniy buh bodol zovkhon chiniy tuhai baydag, uchir ny zovkhon chi l nadad avral avchurch chadna. Itgal min gan shig huchtei, temulel min khavryn tsars shig khuvirshgui§!."
+ YAC_nationalisation_tt:0 "In the category "AJax-Chief Policy§!" there will be §Resolutions§! about § The legationalization of local industry§! in any region we own (§G+1 military factory§! from each nationalization)"
+ YAC_miners_villages_tt:0 "In the category "AJax-Chief Policy§!" there will be §Resolutions§! about § The establishment of mining settlements§! in any region we own. Mining towns §Exaggerate local resources§! and §R Downplay the percentage of the military-liable population and the speed of construction§! the selected region. § It makes sense to create a couple of such§!."
+ YAC_support_churches_tt:0 "Unlocks §Uppolitical Advisors§!, who give §G Powerful bonuses§!, but §R Belittling§! the popularity of §Ukommunism§!."
+ YAC_the_web_tt:0 "Creating a network! will allow us to find §Rrevisioners§! and the counter-revolutionaries!!."
+ yac_nationalising_factory_flag:0 "Nationalizes local industry in another region"
+ yac_creating_mines_flag:0 "Creates a mining village in another region"
+
+ #### EVENTS
+ yac.1.t:0 "The beginning of the revolution"
+ yac.1.d:0 "The chief finished her daily prayer. Surrounded by portraits of Marx from all sides, she tirelessly tried to connect with the spirit world in order to reach the now deceased revolutionary. But her spiritual power must not be strong enough to mess with the world of the dead. But shamans from Mathan Krikha should definitely be able to do this. She will find them soon."
+ yac.1.a:0 "Marx, give us the strength to fight on."
+
+ yac.2.t:0 "Crazy idea"
+ yac.2.d:0 "A group of old shamans led by Ufors were awaiting their fate in a small Yak town. They had heard that the new government was shooting the dissenting and the objectionable right and left, which meant that the shamans would not have long left. But to their surprise, the leader of the revolution, Chieftess, came to meet them.\n\n'So what do you need from us?\n\Nchiftess briefly told them the essence of the current ideology. The principles of equality of classes, common land and property, and world revolution. The shamans didn't quite understand what all this was about, but then Chief reported that all these principles were invented by a certain pony, or rather a unicorn, named Caramel Marks.\n\n'We just need you, the great Yak shamans, to bring Marx back to life."\n\The Pshamans immediately began to get indignant and object. There was no way they would try to "revive" some kind of unicorn that also had ideas of a strange "communism."n\Nchiftess fired a small revolver upwards and calmed the shamans. A ray of light penetrated through a hole in the yurt.\n\n'We, the members of the First Belarusian Communist Party, deeply respect your decision. But I think that you underestimate the importance of the figure of Caramel Marx for the Jewish society. You'll figure it out soon enough.'\n\nThen the Chief left the shamans in the yurt. And, interestingly, they all survived."
+ yac.2.a:0 "Marx, guide them on the right path..."
+
+ yac.3.t:0 "Only Marxism"
+ yac.3.d:0 "Only Marxism can lead all the peoples of the world to happiness. The teachings of Caramel Marx have opened a new milestone of consciousness for our Yaks...  One can say that the Yaks of Karsagak have risen above all other peoples. Only Marxism can have such an impact on the masses. Heroism, rejection, patriotism, hard work - all this can arise only if we clearly follow the ideology of Marx. And don't step aside."
+ yac.3.a:0 "Only Marxism..."
+
+ yac.4.t:0 "Only Marx"
+ yac.4.d:0 "No leader is capable of uniting the world proletariat to fight reactionism and imperialism. No one can inspire confidence and create a communist utopia... No one except Marx. And while she is not with us, this is the greatest sadness. It's a grief. Every day we suffer and despair because Marx does not lead us into battle. But then we remember that we are fighting for her idea. And Chieftess is Marx's guide to ideas. Chief Sheyak, our leader, prays for the victory of the proletariat day and night, but these prayers are not enough. Because we need something more than an idea. We need Marx."
+ yac.4.a:0 "Only Marx..."
+
+ yac.5.t:0 "True anti-Revisionism"
+ yac.5.d:0 ""This is outrageous!" the traitor repeats. "This is not true Marxism! You claim that you fundamentally follow the ideas of Marx, but this is a blatant lie!"He's trying to sow panic and disbelief among us. First, he will be captured and he will be physically punished in accordance with the ancient traditions of the Golden Workers Horde, which the anti-communists have forgotten. Then he must realize that our ideology is the purest anti-revisionism that can be. We destroy any reaction that distorts Marx's ideology. Then he will be killed, and already in the spirit world Marx will decide his fate, because in the spirit world it is the spirit Caramel Marx who occupies the position of the supreme deity. Whatever decision she makes, it will be fair."
+ yac.5.a:0 "Glory to Marx!"
+
+ yac.6.t:0 "The agents found nothing"
+ yac.6.d:0 "Japanese agents, disguised as international volunteers, infiltrated the specified region. Unfortunately, they did not find anything, although they checked every possible burial place of the great revolutionary.\n\n There is also good news. During the search, our agents have collected several rumors that may help identify the exact location of the burial site we need."
+ yac.6.a:0 "Oh, gods..."
+
+ yac.7.t:0 "Holy corpse"
+ yac.7.d:0 "The search party has already lost count of how many graves they have examined. Everything would be much easier if these stupid ponies had thought to perpetuate the memory of Marx with some kind of memorial, where she would also be buried. But today, they received one of the most valuable pieces of information during their search.\n\n- I heard that you red pilgrims are looking for the body of Caramel Marks? I don't know how long or where you've been wandering, but now you're definitely getting closer to the truth. The fact is that it was in this region that Marx spent her last days of her life. They say her health problems took a toll on her, and this forced her to temporarily settle somewhere in these parts. And... then she was unable to continue her business.Unfortunately, they could not provide more accurate information. But still, having already decided to give up this business, they almost accidentally stumbled upon a small mound with a modest tombstone. On it was crudely scratched in the Northerner language, "Here lies Caramel M., mother of the revolution. The years of life are illegible."\n\The boys prayed to make amends for what they were about to do, because their feat serves a much greater purpose.After ten minutes of digging up the ground, they were able to lift the skeleton. A simple lifeless unicorn skeleton. They were caught looting the grave by a local resident, after which he ran away in an unknown direction. He must have gone to call for help from those who can punish the search Yaks. But they don't care about the opinion of some weak ponies. They finally found what they were looking for.\n\n Most likely what you were looking for."
+ yac.7.a:0 "The most valuable treasure in the universe."
+
+ yac.8.t:0 "What are we looking for anyway?"
+ yac.8.d:0 "It has been several months since the talks with the shamans of Mathan Krikha. During this time, fortunately for us, some of them still accepted the fact that Marx must be revived. These converted shamans will promote the ideas of Marxism to their spiritual comrades, but in the meantime, Chief Shayak invited one of them to her yurt to finally discuss the details of the rebirth ritual.\n\n- Actually, this ritual is not the easiest task. - The red shaman Dorgun was smoking a pipe, thoughtfully examining the portrait of Marx that hung in the Chieftess yurt. - Its success directly depends on how many resources we have.\n\n- What resources are needed? You can ask for anything you want.\n\n- Actually, it mostly doesn't depend on you. Our task is to reach out to the spirit world, specifically appeal to the spirit of Marx, and also perform various ritual actions that you don't really need to know. On your part, a body should be provided.\n\n- Body?..  Chieftess guessed what that meant, but she decided to ask again anyway.\n\n- That's right, the body. At best, a fresh corpse, at worst, a preserved skeleton.n\Nchiftess was already thinking about how she could get the remains of Caramel Marsk. If only someone had built a mausoleum in her honor and preserved her body, then everything would have been much easier. But instead, her pseudo-comrades left her corpse somewhere in the lands that are known as the Red Northerners. The Northerners... Exactly. If there's a place to start looking, it's there. We need to search every cemetery, every grave. The revisionaries couldn't just leave her holy corpse in a random place.\n\n- And don't forget to have suitable clothes sewn for her. When she is reborn, her skin, fur and all organs will recover, which cannot be said about her clothes."
+ yac.8.a:0 "The search begins."
+
+ yac.9.t:0"Next to Her"
+ yac.9.d:0 "Chief Shayak was thrilled to learn of the success of the search for Marks' body, and when the skeleton was delivered, she almost felt sick from how good she felt. Marx's remains were carried in a small box, which Chieftess placed in her yurt, believing that only she could protect the remains of the Greatest. The soldiers guarding the Chieftess yurt were ordered not to enter, and also not to let anyone inside for the next two hours.\n\n- I am so glad that I can meet You. You've been a ray of light in my life all this time, and You're the one who means everything to me.n\Nchiftess was talking to the portrait of Marx, as if she had heard a yak in that world. After another prayer, Chieftess stared at the box. Unable to resist, she opened it.Inside there was a pile of bones mixed with the earth. After paying attention to the skull with the horn, she was convinced that the skeleton belonged to Marx. She looked around, as if afraid that someone would enter the yurt, and then took the skull out of the box. Holding the skull in her hoof, the yak stared into its bottomless sockets, unable to hold back a smile.\n\n- I know You can hear me. And I know that You can appreciate my efforts like no one else. What have they done to You? What kind of monster could destroy you?It seemed to her that the skull said something in response. Still, it seemed.\n\n- And our search engines. How could they bring you like this? In the dust, in the dirt... I'll fix it. I will wash Your bones with the purest water from the blessed stream. I will protect You. I can take care of you until you come to us. We will achieve a lot together. I promise.\n\Ncherep was silent in response."
+ yac.9.a:0 "It's so exciting."
+
+ yac.10.t:0 "Resurrection, part I"
+ yac.10.d:0 "The shamans of Mathan Krikha, who finally sided with the Chieftains, have set up a temporary sacred residence in Karsakaga. The new temple was within easy reach of the Chieftess headquarters, so moving Marx's body directly to the temple was not a problem.\n\n- Of course, I don't understand what you will do with It. But I promise, if you damage Her body, expect consequences. - At that moment, Chieftess was as serious as ever. - I hope you understand what awaits you if our sacred mission fails.The five shamans were already dragging a box with a skeleton from the Chieftess yurt to their temple. Speaking with their leader, Sheyak constantly looked back to see if they were transporting the Marx carefully.\n\n- But you also need to understand what you should prepare for if everything works out. The rites of rebirth are, of course, known to the elders, but they have not been practiced for hundreds of years, since it was not necessary. If we do bring her back, the spirits know it will be with some kind of defect.\n\n- H-what?  Chieftess's heart sank. It hurt her to even think about what the shaman meant.\n\n- According to our calculations, Marx will not be revived in perfect condition. Maybe her limb won't function, maybe it won't grow fur properly. Or she can come to life, but be literally a walking corpse without thoughts.\n\n- Don't you dare say that! If something goes wrong with you, you will all pay for it. The only reason you're alive is for your own benefit.\n\n- Yes, yes. Oh, we've already reached the sanctuary territories. Beyond that, the passage is open only to elder shamans. We'll let you know when the results are available.n\Nchiftess was clearly nervous. She watched as the box with the holy corpse disappeared behind the walls surrounding the temple prefecture, after which she galloped to her yurt and began reciting prayers in ancient Japanese in front of the portrait of Marx."
+ yac.10.a:0 "I will pray for You."
+
+ yac.11.t:0 "Resurrection, part II"
+ yac.11.d:0 "For the last few hours, the Chief has not left the yurt and repeated prayers, waiting for at least some news. It seemed like years had passed when the ambassador's voice was heard outside, saying that there was good news for the Sheikh and the entire revolutionary cause. And there was no need to repeat it twice for Chieftess.\n\nWhen she reached the sanctuary territories, she completely ignored the previously given ban on entry. After passing through the main gate, she raced to the temple, and when she arrived there, she saw many shamans in ritual robes gathered around the altar. The scent of mountain herbs was in the air, and a thin wisp of smoke drifted from the altar. It looks like a sacrifice. But the most important thing was on the sanctuary itself, which for Chieftess was blocked by a crowd of shamans who continued to stand silently, even when an outsider ran in.They seemed to go into a trance, maintaining complete silence. Chieftess, overcome by fatigue from running, also tried to make as little noise as possible. And in that silence, she heard someone breathing. Someone who was on the shamanic altar. The elders parted in front of Sheyak, revealing a view of Her.\n\pOna was as clear as the early snow of the hills. She was breathing, but she didn't seem to be conscious. The Chieftainess bowed down, as did the other shamans. Upon closer inspection, Shayak was convinced that this was exactly the pony whose portrait had accompanied her for more than a year."This body needs time to adapt to returning to the mortal world." The leader of the elders interrupted the silence, "Her internal and external organs have been restored, but her consciousness is still undergoing transference. Until then, she should be under our protection.pUfors thought for a while, but realized that it was pointless to stop someone who had the courage to break into the temple in the midst of the ritual.\n\n- Can I come here?\n\n- Good. But don't bother her until she wakes up."
+ yac.11.a:0 "She'll wake up soon, right?"
+
+ yac.12.t:0 "Resurrection, part III"
+ yac.12.d:0 "Chieftess spent the last week in the Krikha temple, practically without leaving it. The interior of the temple was in semi-darkness, but the candles, although a little, dispelled it. All five days, she made sure that Marks was not injured and woke up in the most favorable conditions. Armed soldiers also patrolled the perimeter around the temple for greater security.Psama Marx was placed in the warmest part of the temple, in the tomb. Sheyak tried to be by her side all the time, and even at night she did not close her eyes, so that no threat would destroy everything that the Yakri aspired to. But so far, Marks could not appreciate Chieftess' efforts, because she had spent all these five days in a dream and had not woken up. Chieftess regularly checked her pulse and heartbeat, but did not dare to disturb Marx, as the shamans pointed out to her.Occasionally, shamans also visited the Saint. According to them, there is nothing wrong with Marx's body, and her mind has almost moved from the spiritual world to ours. But not all shamans shared the same hope that Chieftess had. One of the doubters was the shaman Sigurd.\n\n- Do you think everything will go according to plan?  Sigurd asked Chieftess, looking at the unicorn's sleeping body.\n\n- Are you in doubt? You must not doubt. Everything will go as it should. Otherwise, you will suffer from it yourself.\n\n- I did not mean the success of the resurrection, however, I have no doubt about it. You've done political propaganda before, right? Thanks to the image of "Caramel Marks, who is the reincarnation of the Great Khan," you have gathered many supporters. But I believe that the people expect from Marx... the other one. How many yaks do you think will believe that this little fragile pony is really the one they need?n\Nchiftess looked at Marx, whose body lived but did not yet have a mind. Then she looked back at Sigurd. - You have no right to doubt the sanctity of Marx. No one has. Those who disagree will be regarded as apostates of the revolution. And if you take your thoughts to the masses, you will be the first person Marx will unleash his wrath on."
+ yac.12.a:0 "She is innocent and pure as the morning steppe."
+
+ yac.13.t:0 "Resurrection, Finale"
+ yac.13.d:0 "I think it was on the ninth day after the Ritual. Chieftess continued to carry out her post, fulfilling the sacred mission of preserving Marx. Every day the warmth of her body increased more and more, and now Chieftess noticed what she had been waiting for, it seemed, all her life.Marks, covered with a blanket, stopped breathing for a few moments. At first, Chieftess panicked, but then she heard a deep exhalation that was different from her usual sniffling. Shayak took a closer look, and saw how Marx's closed eyes began to tremble, and her eyelashes slowly peeled away from each other. Looking at this, Chieftess couldn't put her thoughts together. It seemed to her that she was now seeing a blessed miracle, and this miracle, after so many days of waiting, was slowly opening its eyes.Marks half-opened her eyes in a few seconds, but to Chieftess they seemed like an eternity. At first, Marx looked at the Lighthouse, and then slowly looked around. The expression on her face indicated that Marks was in turmoil. She did not stop looking at Chieftess and the dim but warm room in which she had awakened. Finally, she spoke.\n\n- Where am I?..\n\n- You are safe, Comrade Marx. - Chieftess tried to hide her tears of happiness, but for some reason, the pony didn't feel any better from her answer. For half a minute they sat in uncomfortable silence, looking at each other, one with faith and hope, the other with fear and misunderstanding. Marks had a lot of questions in her head, and she didn't know what to ask and what not to ask.\n\n- Who are you and why am I here?Pyak knelt in front of Marx, said a short prayer in ancient Japanese, which made the pony back away from her on the bed.\n\n- Are you unhappy about something? What did I do wrong? Every day, I called out to you as your most devoted servant. Have you not heard my prayers?\n\n- X-stop talking nonsense! What do you want from me? Why am I here? Why am I... me...\n\n Marx's mind had only more questions than answers. And one question that arose seemed to thunderbolt."
+ yac.13.a:0 ""Who am I?""
+
+ yac.14.t:0 "The Leadership of the Deity"
+ yac.14.d:0 "Two creatures silently looked at each other in the translucent temple room. One of them couldn't believe what she had just heard, and the other couldn't understand why she was here.\n\n- You... Don't you know who you are? No, it's impossible. You should at least remember me. I'm the one who brought you back. You remember, right? You should have heard my prayers back in the spirit dimension. The warmth of my words should have warmed your spirit, shouldn't it?  Caramel Marks continued to stare at Chieftess. "Don't you?" Was I unworthy? Why are you rejecting me? Do you even know how many Yaks died for you?!?In a fit of anger, Sheyak raised her voice, which caused Marks' expression to change to horror. And Chieftess noticed this, continuing the monologue in a half-suppressed tone.\n\n- No... Everything is fine. How dare I do that? The memory of the past must not have returned with the body. But I offended you. I insulted my entire family. - Yak took out a pistol and, trembling, put the muzzle to her temple. "I'm not sorry.\n\n- Stop!\n\Eric Marx brought Chieftess to her senses. Obeying the order, she put away her weapon with a smile.\n\n- Do you want me to live? This... this... - Chieftess's eyes sparkled with moisture, - this is what I've been waiting for all my life. I promise... True communism will come under your rule. That's what we all strive for. Caramel Marx, the reincarnation of the Great Khan, the leader of the proletariat... Do you agree to rule the Yakov family?Marks nodded silently in response.\n\n- Excellent, Comrade Marx. From this moment on, I am transferring to you the powers of the chairman of the First Yakut Communist Party of the Free State [ROOT.getname]. I will help you with board matters. But that's later. Now we need to inform the shamans about your awakening. Then you can go out to the people like a holy preacher.\n\n- Y-gum."
+ yac.14.a:0 "Brevity is the sister of talent. Brilliant, Comrade Marx!"
+
+ yac.15.t:0 "Problems of the new body"
+ yac.15.d:0 "Marx began her new life in the temple of Mathan Krikha, and from the moment of awakening she did not leave it for two days. As the priest said, the body of an awakened person can only be born on the third day of a reasonable existence. Marx didn't know what that meant. And she didn't really care. She did not leave the tomb where she woke up, and only contacted Chieftess when she brought in food. She was afraid of the local priests, although Chieftess was still no less afraid. Because of this, Shayak tried to shorten the interaction time to allow Marx's mind to grow stronger.\n\n---- Morning of the fourth day. ----\n\nThe Chief came in earlier than usual this time. Marks was still lying in bed, facing the wall. She didn't seem to be sleeping anymore, although it couldn't be said that she had been sleeping at all for the past three days.\n\n- How do you feel, Khan? How are your dreams? Three days have already passed, and you can go out into the light.\n\n- It seems that the night went well. I don't remember having any dreams. And, one more thing...Still lying in bed, Marks turned to the Chief.\n\n- It's probably my imagination, but is everything okay with mine?..\n\It was terrible. Chieftess gasped in fright and went to call the shamans for help. A minute later, an elder arrived at the tomb. And he immediately understood what was the matter.\n\nMarks seemed to be fine, but... Her eye. He just wasn't there. Instead of an eye, there was a gaping hole, revealing the inside of the skull. A strange reddish stain was found on Marks' pillow.\n\n- Well. Everything didn't go perfectly. But that's not the worst outcome either.\n\n- What do you mean? Why did you let THIS happen to Marx?\n\n- Calm down. The worst outcome is to revive a brainless corpse without feelings or thoughts. Marx was able to return to this world, but, as I said, not in a perfect state. Remembering the past is a price that has been paid, and besides... Marx will disappear. In fact, she should be a corpse. According to the laws of the universe, of course. But we have violated these laws. We have brought life back to a dead body that has grown into flesh and blood, but our universe does not accept this fact. Within the framework of the universe, Marx is a withered skeleton. She will gradually lose her body as the universe tries to restore the disturbed balance.\n\n- What can we do about it?\n\n- There are ways. We shamans don't understand them. But you just need the means by which you would keep the most ordinary corpse fresh.\n\You've noticed Marx. She was overwhelmed by several emotions at once: fear, shock, anger."
+ yac.15.a:0"- WHAT DOES IT ALL MEAN?"
+
+ yac.16.t:0 "Problems of the new body"
+ yac.16.d:0"- WHAT DOES IT ALL MEAN?\n\n- Calm down, rebel. You should be grateful that at least you can breathe. And, apparently, you have feelings and emotions. You should thank us, the shamans of Mathan K-\n\n- SHUT UP! shut up! shut up!Marks unleashed her anger on the elder. There was silence, and Marks slowly got out of bed. The remaining eye was wide open and did not blink.\n\n- Was I dead?\n\n- Didn't you know about this?Marks made a sound like a mixture of nervous laughter and exhalation.\n\n- Uforce, I think you should leave us alone.Pshaman silently left the tomb, slamming the door. It was just the two of them.n\Nchiftess sat on the bed next to Marks.\n\n- I hadn't thought about it. I did not know. I've been trying to remember something for three days. I was trying to figure out why I was here. What is the revolution you were talking about? I couldn't sleep. All my attempts to fall asleep were unsuccessful. I do not even know when I lost my eye. I just didn't feel it. I thought that the coming darkness meant the beginning of sleep. I was wrong. Why am I here?..Marks spoke each sentence slowly and timidly, as if speaking into the void. Then she snuggled up to Chieftess. Shayak felt the moisture on her fur.\n\n- Marx, are you crying?\n\n- N... no.Marks hesitantly pulled away. They really weren't tears. In the place where Marks had recently clung, blood glistened from the apple of the pony's eye.\n\n- I know you can handle it, Comrade Marx. Because I believe in you. I always have. Together we will make the world a better place.\n\Now there was silence. Only the wall torches crackled softly in the semi-darkness.\n\n- What are we going to do with the body? I... I don't want to. I don't want to disappear. I really want to live.\n\n- Don't worry. We'll figure something out.\n\nThe next Chief left the room and returned with a black eye patch.\n\n- You'll have to use this."
+ yac.16.a:0""I want you to live too.""
+
+ yac_flavour.1.t:0 "Deindustrialization"
+ yac_flavour.1.d:0 "Our first steps of deindustrialization of society are already beginning to bring success! Coal-fired machine factories found in the regions of Ulus, Baradur and Yakistan are already being demolished. We hope that one day wheat fields will grow in place of these machines, and working in the field, rather than working for a factory boss, will become the basis of the life of the glorious Yaksko people.Fortunately, the local varkhans did not have time to burden too many people with work at the factories. Some people will lose their jobs, but it's not so scary, because there is always work for them in agricultural collectives."
+ yac_flavour.1.a:0 "Agricultural revolution! Strike!"
+
+ yac_flavour.2.t:0 "Neither rich nor poor"
+ yac_flavour.2.d:0 "Three Yaks surrounded the dwelling. They've already cleared all the houses in this village of capital, but not this one. The owner of the house, an elderly yak, used his large apartment as a mini-hotel for travelers, and, of course, received a fee for it. Three collector yaks had been trying for the second hour to get to the richest yak in the vicinity, but he refused to come out. Only occasionally did he appear on the balcony to exchange a few phrases with the collectors. And it looked like he was armed.\n\n- Go away! I won't give you a single coin, you damned thieves!\n\n- Horvitz, damn you! Do you understand that the party may regard your behavior as treason? Then they will start talking to you in a completely different way, and completely different yaks will come.\n\n- Let them come! I'll kick their asses if they dare to steal from me! I have always been free, my father and my father's father were free. We were free to do whatever we wanted, and it was all thanks to this house! You won't dare take it away from me!\n\The money collectors lost their patience and decided to give up.\n\n- If you don't hand over all your savings to the party in three days... Then don't complain that no one warned you.\n\The Pyaks finally went to other villages. Three days later, Horvitz did not give up. Even though there were no guests, because the locals had been deprived of money, he was happy that he could live the way he wanted.\n\nthat three days have passed. His deadline has expired."
+ yac_flavour.2.a:0 "No tyrants, no masters."
+
+ yac_flavour.3.t:0 "Love the one who doesn't exist"
+ yac_flavour.3.d:0 "- Do you think you speak the Ancient Armenian language perfectly?\n\n- Bi ta oilgoh bolomzhtoi bayh bolno iluu their zuiliyg helzh chadna.\n\n- haha... Muu bish, darga aa.\n\nFor the implementation of the resurrection plan, Chieftess had to gain the favor of the shamans. For the past few weeks, she has been making visits to Yak Mathan Krikha, the capital of the former shamanic state. Sometimes she managed to get an audience with the Supreme Shaman Ufors himself. They discussed politics, life and death issues, and sometimes talked about abstract topics - all in order for Ufors to accept socialism. But he turned out to be a tough nut to crack. Besides, he still disliked Chieftess because she had conquered the Shamanate of Mathan Krikha.\n\n- You know, I did not expect that the opponent who raised a sword on my lands would be so educated. And yet you think we need to have a ritual. Interesting.\n\n- Uforce, I know enough to give you some advice. Learn to love.\n\n- Unexpected. What do you mean?\n\n- Of course, I'm not talking about love in the mundane sense. Love should not come from the heart, but from the mind, because the mind must believe. To believe in the one who is most dear to you.\n\n- And who do you think I care about?\n\n- Probably Nur-Zul-Gur is a Yakish god. But he doesn't exist in our world, and you think you're giving your life to his service. I love Caramel Marks, because my faith is incommensurable. However, now it does not exist either. Two non-existent matters. Why can't we say that Nur-Zul-Gur and Marx are not the same thing?pUfors chuckled. Chieftess couldn't tell if it was approval, mockery, or reproach.\n\n- But agree. Is it possible to say that by reviving Marx, we will not give birth to Nur-Zul-Guru?\n\Pshaamn nodded his head.\n\n- I'll think about your words."
+ yac_flavour.3.a:0 "Uchir n ter l bidniig avarch chadna."
+ yac_flavour_2_tt:0 "He lost the battle, but was able to carry two after him."
+
+ yac_flavour.4.t:0 "Restful sleep"
+ yac_flavour.4.d:0 "WIP"
+ yac_flavour.4.a:0 "WIP"
+
+ yac_flavour.5.t:0 "She's everywhere now"
+ yac_flavour.5.d:0 "Just recently, workers finished hanging portraits of Marx in the last government building of the Republic of Karsakag, and now every yak could see Her face. It was not without small "sacrifices". The portraits were embroidered and painted based on the image captured on the canvas belonging to the Chieftess. Chieftess never said where she got this portrait from, but one look at it was enough to understand that it was the work of a master. And the Yak artists did not always succeed in accurately reproducing the image of Marx, which is why the overall quality of the drawing suffered. But they fulfill their purpose. As they pass by the posted portraits, the Yaks nod in a small bow before passing on.\n\n This whole situation has made Chieftess special, at least in her opinion. After all, even though Marx's portals were everywhere, she was the only one with the original. And only she can see the true image, not the distorted representation. The thought of her exclusivity was added to her while reciting daily prayers in front of the canvas.\n\n- I will do everything to make them ready for Your return. It doesn't even matter what their expectations are about You. They won't have a choice. They will either agree to obey You, or they will know Your anger.n\Nchiftess instantly glanced at the small pistol lying in her yurt. It was loaded in case of self-defense, but now Chieftess came up with a more suitable prospect of using it.\n\n- Although, no. They're not worth your effort. They're the ones who won't accept you. I'll take care of them. I am your most loyal follower. I'll have to do it."
+ yac_flavour.5.a:0 "In the candlelight, the canvas looked on in silence."
+ 
+ yac_flavour.6.t:0 "WIP"
+ yac_flavour.6.d:0 "WIP"
+ yac_flavour.6.a:0 "WIP"
+
+ yac_flavour.7.t:0 "WIP"
+ yac_flavour.7.d:0 "WIP"
+ yac_flavour.7.a:0 "WIP"
+
+ yac_flavour.8.t:0 "WIP"
+ yac_flavour.8.d:0 "WIP"
+ yac_flavour.8.a:0 "WIP"
+
+ yac_flavour.9.t:0 "WIP"
+ yac_flavour.9.d:0 "WIP"
+ yac_flavour.9.a:0 "WIP"
+
+ yac_flavour.10.t:0 "WIP"
+ yac_flavour.10.d:0 "WIP"
+ yac_flavour.10.a:0 "WIP"
+
+ yac_flavour.11.t:0 "WIP"
+ yac_flavour.11.d:0 "WIP"
+ yac_flavour.11.a:0 "WIP"
+
+ yac_flavour.12.t:0 "WIP"
+ yac_flavour.12.d:0 "WIP"
+ yac_flavour.12.a:0 "WIP"
+
+
+
+
+
+
+
+
+
+
+
+
+ #### SCRIPTED GUI

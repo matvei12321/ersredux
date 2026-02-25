@@ -1,0 +1,33 @@
+﻿l_english:
+ warcrimes_tt:0 "Shows how many §RWar Crimes§! our country has committed.\n\nСчётчик §Rвоенных преступлений§! пополняется:\n\n- ежемесячно во время войны на случайное значение (при режиме §1превосходства§! совершается наибольшее число, при режиме §Cутопизма§! - наименьшее);\n- единовременно при применении §Gядерного оружия§!;\n- при регулярном использовании §7химических войск§! (в среднем два таких батальона совершают одно военное преступление ежемесячно);\n- единовременно при особых §Yсобытиях§!, §Yфокусах§! и §Yрешениях§!."
+ warcrimes_tt_delayed:0 "   §YНизкая§! степень совершения военных преступлений (£GFX_warcrimes_icon > 199):\n    §R-2.50%§! стабильности\n    §R-2.50%§! поддержки войны\n    §R+10.00%§! стоимость улучшения отношений\n    §G+0.20%§! военнообязанного населения\n    §G-2.50%§! скорости роста сопротивления\n    §G-5.00%§! шанса активности сопротивления\n\n§YСредняя§! степень совершения военных преступлений (£GFX_warcrimes_icon > 499):\n    §R-5.00%§! стабильности\n    §R-5.00%§! поддержки войны\n    §R+20.00%§! стоимость улучшения отношений\n    §R-5.00%§! пониресурсов на ненациональных территориях\n    §G+0.50%§! военнообязанного населения\n    §G-5.00%§! скорости роста сопротивления\n    §G-10.00%§! шанса активности сопротивления\n\n§YВысокая§! степень совершения военных преступлений (£GFX_warcrimes_icon > 999):\n    §R-7.50%§! стабильности\n    §R-7.50%§! поддержки войны\n    §R+20.00%§! стоимость улучшения отношений\n    §R-10.00%§! пониресурсов на ненациональных территориях\n    §G+1.00%§! военнообязанного населения\n    §G-10.00%§! скорости роста сопротивления\n    §G-15.00%§! шанса активности сопротивления"
+
+
+ 
+ plus_1_warcrimes_tt:0 "Commit £GFX_warcrimes_icon §Y1§! §Rwar Сrime§!."
+ plus_5_warcrimes_tt:0 "Commit £GFX_warcrimes_icon §Y5§! §Rwar Сrimeы§!."
+ plus_10_warcrimes_tt:0 "Commit £GFX_warcrimes_icon §Y10§! §Rwar Сrimes§!."
+ plus_25_warcrimes_tt:0 "Commit £GFX_warcrimes_icon §Y25§! §Rwar Сrimes§!."
+ plus_50_warcrimes_tt:0 "Commit £GFX_warcrimes_icon §Y50§! §Rwar Сrimes§!."
+ plus_75_warcrimes_tt:0 "Commit £GFX_warcrimes_icon §Y75§! §Rwar Сrimes§!."
+ plus_100_warcrimes_tt:0 "Commit £GFX_warcrimes_icon §Y100§! §Rwar Сrimes§!."
+ plus_150_warcrimes_tt:0 "Commit £GFX_warcrimes_icon §Y150§! §Rwar Сrimes§!."
+ plus_200_warcrimes_tt:0 "Commit £GFX_warcrimes_icon §Y200§! §Rwar Сrimes§!."
+ plus_250_warcrimes_tt:0 "Commit £GFX_warcrimes_icon §Y250§! §Rwar Сrimes§!."
+ plus_400_warcrimes_tt:0 "Commit £GFX_warcrimes_icon §Y400§! §Rwar Сrimes§!."
+ plus_500_warcrimes_tt:0 "Commit £GFX_warcrimes_icon §Y500§! §Rwar Сrimes§!."
+ chn_become_warcrime_queen_tt:0 "Chrysalis will become the §CQueen§! of £GFX_warcrimes_icon §RWar Crimes§!."
+ war_crimes_influence_modifier:0 "£GFX_warcrimes_icon War Crimes"
+ more_than_499_warcrimes:0 "Совершите §Y500§! или более £GFX_warcrimes_icon §Rвоенных преступлений§!"
+    
+ minus_50_warcrimes_tt:0 "§GJustify§! §Y50§! §RWar Crimes§!"
+ 
+ 
+ fascism_warcrimes_count_low:0 "The Effect of £GFX_warcrimes_icon"
+ fascism_warcrimes_count_medium:0 "The Effect of £GFX_warcrimes_icon"
+ fascism_warcrimes_count_high:0 "The Effect of £GFX_warcrimes_icon"
+ warcrimes_count_low:0 "The Effect of £GFX_varcrimes_icon is Low"
+ warcrimes_count_medium:0 "The Effect of £GFX_varcrimes_icon is Medium"
+ warcrimes_count_high:0 "The Effect of £GFX_varcrimes_icon is High"
+ 
+ warcrimes_disabled:0 "War Crimes Disabled"

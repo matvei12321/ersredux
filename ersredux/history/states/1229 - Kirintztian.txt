@@ -1,0 +1,23 @@
+state={
+	id=1229
+	name="STATE_1229"
+
+	provinces={
+		6581 9595 6614 6619 9611 11594 11899
+	}
+
+	manpower=870129
+	state_category = town
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = GUA
+		add_core_of = GUA
+		
+		victory_points = { 9827 8 }
+		
+		buildings = {
+			arms_factory = 1
+		}
+	}
+}

@@ -1,0 +1,26 @@
+characters={
+	CHC_gold_muffin={
+		name=CHN_gold_muffin
+		portraits={
+			civilian={
+				large="gfx/leaders/CHN/GoldMuffin_flag.tga"
+				#small = "GFX_idea_gold_muffin"
+			}
+		}
+
+		country_leader={
+			ideology=rozenkampism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		field_marshal={
+			traits={ changeling_race_trait}
+			skill=3
+			attack_skill=4
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+}

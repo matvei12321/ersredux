@@ -1,0 +1,27 @@
+state={
+	id=65
+	name="STATE_65"
+	
+	resources={
+		steel=16.000
+		tungsten=24.000
+		coal = 30
+	}
+
+	provinces={
+		771 3671 3772 3976 6195 6973 9478 9492 9507 11596 11726
+	}
+
+	manpower=256003
+	state_category=large_town
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = PRG
+		add_core_of = PRG
+		victory_points = { 11596 1 }
+		buildings = {
+			infrastructure = 1
+		}
+	}
+}

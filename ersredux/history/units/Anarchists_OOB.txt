@@ -1,0 +1,189 @@
+division_template = {
+	name = "Anarchists Pegasi Division"
+	
+	regiments = {
+		pegasi = { x = 0 y = 0 }
+		pegasi = { x = 1 y = 0 }
+		pegasi = { x = 2 y = 0 }
+		pegasi = { x = 0 y = 1 }
+		pegasi = { x = 1 y = 1 }
+	}
+
+	support = {
+	}
+	priority = 5
+}
+
+division_template = {
+	name = "Tachanka Division"
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 4 }
+	}
+	support = {
+	}
+}
+
+division_template = {
+	name = "Anarchists Pegasi Militia"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 1 }
+	}
+	priority = 4
+}
+
+units = {
+	division = {
+		name = "1st Red Flood Division"
+		location = 457
+		division_template = "Anarchists Pegasi Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "2nd Red Flood Division"
+		location = 457
+		division_template = "Anarchists Pegasi Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "3d Red Flood Division"
+		location = 457
+		division_template = "Tachanka Division"
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "4th Red Flood Division"
+		location = 457
+		division_template = "Anarchists Pegasi Militia"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+	
+	division = {
+		name = "Pink Ears Division"
+		location = 11272
+		division_template = "Tachanka Division"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "1st Bombers Division"
+		location = 11272
+		division_template = "Anarchists Pegasi Militia"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "2nd Bombers Division"
+		location = 11272
+		division_template = "Tachanka Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.7
+	}
+	
+	division = {
+		name = "5th Red Flood Division"
+		location = 3331
+		division_template = "Anarchists Pegasi Militia"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "6th Bombers Division"
+		location = 6280
+		division_template = "Anarchists Pegasi Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	
+	division = {
+		name = "6th Bombers Division"
+		location = 11216
+		division_template = "Anarchists Pegasi Militia"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "1st Free Division"
+		location = 11216
+		division_template = "Anarchists Pegasi Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "2nd Free Division"
+		location = 11216
+		division_template = "Tachanka Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "3d Free Division"
+		location = 11216
+		division_template = "Anarchists Pegasi Division"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Slaugher Division"
+		location = 11216
+		division_template = "Anarchists Pegasi Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Caramel Marx Division"
+		location = 11216
+		division_template = "Anarchists Pegasi Division"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.7
+	}
+	
+	division = {
+		name = "4th Free Division"
+		location = 9236
+		division_template = "Anarchists Pegasi Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "5th Free Division"
+		location = 9236
+		division_template = "Anarchists Pegasi Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "6th Free Division"
+		location = 9236
+		division_template = "Tachanka Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	
+	division = {
+		name = "Kings and Jesters"
+		location = 3309
+		division_template = "Anarchists Pegasi Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	
+	division = {
+		name = "1st Blood Moon Division"
+		location = 6938
+		division_template = "Tachanka Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+}

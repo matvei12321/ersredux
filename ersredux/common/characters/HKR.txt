@@ -1,0 +1,35 @@
+characters={
+	HKR_Felics={
+		name=HKR_Felics
+		portraits={
+			civilian={
+				large="gfx/leaders/HKR/Felics.tga"
+			}
+		}
+		country_leader={
+			traits={ }
+			ideology=marxism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	HKR_heilwilg = {
+		name = HKR_heilwilg
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/advisors/HRR/HKR_heilwilg.dds"
+				large = "gfx/leaders/HKR/HKR_heilwilg.tga"
+			}
+		}
+		corps_commander = {
+			traits={ unicorns_race_trait }
+			skill=3
+			attack_skill=3
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+		gender = female
+	}
+}

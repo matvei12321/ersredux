@@ -1,0 +1,47 @@
+capital = 251
+
+set_technology = {
+	changeling_race = 1
+}
+actually_fix_weapon_techs = yes #THIS HAS TO BE CALLED IN EVERY HISTORY FILE RIGHT AFTER MAIN set_technology!
+
+
+set_popularities = {
+	fascism = 0
+	communism = 0
+	democratic = 0
+	neutrality = 100
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1000.10.10"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+add_ideas = {
+	
+	HMD_radio_silence
+	
+	disarmed_nation
+	closed_economy
+	isolation
+
+	poor_science_base
+	detached_country
+	lack_of_scientists
+	poverty
+	changelings_beliefs
+}
+
+set_stability = 0.0
+set_war_support = 0.0
+
+#Generals and Leaders
+recruit_character = HMD_radio_silence_leader
+recruit_character = HMD_hive_mind
+
+set_rule = {
+	can_generate_female_aces = yes
+}

@@ -1,0 +1,14 @@
+ers_super_events_decisions_category = {
+	
+	allowed = {
+		always = yes
+	}
+	
+	visible = {
+		is_ai = no
+		NOT = {
+			has_country_flag = hide_super_events_decisions_flag
+		}
+	}
+	priority = 0
+}

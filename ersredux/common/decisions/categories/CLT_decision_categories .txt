@@ -1,0 +1,20 @@
+CLT_fucking_madness_cat = {
+	icon = GFX_skull_category
+	
+	allowed = {
+			# has_country_flag = CLT_shizo_decisions_flag
+			tag = CLT
+	}
+	visible = {
+		NOT = {
+			OR = {
+				has_government = democratic
+				has_government = neutrality
+				has_government = commuism
+			}
+		}
+				
+	}
+	
+	priority = 999999
+}

@@ -1,0 +1,24 @@
+
+state={
+	id=182
+	name="STATE_182"
+
+	history={
+		owner = UNC
+		add_core_of = UNC
+		add_core_of = MID
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+
+	provinces={
+		107 976 1106 1109 1205 6187 10163 11818  
+	}
+	manpower=38786
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

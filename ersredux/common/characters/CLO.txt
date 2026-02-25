@@ -1,0 +1,16 @@
+characters={
+	CLO_adler_kippler={
+		name=CLO_adler_kippler
+		portraits={
+			civilian={
+				large="GFX_adler_kippler"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		
+	}
+}

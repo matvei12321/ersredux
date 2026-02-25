@@ -1,0 +1,235 @@
+focus_tree = {
+	id = olenian_resistance
+	country = {
+		factor = 0
+		modifier = {
+			add = 0
+			original_tag = OLE
+		}
+		modifier = {
+			add = 10
+			original_tag = OLR
+		}
+	}
+
+	shared_focus = OLE_R_beats_of_heart_tell_me_im_not_dead
+
+	continuous_focus_position = { x = 0 y = 1400 }
+
+}
+
+shared_focus = {
+	id = OLE_R_beats_of_heart_tell_me_im_not_dead
+	icon = GFX_goal_ole_r_evil_deer
+	x = 10
+	y = 0
+	cost = 2.2
+
+	ai_will_do = {
+		factor - 40
+	}
+
+	available = {
+	
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus OLE_oppose_the_king"
+		add_political_power = 50
+		add_manpower = 15000
+		add_ideas = OLE_R_in_the_ashes
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+
+shared_focus = {
+	id = OLE_R_i_see_dawn_through_my_burned_eyes
+	icon = GFX_goal_ole_r_dawn
+	prerequisite = { focus = OLE_R_beats_of_heart_tell_me_im_not_dead }
+	cost = 2.2
+	relative_position_id = OLE_R_beats_of_heart_tell_me_im_not_dead
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor - 40
+	}
+
+	available = {
+	
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus OLE_oppose_the_king"
+		add_ideas = OLE_R_mobilisation
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+
+shared_focus = {
+	id = OLE_R_i_open_my_eyes_and_see_it
+	icon = GFX_goal_ole_r_evil_deer
+	prerequisite = { focus = OLE_R_beats_of_heart_tell_me_im_not_dead }
+	cost = 2.2
+	relative_position_id = OLE_R_beats_of_heart_tell_me_im_not_dead
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor - 40
+	}
+
+	available = {
+	
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus OLE_oppose_the_king"
+			
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+
+shared_focus = {
+	id = OLE_R_great_horror_that_has_no_name
+	icon = GFX_goal_ole_r_great_horror
+	prerequisite = { focus = OLE_R_beats_of_heart_tell_me_im_not_dead }
+	cost = 2.2
+	relative_position_id = OLE_R_beats_of_heart_tell_me_im_not_dead
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor - 40
+	}
+
+	available = {
+	
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus OLE_oppose_the_king"
+			
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+
+shared_focus = {
+	id = OLE_R_they_came_like_snow_drop
+	icon = GFX_goal_ole_r_evil_deer
+	prerequisite = { focus = OLE_R_i_see_dawn_through_my_burned_eyes }
+	prerequisite = { focus = OLE_R_i_open_my_eyes_and_see_it }
+	prerequisite = { focus = OLE_R_great_horror_that_has_no_name}
+	cost = 2.2
+	relative_position_id = OLE_R_beats_of_heart_tell_me_im_not_dead
+	x = -1
+	y = 2
+	ai_will_do = {
+		factor - 40
+	}
+
+	available = {
+	
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus OLE_oppose_the_king"
+			
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+
+shared_focus = {
+	id = OLE_R_they_crashed_us
+	icon = GFX_goal_ole_r_evil_deer
+	prerequisite = { focus = OLE_R_i_see_dawn_through_my_burned_eyes }
+	prerequisite = { focus = OLE_R_i_open_my_eyes_and_see_it }
+	prerequisite = { focus = OLE_R_great_horror_that_has_no_name}
+	cost = 2.2
+	relative_position_id = OLE_R_beats_of_heart_tell_me_im_not_dead
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor - 40
+	}
+
+	available = {
+	
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus OLE_oppose_the_king"
+			
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+
+shared_focus = {
+	id = OLE_R_our_signs_are_burried
+	icon = GFX_goal_ole_r_evil_deer
+	prerequisite = { focus = OLE_R_they_came_like_snow_drop }
+	prerequisite = { focus = OLE_R_they_crashed_us }
+	cost = 2.2
+	relative_position_id = OLE_R_beats_of_heart_tell_me_im_not_dead
+	x = -2
+	y = 3
+	ai_will_do = {
+		factor - 40
+	}
+
+	available = {
+	
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus OLE_oppose_the_king"
+			
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+
+shared_focus = {
+	id = OLE_R_they_destroyed_everything
+	icon = GFX_goal_ole_r_evil_deer
+	prerequisite = { focus = OLE_R_they_came_like_snow_drop }
+	prerequisite = { focus = OLE_R_they_crashed_us }
+	cost = 2.2
+	relative_position_id = OLE_R_beats_of_heart_tell_me_im_not_dead
+	x = 2
+	y = 3
+	ai_will_do = {
+		factor - 40
+	}
+
+	available = {
+	
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus OLE_oppose_the_king"
+			
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+
+shared_focus = {
+	id = OLE_R_they_killed_all_of_us
+	icon = GFX_goal_ole_r_neon_skull
+	prerequisite = { focus = OLE_R_our_signs_are_burried }
+	prerequisite = { focus = OLE_R_they_destroyed_everything}
+	cost = 2.2
+	relative_position_id = OLE_R_beats_of_heart_tell_me_im_not_dead
+	x = 0
+	y = 4
+	ai_will_do = {
+		factor - 40
+	}
+
+	available = {
+	
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus OLE_oppose_the_king"
+		
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+

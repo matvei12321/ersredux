@@ -1,0 +1,25 @@
+characters = {
+	APL_braeburn={
+		name=APL_braeburn
+		portraits={
+			civilian={
+				large="gfx/leaders/APL/APL_braeburn.tga"
+			}
+		}
+		country_leader={
+			desc="ers_braeburn_desc"
+			ideology=centrism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			desc="ers_braeburn_desc"
+			ideology=liberalism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		gender = male
+	}
+}

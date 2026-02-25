@@ -1,0 +1,16 @@
+characters={
+	AST_Stella={
+		name=AST_Stella_Burkis
+		portraits={
+			civilian={
+				large="gfx/leaders/AST/Stella_Burkis.tga"
+			}
+		}
+		gender = female
+		country_leader={
+			ideology=liberalism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

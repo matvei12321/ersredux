@@ -1,0 +1,15 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_changelings_focus_background"
+		texturefile = "gfx/focustree_backgrounds/changelings_focus_background.tga"
+	}
+	spriteType = {
+		name = "GFX_neigua_focus_background"
+		texturefile = "gfx/focustree_backgrounds/neigua_focus_background.tga"
+	}
+	spriteType = {
+		name = "GFX_pegasi_focus_background"
+		texturefile = "gfx/focustree_backgrounds/pegasi_focus_background.tga"
+	}
+	
+}

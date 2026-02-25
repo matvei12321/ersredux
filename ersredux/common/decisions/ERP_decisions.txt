@@ -1,0 +1,94 @@
+ERP_fascism_decisions = {
+	ERP_fascism_cleanings_decisions = {
+		allowed = {
+			always = yes
+		}
+		visible = {
+			always = yes
+		}
+		
+		available = {
+			has_government = fascism
+			has_completed_focus = ERP_political_correctness
+			is_puppet = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cost = 75
+		
+		days_re_enable = 70
+		
+		priority = 10
+		
+		days_remove = 35
+		
+		modifier = {
+			weekly_manpower = -1000
+			political_power_gain = -0.25
+			stability_factor = -0.05
+		}
+		
+		remove_effect = {
+			add_war_support = 0.025
+			add_stability = 0.025
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.02
+			}
+		}
+
+	}
+	
+	ERP_fascism_industry_decisions = {
+		allowed = {
+			always = yes
+		}
+		
+		visible = {
+			always = yes
+		}
+		
+		available = {
+			has_government = fascism
+			has_completed_focus = ERP_fascism_industry
+			is_puppet = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cost = 75
+		
+		days_re_enable = 70
+		
+		priority = 9
+		
+
+		days_remove = 35
+		
+		modifier = {
+			political_power_gain = -0.25
+			production_speed_industrial_complex_factor = 0.1
+			production_speed_arms_factory_factor = 0.1
+		}
+		
+		remove_effect = {
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+		}
+		
+
+	}
+}

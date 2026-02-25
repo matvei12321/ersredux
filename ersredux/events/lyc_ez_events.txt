@@ -1,0 +1,102 @@
+﻿add_namespace = ez
+
+country_event = {		 
+	id = ez.1
+	immediate = {log = "[Root.GetName]: event ez.1"}
+	title = ez.1.t
+	desc = ez.1.d
+
+	picture = GFX_event_devastation_nature1
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ez.1.a 
+		add_manpower = -124
+	}
+}
+
+### Great Trial
+country_event = {	
+	id = ez.2
+	immediate = {log = "[Root.GetName]: event ez.2"}
+	title = ez.2.t
+	desc = ez.2.d
+
+	picture = GFX_event_devastation_nature1
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ez.2.a 
+		add_stability = 0.01
+	}
+}
+
+### God of Destruction
+country_event = {	
+	id = ez.3
+	immediate = {log = "[Root.GetName]: event ez.3"}
+	title = ez.3.t
+	desc = ez.3.d
+
+	picture = GFX_event_devastation_nature1
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ez.3.a 
+	}
+}
+
+### Singing Oleanians
+country_event = {	
+	id = ez.4
+	immediate = {log = "[Root.GetName]: event ez.4"}
+	title = ez.4.t
+	desc = ez.4.d
+
+	picture = GFX_event_devastation_nature1
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ez.4.a 
+		add_manpower = -1
+	}
+	
+	option = {
+		name = ez.4.b
+	}
+}
+
+country_event = {	### removed
+	id = ez.5
+	immediate = {log = "[Root.GetName]: event ez.5"}
+	title = ez.5.t
+	desc = ez.5.d
+
+	picture = GFX_event_devastation_nature1
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ez.5.a 
+		custom_effect_tooltip = plus_1_warcrimes_tt
+	}
+}
+
+country_event = {	### 
+	id = ez.6
+	immediate = {log = "[Root.GetName]: event ez.6"}
+	title = ez.6.t
+	desc = ez.6.d
+
+	picture = GFX_event_medieval_village
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ez.6.a 
+	}
+}

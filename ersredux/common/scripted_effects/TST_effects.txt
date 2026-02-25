@@ -1,0 +1,61 @@
+
+TST_reduce_peasant_discontent = {
+	if = {
+		limit = {
+			has_idea = TST_low_peasant_discontent_idea
+		}
+		remove_ideas = TST_low_peasant_discontent_idea
+	}
+	else_if = {
+		limit = {
+			has_idea = TST_medium_peasant_discontent_idea
+		}
+		swap_ideas = {
+			remove_idea = TST_medium_peasant_discontent_idea
+			add_idea = TST_low_peasant_discontent_idea
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = TST_strong_peasant_discontent_idea
+		}
+		swap_ideas = {
+			remove_idea = TST_strong_peasant_discontent_idea
+			add_idea = TST_medium_peasant_discontent_idea
+		}
+	}
+}
+
+TST_increase_peasant_discontent = {
+	if = {
+		limit = {
+			has_idea = TST_strong_peasant_discontent_idea
+		}
+		TST_peasant_insurrection = yes
+	}
+	else_if = {
+		limit = {
+			has_idea = TST_medium_peasant_discontent_idea
+		}
+		swap_ideas = {
+			remove_idea = TST_medium_peasant_discontent_idea
+			add_idea = TST_strong_peasant_discontent_idea
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = TST_low_peasant_discontent_idea
+		}
+		swap_ideas = {
+			remove_idea = TST_low_peasant_discontent_idea
+			add_idea = TST_medium_peasant_discontent_idea
+		}
+	}
+	else = {
+		add_ideas = TST_low_peasant_discontent_idea
+	}
+}
+
+TST_peasant_insurrection = {
+	country_event = armed_sage.9
+}

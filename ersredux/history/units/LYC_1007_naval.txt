@@ -1,0 +1,29 @@
+units = {
+	fleet = {
+		name = "Lyctida Fleet"
+		naval_base = 492
+		task_force = {
+			name = "Lyctida Light Cruisers"
+			location = 492
+			ship = { name = "CNS Gardis" definition = light_cruiser start_experience_factor = 0.2 equipment = { light_cruiser_1 = { amount = 1 owner = LYC } } }
+			ship = { name = "CNS Gardis" definition = light_cruiser start_experience_factor = 0.2 equipment = { light_cruiser_1 = { amount = 1 owner = LYC } } }
+			ship = { name = "CNS Gardis" definition = light_cruiser start_experience_factor = 0.2 equipment = { light_cruiser_1 = { amount = 1 owner = LYC } } }
+			ship = { name = "CNS Gardis" definition = light_cruiser start_experience_factor = 0.2 equipment = { light_cruiser_1 = { amount = 1 owner = LYC } } }
+			ship = { name = "CNS Gardis" definition = light_cruiser start_experience_factor = 0.2 equipment = { light_cruiser_1 = { amount = 1 owner = LYC } } }
+		}	
+		task_force = {
+			name = "Lyctida Submarines"
+			location = 492
+			ship = { name = "U-1 Aurantia Personal Sumbarine" definition = submarine start_experience_factor = 0.3 equipment = { cruiser_submarine_nomtg = { amount = 1 owner = LYC } } }
+			ship = { name = "U-2" definition = submarine start_experience_factor = 0.2 equipment = { cruiser_submarine_nomtg = { amount = 1 owner = LYC } } }
+			ship = { name = "U-3" definition = submarine start_experience_factor = 0.2 equipment = { cruiser_submarine_nomtg = { amount = 1 owner = LYC } } }
+			ship = { name = "U-4" definition = submarine start_experience_factor = 0.2 equipment = { cruiser_submarine_nomtg = { amount = 1 owner = LYC } } }
+			ship = { name = "U-5" definition = submarine start_experience_factor = 0.2 equipment = { cruiser_submarine_nomtg = { amount = 1 owner = LYC } } }
+			ship = { name = "U-6" definition = submarine start_experience_factor = 0.2 equipment = { cruiser_submarine_nomtg = { amount = 1 owner = LYC } } }
+			ship = { name = "U-7" definition = submarine start_experience_factor = 0.2 equipment = { cruiser_submarine_nomtg = { amount = 1 owner = LYC } } }
+			ship = { name = "U-8" definition = submarine start_experience_factor = 0.2 equipment = { cruiser_submarine_nomtg = { amount = 1 owner = LYC } } }
+			ship = { name = "U-9" definition = submarine start_experience_factor = 0.2 equipment = { cruiser_submarine_nomtg = { amount = 1 owner = LYC } } }
+			ship = { name = "U-10" definition = submarine start_experience_factor = 0.2 equipment = { cruiser_submarine_nomtg = { amount = 1 owner = LYC } } }
+		}
+	}
+}

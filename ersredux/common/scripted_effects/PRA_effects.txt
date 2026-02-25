@@ -1,0 +1,74 @@
+pra_remove_1_revanshist_power = {
+	if = {
+		limit = {
+			check_variable = {
+				revanshists_power_var < 1
+			}
+		}
+	}
+	else_if = {
+		add_to_variable = { revanshists_power_var = -1 }
+	}
+}
+
+pra_remove_1_revanshist_anger = {
+	if = {
+		limit = {
+			check_variable = {
+				revanshists_anger_var < 1
+			}
+		}
+	}
+	else_if = {
+		add_to_variable = { revanshists_anger_var = -1 }
+	}
+}
+
+PRA_civil_war_script = {
+	PRG = {
+		if = {
+			limit = {
+				NOt = {
+					has_country_flag = is_revanshist_country
+				}
+			}
+			start_civil_war = {
+				ideology = fascism
+				load_oob = "PRA_additional_divisions_fascists_civ_war"
+				set_cosmetic_tag = PRA_fascism_flag
+				capital = 29
+				states = { 29 109 1222 }
+				load_focus_tree = PRA_revanshist_civil_war
+			}
+			if = {
+				limit = {
+					has_completed_focus = PRA_fascism_fast_1
+				}
+				load_oob = "PRA_additional_divisions_civ_war"
+			}
+		}
+		
+		else_if = {
+			limit = {
+				has_country_flag = is_revanshist_country
+			}
+			load_focus_tree = PRA_revanshist_civil_war
+			start_civil_war = {
+				ruling_party = fascism
+				ideology = neutrality
+				capital = 5
+				states = { 1 5 65 106 327 1215 }
+				load_oob = "PRG_1007"
+				if = {
+					limit = {
+						PRG = {
+							has_completed_focus = PRA_fascism_fast_1
+						}
+					}
+					load_oob = "PRA_additional_divisions_civ_war"
+				}
+			}
+		}
+	}			
+	
+}

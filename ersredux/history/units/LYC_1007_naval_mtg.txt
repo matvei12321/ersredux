@@ -1,0 +1,29 @@
+units = {
+	fleet = {
+		name = "Lyctida Fleet"
+		naval_base = 492
+		task_force = {
+			name = "Lyctida Light Cruisers"
+			location = 492
+			ship = { name = "CNS Gardis" definition = light_cruiser start_experience_factor = 0.2 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = LYC version_name = "Gardis Class" } } }
+			ship = { name = "CNS Gardis" definition = light_cruiser start_experience_factor = 0.2 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = LYC version_name = "Gardis Class" } } }
+			ship = { name = "CNS Gardis" definition = light_cruiser start_experience_factor = 0.2 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = LYC version_name = "Gardis Class" } } }
+			ship = { name = "CNS Gardis" definition = light_cruiser start_experience_factor = 0.2 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = LYC version_name = "Gardis Class" } } }
+			ship = { name = "CNS Gardis" definition = light_cruiser start_experience_factor = 0.2 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = LYC version_name = "Gardis Class" } } }
+		}
+		task_force = {
+			name = "Lyctida Submarines"
+			location = 492
+			ship = { name = "U-1 Aurantia Personal Sumbarine" definition = submarine start_experience_factor = 0.3 equipment = { ship_hull_submarine_1 = { amount = 1 owner = LYC version_name = "Type II Class" } } }
+			ship = { name = "U-2" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = LYC version_name = "Type II Class" } } }
+			ship = { name = "U-3" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = LYC version_name = "Type II Class" } } }
+			ship = { name = "U-4" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = LYC version_name = "Type II Class" } } }
+			ship = { name = "U-5" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = LYC version_name = "Type II Class" } } }
+			ship = { name = "U-6" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = LYC version_name = "Type II Class" } } }
+			ship = { name = "U-7" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = LYC version_name = "Type II Class" } } }
+			ship = { name = "U-8" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = LYC version_name = "Type II Class" } } }
+			ship = { name = "U-9" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = LYC version_name = "Type II Class" } } }
+			ship = { name = "U-10" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = LYC version_name = "Type II Class" } } }
+		}
+	}
+}

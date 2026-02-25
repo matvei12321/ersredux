@@ -1,0 +1,172 @@
+LOS_monarch_cat = {
+	LOS_foundings = {
+		allowed = {
+			tag = LOS
+			NOT = {
+				has_completed_focus = LOS_monarchist_no_hope
+			}
+		}
+		icon = GFX_decision_generic_monarchy
+		available = {
+			OR = {
+				has_completed_focus = LOS_monarchist_no_false_kings
+				has_completed_focus = LOS_monarchist_still_believing
+			}
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				OR = {
+					has_completed_focus = LOS_monarchist_still_believing
+					has_completed_focus = LOS_monarchist_no_false_kings
+				}
+				factor = 1000
+			}
+		}
+		
+		fire_only_once = yes
+		priority = 10
+		cancel_trigger = {
+			PGS = {
+				has_completed_focus = PGS_monarchy
+			}
+			has_completed_focus = LOS_monarchist_no_hope
+		}
+		days_remove = 30
+		remove_effect = {
+			country_event = los.1
+		}
+	}
+	
+	los_monarchist_documents_dec = {
+		available = {
+			has_country_flag = los_started_monarchy_mechanic
+		}
+
+		visible = {
+			tag = LOS
+		}
+		
+		fire_only_once = yes
+		
+		cost = 50
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision PGS_kills_decision"
+			los_plus_5_monarchist_var = yes
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+		}
+	}
+	
+	
+	los_monarchist_war_speech_dec = {
+		available = {
+			has_country_flag = los_started_monarchy_mechanic
+			custom_trigger_tooltip = {
+				tooltip = has_more_9_legicimicy_points
+				check_variable = { los_legicimicy_point > 9}
+			}
+		}
+		icon = GFX_decision_generic_civil_support
+		visible = {
+			tag = LOS
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		days_re_enable = 10
+		cost = 50
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision PGS_kills_decision"
+			add_war_support = 0.05
+			add_stability = -0.05
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.015
+			}
+			custom_effect_tooltip = los_available_in_20_days
+		}
+	}	
+	
+	los_monarchist_peace_speech_dec = {
+		available = {
+			has_country_flag = los_started_monarchy_mechanic
+			custom_trigger_tooltip = {
+				tooltip = has_more_9_legicimicy_points
+				check_variable = { los_legicimicy_point > 9 }
+			}
+		}
+		icon = GFX_decision_generic_form_nation
+		
+		visible = {
+			tag = LOS
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		days_re_enable = 10
+		cost = 50
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision PGS_kills_decision"
+			add_war_support = -0.05
+			add_stability = 0.05
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.015
+			}
+			custom_effect_tooltip = los_available_in_20_days
+		}
+	}	
+}
+
+LOS_civil_war_in_our_homeland_cat = {
+	
+	los_annex_civ_war_territories = {
+		available = {
+			has_country_flag = can_invade_PGS_as_rev
+			PGS = {
+				has_war_with = ANR
+			}
+			has_war_with = PGS
+		}
+		icon = GFX_decision_eng_support_imperialist_coup
+		visible = {
+			tag = LOS
+		}
+		
+		ai_will_do = {
+			factor = 500
+		}
+		
+		fire_only_once = yes
+		cost = 50
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 41
+			}
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision PGS_kills_decision"
+			add_war_support = 0.05
+			transfer_state = 41
+			41 = {
+				add_core_of = LOS
+			}
+			transfer_state = 95
+			95 = {
+				add_core_of = LOS
+			}
+		}
+	}	
+}

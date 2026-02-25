@@ -1,0 +1,834 @@
+﻿add_namespace = lyc
+
+country_event = {		
+	id = lyc.1
+	immediate = {log = "[Root.GetName]: event lyc.1"}
+	title = lyc.1.t
+	desc = lyc.1.d
+
+	is_triggered_only = yes
+	
+	picture = GFX_event_ers_hive_1
+	
+	option = {
+		name = lyc.1.a 
+	}
+}
+
+country_event = {	
+	id = lyc.2
+	immediate = {log = "[Root.GetName]: event lyc.2"}
+	title = lyc.2.t
+	desc = lyc.2.d
+
+	picture = GFX_event_changeling_approved_stamp
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lyc.2.a
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.01
+		}
+		add_stability = -0.01
+	}
+}
+
+country_event = {						##### Allaince with VRAKS	
+	id = lyc.3
+	immediate = {log = "[Root.GetName]: event lyc.3"}
+	title = lyc.3.t
+	desc = lyc.3.d
+
+	picture = GFX_event_changeling_approved_stamp
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lyc.3.a
+		VRX = {
+			country_event = { id = vrx.3 days = 2 }
+		}
+		set_global_flag = VRX_x_LYC_flag
+	}
+	option = {
+		name = lyc.3.b
+		VRX = {
+			country_event = { id = vrx.4 days = 2 }
+		}
+	}
+}
+
+country_event = {						##### Aurantia Diary - deer torture	
+	id = lyc.4
+	immediate = {log = "[Root.GetName]: event lyc.4"}
+	title = lyc.4.t
+	desc = lyc.4.d
+	
+	is_triggered_only = yes
+	
+	picture = GFX_event_dark_diary
+	
+	option = {
+		name = lyc.4.a
+	}
+}
+
+country_event = {						##### Sussy weapons focus
+	id = lyc.5
+	immediate = {log = "[Root.GetName]: event lyc.4"}
+	title = lyc.5.t
+	desc = lyc.5.d
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lyc.5.a
+	}
+}
+
+country_event = {						### Total war 1	
+	id = lyc.6
+	immediate = {log = "[Root.GetName]: event lyc.6"}
+	title = lyc.6.t
+	desc = lyc.6.d
+
+	is_triggered_only = yes
+	
+	picture = GFX_event_dark_diary
+	
+	option = {
+		name = lyc.6.a
+		custom_effect_tooltip = lyc_total_war_1_tt
+	}
+}
+
+country_event = {						### Total war 2	
+	id = lyc.7
+	immediate = {log = "[Root.GetName]: event lyc.7"}
+	title = lyc.7.t
+	desc = lyc.7.d
+
+	is_triggered_only = yes
+	
+	picture = GFX_event_dark_diary
+	
+	option = {
+		name = lyc.7.a
+	}
+}
+
+country_event = {						### Total war 3	
+	id = lyc.8
+	immediate = {log = "[Root.GetName]: event lyc.8"}
+	title = lyc.8.t
+	desc = lyc.8.d
+	
+	is_triggered_only = yes
+	
+	picture = GFX_event_dark_diary
+	
+	option = {
+		name = lyc.8.a
+		hidden_effect = {
+			country_event = { id = lyc.20 days = 70 }
+		}
+	}
+}
+
+country_event = {						### Chemical weapons test
+	id = lyc.9
+	immediate = {log = "[Root.GetName]: event lyc.9"}
+	title = lyc.9.t
+	desc = lyc.9.d
+	
+	is_triggered_only = yes
+	
+	picture = GFX_event_using_gas
+	
+	option = {	# ok
+		name = lyc.9.a
+	}
+	
+	option = {	# I love being gassed.
+		name = lyc.9.b
+		hidden_effect = {
+			country_event = { id = lyc.10 days = 2 }
+		}
+	}
+}
+
+country_event = {						### u stupid
+	id = lyc.10
+	immediate = {log = "[Root.GetName]: event lyc.10"}
+	title = lyc.10.t
+	desc = lyc.10.d
+	
+	is_triggered_only = yes
+	
+	picture = GFX_event_using_gas
+	
+	option = {					# oops
+		name = lyc.10.a
+		add_stability = -0.5
+		add_war_suppotr = -0.5
+		add_manpower = -1
+		retire_character = LYC_queen_aurantia
+		add_country_leader_role = {
+			character = lyc_council
+			promote_leader = yes
+			country_leader = {
+				expire = "1965.1.1"
+				ideology = nazism
+			}
+		}
+		load_focus_tree = fail_state
+		country_event = { id = ending.1 days = 1}
+	}
+
+}
+
+country_event = {						### ole lost 100k ponypower
+	id = lyc.11
+	immediate = {log = "[Root.GetName]: event lyc.11"}
+	title = lyc.11.t
+	desc = lyc.11.d
+	
+	trigger = {
+		tag = LYC
+		has_war_with = OLE
+		OLE = {
+			casualties_inflicted_by = {
+				opponent = LYC
+				thousands > 100
+			}
+		}
+	}
+	mean_time_to_happen = { days = 1 }
+	fire_only_once = yes
+	option = {
+		name = lyc.11.a
+	}
+}
+
+country_event = {						### ole lost 200k ponypower
+	id = lyc.12
+	immediate = {log = "[Root.GetName]: event lyc.12"}
+	title = lyc.12.t
+	desc = lyc.12.d
+	
+	trigger = {
+		tag = LYC
+		has_war_with = OLE
+		OLE = {
+			casualties_inflicted_by = {
+				opponent = LYC
+				thousands > 200
+			}
+		}
+	}
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = lyc.12.a
+	}
+}
+
+country_event = {						### ole lost 300k ponypower
+	id = lyc.13
+	immediate = {log = "[Root.GetName]: event lyc.13"}
+	title = lyc.13.t
+	desc = lyc.13.d
+	
+	trigger = {
+		tag = LYC
+		has_war_with = OLE
+		OLE = {
+			casualties_inflicted_by = {
+				opponent = LYC
+				thousands > 300
+			}
+		}
+	}
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = lyc.13.a
+	}
+}
+
+country_event = {						### ole lost 400k ponypower
+	id = lyc.14
+	immediate = {log = "[Root.GetName]: event lyc.14"}
+	title = lyc.14.t
+	desc = lyc.14.d
+	
+	trigger = {
+		tag = LYC
+		has_war_with = OLE
+		OLE = {
+			casualties_inflicted_by = {
+				opponent = LYC
+				thousands > 400
+			}
+		}
+	}
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = lyc.14.a
+	}
+}
+
+country_event = {						### ole lost 500k ponypower
+	id = lyc.15
+	immediate = {log = "[Root.GetName]: event lyc.15"}
+	title = lyc.15.t
+	desc = lyc.15.d
+	
+	trigger = {
+		tag = LYC
+		has_war_with = OLE
+		OLE = {
+			casualties_inflicted_by = {
+				opponent = LYC
+				thousands > 500
+			}
+		}
+	}
+	mean_time_to_happen = { days = 1 }
+	fire_only_once = yes
+	option = {
+		name = lyc.15.a
+	}
+}
+
+country_event = {						### civil war reaction
+	id = lyc.16
+	immediate = {log = "[Root.GetName]: event lyc.16"}
+	title = lyc.16.t
+	desc = lyc.16.d
+	
+	trigger = {
+		tag = LYC
+		OLE = {
+			has_civil_war = yes
+		}
+	}
+	mean_time_to_happen = { days = 1 }
+	fire_only_once = yes
+	option = {
+		name = lyc.16.a
+		add_war_suppotr = -0.05
+	}
+}
+
+country_event = {						### PART 1 olenian capitulation
+	id = lyc.17
+	immediate = {log = "[Root.GetName]: event lyc.17"}
+	title = lyc.17.t
+	desc = lyc.17.d
+	
+	picture = GFX_event_broken_clocks
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = lyc.17.a
+		country_event = {
+			id = lyc.35 days = 40
+		}
+	}
+}
+
+country_event = {						### lyctida capitulation
+	id = lyc.18
+	immediate = {log = "[Root.GetName]: event lyc.18"}
+	title = lyc.18.t
+	desc = lyc.18.d
+	
+
+	is_triggered_only = yes
+	
+	option = {
+		name = lyc.18.a
+	}
+}
+
+country_event = {						### Krieger gets action
+	id = lyc.19
+	immediate = {log = "[Root.GetName]: event lyc.19"}
+	title = lyc.19.t
+	desc = lyc.19.d
+	
+	picture = GFX_event_krieger
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = lyc.19.a
+		LYC_fon_krieger = {
+			set_nationality = OLE
+		}
+		OLE = {
+			add_country_leader_role = {
+				character = LYC_fon_krieger
+				promote_leader = yes
+
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = ultraviolance
+					traits = { }
+				}
+			}
+			set_party_name = { ideology = fascism long_name = EZ_fascism_party_long name = EZ_fascism_party }
+		}
+	}
+	
+	option = {
+		name = lyc.19.b
+		LYC_fon_krieger = {
+			set_nationality = OLE
+		}
+		OLE = {
+			add_country_leader_role = {
+				character = LYC_fon_krieger
+				promote_leader = yes
+
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = ultraviolance
+					traits = { }
+				}
+			}
+			set_party_name = { ideology = fascism long_name = EZ_fascism_party_long name = EZ_fascism_party }
+		}
+		OLE = { change_tag_from = ROOT	}
+	}
+}
+
+country_event = {						### Prepare God War - 1
+	id = lyc.20
+	immediate = {log = "[Root.GetName]: event lyc.20"}
+	title = lyc.20.t
+	desc = lyc.20.d
+	
+	is_triggered_only = yes
+	
+	picture = GFX_event_polar_camp_ruins
+	
+	option = {
+		name = lyc.20.a
+		hidden_effect = {
+			country_event = { id = lyc.21 days = 7 }
+		}
+		custom_effect_tooltip = LYC_aurantia_goes_to_soryth_tt
+	}
+}
+
+country_event = {						### Prepare God War - 2
+	id = lyc.21
+	immediate = {log = "[Root.GetName]: event lyc.21"}
+	title = lyc.21.t
+	desc = lyc.21.d
+	
+	is_triggered_only = yes
+	
+	picture = GFX_event_olenia
+	
+	option = {
+		name = lyc.21.a
+		hidden_effect = {
+			country_event = { id = lyc.22 days = 6 }
+		}
+	}
+}
+
+country_event = {						### Prepare God War - 3
+	id = lyc.22
+	immediate = {log = "[Root.GetName]: event lyc.22"}
+	title = lyc.22.t
+	desc = lyc.22.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = lyc.22.a
+	}
+}
+
+country_event = {						### PART 3 Killing the Gods
+	id = lyc.23
+	immediate = {log = "[Root.GetName]: event lyc.23"}
+	title = lyc.23.t
+	desc = lyc.23.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = lyc.23.a
+		hidden_effect = { 
+			country_event = { id = lyc.24 days = 3 } 
+		}
+		if = {
+			limit = {
+				NOT = {	has_global_flag = warcrimes_disabled }
+			}
+			add_to_variable = {
+				ROOT_warcrimes_count = 1
+			}
+			custom_effect_tooltip = plus_1_warcrimes_tt
+		}
+	}
+}
+
+country_event = {						### PART 4 Dating with Verneks after killing the gods
+	id = lyc.24
+	immediate = {log = "[Root.GetName]: event lyc.24"}
+	title = lyc.24.t
+	desc = lyc.24.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = lyc.24.a
+		remove_country_leader_trait = little_not_ok
+		country_event = {
+			id = lyc.34 days = 15 
+		}
+	}
+}
+
+country_event = {						### Social problems after Great War
+	id = lyc.25
+	immediate = {log = "[Root.GetName]: event lyc.25"}
+	title = lyc.25.t
+	desc = lyc.25.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = lyc.25.a
+		add_political_power = -250
+		swap_ideas = {
+			remove_idea = LYC_social_problems_ignored
+			add_idea = LYC_social_problems_ignored_2
+		}
+		hidden_effect = {
+			country_event = 
+		}
+	}
+}
+
+country_event = {						### LYC back to hives
+	id = lyc.26
+	immediate = {log = "[Root.GetName]: event lyc.26"}
+	title = lyc.26.t
+	desc = lyc.26.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = lyc.26.a
+		add_ideas = changelings_low_puppet
+	}
+	option = {
+		name = lyc.26.b
+		add_ideas = changelings_medium_puppet
+	}
+	option = {
+		name = lyc.26.c
+		add_ideas = changelings_high_puppet
+	}
+}
+
+country_event = {						### Social reformists after war
+	id = lyc.27
+	immediate = {log = "[Root.GetName]: event lyc.27"}
+	title = lyc.27.t
+	desc = lyc.27.d
+	
+	picture = GFX_event_changeling_crest
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = lyc.27.a
+		add_ideas = LYC_afterwar_protests
+	}
+}
+
+country_event = {						### Trail of Blood reference
+	id = lyc.28
+	immediate = {log = "[Root.GetName]: event lyc.28"}
+	title = lyc.28.t
+	desc = lyc.28.d
+	
+	picture = GFX_event_forest_depression
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = lyc.28.a
+		303 = {
+			add_manpower = -2
+		}
+	}
+}
+
+country_event = {						### SR's formalise coalition
+	id = lyc.29
+	immediate = {log = "[Root.GetName]: event lyc.29"}
+	title = lyc.29.t
+	desc = lyc.29.d
+	
+	picture = GFX_event_socdem_communism
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = lyc.29.a
+		set_country_flag = social_reformists_are_threat
+	}
+}
+
+country_event = {						### Commie SR's formalise coalition
+	id = lyc.30
+	immediate = {log = "[Root.GetName]: event lyc.30"}
+	title = lyc.30.t
+	desc = lyc.30.d
+	
+	picture = GFX_event_socdem_communism
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = lyc.30.a
+		set_party_name = { ideology = communism long_name = LYC_lsr_party_long name = LYC_lsr_party }
+	}
+}
+
+country_event = {						### Liberals SR's formalise coalition
+	id = lyc.31
+	immediate = {log = "[Root.GetName]: event lyc.31"}
+	title = lyc.31.t
+	desc = lyc.31.d
+	
+	picture = GFX_event_socdem_communism
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = lyc.31.a
+		set_party_name = { ideology = democratic long_name = LYC_dsr_party_long name = LYC_dsr_party }
+	}
+}
+
+country_event = {						### Notification that Lyctida starts Great War against Olenia
+	id = lyc.32
+	immediate = {log = "[Root.GetName]: event lyc.32"}
+	title = lyc.32.t
+	desc = lyc.32.d
+	
+	picture = GFX_event_forest_depression
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = lyc.32.a
+	}
+}
+
+country_event = {						### Commies and Democrats Trying Take Over
+	id = lyc.33
+	immediate = {log = "[Root.GetName]: event lyc.33"}
+	title = lyc.33.t
+	desc = lyc.33.d
+	
+	picture = GFX_event_forest_depression
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = lyc.33.a
+		ai_chance = {
+			factor = 100
+		}
+		add_stability = -0.1
+		add_manpower = -89515
+		add_political_power = -75
+		complete_national_focus = LYC_calm_protesters
+	}
+	
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = lyc.33.b
+		load_focus_tree = fail_state
+		country_event = { id = ending.1 days = 1}
+		random_list = {
+			50 = {
+				set_politics = { ruling_party = communism elections_allowed = no }
+			}
+			50 = {
+				set_politics = { ruling_party = democratic elections_allowed = no }
+			}
+		}
+	}
+}
+
+country_event = {						### PART 5 Aurantia x Verneks
+	id = lyc.34
+	immediate = {log = "[Root.GetName]: event lyc.34"}
+	title = lyc.34.t
+	desc = lyc.34.d
+	
+	picture = GFX_event_forest_depression
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = lyc.34.a
+	}
+}
+
+country_event = {						### PART 2 Blood Diary
+	id = lyc.35
+	immediate = {log = "[Root.GetName]: event lyc.35"}
+	title = lyc.35.t
+	desc = lyc.35.d
+	
+	picture = GFX_event_forest_depression
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = lyc.35.a
+		country_event = { id = lyc.23 days = 50 }
+	}
+}
+
+country_event = {						### Krieger stays in Olenia
+	id = lyc.36
+	immediate = {log = "[Root.GetName]: event lyc.36"}
+	title = lyc.36.t
+	desc = lyc.36.d
+	
+	picture = GFX_event_forest_depression
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = lyc.36.a
+
+	}
+}
+
+country_event = {						### Aurantia Loses Sight - 1
+	id = lyc.37
+	immediate = {log = "[Root.GetName]: event lyc.37"}
+	title = lyc.37.t
+	desc = lyc.37.d
+	
+	picture = GFX_event_forest_depression
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = lyc.37.a
+		custom_effect_tooltip = lyc_37_event_tt
+		hidden_effect = {
+			country_event { id = lyc.38 days = 5 }
+		}
+	}
+}
+
+country_event = {						### Aurantia Loses Sight - 2
+	id = lyc.38
+	immediate = {log = "[Root.GetName]: event lyc.38"}
+	title = lyc.38.t
+	desc = lyc.38.d
+	
+	picture = GFX_event_forest_depression
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = lyc.38.a
+		add_country_leader_trait = weak_sight
+		set_country_leader_portrait = {
+			ideology = fascism
+			portrait = "gfx/leaders/LYC/aurantia_glasses.tga"
+		}
+	}
+}
+
+country_event = {						### Aurantia Mental Help
+	id = lyc.39
+	immediate = {	
+		hidden_effect = { play_song = "kuzinatra" }
+		log = "[Root.GetName]: event lyc.39"
+	}
+	title = lyc.39.t
+	desc = lyc.39.d
+	
+	picture = GFX_event_forest_depression
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = lyc.39.a
+		custom_effect_tooltip = LYC_good_ending_tt
+		remove_country_leader_trait = little_not_ok
+		custom_effect_tooltip = change_urantia_desc_tt
+		set_country_leader_description = {
+		  ideology = fascism
+		  desc = LYC_normie_aurantia_desc
+		}
+#		add_to_variable = {
+#			open_ers_ending_container_variable = 1
+#		}
+#		set_country_flag = unique_ending_gui_flag
+#		set_country_flag = lyctida_sane_ending_flag_1
+#		set_country_flag = ending_burning_village_flag
+	}
+}
+
+country_event = {						### Queen's Promise
+	id = lyc.40
+	immediate = {log = "[Root.GetName]: event lyc.37"}
+	title = lyc.40.t
+	desc = lyc.40.d
+	
+	picture = GFX_event_forest_depression
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = lyc.40.a
+		add_ideas = LYC_hive_of_thousand_year_hehemony_idea
+	}
+}
+
+country_event = {						### Ultimate Coronation
+	id = lyc.41
+	immediate = {log = "[Root.GetName]: event lyc.37"}
+	title = lyc.41.t
+	desc = lyc.41.d
+	
+	picture = GFX_event_aurantia_glasses_the_end
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = lyc.41.a
+		custom_effect_tooltip = LYC_neutral_ending_tt
+	}
+}
+
+
+
+
+

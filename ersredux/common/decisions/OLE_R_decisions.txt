@@ -1,0 +1,33 @@
+LYC_EZ_partizans = {
+	LYC_EZ_rising_up = {
+		icon = GFX_decision_fire
+		available = {
+			OR = {
+				has_completed_focus = PGS_hurricane_political_aftermath
+				has_country_flag = pgs_stop_revolution_flag
+				has_global_flag = pegasi_civil_war_flag
+			}	
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		priority = 10
+		visible = {
+			tag = PGS
+			NOT = {
+				has_global_flag = pegasi_civil_war_flag
+			}
+		}
+		activation = {
+			has_country_flag = olenian_resistance_start_flag
+		}
+		
+		is_good = no
+		days_mission_timeout = 50
+		
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision PGS_civil_war_time"
+			country_event = pegasi.16
+		}
+	}
+}

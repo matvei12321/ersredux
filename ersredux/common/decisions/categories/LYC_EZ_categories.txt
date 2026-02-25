@@ -1,0 +1,40 @@
+
+LYC_EZ_partizans = {
+	icon = changeling_category_icon
+	
+	allowed = {
+		OR = {
+			tag = OLE
+			tag = OLR
+		}
+	}
+	visible = {
+#		has_country_flag = olenian_resistance_start_flag
+#		OR = {
+#			tag = OLR
+#			has_country_flag = extermination_zone
+#		}
+		always = no
+	}
+	
+	visible_when_empty = yes
+
+	priority = 154
+}
+LYC_war_against_olenians = {
+	icon = changeling_category_icon
+	
+	allowed = {
+		OR = {
+			tag = LYC
+			tag = OLE
+		}
+	}
+	visible = {
+
+	}
+	
+	visible_when_empty = yes
+	scripted_gui = LYC_EZ_extermination_gui
+	priority = 155
+}

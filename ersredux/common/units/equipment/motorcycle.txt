@@ -1,0 +1,51 @@
+equipments = {
+
+	motorcycle_equipment = {
+		year = 1007
+
+		is_archetype = yes
+		picture = archetype_motorized_equipment		
+		is_buildable = no
+		type = {
+			motorized
+			support
+		}
+		
+		upgrades = {
+			tank_reliability_upgrade
+			tank_engine_upgrade
+		}
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		maximum_speed = 21
+		reliability = 0.8
+
+		breakthrough = 3
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+
+		build_cost_ic = 1.5
+		resources = {
+			#oil = 1
+			rubber = 1
+			steel = 1
+		}
+		
+		fuel_consumption = 1
+		supply_truck = no
+	}
+	
+	motorcycle_equipment_0 = { # Introducing WW1 style trucks
+		year = 1007
+
+		archetype = motorcycle_equipment
+		priority = 30
+		maximum_speed = 21
+		reliability = 0.75
+		breakthrough = 2			
+	}
+
+}

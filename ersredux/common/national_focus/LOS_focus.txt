@@ -1,0 +1,13 @@
+focus_tree = {
+	id = LOS_start_focus_tree
+	continuous_focus_position = { x = 1 y = 1750 }
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = LOS
+		}
+	}
+	
+	shared_focus = LOS_old_new_home_d
+}

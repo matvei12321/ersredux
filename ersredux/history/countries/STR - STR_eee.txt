@@ -1,0 +1,53 @@
+capital = 33
+
+
+oob = "STR_1007"
+set_research_slots = 1
+starting_train_buffer = 2
+
+save_global_event_target_as = prance_target
+
+recruit_character = STR_mauntatcli
+
+add_manpower = 45000
+
+add_ideas = { 
+	
+	tribal_society
+	low_economic_mobilisation
+	lack_of_scientists2
+	better_science_base
+	
+	}
+
+set_technology = {
+	 
+	thestral_race = 1
+	melee_weapons = 1
+	tech_support = 1
+	tech_thestrals = 1
+}
+
+actually_fix_weapon_techs = yes #THIS HAS TO BE CALLED IN EVERY HISTORY FILE RIGHT AFTER MAIN set_technology!
+
+add_equipment_to_stockpile = {
+	type = melee_equipment_1
+	amount = 1000
+	producer = STR
+}
+
+set_convoys = 0
+set_popularities = {
+	communism = 10 
+	fascism = 10
+	neutrality = 80
+}
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1.10.10"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+set_stability = 0.45
+set_war_support = 0.5

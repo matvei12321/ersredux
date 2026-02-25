@@ -1,0 +1,301 @@
+technologies = {
+
+	toxic_research = {
+	
+		start_year = 989
+		
+		research_speed_factor = 0.02
+		research_cost = 2
+		
+		dependencies = {
+			infantry_weapons = 1
+		}
+		
+		folder = {
+			name = chem_tech_folder
+			position = { x = 2 y = 0 }
+		}
+		
+		path = {
+			leads_to_tech = industrial_gas_using
+			research_cost_coeff = 1
+		}
+		categories = {
+			chemical_warfare_category
+		}
+	}
+	
+	industrial_gas_using = {
+	
+		start_year = 1008
+		
+		production_speed_buildings_factor = 0.05
+		industrial_capacity_factory = 0.03
+		
+		research_cost = 2
+		
+		
+		
+		folder = {
+			name = chem_tech_folder
+			position = { x = 2 y = 4 }
+		}
+		
+		path = {
+			leads_to_tech = chemical_weapons_tech
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			chemical_warfare_category
+		}
+	}
+	
+	chemical_weapons_tech = {
+		
+		start_year = 1009
+		
+		research_cost = 3
+		
+		enable_equipments = {
+			gas_weapon_equipment_0
+		}
+		
+		dependencies = {
+			infantry_weapons1 = 1
+		}
+		
+		enable_subunits = {
+			chem_infantry_unit
+			chem_infantry_support
+		}
+		folder = {
+			name = chem_tech_folder
+			position = { x = 2 y = 9 }
+		}
+		
+		path = {
+			leads_to_tech = optimised_protection_measures
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			chemical_warfare_category
+		}
+	}
+	
+	optimised_protection_measures = {
+		start_year = 1010
+		
+		research_cost = 2
+		folder = {
+			name = chem_tech_folder
+			position = { x = 2 y = 12 }
+		}
+		
+		path = {
+			leads_to_tech = zver_1_chem_rifle
+			research_cost_coeff = 1
+		}
+		
+		chem_infantry_unit = {
+			experience_loss_factor  = -0.05
+		}
+		chem_infantry_support = {
+			experience_loss_factor  = -0.05
+		}
+		
+		categories = {
+			chemical_warfare_category
+		}
+	}
+	
+	zver_1_chem_rifle = {
+		 
+		start_year = 1011
+		 
+		research_cost = 3
+		
+		enable_equipments = {
+			gas_weapon_equipment_1
+		}
+		
+		
+		folder = {
+			name = chem_tech_folder
+			position = { x = 2 y = 17 }
+		}
+		
+		path = {
+			leads_to_tech = haber_cannon_nsb
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = haber_cannon_nonsb
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = corrosive_waste
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = air_chem_war
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			chemical_warfare_category
+		}
+	}
+	
+	haber_cannon_nsb = {
+		
+		start_year = 1011
+		
+		research_cost = 2
+		allow_branch = {
+			has_dlc = "No Step Back"
+		}
+		
+		enable_equipment_modules = {
+			haber_lc_module
+			haber_mc_module
+			haber_hc_module
+		}
+		
+		folder = {
+			name = chem_tech_folder
+			position = { x = 0 y = 16 }
+		}
+		
+		categories = {
+			chemical_warfare_category
+		}
+	}
+	
+	haber_cannon_nonsb = {
+		
+		start_year = 1011
+		
+		research_cost = 2
+		allow_branch = {
+			NOT = { has_dlc = "No Step Back" }
+		}
+		
+		category_all_armor = {
+			soft_attack = 0.1
+		}
+		
+		folder = {
+			name = chem_tech_folder
+			position = { x = 0 y = 16 }
+		}
+		
+		categories = {
+			chemical_warfare_category
+		}
+	}
+	
+	air_chem_war = {
+		research_cost = 2
+		
+		start_year = 1011
+		
+		#category_all_armor = {
+		#	soft_attack = 0.1
+		#}
+		
+		air_strategic_bomber_bombing_factor = 0.1
+		air_cas_efficiency = 0.05
+		
+		folder = {
+			name = chem_tech_folder
+			position = { x = 4 y = 16 }
+		}
+		
+		categories = {
+			chemical_warfare_category
+		}
+	}
+	
+	corrosive_waste = {
+		
+		start_year = 1012
+		
+		research_cost = 3
+		
+		chem_infantry_unit = {
+			breakthrough = 0.05
+			ap_attack = 0.2
+		}
+		chem_infantry_support = {
+			breakthrough = 0.05
+			ap_attack = 0.2
+		}
+		
+		path = {
+			leads_to_tech = maximise_chem_prod
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = chem_tech_folder
+			position = { x = 2 y = 20 }
+		}
+		
+		categories = {
+			chemical_warfare_category
+		}
+	}
+	
+	maximise_chem_prod = {
+		start_year = 1012
+		
+		research_cost = 3
+		
+		chem_infantry_unit = {
+			soft_attack = 0.25
+			hard_attack = 0.25
+		}
+		chem_infantry_support = {
+			soft_attack = 0.25
+			hard_attack = 0.25
+		}
+		stability_factor = -0.025
+		
+		
+		path = {
+			leads_to_tech = strategical_bd_launcher
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = chem_tech_folder
+			position = { x = 2 y = 24 }
+		}
+		
+		categories = {
+			chemical_warfare_category
+		}
+	}
+	
+	strategical_bd_launcher = {
+		start_year = 1013
+		
+		research_cost = 3
+		
+		enable_equipments = {
+			gas_weapon_equipment_2
+		}
+		
+		
+		folder = {
+			name = chem_tech_folder
+			position = { x = 2 y = 29 }
+		}
+		
+		categories = {
+			chemical_warfare_category
+		}
+	}
+}

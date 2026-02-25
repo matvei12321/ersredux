@@ -1,0 +1,32 @@
+state={
+	id=1244
+	name="STATE_1244"
+
+	provinces={
+		2174 13086 12994 5230 8217 9099 8231 13195 12759
+	}
+
+	manpower=1947099
+	state_category = town
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = NCH
+		add_core_of = NCH
+		
+		victory_points = { 5230 3 }
+		victory_points = { 8231 3 }
+		victory_points = { 12994 3 }
+		
+		
+        set_demilitarized_zone = yes
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+		}
+	}
+	resources = {
+		steel = 26
+	}
+
+}

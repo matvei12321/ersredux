@@ -1,0 +1,40 @@
+﻿add_namespace = olenian_resistance
+
+country_event = {
+	id = olenian_resistance.1
+	immediate = {log = "[Root.GetName]: event neigua.1"}
+	title = olenian_resistance.1.t
+	desc = olenian_resistance.1.d
+	
+	picture = GFX_event_forest
+	
+	is_triggered_only = yes
+
+	option = {
+		name = olenian_resistance.1.a 
+		set_country_flag = olenian_resistance_start_flag
+        custom_effect_tooltip = olenian_resistance_tt
+        random_owned_controlled_state = {
+            add_manpower = -54
+        }
+	}
+}
+
+country_event = {
+	id = olenian_resistance.2
+	immediate = {log = "[Root.GetName]: event neigua.1"}
+	title = olenian_resistance.2.t
+	desc = olenian_resistance.2.d
+	
+	picture = GFX_event_forest
+	
+	is_triggered_only = yes
+
+	option = {
+		name = olenian_resistance.2.a 
+		OLR = {
+            transfer_state = 194
+        }
+	}
+}
+

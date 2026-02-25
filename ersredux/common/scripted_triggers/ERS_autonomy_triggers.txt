@@ -1,0 +1,29 @@
+#	Example:
+#
+#	example_trigger = {
+	#		tag = GER
+	#		is_ai = no
+	#	}
+#
+#
+#	In a script file:
+#
+#	trigger = {
+	#		example_trigger = yes
+	#	}
+#
+
+autonomy_state_science_hive = {
+	tag = SRF
+	overlord = {
+		OR = {
+			original_tag = CHN
+			original_tag = DTS
+			original_tag = LYC
+			original_tag = VRX
+		}
+	}
+	autonomy_states_personal_union = no
+	autonomy_states_feudal = no
+	autonomy_states_fascist = no
+}

@@ -1,0 +1,253 @@
+
+add_namespace = yak_unification
+
+country_event = {		
+	id = yak_unification.1
+	immediate = {log = "[Root.GetName]: event yak_unification.1"}
+	title = yak_unification.1.t
+	desc = yak_unification.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = yak_unification.1.a 
+		set_global_flag = yak_civ_war_flag
+		news_event = { id = ers_news.17 days = 1 }
+		YAK = {
+			declare_war_on = {
+				type = annex_everything
+				target = SHA
+			}
+			declare_war_on = {
+				type = annex_everything
+				target = MNT
+			}
+			declare_war_on = {
+				type = annex_everything
+				target = NAK
+			}
+			declare_war_on = {
+				type = annex_everything
+				target = YAC
+			}
+			declare_war_on = {
+				type = annex_everything
+				target = JAK
+			}
+			declare_war_on = {
+				type = annex_everything
+				target = BAD
+			}
+		}
+		BAD = {
+			declare_war_on = {
+				type = annex_everything
+				target = SHA
+			}
+			declare_war_on = {
+				type = annex_everything
+				target = NAK
+			}
+			declare_war_on = {
+				type = annex_everything
+				target = YAC
+			}
+			declare_war_on = {
+				type = annex_everything
+				target = JAK
+			}
+		}
+		
+		SHA = {
+			declare_war_on = {
+				type = annex_everything
+				target = NAK
+			}
+			declare_war_on = {
+				type = annex_everything
+				target = YAC
+			}
+			declare_war_on = {
+				type = annex_everything
+				target = JAK
+			}
+		}
+	
+		JAK = {
+			declare_war_on = {
+				type = annex_everything
+				target = SHA
+			}
+			declare_war_on = {
+				type = annex_everything
+				target = NAK
+			}
+			declare_war_on = {
+				type = annex_everything
+				target = YAC
+			}
+		}
+		
+		MNT = {
+			declare_war_on = {
+				type = annex_everything
+				target = SHA
+			}
+			declare_war_on = {
+				type = annex_everything
+				target = NAK
+			}
+			declare_war_on = {
+				type = annex_everything
+				target = YAC
+			}
+			declare_war_on = {
+				type = annex_everything
+				target = JAK
+			}
+			declare_war_on = {
+				type = annex_everything
+				target = SHA
+			}
+		}
+		
+		YAC = {
+			declare_war_on = {
+				type = annex_everything
+				target = SHA
+			}
+			declare_war_on = {
+				type = annex_everything
+				target = NAK
+			}
+			declare_war_on = {
+				type = annex_everything
+				target = JAK
+			}
+		}
+		
+		NAK = {
+			declare_war_on = {
+				type = annex_everything
+				target = SHA
+			}
+			declare_war_on = {
+				type = annex_everything
+				target = YAC
+			}
+			declare_war_on = {
+				type = annex_everything
+				target = BAD
+			}
+			declare_war_on = {
+				type = annex_everything
+				target = JAK
+			}
+		}
+	}
+}
+
+country_event = {						# Generic Yak counsil
+	id = yak_unification.2
+	immediate = {log = "[Root.GetName]: event yak_unification.2"}
+	title = yak_unification.2.t
+	desc = yak_unification.2.d
+	
+	picture = GFX_event_medieval_village
+	
+	is_triggered_only = yes
+
+	option = {
+		name = yak_unification.2.a 
+	}
+}
+
+country_event = {						# Kagan Yak counsil
+	id = yak_unification.3
+	immediate = {log = "[Root.GetName]: event yak_unification.3"}
+	title = yak_unification.3.t
+	desc = yak_unification.3.d
+	
+	picture = GFX_event_medieval_village
+	
+	is_triggered_only = yes
+
+	option = {
+		name = yak_unification.3.a 
+	}
+}
+
+country_event = {						# Commie Yak counsil
+	id = yak_unification.4
+	immediate = {log = "[Root.GetName]: event yak_unification.4"}
+	title = yak_unification.4.t
+	desc = yak_unification.4.d
+	
+	picture = GFX_event_medieval_village
+	
+	is_triggered_only = yes
+
+	option = {
+		name = yak_unification.4.a 
+	}
+}
+
+country_event = {						# Nova Griffonia Whitepeace
+	id = yak_unification.5
+	immediate = {log = "[Root.GetName]: event yak_unification.5"}
+	title = yak_unification.5.t
+	desc = yak_unification.5.d
+	
+	picture = GFX_event_medieval_village
+	
+	trigger = {
+		ROOT = {
+			OR = {
+				original_tag = YAK
+				original_tag = JAK
+				original_tag = YAC
+				original_tag = NAK
+				original_tag = BAD
+				original_tag = SHA
+				original_tag = MNT
+			}
+		}
+		GRF = {
+			surrender_progress > 0.29
+			has_war_with = ROOT
+		}
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = { 
+		days = 1
+	}
+	option = {
+		name = yak_unification.5.a 
+		ai_chance = {
+			factor = 10
+		}
+		white_peace = GRF
+		set_truce = { target = GRF days = 365 }
+		add_political_power = 50
+		transfer_state = 253
+		transfer_state = 269
+		transfer_state = 274
+		transfer_state = 275
+		transfer_state = 277
+		transfer_state = 278
+		transfer_state = 337
+		transfer_state = 339
+		transfer_state = 340
+		transfer_state = 341
+		transfer_state = 342
+	}
+	option = {
+		name = yak_unification.5.b
+		ai_chance = {
+			factor = 0
+		}
+		add_war_support = 0.01 
+	}
+}

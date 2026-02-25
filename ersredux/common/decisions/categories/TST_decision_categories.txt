@@ -1,0 +1,77 @@
+Armed_Sage_debug= {
+	allowed = {
+		original_tag = TST
+	}
+	visible = {
+	is_debug = yes
+	is_ai = no
+	}
+	icon = palace_of_the_soviets_cat
+	picture = GFX_decision_cat_stg_palace_of_the_soviets
+	priority = {
+		base = 100
+	}
+}
+
+Soc_thestralia = {
+	allowed = {
+		original_tag = TST
+	}
+	visible = {
+	}
+	icon = GFX_decision_cat_thestralia
+	priority = {
+		base = 100
+	}
+	visible_when_empty = no
+}
+
+TST_nature_taming_category = {
+	allowed = {
+		original_tag = TST
+	}
+	visible = {
+		has_completed_focus = TST_comm_ec_11
+	}
+	icon = GFX_decision_CTH_Landowners
+	priority = {
+		base = 100
+	}
+	visible_when_empty = no
+}
+
+TST_expedition_category = {
+	allowed = {
+		original_tag = TST
+	}
+	visible = {
+		AND = {
+			has_completed_focus = TST_Armed_Sage_focus_100
+			is_ai = no
+		}
+	}
+	icon = GFX_decision_crystals
+	priority = {
+		base = -100
+	}
+	visible_when_empty = no
+}
+
+TST_expedition_category = {
+	allowed = {
+		original_tag = TST
+	}
+	visible = {
+		AND = {
+			has_completed_focus = TST_committee_focus_4
+			is_ai = no
+		}
+	}
+	icon = GFX_decision_hec_decision_category
+	priority = {
+		base = 200
+	}
+	visible_when_empty = yes
+}
+
+

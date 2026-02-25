@@ -1,0 +1,332 @@
+﻿l_english:
+ 
+ #### Characters
+ CHN_chrysalis_vesalipolia:0 "Queen Chrysalis of Vesalipolis"
+ CHN_dremes_desc:0 "Если вы хоть раз смотрели в экономические отчёты, вы могли заметить что перед пунктом "Новые шубы для королевы" есть пункт "Поддержка колоний в Зебрике". Вроде ничего необычного для империи, но у Весалиполиса вообще нет колоний на южном континенте. Хотя министерство, связанное с ними, есть. Кто-то говорит, что это олицетворение амбиций Гегемонии.\n\n"Рано или поздно, копыто чейнджлинга покорит последнее государство на Эквусе, а затем под натиском Пакс Чейнджлингии падут Зебрика и Грифония. Так почему бы не подготовиться заранее?"\n\nПропаганда активно продвигает подобные идеи, хотя большая часть руководства считает это пустой ресурсов. А УОБВ уже давно прозвало это министерство "Главным рассадником коррупции"."
+ 
+ #### Focuses
+ 
+
+ CHN_family_problems:0 "Problems of Hegemony"
+ CHN_family_problems_desc:0 "The Changeling nation is not united and has never been. From generation to generation, the hive queens rule their lands separately from each other, and they do not care about the problems of others. Queen Chrysalis has set herself a clear goal - to unite the Changeling people by improving relations with other rulers."
+ CHN_helvia:0 "Queen of the Sea"
+ CHN_helvia_desc:0 "Although Helvia doesn't love Chrysalis as much as her predecessor, but in the end, she understands that a good relationship with Vesalipolis is more important than personal hostility. She is ready to cooperate with Chrysalis.\n\n At least that's what she thinks..."
+ CHN_argynnis:0 "The Hatchet"
+ CHN_argynnis_desc:0 "Arginnis believes that she deserves to be the Supreme Queen of the Hives and makes every effort to undermine the power of Chrysalis. In addition, during the last war, Arginnis' mother committed suicide to avoid facing Chrysalis' wrath, and her eldest daughter, Arginnis, blames the High Queen directly for this."
+ CHN_yharia:0 "The Queen of Science"
+ CHN_yharia_desc:0 "Yarya may seem friendly, but in reality she is cold, like her beehive Sorif. She hides it, but Chrysalis knows that Yaria treats her as an investor, not as a respected ruler."
+ CHN_aurantia:0 "Intoxicated with Revenge"
+ CHN_aurantia_desc:0 "For some unknown reason, Aurantia began to move away from the other Queens and became unpredictable. It's better to visit her and check if everything is okay."
+ 
+ CHN_helvia_left:0 "Join forces"
+ CHN_helvia_left_desc:0 "Helvia seems to be one of those who understands the importance of the unity of the Hegemony. You can rely on her and cooperate with her."
+ CHN_helvia_right:0 "Equalize the fleet"
+ CHN_helvia_right_desc:0 "Helvia's dream is to own a huge fleet. Funds should be allocated from our budget in order to sponsor the construction of ships in Ditrisium. After all, the sea power of Ditrisium is the sea power of the entire Hegemony."
+ CHN_argynnis_left:0 "Joint Military Industry"
+ CHN_argynnis_left_desc:0 "To strengthen the bond between the two hives, we need to be connected by a common military-industrial complex."
+ CHN_argynnis_right:0 "General military exercises"
+ CHN_argynnis_right_desc:0 "Arginnis is known as the "Queen of War", and perhaps Chrysalis will be able to improve relations with her if she organizes high-quality military exercises for the troops of Vesalipolis and Vrax. Even if Arginnis' opinion doesn't change, the exercises will benefit both hives."
+ CHN_yharia_left:0 "Banish more criminals"
+ CHN_yharia_left_desc:0 "Sorif is a good place in the far north to set up concentration camps where we can exile regime traitors."
+ CHN_yharia_right:0 "Learn from their experience"
+ CHN_yharia_right_desc:0 "Sorif is known for his scientific experiments on both non-living and living objects. Such experiments make it possible to make incredible breakthroughs in the field of medicine, because the body of changelings can be studied in real time. But, just as Sorif is not only engaged in research, Vesalipolis is also developing independently. We can conduct our own experiments and even make our own breakthroughs in science."
+ CHN_aurantia_left:0 "Wood import"
+ CHN_aurantia_left_desc:0 "Lyktida produces a number of resources for the Hegemony, including high-quality wood. Why don't we get it?"
+ CHN_aurantia_right:0 "Maintain a foothold"
+ CHN_aurantia_right_desc:0 "There are rumors that Aurantia is preparing an attack on Olenia. However, it sounds silly. Comparing the size and capacity of our hive and the Deer, it cannot be said that Lycthys has any chances. However, Chrysalis has been dreaming of walking tanks through the deer lands for two years... However, it is worth preparing in advance for such an event."
+ CHN_invite_everyone:0 "Gather everyone"
+ CHN_invite_everyone_desc:0 "In order to resolve the issue of the unity of the Hegemony once and for all, an important meeting should be organized, at which all the queens will be present. This is the only way other rulers will finally understand what is required of them."
+ CHN_light_ruling:0 "Soft Rule"
+ CHN_light_ruling_desc:0 "Chrysalis was unable to unite the changelings in a short time because her policies were too harsh. She should change her bias from dictatorial propaganda to political rapprochement of the Changeling peoples."
+ CHN_light_ruling_tt:0 "§ Most of the bonuses of this branch§! It will be deleted if the irreversible happens."
+ CHN_light_ruling_l_1:0 "Cultural synergy"
+ CHN_light_ruling_l_1_desc:0 "WIP"
+ CHN_light_ruling_r_1:0 "Act of Imperial Statehood"
+ CHN_light_ruling_r_1_desc:0 "WIP"
+ CHN_light_ruling_l_2:0 "Imperial Constitution"
+ CHN_light_ruling_l_2_desc:0 "WIP"
+ CHN_light_ruling_centre_2:0 "Royal Family Chrysalis"
+ CHN_light_ruling_centre_2_desc:0 "WIP"
+ CHN_light_ruling_r_2:0 "Unite the hive economy"
+ CHN_light_ruling_r_2_desc:0 "WIP"
+ CHN_light_ruling_l_l_3:0 "Common Faith"
+ CHN_light_ruling_l_l_3_desc:0 "WIP"
+ CHN_light_ruling_l_3:0 "Cult of the Five"
+ CHN_light_ruling_l_3_desc:0 "WIP"
+ CHN_light_ruling_r_3:0 "The Great Union"
+ CHN_light_ruling_r_3_desc:0 "WIP"
+ CHN_light_ruling_r_r_3:0 "Patriotic nationalism"
+ CHN_light_ruling_r_r_3_desc:0 "WIP"
+ CHN_light_ruling_start_integration:0 "Gradual integration"
+ CHN_light_ruling_start_integration_desc:0 "WIP"
+ CHN_light_ruling_diplomacy_for_the_final_time:0 "New Queen of War"
+ CHN_light_ruling_diplomacy_for_the_final_time_desc:0 "WIP"
+ CHN_light_ruling_ultimatun:0 "Ultimatum!"
+ CHN_light_ruling_ultimatun_desc:0 "That's enough! Queen Arginnis, the vile warmonger, has been trying to prevent our unity for too long and has harmed us in every way. For these crimes, she must be abdicated!"
+ CHN_queen_in_the_high_castle:0 "The Queen in the High Tower"
+ CHN_queen_in_the_high_castle_desc:0 " According to the project, it will be the tallest building in the Changeling lands. The 400-meter-high pyramid-shaped tower of concrete and glass will be located in the center of Vesalipolis and will completely wrap around and hide the former beehive spire. It is supposed to symbolize the power and authority of the queen, as well as the entire Changeling nation. This building is the official residence of Queen Chrysalis, as well as the location of various government agencies and bureaucratic apparatus. Modern communications and structure will simplify management and improve the organization of the state."
+ CHN_military_marches:0 "New Wehrmacht Headquarters"
+ CHN_military_marches_desc:0 "WIP"
+ CHN_ss_shtab:0 "Deploy assault troops"
+ CHN_ss_shtab_desc:0 "In the past, the assault troops helped Chrysalis in military conflicts with Vrax and Olenia. Now they should be directed in a new direction...they are perfect for eliminating dissenters."
+ 
+ CHN_heavy_ruling:0 "Hard Hoof"
+ CHN_heavy_ruling_desc:0 "Insubordination from other hives is unacceptable. Chrysalis is the supreme queen, and everyone must obey her! Anyone who resists her will be branded a traitor to the nation."
+ CHN_heavy_ruling_l_1:0 "Autocratic Empire"
+ CHN_heavy_ruling_l_1_desc:0 "Queen Chrysalis is the best! She should be the sole totalitarian ruler. The Supreme Ruler of the Empire of all Changelings! Until other hives realize who is in charge here, we will have to apply a variety of sanctions measures against them."
+ CHN_heavy_ruling_tt:0 "§All bonuses of this branch§! §G will stop§! if the irreversible happens.§!"
+ CHN_heavy_ruling_r_1:0 "Militarization"
+ CHN_heavy_ruling_r_1_desc:0 "Vesalipolis should be militarized and turned into a military hive. Because we need to prepare for an all-out war, the conquest of the continent for the sake of Chrysalis' ambitions... and, if necessary, to destroy the rebels."
+ CHN_heavy_ruling_l_2:0 "Center of Hegemony"
+ CHN_heavy_ruling_l_2_desc:0 "Just as Chrysalis must become the absolute leader, Vesalipolis must rise above the other hives. He must shine, even if he outshines others with his own light."
+ CHN_heavy_ruling_centre_2:0 "Imperial Stormtroopers"
+ CHN_heavy_ruling_centre_2_desc:0 "Wehrmacht soldiers should be used to suppress any dissent by integrating some of them into the military police. It also makes sense to send them to other hives to keep order, since the local queens are not up to the task."
+ CHN_heavy_ruling_centre_2_tt:0 "SKrizalis will strengthen his iron grip for the sake of personal power.§!"
+ CHN_heavy_ruling_r_2:0 "Aggressive UOBV"
+ CHN_heavy_ruling_r_2_desc:0 "WIP"
+ CHN_heavy_ruling_l_l_3:0 "Witch Hunt"
+ CHN_heavy_ruling_l_l_3_desc:0 "WIP"
+ CHN_heavy_ruling_l_3:0 "Claims to the title of all hives"
+ CHN_heavy_ruling_l_3_desc:0 "Chrysalis must become the queen of all the hives that exist in the Hegemony. What's it? Do the other queens disagree with this? Chrysalis doesn't care about their opinions. The only opinion that matters is Chrysalis' opinion, and she fundamentally disagrees with the concept of independent hives."
+ CHN_heavy_ruling_r_3:0 "Cult of Personality"
+ CHN_heavy_ruling_r_3_desc:0 "Chrysalis is your Queen. You obey her. The military, politicians, workers, and even your neighbors obey her. Be like everyone else - be a good girl, and give your life to the Queen."
+ CHN_heavy_ruling_r_r_3:0 "Cut out an oppositional tumor"
+ CHN_heavy_ruling_r_r_3_desc:0 "Damn communists, damn utopians - they hide from us everywhere. And not only in Vesalipolis, but also in other hives - therefore, having reduced the opposition in Vesalipolis, there will be pockets of resistance in other places. But it doesn't matter, does it? Only a politically cleansed Vesalipolis will be able to unite the Hegemony."
+ CHN_long_swords_night:0 "Night of the Long Swords"
+ CHN_long_swords_night_desc:0 "The night is coming, during which the assault groups will celebrate terror and death. Cases of "mysterious" murders of those changelings who disagree with Chrysalis' rule will be discovered throughout the Hegemony. Fear and awe of our Queen's tyranny will engulf the entire Hegemony. This will be the largest cleansing campaign we have ever organized."
+ CHN_vraks_coronation:0 "Coronation"
+ CHN_vraks_coronation_desc:0 "We have already solved the Vrax problem. The damned traitors are crushed... All that remains is to declare Chrysalis the sole queen of Vesalipolis and Vrax."
+ CHN_heavy_ruling_vraks_intervention:0 "Strike on separatists"
+ CHN_heavy_ruling_vraks_intervention_desc:0 "That's enough! Queen Arginnis, the vile warmonger, has been trying to prevent our unity for too long and has harmed us in every way. For these crimes, she should be thrown into prison, and Vrax should be placed under the immediate occupation of Vesalipolis troops!"
+ CHN_prepare_inner_invasion:0 "Following our nature"
+ CHN_prepare_inner_invasion_desc:0 "For hundreds and thousands of years, various hives have been fighting for survival and dominance. In the course of this struggle, many hives died and were wiped off the face of the planet, until the strongest remained. In the modern era, someone tried to propose a peaceful union of all our states, but diplomatic unification is simply impossible. The war with each other is in the Changeling's blood.\pI Vesalipolis will prove that nothing will stand in his way."
+ CHN_prepare_invasion_dytrysium:0 "Prepare the invasion of Ditrysium"
+ CHN_prepare_invasion_dytrysium_desc:0 "WIP"
+ CHN_prepare_invasion_lyctida:0 "Prepare the invasion of Lyctida"
+ CHN_prepare_invasion_lyctida_desc:0 "WIP"
+ CHN_prepare_invasion_soryth:0 "Prepare the Sorif invasion"
+ CHN_prepare_invasion_soryth_desc:0 "WIP"
+ CHN_prepare_invasion_volistad:0 "Prepare the invasion of Volistad"
+ CHN_prepare_invasion_volistad_desc:0 "WIP"
+ CHN_heavy_ruling_guards_on_hives:0 "The army keeps order"
+ CHN_heavy_ruling_guards_on_hives_desc:0 "There are guerrillas and separatists operating in the conquered territories. To suppress them, we need to use everything in our army's arsenal - artillery, planes, tanks, flamethrowers - to terrorize and crush any armed resistance."
+ CHN_heavy_ruling_fate_of_queens:0 "The Fate of Queens"
+ CHN_heavy_ruling_fate_of_queens_desc:0 "WIP"
+ CHN_heavy_ruling_destroy_hives_opposition:0 "Destruction of dissenters"
+ CHN_heavy_ruling_destroy_hives_opposition_desc:0 "All hives are now under the direct control of the UOBV. Nothing stops our agency from conducting its activities in all changeling hives with impunity anymore. Wherever the traitors are hiding, they will definitely be found."
+ CHN_changelingia:0 "Changeling"
+ CHN_changelingia_desc:0 "The great state that will stretch from Sorif to Lyktis - Changeling, or Pax Vesalipolia, will be the country that unites the changelings of Equus. No more strife and internal wars - Chrysalis, our unifier, has managed to overcome many problems and proved herself worthy of the title of Supreme Queen. And our empire, our Pan-Changeling Reich, will stand and will stand for thousands of years."
+ CHN_i_am_the_state:0 "I am the State"
+ CHN_i_am_the_state_desc:0 "I, Chrysalis, Queen of Vesalipolis, Vrax, Lyktis, Ditrisium, Volistad, Sorifa, and Supreme Queen of the Changelings, announce that my reign will certainly lead the Changelings to victory. Follow me, my armies: I promise that I will give you the whole world."
+ 
+ 
+ CHN_evolution_revolution:0 "Evolutionists are making a move"
+ CHN_evolution_revolution_desc:0 "WIP"
+ 
+ 
+ #### Focuses Pax Crysalis
+ 
+ CHN_sunset_pony_plan:0 "I am the State"
+ CHN_sunset_pony_plan_desc:0 "I am the State"
+ 
+ #### IDEAS
+ ers_chn_reorganization_2:0 "Reorganization of the army"
+ ers_chn_research_on_bugs:0 "Experiments on criminals"
+ ers_chn_state_law:0 "Unified Law"
+ ers_chn_state_law_desc:0 "At the initiative of the Supreme Queen, the laws in the territory of the Hegemony have been unified."
+ ers_chn_culture_committe:0 "Committee of Changeling Culture"
+ ers_chn_common_economy_idea:0 "General economy of beehives"
+ ers_chn_constitution_idea:0 "Superior Constitution"
+ ers_chn_patrioticism:0 "Patriotism of the hives"
+ ers_chn_cult_of_five:0 "The Cult of Five"
+ ers_chn_cult_of_five_desc:0 "A cult of five personalities is emerging in the Hegemony - the five Queens who rule the largest hives."
+ political_divisions_2:0 "Political conflict resolution"
+ ers_thorax_diversions:0 "The National Evolutionary movement of Thorax"
+ ers_great_alliance:0 "The Great Union"
+ ers_CHN_aurhocratic_empire:0 "Iron Autocracy"
+ ers_CHN_army_influence_low:0 "The Tyranny of the Wehrmacht"
+ ers_CHN_army_influence_medium:0 "The Tyranny of the Wehrmacht"
+ ers_CHN_army_influence_high:0 "Tyranny of the Wehrmacht"
+ ers_CHN_AGRESSIVE_VOPS_IDE_LAR:0 "Aggressive UOBV"
+ ers_CHN_agressive_vops_idea:0 "Aggressive UOBV"
+ ers_CHN_prepare_inner_invasion_idea:0 "Preparation for unification wars"
+ ers_CHN_centre_of_hehemony_idea:0 "Exploitation of subordinate hives"
+ ers_CHN_heavy_patriotism_idea:0 "Purified Army"
+ 
+ #### Desicions
+ ers_changelings_category:0 "Changeling Hegemony"
+ ers_changelings_category_desc:0 "                              The current leader of the Hegemony - §Y[CHN.getname]§!\n                                         The Supreme Queen - £chibi_chrysalis_crown §Y[CHN.getleader]§!\n\n                         §CUnity§! and §GStability§! of Hegemony: £hehemony_small_icon [?global.ers_chn_unity_var]%\n\n                         Weekly Unity Change: [?global.chn_unity_weekly_var|+]%"
+ ers_chn_info:0 "In detail"
+ ers_changelings_annex_sotyrh:0 "Annex §gSoryth§!"
+ ers_changelings_annex_vraks:0 "Annex §RVraks§!"
+ ers_changelings_annex_lyctida:0 "Annex §GLyctida§!"
+ ers_changelings_annex_ditrisium:0 "Annex §ODytrysium§!"
+ ers_changelings_quit_hehemony:0 "Independence of the §Y[ROOT.getname]§!"
+ ers_destabilize_hehemony:0 "Destabilization of Hegemony"
+ ers_stabilize_hehemony:0 "Stabilization of Hegemony"
+ srf_develop_vesalipolis_science:0 "Develop the science of §СVesalipolis§!"
+ srf_develop_vraks_science:0 "Develop the science of §RVraks§!"
+ srf_develop_ditrysium_science:0 "Develop the science of §ODytrysium§!"
+ srf_develop_lyctida_science:0 "Develop the science of §GLyctida§!"
+ 
+ CHN_unify_hehemony:0 "§Spax Vesalipolia§!"
+ CHN_unify_hehemony_desc:0 "The great state that will stretch from Sarov to Lyktis - Changelingia, or Pax Vesalipolia, will be the country that will unite the changelings of Equus. No more strife and internal wars - Chrysalis, our unifier, has managed to overcome many problems and proved herself worthy of the title of Supreme Queen. And our empire, our Pan-Changeling Reich, will stand and stand for thousands of years."
+
+ #### TRAITS
+ ers_ambiguous:0 "Ambitious\n- I think she has a dream. And she is sure that she deserves to be the one who will carry it out.§!"
+ vesalipolis_queen:0 "The Queen of Vesalipolis"
+ 
+ #### TOOLTIPS
+
+ change_chrysalis_portrait_desc:0 "Change the Chrysalis Drip"
+ is_chn_hehemony_hive_tt:0 "Is a member of the §YHegemony§!"
+ chn_7_tt:0 "In §Uvesalipolis§! Y7 Synovial personal divisions will be deployed!"
+ unlock_changelingia_decision_tt:0 "Unlocks the decision to create a Changelingia"
+ 
+ CHN_intervention_in_vraks:0 "There is an intervention in Vraks"
+ 
+ unlock_queens_tower_tt:0 "Unlocks "decision_icon_small §Resolutions§! for the construction of the Queen's Tower"
+ unlock_army_tt:0 "§ Allows you to change division templates and create new divisions§!"
+ 
+ not_attack_VRX_tt:0 "Let's not attack! §Y[VRX.getname]§! §As a result of our agreement or good relations§!."
+ not_attack_LYC_tt:0 "Let's not attack! §Y[LYC.getname]§! §As a result of our agreement or good relations§!."
+ not_attack_DTS_tt:0 "Let's not attack! §Y[DTS.getname]§! §The fulfillment of our contract or good relations§!."
+ 
+ ers_changelings_destroy_hehemony_beta:0 "Break up the Hegemony"
+ ers_changelings_destroy_hehemony_beta_desc:0 "In the current version of the submode, it is very difficult to ensure that the Hegemony collapses on its own due to the absence of significant events that would reduce the stability of the Hegemony.\n\ This solution is worth waiting for, only if you want to start a War of Queens (and watch the corresponding super-event).\n\n§W AND automatically presses this decision after 1010§!."
+ destroy_hehemony_beta_tt:0 "Will remove 100 % of the Hegemony"
+
+
+ event_chn_6_tt:0 "§Utrimmel§! and §USinovial§! they will become irreconcilable rivals."
+ 
+ hehemony_collapsed_flag:0 "Something irreversible has happened"
+ 
+ 
+ hehemony_unity_is_atleast_25:0 "Unity of Hegemony minimum §Y25.00%§!"
+ hehemony_unity_is_atleast_35:0 "Unity of Hegemony minimum §Y35.00%§!"
+ hehemony_unity_is_atleast_50:0 "Unity of Hegemony minimum §Y50.00%§!"
+ hehemony_unity_is_atleast_75:0 "Unity of Hegemony minimum §Y75.00%§!"
+ changeling_hehemony_info_tt:0 "The increase in the Unity of Hegemony depends on the following factors: the degree of subordination of hives and dynamic modifiers.\nAt the moment, the weekly Unity change is [?global.chn_unity_weekly_var|+]%\n\n[CHN_influence_on_hehemony]\n[chn_influence_of_culture_comitte]\n[chn_influence_of_culture_great_alliance]\n===================\n[VRX_influence_on_hehemony]\n===================\n[DTS_influence_on_hehemony]\n===================\n[SRF_influence_on_hehemony]\n===================\n[LYC_influence_on_hehemony]\n===================\n[VST_influence_on_hehemony]"
+ weekly_unity_plus_0_5:0 "£hehemony_small_icon Weekly change in the Unity of Hegemony: §G+0.50%§!"
+ weekly_unity_plus_1:0 "£hehemony_small_icon Weekly change in the Unity of Hegemony: §G+1.00%§!"
+ every_hehemony_member:0 "§ Every member of the Hegemony§! will receive:"
+
+ CHN_leader_influence_tt:0 "§C[CHN.getname]§! is a §Ulider§! Hegemony, which does not change the balance of Unity."
+ CHN_high_puppet_influence_tt:0 "§C[CHN.getname]§! has a very high level! subordination, which increases the Unity of Hegemony by G+1.00%! weekly."
+ CHN_medium_puppet_influence_tt:0 "§C[CHN.getname]§! has an average level! submission, which does not change the balance of Unity."
+ CHN_low_puppet_influence_tt:0 "§C[CHN.getname]§! has a §Humiliating level §! subordination, which reduces the Unity of Hegemony by R-1.00%! weekly."
+ CHN_no_puppet_influence_tt:0 "§C[CHN.getname]§! §On the verge of independence§!, which reduces the Unity of Hegemony by R-2.00%§! weekly."
+ chn_culture_committe_tt:0 "Committee of Changeling Culture: §G+0.50%§!"
+ chn_influence_of_culture_great_alliance_tt:0 "The Great Union: §G+1.00%§!"
+ 
+ 
+ 
+ 
+ vraks_problem_solved_tt:0 "The problem of the Vrax Separatists! §Gis solved§!"
+ 
+ 
+ VRX_leader_influence_tt:0 "§R[VRX.getname]§! is a §Ulider§! Hegemony, which does not change the balance of Unity."
+ VRX_high_puppet_influence_tt:0 "§R[VRX.getname]§! has a very high level! subordination, which increases the Unity of Hegemony by G+1.00%! weekly."
+ VRX_medium_puppet_influence_tt:0 "§R[VRX.getname]§! has an average level! submission, which does not change the balance of Unity."
+ VRX_low_puppet_influence_tt:0 "§R[VRX.getname]§! has a §Humiliating level §! subordination, which reduces the Unity of Hegemony by R-0.50%! weekly."
+ VRX_no_puppet_influence_tt:0 "§R[VRX.getname]§! §On the verge of independence§!, which reduces the Unity of Hegemony by R-1.00%§! weekly."
+ 
+ DTS_leader_influence_tt:0 "§O[DTS.getname]§! is a §Ulider§! Hegemony, which does not change the balance of Unity."
+ DTS_high_puppet_influence_tt:0 "§O[DTS.getname]§! has a very high level! subordination, which increases the Unity of Hegemony by G+1.00%! weekly."
+ DTS_medium_puppet_influence_tt:0 "§O[DTS.getname]§! has an average level! submission, which does not change the balance of Unity."
+ DTS_low_puppet_influence_tt:0 "§O[DTS.getname]§! has a §Humiliating level §! subordination, which reduces the Unity of Hegemony by R-0.50%! weekly."
+ DTS_no_puppet_influence_tt:0 "§O[DTS.getname]§! §On the verge of independence§!, which reduces the Unity of Hegemony by R-1.00%§! weekly."
+ 
+ SRF_leader_influence_tt:0 "§g[SRF.getname]§! is a §Ulider§! Hegemony, which does not change the balance of Unity."
+ SRF_high_puppet_influence_tt:0 "§g[SRF.getname]§! has a very high level! subordination, which increases the Unity of Hegemony by G+1.00%! weekly."
+ SRF_medium_puppet_influence_tt:0 "§g[SRF.getname]§! has an average level! submission, which does not change the balance of Unity."
+ SRF_low_puppet_influence_tt:0 "§g[SRF.getname]§! has a §Humiliating level §! subordination, which reduces the Unity of Hegemony by R-0.50%! weekly."
+ SRF_no_puppet_influence_tt:0 "§g[SRF.getname]§! §On the verge of independence§!, which reduces the Unity of Hegemony by R-1.00%§! weekly."
+ 
+ LYC_leader_influence_tt:0 "§4[LYC.getname]§! is a §Ulider§! Hegemony, which does not change the balance of Unity."
+ LYC_high_puppet_influence_tt:0 "§4[LYC.getname]§! has a very high level! subordination, which increases the Unity of Hegemony by G+1.00%! weekly."
+ LYC_medium_puppet_influence_tt:0 "§4[LYC.getname]§! has an average level! submission, which does not change the balance of Unity."
+ LYC_low_puppet_influence_tt:0 "§4[LYC.getname]§! has a §Humiliating level §! subordination, which reduces the Unity of Hegemony by R-0.50%! weekly."
+ LYC_no_puppet_influence_tt:0 "§4[LYC.getname]§! §On the verge of independence§!, which reduces the Unity of Hegemony by R-2.00%§! weekly."
+ 
+ VST_leader_influence_tt:0 "§1[VST.getname]§! is a §Ulider§! Hegemony, which does not change the balance of Unity."
+ VST_high_puppet_influence_tt:0 "§1[VST.getname]§! has a very high level! subordination, which increases the Unity of Hegemony by G+1.00%! weekly."
+ VST_medium_puppet_influence_tt:0 "§1[VST.getname]§! has an average level! submission, which does not change the balance of Unity."
+ VST_low_puppet_influence_tt:0 "§1[VST.getname]§! has a §Humiliating level §! subordination, which reduces the Unity of Hegemony by R-0.50%! weekly."
+ VST_no_puppet_influence_tt:0 "§1[VST.getname]§! §On the verge of independence§!, which reduces the Unity of Hegemony by R-1.00%§! weekly."
+ 
+ CHN_light_ruling_ultimatun_tt:0 "§R may lead to a conflict that will severely affect the stability of the § Hegemony!"
+ CHN_light_ruling_centre_2_tt:0 ". The Royal family of Chrysalis will be dominant among equals.§!"
+ 
+ 
+ #### EVENTS
+ chn.1.t:0 "Meeting with Helvia"
+ chn.1.d:0 "- You know, Chrysalis, that I am against all these political intrigues aimed at sabotaging each other.The two Hive Queens organized a one-on-one meeting, and Queen Helvia is most likely the only one to whom Chrysalis even sympathizes, but it does not seem that these feelings were mutual.\n\n- Helvia, tell me this. Your predecessor actively supported my policy of uniting the nation and generally treated me positively. How do I earn respect from you?\n\Phelvia chuckled.\n\n- What's all this about? You can get rid of me and proclaim yourself the double queen of Vesalipolis and Ditrisium. But in that case, the people of my hive will turn against you.Perhaps it's worth giving Helvia time to get used to Chrysalis' power. Or declare yourself the queen of Vesalipolis and Ditrisium right now? Chrysalis didn't know. But as long as Helvia doesn't openly confront her, everything should be fine.\n\n- Helvia...\n\n- Yes?\n\n- ...Never mind, forget it."
+ chn.1.a:0 ""At least someone besides me is doing something so that everything doesn't collapse.""
+ 
+ chn.2.t:0 "Arginnis letter"
+ chn.2.d:0 "Queen Chrysalis has decided to devote this week to trying to establish a relationship with Vrax. She sent dozens of letters to Arginnis, and received dozens of the same type of responses, in which there was not a drop of respect for the queen of Vesalipolis. It seems that Arginnis does not want to make minimal efforts to unite the Changeling peoples. Does this mean that she wants to sow discord in the Hegemony? Does this mean that she is a traitor, and all she cares about is the throne of the Supreme Queen?Chrysalis pushed these thoughts away. After all, they are both sensible rulers, and both understand that another war between Vesalipolis and Vrax will lead to nothing. And Arginnis has probably forgotten old grudges, although for some reason she doesn't want to get closer to Chrysalis. Strange."
+ chn.2.a:0 " "I don't hate her, do I?""
+ 
+ chn.3.t:0 "Meeting with Yaria"
+ chn.3.d:0 "- Greetings, Chrysalis, Supreme Queen of Changelings...Pyaria, Queen of Sorifa, bowed before Chrysalis and uttered this phrase. But Chrysalis knew something was wrong. Her greeting was completely insincere, and her bow was completely optional. As always, Yaria was just trying to give the impression of being a very devoted queen.\n\n- Greetings, Yariya. How is the research progressing?\n\n is quite acceptable. But their progress could have been accelerated if they had sent us more... "experimental material." And, of course, we need highway markers.\n\n- Yes, of course. Starting next week, Vesalipolis will bring you terrorist groups. And we will also increase investments.\n\n- Fine.Chrysalis wanted to discuss something else with the queen of the science hive. But it seemed that their conversation was over, and it would be pointless to continue it.\n\nThat, at least Yaria agrees to cooperate for the benefit of the Hegemony."
+ chn.3.a:0""Cooperation is a sign of friendship, right?""
+ 
+ chn.4.t:0 "Where is Aurantia?"
+ chn.4.d:0 "Atlantis has never been a welcoming place. Not for foreigners, not for changelings, not even for Chrysalis. She had not visited this hive for a long time, and hoped that the locals would pay attention to her, or at least whisper among themselves: "The Queen has arrived.".. But none of this happened. It seemed that all the changelings here worked like a quiet and well-coordinated mechanism. What do they care about some High Queen?\n\nThe purpose of her visit was different. She had hoped to meet with Aurantia and personally discuss why the military spending of Lyktis had increased tenfold in the past four years. Chrysalis was genuinely curious as to why Aurantia was training an army. Was she a traitor, too? Is she in cahoots with Arginnis? Or maybe...\n\n- What does "Aurantia cannot meet us" mean? Do you have any idea who you're telling, you damn drone? I, the Supreme Queen of the Changelings, Chrysalis! You must escort me to the Aurantia residence!\n\n- Unfortunately, this is not possible. Aurantia has left for the secret testing grounds and will arrive in at least a week.\n\n- Polygons? And what is she doing there?\n\n is classified information. We don't give out anything to civilians.\n\n To citizens? A CIVILIAN? Did that Lycthidian guard just treat Chrysalis as a common citizen?!! Chrysalis fumed with anger, but High Marshal Synovial, who accompanied her on this trip, calmed his monarch. The Queen decided to leave Lyktis. Maybe she'll try to contact Aurantia again. Or not."
+ chn.4.a:0 ""I hope she gets better.""
+ 
+ chn.5.t:0 "The army is overstepping its authority"
+ chn.5.d:0 "Today, Chrysalis received a message that High Marshal Synovial has organized the arrest of several civilian changelings of Sorif. He justified this by saying that they planned to undermine the work of Sorif's Reich camps through the mass release of prisoners. Since, as he claims, there was no time to inform the Supreme Queen about this, he single-handedly decided to send an elite squad and detain the suspects. These changelings really turned out to be traitors sympathizing with the prisoners, who developed a whole plan to blow up the walls of the camps and neutralize the guards.\n\On the part of the law, this act is inexcusable, but the public believes that Synovial did the right thing."
+ chn.5.a:0 "As long as it doesn't go beyond the reasonable..."
+ 
+ chn.6.t:0 "High Marshal and General"
+ chn.6.d:0 "It seems that a conflict has recently broken out between High Marshal Synovial and General Trimmel. No one can say for sure what happened between them, but now Synovial demands Trimmel's immediate resignation.pSynovial considers Trimmel "incompetent," "insubordinate," and "the ultimate scoundrel." Given that a High Marshal is a higher rank than a general, as well as the fact that Synovial has tremendous military experience, it is quite possible that the young Trimmel really does not live up to the Queen's expectations. He managed to establish himself as a very promising commander of tank brigades, but it seems that he managed to make enemies among his superiors..."
+ chn.6.a:0"§Strimmel§! He will stay with us."
+ chn.6.b:0 "§Dhive Marshal§! always right."
+ 
+ chn.8.t:0 "When everything is assembled"
+ chn.8.d:0 "The clock in the hall is 17:00, and, much to Chrysalis' surprise, she watched all four monarchs in front of her eyes. Who would have thought that an invitation to a royal dinner would bring them all together. However... The other queens didn't seem to share the same admiration.Chrysalis was surprised that Aurantia herself had appeared. The queen she hadn't seen in a long time.  She had lost a lot of weight, there were all the signs of lack of sleep under her eyes, and she was nervously biting the edges of her hoof, forgetting about manners. She didn't pay much attention to the other queens and only occasionally looked towards Chrysalis.\n\n- Well, dear monarchs, - Chrysalis began. - I hope that our relationship will become clearer this evening than before...\n\n- No need for mawkish speeches, Queen of Vesalipolis," Arginnis scolded sarcastically, examining the wine cup. "Your plan is quite good. But you forgot that we have relatives, and some even have heirs, so you've already lost.\n\n- What are you talking about, Arginnis?\n\n- This is obvious. Tonight was supposed to be our last night. All the food and drinks that you have prepared are obviously poisoned. You think you can poison everyone in one move and usurp our titles, but no. This is not going to happen!\n\Chrysalis was shocked. - Yes, how... How dare you accuse me of this?!\n\n- Blame? Ha. I'm not accusing, I KNOW what you're up to. In fact, I knew in advance, and I came to this hive just to make sure of it. There will be no more hooves of mine in Vesalipolis.The rest of the audience watched in silence, not wanting to fall under the hot hoof of the two dictators."
+ chn.8.a:0 "This is absurd!"
+ 
+ chn.9.t:0 "A political scandal"
+ chn.9.d:0 "The two queens got into a heated argument... More precisely, not in an argument. It was more like a mutual insult. At one point, Arginnis threw a porcelain dish at Chrysalis, fortunately missing. After that, she left the dining room, ostentatiously slamming the doors. Chrysalis, who was sighing heavily after such a situation, finally sat down.\n\n- I hope my reputation has not been damaged in your eyes...Queen Ulyev continued her conversation with Aurantia, Yaria and Helvia in a more relaxed atmosphere. Although Yaria and Helvia behaved adequately, Aurantia only mumbled something unintelligible instead of answering the question of why Lyktida's military spending had increased almost tenfold. With the exception of the Arginnis incident (the queens pretended that nothing had happened), the evening passed quite calmly. The queens left Vesalipolis, and Chrysalis received information about the problems in other hives and the general attitude of the queens towards her policies.Later, Chrysalis was informed that the Queen of Vrax had left the territory of Vesalipolis, and in addition, recalled the embassy of Vrax.When Chrysalis returned to her quiet office, she thought about everything that had happened. And she decided..."
+ chn.9.a:0 "I'll listen to them."
+ chn.9.b:0 "I'm sick of their fooling around. I will crush my opposition, as it should be."
+ chn.9.c:0 "I'm so tired of solving other people's problems..."
+ 
+ 
+ chn.7.t:0 "State of emergency"
+ chn.7.d:0 "According to the Wehrmacht, other Queens are already gathering troops near our borders. We are surrounded by potential enemies from all sides, and it seems that we are doomed. High Marshal Synovial demands the introduction of immediate martial law and the temporary transfer of the ruler's powers to him.He claims that only if we can defeat the traitors will he have full control over the situation."
+ chn.7.a:0 "The Queen can handle it!"
+ chn.7.b:0 "The High Marshal is seizing power... temporarily."
+
+
+ chn.10.t:0 "New queen for the restless hive"
+ chn.10.d:0 "WIP"
+ chn.10.a:0 "WIP"
+ 
+ chn.11.t:0 "Degree of authority of the Wehrmacht"
+ chn.11.d:0 "It was decided that Chrysalis would use the Wehrmacht to intimidate rivals in the face of opposition queens. But how much is she willing to entrust the organization of political terror to High Marshal Synovial?"
+ chn.11.a:0 "Let's not get arrogant."
+ chn.11.b:0 "Moderation is the key to victory."
+ chn.11.c:0 "Let him do whatever he sees fit."
+ 
+ 
+ chn.12.t:0 "Vesalipolis is gathering troops at the border"
+ chn.12.d:0 "It looks like Chrysalis is serious. We either obey it or we stand up to it alone."
+ chn.12.a:0 "To arms!"
+ chn.12.b:0 "Bad day for Arginnis."
+ 
+ chn.13.t:0 "Ultimatum from [CHN.getleader]"
+ chn.13.d:0 "WIP"
+ chn.13.a:0 "WIP"
+ chn.13.b:0 "WIP"
+ 
+ chn.14.t:0 "This perfect day"
+ chn.14.d:0 "Today, Chrysalis woke up especially refreshed, and for good reason. She dressed quickly, tidied up her tousled mane, and even put on sunglasses. Looking in the mirror, she thought about how impressive (and not at all "cute"!) she looks like this. When she left the bedroom and entered the halls of the hive, she expected to see a crowd that... However, there was no one there anyway. Only one guard patrolled his perimeter. Did Chrysalis wake up too wounded? No, it's already 9:12 on the clock, even on normal days at this time Vesalipolis is teeming with changelings. Chrysalis confidently approached the guard.\n\n- Tell me, where is everyone?\n\n- Is that it? And... it seems that the guards and staff are doing something in the courtyard. I don't know what.\n\n- Clearly... Do you happen to know what day it is?\n\n-Sorry, I have no idea. I need to keep patrolling. Hatzl Chrysalis!\n\What is it? No, that's not right! Who in their right mind could forget about this day? The guard said something about the courtyard. Chrysalis galloped over there.\n\n- Explain that-\n\The air defense yard had all the personnel, the guard and even the military command of Vesalipolis, since the yard had a very large area. Everyone was bustling, and in the center of the courtyard stood something huge, covered with a tarp. When everyone noticed Chrysalis, those gathered in unison, regardless of their status, raised their right front hoof up and shouted, "Hail Chrysalis!"\n\The queen was very confused and did not quite understand what was happening. But High Marshal Synovial came up to her, and everything became clear.\n\n- You look great, Queen. Well, it looks like we weren't in a hurry enough... A surprise for your birthday will now have a different effect, because not everything has been organized yet-\n\n- SO YOU HAVEN'T FORGOTTEN?Chrysalis did not take off her sunglasses, but it was clear from her voice and intonation that she was in Valhalla with happiness.\n\n- That's right, Queen! And I, as the High Marshal, have prepared a small gift for you...\n\n- Really, it wasn't worth it. Last time, I received a large-caliber Dora artillery from Vaspir... do not think that this can be surpassed.pSinovial grinned and ordered the tarp to be pulled off the huge structure. Seeing what was underneath, Chrysalis gasped and took off her glasses to see him better."
+ chn.14.a:0 "Next"
+
+ chn.15.t:0 "This perfect day"
+ chn.15.d:0 "It was a tank... more precisely, something that represents a tank, but it's too big. Seven meters high and the devil knows how long, the huge titan towered menacingly over the changelings, as if over flies.\n\n- Is this FOR ME?\n\n- Exactly, Chrysalis. Unfortunately, this is just a mock-up, but I assure you, all the components are made of metal. This tank is only in the dreams of our engineers, because they have not yet invented an engine that can pull such a chassis...Chrysalis, like a small filly, examined and approached the giant. Going to the muzzle, she stood under it, looking up. It was as if stars shone in her eyes - the shadow from the muzzle completely covered her muzzle.\n- Wow... How big...\n- Exactly. 550 mm caliber-\n\n- HOW MUCH? It can't be... If he were a worker, he could demolish entire buildings!\n\nthat was all viewed from the side by Trimmel. He was a professional in the field of tanks, but his talent was still not appreciated enough. But he knew enough to be sure that this thing would never work. And no one would have been able to move it, no matter what the engines and tracks were. As if to spite her, Chrysalis caught Trimmel's annoyed gaze.\n\n- Hey, Trimble! Look what I have now!  She addressed him as if he hadn't been there before, which only infuriated Trimmel more. - And how can you be called a pioneer of tank doctrine? This must be the title of Synovial! Just look at what he gave me, haha!\n\n- And I will do better, my queen.  The trimmer sounded loud and everyone heard it, but now there was no turning back. And Chrysalis's interest was piqued.\n\n- Keep going.\n\n - What stands here is this... it won't work. And it's not your fault, it's Sinovil's fault, or whoever designed this monster... and I... yes. I can design a better tank! More armored, faster and more powerful! And most importantly, it is fully functional.\n\n- And what's next?  Synovial impudently intervened.\n\n- If I design and build such a tank... By your own means... In five, no... in THREE years! You, Synovial, will finally recognize my skill, and I will become a field marshal along with you.\n\n- If you fail, you will say goodbye to the miserable position of general that you have now.Watching the argument, Chrysalis chuckled, muttering, "What sycophants..." However, the two did not hear her.Grimmel and Synovial grinned and extended their hooves to each other, then looked at Chrysalis. She slowly approached them and, not without pleasure, approved the bet. It seemed that Chrysalis took it as something frivolous. Picking up a glass for the guests, she said: "Well, for me, for Pax Chrysalia... and may the best of you win!"\n\n During the day, other generals praised Trimmel for his courage, and the general himself basked in the rays of short-term glory. But in the evening, I began to dig into Trimmel's thoughts, thinking about what he had done."
+ chn.15.a:0 ""I have three whole years, right?""

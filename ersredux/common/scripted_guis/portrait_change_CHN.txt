@@ -1,0 +1,61 @@
+scripted_gui = {
+	change_chrysalis_container = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "change_chrysalis_container"
+		visible = {
+			tag = CHN
+			has_government = fascism
+		}
+		effects = {
+			change_chrysalis_container_button_click = {
+				if = {
+					limit = {
+						check_variable = { chn_chrysalis_portrait_variable < 1 }
+					}
+					add_to_variable = {
+						chn_chrysalis_portrait_variable = 1
+					}
+					CHN_queen_chrysalis = {
+						set_portraits = {
+							civilian = {
+								large = "gfx/leaders/CHN/Chrysalis_drippy.tga"
+							}
+						}
+					}
+				}
+				
+				else_if = {
+					limit = {
+						check_variable = { chn_chrysalis_portrait_variable = 1 }
+					}
+					add_to_variable = {
+						chn_chrysalis_portrait_variable = 1
+					}
+					CHN_queen_chrysalis = {
+						set_portraits = {
+							civilian = {
+								large = "gfx/leaders/CHN/Chrysalis_extra_drippy.tga"
+							}
+						}
+					}
+				}
+				
+				else_if = {
+					limit = {
+						check_variable = { chn_chrysalis_portrait_variable = 2 }
+					}
+					clear_variable = chn_chrysalis_portrait_variable
+					CHN_queen_chrysalis = {
+						set_portraits = {
+							civilian = {
+								large = "gfx/leaders/CHN/Chrysalis.tga"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+			
+}

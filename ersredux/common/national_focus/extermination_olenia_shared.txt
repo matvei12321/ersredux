@@ -1,0 +1,1174 @@
+shared_focus = {
+	id = OLE_EZ_dawn_of_the_hope
+	icon = GFX_goal_ez_shield
+	cost = 5
+	available = {
+		
+	}
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 40
+	}
+	x = 8
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus OLE_EZ_dawn_of_the_hope"
+		hidden_effect = {
+			add_country_leader_trait = krieger_country_leader_trait
+		}
+		add_stability = -0.05
+		hidden_effect = {
+			add_manpower = -20000
+		}
+		custom_effect_tooltip = OLE_EZ_minus_20000_animals_tt
+		country_event = ez.1
+		custom_effect_tooltip = EZ_tt
+		hidden_effect = {
+			country_event = { id = = ez.2 days = 50 }
+			country_event = { id = = ez.4 days = 100 }
+			country_event = { id = = ez.3 days = 150 }
+		}
+		if = {
+			limit = {
+				NOT = {	has_global_flag = warcrimes_disabled }
+			}
+			add_to_variable = {
+				ROOT_warcrimes_count = 50
+			}
+			custom_effect_tooltip = plus_50_warcrimes_tt
+		}
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = OLE_EZ_cages
+	icon = GFX_goal_ez_wire
+	cost = 5
+	available = {
+		
+	}
+	available_if_capitulated = yes
+	prerequisite = { focus = OLE_EZ_dawn_of_the_hope }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = OLE_EZ_dawn_of_the_hope
+	x = 4
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus cost"
+		add_war_support = -0.05
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}
+		if = {
+			limit = {
+				NOT = {	has_global_flag = warcrimes_disabled }
+			}
+			add_to_variable = {
+				ROOT_warcrimes_count = 10
+			}
+			custom_effect_tooltip = plus_10_warcrimes_tt
+		}
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = OLE_EZ_watchtowers
+	icon = GFX_goal_ez_watchtower
+	cost = 5
+	available = {
+		
+	}
+	available_if_capitulated = yes
+	prerequisite = { focus = OLE_EZ_cages }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = OLE_EZ_cages
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus OLE_EZ_watchtowers"
+		add_stability = -0.05
+		add_political_power = -100
+		if = {
+			limit = {
+				NOT = {	has_global_flag = warcrimes_disabled }
+			}
+			add_to_variable = {
+				ROOT_warcrimes_count = 10
+			}
+			custom_effect_tooltip = plus_10_warcrimes_tt
+		}
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = OLE_EZ_brainwash
+	icon = GFX_goal_ez_waves
+	cost = 5
+	available = {
+		
+	}
+	available_if_capitulated = yes
+	prerequisite = { focus = OLE_EZ_cages }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = OLE_EZ_cages
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus OLE_EZ_brainwash"
+		swap_ideas = {
+			remove_idea = proper_science_base
+			add_idea = big_science_base
+		}
+		if = {
+			limit = {
+				NOT = {	has_global_flag = warcrimes_disabled }
+			}
+			add_to_variable = {
+				ROOT_warcrimes_count = 10
+			}
+			custom_effect_tooltip = plus_10_warcrimes_tt
+		}
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = OLE_EZ_destroy_culture
+	icon = GFX_goal_ez_krieger
+	cost = 5
+	available = {
+		
+	}
+	available_if_capitulated = yes
+	prerequisite = { focus = OLE_EZ_dawn_of_the_hope }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = OLE_EZ_dawn_of_the_hope
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus OLE_EZ_destroy_culture"
+		every_owned_state = {
+			add_extra_state_shared_building_slots = 1
+		}
+		swap_ideas = {
+			remove_idea = no_lack_of_scientists 
+			add_idea = lack_of_scientists3
+		}
+		if = {
+			limit = {
+				NOT = {	has_global_flag = warcrimes_disabled }
+			}
+			add_to_variable = {
+				ROOT_warcrimes_count = 10
+			}
+			custom_effect_tooltip = plus_10_warcrimes_tt
+		}
+		add_ideas = changelings_beliefs
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = OLE_EZ_spread_gas
+	icon = GFX_goal_ez_bombing
+	cost = 5
+	available = {
+		
+	}
+	available_if_capitulated = yes
+	prerequisite = { focus = OLE_EZ_destroy_culture }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = OLE_EZ_destroy_culture
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus OLE_EZ_spread_gas"
+		every_owned_state = {
+			custom_effect_tooltip = OLE_EZ_minus_10000_animals_tt
+			hidden_effect = {
+				add_manpower = -10000
+			}
+		}
+		add_ideas = OLE_always_gasing_idea
+		if = {
+			limit = {
+				NOT = {	has_global_flag = warcrimes_disabled }
+			}
+			add_to_variable = {
+				ROOT_warcrimes_count = 100
+			}
+			custom_effect_tooltip = plus_100_warcrimes_tt
+		}
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = OLE_EZ_wack_woman
+	icon = GFX_goal_ez_execution
+	cost = 5
+	available = {
+		
+	}
+	available_if_capitulated = yes
+	prerequisite = { focus = OLE_EZ_destroy_culture }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = OLE_EZ_destroy_culture
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus OLE_EZ_wack_woman"
+		add_ideas = EZ_stop_borning
+		if = {
+			limit = {
+				NOT = {	has_global_flag = warcrimes_disabled }
+			}
+			add_to_variable = {
+				ROOT_warcrimes_count = 10
+			}
+			custom_effect_tooltip = plus_10_warcrimes_tt
+		}
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = OLE_EZ_expluatation
+	icon = GFX_goal_ez_factory
+	cost = 5
+	available = {
+		
+	}
+	available_if_capitulated = yes
+	prerequisite = { focus = OLE_EZ_dawn_of_the_hope }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = OLE_EZ_dawn_of_the_hope
+	x = -4
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus OLE_EZ_expluatation"
+		76 = {
+			custom_effect_tooltip = OLE_EZ_minus_5000_animals_tt
+			hidden_effect = {
+				add_manpower = -5000
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+		191 = {
+			custom_effect_tooltip = OLE_EZ_minus_5000_animals_tt
+			hidden_effect = {
+				add_manpower = -5000
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+		194 = {
+			custom_effect_tooltip = OLE_EZ_minus_5000_animals_tt
+			hidden_effect = {
+				add_manpower = -5000
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+		if = {
+			limit = {
+				NOT = {	has_global_flag = warcrimes_disabled }
+			}
+			add_to_variable = {
+				ROOT_warcrimes_count = 10
+			}
+			custom_effect_tooltip = plus_10_warcrimes_tt
+		}
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = OLE_EZ_poverty
+	icon = GFX_goal_ez_my_eye
+	cost = 5
+	available = {
+		
+	}
+	available_if_capitulated = yes
+	prerequisite = { focus = OLE_EZ_expluatation }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = OLE_EZ_expluatation
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus OLE_EZ_dawn_of_the_hope"
+		swap_ideas = {
+			remove_idea = no_poverty
+			add_idea = poverty5
+		}
+		LYC = {
+			add_political_power = 100
+		}
+		if = {
+			limit = {
+				NOT = {	has_global_flag = warcrimes_disabled }
+			}
+			add_to_variable = {
+				ROOT_warcrimes_count = 10
+			}
+			custom_effect_tooltip = plus_10_warcrimes_tt
+		}
+	}
+	search_filters = {  }
+}
+
+shared_focus = {
+	id = OLE_EZ_flame
+	icon = GFX_goal_ez_fire
+	cost = 5
+	available = {
+		
+	}
+	available_if_capitulated = yes
+	prerequisite = { focus = OLE_EZ_expluatation }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = OLE_EZ_expluatation
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus OLE_EZ_flame"
+		every_owned_state = {
+			remove_building = {
+				type = infrastructure
+				level = 1
+			}
+			add_manpower = -500
+			damage_building = { type = arms_factory damage = 0.75 }
+			damage_building = { type = industrial_complex damage = 0.75 }
+			damage_building = { type = infrastructure damage = 0.75 }
+		}
+		if = {
+			limit = {
+				NOT = {	has_global_flag = warcrimes_disabled }
+			}
+			add_to_variable = {
+				ROOT_warcrimes_count = 10
+			}
+			custom_effect_tooltip = plus_10_warcrimes_tt
+		}
+	}
+	search_filters = {  }	
+}
+
+
+shared_focus = {
+	id = OLE_EZ_burn_sakhara
+	icon = GFX_goal_ez_hjorltand
+	cost = 5
+	available = {
+		
+	}
+	available_if_capitulated = yes
+	prerequisite = { focus = OLE_EZ_poverty }
+	prerequisite = { focus = OLE_EZ_flame }
+	prerequisite = { focus = OLE_EZ_brainwash }
+	prerequisite = { focus = OLE_EZ_watchtowers }
+	prerequisite = { focus = OLE_EZ_spread_gas }
+	prerequisite = { focus = OLE_EZ_wack_woman }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = OLE_EZ_dawn_of_the_hope
+	x = -6
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus OLE_EZ_but_theres_somthing"
+		goto_state = 194
+		launch_nuke = {
+			state = 194
+			controller = OLE
+			use_nuke = no
+		}
+		set_victory_points = {
+			province = 6950
+			value = 10
+		}
+		add_to_variable = {
+			global.extermination_var = 5
+		}
+		clamp_variable = {
+			var = global.extermination_var
+			min = 0
+			max = 100
+		}		
+		custom_effect_tooltip = plus_5_olenia_extermination
+		194 = {
+			add_manpower = -250000
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.04
+		}
+		custom_effect_tooltip = OLE_EZ_nuke_city_tt
+		add_stability = -0.025
+		if = {
+			limit = {
+				NOT = {	has_global_flag = warcrimes_disabled }
+			}
+			add_to_variable = {
+				ROOT_warcrimes_count = 75
+			}
+			custom_effect_tooltip = plus_75_warcrimes_tt
+		}
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = OLE_EZ_burn_tservus
+	icon = GFX_goal_ez_hjorltand
+	cost = 5
+	available = {
+		
+	}
+	available_if_capitulated = yes
+	prerequisite = { focus = OLE_EZ_poverty }
+	prerequisite = { focus = OLE_EZ_flame }
+	prerequisite = { focus = OLE_EZ_brainwash }
+	prerequisite = { focus = OLE_EZ_watchtowers }
+	prerequisite = { focus = OLE_EZ_spread_gas }
+	prerequisite = { focus = OLE_EZ_wack_woman }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = OLE_EZ_dawn_of_the_hope
+	x = -2
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus OLE_EZ_but_theres_somthing"
+		LYC = {
+			air_experience = 25
+		}
+		set_victory_points = {
+			province = 6846
+			value = 10
+		}
+		add_to_variable = {
+			global.extermination_var = 5
+		}
+		clamp_variable = {
+			var = global.extermination_var
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = plus_5_olenia_extermination
+		191 = {
+			add_manpower = -500000
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.04
+		}
+		custom_effect_tooltip = OLE_EZ_ruins_city_tt
+		add_stability = -0.025
+		if = {
+			limit = {
+				NOT = {	has_global_flag = warcrimes_disabled }
+			}
+			add_to_variable = {
+				ROOT_warcrimes_count = 75
+			}
+			custom_effect_tooltip = plus_75_warcrimes_tt
+		}
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = OLE_EZ_nuke_researches
+	icon = GFX_goal_ez_radiation
+	cost = 5
+	available = {
+		
+	}
+	available_if_capitulated = yes
+	prerequisite = { focus = OLE_EZ_burn_sakhara }
+	prerequisite = { focus = OLE_EZ_burn_tservus }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = OLE_EZ_dawn_of_the_hope
+	x = -4
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus OLE_EZ_but_theres_somthing"
+		add_tech_bonus = {
+			name = secret_bonus
+			bonus = 6.66
+			uses = 1
+			category = nuclear
+		}
+		LYC = {
+			add_tech_bonus = {
+				name = secret_bonus
+				bonus = 6.66
+				uses = 1
+				category = nuclear
+			}
+		}
+		if = {
+			limit = {
+				NOT = {	has_global_flag = warcrimes_disabled }
+			}
+			add_to_variable = {
+				ROOT_warcrimes_count = 250
+			}
+			custom_effect_tooltip = plus_250_warcrimes_tt
+		}
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = OLE_EZ_burn_weiverfront
+	icon = GFX_goal_ez_hjorltand
+	cost = 5
+	available = {
+		
+	}
+	available_if_capitulated = yes
+	prerequisite = { focus = OLE_EZ_poverty }
+	prerequisite = { focus = OLE_EZ_flame }
+	prerequisite = { focus = OLE_EZ_brainwash }
+	prerequisite = { focus = OLE_EZ_watchtowers }
+	prerequisite = { focus = OLE_EZ_spread_gas }
+	prerequisite = { focus = OLE_EZ_wack_woman }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = OLE_EZ_dawn_of_the_hope
+	x = 2
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus OLE_EZ_but_theres_somthing"
+		set_victory_points = {
+			province = 3431
+			value = 10
+		}
+		add_to_variable = {
+			global.extermination_var = 5
+		}
+		clamp_variable = {
+			var = global.extermination_var
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = plus_5_olenia_extermination
+		69 = {
+			add_manpower = -500000
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.04
+		}
+		custom_effect_tooltip = OLE_EZ_toxic_city_tt
+		add_stability = -0.025
+		if = {
+			limit = {
+				NOT = {	has_global_flag = warcrimes_disabled }
+			}
+			add_to_variable = {
+				ROOT_warcrimes_count = 75
+			}
+			custom_effect_tooltip = plus_75_warcrimes_tt
+		}
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = OLE_EZ_burn_hjortland
+	icon = GFX_goal_ez_hjorltand
+	cost = 5
+	available = {
+		
+	}
+	available_if_capitulated = yes
+	prerequisite = { focus = OLE_EZ_poverty }
+	prerequisite = { focus = OLE_EZ_flame }
+	prerequisite = { focus = OLE_EZ_brainwash }
+	prerequisite = { focus = OLE_EZ_watchtowers }
+	prerequisite = { focus = OLE_EZ_spread_gas }
+	prerequisite = { focus = OLE_EZ_wack_woman }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = OLE_EZ_dawn_of_the_hope
+	x = 6
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus OLE_EZ_but_theres_somthing"
+		set_victory_points = {
+			province = 11567
+			value = 15
+		}
+		add_to_variable = {
+			global.extermination_var = 5
+		}
+		clamp_variable = {
+			var = global.extermination_var
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = plus_5_olenia_extermination
+		76 = {
+			add_manpower = -1000000
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.04
+		}
+		custom_effect_tooltip = OLE_EZ_burn_city_tt
+		add_stability = -0.025
+		if = {
+			limit = {
+				NOT = {	has_global_flag = warcrimes_disabled }
+			}
+			add_to_variable = {
+				ROOT_warcrimes_count = 100
+			}
+			custom_effect_tooltip = plus_100_warcrimes_tt
+		}
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = OLE_EZ_toxic_researches
+	icon = GFX_goal_ez_toxic_gas
+	cost = 5
+	available = {
+		
+	}
+	available_if_capitulated = yes
+	prerequisite = { focus = OLE_EZ_burn_weiverfront }
+	prerequisite = { focus = OLE_EZ_burn_hjortland }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = OLE_EZ_dawn_of_the_hope
+	x = 4
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus OLE_EZ_but_theres_somthing"
+		add_ideas = EZ_squad_731
+		if = {
+			limit = {
+				NOT = {	has_global_flag = warcrimes_disabled }
+			}
+			add_to_variable = {
+				ROOT_warcrimes_count = 75
+			}
+			custom_effect_tooltip = plus_75_warcrimes_tt
+		}
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = OLE_EZ_but_theres_somthing
+	icon = GFX_goal_ez_reznya
+	cost = 5
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = extermination_var_is_25_tt
+			check_variable = {
+				global.extermination_var > 24
+			}
+		}	
+	}
+	available_if_capitulated = yes
+	prerequisite = { focus = OLE_EZ_poverty }
+	prerequisite = { focus = OLE_EZ_flame }
+	prerequisite = { focus = OLE_EZ_brainwash }
+	prerequisite = { focus = OLE_EZ_watchtowers }
+	prerequisite = { focus = OLE_EZ_spread_gas }
+	prerequisite = { focus = OLE_EZ_wack_woman }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = OLE_EZ_dawn_of_the_hope
+	x = 0
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus OLE_EZ_but_theres_somthing"
+		set_country_leader_portrait = {
+			ideology = fascism
+			portrait = "gfx/leaders/LYC/fon_krieger_3.tga"
+		}
+		
+		dd_stability = -0.1
+		add_war_support = -0.1
+		add_to_variable = {
+			global.extermination_var = 10
+		}
+		clamp_variable = {
+			var = global.extermination_var
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = plus_10_olenia_extermination
+		if = {
+			limit = {
+				NOT = {	has_global_flag = warcrimes_disabled }
+			}
+			add_to_variable = {
+				ROOT_warcrimes_count = 150
+			}
+			custom_effect_tooltip = plus_150_warcrimes_tt
+		}
+	}
+	search_filters = {  }	
+} 
+
+shared_focus = {
+	id = OLE_EZ_who_dies_first
+	icon = GFX_goal_ez_who_dies_first
+	cost = 5
+	available = {
+		
+	}
+	available_if_capitulated = yes
+	prerequisite = { focus = OLE_EZ_but_theres_somthing }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = OLE_EZ_but_theres_somthing
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus OLE_EZ_but_theres_somthing"
+		custom_effect_tooltip = OLE_EZ_who_dies_first_tt
+		if = {
+			limit = {
+				NOT = {	has_global_flag = warcrimes_disabled }
+			}
+			add_to_variable = {
+				ROOT_warcrimes_count = 25
+			}
+			custom_effect_tooltip = plus_25_warcrimes_tt
+		}
+	}
+	search_filters = {  }	
+} 
+
+shared_focus = {
+	id = OLE_EZ_erase_small_cities
+	icon = GFX_goal_ez_ruins
+	cost = 5
+	available = {
+		
+	}
+	available_if_capitulated = yes
+	prerequisite = { focus = OLE_EZ_who_dies_first }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = OLE_EZ_but_theres_somthing
+	x = -3
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus OLE_EZ_but_theres_somthing"
+		custom_effect_tooltip = OLE_EZ_erase_small_cities_tt
+		if = {
+			limit = {
+				NOT = {	has_global_flag = warcrimes_disabled }
+			}
+			add_to_variable = {
+				ROOT_warcrimes_count = 25
+			}
+			custom_effect_tooltip = plus_25_warcrimes_tt
+		}
+	}
+	search_filters = {  }	
+} 
+
+shared_focus = {
+	id = OLE_EZ_second_wave
+	icon = GFX_goal_ez_mass_murder
+	cost = 5
+	available = {
+		
+	}
+	available_if_capitulated = yes
+	prerequisite = { focus = OLE_EZ_erase_small_cities }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = OLE_EZ_but_theres_somthing
+	x = -2
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus OLE_EZ_but_theres_somthing"
+		every_owned_state = {
+			hidden_effect = {
+				add_manpower =  -20000
+			}
+			custom_effect_tooltip = OLE_EZ_minus_20000_animals_tt
+		}
+		add_war_support = -0.1
+		add_to_variable = {
+			global.extermination_var = 5
+		}
+		clamp_variable = {
+			var = global.extermination_var
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = plus_5_olenia_extermination
+		if = {
+			limit = {
+				NOT = {	has_global_flag = warcrimes_disabled }
+			}
+			add_to_variable = {
+				ROOT_warcrimes_count = 25
+			}
+			custom_effect_tooltip = plus_25_warcrimes_tt
+		}
+	}
+	search_filters = {  }	
+} 
+
+shared_focus = {
+	id = OLE_EZ_traitors
+	icon = GFX_goal_ez_traitors
+	cost = 5
+	available = {
+		
+	}
+	available_if_capitulated = yes
+	prerequisite = { focus = OLE_EZ_but_theres_somthing }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = OLE_EZ_but_theres_somthing
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus OLE_EZ_but_theres_somthing"
+		army_experience = -25
+		add_manpower = -258141
+		add_ideas = EZ_fuck_traitors
+		if = {
+			limit = {
+				NOT = {	has_global_flag = warcrimes_disabled }
+			}
+			add_to_variable = {
+				ROOT_warcrimes_count = 25
+			}
+			custom_effect_tooltip = plus_25_warcrimes_tt
+		}
+	}
+	search_filters = {  }	
+} 
+
+shared_focus = {
+	id = OLE_EZ_no_science
+	icon = GFX_goal_ez_antiscience
+	cost = 5
+	available = {
+		
+	}
+	available_if_capitulated = yes
+	prerequisite = { focus = OLE_EZ_traitors }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = OLE_EZ_but_theres_somthing
+	x = 3
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus OLE_EZ_but_theres_somthing"
+		swap_ideas = {
+			remove_idea = big_science_base
+			add_idea = better_science_base
+		}
+		if = {
+			limit = {
+				NOT = {	has_global_flag = warcrimes_disabled }
+			}
+			add_to_variable = {
+				ROOT_warcrimes_count = 25
+			}
+			custom_effect_tooltip = plus_25_warcrimes_tt
+		}
+	}
+	search_filters = {  }	
+} 
+
+shared_focus = {
+	id = OLE_EZ_ritual_samoubiystva
+	icon = GFX_goal_ez_rope
+	cost = 5
+	available = {
+		
+	}
+	available_if_capitulated = yes
+	prerequisite = { focus = OLE_EZ_no_science }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = OLE_EZ_but_theres_somthing
+	x = 2
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus OLE_EZ_but_theres_somthing"
+		every_owned_state = {
+			add_manpower = -500
+		}
+		add_ideas = EZ_rituals
+		if = {
+			limit = {
+				NOT = {	has_global_flag = warcrimes_disabled }
+			}
+			add_to_variable = {
+				ROOT_warcrimes_count = 25
+			}
+			custom_effect_tooltip = plus_25_warcrimes_tt
+		}
+	}
+	search_filters = {  }	
+} 
+
+shared_focus = {
+	id = OLE_EZ_corpses_corpses_corpses_corpses
+	icon = GFX_goal_ez_krieger_epic_prank
+	cost = 5
+	available = {
+		
+	}
+	available_if_capitulated = yes
+	prerequisite = { focus = OLE_EZ_but_theres_somthing }
+	prerequisite = { focus = OLE_EZ_second_wave }
+	prerequisite = { focus = OLE_EZ_ritual_samoubiystva }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = OLE_EZ_dawn_of_the_hope
+	x = 0
+	y = 10
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus OLE_EZ_but_theres_somthing"
+		add_stability = -0.1
+		add_war_support = -0.1
+		add_to_variable = {
+			global.extermination_var = 10
+		}
+		clamp_variable = {
+			var = global.extermination_var
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = plus_10_olenia_extermination
+		if = {
+			limit = {
+				NOT = {	has_global_flag = warcrimes_disabled }
+			}
+			add_to_variable = {
+				ROOT_warcrimes_count = 100
+			}
+			custom_effect_tooltip = plus_100_warcrimes_tt
+		}
+		swap_ideas = {
+			add_idea = insane_idea
+			remove_idea = changelings_beliefs
+		}
+	}
+	search_filters = {  }	
+} 
+
+shared_focus = {
+	id = OLE_EZ_ill_be_the_one
+	icon = GFX_goal_ez_death_1
+	cost = 5
+	available = {
+		
+	}
+	available_if_capitulated = yes
+	prerequisite = { focus = OLE_EZ_corpses_corpses_corpses_corpses }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = OLE_EZ_dawn_of_the_hope
+	x = -1
+	y = 11
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus OLE_EZ_but_theres_somthing"
+		add_to_variable = {
+			global.extermination_var = 5
+		}
+		clamp_variable = {
+			var = global.extermination_var
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = plus_5_olenia_extermination
+		if = {
+			limit = {
+				NOT = {	has_global_flag = warcrimes_disabled }
+			}
+			add_to_variable = {
+				ROOT_warcrimes_count = 150
+			}
+			custom_effect_tooltip = plus_150_warcrimes_tt
+		}
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = OLE_EZ_who_decides_your_fate
+	icon = GFX_goal_ez_death_2
+	cost = 5
+	available = {
+		
+	}
+	available_if_capitulated = yes
+	prerequisite = { focus = OLE_EZ_ill_be_the_one }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = OLE_EZ_dawn_of_the_hope
+	x = 1
+	y = 12
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus OLE_EZ_but_theres_somthing"
+		add_to_variable = {
+			global.extermination_var = 5
+		}
+		clamp_variable = {
+			var = global.extermination_var
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = plus_5_olenia_extermination
+		if = {
+			limit = {
+				NOT = {	has_global_flag = warcrimes_disabled }
+			}
+			add_to_variable = {
+				ROOT_warcrimes_count = 200
+			}
+			custom_effect_tooltip = plus_200_warcrimes_tt
+		}
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = OLE_EZ_for_your_fate_is
+	icon = GFX_goal_ez_death_3
+	cost = 5
+	available = {
+		
+	}
+	available_if_capitulated = yes
+	prerequisite = { focus = OLE_EZ_who_decides_your_fate }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = OLE_EZ_dawn_of_the_hope
+	x = -1
+	y = 13
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus OLE_EZ_but_theres_somthing"
+		add_to_variable = {
+			global.extermination_var = 7_5
+		}
+		clamp_variable = {
+			var = global.extermination_var
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = plus_7_5_olenia_extermination
+		if = {
+			limit = {
+				NOT = {	has_global_flag = warcrimes_disabled }
+			}
+			add_to_variable = {
+				ROOT_warcrimes_count = 400
+			}
+			custom_effect_tooltip = plus_400_warcrimes_tt
+		}
+	}
+	search_filters = {  }	
+}
+
+shared_focus = {
+	id = OLE_EZ_is_the_fate_of_mine
+	icon = GFX_goal_ez_krieger_epic_pile_of_skulls
+	cost = 5
+	available = {
+		
+	}
+	available_if_capitulated = yes
+	prerequisite = { focus = OLE_EZ_for_your_fate_is }
+	ai_will_do = {
+		factor = 40
+	}
+	relative_position_id = OLE_EZ_dawn_of_the_hope
+	x = 0
+	y = 15
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus OLE_EZ_but_theres_somthing"
+		set_country_leader_portrait = {
+			ideology = fascism
+			portrait = "GFX_portrait_its_me"
+		}
+		add_to_variable = {
+			global.extermination_var = 10
+		}
+		clamp_variable = {
+			var = global.extermination_var
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = plus_10_olenia_extermination
+		if = {
+			limit = {
+				NOT = {	has_global_flag = warcrimes_disabled }
+			}
+			add_to_variable = {
+				ROOT_warcrimes_count = 500
+			}
+			custom_effect_tooltip = plus_500_warcrimes_tt
+		}
+		
+	}
+	search_filters = {  }	
+}

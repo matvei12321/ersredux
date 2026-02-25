@@ -1,0 +1,45 @@
+characters = {
+	SVR_Rosalie_Winter={
+		name=SVR_Rosalie_Winter
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/HLR/HLR_necromancer_waifu.tga"
+			}
+			civilian={
+				large="gfx/leaders/SVR/SVR_Rosalie_Winter.dds"
+			}
+		}
+		country_leader={
+			desc="SVR_start_leader_desc"
+			ideology=despotism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		gender = male
+	}
+	SVR_ponyschtein={
+		name= SVR_ponyschtein
+		country_leader={
+			ideology=democratic_socialism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SVR_chyorniy_v={
+		name= SVR_chyorniy_v
+		country_leader={
+			ideology=liberalism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SVR_leader_sovyonkov={
+		name= SVR_leader_sovyonkov
+		country_leader={
+			ideology=ultranationalism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

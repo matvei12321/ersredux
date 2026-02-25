@@ -1,0 +1,48 @@
+# Scripted AI desire for peace actions.
+# See documentation.info file for more detailed scripting information.
+
+peace_ai_desires = {
+
+    # 
+    roke_democratic_just_puppet_everything = {
+        peace_action_type = { puppet }
+        enable = {
+            tag = ROK
+            has_government = democratic
+            FROM.FROM = {
+                OR = {
+                    tag = CLT
+                    tag = APL
+                    tag = MIN
+                    tag = NGC
+                    tag = HOR
+                    tag = BUF
+                    tag = GUA
+                }
+            }
+        }
+
+        ai_desire = 200
+    }
+
+    roke_democratic_just_puppet_everything_2 = {
+        peace_action_type = { take_states force_government liberate }
+        enable = {
+            tag = ROK
+            has_government = democratic
+            FROM.FROM = {
+                OR = {
+                    tag = CLT
+                    tag = APL
+                    tag = MIN
+                    tag = NGC
+                    tag = HOR
+                    tag = BUF
+                    tag = GUA
+                }
+            }
+        }
+
+        ai_desire = -200
+    }
+}

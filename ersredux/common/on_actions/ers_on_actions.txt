@@ -1,0 +1,926 @@
+on_actions = {
+	
+	#Not run on a specific country.
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = {
+					NOT = {
+						is_ai = yes
+					}
+				}
+				news_event = { id = ers_news.28 days = 714 }
+				news_event = { id = ers_news.22 days = 545 }
+				news_event = { id = ers_news.32 days = 200 }
+			}
+			
+			275 = {	remove_core_of = GRF }
+			296 = {	remove_core_of = GRF }
+			274 = {	remove_core_of = GRF }
+			339 = {	remove_core_of = GRF }
+			253 = {	remove_core_of = GRF }
+			341 = {	remove_core_of = GRF }
+			340 = {	remove_core_of = GRF }
+			342 = {	remove_core_of = GRF }
+			337 = {	remove_core_of = GRF }
+			277 = {	remove_core_of = GRF }
+
+			MTA = {
+				add_ideas = maretanian_defence_idea
+			}
+			NGC = {
+				country_event = { id = ngc.45 days = 80 }
+			load_focus_tree = NGC_cult
+          country_event = ending.31	 
+		  activate_advisor = NGC_Dressler
+		   activate_advisor =  NGC_isabella
+		  activate_advisor =  Wtirlisr_funk
+		    activate_advisor =  NGC_Ximi
+            }
+			MNH = {
+				add_ideas = MNH_no_army
+			}
+			VRX  = {
+				add_ideas = changelings_low_puppet
+			}
+			VST  = {
+				add_ideas = changelings_medium_puppet
+			}
+			SRF  = {
+				add_ideas = changelings_medium_puppet
+			}
+			LYC  = {
+				add_ideas = changelings_medium_puppet
+			}
+			DTS  = {
+				add_ideas = changelings_medium_puppet
+			}
+			CHN  = {
+				add_ideas = changelings_leader
+			}
+			142 = {
+				add_province_modifier = {
+					static_modifiers = { pegasi_region }
+					province = {
+						all_provinces = yes
+					}
+				}
+			} 
+			147 = {
+				add_province_modifier = {
+					static_modifiers = { pegasi_region }
+					province = {
+						all_provinces = yes
+					}
+				}
+			} 
+			144 = {
+				add_province_modifier = {
+					static_modifiers = { pegasi_region }
+					province = {
+						all_provinces = yes
+					}
+				}
+			} 
+			
+			236 = {
+				add_province_modifier = {
+					static_modifiers = { earthponies_region }
+					province = {
+						all_provinces = yes
+					}
+				}
+			}
+			98 = {
+				add_province_modifier = {
+					static_modifiers = { earthponies_region }
+					province = {
+						all_provinces = yes
+					}
+				}
+			}
+			152 = {
+				add_province_modifier = {
+					static_modifiers = { earthponies_region }
+					province = {
+						all_provinces = yes
+					}
+				}
+			}
+			
+			
+			
+			
+			150 = {
+				add_province_modifier = {
+					static_modifiers = { unicorns_region }
+					province = {
+						all_provinces = yes
+					}
+				}
+			}
+			53 = {
+				add_province_modifier = {
+					static_modifiers = { unicorns_region }
+					province = {
+						all_provinces = yes
+					}
+				}
+			}
+			151 = {
+				add_province_modifier = {
+					static_modifiers = { unicorns_region }
+					province = {
+						all_provinces = yes
+					}
+				}
+			}
+			
+			
+			1212 = {
+				add_province_modifier = {
+					static_modifiers = { hrd_umbrums_state }
+					province = {
+						all_provinces = yes
+					}
+				}
+			}
+			
+			every_country = {
+				add_dynamic_modifier = {
+					modifier = war_crimes_influence_modifier
+				}
+				if = {
+					limit = {
+						OR = {
+							NOT = {
+								has_idea = pandorism
+								has_idea = ers_atheism
+								has_idea = ers_pegasism
+								has_idea = ers_cantoritsism
+								has_idea = ers_yak_religion
+								has_idea = insane_idea
+								has_idea = changelings_beliefs
+								has_idea = solarism
+								has_idea = astralotheology
+								has_idea = boreism
+							}
+						}		
+					}
+					add_ideas = unknown_religion
+				}
+				if = {
+					limit = {
+						is_griffon_continent_griffon_country = yes
+					}
+					add_ideas = boreism
+				}
+				if = {
+					limit = {
+						is_ai = NO
+					}
+					country_event = ending.8
+					country_event = ending.2
+					country_event = ending.3
+					country_event = ending.5
+					country_event = { id = ending.4 days = 10 }
+				}
+				
+				if = {
+					limit = {
+						is_ai = no
+						NOT = {
+							tag = DED
+							tag = CLD
+							tag = CLT
+						}
+					}
+					if = {
+						limit = { check_variable = { random > 0.90 } }
+						country_event = {
+							id = ers_fantasy.2
+							days = 400
+							random = 22500
+						}
+					}
+					if = {
+						limit = { check_variable = { random > 0.90 } }
+						country_event = {
+							id = ers_fantasy.2
+							days = 400
+							random = 21000
+						}
+					}
+				}
+				
+				if = {
+					limit = { is_pony_race = yes }
+					add_ideas = pony_race
+				}
+				
+				else_if = {
+					limit = { is_ers_thestral_race = yes }
+					add_ideas = ers_thestral_race
+				}
+				
+				else_if = {
+					limit = { is_pegasi_race = yes }
+					add_ideas = pegasi_race
+				}
+				
+				else_if = {
+					limit = { is_unicorns_race = yes }
+					add_ideas = unicorns_race
+				}
+				
+				else_if = {
+					limit = { is_earthponies_race = yes }
+					add_ideas = earthponies_race
+				}
+				
+				CHL = {
+					add_ideas = better_science_base
+					adjust_research_modifier = yes
+				}
+				
+				SLT = {
+					add_ideas = poor_science_base
+					adjust_research_modifier = yes
+				}
+				
+				RZR = {
+					add_ideas = poor_science_base
+					adjust_research_modifier = yes
+				}
+				
+				SND = {
+					add_ideas = poor_science_base
+					adjust_research_modifier = yes
+				}
+				
+				PLP = {
+					add_ideas = poor_science_base
+					adjust_research_modifier = yes
+				}
+				NIG = {
+					add_ideas = poor_science_base
+					adjust_research_modifier = yes
+				}
+				SIR = {
+					add_ideas = poor_science_base
+					adjust_research_modifier = yes
+				}
+				STR = {
+					add_ideas = poor_science_base
+					adjust_research_modifier = yes
+				}
+				YUK = {
+					add_ideas = better_science_base
+					adjust_research_modifier = yes
+				}
+				NEI = {
+					add_ideas = better_science_base
+					adjust_research_modifier = yes
+				}
+				YKL = {
+					add_ideas = poor_science_base
+					adjust_research_modifier = yes
+				}
+				MES = {
+					add_ideas = poor_science_base
+					adjust_research_modifier = yes
+				}
+				GUA = {
+					add_ideas = poor_science_base
+					adjust_research_modifier = yes
+				}
+				CRY = {
+					add_ideas = big_science_base
+					adjust_research_modifier = yes
+				}
+				DRG = {
+					add_ideas = big_science_base
+					adjust_research_modifier = yes
+				}
+				CHN = {
+					add_ideas = big_science_base
+					adjust_research_modifier = yes
+				}
+				STG = {
+					add_ideas = big_science_base
+					adjust_research_modifier = yes
+				}
+				LYC = {
+					add_ideas = big_science_base
+					adjust_research_modifier = yes
+				}
+				VRX = {
+					add_ideas = big_science_base
+					adjust_research_modifier = yes
+				}
+				DTS = {
+					add_ideas = big_science_base
+					adjust_research_modifier = yes
+				}
+				VST = {
+					add_ideas = big_science_base
+					adjust_research_modifier = yes
+				}
+				LOS = {
+					add_ideas = better_science_base
+					adjust_research_modifier = yes
+				}
+				MNH = {
+					add_ideas = big_science_base
+					adjust_research_modifier = yes
+				}
+				ERP = {
+					add_ideas = big_science_base
+					adjust_research_modifier = yes
+				}
+				PRG = {
+					add_ideas = big_science_base
+					adjust_research_modifier = yes
+				}
+				SVR = {
+					add_ideas = big_science_base
+					adjust_research_modifier = yes
+				}
+				PGV = {
+					add_ideas = big_science_base
+					adjust_research_modifier = yes
+				}
+				UNP = {
+					add_ideas = big_science_base
+					adjust_research_modifier = yes
+				}
+				PGS = {
+					add_ideas = better_science_base
+					adjust_research_modifier = yes
+				}
+				NGC = {
+					add_ideas = poor_science_base
+					adjust_research_modifier = yes
+				}
+				CLT = {
+					add_ideas = poor_science_base
+					adjust_research_modifier = yes
+				}
+				TST = {
+					add_ideas = better_science_base
+					adjust_research_modifier = yes
+				}
+				ROK = {
+					add_ideas = better_science_base
+					adjust_research_modifier = yes
+				}
+				HOR = {
+					add_ideas = poor_science_base
+					adjust_research_modifier = yes
+				}
+				MNT = {
+					add_ideas = poor_science_base
+					adjust_research_modifier = yes
+				}
+				YAC = {
+					add_ideas = better_science_base
+					adjust_research_modifier = yes
+				}
+				SHA  = {
+					add_ideas = better_science_base
+					adjust_research_modifier = yes
+				}
+				NAK = {
+					add_ideas = better_science_base
+					adjust_research_modifier = yes
+				}
+				STL = {
+					add_ideas = big_science_base
+					adjust_research_modifier = yes
+				}
+				HRD  = {
+					add_ideas = big_science_base
+					adjust_research_modifier = yes
+				}
+				MIN = {
+					add_ideas = big_science_base
+					adjust_research_modifier = yes
+				}
+				APL = {
+					add_ideas = big_science_base
+					adjust_research_modifier = yes
+				}
+				EMP = {
+					add_ideas = poor_science_base
+					adjust_research_modifier = yes
+				}
+				BAD = {
+					add_ideas = big_science_base
+					adjust_research_modifier = yes
+				}
+				
+			}
+			STL = {
+				country_event = { id = ers_stl.8 days = 50 }
+			}
+			UNC = {
+				country_event = { id = unc.100 days = 50 }
+				country_event = { id = unc.33 days = 75 }
+			}
+			if = {
+				limit = {
+					SVR = {
+						is_ai = no
+					}
+				}
+				play_song = "vernopoddanim"
+			}
+			if = {
+				limit = {
+					STG = {
+						is_ai = no
+					}
+				}
+				play_song = "kak_rodnaya_mat"
+			}
+			
+			if = {
+				limit = {
+					CLT = {
+						is_ai = no
+					}
+				}
+				play_song = "Dorime"
+			}
+			if = {
+				limit = {
+					STL = {
+						is_ai = no
+					}
+				}
+				play_song = "in_our_town"
+			}
+			
+			CLT = {
+				for_each_scope_loop = {
+					array = global.countries
+					if = {
+						limit = {
+							NOT = {
+								original_tag = CLT
+							}
+						}
+						add_opinion_modifier = { target = CLT modifier = ers_wierd_shizoids }
+					}
+				}
+			}
+				
+			every_state = {
+				limit = {
+					is_core_of = STG
+				}
+				add_claim_by = SVR
+			}
+			every_state = {
+				limit = {
+					is_core_of = SVR
+				}
+				add_claim_by = STG
+			}
+			234 = { add_claim_by = STG add_claim_by = SVR }
+			332 = { add_claim_by = STG add_claim_by = SVR }
+			678 = { add_claim_by = STG add_claim_by = SVR }
+		}
+	}
+	
+	on_daily = {
+		effect = {
+			ROOT = {
+				if = {
+					limit = {
+						AND = {
+							is_available_earthpony_tech = yes
+							NOT = {
+								has_country_flag = turned_earthpony_tech
+							}
+						}
+					}
+					set_technology = { popup = no earthpony_race = 1 }
+					set_country_flag = turned_earthpony_tech
+				}
+				else_if = {
+					limit = {
+						AND = {
+							is_available_unicorn_tech = yes
+							NOT = {
+								has_country_flag = turned_unicorn_tech
+							}
+						}
+					}
+					set_technology = { popup = no unicorn_race = 1 }
+					set_country_flag = turned_unicorn_tech
+				}
+				else_if = {
+					limit = {
+						AND = {
+							is_available_pegasi_tech = yes
+							NOT = {
+								has_country_flag = turned_pegasi_tech
+							}
+						}
+					}
+					set_technology = { popup = no pegasi_race = 1 }
+					set_country_flag = turned_pegasi_tech
+				}
+				else_if = {
+					limit = {
+						AND = {
+							is_available_thestral_tech = yes
+							NOT = {
+								has_country_flag = turned_thestral_tech
+							}
+						}
+					}
+					set_technology = { popup = no thestral_race = 1 }
+					set_country_flag = turned_thestral_tech
+				}
+			}
+		}
+	}
+
+	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
+	on_state_control_changed = {
+		EFFECT = {
+			FROM = {
+				save_event_target_as = former_controller
+			}
+			#Idea changes from state control
+			
+			if = {
+				limit = {
+					FROM.FROM = { state = 87 }
+				}
+				country_event = min.1
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 12 }
+				}
+				country_event = plague.7
+			}
+			if = {
+				limit = {
+					FROM.FROM = { state = 68 }
+				}
+				add_ideas = idea_rainbow_factory
+			}
+			if = {
+				limit = {
+					has_idea = changeling_race
+					FROM.FROM = { state = 262 }
+				}
+				country_event = hive_mind.1
+			}
+		}
+	}
+	
+	# ROOT is capitulated country, FROM is winner
+	on_capitulation = {
+		effect = {
+			log = "[GetDateText]: ROOT: [Root.GetName] FROM: [From.GetName] on_capitulation"
+			if = {
+				limit = {
+					FROM = {
+						tag = LYC
+					}
+					#has_government = fascism
+					ROOT = {
+						tag = OLE
+					}
+					OR = {
+						NOT = {
+							OLE = {
+								is_subject_of = CHN
+								is_subject_of = DTS
+								is_subject_of = VRX
+								is_subject_of = SRF
+							}
+						}
+						AND = {
+							LYC = { is_ai = no }
+							OLE = { is_ai = yes }
+						}
+					}
+				}
+				LYC = {
+					country_event = { id = lyc.17 }
+					# country_event = { id = lyc.37 days = 500 }
+				}
+				scripted_peace_of_LYC_and_OLE = yes
+			}
+		
+			if = {
+				limit = {
+					ROOT = {
+						has_idea = ERS_main_nation
+					}
+				}
+				FROM = {
+					add_timed_idea = {
+						idea = ERS_main_nation_resistance
+						days = 365
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						tag = HMD
+					}
+				}
+				HMD = {
+					scoped_sound_effect = "hive_enemy_capitulated"
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						tag = OLE
+					}
+					FROM = {
+						tag = LYC
+						has_government = fascism
+					}
+				}
+				FROM = {
+					drop_cosmetic_tag = yes
+				}
+			}
+			
+			if = {
+				limit = {
+					ROOT = {
+						OR = {
+							tag = DTS
+							tag = CHC
+							tag = VRX
+							tag = SRF
+							tag = LYC
+							tag = VST
+						}
+					}
+					FROM = {
+						tag = CHN
+					}
+				}
+				FROM = {
+					annex_country = { target = ROOT }
+				}
+			}
+			
+			if = {
+				limit = {
+					tag = OLE
+					FROM = {
+						tag = LYC
+						has_country_flag = LYC_spare_someone_flag
+					}
+				}
+				LYC = {
+					add_ideas = LYC_spare_someone_idea
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_idea = good_rainbow_factory_effect
+						has_idea = bad_rainbow_factory_effect
+					}
+				}
+				every_country = {
+					limit = {
+						has_idea = idea_rainbow_factory
+					}
+					add_to_variable = { used_factory_cores = -1 }
+				}
+			}
+			
+			if = {
+				limit = {
+					tag = VRX
+					FROM = { tag = CHN }
+					has_global_flag = CHN_intervention_in_vraks
+				}
+				clr_global_flag = CHN_intervention_in_vraks
+				CHN = {
+					if = {
+						limit = {
+							has_dlc = "Together for Victory"
+						}
+						set_autonomy = {
+							target = VRX
+							autonomy_state = autonomy_satellite
+						}
+						else = {
+							puppet = VRX
+						}
+					}
+				}
+				VRX = {
+					add_country_leader_role = {
+						character = VRX_queen_arantida
+						promote_leader = yes
+
+						country_leader = {
+							expire = "1965.1.1"
+							ideology = nazism
+							traits = { }
+						}
+					}
+					add_ideas = VRX_losers
+					if = {
+						limit = {
+							has_idea = changelings_no_puppet
+						}
+						swap_ideas = {
+							remove_idea = changelings_no_puppet
+							add_idea = changelings_medium_puppet
+						}
+					}
+					
+				}
+			}
+			
+			if = {
+				limit = {
+					tag = ANR
+					FROM = {
+						tag = PGS
+					}
+				}
+				PGS = { annex_country = { target = ANR } }
+			}
+			
+			if = {
+				limit = {
+					tag = PGS
+					FROM = {
+						tag = ANR
+					}
+				}
+				PGS = { annex_country = { target = PGS } }
+			}
+
+			if = {
+				limit = {
+					OR = {
+						tag = APL
+						tag = MIN
+						tag = CLT
+						tag = HOR
+						tag = GUA
+						tag = NGC
+						tag = BUF
+					}
+					FROM = {
+						tag = ROK
+						has_government = democratic
+					}
+				}
+				ROOT = {
+					turn_to_ROK_confederacy_memeber = yes
+				}
+				FROM = {
+					rok_plus_one_confederation_member = yes
+				}
+			}
+		}
+	}
+	
+	
+	on_peaceconference_ended = {
+	}
+			
+			
+	on_puppet = { # ROOT is the nation being puppeted, FROM is the overlord
+		effect = {
+			log = "[GetDateText]: ROOT: [Root.GetName] FROM: [From.GetName] on_puppet"		
+			if = {
+				limit = {
+					ROOT = {
+						tag = OLE
+					}
+					FROM = {
+						tag = LYC
+						has_government = fascism
+					}
+				}
+				scripted_peace_of_LYC_and_OLE = yes
+			}
+		}
+	}
+	
+	on_release_as_puppet = { # ROOT is the nation being released, FROM is the overlord
+		effect = {
+			log = "[GetDateText]: ROOT: [Root.GetName] FROM: [From.GetName] on_release_as_puppet"
+			if = {
+				limit = {
+					FROM = { 
+						original_tag = LYC 
+						has_government = fascism
+					}
+					ROOT = { original_tag = OLE }
+				}
+				scripted_peace_of_LYC_and_OLE = yes
+			}
+		}
+	}
+	
+	
+	#FROM is war target
+	on_declare_war = {
+		effect = {
+			log = "[GetDateText]: ROOT: [Root.GetName] FROM: [From.GetName] on_declare_war"
+			hidden_effect = {
+				if = {
+					limit = {
+						AND = {
+							FROM = { tag = OLE }
+							tag = LYC
+						}
+					}
+					hidden_effect = {
+						news_event = { id = ers_news.10 hours = 6 }
+					}
+				}
+
+				if = {
+					limit = {
+						OR = {
+							tag = HMD
+							FROM = { tag = HMD }
+						}
+					}
+					HMD = {
+						scoped_sound_effect = "hive_war_declaration"
+					}
+				}
+				
+				if = {
+					limit = {
+						OR = {
+							AND = {
+								is_hive_uniter = yes
+								FROM = { is_equestria_uniter = yes }
+							}
+							AND = {
+								is_equestria_uniter = yes
+								FROM = { is_hive_uniter = yes }
+							}
+						}
+					}
+					play_song = "the_great_war"
+					set_global_flag = ers_super_event_flag_the_great_war
+				}
+				
+			}
+		}
+	}
+	
+	on_annex = { # ROOT is winner, FROM gets annexed !
+		effect = {
+			log = "[GetDateText]: ROOT: [Root.GetName] FROM: [From.GetName] on_annex"
+			FROM = { remove_from_global_arrays_on_annex = yes }
+			if = {
+				limit = {
+					FROM = {
+						tag = OLE
+					}
+					ROOT = {
+						tag = LYC
+						has_government = fascism
+					}
+				}
+				scripted_peace_of_LYC_and_OLE = yes
+			}
+			if = {
+				limit = {
+					ROOT = {
+						has_idea = changelings_medium_puppet
+					}
+				}
+				ROOT = {
+						remove_ideas = changelings_low_puppet
+				}
+			}
+		}
+	}
+	
+	on_nuke_drop = { 
+		effect = {
+			add_to_variable = {
+				ROOT_warcrimes_count = 100
+			}
+		}
+	}
+}

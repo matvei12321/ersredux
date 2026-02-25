@@ -1,0 +1,94 @@
+﻿l_english:
+ # ers provinces override
+ VICTORY_POINTS_11126:0 "Chamberwood"
+ VICTORY_POINTS_3434:0 "Stritchkorn"
+ VICTORY_POINTS_6499:0 "Indarn"
+ VICTORY_POINTS_11656:0 "Garn Aanad"
+ VICTORY_POINTS_11596:0 "Shon"
+ VICTORY_POINTS_9227:0 "Rimroes"
+ VICTORY_POINTS_13285:0 "Bruhengeim"
+ VICTORY_POINTS_6597:0 "Syrus"
+ VICTORY_POINTS_3312:0 "Clash"
+ VICTORY_POINTS_3534:0 "Prantz Shores Castele"
+ VICTORY_POINTS_11689:0 "Whiterhan"
+ VICTORY_POINTS_3331:0 "Murtias"
+ VICTORY_POINTS_13209:0 "Castle in the Mountains"
+ VICTORY_POINTS_3230:0 "Nova Hills"
+ VICTORY_POINTS_9546:0 "Desert Jump"
+ VICTORY_POINTS_1866:0 "Поселение Северного Берега"
+ VICTORY_POINTS_10478:0 "Поселение Белые Копытца"
+ VICTORY_POINTS_6066:0 "Castelvania"
+ VICTORY_POINTS_6389:0 "Gates of the Darkness"
+ VICTORY_POINTS_9361:0 "Krit"
+ VICTORY_POINTS_11854:0 "La-lamaunche"
+ VICTORY_POINTS_620:0 "Monruge"
+ VICTORY_POINTS_857:0 "Mor-realle"
+ VICTORY_POINTS_3953:0 "Ruan"
+ VICTORY_POINTS_10109:0 "For-De-Prantz"
+ VICTORY_POINTS_61:0 "Niverlun"
+ VICTORY_POINTS_9933:0 "Leaverpool"
+ VICTORY_POINTS_885:0 "Oleandria"
+ VICTORY_POINTS_11891:0 "Portkoir"
+ VICTORY_POINTS_648:0 "Nimiru"
+ VICTORY_POINTS_6786:0 "Redux"
+ VICTORY_POINTS_9494:0 "Pine Fields"
+ VICTORY_POINTS_11466:0 "Pandorian"
+ 
+ # Ponyold victory points
+ VICTORY_POINTS_6311:0 "Valihjarm"
+ VICTORY_POINTS_2064:0 "Onterti"
+ VICTORY_POINTS_10754:0 "Port-Hjotrland" 
+ VICTORY_POINTS_7077:0 "Mabergrad" 
+ 
+ 
+ VICTORY_POINTS_6957:0 "Ziopiksi"
+ VICTORY_POINTS_982:0 "Hanging Gardens"
+ 
+ 
+ VICTORY_POINTS_624:0 "Sumiya"
+ VICTORY_POINTS_11735:0 "Alkail"
+ 
+ VICTORY_POINTS_6725:0 "Militatsl"
+ VICTORY_POINTS_482:0 "Coltchitl"
+ VICTORY_POINTS_6582:0 "Red Towers"
+ VICTORY_POINTS_6708:0 "New Ali Yas"
+ 
+ VICTORY_POINTS_3652:0 "Zitsiotl"
+ 
+ 
+ # TST victory points
+ 
+ VICTORY_POINTS_10023:0 "Aria"
+ VICTORY_POINTS_9541:0 "West Teopiki"
+ VICTORY_POINTS_10045:0 "East Teopiki"
+ 
+ # vanilla provinces override
+ VICTORY_POINTS_3774:0 "Leviathan"
+ VICTORY_POINTS_3893:0 "Ormilia"
+ VICTORY_POINTS_6280:0 "Elia"
+ VICTORY_POINTS_6305:0 "Our Town"
+ VICTORY_POINTS_9150:0 "Serres"
+ VICTORY_POINTS_9236:0 "Megali Ligia"
+ VICTORY_POINTS_9351:0 "Fargopolis"
+ VICTORY_POINTS_9375:0 "Arkedonia"
+ VICTORY_POINTS_9806:0 "Eretria"
+ VICTORY_POINTS_11216:0 "Platonia"
+ VICTORY_POINTS_11272:0 "Avalon"
+ VICTORY_POINTS_11515:0 "Vorios"
+ VICTORY_POINTS_11686:0 "Pegasopolis"
+ 
+ # vanilla states override
+ STATE_57:0 "Our Town"
+ STATE_123:2 "Fate"
+ STATE_153:0 "Princessin"
+ STATE_133:0 "Lingaria"
+ STATE_175:0 "Fargopolis"
+ STATE_343:0 "Ionia"
+ 
+ # ers states override
+ STATE_1209:0 "Artemidianna Fields"
+ STATE_1210:0 "Korventadt"
+ STATE_1211:0 "Syzyphia"
+ STATE_1212:0 "Darkness Gates"
+ STATE_1213:0 "Dodge City Centre"э
+ STATE_1214:0 "Chronosphere"

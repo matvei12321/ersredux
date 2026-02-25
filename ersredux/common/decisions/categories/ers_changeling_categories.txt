@@ -1,0 +1,26 @@
+ers_changelings_category = {
+	icon = changeling_category_icon
+	
+	allowed = {
+		OR = {
+			tag = CHN
+			tag = VRX
+			tag = LYC
+			tag = DTS
+			tag = SRF
+		}
+	}
+	visible = {
+		OR = {
+			has_idea = changelings_high_puppet
+			has_idea = changelings_medium_puppet
+			has_idea = changelings_low_puppet
+			has_idea = changelings_no_puppet
+			has_idea = changelings_leader
+		}
+	}
+	scripted_gui = changeling_hehemony_info_container
+	visible_when_empty = yes
+	
+	priority = 150
+}

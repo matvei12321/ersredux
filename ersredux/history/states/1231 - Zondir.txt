@@ -1,0 +1,29 @@
+state={
+	id=1231
+	name="STATE_1231"
+
+	provinces={
+		354 2085 6233 9371 7554 9288 9289 11220 11290 11298 11353 12309
+	}
+
+	manpower=314000
+	state_category = rural
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = PGS
+		add_core_of = PGS
+		set_demilitarized_zone = yes
+
+		victory_points = { 11353 5 }
+		
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	
+	resources = {
+		steel = 4
+		oil = 2
+	}
+}

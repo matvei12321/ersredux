@@ -1,0 +1,137 @@
+characters = {
+	NEI_loyliada={
+		name=NEI_loyliada
+		portraits={
+			civilian={
+				large="gfx/leaders/NEI/loyliada.tga"
+			}
+		}
+		country_leader={
+			desc="loyliada_desc"
+			ideology=falangism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		gender = female
+	}
+	
+	NEI_sun_and_moon={
+		name=NEI_sun_and_moon
+		portraits={
+			civilian={
+				large="gfx/leaders/NEI/sun_and_moon.tga"
+			}
+		}
+	}
+	
+	
+	NEI_nobody={
+		name=NEI_nobody
+		portraits={
+			civilian={
+				large="gfx/leaders/NEI/loyliada.tga"
+			}
+		}
+		country_leader={
+			desc="NEI_nobody_desc"
+			ideology=liberalism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			desc="NEI_nobody_desc"
+			ideology=leninism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			desc="NEI_nobody_desc"
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	
+	#### GENERALS
+	
+	NEI_field_marshal1={
+		name=NEI_field_marshal1
+		portraits={
+			army={
+				large="gfx/leaders/generic_thestrals/generic_thestral_character4.tga"
+				small="gfx/interface/ideas/Advisors/CHN/idea_Lunason.tga"
+			}
+		}
+		field_marshal={
+			traits={ thestral_race_trait cute_mare_trait jungle_rat offensive_doctrine }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	
+	NEI_corps_commander1={
+		name=NEI_corps_commander2
+		portraits={
+			army={
+				large="gfx/leaders/generic_thestrals/generic_thestral_character2.tga"
+				small="gfx/interface/ideas/Advisors/CHN/idea_Lunason.tga"
+			}
+		}
+		corps_commander={
+			traits={ thestral_race_trait jungle_rat promising_general }
+			skill=3
+			attack_skill=3
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	
+	NEI_corps_commander2={
+		name=NEI_corps_commander2
+		portraits={
+			army={
+				large="gfx/leaders/generic_thestrals/generic_thestral_character6.tga"
+				small="gfx/interface/ideas/Advisors/CHN/idea_Lunason.tga"
+			}
+		}
+		corps_commander={
+			traits={ thestral_race_trait jungle_rat trait_cautious inflexible_strategist }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	
+	NEI_corps_commander3={
+		name=NEI_corps_commander3
+		portraits={
+			army={
+				large="gfx/leaders/generic_thestrals/generic_thestral_character5.tga"
+				small="gfx/interface/ideas/Advisors/CHN/idea_Lunason.tga"
+			}
+		}
+		corps_commander={
+			traits={ thestral_race_trait jungle_rat }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+}

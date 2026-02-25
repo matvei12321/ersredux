@@ -1,0 +1,19 @@
+characters = {
+	HOR_start_leader={
+		name=HOR_start_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/HOR/hor_start_leader.tga"
+			}
+		}
+		country_leader={
+			desc="HOR_start_leader_desc"
+			ideology=tribal_council
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		gender = female
+	}
+
+}

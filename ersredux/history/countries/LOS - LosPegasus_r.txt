@@ -1,0 +1,99 @@
+capital = 66
+
+
+set_research_slots = 2
+starting_train_buffer = 3
+
+save_global_event_target_as = los_pegasus_republic_target
+
+add_ideas = { 
+	
+	PGS_stoitsism
+	
+	lack_of_scientists3
+	pre_industrial_society
+	poverty5
+	big_science_base
+	ers_pegasism
+	
+	LOS_petty_army
+	LOS_national_republicans
+	LOS_food_problem
+	
+}
+
+oob = "LOS_1007"
+
+#### Leaders
+recruit_character = LOS_amidis
+recruit_character = LOS_othon_pangalos
+recruit_character = LOS_pavlos_metaxas
+recruit_character = LOS_spyros_soutsos
+
+set_technology = {
+	 
+	pegasi_race = 1
+	tech_support = 1
+	tech_pegasi = 1
+	melee_weapons = 1
+	melee_weapons1 = 1
+	infantry_weapons = 1
+	basic_train = 1
+	pre_gw_artillery = 1
+	motorised_infantry = 1
+}
+actually_fix_weapon_techs = yes #THIS HAS TO BE CALLED IN EVERY HISTORY FILE RIGHT AFTER MAIN set_technology!
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_submarine = 1
+		early_light_cruiser = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+	}
+}
+
+
+set_popularities = {
+	neutrality = 20
+	democratic = 64
+	communism = 6
+	fascism = 10
+}
+set_politics = {
+	ruling_party = democratic
+	last_election = "1.10.10"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+set_stability = 0.2
+set_war_support = 0.3

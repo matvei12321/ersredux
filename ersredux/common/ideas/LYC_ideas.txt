@@ -1,0 +1,787 @@
+ideas = {
+	country= {
+		LYC_our_enemies_idea = { 
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = lyc_kill_deers_new
+			
+			modifier = {
+				war_support_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = OLE
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		
+		LYC_our_enemies_idea_def = { 
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = lyc_kill_deers_new
+			modifier = {
+				war_support_factor = 0.05	
+			}
+			targeted_modifier = {
+				tag = OLE
+				attack_bonus_against = 0.075
+				defense_bonus_against = 0.125
+			}
+		}
+		
+		LYC_our_enemies_idea_att = { 
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = lyc_kill_deers_new
+			modifier = {
+				war_support_factor = 0.05	
+			}
+			targeted_modifier = {
+				tag = OLE
+				attack_bonus_against = 0.125
+				defense_bonus_against = 0.075
+			}
+		}
+	}
+	
+	country= {
+		LYC_prepare_militarisation = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = CHN_construction_effort
+			modifier = {
+				production_speed_arms_factory_factor = 0.15
+			}
+		}
+		
+		LYC_industrial_hive = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = CHN_new_hives_2
+			
+			modifier ={
+				production_speed_buildings_factor = 0.25
+			}
+			targeted_modifier = {
+				tag = CHN
+				cic_to_target_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = VRX
+				cic_to_target_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = DTS
+				cic_to_target_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = SRF
+				cic_to_target_factor = 0.05
+			}
+		}
+		
+		LYC_industrial_hive_1 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = CHN_new_hives_2
+			modifier ={
+				production_speed_buildings_factor = 0.15
+			}
+		}
+		
+		LYC_industrial_hive_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = CHN_new_hives_2
+			modifier ={
+				stability_factor = 0.05
+				production_speed_buildings_factor = 0.15
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				consumer_goods_factor = -0.25
+			}
+		}
+		
+		LYC_alone_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+				tag = LYC
+			}
+			
+			picture = CHN_new_hives
+			
+			modifier ={
+				war_support_factor = 0.05
+				AI_CALL_ALLY_DESIRE_FACTOR = -1000
+			}
+			
+		}
+		
+		
+		LYC_justice_idea = {
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = lyc_justice
+			modifier ={
+				ai_desired_divisions_factor = 0.75
+				AI_FOCUS_WAR_PRODUCTION_FACTOR = 0.75
+				conscription = 0.01
+				WAR_SUPPORT_WEEKLY = 0.0015
+				COMMAND_ABILITIES_COST_FACTOR = -0.1
+				MINIMUM_TRAINING_LEVEL = -0.1
+				army_speed_factor = 0.04
+			}	
+		}
+		
+		LYC_extended_production = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = lyc_claws
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				support_equipment = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				artillery_equipment = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				gas_weapon_equipment = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+			}
+		}
+		
+		
+		LYC_total_destruction_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = lyc_gas_mask
+			modifier = {
+				repair_speed_infrastructure_factor = -0.25
+				repair_speed_industrial_complex_factor = -0.25
+				repair_speed_arms_factory_factor = -0.25
+				repair_speed_rail_way_factor = -0.25
+				war_support_factor = 0.15
+				air_strategic_bomber_attack_factor = 0.15
+				air_strategic_bomber_bombing_factor = 0.15
+			    air_bombing_targetting = 0.10	
+			}
+		}
+		
+		LYC_spare_someone_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				tag = LYC
+			}
+			
+			picture = idea_tur_etatism_bonus
+			
+			modifier = {
+				repair_speed_infrastructure_factor = 0.05
+				repair_speed_industrial_complex_factor = 0.05
+				repair_speed_arms_factory_factor = 0.05
+				repair_speed_rail_way_factor = 0.05
+				war_support_factor = 0.05
+				stability_factor = 0.1
+				research_speed_factor = 0.03
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		
+		LYC_OLE_bombing = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				weekly_manpower = -1500
+			}
+		}
+		
+		LYC_motorized_attack = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = lyc_wheel
+			equipment_bonus = {
+				motorized_equipment = {
+					maximum_speed = 0.1
+					build_cost_ic = -0.05
+					instant = yes
+				}
+			}
+			
+			modifier = {
+				army_speed_factor = 0.025
+			}
+		}
+		
+		LYC_social_problems_ignored = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = love_tax_CHN_MAN
+			modifier = {
+				stability_factor = -0.15
+				MONTHLY_POPULATION = -0.1
+			}
+		}
+		LYC_social_problems_ignored_2 = {
+			allowed = {
+				always = no
+			}
+			picture = love_tax_CHN_MAN
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.25
+				war_support_factor = -0.25
+				MONTHLY_POPULATION = -0.15
+				consumer_goods_factor = 0.25
+				drift_defence_factor = -0.3
+			}
+		}
+		LYC_hive_spirit = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = lyc_unity_spirit
+			modifier ={
+				conscription = 0.02
+				conscription_factor = 0.06
+			}
+		}
+		LYC_hive_spirit2 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = lyc_unity_spirit
+			modifier = {
+				WEEKLY_CASUALTIES_WAR_SUPPORT = 0.005
+				conscription_factor = 0.11
+				army_defence_factor = 0.035
+				conscription = 0.02
+			}
+		}
+		LYC_idea_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = lyc_crown
+			modifier ={
+				fascism_drift = 0.02
+				stability_weekly = 0.005
+				political_power_gain = -0.05			
+			}
+		}
+		
+		LYC_crusade_against_vesalipolis = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = pax_lyctidia
+			modifier ={
+				conscription_factor = 0.03
+				production_speed_arms_factory_factor = 0.05
+				consumer_goods_factor = -0.05
+				political_power_gain = -0.4
+			}
+		}
+		
+		LYC_defence_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = CHN_new_hives_2
+			modifier ={
+				production_speed_bunker_factor = 0.1
+				production_speed_anti_air_building_factor = 0.1
+				army_core_defence_factor = 0.05
+			}
+		}
+		
+		LYC_research_survived_olenians = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = research_rifles
+			modifier ={
+				research_speed_factor = 0.05
+			}
+		}
+		
+		LYC_improvement_of_life_quality = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			on_remove = {
+				swap_ideas = {
+					remove_idea = outdated_industry
+					add_idea = modern_society
+				}
+			}
+			removal_cost = -1
+			picture = lyc_city
+			modifier ={
+				consumer_goods_factor = 0.1
+				political_power_factor = -0.2
+				MONTHLY_POPULATION = 0.025
+				custom_modifier_tooltip = lyc_improvement_of_life_quality_tt
+			}
+		}
+		
+		LYC_demobilised_economy = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				has_war = no
+			}
+			removal_cost = -1
+			picture = generic_army_problems
+			modifier ={
+				industrial_capacity_factory = -0.1
+				production_speed_arms_factory_factor = -0.1
+				conscription = -0.015
+				stability_factor = 0.05
+			}
+		}
+		
+		LYC_afterwar_protests = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = CHN_new_hives_2
+			modifier ={
+				communism_drift = 0.03
+				democratic_drift = 0.03
+				stability_factor = -0.05
+				war_support_factor = -0.05
+				production_factory_max_efficiency_factor = -0.1
+			}
+		}
+		
+		LYC_credits_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = bank
+			modifier ={
+				consumer_goods_factor = 0.1
+				stability_factor = 0.05
+				political_power_gain = 0.15
+			}
+		}
+		
+		LYC_borning_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = CHN_new_hives_2
+			modifier ={
+				MONTHLY_POPULATION = 0.2
+			}
+		}
+		
+		LYC_small_business = {
+			picture = factory_with_cog
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				local_resources_factor = 0.10
+				production_speed_infrastructure_factor = 0.10
+				conscription_factor = -0.055
+			}
+		}
+		
+		LYC_upgraded_army_idea = {
+			picture = upgrade_mp40
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				planning_speed = 0.05
+				max_planning = 0.1
+				army_org_factor = 0.05
+				training_time_factor = 0.1
+				command_abilities_cost_factor = 0.25
+			}
+		}
+		
+		LYC_upgraded_army_idea2 = {
+			picture = upgrade_mp40
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				planning_speed = 0.1
+				max_planning = 0.15
+				army_org_factor = 0.1
+				training_time_factor = 0.125
+				command_abilities_cost_factor = 0.2
+				army_morale_factor = 0.05
+			}
+		}
+		
+		LYC_antiolenian_orders = {
+			picture = lyc_anti_deers
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.1
+				conscription = 0.02
+				political_power_gain = 0.2
+				war_support_factor = 0.025
+			}
+		}
+		
+		LYC_uber_alles_idea = {
+			picture = changelings_hive
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.1
+				army_morale_factor = 0.03
+			}
+		}
+		
+		LYC_optimised_gas_idea = {
+			picture = lyc_biohazard
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			equipment_bonus = {
+				gas_weapon_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+		}
+		
+		LYC_buying_chemichal_equipment_idea = {
+			picture = chemical_thrower
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			research_bonus = {
+				chemical_warfare_category = 0.08
+			}
+		}
+		
+		LYC_better_industry_idea = {
+			picture = lyc_industrial_upgrade
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			research_bonus = {
+				industry = 0.1
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.025
+			}
+		}
+		
+		LYC_convoys_idea = {
+			picture = escort_effort_focus
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			equipment_bonus = {
+				convoy = {
+					build_cost_ic = -0.1
+				}
+			}
+		}
+		
+		LYC_big_ships_idea = {
+			picture = chemical_thrower
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				NAVY_CAPITAL_SHIP_ATTACK_FACTOR = 0.1
+				NAVY_CAPITAL_SHIP_DEFENCE_FACTOR = 0.05
+			}
+		}
+		
+		LYC_naval_air_fleet = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_air_research
+			removal_cost = -1
+			modifier = {
+				navy_carrier_air_attack_factor = 0.1
+				navy_carrier_air_targetting_factor = 0.05
+			}
+		}
+		
+		LYC_stolen_ship_blueprints_idea = {
+			picture = blueprints
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			research_bonus = {
+				bb_tech = 0.1
+				shbb_tech = 0.1
+				ca_tech = 0.1
+				cl_tech = 0.1
+				bc_tech = 0.1
+				tp_tech = 0.1
+				ss_tech = 0.1
+				dd_tech = 0.1
+				cv_tech = 0.1			
+			}
+		}
+
+		LYC_sindustrial_hive_again_idea = {
+			picture = blueprints
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_arms_factory_factor = -0.25
+				production_speed_industrial_complex_factor = 0.25
+				stability_factor = 0.025
+				war_support_factor = -0.025
+			}
+		}	
+		
+		LYC_hive_of_thousand_year_hehemony_idea = {
+			picture = lyc_unity_spirit
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				monthly_population = 0.05
+			}
+		}
+		
+		
+	}
+	
+	country = {
+		ooo_idea = {
+		
+			removal_cost = -1
+				
+			allowed = {
+				original_tag = LYC
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = LYC_kill_deers
+			modifier = {
+				stability_factor = -0.75
+				war_support_factor = -0.5
+				political_power_factor = -0.5
+			}
+		}
+	}
+	
+	
+	tank_manufacturer = {
+		designer = yes
+			LYC_unique_tank_designer = {
+			allowed = {
+				tag = LYC
+			}
+			available = {
+				has_completed_focus = LYC_heavy_tanks
+			}
+			research_bonus = {
+				armor = 0.15
+			}
+			picture = LYC_unique_tank_manifactire
+			traits = { LYC_unique_tank_designer_trait }
+		}
+	}
+}

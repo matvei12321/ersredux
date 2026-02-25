@@ -1,0 +1,893 @@
+characters = {
+	PGS_hurrikane={
+		name=PGS_hurrikane
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/PGS/pgs_hurricane_small.tga"
+				large="gfx/leaders/PGS/hurrikane.dds"
+			}
+			civilian={
+				large="gfx/leaders/PGS/hurrikane.dds"
+			}
+		}
+		country_leader={
+			desc="PGS_hurrikane_desc"
+			ideology=stratocracy
+			traits={ hurricane_militarist hurricane_child_of_war ers_commander }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		
+		field_marshal={
+			traits={ harsh_leader war_hero inspirational_leader offensive_doctrine pegasi_race_trait }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+			desc = "PGS_hurrikane_desc"
+		}
+		
+	}
+	PGS_still_will={
+		name=PGS_still_will
+		portraits={
+			civilian={
+				large="gfx/leaders/ANR/ANR_red_flame.tga"
+			}
+		}
+		country_leader={
+			desc="PGS_red_flame_desc"
+			ideology=anarchist_communism
+			traits={ red_flame last_scum }
+			expire="1965.1.1.1"
+		}
+		
+	}
+	
+	PGS_moondowner={
+		name=PGS_moondowner
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/PGS/moondowner_advisor.dds"
+			}
+			civilian={
+				large="gfx/leaders/PGS/moondownerii.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = PGS_moondowner_token
+			allowed = {
+				original_tag = PGS
+			}
+			cost = 5
+			available = {
+				has_country_flag = moondowner_acception
+			}
+			on_add = {
+			}
+			traits = {
+				backroom_backstabber
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	PGS_crouly={		### Kiros
+		name=PGS_crouly
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/PGS/crouly_minister.dds"
+				large="gfx/leaders/PGS/crouly.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_mountaineer infantry_leader pegasi_race_trait }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+		}
+		advisor={
+			slot = theorist
+			idea_token = PGS_crouly_token
+		    ledger = army
+			cost = 150
+			allowed = {
+				original_tag = PGS
+			}
+			visible = {
+				
+			}
+			traits = {
+				mass_assault_expert
+			}
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	
+	}
+	
+	PGS_arcadia={
+		name=PGS_arcadia
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/PGS/iliana_minister.dds"
+				large="gfx/leaders/PGS/iliana.dds"
+			}
+		}
+		corps_commander={
+			traits={ fortress_buster pegasi_race_trait }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=4
+		}
+	}
+	
+	PGS_amintas={
+		name=PGS_amintas
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/PGS/starfighter_minister.dds"
+				large="gfx/leaders/PGS/starfighter.dds"
+			}
+		}
+		corps_commander={
+			traits={ old_guard defensive_doctrine pegasi_race_trait }
+			skill=3
+			attack_skill=1
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+		}
+		advisor={
+			slot = high_command
+			desc = "defensive_master_desc"
+			idea_token = PGS_starfighter_token
+		    ledger = army
+			cost = 150
+			allowed = {
+				original_tag = PGS
+			}
+			visible = {
+				
+			}
+			traits = {
+				defensive_master
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	PGS_stormbreeze={
+		name=PGS_stormbreeze
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/PGS/stormbreeze_minister.dds"
+				large="gfx/leaders/PGS/stormbreeze.dds"
+			}
+		}
+		corps_commander={
+			traits={ fast_planner trickster pegasi_race_trait }
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+	
+	PGS_pavlos_metaxas={
+		name=PGS_pavlos_metaxas
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/PGS/stormbreeze_minister.dds"
+				large="gfx/leaders/PGS/pavlos_metaxas.tga"
+			}
+		}
+		corps_commander={
+			traits={ pegasi_race_trait }
+			skill=1
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+		}
+	}
+	
+	PGS_markos_gonatas={
+		name=PGS_markos_gonatas
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/PGS/stormbreeze_minister.dds"
+				large="gfx/leaders/PGS/markos_gonatas.tga"
+			}
+		}
+		corps_commander={
+			traits={ pegasi_race_trait }
+			skill=1
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=3
+		}
+	}
+
+	PGS_demos_forfis = {
+		name=PGS_demos_fortis
+		portraits={
+			army={
+				small="gfx/interface/ideas/unknown_advisor4.dds"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = PGS_demos_token
+			allowed = {
+				original_tag = PGS
+			}
+			available = {
+			}
+			on_add = {
+			}
+			traits = {
+				face_licker
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	PGS_solidus_rei={
+		name=PGS_solidus_rei
+		portraits={
+			army={
+				small="gfx/interface/ideas/unknown_advisor4.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = PGS_solidus_token
+		    ledger = army
+			allowed = {
+				original_tag = PGS
+			}
+			visible = {
+				
+			}
+			traits = {
+				silent_workhorse
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	PGS_magnus_olister={
+		name=PGS_magnus_olister
+		portraits={
+			army={
+				small="gfx/interface/ideas/unknown_advisor4.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = PGS_magnus_olister_token
+		    ledger = army
+			cost = 75
+			allowed = {
+				original_tag = PGS
+			}
+			visible = {
+				
+			}
+			traits = {
+				staunch_monarchist
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+
+	PGS_cataclysm={
+		name=PGS_cataclysm
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/PGS/stormbreeze_minister.dds"
+				large="gfx/leaders/PGS/cataclysm.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_mountaineer organisational_leaderinfantry_officer pegasi_race_trait }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
+			visible = { 
+				has_completed_focus = PGS_knights_in_the_elder_castle 
+				has_war = yes 
+			}
+		}
+	}
+	
+	PGS_cratos_eifirus={
+		name=PGS_cratos_eifirus
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/PGS/stormbreeze_minister.dds"
+				large="gfx/leaders/PGS/cratos.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_mountaineer organisational_leader pegasi_race_trait }
+			skill=4
+			attack_skill=3
+			defense_skill=1
+			planning_skill=4
+			logistics_skill=3
+			visible = { 
+				has_completed_focus = PGS_knights_in_the_elder_castle 
+				has_civil_war = yes 
+			}
+		}
+	
+	
+	}
+	
+	PGS_kristeria={
+		name=PGS_kristeria
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/PGS/stormbreeze_minister.dds"
+				large="gfx/leaders/PGS/stormbreeze.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_mountaineer pegasi_race_trait }
+			skill=4
+			attack_skill=3
+			defense_skill=5
+			planning_skill=1
+			logistics_skill=2
+			visible = { 
+				has_completed_focus = PGS_knights_in_the_elder_castle 
+				has_war = yes 
+			}
+		}
+	}
+
+	PGS_christofer = {
+		name=PGS_christofer
+		portraits={
+			army={
+				large="gfx/leaders/PGS/christofer.dds"
+			}
+		}
+	}
+	
+	PGS_fluttershy = {
+		name=PGS_fluttershy
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/PGS/ers_fluttershy_minister.dds"
+				large="gfx/leaders/PGS/shizoshy.dds"
+			}
+			civilian={
+				large="gfx/leaders/PGS/shizoshy.dds"
+			}
+		}
+		country_leader={
+			desc="PGS_fluttershy_desc"
+			ideology=pacifism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		
+		advisor={
+			slot = political_advisor
+			desc="PGS_fluttershy_advisor_desc"
+			idea_token = fluttershy_tokend
+			cost = 75
+			allowed = {
+				original_tag = PGS
+			}
+			available = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+			on_add = {
+			}
+			traits = {
+				peacemaker
+			}
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+	}
+	
+	PGS_survivor={
+		name=PGS_survivor
+		portraits={
+			army={
+				small="gfx/interface/ideas/unknown_advisor4.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = PGS_survivor
+			cost = 75
+			allowed = {
+				original_tag = PGS
+			}
+			visible = {
+				
+			}
+			traits = {
+				soldier_of_destiny
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	PGS_kaylo_nestor={
+		name=PGS_kaylo_nestor
+		portraits={
+			army={
+				small="gfx/interface/ideas/unknown_advisor4.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = PGS_kaylo_nestor_token
+		    ledger = army
+			cost = 150
+			allowed = {
+				original_tag = PGS
+			}
+			visible = {
+				
+			}
+			traits = {
+				prince_of_terror
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	PGS_rainbow_dash={
+		name=PGS_rainbow_dash
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/PGS/ers_rainbow_advisor.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = PGS_rainbow_token
+			cost = 150
+			allowed = {
+				original_tag = PGS
+			}
+			visible = {
+				
+			}
+			traits = {
+				RD_rainbow_factory_trait
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			on_add = { 
+				ROOT = {
+					add_to_variable = { used_factory_cores = -1 }
+				}
+				custom_effect_tooltip = upgrade_rainbow_factory_tt
+			}
+			on_remove = { 
+				ROOT = {
+					add_to_variable = { used_rainbow_factory_cores = 1 }
+				}
+				custom_effect_tooltip = de_upgrade_rainbow_factory_tt
+			}
+		}
+	}
+	
+	PGS_derpy={
+		name=PGS_derpy
+		portraits={
+			army={
+				large="gfx/leaders/PGS/ers_derpy.dds"
+				small="gfx/interface/ideas/ers_derpy_advisor.dds"
+			}
+		}
+		corps_commander={
+			traits={ promising_general pegasi_race_trait }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	
+	PGS_shadow_pen={
+		name=PGS_shadow_pen
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/PGS/shadow_pen.tga"
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = PGS_shadow_pen
+			cost = 150
+			allowed = {
+				original_tag = PGS
+			}
+			visible = {
+				
+			}
+			traits = {
+				fortification_engineer
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	PGS_orion_icarus={
+		name=PGS_orion_icarus
+		portraits={
+			army={
+				small="gfx/interface/ideas/unknown_advisor4.dds"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = PGS_orion_icarus
+			cost = 150
+			allowed = {
+				original_tag = PGS
+			}
+			visible = {
+				
+			}
+			traits = {
+				army_chief_offensive_1
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	PGS_demokridias={
+		name=PGS_demokridias
+		portraits={
+			army={
+				small="gfx/interface/ideas/unknown_advisor4.dds"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = PGS_demokridias
+			cost = 150
+			allowed = {
+				original_tag = PGS
+			}
+			visible = {
+				
+			}
+			traits = {
+				army_chief_drill_1
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	PGS_heaven_dimos={
+		name=PGS_heaven_dimos
+		portraits={
+			army={
+				small="gfx/interface/ideas/unknown_advisor4.dds"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = PGS_heaven_dimos
+			cost = 150
+			allowed = {
+				original_tag = PGS
+			}
+			visible = {
+				
+			}
+			traits = {
+				army_chief_reform_2
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	PGS_vidiris={
+		name=PGS_vidiris
+		portraits={
+			army={
+				small="gfx/interface/ideas/unknown_advisor4.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = PGS_vidiris
+			cost = 150
+			allowed = {
+				original_tag = PGS
+			}
+			visible = {
+				
+			}
+			traits = {
+				economic_reformer
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	
+	
+	 ##################
+	#### Army Chief ####
+	 ##################
+	
+	PGS_air_chief_1={
+		name=PGS_air_chief_1
+		portraits={
+			army={
+				small="gfx/interface/ideas/unknown_advisor4.dds"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = PGS_air_chief_1
+			cost = 100
+			allowed = {
+				original_tag = PGS
+			}
+			traits = { air_chief_ground_support_2 }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	PGS_air_chief_2={
+		name=PGS_air_chief_2
+		portraits={
+			army={
+				small="gfx/interface/ideas/unknown_advisor4.dds"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = PGS_air_chief_2
+			cost = 100
+			allowed = {
+				original_tag = PGS
+			}
+			traits = { air_chief_reform_3 }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	PGS_air_chief_3={
+		name=PGS_air_chief_3
+		portraits={
+			army={
+				small="gfx/interface/ideas/unknown_advisor4.dds"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = PGS_air_chief_3
+			cost = 100
+			allowed = {
+				original_tag = PGS
+			}
+			traits = { alt_air_air_superiority_2 }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	
+	 ####################
+	#### High Command ####
+	 ####################	
+	
+	PGS_nikolaos_riezis={
+		name=PGS_vidiris
+		portraits={
+			army={
+				small="gfx/interface/ideas/unknown_advisor4.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = PGS_nikolaos_riezis
+			cost = 150
+			allowed = {
+				original_tag = PGS
+			}
+			visible = {
+				
+			}
+			traits = {
+				army_regrouping_2
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	PGS_zheodoros_zaimis={
+		name=PGS_zheodoros_zaimis
+		portraits={
+			army={
+				small="gfx/interface/ideas/unknown_advisor4.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = PGS_zheodoros_zaimis
+			cost = 150
+			allowed = {
+				original_tag = PGS
+			}
+			visible = {
+				
+			}
+			traits = {
+				army_logistics_2
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	PGS_antonia_manos={
+		name=PGS_antonia_manos
+		portraits={
+			army={
+				small="gfx/interface/ideas/unknown_advisor4.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = PGS_antonia_manos
+			cost = 150
+			allowed = {
+				original_tag = PGS
+			}
+			visible = {
+				
+			}
+			traits = { 
+				alt_army_chief_morale_2 
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	
+	}
+	
+	PGS_sotiris_pangalos={
+		name=PGS_sotiris_pangalos
+		portraits={
+			army={
+				small="gfx/interface/ideas/unknown_advisor4.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = PGS_sotiris_pangalos
+			cost = 150
+			allowed = {
+				original_tag = PGS
+			}
+			visible = {
+				
+			}
+			traits = { 
+				army_infantry_2 
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	
+	
+	
+	################
+	### Theorist ###
+	################
+	
+	PGS_georgios_kanaris={
+		name=PGS_georgios_kanaris
+		portraits={
+			army={
+				small="gfx/interface/ideas/unknown_advisor4.dds"
+			}
+		}
+		gender = female
+		advisor = {
+			slot = theorist
+			idea_token = PGS_georgios_kanaris
+			ledger = army
+			cost = 150
+			allowed = {
+				original_tag = PGS
+			}
+			traits = { defence_theorist }
+		}
+	}
+	
+	PGS_eugenia_sarafis={
+		name=PGS_eugenia_sarafis
+		portraits={
+			army={
+				small="gfx/interface/ideas/unknown_advisor4.dds"
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = PGS_eugenia_sarafis
+			cost = 150
+			ledger = air
+			allowed = {
+				original_tag = PGS
+			}
+			traits = {
+				air_warfare_theorist
+			}
+		}
+	}
+	
+	
+}

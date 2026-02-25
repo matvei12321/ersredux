@@ -1,0 +1,66 @@
+capital = 30
+
+oob = "TST_1007"
+
+set_research_slots = 2
+starting_train_buffer = 2
+
+save_global_event_target_as = ayakachtli_target
+recruit_character = TST_Miron
+recruit_character = TST_ayakina
+
+add_manpower = 60000
+
+country_event = { id = tst.1 days = 300 }
+
+
+add_ideas = { 
+	
+	agrarian_society
+	low_economic_mobilisation
+	lack_of_scientists2
+	better_science_base
+	poverty2
+	
+	TST_river_caravans
+	TST_poison_idea
+	TST_great_tribal
+	TST_serfdom_idea_1
+	TST_night_vs_day_religion
+	TST_low_peasant_discontent_idea
+	###THESTRALS_potoh_not_invented
+}
+
+set_technology = {
+	 
+	thestral_race = 1
+	melee_weapons = 1
+	melee_weapons1 = 1
+	tech_support = 1
+	tech_thestrals = 1
+}
+
+actually_fix_weapon_techs = yes #THIS HAS TO BE CALLED IN EVERY HISTORY FILE RIGHT AFTER MAIN set_technology!
+
+add_equipment_to_stockpile = {
+	type = melee_equipment_1
+	amount = 1600
+	producer = TST
+}
+
+set_convoys = 0
+set_popularities = {
+	communism = 2
+	democratic = 16
+	fascism = 15
+	neutrality = 67
+}
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1.10.10"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+set_stability = 0.5
+set_war_support = 0.6

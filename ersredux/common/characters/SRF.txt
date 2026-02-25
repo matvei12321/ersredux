@@ -1,0 +1,67 @@
+characters={
+	SRF_queen_yaria = {
+		name=chn_queen_yaria
+		portraits={
+			army={
+				small="gfx/interface/ideas/chn_queen_yaria.dds"
+			}
+			civilian={
+				large="gfx/leaders/SRF/queen_yaria.dds"
+			}
+		}	
+		
+		country_leader={
+			desc="POLITICS_YARIA_DESC"
+			ideology=fascism_technocracy
+			traits={ queen_yaria yharia_pragmatic yharia_no_principes }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SRF_luka = {
+		name=SRF_luka
+		civilian={
+			large="gfx/leaders/CHN/unknown_bug.tga"
+		}	
+		country_leader={
+			desc="POLITICS_SRF_LUKA_DESC"
+			ideology=national_evolutionism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SRF_steiner = {
+		name=SRF_steiner
+		civilian={
+			large="gfx/leaders/CHN/unknown_bug.tga"
+		}
+		country_leader={
+			desc="POLITICS_SRF_STEINER_DESC"
+			ideology=technocracy
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	
+	SRF_felix = {
+		name=SRF_felix
+		portraits={
+			army={
+				small="gfx/interface/ideas/ers_felix_advisor.tga"
+				large="gfx/leaders/SRF/SRF_felix.tga"
+			}
+		}
+		corps_commander={
+			traits={ trait_reckless changeling_race_trait trickster }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+		}
+		
+	}
+}

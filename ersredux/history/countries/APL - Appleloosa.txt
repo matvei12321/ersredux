@@ -1,0 +1,53 @@
+capital = 21
+
+set_research_slots = 3
+starting_train_buffer = 4
+
+save_global_event_target_as = appleloosa_target
+
+oob = "APL_1007"
+
+add_manpower = 20000
+
+
+add_ideas = { 
+
+	lack_of_scientists2
+	agrarian_society
+	poverty4
+	
+	civilian_economy
+	
+	wild_south_west
+	APL_cultists
+}
+
+set_technology = {
+	 
+	 earthpony_race = 1
+	melee_weapons = 1
+	melee_weapons1 = 1
+	infantry_weapons = 1
+	tech_support = 1
+	tech_military_police = 1
+}
+actually_fix_weapon_techs = yes #THIS HAS TO BE CALLED IN EVERY HISTORY FILE RIGHT AFTER MAIN set_technology!
+
+recruit_character = APL_braeburn
+
+set_popularities = {
+
+	fascism = 10
+	democratic = 10
+	neutrality = 80
+}
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1.10.10"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+
+set_stability = 0.8
+set_war_support = 0.35

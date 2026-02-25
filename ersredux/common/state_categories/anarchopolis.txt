@@ -1,0 +1,8 @@
+state_categories={
+	anarchopolis = {
+		local_building_slots = 15
+	
+			color = { 68 0 6 }
+
+	}
+}

@@ -1,0 +1,30 @@
+﻿
+division_template = {
+	name = "Fascism Division"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+	}
+	priority = 0
+}
+
+units = {
+	division = {
+		name = "Fascism Division"
+		location = 11684
+		division_template = "Fascism Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Fascism Division"
+		location = 11684
+		division_template = "Fascism Division"
+		start_experience_factor = 0.01
+		start_equipment_factor = 1.0
+	}
+}

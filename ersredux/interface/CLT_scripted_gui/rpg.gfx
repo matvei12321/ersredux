@@ -1,0 +1,26 @@
+spriteTypes = {
+	progressbartype = {
+		name = "GFX_life_progressbar"
+		textureFile1 = "gfx/interface/garrison_bar_str.dds"
+		textureFile2 = "gfx/interface/garrison_bar_bg.dds"
+		size = {
+			x = 150
+			y = 16
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+		steps = 3
+	}
+	progressbartype = {
+		name = "GFX_stamina_progressbar"
+		textureFile1 = "gfx/interface/garrison_bar_str.dds"
+		textureFile2 = "gfx/interface/garrison_bar_bg.dds"
+		size = {
+			x = 150
+			y = 16
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+		steps = 3
+	}
+}

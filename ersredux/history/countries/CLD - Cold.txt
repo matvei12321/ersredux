@@ -1,0 +1,48 @@
+capital = 256
+
+
+set_research_slots = 0
+
+save_global_event_target_as = cold_puppet_target
+
+recruit_character = CLD_nothing
+recruit_character = CLD_spectre
+
+oob = "CLD_1007"
+add_ideas = {
+	
+	disarmed_nation
+	closed_economy
+	civilian_economy
+	poor_science_base
+	detached_country
+	lack_of_scientists
+	poverty
+	unknown_religion
+	
+	CLD_winter
+	
+}
+
+
+set_technology = {
+	generic_race = 1
+	melee_weapons = 1
+}
+actually_fix_weapon_techs = yes #THIS HAS TO BE CALLED IN EVERY HISTORY FILE RIGHT AFTER MAIN set_technology!
+
+
+set_popularities = {
+
+	neutrality = 100
+}
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1.10.10"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+
+set_stability = 0.0
+set_war_support = 0.0

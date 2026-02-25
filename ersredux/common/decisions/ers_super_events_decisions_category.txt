@@ -1,0 +1,15 @@
+ers_super_events_decisions_category = {
+	ers_super_events_status_decison = {
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision ers_super_events_decisions_category"
+			country_event = ending.2
+		}
+	}
+	
+	ers_super_events_hide_status_decison = {
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision ers_super_events_decisions_category"
+			set_country_flag = hide_super_events_decisions_flag
+		}
+	}
+}

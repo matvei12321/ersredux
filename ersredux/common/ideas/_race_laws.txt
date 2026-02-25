@@ -1,0 +1,131 @@
+ideas = {
+	### ###
+	foreign_ponies_acceptance_level_idea = {
+		law = yes
+		use_list_view = yes
+		
+		foreign_rights4 = {
+			cost = 25
+			traits = { other_races_acceptance_idea }
+			allowed = {
+				always = yes
+			}
+			available = {
+				NOT = {
+					has_country_flag = extermination_zone
+				}
+				OR = { 
+					has_government = democratic
+					has_government = communism
+				}
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				consumer_goods_factor = 0.03
+				monthly_population = 0.1
+			}
+		}
+	
+		foreign_rights3 = {
+			cost = 25
+			traits = { other_races_acceptance_idea }
+			allowed = {
+				always = yes
+			}
+			available = {
+				OR = { 
+					has_government = democratic
+					has_government = communism
+					has_government = neutrality
+				}
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.025
+				consumer_goods_factor = 0.02
+				monthly_population = 0.05
+			}
+		}
+	
+		foreign_rights2 = {
+			cost = 25
+			traits = { other_races_acceptance_idea }
+			allowed = {
+				always = yes
+			}
+			available = {
+				NOT = {
+					has_country_flag = extermination_zone
+				}
+				OR = {
+					has_government = fascism
+					has_government = neutrality
+					has_government = communism
+					has_government = democratic
+				}
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			default = yes
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.025
+			}
+		}
+
+	
+		foreign_rights1 = {
+			cost = 25
+			traits = { other_races_acceptance_idea }
+			allowed = {
+				always = yes
+			}
+			available = {
+				NOT = {
+					has_country_flag = extermination_zone
+				}
+				OR = {
+					has_government = fascism
+					has_government = neutrality
+				}
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.02
+				stability_factor = -0.025
+				monthly_population = -0.05
+			}
+		}
+	
+		foreign_rights0 = {
+			cost = 25
+			traits = { other_races_acceptance_idea }
+			allowed = {
+				always = yes
+			}
+			available = {
+				has_government = fascism
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.03
+				stability_factor = -0.05
+				monthly_population = -0.1
+			}
+		}
+	}
+}

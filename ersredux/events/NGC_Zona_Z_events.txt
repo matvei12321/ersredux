@@ -1,0 +1,83 @@
+add_namespace = NGC_Zona_Z
+country_event = {		 #План Z
+	id = NGC_Zona_Z.1
+	title = NGC_Zona_Z.1.t
+	desc = NGC_Zona_Z.1.d
+    picture = GFX_event_NGC_Sve
+
+	is_triggered_only = yes
+
+	option = {
+		name = NGC_Zona_Z.1.a
+		load_focus_tree = NZZ_Plan_Z
+	}
+	
+}
+country_event = {	 #Ультиматум Освоению
+	id = NGC_Zona_Z.2
+	title = NGC_Zona_Z.2.t
+	desc = NGC_Zona_Z.2.d
+    picture = GFX_event_NGC_Sve
+
+	is_triggered_only = yes
+
+	option = {
+		name = NGC_Zona_Z.2.a
+			GUA = {
+				MIN = {
+					puppet = PREV
+					if = {
+						limit = {
+							NOT = { has_dlc = "Death or Dishonor" }
+						}
+						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet end_wars = no end_civil_wars = no }
+					}
+					else = {
+						set_autonomy = { target = PREV autonomy_state = autonomy_reichskommissariat  end_wars = no end_civil_wars = no }
+					}
+				}
+			}
+		}
+	option = {
+		name = NGC_Zona_Z.2.b
+		declare_war_on = {
+			target = MIN
+			type = annex_everything
+		}
+		}
+	
+}
+country_event = {	 #Ультиматум Ульбриху
+	id = NGC_Zona_Z.3
+	title = NGC_Zona_Z.3.t
+	desc = NGC_Zona_Z.3.d
+    picture = GFX_event_NGC_Sve
+
+	is_triggered_only = yes
+
+	option = {
+		name = NGC_Zona_Z.3.a
+					NOZ = {
+				MIN = {
+					puppet = PREV
+					if = {
+						limit = {
+							NOT = { has_dlc = "Death or Dishonor" }
+						}
+						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet end_wars = no end_civil_wars = no }
+					}
+					else = {
+						set_autonomy = { target = PREV autonomy_state = autonomy_reichskommissariat  end_wars = no end_civil_wars = no }
+					}
+				}
+			}
+	}
+	option = {
+		name = NGC_Zona_Z.3.b
+		declare_war_on = {
+			target = MIN
+			type = annex_everything
+		}
+		}
+	
+}

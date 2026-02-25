@@ -1,0 +1,15 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_idea_HRZ_communst_problem"
+		texturefile = "gfx/interface/ideas/Communist_problem.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HRZ_out_industry"
+		texturefile = "gfx/interface/ideas/out_industry.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_HRZ_trade_contract_HRZ_with_DTS_CHN"
+		texturefile = "gfx/interface/ideas/HRZ/trade_contract_HRZ_with_DTS_CHN.dds"
+	}
+}

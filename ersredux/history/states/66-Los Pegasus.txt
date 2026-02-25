@@ -1,0 +1,34 @@
+state={
+	id=66
+	name="STATE_66"
+
+	provinces={
+		69 147 6028 11151 11233 12885
+	}
+
+	manpower=1651000
+	state_category=metropolis
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = LOS
+		add_claim_by = PGS
+		add_core_of = LOS
+
+		victory_points = { 69 30 }
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 3
+			arms_factory = 2
+			dockyard = 3
+			
+			69 = {
+				naval_base = 1
+			}
+			
+		}
+	}
+
+	
+}

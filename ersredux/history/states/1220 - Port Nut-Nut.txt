@@ -1,0 +1,27 @@
+state={
+	id=1220
+	name="STATE_1220"
+
+	provinces={
+		9880 13216 13217
+	}
+
+	manpower=200400
+	state_category=town
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = PNG
+		add_core_of = PNG
+
+		buildings = {
+			infrastructure = 1
+	
+	
+			13217 = {
+				naval_base = 1
+			}
+		}
+	}
+
+}

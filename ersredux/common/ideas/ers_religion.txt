@@ -1,0 +1,249 @@
+ideas = {
+	religion_type_idea = {
+		law = yes
+		use_list_view = yes
+		
+		unknown_religion = {
+			cost = -1
+			traits = { religion_idea }
+			allowed = {
+				always = yes
+			}
+			available = {
+				NOT = {
+					OR = {
+						has_idea = pandorism
+						has_idea = ers_cantoritsism
+						has_idea = ers_pegasism
+						has_idea = ers_atheism
+						has_idea = changelings_beliefs
+						has_idea = ers_yak_religion
+						has_idea = insane_idea
+						has_idea = solarism
+						has_idea = astralotheology
+						has_idea = boreism
+					}
+				}
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.01
+			}
+		}
+		
+		pandorism = {
+			cost = -1
+			traits = { religion_idea }
+			allowed = {
+				always = yes
+			}
+			available = {
+				has_idea = pandorism
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = -0.01
+			}
+		}
+		ers_cantoritsism = {
+			cost = -1
+			traits = { religion_idea }
+			allowed = {
+				always = yes
+			}
+			available = {
+				has_idea = ers_cantoritsism
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.075
+				political_power_gain = 0.02
+			}
+		}
+		
+		ers_pegasism = {
+			cost = -1
+			traits = { religion_idea }
+			allowed = {
+				always = yes
+			}
+			available = {
+				has_idea = ers_pegasism
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = 0.02
+				conscription = 0.005
+			}
+		}
+
+		boreism = {
+			cost = -1
+			traits = { religion_idea }
+			allowed = {
+				always = yes
+			}
+			available = {
+				has_idea = boreism
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_morale_factor = 0.02
+				land_doctrine_cost_factor = -0.05
+			}
+		}
+		
+		ers_yak_religion = {
+			cost = -1
+			traits = { religion_idea }
+			allowed = {
+				always = yes
+			}
+			available = {
+				has_idea = ers_yak_religion
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.015
+				research_speed_factor = -0.04
+			}
+		}
+		
+		insane_idea = {
+			cost = -1
+			traits = { religion_idea }
+			allowed = {
+				always = yes
+			}
+			available = {
+				has_idea = insane_idea
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.05
+			}
+		}
+		
+		changelings_beliefs = {
+			cost = -1
+			traits = { religion_idea }
+			allowed = {
+				always = yes
+			}
+			available = {
+				has_idea = changelings_beliefs
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = 0.025
+				conscription_factor = 0.05
+			}
+		}
+		
+		solarism = {
+			cost = -1
+			traits = { religion_idea }
+			allowed = {
+				always = yes
+			}
+			available = {
+				has_idea = solarism
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = 0.025
+				army_core_defence_factor = 0.05
+				heat_attrition_factor = 0.05
+			}
+		}
+		
+		astralotheology = {
+			cost = -1
+			traits = { religion_idea }
+			allowed = {
+				always = yes
+			}
+			available = {
+				has_idea = astralotheology
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.035
+			}
+		}
+
+		ers_atheism = {
+			cost = -1
+			traits = { religion_idea }
+			allowed = {
+				always = yes
+			}
+			available = {
+				has_idea = ers_atheism
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.01
+				research_speed_factor = 0.01
+				political_power_gain = 0.05
+			}
+		}
+
+	}
+}

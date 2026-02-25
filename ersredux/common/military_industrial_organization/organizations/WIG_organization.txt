@@ -1,0 +1,124 @@
+WIG_talonieli_mio = {
+	name = WIG_talonieli_mio_name
+	include = generic_mobile_tank_organization
+	icon = GFX_idea_WNG_talonieli
+	allowed = {
+		has_dlc = "Arms Against Tyranny"
+		original_tag = WIG
+	}
+	visible = {
+		owner = {	
+			original_tag = WIG
+		}
+	}
+	available = {
+		FROM = { 
+		has_completed_focus = WIG_subsidise_talonieli 
+		NOT = {
+			has_idea = WIG_talonieli_subsidise
+			}
+		}
+		}		
+	initial_trait = {
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.15
+		}
+		equipment_bonus = {
+			maximum_speed = 0.1
+			reliability = 0.1
+			armor_value = 0.1
+			build_cost_ic = -0.05		
+		}
+	}
+
+	}
+
+
+WIG_tal_avto_zavod_mio = {
+	name = WIG_tal_avto_zavod_mio_name
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_WNG_taloncia
+	allowed = {
+		has_dlc = "Arms Against Tyranny"
+		original_tag = WIG
+	}
+	visible = {
+		owner = {	
+			original_tag = WIG
+		}
+	}
+	available = {
+		FROM = {
+			has_completed_focus = WIG_tal_avto_zavod 
+			owns_state = 392
+			has_war = no
+		}
+	}
+	initial_trait = {
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.10
+		}
+		equipment_bonus = {
+			maximum_speed = 0.1
+			reliability = -0.05
+			build_cost_ic = -0.10		
+		}
+	}
+}
+WIG_regia_aeronautica_mio = {
+	name = WIG_regio_aeronautica_mio_name
+	include = generic_cas_aircraft_organization
+	icon = GFX_idea_WNG_air
+	allowed = {
+		has_dlc = "Arms Against Tyranny"
+		original_tag = WIG	
+	}
+	visible = {
+		owner = {
+			original_tag = WIG
+		}
+	}
+	available = { 
+		FROM = {
+			has_completed_focus = WIG_regia_aeronautic_shared
+		}
+	}
+	initial_trait = {
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.10
+		}
+		equipment_bonus = {
+			reliability = 0.05
+			build_cost_ic = -0.05		
+		}
+	}
+}
+WIG_regia_marina_mio = {
+	name = WIG_regia_marina_mio_name
+	include = generic_battle_line_ship_organization
+	icon = GFX_idea_WNG_air
+	allowed = {
+		has_dlc = "Arms Against Tyranny"
+		original_tag = WIG	
+	}
+	visible = {
+		owner = {
+			original_tag = WIG
+		}
+	}
+	available = { 
+		FROM = {
+			any_owned_state = {is_coastal = yes}
+			has_completed_focus = WIG_regia_marina_shared
+		}
+	}
+	initial_trait = {
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.10
+		}
+		equipment_bonus = {
+			reliability = 0.05
+			build_cost_ic = -0.05		
+		}
+	}
+}

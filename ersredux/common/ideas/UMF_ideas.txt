@@ -1,0 +1,54 @@
+ideas = {
+
+	country = {
+	
+		UMF_griffonisation_of_language = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = broken_resistance
+			modifier = {
+				research_speed_factor = -0.1
+				stability_factor = -0.05
+			}
+		}
+		
+		UMF_griffonisation_of_culture = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = prc_low_popular_support2
+			modifier = {
+				conscription_factor = -0.15
+				stability_factor = -0.05
+			}
+		}
+
+		UMF_weak_garrisons = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_deal_with_the_devil
+			modifier = {
+				non_core_manpower = -0.1
+				resistance_activity = 0.1
+				compliance_growth = -0.1
+				army_org_factor = -0.05
+				training_time_army_factor = 0.1
+				conscription_factor = 0.05
+			}
+		}
+	}
+}

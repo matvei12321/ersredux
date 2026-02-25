@@ -1,0 +1,211 @@
+DTS_mafia_decisions_cat = {
+	DTS_rising_mafia = {
+		icon = GFX_decision_repression
+		is_good = no
+		days_mission_timeout = 183
+		available = {
+			OR = {
+				has_idea = DTS_mafia_war_3
+				has_idea = DTS_mafia_war_0
+			}
+		}
+		activation = {
+			OR = {
+				has_idea = DTS_mafia_war_2
+				has_idea = DTS_mafia_war_1
+			}
+			
+				
+		}
+		timeout_effect = { 
+			DTS_mafia_increase = yes
+		}
+	}
+	DTS_tackle_the_mafia = {
+		icon = GFX_decision_repression
+		available = {
+			OR = {
+				has_idea = DTS_mafia_war_2
+				has_idea = DTS_mafia_war_3
+			}
+		}
+		allowed = {
+			original_tag = DTS
+		}
+		
+		cost = 50
+		ai_will_do = {
+			factor = 50 
+		}
+		visible = {
+			OR = {
+				has_idea = DTS_mafia_war_1
+				has_idea = DTS_mafia_war_2
+				has_idea = DTS_mafia_war_3
+			}
+		}
+		fire_only_once = no
+		days_remove = 50
+		modifier = {
+			political_power_factor = -0.10
+			weekly_manpower = -25
+		}
+		remove_effect = {
+			DTS_reduce_mafia = yes
+		}
+	}
+	DTS_destroy_mafia = {
+		icon = GFX_decision_repression
+		available = {
+			has_idea = DTS_mafia_war_1
+		}
+		allowed = {
+			original_tag = DTS
+		}
+		
+		cost = 100
+		ai_will_do = {
+			factor = 100
+		}
+		visible = {
+			OR = {
+				has_idea = DTS_mafia_war_1
+				has_idea = DTS_mafia_war_2
+				has_idea = DTS_mafia_war_3
+			}
+		}
+		fire_only_once = no
+		days_remove = 80
+		modifier = {
+			political_power_factor = -0.20
+			weekly_manpower = -75
+		}
+		remove_effect = {
+			swap_ideas = {
+			
+				remove_idea = DTS_mafia_war_1
+				add_idea = DTS_mafia_war_0 
+			}
+		}
+	}
+}
+DTS_started_okno = {
+	DTS_decisions_start_event = {
+		icon = GFX_decision_candle
+		visible = {
+			NOT = {
+				has_country_flag = DTS_decision_start_okno
+			}
+		}
+		fire_only_once = no
+		complete_effect = {
+			country_event = { id = DTS_event.23 }
+		}
+	}
+	DTS_remove_decisions = {
+		icon = GFX_decision_candle
+		allowed = {	
+			AND = {
+				original_tag = DTS
+				NOT = {
+					has_country_flag = DTS_decision_start_okno
+				}
+			}
+		}
+		visible = {
+			NOT = {
+				has_country_flag = DTS_decision_start_okno
+			}
+		}
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = DTS_decision_start_okno
+		}
+	}
+}
+
+
+ers_changelings_category = {
+	DTS_ers_destabilize_hehemony_1 = {
+		icon = GFX_decision_generic_nationalism
+		available = {
+			is_chn_hehemony_hive = yes
+		}
+		visible = {
+			original_tag = DTS
+			is_chn_hehemony_hive = yes
+		}
+		
+		cost = 10
+		
+		ai_will_do = {
+			factor = 20
+		}
+		days_re_enable = 50
+		days_remove = 15
+		remove_effect = {
+			minus_1_hehemony_unity = yes
+			251 = {
+				add_manpower = -75
+			}
+		}
+	}
+	
+	DTS_ers_destabilize_hehemony_2 = {
+		icon = GFX_decision_eng_blackshirt_march
+		available = {
+			is_chn_hehemony_hive = yes
+		}
+		visible = {
+			original_tag = DTS
+			is_chn_hehemony_hive = yes
+		}
+		
+		cost = 25
+		
+		ai_will_do = {
+			factor = 20
+		}
+		days_re_enable = 50
+		days_remove = 15
+		remove_effect = {
+			every_country = {
+				limit = {
+					is_chn_hehemony_hive = yes
+				}
+				add_stability = -0.01
+			}
+				minus_2_5_hehemony_unity = yes
+		}
+	}
+	
+	DTS_ers_destabilize_hehemony_3 = {
+		icon = GFX_decision_changeling_skull
+		available = {
+			is_chn_hehemony_hive = yes
+		}
+		visible = {
+			original_tag = DTS
+			is_chn_hehemony_hive = yes
+		}
+		
+		cost = 100
+		
+		ai_will_do = {
+			factor = 20
+		}
+		days_re_enable = 100
+		days_remove = 15
+		remove_effect = {
+			every_possible_country = {
+				limit = {
+					has_idea = changelings_leader
+					exists = yes
+				}	
+				add_political_power = -25
+				add_stability = -0.05
+			}	
+			minus_10_hehemony_unity = yes
+		}
+	}
+}

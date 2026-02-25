@@ -1,0 +1,287 @@
+characters={
+
+
+	STL_starlight={
+		name=STL_starlight
+		portraits={
+			civilian={
+				large="gfx/leaders/STL/STL_starlight1.tga"
+			}
+		}
+		country_leader={
+			desc="POLITICS_STL_STARLIGHT"
+			ideology=equalism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		allowed_civil_war = {
+			has_government = communism
+		}
+	}
+	
+	
+	STL_feather_bangs={
+		name=STL_feather_bangs
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/STL/STL_feather_bangs.tga"
+			}
+			civilian={
+				large="gfx/leaders/STL/FeatherBangs.tga"
+			}
+		}
+		allowed_civil_war = {
+			has_government = democratic
+		}
+		country_leader={
+			desc="POLITICS_FEATHERBANGS"
+			ideology=momentalism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = feather_bangs
+			allowed = {
+				original_tag = STL
+			}
+			traits = { prince_of_terror }
+		}
+	}
+	STL_double_diamond={
+		name=STL_double_diamond
+		portraits={
+			civilian={
+				large="gfx/leaders/STL/DoubleDiamond.tga"
+			}
+		}
+	}
+	STL_spymaster_trochanter={
+		name=STL_spymaster_trochanter
+		portraits={
+			civilian={
+				large="gfx/leaders/CHN/unknown_bug.tga"
+			}
+		}
+	}
+	STL_grey_bread={
+		name=STL_grey_bread
+		portraits={
+			army={
+				large="gfx/leaders/STL/GreyBread.tga"
+				small="GFX_idea_STL_grey_bread"
+			}
+		}
+		corps_commander={
+			traits={ earthponies_race_trait commissar_general }
+			skill=4
+			attack_skill=2
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	STL_liquid_miracle={
+		name=STL_liquid_miracle
+		portraits={
+			army={
+				large="gfx/leaders/STL/Miracle.tga"
+				small="GFX_idea_STL_liquid_miracle"
+			}
+		}
+		corps_commander={
+			traits={ unicorn_race_trait panzer_leader winter_specialist }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	STL_magic_fly={
+		name=STL_magic_fly
+		portraits={
+			army={
+				large="gfx/leaders/STL/MagicFly.tga"
+				small="GFX_idea_STL_magic_fly"
+			}
+		}
+		corps_commander={
+			traits={ unicorn_race_trait }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	STL_evening_cloud={
+		name=STL_evening_cloud
+		portraits={
+			civilian={
+				large="gfx/leaders/Pony/portrait_pony_generic_land_4.dds"
+			}
+		}
+		country_leader={
+			ideology=nazism
+			traits={ reluctant_interventionist }
+			expire="1021.1.1.12"
+			id=-1
+		}
+	}
+	STL_charity_punch={
+		name=STL_charity_punch
+		portraits={
+			civilian={
+				large="gfx/leaders/Pony/portrait_pony_generic_6.dds"
+			}
+		}
+		country_leader={
+			ideology=oligarchism
+			expire="1012.1.1.12"
+			id=-1
+		}
+	}
+	STL_party_flavour = {
+		name = party_flavour
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/Advisors/STL/STL_party_favour.tga"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = party_flavour
+			allowed = {
+				original_tag = STL
+			}
+			traits = { party_maker }
+		}
+	}
+	STL_sugar_belle = {
+		name = sugar_belle
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/Advisors/STL/STL_sugar_belle.tga"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = sugar_belle
+			allowed = {
+				original_tag = STL
+			}
+			traits = { best_baker_in_town }
+		}
+	}
+	UESR_country_leader = {
+		name = UESR_country_leader
+		portraits = {
+			army = {
+				large = "gfx/leaders/UESR/SablinBat.tga"
+				small = "gfx/interface/ideas/Advisors/UESR/UESR_sablin_bat.tga"
+			}
+			civilian = {
+				large = "gfx/leaders/UESR/SablinBat.tga"
+				small = "gfx/interface/ideas/Advisors/UESR/UESR_sablin_bat.tga"
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = STG_navy_Glory
+			cost = 100
+			allowed = {
+				original_tag = TST
+			}
+			
+			traits = { navy_chief_maneuver_2 }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		navy_leader={
+			traits={ navy_media_personality thestral_race_trait }
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			maneuvering_skill=2
+			coordination_skill=1
+		}
+	}
+	
+	
+	
+	#### Army
+	
+	
+	STL_sikarus_kir={
+		name=STL_sikarus_kir
+		portraits={
+			army={
+				large="gfx/leaders/STL/STL_sikarus_kir.tga"
+				small="gfx/interface/ideas/Advisors/STL/sikarus_kir_advisor.tga"
+			}
+		}
+		corps_commander={
+			traits={ changeling_race_trait organisational_leader }
+			skill=4
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+		}
+		allowed_civil_war = {
+			has_government = democratic
+		}
+		advisor={
+			slot = army_chief
+			cost = 150
+			allowed = {
+				original_tag = STL
+			}
+			traits = {
+				army_chief_organizational_2
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	STL_mikhail_tushkevskiy={
+		name=STL_mikhail_tushkevskiy
+		portraits={
+			army={
+				large="gfx/leaders/STL/tushevskiy.tga"
+				small="gfx/interface/ideas/Advisors/STL/STL_mikhail_tushkevskiy_advisor.tga"
+			}
+		}
+		field_marshal={
+			traits={ earthponies_race_trait }
+			skill=3
+			attack_skill=4
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+		}
+		allowed_civil_war = {
+			has_government = communism
+		}
+		advisor={
+			slot = army_chief
+			cost = 150
+			allowed = {
+				original_tag = STL
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+}

@@ -1,0 +1,112 @@
+ideas = {
+
+	country = {
+		SVR_belaya_armiya = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = white_army
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				ARMY_ORG_FACTOR = -0.15
+				ARMY_INFANTRY_ATTACK_FACTOR = -0.1
+				TRAINING_TIME_ARMY_FACTOR = 0.15
+			}
+		}
+	}
+	
+	country = {
+		SVR_chorniy_baron = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = black_baron
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = 0.02
+			}
+		}
+	}
+	
+	country = {
+		sovyonkov_divisions = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				conscription = 0.02
+				army_morale_factor = 0.05
+				MORALE = 0.03
+			}
+		}
+	}
+	
+	country = {
+		SVR_democracy_purge = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				stability_weekly = -0.03
+			}
+		}
+	}
+	
+	country = {
+		SVR_democratic_kill_sovyonkov = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				war_support_factor = -0.1
+				stability_factor = -0.1
+				stability_weekly = 0.01
+			}
+		}
+	}
+	
+	
+	
+	
+}

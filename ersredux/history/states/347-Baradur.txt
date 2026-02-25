@@ -1,0 +1,37 @@
+state={
+	id=347
+	name="STATE_347"
+
+	provinces={
+		6283 9378
+	}
+
+	manpower=1639629
+	state_category=town
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = BAD
+		add_core_of = BAD
+		add_claim_by = YAK
+		add_claim_by = YAC
+		add_claim_by = JAK
+		add_claim_by = NAK
+		add_claim_by = SHA
+		add_claim_by = MNT
+
+		victory_points = { 9378 15 }
+
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	
+	resources = {
+		steel = 29
+		aluminium = 12
+		tungsten = 9
+	}
+}

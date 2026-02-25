@@ -1,0 +1,85 @@
+characters={
+	REF_Pumpkin_swirl={
+		name=REF_Pumpkin_swirl
+		portraits={
+			civilian={
+				large="gfx/leaders/REF/pumpkin_swirl.tga"
+			}
+		}
+		gender = female
+		country_leader={
+			ideology=liberalism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	REF_Zeren={
+		name=REF_Zeren
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/REF/Zeren.tga"
+			}
+		}
+		advisor={
+		can_be_fired = no
+			slot = political_advisor
+			idea_token = REF_Zeren
+			allowed = {
+				original_tag = REF
+			}
+			traits = {
+				REF_corruption_traits 
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	REF_Estern={
+		name=REF_Estern
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/REF/Estern.tga"
+			}
+		}
+		advisor={
+		can_be_fired = no
+			slot = political_advisor
+			idea_token = REF_Estern
+			allowed = {
+				original_tag = REF
+			}
+			traits = {
+				REF_teacher_traits 
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	
+		REF_Ulf_Indor={
+		name=REF_Ulf_Indor
+		portraits={
+			army={
+				small="gfx/interface/ideas/advisors/REF/Ulf_Indor.tga"
+			}
+		}
+		advisor={
+		can_be_fired = no
+			slot = political_advisor
+			idea_token = REF_Ulf_Indor
+			allowed = {
+				original_tag = REF
+			}
+			traits = {
+				REF_police_general_traits 
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	
+}

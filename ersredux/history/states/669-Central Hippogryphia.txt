@@ -1,0 +1,25 @@
+state={
+	id=669
+	name="STATE_669"
+
+	provinces={
+		5131 5146 5171 8157 10952
+	}
+
+	manpower=956089
+	state_category=town
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = NCH
+		add_core_of = NCH
+
+		victory_points = { 5131 10 }
+		victory_points = { 8157 3 }
+
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+	}
+}

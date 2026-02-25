@@ -1,0 +1,82 @@
+characters={
+	
+	
+	
+	OLE_EZ_oscar_dirlewanderer = {
+		name = OLE_EZ_oscar_dirlewanderer
+		portraits={
+			army={
+				small="GFX_idea_unknown_advisor_bug"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = OLE_EZ_oscar_dirlewanderer
+			cost = 150
+			traits = {
+				national_socialist_paramilitarist
+			}
+			allowed = {
+				original_tag = OLE
+			}
+			available = {
+				has_country_flag = extermination_flag
+			}
+			visible = {
+				has_country_flag = extermination_flag
+			}
+		}
+	}
+	
+	OLE_EZ_maris_mandelis = {
+		name = OLE_EZ_maris_mandelis
+		portraits={
+			army={
+				small="GFX_idea_unknown_advisor_bug"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = OLE_EZ_maris_mandelis
+			cost = 150
+			traits = {
+				national_integralist
+			}
+			allowed = {
+				original_tag = OLE
+			}
+			available = {
+				has_country_flag = extermination_flag
+			}
+			visible = {
+				has_country_flag = extermination_flag
+			}
+		}
+	}
+	
+	OLE_EZ_ixiod_eidrich = {
+		name = OLE_EZ_ixiod_eidrich
+		portraits={
+			army={
+				small="GFX_idea_unknown_advisor_bug"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = OLE_EZ_ixiod_eidrich
+			cost = 150
+			traits = {
+				great_survivor
+			}
+			allowed = {
+				original_tag = OLE
+			}
+			available = {
+				has_country_flag = extermination_flag
+			}
+			visible = {
+				has_country_flag = extermination_flag
+			}
+		}
+	}
+}

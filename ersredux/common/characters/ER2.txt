@@ -1,0 +1,17 @@
+characters = {
+	ER2_applejack={
+		name=ERP_applejack
+		portraits={
+			civilian={
+				large="gfx/leaders/ERP/applejack_leader.tga"
+			}
+		}
+		country_leader={
+			desc="ER2_applejack_DESC"
+			ideology=industrial_ideology
+			traits={ ers_agressive_industrialist }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

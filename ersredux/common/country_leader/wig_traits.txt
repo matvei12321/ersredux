@@ -1,0 +1,18 @@
+@tier1 = 30
+@tier2 = 20
+@tier3 = 10
+	
+	leader_traits = {
+		kemerskai_advisor_trait = {
+			random = no
+			experience_gain_army_factor = 0.05
+			army_org_factor = 0.05
+			experience_gain_army = 0.3
+			land_doctrine_cost_factor = -0.05
+			artillery_cost_factor = -0.1
+			army_attack_factor = 0.05
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}

@@ -1,0 +1,42 @@
+ideas = {
+	
+	country= {
+		NIG_night_raders = {
+			
+			allowed = {
+				original_tag = NIG
+			}
+			
+			picture = specops
+			
+			remove_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.05
+				army_attack_factor = 0.125
+				army_defence_factor = -0.1
+				EQUIPMENT_CAPTURE = 0.45
+				custom_modifier_tooltip = nig_night_raders_tt
+			}
+
+		}
+		
+		NIG_black_horde = {
+			
+			
+			allowed = {
+				original_tag = NIG
+			}
+			
+			picture = ROA_senate_divide
+			
+			remove_cost = -1
+			
+			modifier = {
+				conscription_factor = 0.25
+				army_org_factor = -0.1
+			}
+
+		}
+	}
+}

@@ -1,0 +1,131 @@
+leader_traits = {
+	##################################
+	# Race Traits
+	##################################
+	
+	pegasi_race_trait = {
+		type = all
+		trait_type = status_trait
+
+		modifier = {
+			own_operative_detection_chance_factor = 0.1
+			operation_outcome = -0.1
+			operation_cost = 0.1
+		}
+
+		new_commander_weight = { factor = 0 }
+	}
+	
+	unicorns_race_trait = {
+		type = all
+		trait_type = status_trait
+
+		modifier = {
+			own_operative_detection_chance_factor = 0.1
+			operation_outcome = -0.1
+			operation_cost = 0.1
+		}
+
+		new_commander_weight = { factor = 0 }
+	}
+	
+	earthponies_race_trait = {
+		type = all
+		trait_type = status_trait
+
+		modifier = {
+			own_operative_detection_chance_factor = 0.1
+			operation_outcome = -0.1
+			operation_cost = 0.1
+		}
+
+		new_commander_weight = { factor = 0 }
+	}
+	
+	castle_warrior = {
+		type = field_marshal
+		trait_type = personality_trait
+
+		allowed = {
+			always = no
+		}
+		field_marshal_modifier = {
+			max_army_group_size = 1
+		}
+	}
+	
+	krieger_trait = {
+		type = all
+		trait_type = personality_trait
+
+		corps_commander_modifier = {
+			army_attack_factor = 0.10
+			army_morale_factor = -0.05
+			attrition = -0.10
+			army_org_factor = -0.05
+			supply_consumption_factor = -0.10
+		}
+
+		new_commander_weight = { factor = 0 }
+	}
+	
+	
+	rok_old_owl_trait = {
+		type = all
+		trait_type = personality_trait
+		
+		modifier = {
+		    experience_gain_factor = 0.025
+			night = {
+				attack = 0.10
+				defence = 0.10
+			}
+		}
+		
+		new_commander_weight = { factor = 0 }
+	}
+	
+	havesmarshal = {
+		type = all
+		trait_type = personality_trait
+	}
+	
+	cute_mare_trait = {
+		type = all
+		trait_type = personality_trait
+		
+		modifier = {
+			army_attack_factor = 0.05
+		}
+
+		new_commander_weight = { factor = 0 }
+	}
+	alhocolic = {
+		type = all
+		trait_type = personality_trait
+
+		modifier = {
+			army_attack_factor = -0.10
+			army_morale_factor = -0.10
+			army_org_factor = -0.12
+			army_defence_factor = -0.20
+		}
+		field_marshal_modifier = {
+					max_army_group_size = -3
+				}
+		new_commander_weight = { factor = 0 }
+	}
+	grover_erzherzog = {
+		type = all
+		trait_type = personality_trait
+		
+		modifier = {
+			army_attack_factor = 0.05
+			army_defence_factor = 0.10
+			army_org_factor = 0.10
+			army_morale_factor = 0.10
+		}
+		new_commander_weight = { factor = 0 }
+	}
+	
+}

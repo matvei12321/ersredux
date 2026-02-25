@@ -1,0 +1,477 @@
+characters = {
+	CRY_amore={
+		name=CRY_amore
+		portraits={
+			civilian={
+				large="gfx/leaders/CRY/amore_leader.tga"
+			}
+		}
+		country_leader={
+			desc="AMORE_DESC"
+			ideology=conservatism
+			traits={ ers_crystal_princess }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			desc="AMORE_DESC"
+			ideology=nazism
+			traits={ ers_crystal_princess }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			desc="AMORE_DESC"
+			ideology=despotism
+			traits={ ers_crystal_princess }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			desc="AMORE_DESC"
+			ideology=leninism
+			traits={ ers_crystal_princess }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		gender = female
+	}
+	
+	CRY_sakira = {
+		name = sakira
+		portraits = {
+			civilian = {
+				small = "GFX_idea_CRY_sakira"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = sakira
+			
+			allowed = {
+				original_tag = CRY
+			}
+
+			traits = { captain_of_industry }
+		}
+	}
+	
+	CRY_idol_hooves = {
+		name = idol_hooves
+		portraits = {
+			civilian = {
+				small = "GFX_idea_CRY_idol_hooves"
+			}
+			army = {
+				small = "GFX_idea_CRY_idol_hooves"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = idol_hooves
+			
+			allowed = {
+				original_tag = CRY
+			}
+
+			traits = { fortification_engineer }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		advisor = {
+			slot = army_chief 
+			idea_token = idol_hooves
+			cost = 100
+			allowed = {
+				original_tag = CRY
+			}
+			available = {
+				has_government = democratic
+			}
+			
+			traits = { army_chief_entrenchment_2 }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	CRY_reese={
+		name=CRY_reese
+		portraits={
+			army={
+				large="gfx/leaders/CRY/Reese.tga"
+				small="GFX_idea_CRY_reese"
+			}
+		}
+		field_marshal={
+			traits={ brilliant_strategist career_officer unicorns_race_trait }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=199
+		}
+
+		advisor = {
+			slot = army_chief
+			idea_token = CRY_reese
+			cost = 100
+			
+			allowed = {
+				original_tag = CRY
+			}
+			traits = { alt_army_logistics_2 }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	CRY_dusty_ember={
+		name=CRY_dusty_ember
+		portraits={
+			army={
+				large="gfx/leaders/CRY/Dusty_Ember.tga"
+				small="GFX_idea_CRY_dusty_ember"
+			}
+		}
+		corps_commander={
+			traits={ promising_general earthponies_race_trait }
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	CRY_forest_nutmeg={
+		name=CRY_forest_nutmeg
+		portraits={
+			army={
+				large="gfx/leaders/CRY/ForestNutmeg.tga"
+				small="GFX_idea_CRY_forest_nutmeg"
+			}
+		}
+		corps_commander={
+			traits={ earthponies_race_trait trait_engineer commando }
+			skill=2
+			attack_skill=1
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	CRY_icy_snow={
+		name=CRY_icy_snow
+		portraits={
+			army={
+				large="gfx/leaders/CRY/Icy_snow.tga"
+				small="GFX_idea_CRY_icy_snow"
+			}
+		}
+		corps_commander={
+			traits={ trait_cautious earthponies_race_trait winter_specialist }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	CRY_cloudie={
+		name=CRY_cloudie
+		portraits={
+			army={
+				large="gfx/leaders/CRY/Cloudie.tga"
+				small="GFX_idea_CRY_cloudie"
+			}
+		}
+		corps_commander={
+			traits={ medical_expert pony_race_trait }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=197
+		}
+		advisor = {
+			slot = high_command
+			idea_token = CRY_cloudy
+			cost = 50
+			
+			allowed = {
+				original_tag = CRY
+			}
+
+			traits = { army_regrouping_1 }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	CRY_deimos_falafel={
+		name=Damiyan
+		portraits={
+			army={
+				large="gfx/leaders/CRY/Damiyan.tga"
+				small="GFX_idea_CRY_damiyan"
+			}
+		}
+		corps_commander={
+			traits={ trait_reckless media_personality pegasi_race_trait winter_specialist }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=198
+		}
+		
+		advisor = {
+			slot = high_command
+			idea_token = Damiyan
+			ledger = army
+			cost = 150
+
+			allowed = {
+				original_tag = CRY
+			}
+			traits = { defence_theorist }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	CRY_crystalline={
+		name=CRY_crystalline
+		portraits={
+			army={
+				large="gfx/leaders/CRY/Crystalline.tga"
+				small="GFX_idea_CRY_crystalline"
+			}
+		}
+		corps_commander={
+			traits={ promising_general pony_race_trait }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	CRY_solid_shot={
+		name=CRY_solid_shot
+		portraits={
+			army={
+				large="gfx/leaders/CRY/Solid_Shot.tga"
+				small="GFX_idea_CRY_solid_shot"
+			}
+		}
+		corps_commander={
+			traits={ renowned_marksman pony_race_trait infantry_leader }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=1046
+			desc = solidshot_desc
+		}
+	}
+	CRY_wondermane={
+		name=CRY_wondermane
+		portraits={
+			army={
+				large="gfx/leaders/CRY/wondermane.tga"
+				small="GFX_idea_CRY_wondermane"
+			}
+		}
+		corps_commander={
+			traits={ unicorns_race_trait skilled_staffer ranger }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=1045
+		}
+	}
+	
+	CRY_squeeky_hooves = {
+		name = CRY_squeeky_hooves
+		portraits = {
+			army = {
+				large = "gfx/leaders/CRY/SombraGeneral.tga"
+				small = "GFX_idea_CRY_squeeky_hooves"
+			}
+		}
+
+		corps_commander = {
+			traits = { ranger brilliant_strategist pony_race_trait }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			visible = {
+				has_country_leader = {
+					character = CRY_sombra
+					ruling_only = yes
+				}
+			}
+		} 
+	}
+
+	CRY_atom = {
+		name = CRY_atom
+		portraits = {
+			army = {
+				large = "gfx/leaders/CRY/somegay.tga"
+				small = "GFX_idea_CRY_atom"
+			}
+		}
+
+		corps_commander = {
+			traits = { promising_general pony_race_trait }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			visible = {
+				has_country_flag = CRY_atom_visible
+			}
+		} 
+	}
+	
+	CRY_take_off_cry = {
+		name = take_off_cry
+		portraits = {
+			army = {
+				small = "GFX_idea_CRY_take_off"
+			}
+		}
+
+		advisor = {
+			slot = air_chief
+			idea_token = take_off_cry
+			cost = 100
+			
+			allowed = {
+				original_tag = CRY
+			}
+
+			traits = { alt_air_air_superiority_2 }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	CRY_martini = {
+		name = martini
+		portraits = {
+			army = {
+				small = "GFX_idea_CRY_martini"
+			}
+		}
+
+		advisor = {
+			slot = air_chief
+			idea_token = martini
+			cost = 100
+			
+			allowed = {
+				original_tag = CRY
+			}
+
+			traits = { alt_air_strategic_bombing_2 }
+			modifier = {
+			    air_accidents_factor = 0.07
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	CRY_sweet_snow = {
+		name = CRY_sweet_snow
+		portraits = {
+			army = {
+				small = "GFX_idea_CRY_sweet_snow"
+			}
+		}
+
+		advisor = {
+			slot = navy_chief
+			idea_token = CRY_sweet_snow
+			cost = 100
+			
+			allowed = {
+				original_tag = CRY
+			}
+			traits = {
+				navy_chief_commerce_raiding_2
+			}
+		}
+	}
+	
+	CRY_shadow_stone = {
+		name = CRY_shadow_stone
+		portraits = {
+			army = {
+				small = "GFX_idea_CRY_shadow_stone"
+			}
+		}
+
+		advisor = {
+			slot = theorist
+			idea_token = CRY_shadow_stone
+			ledger = army
+			cost = 100
+			
+			allowed = {
+				original_tag = CRY
+			}
+			traits = { military_theorist }
+		}
+	}
+	
+	CRY_arstotzka_reptov={
+		name=CRY_arstotzka_reptov
+		portraits={
+			army={
+				small="GFX_idea_CRY_ArstotzkaRestov"
+			}
+			army={
+				large="gfx/leaders/CRY/ArstotzkaReptov.tga"
+			}
+		}
+		corps_commander={
+			traits={ commando trait_mountaineer unicorns_race_trait }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+		}
+	}
+	
+	
+
+}

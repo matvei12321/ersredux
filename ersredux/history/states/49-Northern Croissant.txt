@@ -1,0 +1,46 @@
+state={
+	id=49
+	name="STATE_49"
+	resources={
+		chromium=21
+		steel=5
+		coal = 13
+	}
+
+	history={
+		owner = NGC
+		add_core_of = NGC
+		
+			victory_points = { 676 3 }
+			victory_points = { 11583 3 }
+
+		buildings = {
+			infrastructure = 1
+			air_base = 1
+			11608 = {
+				bunker = 1
+			}
+		662 = {
+				bunker = 1
+		    }
+		3630 = {
+				bunker = 1
+		    }
+		11586 = {
+				bunker = 3
+		    }
+		6634 = {
+				bunker = 4
+		    }
+		}
+
+	}
+
+	provinces={
+		662 676 6634 6913 6940 6998 7196 9602 9756 9874 11583 11586 11608 11887 3630
+	}
+	manpower=401723
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

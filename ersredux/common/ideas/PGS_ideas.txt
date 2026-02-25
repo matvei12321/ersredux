@@ -1,0 +1,1050 @@
+ideas = {
+
+	country = {
+	
+		idea_rainbow_factory = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+			
+			}
+
+			picture = idea_rainbow_factory
+
+			modifier = {
+				political_power_gain = 0.1
+				custom_modifier_tooltip = rainbow_factory_idea_tt
+			}
+		}
+	}
+	
+	country = {
+		PGS_dead_monarchy = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			available = {
+				
+			}
+
+			picture = LIT_crown_1
+
+			modifier = {
+				stability_factor = -0.05
+				neutrality_drift = -0.01
+			}
+		}
+	}
+	
+	country = {
+		PGS_workers = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			available = {
+				
+			}
+
+			picture = trotskyite_plot
+
+			modifier = {
+				stability_factor = -0.15
+				consumer_goods_factor = 0.75
+				production_speed_buildings_factor = -0.2
+				production_factory_efficiency_gain_factor = -0.2
+				industrial_capacity_factory = -0.2
+				production_factory_max_efficiency_factor = -0.2
+				conscription_factor = -0.45
+				communism_drift = 0.02
+			}
+		}
+	}
+	
+	country = {
+		PGS_civil_war_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+				
+			}
+
+			picture = MEX_revolutionary_army
+
+			modifier = {
+				stability_factor = -0.1
+				consumer_goods_factor = 0.5
+				production_speed_buildings_factor = -0.15
+				production_factory_efficiency_gain_factor = -0.15
+				industrial_capacity_factory = -0.15
+				army_core_defence_factor = 0.05
+				conscription_factor = -0.15
+			}
+		}
+	}
+		
+	country = {
+		PGS_hurrikane_cult_idea = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			available = {
+				
+			}
+
+			picture = ELF_invincible
+
+			modifier = {
+				political_power_factor = 0.1
+				fascism_drift = 0.01
+				neutrality_drift = 0.01
+			}
+		}
+	}
+	
+	country = {
+		PGS_nedovolstvo = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			available = {
+				
+			}
+
+			picture = BAL_hell
+
+			modifier = {
+				stability_factor = -0.05
+				democratic_drift = 0.01
+				fascism_drift = 0.01
+				communism_drift = 0.01
+			}
+		}
+	}
+	
+	country = {
+		PGS_stoitsism = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+				
+			}
+
+			picture = NIM_warrior_society
+
+			modifier = {
+				war_support_factor = -0.05
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+				special_forces_min = 500
+				surrender_limit = 0.05
+			}
+		}
+	}
+	
+	country = {
+		PGS_church_help_idea = {
+
+			allowed = {
+				has_civil_war = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+				
+			}
+
+			picture = idea_CES_military_potential_idea
+
+			modifier = {
+				army_core_attack_factor = 0.03
+				army_core_defence_factor = 0.03
+				army_morale_factor = 0.05
+			}
+		}
+	}
+	
+	country = {
+		PGS_civil_war_attack_idea = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_civil_war = yes
+			}
+
+			available = {
+				
+			}
+
+			picture = FRA_army_of_aggression_focus
+
+			modifier = {
+				army_attack_factor = 0.05
+				army_speed_factor = 0.1
+				org_loss_when_moving = -0.05
+				ai_focus_aggressive_factor = 0.75
+			}
+		}
+	}
+	
+	
+	country = {	
+		military_rainbow_factory_idea = {
+
+			allowed = {
+				always = yes
+			}
+			
+			picture = rainbow_military
+
+			available = {
+				
+			}
+
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = -0.075
+				stability_factor = -0.035
+			}
+		}
+	}
+	
+	country = {
+		PGS_civil_war_defence_idea = {
+
+			allowed = {
+				has_civil_war = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+				
+			}
+
+			picture = idea_ast_all_in
+
+			modifier = {
+				army_defence_factor = 0.1
+				dig_in_speed_factor = 0.15
+				max_dig_in_factor = 0.05
+				ai_focus_defense_factor = 0.75
+			}
+		}
+	}
+	
+	country = {
+		PGS_accepted_peacemakers_idea = {
+
+			allowed = {
+				has_civil_war = yes
+			}
+			
+			picture = disarmed_nation
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+				
+			}
+
+			modifier = {
+				production_speed_buildings_factor = 0.025
+				industrial_capacity_factory = 0.035
+				democratic_drift = 0.05
+				war_support_factor = -0.1
+				stability_factor = 0.05
+			}
+		}
+	}
+	
+	country = {
+		PGS_military_trial_idea = {
+
+			allowed = {
+				has_civil_war = yes
+			}
+			
+			picture = Generic_Scroll
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+				
+			}
+
+			modifier = {
+				stability_weekly = 0.0005
+				political_power_factor = -0.05
+				fascism_drift = 0.01
+				
+			}
+		}
+	}
+	
+	country = {
+		PGS_dont_call_workers_idea = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_goods_red_bonus
+			modifier = {
+				conscription = 0.025
+				production_speed_buildings_factor = -0.05
+				production_factory_max_efficiency_factor -0.1
+				repair_speed_industrial_complex_factor = 0.015
+				repair_speed_infrastructure_factor = 0.015
+				repair_speed_arms_factory_factor = 0.015
+				repair_speed_rail_way_factor = 0.015				
+			}
+		}
+	}
+	
+	country = {
+		PGS_call_workers_idea = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_goods_red_bonus
+			modifier = {
+				conscription = -0.01
+				production_factory_max_efficiency_factor = 0.05
+				repair_speed_industrial_complex_factor = 0.095
+				repair_speed_infrastructure_factor = 0.095
+				repair_speed_arms_factory_factor = 0.095
+				repair_speed_rail_way_factor = 0.095
+			}
+		}
+	}
+	
+	
+	country = {
+		PGS_health_propaganda_idea = {
+
+			allowed = {
+				has_civil_war = yes
+			}
+			
+			picture = ers_cross
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+				
+			}
+
+			modifier = {
+				MONTHLY_POPULATION = 0.1
+				SICKNESS_CHANCE = -0.25
+			}
+		}
+	}
+	
+	country = {
+		PGS_weapons_standart_idea = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = war_economy_white
+			equipment_bonus = {
+				infantry_equipment = {
+					reliability  = 0.15
+					build_cost_ic = 0.05
+					instant = yes
+				}
+			}
+			equipment_bonus = {
+				artillery_equipment = {
+					reliability  = 0.15
+					build_cost_ic = 0.05
+					instant = yes
+				}
+			}
+		}
+	}
+	
+	country = {
+		PGS_not_enough_scientists = {
+
+			allowed = {
+				has_civil_war = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+				
+			}
+
+			modifier = {
+				research_speed_factor = -0.15
+			}
+		}
+	}
+	
+	country = {
+		PGS_anticommunist_policy = {
+
+			allowed = {
+				has_civil_war = yes
+			}
+			
+			picture = anti_soviet_pact
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+				
+			}
+
+			modifier = {
+				communism_acceptance = -500
+				communism_drift = -0.01
+			}
+		}
+	}
+	
+	country = {
+		PGS_comissariats = {
+
+			allowed = {
+				has_civil_war = yes
+			}
+			
+			picture = pony_army
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+				
+			}
+
+			modifier = {
+				stability_factor = -0.05
+				TRAINING_TIME_ARMY_FACTOR = -0.1
+				conscription_factor = 0.1
+				army_morale_factor = 0.05
+				compliance_growth = 0.025
+				war_support_factor = 0.025
+			}
+		}
+	}
+	
+	country = {
+		PGS_kazarmi_idea = {
+
+			allowed = {
+				has_civil_war = yes
+			}
+			
+			picture = PAP_Legionary_Spirit
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+				
+			}
+
+			modifier = {
+				ARMY_ORG_FACTOR = 0.15
+				ARMY_ORG_REGAIN = -0.1
+				experience_gain_army_factor = 0.08
+				army_core_defence_factor = 0.05
+			}
+		}
+	}
+	
+	country = {
+		PGS_school_trainings_idea = {
+
+			allowed = {
+				has_civil_war = yes
+			}
+			picture = generic_army_war_college
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+				
+			}
+
+			modifier = {
+				MAX_COMMAND_POWER = 20
+				experience_gain_army = 0.05
+			}
+		}
+		
+		PGS_neos_omades_idea = {
+			allowed = {
+				original_tag = PGS
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_infantry_bonus
+			modifier = {
+				conscription = 0.02
+				LAND_REINFORCE_RATE = 0.1
+			}
+		}
+		
+		PGS_zeurs_warriors = {
+			allowed = {
+				original_tag = PGS
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = RUS_planning_school
+			modifier = {
+				SPECIAL_FORCES_CAP = 0.075
+				SPECIAL_FORCES_ATTACK = 0.02
+			}
+		}
+		
+		PGS_nice_positions = {
+			allowed = {
+				original_tag = PGS
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = vittoria_mutilata
+
+			modifier = {
+				DIG_IN_SPEED_FACTOR = 0.1
+				SPECIAL_FORCES_DEFENCE_FACTOR = 0.025
+			}
+		}
+	
+		PGS_new_high_command = {
+			allowed = {
+				original_tag = PGS
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = general_staff
+			modifier = {
+				ARMY_LEADER_START_LEVEL = 1
+				ARMY_LEADER_START_ATTACK_LEVEL = 1
+				ARMY_LEADER_START_DEFENSE_LEVEL = 1
+				ARMY_LEADER_START_LOGISTICS_LEVEL = 1
+				ARMY_LEADER_START_PLANNING_LEVEL = 1
+			}
+		}
+		
+		PGS_timed_arms_factory_bonus = {
+			allowed = {
+				original_tag = PGS
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = factory_with_cog
+			modifier = {
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = -0.1
+				consumer_goods_factor = -0.15
+			}
+		}
+		
+		PGS_cleaning_group_ideas = {
+			allowed = {
+				original_tag = PGS
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = MAN_garrison_shortcomings_lvl_1
+			modifier = {
+				DRIFT_DEFENCE_FACTOR = 0.1
+				COMPLIANCE_GROWTH = 0.05
+				resistance_decay = 0.1
+				political_power_factor = 0.05
+				monthly_population = -0.05
+				ENEMY_OPERATIVE_CAPTURE_CHANCE_FACTOR = 0.25
+			}
+		}
+	}
+	
+	country = {
+		PGS_no_politics = {
+
+			allowed = {
+				has_civil_war = yes
+			}
+			
+			picture = SPR_subvert_soviet_control
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+				
+			}
+
+			modifier = {
+				political_power_gain = -0.25
+				generate_wargoal_tension = 1.0
+				war_support_factor = -0.3
+			}
+		}
+	}
+	
+	country = {
+		PGS_gloabal_war_propaganda = {
+
+			allowed = {
+				has_civil_war = yes
+			}
+			
+			picture = SPR_subvert_soviet_control
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+				
+			}
+
+			modifier = {
+				training_time_army_factor = -0.05
+				army_attack_factor = 0.035
+				army_morale_factor = 0.05
+			}
+		}
+		
+		PGS_expluatation_of_unicorns = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_reserve_divisions
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.1
+				monthly_population = -0.15
+			}
+		}
+		
+		PGS_victory_day = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_morale_bonus
+			modifier = {
+				war_support_factor = 0.1
+				army_morale_factor = 0.1
+				army_core_defence_factor = 0.1
+				political_power_factor = 0.1
+				industrial_capacity_factory = 0.05
+			}
+		}
+		
+		PGS_fields_of_pandoria_idea = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = erp_dependence_pegasi_total
+			modifier = {
+				consumer_goods_factor = -0.2
+				local_resources_factor = 0.1
+				stability_factor = 0.05
+				attrition = -0.1
+			}
+		}
+		
+		PGS_learn_to_defend_idea = {
+
+			allowed = {
+				tag = PGS
+			}
+			
+			picture = generic_infantry_bonus
+			modifier = {
+				dig_in_speed_factor = 0.25
+				army_defence_factor = 0.1
+				army_org_factor = 0.05
+			}
+		}
+		
+		PGS_thestral_citizenship = {
+
+			allowed = {
+				tag = PGS
+			}
+
+			modifier = {
+				conscription_factor = 0.1
+				compliance_growth = 0.1
+				resistance_target = -0.1
+				resistance_decay = 0.05
+			}
+		}
+		
+		PGS_thestral_slaves = {
+
+			allowed = {
+				tag = PGS
+			}
+
+			modifier = {
+				monthly_population = -0.05
+				compliance_growth = -0.05
+				industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		
+		PGS_hurricane_researches_1 = {
+
+			allowed = {
+				tag = PGS
+			}
+			
+			picture = research_rifles
+			
+			modifier = {
+				research_speed_factor = 0.05
+				experience_gain_army = 0.1
+			}
+		}
+		
+		PGS_hurricane_researches_2 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = research_rifles
+			modifier = {
+				research_speed_factor = 0.1
+				experience_gain_army = 0.15
+			}
+		}
+		
+		PGS_hurricane_machine_of_propaganda = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_fascism_drift_bonus
+			modifier = {
+				monthly_population = -0.1
+				fascism_drift = 0.02
+				fascism_acceptance = 500
+				war_support_factor = 0.15
+				stability_factor = -0.05
+				land_reinforce_rate = 0.05
+				experience_gain_army_factor = 0.1
+				SPECIAL_FORCES_DEFENCE_FACTOR = 0.05
+				SPECIAL_FORCES_ATTACK_FACTOR = 0.05
+				ARMY_INFANTRY_DEFENCE_FACTOR = 0.05
+				ARMY_INFANTRY_ATTACK_FACTOR = 0.05
+				OPINION_GAIN_MONTHLY_SAME_IDEOLOGY_FACTOR = 0.1
+			}
+		}
+		
+		PGS_hurricane_subordination = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_intel_bonus
+			modifier = {
+				army_morale_factor = -0.05
+				army_defence_factor = 0.05
+				army_org_factor = 0.25
+				weekly_manpower = -1000
+				UNIT_LEADER_PROMOTE_COST_FACTOR = -0.15
+			}
+		}
+		
+		PGS_hurricane_thoughts = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = pgs_brain
+			modifier = {
+				consumer_goods_factor = -0.05
+				GLOBAL_BUILDING_SLOTS_FACTOR =0.1
+				PRODUCTION_FACTORY_MAX_EFFICIENCY_FACTOR = 0.065
+			}
+		}
+		
+		PGS_quality_of_life_idea = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = LEC_high_reserves
+			modifier = {
+				monthly_population = 0.1
+				stability_weekly = 0.002
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+			}
+		}
+		
+		PGS_subcasts_support_idea = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = pgs_subcasts
+			modifier = {
+				monthly_population = 0.05
+				research_speed_factor = 0.05
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		
+		PGS_economic_reforms_idea = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_economic_increase
+			modifier = {
+				political_power_gain = -0.05
+				consumer_goods_factor = -0.1
+			}
+		}
+		
+		PGS_etnotita = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = sworded_books
+			modifier = {
+				army_morale_factor = 0.05
+				war_stability_factor = 0.1
+				stability_factor = 0.045
+			}
+		}
+		
+		PGS_military_order_idea = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = ers_pegasism
+			modifier = {
+				army_org_factor = 0.1
+				industrial_capacity_factory = 0.025
+				repair_speed_infrastructure_complex_factor = 0.1
+				army_attack_factor = 0.05
+				conscription_factor = 0.075
+			}
+		}
+	}
+
+	country = {
+		PGS_pacifisation_idea = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = ers_pegasism
+			modifier = {
+				political_power_gain = 0.25
+				war_support_weekly = -0.005
+				democratic_drift = 0.01
+			}
+		}
+	}
+	
+	##################################
+	
+	country = {
+		PGS_tachankas_construction = {
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = anarchist_truck
+
+			modifier = {
+				production_factory_max_efficiency_factor = -0.05
+				industrial_capacity_factory = 0.05
+			}
+			equipment_bonus = {
+				motorized_equipment = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+			}
+		}
+	}
+	
+} 
+
+ideas = {
+	industrial_concern = {
+		PGS_department_of_economy = {
+			
+			allowed = {
+				original_tag = PGS
+
+			}
+			
+			picture = generic_industrial_concern_1
+			
+			available = {
+			
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				industry = 0.1
+			}
+			
+			modifier = {
+				consumer_goods_factor = -0.09
+			}
+				
+			traits = { industrial_concern }
+		}
+		
+	}
+	
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+		PGS_anvilers = {
+			
+			picture = generic_infantry_equipment_manufacturer_3
+
+			
+			allowed = {
+				original_tag = PGS
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			modifier = {
+				INDUSTRIAL_CAPACITY_FACTORY = 0.05
+				production_factory_max_efficiency_factor = 0.05
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}
+}
+
+
+############### TEST
+
+country = {
+		PGS_test = {
+
+			allowed = {
+				has_civil_war = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+				
+			}
+
+			picture = test_idea
+
+			modifier = {
+
+			}
+		}
+	}

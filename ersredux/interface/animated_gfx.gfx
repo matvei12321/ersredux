@@ -1,0 +1,86 @@
+spriteTypes = {
+	## Animated Portrait ##
+	spritetype = {
+		name = "GFX_CLD_nothing_Snowing"
+		texturefile = "gfx/leaders/CLD/CLD_nothing.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/leaders/CLD/snow_mask.dds"
+			animationtexturefile = "gfx/leaders/CLD/snow_overlay.dds"
+			animationrotation = 180
+			animationlooping = yes
+			animationtime = 15
+			animationdelay = 0.0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+		}
+		legacy_lazy_load = no
+	}
+	
+	spritetype = {
+		name = "GFX_country_updated"
+		texturefile = "gfx/country_updated.tga"
+		
+	}
+	
+	frameAnimatedSpriteType = {
+		name = "GFX_decision_white_thing"
+		texturefile = "gfx/interface/decisions/decision_white_thing.tga"
+		looping = yes
+		noOfFrames = 5
+ 
+		animation_rate_fps = 20
+		play_on_show = yes
+		tilingCenter = yes
+	}
+
+
+	frameAnimatedSpriteType = {
+		name = "GFX_goal_clt_skull_animated"
+		texturefile = "gfx/interface/goals/CLT/goal_clt_skull_animated.tga"
+		looping = yes
+		noOfFrames = 7
+ 
+		animation_rate_fps = 0.5
+		play_on_show = yes
+		tilingCenter = yes
+	}
+	
+	frameAnimatedSpriteType = {
+		name = "GFX_goal_clt_skull_animated_shine"
+		texturefile = "gfx/interface/goals/CLT/goal_clt_skull_animated.tga"
+		looping = yes
+		noOfFrames = 7
+
+		animation_rate_fps = 0.5
+		play_on_show = yes
+		tilingCenter = yes
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CLT/goal_clt_skull_animated.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" ##<- the animated file
+			animationrotation = -90.0 # -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no # yes or no ;)
+			animationtime = 0.75 # in seconds
+			animationdelay = 0 # in seconds
+			animationblendmode = "add" #add, multiply, overlay
+			animationtype = "scrolling" #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+		animationmaskfile = "gfx/interface/goals/CLT/goal_clt_skull_animated.tga"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds" ##<- the animated file
+		animationrotation = 90.0 # -90 clockwise 90 counterclockwise(by default)
+		animationlooping = no # yes or no ;)
+		animationtime = 0.75 # in seconds
+		animationdelay = 0 # in seconds
+		animationblendmode = "add" #add, multiply, overlay
+		animationtype = "scrolling" #scrolling, rotating, pulsing
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	
+}

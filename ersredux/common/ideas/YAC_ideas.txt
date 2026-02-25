@@ -1,0 +1,335 @@
+ideas = {
+
+	country = {
+		YAC_homeland_of_revolution = {
+
+			allowed = {
+				tag = YAC
+			}
+			removal_cost = -1
+			picture = home_of_revolution
+			
+			modifier = {
+				war_support_factor = 0.05
+				army_core_defence_factor = 0.015
+				army_core_attack_factor = 0.015
+				communism_drift = 0.01
+			}
+		}
+		
+		YAC_homeland_of_revolution_2 = {
+
+			allowed = {
+				tag = YAC
+			}
+			removal_cost = -1
+			picture = home_of_revolution
+			
+			modifier = {
+				war_support_factor = 0.05
+				conscription_factor = 0.1
+				training_time_factor = -0.045
+				army_core_defence_factor = 0.05
+				army_core_attack_factor = 0.05
+				communism_drift = 0.01
+			}
+		}
+		
+		YAC_primitive_esoterism = {
+
+			allowed = {
+				tag = YAC
+			}
+			removal_cost = -1
+			picture = mmmm_marx
+			
+			modifier = {
+				research_speed_factor = -0.03
+				communism_drift = 0.01
+				army_org_factor = -0.05
+			}
+		}
+		
+		YAC_modern_esoterism = {
+
+			allowed = {
+				tag = YAC
+			}
+			removal_cost = -1
+			picture = mmmm_marx
+			
+			modifier = {
+				research_speed_factor = -0.015
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				army_org_factor = 0.05
+			}
+		}
+		
+		YAC_alt_history_idea = {
+
+			allowed = {
+				tag = YAC
+			}
+			removal_cost = -1
+			picture = sworded_books
+			
+			modifier = {
+				surrender_limit = 0.05
+				research_speed_factor = -0.05
+				army_defence_factor = 0.05
+				army_attack_factor = 0.05
+				political_power_gain = 0.25
+			}
+		}
+		
+		YAC_agrarian_industry_idea = {
+
+			allowed = {
+				tag = YAC
+			}
+			removal_cost = -1
+			picture =generic_exploit_mines
+			
+			modifier = {
+				stability_factor = 0.035
+				consumer_goods_factor = -0.1
+				INDUSTRIAL_CAPACITY_FACTORY = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				monthly_population = -0.025
+			}
+		}
+		
+		YAC_no_money = {
+
+			allowed = {
+				tag = YAC
+			}
+			removal_cost = -1
+			picture = cash_banned
+			
+			modifier = {
+				stability_factor = -0.05
+				trade_opinion_factor = -1.00
+			}
+		}
+		
+		YAC_marks_portrait = {
+
+			allowed = {
+				tag = YAC
+			}
+			removal_cost = -1
+			picture = marks_portrait
+			
+			modifier = {
+				communism_drift = 0.03
+				political_power_factor = 0.1
+				drift_defence_factor = 0.25
+				war_support_factor = 0.025
+			}
+		}
+		
+		YAC_safety_lar = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = defend_red_sun
+			modifier = {
+				enemy_operative_detection_chance_factor = 0.10
+				own_operative_detection_chance_factor = -0.10
+				operative_slot = 1
+				monthly_population = -0.05
+			}
+		}
+		
+		YAC_safety_no_lar = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				encryption_factor = 0.1
+				decryption_factor = 0.1
+				monthly_population = -0.05
+			}
+		}
+		
+		YAK_commissars = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = chi_army_corruption2
+			removal_cost = -1
+			modifier = {
+				compliance_growth = 0.05
+				resistance_decay = 0.05
+				non_core_manpower = 0.03
+				drift_defence_factor = 0.02
+			}
+		}
+
+		YAC_miners_villages_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = steel_extraction
+			removal_cost = -1
+			modifier = {
+				local_resources_factor = 0.05
+				monthly_population = 0.025
+			}
+		}
+		
+		YAC_colkhoz_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = tur_etatism
+			removal_cost = -1
+			modifier = {
+				supply_consumption_factor = -0.15
+				production_speed_infrastructure_factor = 0.1
+				monthly_population = 0.025
+				communism_drift = 0.0001
+				stability_factor = 0.05
+				LINE_CHANGE_PRODUCTION_EFFICIENCY_FACTOR = 0.05
+			}
+		}
+
+		YAC_no_class_utopy_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = stl_pyramid_cog
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				political_advisor_cost_factor = -0.1
+			}
+		}
+
+		YAC_sheyak_pyramid_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = stl_pyramid_cog
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.05
+				drift_defence_factor = 0.2
+			}
+		}
+
+		YAC_brotherhood_and_nationalism_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = yac_inquisition
+			removal_cost = -1
+			modifier = {
+				army_core_defence_factor = 0.1
+				army_core_attack_factor = 0.1
+				training_time_factor = -0.04
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = -0.05
+				surrender_limit = 0.15
+			}
+		}
+
+		YAC_international_inquisition_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = yac_inquisition
+			removal_cost = -1
+			modifier = {
+				army_speed_factor = 0.025
+				army_defence_factor = 0.05
+				army_attack_factor = 0.05
+				training_time_factor = -0.04
+				justify_war_goal_time = -0.1
+				war_stability_factor = 0.1
+			}
+		}
+
+		YAC_updated_spirit_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = yac_spirit
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+
+		YAC_the_web_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = Marks
+			removal_cost = -1
+			modifier = {
+				monthly_population = -0.05
+				political_power_gain = -0.15
+				enemy_operative_capture_chance_factor = 1
+				enemy_operative_detection_chance_factor = 1
+			}
+		}
+
+
+
+		YAC_total_war = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = chi_army_corruption2
+			removal_cost = -1
+			modifier = {
+				GENERATE_WARGOAL_TENSION = -0.25
+				justify_war_goal_time = -0.5
+			}
+		}
+		
+	}
+}

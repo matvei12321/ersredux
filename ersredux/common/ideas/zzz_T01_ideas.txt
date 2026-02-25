@@ -1,0 +1,30 @@
+ideas = {
+
+	country = {
+
+		T01_blockers = {
+			picture = disarmed_nation
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -5.00
+				war_support_factor = -1.00
+				custom_modifier_tooltip = ZES_military_blocked_tp
+			}
+			on_add = {
+				country_lock_all_division_template = yes
+			}	
+			
+			
+			
+			
+		}
+
+
+	}
+}

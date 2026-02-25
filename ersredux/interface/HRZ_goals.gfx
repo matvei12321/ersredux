@@ -1,0 +1,58 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_goal_HRZ_raut"
+		texturefile = "gfx/interface/goals/HRZ/HRZ_raut.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_to_go_Aquila"
+		texturefile = "gfx/interface/goals/HRZ/to_go_Aquila.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_HRZ_AUR_fleet_training"
+		texturefile = "gfx/interface/goals/HRZ/HRZ_AUR_fleet_training.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_HRZ_AUR_army_training"
+		texturefile = "gfx/interface/goals/HRZ/HRZ_AUR_army_training.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_HRZ_AUR_cash_finance"
+		texturefile = "gfx/interface/goals/HRZ/HRZ_AUR_cash_finance.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_go_to_Wingbard"
+		texturefile = "gfx/interface/goals/HRZ/go_to_Wingbard.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_Wingbard_fabric_HRZ"
+		texturefile = "gfx/interface/goals/HRZ/Wingbard_fabric_HRZ.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_Wingbard_war_factories_HRZ"
+		texturefile = "gfx/interface/goals/HRZ/Wingbard_war_factories_HRZ.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_HRZ_Grover_vi"
+		texturefile = "gfx/interface/goals/HRZ/HRZ_Grover_vi.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_Hail_Grover_vii_2"
+		texturefile = "gfx/interface/goals/HRZ/Hail_Grover_vii_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_Hail_Grover_vii_1"
+		texturefile = "gfx/interface/goals/HRZ/Hail_Grover_vii_1.dds"
+	}
+	
+}

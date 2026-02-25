@@ -1,0 +1,17 @@
+focus_tree = {
+	id = UNP_danglar_starting_tree
+
+	continuous_focus_position = { x = 1 y = 1750 }
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = UNP
+		}
+	}
+	
+	default = no
+	
+	shared_focus = UNP_reports
+}

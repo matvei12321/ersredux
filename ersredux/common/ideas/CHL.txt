@@ -1,0 +1,46 @@
+ideas = {
+
+	country = {
+		CHL_holy_leader = {
+			available = {
+				tag = CHL
+			}
+			picture = chl_calamant_small
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.1
+				political_power_factor = 0.1
+			}
+		}
+		
+		CHL_slave_society = {
+			available = {
+				tag = CHL
+			}
+			picture = ers_slavery
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.025
+				political_power_gain = 0.75
+			}
+		}
+		
+		CHL_slave_army = {
+			available = {
+				tag = CHL
+			}
+			picture = chl_slave_army
+			removal_cost = -1
+			modifier = {
+				mobilization_speed = 0.1
+				conscription_factor = 0.1
+				army_attack_factor = -0.05
+				army_org_factor = -0.05
+				army_morale_factor = -0.05
+			}
+		}
+	}
+}

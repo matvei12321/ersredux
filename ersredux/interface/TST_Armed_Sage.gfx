@@ -1,0 +1,1478 @@
+spriteTypes = {
+
+### IDEAS
+
+	spriteType = {
+		name = "GFX_idea_island_of_hope"
+		textureFile = "gfx/interface/ideas/TST/island_of_hope.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_modern_army"
+		textureFile = "gfx/interface/ideas/TST/modern_army.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_tamers_of_nature"
+		textureFile = "gfx/interface/ideas/TST/tamers_of_nature.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_cultural_revival"
+		textureFile = "gfx/interface/ideas/TST/cultural_revival.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_public_medicine"
+		textureFile = "gfx/interface/ideas/TST/public_medicine.tga"
+	}
+	
+### DECISIONS
+
+	spriteType = {
+		name = "GFX_decision_hec_decision_category"
+		texturefile = "gfx/interface/decisions/hec_decision_category.tga"
+	}
+
+### TRAITS
+
+spriteType = {
+		name = "GFX_trait_armed_sage_trait"
+		texturefile = "gfx/interface/traits/personal/armed_sage_trait.dds"
+	}
+
+### PORTRAITS
+
+spriteType = {
+		name = "GFX_Armed_Sage_1"
+		texturefile = "gfx/leaders/TST/TST_Armed_Sage_1.tga"
+	}
+	
+spriteType = {
+		name = "GFX_Armed_Sage_2"
+		texturefile = "gfx/leaders/TST/TST_Armed_Sage_2.tga"
+	}
+
+### EVENT PICTURES
+
+spriteType = {
+		name = "GFX_event_TST_black_hole"
+		texturefile = "gfx/event_pictures/event_TST_black_hole.tga"
+	}
+
+### FOCUSES
+
+SpriteType = {
+        name = "GFX_goal_Armed_Sage_0"
+        texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_0.dds"	
+    }
+	
+SpriteType = {
+                name = "GFX_goal_Armed_Sage_0_shine"
+                texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_0.dds"
+                effectFile = "gfx/FX/buttonstate.lua"
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_0.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = -90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_0.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = 90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                legacy_lazy_load = no
+        }
+
+SpriteType = {
+        name = "GFX_goal_Armed_Sage_1"
+        texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_1.dds"	
+    }
+	
+SpriteType = {
+                name = "GFX_goal_Armed_Sage_1_shine"
+                texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_1.dds"
+                effectFile = "gfx/FX/buttonstate.lua"
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_1.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = -90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_1.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = 90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                legacy_lazy_load = no
+        }
+		
+SpriteType = {
+        name = "GFX_goal_Armed_Sage_2"
+        texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_2.dds"	
+    }
+	
+SpriteType = {
+                name = "GFX_goal_Armed_Sage_2_shine"
+                texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_2.dds"
+                effectFile = "gfx/FX/buttonstate.lua"
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_2.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = -90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_2.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = 90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                legacy_lazy_load = no
+        }
+		
+SpriteType = {
+        name = "GFX_goal_Armed_Sage_3"
+        texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_3.dds"	
+    }
+	
+SpriteType = {
+                name = "GFX_goal_Armed_Sage_3_shine"
+                texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_3.dds"
+                effectFile = "gfx/FX/buttonstate.lua"
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_3.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = -90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_3.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = 90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                legacy_lazy_load = no
+        }
+		
+SpriteType = {
+        name = "GFX_goal_Armed_Sage_4"
+        texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_4.dds"	
+    }
+	
+SpriteType = {
+                name = "GFX_goal_Armed_Sage_4_shine"
+                texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_4.dds"
+                effectFile = "gfx/FX/buttonstate.lua"
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_4.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = -90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_4.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = 90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                legacy_lazy_load = no
+        }
+		
+SpriteType = {
+        name = "GFX_goal_Armed_Sage_5"
+        texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_5.dds"	
+    }
+	
+SpriteType = {
+                name = "GFX_goal_Armed_Sage_5_shine"
+                texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_5.dds"
+                effectFile = "gfx/FX/buttonstate.lua"
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_5.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = -90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_5.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = 90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                legacy_lazy_load = no
+        }
+		
+SpriteType = {
+        name = "GFX_goal_Armed_Sage_6"
+        texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_6.dds"	
+    }
+	
+SpriteType = {
+                name = "GFX_goal_Armed_Sage_6_shine"
+                texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_6.dds"
+                effectFile = "gfx/FX/buttonstate.lua"
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_6.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = -90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_6.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = 90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                legacy_lazy_load = no
+        }
+		
+SpriteType = {
+        name = "GFX_goal_Armed_Sage_7"
+        texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_7.dds"	
+    }
+	
+SpriteType = {
+                name = "GFX_goal_Armed_Sage_7_shine"
+                texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_7.dds"
+                effectFile = "gfx/FX/buttonstate.lua"
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_7.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = -90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_7.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = 90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                legacy_lazy_load = no
+        }
+		
+SpriteType = {
+        name = "GFX_goal_Armed_Sage_8"
+        texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_8.dds"	
+    }
+	
+SpriteType = {
+                name = "GFX_goal_Armed_Sage_8_shine"
+                texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_8.dds"
+                effectFile = "gfx/FX/buttonstate.lua"
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_8.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = -90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_8.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = 90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                legacy_lazy_load = no
+        }
+		
+SpriteType = {
+        name = "GFX_goal_Armed_Sage_9"
+        texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_9.dds"	
+    }
+	
+SpriteType = {
+                name = "GFX_goal_Armed_Sage_9_shine"
+                texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_9.dds"
+                effectFile = "gfx/FX/buttonstate.lua"
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_9.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = -90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_9.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = 90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                legacy_lazy_load = no
+        }
+		
+SpriteType = {
+        name = "GFX_goal_Armed_Sage_10"
+        texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_10.dds"	
+    }
+	
+SpriteType = {
+                name = "GFX_goal_Armed_Sage_10_shine"
+                texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_10.dds"
+                effectFile = "gfx/FX/buttonstate.lua"
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_10.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = -90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_10.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = 90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                legacy_lazy_load = no
+        }
+		
+SpriteType = {
+        name = "GFX_goal_Armed_Sage_11"
+        texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_11.dds"	
+    }
+	
+SpriteType = {
+                name = "GFX_goal_Armed_Sage_11_shine"
+                texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_11.dds"
+                effectFile = "gfx/FX/buttonstate.lua"
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_11.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = -90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_11.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = 90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                legacy_lazy_load = no
+        }
+		
+SpriteType = {
+        name = "GFX_goal_Armed_Sage_12"
+        texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_12.dds"	
+    }
+	
+SpriteType = {
+                name = "GFX_goal_Armed_Sage_12_shine"
+                texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_12.dds"
+                effectFile = "gfx/FX/buttonstate.lua"
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_12.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = -90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_12.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = 90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                legacy_lazy_load = no
+        }
+		
+SpriteType = {
+        name = "GFX_goal_Armed_Sage_13"
+        texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_13.dds"	
+    }
+	
+SpriteType = {
+                name = "GFX_goal_Armed_Sage_13_shine"
+                texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_13.dds"
+                effectFile = "gfx/FX/buttonstate.lua"
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_13.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = -90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_13.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = 90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                legacy_lazy_load = no
+        }
+		
+SpriteType = {
+        name = "GFX_goal_Armed_Sage_14"
+        texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_14.dds"	
+    }
+	
+SpriteType = {
+                name = "GFX_goal_Armed_Sage_14_shine"
+                texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_14.dds"
+                effectFile = "gfx/FX/buttonstate.lua"
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_14.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = -90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_14.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = 90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                legacy_lazy_load = no
+        }
+
+SpriteType = {
+        name = "GFX_goal_Armed_Sage_16"
+        texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_16.dds"	
+    }
+	
+SpriteType = {
+                name = "GFX_goal_Armed_Sage_16_shine"
+                texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_16.dds"
+                effectFile = "gfx/FX/buttonstate.lua"
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_16.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = -90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_16.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = 90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                legacy_lazy_load = no
+        }
+	
+SpriteType = {
+        name = "GFX_goal_Armed_Sage_17"
+        texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_17.dds"	
+    }
+	
+SpriteType = {
+                name = "GFX_goal_Armed_Sage_17_shine"
+                texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_17.dds"
+                effectFile = "gfx/FX/buttonstate.lua"
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_17.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = -90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_17.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = 90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                legacy_lazy_load = no
+        }
+			
+SpriteType = {
+        name = "GFX_goal_Armed_Sage_20"
+        texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_20.dds"	
+    }
+	
+SpriteType = {
+                name = "GFX_goal_Armed_Sage_20_shine"
+                texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_20.dds"
+                effectFile = "gfx/FX/buttonstate.lua"
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_20.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = -90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_20.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = 90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                legacy_lazy_load = no
+        }
+		
+SpriteType = {
+        name = "GFX_goal_Armed_Sage_22"
+        texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_22.dds"	
+    }
+	
+SpriteType = {
+                name = "GFX_goal_Armed_Sage_22_shine"
+                texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_22.dds"
+                effectFile = "gfx/FX/buttonstate.lua"
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_22.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = -90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_22.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = 90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                legacy_lazy_load = no
+        }
+		
+SpriteType = {
+        name = "GFX_goal_Armed_Sage_23"
+        texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_23.dds"	
+    }
+	
+SpriteType = {
+                name = "GFX_goal_Armed_Sage_23_shine"
+                texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_23.dds"
+                effectFile = "gfx/FX/buttonstate.lua"
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_23.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = -90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_23.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = 90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                legacy_lazy_load = no
+        }
+
+SpriteType = {
+        name = "GFX_goal_Armed_Sage_24"
+        texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_24.dds"	
+    }
+	
+SpriteType = {
+                name = "GFX_goal_Armed_Sage_24_shine"
+                texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_24.dds"
+                effectFile = "gfx/FX/buttonstate.lua"
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_24.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = -90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_24.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = 90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                legacy_lazy_load = no
+        }
+		
+SpriteType = {
+        name = "GFX_goal_Armed_Sage_25"
+        texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_25.dds"	
+    }
+	
+SpriteType = {
+                name = "GFX_goal_Armed_Sage_25_shine"
+                texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_25.dds"
+                effectFile = "gfx/FX/buttonstate.lua"
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_25.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = -90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_25.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = 90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                legacy_lazy_load = no
+        }
+		
+SpriteType = {
+        name = "GFX_goal_Armed_Sage_26"
+        texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_26.dds"	
+    }
+	
+SpriteType = {
+                name = "GFX_goal_Armed_Sage_26_shine"
+                texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_26.dds"
+                effectFile = "gfx/FX/buttonstate.lua"
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_26.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = -90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_26.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = 90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                legacy_lazy_load = no
+        }
+		
+SpriteType = {
+        name = "GFX_goal_Armed_Sage_27"
+        texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_27.dds"	
+    }
+	
+SpriteType = {
+                name = "GFX_goal_Armed_Sage_27_shine"
+                texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_27.dds"
+                effectFile = "gfx/FX/buttonstate.lua"
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_27.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = -90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_27.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = 90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                legacy_lazy_load = no
+        }
+		
+SpriteType = {
+        name = "GFX_goal_Armed_Sage_28"
+        texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_28.dds"	
+    }
+	
+SpriteType = {
+                name = "GFX_goal_Armed_Sage_28_shine"
+                texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_28.dds"
+                effectFile = "gfx/FX/buttonstate.lua"
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_28.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = -90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_28.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = 90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                legacy_lazy_load = no
+        }
+		
+SpriteType = {
+        name = "GFX_goal_Armed_Sage_29"
+        texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_29.dds"	
+    }
+	
+SpriteType = {
+                name = "GFX_goal_Armed_Sage_29_shine"
+                texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_29.dds"
+                effectFile = "gfx/FX/buttonstate.lua"
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_29.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = -90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_29.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = 90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                legacy_lazy_load = no
+        }
+
+SpriteType = {
+        name = "GFX_goal_Armed_Sage_30"
+        texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_30.dds"	
+    }
+	
+SpriteType = {
+                name = "GFX_goal_Armed_Sage_30_shine"
+                texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_30.dds"
+                effectFile = "gfx/FX/buttonstate.lua"
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_30.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = -90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_30.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = 90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                legacy_lazy_load = no
+        }
+		
+SpriteType = {
+        name = "GFX_goal_Armed_Sage_31"
+        texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_31.dds"	
+    }
+	
+SpriteType = {
+                name = "GFX_goal_Armed_Sage_31_shine"
+                texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_31.dds"
+                effectFile = "gfx/FX/buttonstate.lua"
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_31.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = -90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_31.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = 90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                legacy_lazy_load = no
+        }
+		
+SpriteType = {
+        name = "GFX_goal_Armed_Sage_32"
+        texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_32.dds"	
+    }
+	
+SpriteType = {
+                name = "GFX_goal_Armed_Sage_32_shine"
+                texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_32.dds"
+                effectFile = "gfx/FX/buttonstate.lua"
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_32.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = -90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_32.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = 90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                legacy_lazy_load = no
+        }
+		
+SpriteType = {
+        name = "GFX_goal_Armed_Sage_36"
+        texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_36.dds"	
+    }
+	
+SpriteType = {
+                name = "GFX_goal_Armed_Sage_36_shine"
+                texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_36.dds"
+                effectFile = "gfx/FX/buttonstate.lua"
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_36.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = -90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_36.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = 90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                legacy_lazy_load = no
+        }
+		
+SpriteType = {
+        name = "GFX_goal_Armed_Sage_37"
+        texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_37.dds"	
+    }
+	
+SpriteType = {
+                name = "GFX_goal_Armed_Sage_37_shine"
+                texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_37.dds"
+                effectFile = "gfx/FX/buttonstate.lua"
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_37.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = -90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_37.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = 90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                legacy_lazy_load = no
+        }
+		
+SpriteType = {
+        name = "GFX_goal_Armed_Sage_38"
+        texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_38.dds"	
+    }
+	
+SpriteType = {
+                name = "GFX_goal_Armed_Sage_38_shine"
+                texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_38.dds"
+                effectFile = "gfx/FX/buttonstate.lua"
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_38.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = -90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_38.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = 90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                legacy_lazy_load = no
+        }
+		
+SpriteType = {
+        name = "GFX_goal_Armed_Sage_39"
+        texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_39.dds"	
+    }
+	
+SpriteType = {
+                name = "GFX_goal_Armed_Sage_39_shine"
+                texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_39.dds"
+                effectFile = "gfx/FX/buttonstate.lua"
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_39.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = -90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_39.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = 90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                legacy_lazy_load = no
+        }
+		
+SpriteType = {
+        name = "GFX_goal_Armed_Sage_40"
+        texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_40.dds"	
+    }
+	
+SpriteType = {
+                name = "GFX_goal_Armed_Sage_40_shine"
+                texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_40.dds"
+                effectFile = "gfx/FX/buttonstate.lua"
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_40.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = -90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_40.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = 90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                legacy_lazy_load = no
+        }
+			
+SpriteType = {
+        name = "GFX_goal_Armed_Sage_100"
+        texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_100.dds"
+    }
+	
+SpriteType = {
+                name = "GFX_goal_Armed_Sage_100_shine"
+                texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_100.dds"
+                effectFile = "gfx/FX/buttonstate.lua"
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_100.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = -90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_100.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = 90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                legacy_lazy_load = no
+        }
+		
+SpriteType = {
+        name = "GFX_goal_Armed_Sage_101"
+        texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_101.dds"
+    }
+	
+SpriteType = {
+                name = "GFX_goal_Armed_Sage_101_shine"
+                texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_101.dds"
+                effectFile = "gfx/FX/buttonstate.lua"
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_101.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = -90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_101.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = 90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                legacy_lazy_load = no
+        }
+		
+SpriteType = {
+        name = "GFX_goal_Armed_Sage_102"
+        texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_102.dds"
+    }
+	
+SpriteType = {
+                name = "GFX_goal_Armed_Sage_102_shine"
+                texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_102.dds"
+                effectFile = "gfx/FX/buttonstate.lua"
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_102.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = -90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_102.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = 90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                legacy_lazy_load = no
+        }
+		
+SpriteType = {
+        name = "GFX_goal_Armed_Sage_103"
+        texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_103.dds"
+    }
+	
+SpriteType = {
+                name = "GFX_goal_Armed_Sage_103_shine"
+                texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_103.dds"
+                effectFile = "gfx/FX/buttonstate.lua"
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_103.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = -90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_103.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = 90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                legacy_lazy_load = no
+        }
+		
+SpriteType = {
+        name = "GFX_goal_Armed_Sage_104"
+        texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_104.dds"
+    }
+	
+SpriteType = {
+                name = "GFX_goal_Armed_Sage_104_shine"
+                texturefile = "gfx/interface/goals/TST/Armed/Armed_Sage_104.dds"
+                effectFile = "gfx/FX/buttonstate.lua"
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_104.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = -90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                animation = {
+                        animationmaskfile = "gfx/interface/goals/TST/Armed/Armed_Sage_104.dds"
+                        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+                        animationrotation = 90.0
+                        animationlooping = no
+                        animationtime = 0.75
+                        animationdelay = 0
+                        animationblendmode = "add"
+                        animationtype = "scrolling"
+                        animationrotationoffset = { x = 0.0 y = 0.0 }
+                        animationtexturescale = { x = 1.0 y = 1.0 }
+                }
+                legacy_lazy_load = no
+        }
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}

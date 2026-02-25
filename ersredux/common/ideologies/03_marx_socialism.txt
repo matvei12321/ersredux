@@ -1,0 +1,63 @@
+
+######======================================================================######
+######====================== IMPORTANT MESSAGE =============================######
+######======================================================================######
+#    When adding a new subideology, please add an entry of the subideology in    #
+# common/scripted_localisation/EAW_subideology_display_scripted_localisation.txt #
+######======================================================================######
+
+
+ideologies = {
+     
+	communism = {
+		types = {
+
+			
+			leninism = {
+			}
+			marxism = {
+				can_be_randomly_selected = no
+			}
+			anti_revisionism = {
+				can_be_randomly_selected = no
+			}
+			anarchist_communism = {}
+			primitive_communism = {
+				can_be_randomly_selected = no
+			}
+			poltopism = {
+				can_be_randomly_selected = no
+			}
+			capital_communism = {
+			
+			}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_COMMUNISM_1"
+			"FACTION_NAME_COMMUNISM_2"
+			"FACTION_NAME_COMMUNISM_3"
+			"FACTION_NAME_COMMUNISM_4"
+			"FACTION_NAME_COMMUNISM_5"
+		}
+		color = {255 0 0}
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+		}
+		can_collaborate = yes
+		war_impact_on_world_tension = 0.25    #change
+		faction_impact_on_world_tension = 0.1 #change
+		modifiers = {
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 10.0
+			navy_intel_to_others = 20.0
+			airforce_intel_to_others = 2
+		}
+		can_host_government_in_exile = no		
+		faction_modifiers = {}
+		can_be_boosted = yes
+		ai_communist = yes
+	}
+}

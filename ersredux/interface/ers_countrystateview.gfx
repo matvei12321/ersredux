@@ -1,0 +1,20 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_modifiers_hrd_umbrums_state"
+		textureFile = "gfx/interface/modifiers_nature_reserve_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_modifiers_unicorns_region"
+		textureFile = "gfx/interface/modifiers_unicorn_region.tga"
+	}
+	spriteType = {
+		name = "GFX_modifiers_pegasi_region"
+		textureFile = "gfx/interface/modifiers_pegasi_region.tga"
+	}
+	spriteType = {
+		name = "GFX_modifiers_earthponies_region"
+		textureFile = "gfx/interface/modifiers_earthponies_region.tga"
+	}
+	
+}

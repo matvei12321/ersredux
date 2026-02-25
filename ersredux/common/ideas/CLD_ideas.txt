@@ -1,0 +1,64 @@
+ideas = {
+
+	country = {
+		CLD_winter = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = PLB_we_are_winter
+			
+			modifier = {
+				stability_factor = -1.0
+				war_support_factor = -1.0
+				research_speed_factor = -1.0
+				local_resources_factor = -1.0
+				training_time_factor = 1.0
+				PRODUCTION_SPEED_BUILDINGS_FACTOR = -1.0
+				conscription_facotor = -1.0
+				INDUSTRIAL_CAPACITY_FACTORY = -1.0
+				industrial_capacity_dockyard = -1.0
+				political_power_factor = -1.0
+				monthly_population = -1.0
+			}
+		}
+		
+		CLD_winter_1 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = PLB_we_are_winter
+			
+			modifier = {
+				stability_factor = -1.0
+				war_support_factor = -1.0
+				research_speed_factor = -1.0
+				local_resources_factor = -1.0
+				training_time_factor = -1.0
+				PRODUCTION_SPEED_BUILDINGS_FACTOR = -1.0
+				conscription = 1.0
+				INDUSTRIAL_CAPACITY_FACTORY = 0.25
+				industrial_capacity_dockyard = -1.0
+				political_power_factor = -1.0
+				monthly_population = -1.0
+				army_attack_factor = 0.25
+				army_morale_factor = 0.25
+				army_org_factor = 0.25
+				army_core_defence_factor = 0.25
+				ai_focus_aggressive_factor = 1
+				ai_focus_defense_factor = -1
+			}
+		}
+	}
+}

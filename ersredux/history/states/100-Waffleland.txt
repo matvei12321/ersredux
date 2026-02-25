@@ -1,0 +1,31 @@
+state={
+	id=100
+	name="STATE_100"
+
+	provinces={
+		3192 3295 3351 3709 3846 11176 11350 11595 13012
+	}
+
+	manpower=361400
+	state_category=rural
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = ROK
+		add_core_of = ROK
+		
+		victory_points = { 3351 5 }
+		
+		victory_points = { 3846 4 }
+		
+		victory_points = { 11350 3 }
+		
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	
+	resources = {
+		steel = 6
+	}
+}

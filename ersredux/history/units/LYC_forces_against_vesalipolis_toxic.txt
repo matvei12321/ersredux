@@ -1,0 +1,52 @@
+﻿division_template = {
+	name = "Gabers Infanteria"			#Infantry Division
+	division_names_group = CHN_Inf_01
+
+	regiments = {
+		chem_infantry_unit = { x = 0 y = 0 }
+		chem_infantry_unit = { x = 0 y = 1 }
+		chem_infantry_unit = { x = 0 y = 2 }
+		chem_infantry_unit = { x = 0 y = 3 }
+		chem_infantry_unit = { x = 1 y = 0 }
+		chem_infantry_unit = { x = 1 y = 1 }
+		chem_infantry_unit = { x = 1 y = 2 }
+		chem_infantry_unit = { x = 1 y = 3 }
+	}
+
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division = {
+		name = "Gabers Infanteria"
+		location = 195
+		division_template = "Gabers Infanteria"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Gabers Infanteria"
+		location = 195
+		division_template = "Gabers Infanteria"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Gabers Infanteria"
+		location = 195
+		division_template = "Gabers Infanteria"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Gabers Infanteria"
+		location = 195
+		division_template = "Gabers Infanteria"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Gabers Infanteria"
+		location = 195
+		division_template = "Gabers Infanteria"
+		start_experience_factor = 0.3 
+	}
+}

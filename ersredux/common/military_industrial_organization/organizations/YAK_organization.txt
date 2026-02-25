@@ -1,0 +1,169 @@
+
+########    ###    ##    ## ##    ##  ######  
+   ##      ## ##   ###   ## ##   ##  ##    ## 
+   ##     ##   ##  ####  ## ##  ##   ##       
+   ##    ##     ## ## ## ## #####     ######  
+   ##    ######### ##  #### ##  ##         ## 
+   ##    ##     ## ##   ### ##   ##  ##    ## 
+   ##    ##     ## ##    ## ##    ##  ######  
+
+
+YAK_yakistanks_organization = {
+	name = YAK_yakistanks
+	include = generic_mobile_tank_organization
+	icon = YAK_yakistanks
+	allowed = {	
+		has_dlc = "Arms Against Tyranny"
+		OR = {
+			original_tag = YAK
+			original_tag = JAK
+			original_tag = YAC
+			original_tag = NAK
+			original_tag = SHA
+			original_tag = BAD
+			original_tag = MNT
+		}
+	}
+}
+
+YAK_buuhtan_motors_organization = {
+	name = YAK_buuhtan_motors
+	include = generic_medium_tank_organization
+	icon = generic_industrial_concern_2
+	allowed = {	
+		has_dlc = "Arms Against Tyranny"
+		OR = {
+			original_tag = YAK
+			original_tag = JAK
+			original_tag = YAC
+			original_tag = NAK
+			original_tag = SHA
+			original_tag = BAD
+			original_tag = MNT
+		}
+	}
+}
+
+JAK_yakistanks_organization = {
+	name = JAK_yakistanks
+	include = generic_mobile_tank_organization
+	icon = GFX_idea_YAK_yakistanks
+	available = {
+		FROM = { 
+			owns_state = 273
+		}
+	}
+	allowed = {
+		OR = {
+			original_tag = YAK
+			original_tag = JAK
+			original_tag = YAC
+			original_tag = NAK
+			original_tag = SHA
+			original_tag = BAD
+			original_tag = MNT
+		}
+		has_dlc = "Arms Against Tyranny"
+	}
+}
+
+
+ ######  ##     ## #### ########   ######  
+##    ## ##     ##  ##  ##     ## ##    ## 
+##       ##     ##  ##  ##     ## ##       
+ ######  #########  ##  ########   ######  
+      ## ##     ##  ##  ##              ## 
+##    ## ##     ##  ##  ##        ##    ## 
+ ######  ##     ## #### ##         ######  
+
+
+ YAK_serekh_ni_khurtel_organization = {
+	name = YAK_serekh_ni_khurtel
+	include = generic_raider_ship_organization
+	icon = YAK_serekh_ni_khurtel
+	allowed = {	
+		has_dlc = "Arms Against Tyranny"
+		OR = {
+			original_tag = YAK
+			original_tag = JAK
+			original_tag = YAC
+			original_tag = NAK
+			original_tag = SHA
+			original_tag = BAD
+			original_tag = MNT
+		}
+	}
+}
+
+
+########  ##          ###    ##    ## ########  ######  
+##     ## ##         ## ##   ###   ## ##       ##    ## 
+##     ## ##        ##   ##  ####  ## ##       ##       
+########  ##       ##     ## ## ## ## ######    ######  
+##        ##       ######### ##  #### ##             ## 
+##        ##       ##     ## ##   ### ##       ##    ## 
+##        ######## ##     ## ##    ## ########  ######  
+
+
+YAK_northwind_design_organization = {
+	name = YAK_northwind_design
+	include = generic_light_aircraft_organization
+	icon = YAK_northwind_design
+	allowed = {	
+		has_dlc = "Arms Against Tyranny"
+		OR = {
+			original_tag = YAK
+			original_tag = JAK
+			original_tag = YAC
+			original_tag = NAK
+			original_tag = SHA
+			original_tag = BAD
+			original_tag = MNT
+		}
+	}
+}
+
+YAK_darksky_aeronautics_organization = {
+	name = YAK_darksky_aeronautics
+	include = generic_medium_aircraft_organization
+	icon = YAK_darksky_aeronautics
+	allowed = {	
+		has_dlc = "Arms Against Tyranny"
+		OR = {
+			original_tag = YAK
+			original_tag = JAK
+			original_tag = YAC
+			original_tag = NAK
+			original_tag = SHA
+			original_tag = BAD
+			original_tag = MNT
+		}
+	}
+}
+
+
+##     ##    ###    ######## ######## ########  #### ######## ##       
+###   ###   ## ##      ##    ##       ##     ##  ##  ##       ##       
+#### ####  ##   ##     ##    ##       ##     ##  ##  ##       ##       
+## ### ## ##     ##    ##    ######   ########   ##  ######   ##       
+##     ## #########    ##    ##       ##   ##    ##  ##       ##       
+##     ## ##     ##    ##    ##       ##    ##   ##  ##       ##       
+##     ## ##     ##    ##    ######## ##     ## #### ######## ######## 
+
+JAK_ryben_industries_organization = {
+	name = JAK_ryben_industries
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_JAK_ryben_industries
+	allowed = {
+		OR = {
+			original_tag = YAK
+			original_tag = JAK
+			original_tag = YAC
+			original_tag = NAK
+			original_tag = SHA
+			original_tag = BAD
+			original_tag = MNT
+		}
+		has_dlc = "Arms Against Tyranny"
+	}
+}

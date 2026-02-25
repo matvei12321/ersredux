@@ -1,0 +1,73 @@
+division_template = {
+	name = "Milizia"
+	division_names_group = WNG_CAV_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 1 }
+	}
+	priority = 0
+}
+
+
+units = {
+	division = { # "Kebur Zabagna"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 183
+		division_template = "Milizia"
+		start_experience_factor = 0.1
+	}
+	division = { # "Kebur Zabagna"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 183
+		division_template = "Milizia"
+		start_experience_factor = 0.1
+	}	
+	division = { # "Kebur Zabagna"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6166
+		division_template = "Milizia"	
+		start_experience_factor = 0.1
+	}
+	division = { # "Kebur Zabagna"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9118
+		division_template = "Milizia"
+		start_experience_factor = 0.1
+	}	
+	division = { # "Kebur Zabagna"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9118
+		division_template = "Milizia"	
+		start_experience_factor = 0.1
+	}
+	division = { # "Kebur Zabagna"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 2998
+		division_template = "Milizia"	
+		start_experience_factor = 0.1
+	}
+
+
+}
+
+#################################

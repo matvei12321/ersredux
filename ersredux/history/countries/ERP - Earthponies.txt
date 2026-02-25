@@ -1,0 +1,112 @@
+capital = 123
+
+
+set_research_slots = 3
+starting_train_buffer = 3
+
+country_event = { id = erp.16 days = 385 }
+
+save_global_event_target_as = earthponies_puppet_target
+
+recruit_character = ERP_priests
+recruit_character = ERP_silva
+recruit_character = ERP_martis
+recruit_character = ERP_alpha
+recruit_character = ERP_rose
+recruit_character = ERP_swifty_main
+recruit_character = ERP_nighty_spark
+recruit_character = ERP_bloody_rem
+recruit_character = ERP_applejack
+recruit_character = ERP_ban
+recruit_character = ERP_nobody
+recruit_character = ERP_mirage
+recruit_character = ERP_little_gun
+recruit_character = ERP_rina
+recruit_character = ERP_loyyd
+recruit_character = ERP_terra
+
+recruit_character = ERP_field_marshal_1
+recruit_character = ERP_corps_commander_1
+recruit_character = ERP_corps_commander_2
+recruit_character = ERP_corps_commander_3
+recruit_character = ERP_corps_commander_4
+recruit_character = ERP_corps_commander_5
+
+#### Unlockable characters
+recruit_character = ERP_father_fever_dream
+recruit_character = ERP_father_neverglide
+recruit_character = ERP_father_mirina
+recruit_character = ERP_father_faint_lord
+
+add_opinion_modifier = { target = NIG modifier = night_raders_opinion }
+
+oob = "ERP_1007"
+
+add_ideas = {
+	
+	ERP_religion_crysis
+	ERP_overpopulation
+	ERP_economic_dependence_balance
+	good_rainbow_factory_effect
+	ERS_main_nation
+	
+	disarmed_nation
+	lack_of_scientists2
+	outdated_industry
+	no_poverty
+	pandorism
+}
+
+set_major = yes
+
+set_technology = {
+	 
+	 earthpony_race = 1
+	
+	tech_support = 1
+	melee_weapons = 1
+	melee_weapons1 = 1
+	infantry_weapons = 1
+	pre_gw_artillery = 1
+	basic_train = 1
+	trade_interdiction = 1
+}
+actually_fix_weapon_techs = yes #THIS HAS TO BE CALLED IN EVERY HISTORY FILE RIGHT AFTER MAIN set_technology!
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+	}
+}
+
+
+
+set_convoys = 0
+set_popularities = {
+
+	neutrality = 10
+	democratic = 36
+	fascism = 33
+	communism = 21
+}
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1.10.10"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+
+set_stability = 0.4
+set_war_support = 0.2

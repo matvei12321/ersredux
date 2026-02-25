@@ -1,0 +1,271 @@
+﻿l_english:
+ 
+ CLD:0 "Permafrost"
+ CLD_DEF:0 "Permafrost"
+ CLD_ADJ:0 "Permafrost"
+ 
+ UNC:0 "Kingdom of Unicornia"
+ UNC_DEF:0 "Kingdom of Unicornia"
+ UNC_ADJ:0 "Unicornian"
+
+ UNP:0 "Fillydelphia Quarantine Zone"
+ UNP_DEF:0 "Fillydelphia Quarantine Zone"
+ UNP_ADJ:0 "Филлидельфийск"
+ 
+ BRV:0 "Duchy of Baravia"
+ BRV_DEF:0 "Duchy of Baravia"
+ BRV_ADJ:0 "Baravian"
+ 
+ MNH_anarchism:0 "Manehattan Trade Federation"
+ MNH_anarchism_DEF:0 "Manehattan Trade Federation"
+ MNH_neutrality:0 "Manehattan Trade Federation"
+ MNH_neutrality_DEF:0 "Manehattan Trade Federation"
+ MNH_fascism:0 "Конфедерация Военных Корпораций Мейнхеттена"
+ MNH_fascism_DEF:0 "Конфедерация Военных Корпораций Мейнхеттена"
+ MNH_communism:0 "Капитал-Коммунистическая Реалия"
+ MNH_communism_DEF:0 "Капитал-Коммунистическая Реалия"
+ MNH_democratic:0 "Republic of Manehattan"
+ MNH_democratic_DEF:0 "Republic of Manehattan"
+ MNH_fascism_ADJ:0 "Military Corporatist"
+ MNH_democratic_ADJ:0 "Manehattan"
+ MNH_neutrality_ADJ:0 "Manehattan"
+ MNH_communism_ADJ:0 "Capital-Communist"
+ 
+ ERP_neutrality:0 "Holy Kingdom of Pandoria"
+ ERP_neutrality_DEF:0 "Holy Kingdom of Pandoria"
+ ERP_fascism:0 "Union of Independence of Earth Ponies"
+ ERP_fascism_DEF:0 "Union of Independence of Earth Ponies"
+ ERP_communism:0 "Socialist Republic of Equus"
+ ERP_communism_DEF:0 "Socialist Republic of Equus"
+ ERP_democratic:0 "Republic of Pandoria"
+ ERP_democratic_DEF:0 "Republic of Pandoria"
+ ERP_fascism_ADJ:0 "Earthpony"
+ ERP_democratic_ADJ:0 "Earthpony"
+ ERP_neutrality_ADJ:0 "Earthpony"
+ ERP_communism_ADJ:0 "Earthpony"
+
+ ER1_fascism:0 "Дети Марса"
+ ER1_fascism_DEF:0 "Дети Марса"
+ ER1_fascism_ADJ:0 "Рейтровейвск"
+
+ ER2_fascism:0 "Industriatika"
+ ER2_fascism_DEF:0 "Industriatika"
+ ER2_fascism_ADJ:0 "Industrial"
+ 
+ ER3_fascism:0 "§RОбъединённый Фронт Национальной Коммунистической Утопии§!"
+ ER3_fascism_DEF:0 "Объединённый Фронт Национальной Коммунистической Утопии"
+ ER3_fascism_ADJ:0 "Национал-коммунистическ"
+ 
+ PGS_neutrality:0 "Kingdom of Pegasopolis"
+ PSG_neutrality_DEF:0 "Kingdom of Pegasopolis"
+ PGS_fascism:0 "Pegasus Military Tribes"
+ PGS_fascism_DEF:0 "Pegasus Military Tribes"
+ PGS_communism:0 "Pegasus Free Territory"
+ PGS_communism_DEF:0 "Pegasus Free Territory"
+ PGS_democratic:0 "Beautiful Faraway"
+ PGS_democratic_DEF:0 "Beautiful Faraway"
+ PGS_fascism_ADJ:0 "Pegasus"
+ PGS_democratic_ADJ:0 "Pacifistic"
+ PGS_neutrality_ADJ:0 "Pegasus"
+ PGS_communism_ADJ:0 "Pegasus"
+ 
+ ANR:0 "Pegasus Free Territory"
+ ANR_DEF:0 "Pegasus Free Territory"
+ ANR_ADJ:0 "Anarchistic"
+ 
+ LOS_neutrality:0 "Free City of Los Pegasus"
+ LOS_neutrality_DEF:0 "Free City of Los Pegasus"
+ LOS_fascism:0 "National Republic of Los Pegasus"
+ LOS_fascism_DEF:0 "National Republic of Los Pegasus"
+ LOS_communism:0 "Workers' Republic of Los Pegasus"
+ LOS_communism_DEF:0 "Workers' Republic of Los Pegasus"
+ LOS_democratic:0 "Republic of Los Pegasus"
+ LOS_democratic_DEF:0 "Republic of Los Pegasus"
+ LOS_ADJ:0 "Los Pegasus"
+ 
+ NGC_neutrality:0 "Nuvo Griffonica"
+ NGC_neutrality_DEF:0 "Nuvo Griffonica"
+ PRA_fascism:0 "Committee for the Development of South-Western Lands"
+ PRA_fascism_DEF:0 "Committee for the Development of South-Western Lands"
+ NGC_communism:0 "Workers' Republic"
+ NGC_communism_DEF:0 "Workers' Republic"
+ NGC_democratic:0 "Республика Нуво Грифоника"
+ NGC_democratic_DEF:0 "Республика Нуво Грифоника"
+ NPRA_ADJ:0 "Nuvogriffonian
+ 
+ PGV:0 "Olenian Ponyold"
+ PGV_DEF:0 "Olenian Ponyold"
+ PGV_fascism:0 "Varvarogenia"
+ PGV_fascism_DEF:0 "Varvarogenia"
+ PGV_fascism_ADJ:0 "Varvarogenian"
+ PGV_ADJ:0 "Ponyold"
+
+ ROK:0 "Roke Raiders"
+ ROK_DEF:0 "Roke Raiders"
+ ROK_ADJ:0 "Roke"
+ 
+ HOR:0 "Whitehooves"
+ HOR_DEF:0 "Whitehooves"
+ HOR_ADJ:0 "Whitehooves"
+ 
+ CLT_neutrality:0 "Dodge City"
+ CLT_neutrality_DEF:0 "Dodge City"
+ CLT_fascism:0 "Dodge City"
+ CLT_fascism_DEF:0 "Dodge City"
+ CLT_communism:0 "Dodge City"
+ CLT_communism_DEF:0 "Dodge City"
+ CLT_democratic:0 "Saved Land"
+ CLT_democratic_DEF:0 "Saved Land"
+ CLT_fascism_ADJ:0 "Cultist"
+ CLT_democratic_ADJ:0 "Saved"
+ CLT_neutrality_ADJ:0 "Dodge City"
+ CLT_communism_ADJ:0 "Dodge City"
+ 
+ APL:0 "Appleloosa"
+ APL_DEF:0 "Appleloosa"
+ APL_ADJ:0 "Appleloosian"
+ 
+ MIN:0 "Blackstone Mines"
+ MIN_DEF:0 "Blackstone Mines"
+ MIN_ADJ:0 "Mine"
+ 
+ TST:0 "Ayaсachtli Tribe"
+ TST_DEF:0 "Ayaсachtli Tribe"
+ TST_ADJ:0 "Ayaсachtlian"
+
+ VRX:0 "Vraks Lands"
+ VRX_DEF:0 "Vraks Lands"
+ VRX_ADJ:0 "Vraks"
+ 
+ LYC:0 "Lyctida Lands"
+ LYC_DEF:0 "Lyctida Lands"
+ LYC_ADJ:0 "Lyctida"
+ 
+ DTS:0 "Dytrysium Ports"
+ DTS_DEF:0 "Dytrysium Ports"
+ DTS_ADJ:0 "Dytrysium"
+ 
+ SRF:0 "Soryth Lands"
+ SRF_DEF:0 "Soryth Lands"
+ SRF_ADJ:0 "Soryth"
+ 
+ PRG_neutrality:0 "Duchy of Prance"
+ PRG_neutrality_DEF:0 "Duchy of Prance"
+ PRG_fascism:0 "Viva Le Prance"
+ PRG_fascism_DEF:0 "Viva Le Prance"
+ PRG_communism:0 "Union of Workers of Burgundy"
+ PRG_communism_DEF:0 "Union of Workers of Burgundy"
+ PRG_democratic:0 "Pan-Prench Union"
+ PRG_democratic_DEF:0 "Pan-Prench Union"
+ PRG_ADJ:0 "Prench"
+
+ SVR_neutrality:0 "Severyanian Republic"
+ SVR_neutrality_DEF:0 "Severyanian Republic"
+ SVR_fascism:0 "Severyanian Empire"
+ SVR_fascism_DEF:0 "Severyanian Empire"
+ SVR_communism:0 "Central Northern Socialist Republic"
+ SVR_communism_DEF:0 "Central Northern Socialist Republic"
+ SVR_democratic:0 "Severyanian Republic"
+ SVR_democratic_DEF:0 "Severyanian Republic"
+ SVR_ADJ:0 "Severyana"
+ 
+ SHA:0 "Shamanat Mathan Krikhe"
+ SHA_DEF:0 "Shamanat Mathan Krikhe"
+ SHA_ADJ:0 "Shamanic"
+ 
+ BAD:0 "Khanate of Baradur"
+ BAD_DEF:0 "Khanate of Baradur"
+ BAD_ADJ:0 "Yak"
+ 
+ MNT:0 "Mountain Khaganate of the Warriors of the Heavenly Deity Yakrun"
+ MNT_DEF:0 "Mountain Khaganate of the Warriors of the Heavenly Deity Yakrun"
+ MNT_ADJ:0 "Yak"
+ 
+ YAC:0 "Socialist Union of Yaks"
+ YAC_DEF:0 "Socialist Union of Yaks"
+ YAC_ADJ:0 "Yak"
+ 
+ NAK:0 "Yakyakian Numuul"
+ NAK_DEF:0 "Yakyakian Numuul"
+ NAK_ADJ:0 "Yak"
+ 
+ VST:0 "Volistad"
+ VST_DEF:0 "Volistad"
+ VST_ADJ:0 "Volistadian"
+ 
+ NEI:0 "Neigua"
+ NEI_DEF:0 "Neigua"
+ NEI_ADJ:0 "Neiguaian"
+ 
+ YUK:0 "Yukka"
+ YUK_DEF:0 "Yukka"
+ YUK_ADJ:0 "Yukkian"
+ 
+ STR:0 "Wild Coast"
+ STR_DEF:0 "Wild Coast"
+ STR_ADJ:0 "Wild"
+ 
+ MID:0 "Kingdom of Midland"
+ MID_DEF:0 "Kingdom of Midland"
+ MID_ADJ:0 "Midland"
+ 
+ MES:0 "Берег Месяца"
+ MES_DEF:0 "Берег Месяца"
+ MES_ADJ:0 "Месяц"
+ 
+ NIG:0 "Night Raiders"
+ NIG_DEF:0 "Night Raiders"
+ NIG_ADJ:0 "Night"
+ 
+ YKL:0 "The General Union of Yukoltan"
+ YKL_DEF:0 "The General Union of Yukoltan"
+ YKL_ADJ:0 "Yukoltanisn"
+ 
+ PLP:0 "Pol Top Commune"
+ PLP_DEF:0 "Pol Top Commune"
+ PLP_ADJ:0 "Poltopian"
+ 
+ SIR:0 "Chiriyas Tribe"
+ SIR_DEF:0 "Chiriyas Tribe
+ SIR_ADJ:0 "Chiriyas"
+ 
+ CHL:0 "The Slave - Owning Republic of Chilchotl"
+ CHL_DEF:0 "The Slave - Owning Republic of Chilchotl"
+ CHL_ADJ:0 "Chilchotlian"
+ 
+ GUA:0 "Guardians"
+ GUA_DEF:0 "Guardians"
+ GUA_democratic:0 "Peripheral Republic"
+ GUA_democratic_DEF:0 "Peripheral Republic"
+ GUA_ADJ:0 "Guardian"
+ GUA_democratic_ADJ:0 "Peripherian"
+ 
+ SLT:0 "People 's Chiefdom of Soltikinech"
+ SLT_DEF:0 "People 's Chiefdom of Soltikinechч"
+ SLT_ADJ:0 "Soltikinech"
+ 
+ SND:0 "Union of Hills, Deserts and Mountains"
+ SND_DEF:0 "Union of Hills, Deserts and Mountains"
+ SND_ADJ:0 "Union"
+ 
+ RZR:0 "Ruiners"
+ RZR_DEF:0 "Ruiners"
+ RZR_ADJ:0 "Ruiners"
+ 
+ CHC:0 "Roter Aufstand"
+ CHC_DEF:0 "Roter Aufstand"
+ CHC_ADJ:0 "Gold Muffin's"
+ 
+ UMF:0 "Umferstat"
+ UMF_DEF:0 "Umferstat"
+ UMF_ADJ:0 "Umferstat"
+ 
+ KZK:0 "Kozkaz Army"
+ KZK_DEF:0 "Kozkaz Army"
+ KZK_ADJ:0 "Kozkaz Army"
+ 
+ EMP:0 "Southwest Desert"
+ 
+ STO:0 "Storm Kingdom"
+ STO_DEF:0 "Storm Kingdom"
+ STO_ADJ:0 "Stormy"

@@ -1,0 +1,25 @@
+focus_tree = {
+	id = VRX_start_tree
+	continuous_focus_position = { x = 1 y = -1750 }
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = VRX
+		}
+	}
+	shared_focus = VRX_war_queen
+	shared_focus = VRX_volistad_conqured
+}
+focus_tree = {
+	id = VRX_volistad_Naw
+	continuous_focus_position = { x = 1 y = -1750 }
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = VRX
+		}
+	}
+	shared_focus = VRX_volistad_conqured
+}

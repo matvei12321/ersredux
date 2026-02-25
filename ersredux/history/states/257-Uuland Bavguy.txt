@@ -1,0 +1,33 @@
+state={
+	id=257
+	name="STATE_257"
+
+	provinces={
+		1719 6713 7611 9682 11204 11621
+	}
+
+	manpower=1643472
+	state_category = pastoral
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = NAK
+		add_core_of = NAK
+		add_claim_by = YAK
+		add_claim_by = YAC
+		add_claim_by = JAK
+		add_claim_by = BAD
+		add_claim_by = SHA
+		add_claim_by = MNT
+		victory_points = {
+			9682 3
+		}
+		buildings = {
+			arms_factory = 1
+		}
+	}
+	resources={
+		steel=8
+	}
+
+}

@@ -1,0 +1,29 @@
+state={
+	id=350
+	name="STATE_350"
+
+	provinces={
+		532 583 4018 5012 6418 7203 7857 9429 9527 9569 10045 11497 12020
+	}
+
+	manpower=1102080
+	state_category=town
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = TST
+		add_core_of = TST
+		
+		victory_points = { 10045 6 }
+		
+		buildings = {
+			industrial_complex = 1
+			arms_factory = 1
+		}
+	}
+
+	resources={
+		steel = 4
+		rubber=10
+	}
+}

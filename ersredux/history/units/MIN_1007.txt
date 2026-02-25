@@ -1,0 +1,29 @@
+﻿division_template = {
+	name = "Miners"			#Infantry Division -
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division = {
+		name = "Miners"
+		location = 11029
+		division_template = "Miners"
+		start_experience_factor = 0.3 }
+	division = {
+		name = "Miners"
+		location = 11029
+		division_template = "Miners"
+		start_experience_factor = 0.3 }
+}

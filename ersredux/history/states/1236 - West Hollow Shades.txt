@@ -1,0 +1,25 @@
+state={
+	id=1236
+	name="STATE_1236"
+
+	provinces={
+		575 3516 3988 4078 7211 13272 13273
+	}
+
+	manpower=44551
+	state_category=rural
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = UNC
+		add_core_of = UNC
+
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	
+	resources = {
+		oil = 3
+	}
+}

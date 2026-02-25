@@ -1,0 +1,41 @@
+characters = {
+	PGV_burevestnitsa={
+		name=PGV_burevestnitsa
+		portraits={
+			civilian={
+				large="gfx/leaders/PGV/burevestnitsa.tga"
+			}
+		}
+		country_leader={
+			desc="PGV_burevestnitsa_desc"
+			ideology=despotism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		
+		country_leader={
+			desc="PGV_burevestnitsa_desc"
+			ideology=nazism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		
+		country_leader={
+			desc="PGV_burevestnitsa_desc"
+			ideology=liberalism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		
+		country_leader={
+			desc="PGV_burevestnitsa_desc"
+			ideology=leninism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

@@ -1,0 +1,18 @@
+ideas = {
+	country= {
+		SIR_help_everyone = {
+			
+			allowed = {
+				original_tag = SIR
+			}
+			
+			picture = Generic_Harmonist_Constitution
+			
+			modifier = {
+				democratic_drift = 0.01
+				weekly_manpower = 450
+				stability_factor = -0.035
+			}
+		}
+	}
+}

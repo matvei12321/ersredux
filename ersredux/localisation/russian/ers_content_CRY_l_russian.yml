@@ -1,0 +1,137 @@
+﻿l_russian:
+
+ ##### PARTIES
+
+ ##### CHARACTERS
+ 
+ 
+ 
+ 
+ 
+ ##### NATIONAL FOCUS
+ CRY_ers_protect_state:0 "Защита Кристального государства"
+ CRY_ers_protect_state_desc:0 "WIP"
+ CRY_ers_pre_attack:0 "Доктрина Агрессивного Сражения"
+ CRY_ers_pre_attack_desc:0 "WIP"
+ CRY_ers_defence:0 "Доктрина Углублённого Сражения"
+ CRY_ers_defence_desc:0 "WIP"
+ CRY_ers_opolcheniye:0 "Положиться на Ополчение"
+ CRY_ers_opolcheniye_desc:0 "WIP"
+ CRY_ers_military_trainingds:0 "Провести Военные Учения"
+ CRY_ers_military_trainingds_desc:0 "WIP"
+ 
+ 
+ CRY_ers_tank_strategy:0 "Стремительная Армия"
+ CRY_ers_tank_strategy_desc:0 "WIP"
+ CRY_ers_project:0 ""Проект""
+ CRY_ers_project_desc:0 "WIP"
+ CRY_ers_artillery_strategy:0 "Новая Роль Артиллерии"
+ CRY_ers_artillery_strategy_desc:0 "WIP"
+ CRY_ers_magical_bullets:0 "Кристальные Снаряды"
+ CRY_ers_magical_bullets_desc:0 "WIP"
+ CRY_ers_centralized_strategy:0 "Централизованное Командование"
+ CRY_ers_centralized_strategy_desc:0 "WIP"
+ CRY_ers_decentralized_strategy:0 "Децентрализованное Командование"
+ CRY_ers_decentralized_strategy_desc:0 "WIP"
+ CRY_ers_planning_stratefy:0 "Штабное Планирование"
+ CRY_ers_planning_stratefy_desc:0 "WIP"
+ CRY_ers_manpower_strategy:0 "Народная Армия"
+ CRY_ers_manpower_strategy_desc:0 "WIP"
+ CRY_ers_partisans:0 "Обучить Партизан"
+ CRY_ers_partisans_desc:0 "WIP"
+ CRY_ers_okop:0 "Магическая Окопная Война"
+ CRY_ers_okop_desc:0 "WIP"
+ CRY_ers_modern_doctrine:0 "Современная доктрина"
+ CRY_ers_modern_doctrine_desc:0 ""
+ CRY_ers_secret_snowburi_base:0 "Секретная база Сноубьюри"
+ CRY_ers_secret_snowburi_base_desc:0 ""
+ CRY_ers_secret_weapon:0 "Секретное оружие"
+ CRY_ers_secret_weapon_desc:0 ""
+ CRY_ers_radiodivisions:0 "Радиовойска"
+ CRY_ers_radiodivisions_desc:0 ""
+ CRY_ers_magic_rifles:0 "Перегрузка магического оружия"
+ CRY_ers_magic_rifles_desc:0 ""
+ CRY_ers_rubrum_complex:0 "Военный комплекс Рубрум"
+ CRY_ers_rubrum_complex_desc:0 ""
+ CRY_ers_rubrum_complex_upgrade:0 "Расширение военного комлпекса"
+ CRY_ers_rubrum_complex_upgrade_desc:0 ""
+ CRY_ers_crystal_granades:0 "Кристальные гранаты"
+ CRY_ers_crystal_granades_desc:0 ""
+ CRY_ers_specops:0 "Спецотряд "К""
+ CRY_ers_specops_desc:0 ""
+ CRY_ers_stormtropers:0 "Оборонные технологии"
+ CRY_ers_stormtropers_desc:0 ""
+ CRY_ers_state_arsenal:0 "Государственный арсенал"
+ CRY_ers_state_arsenal_desc:0 ""
+ CRY_ers_crystal_armour:0 "Кристальная броня"
+ CRY_ers_crystal_armour_desc:0 ""
+ CRY_ers_research_upgrade:0 "Кристальновоенная академия"
+ CRY_ers_research_upgrade_desc:0 ""
+ CRY_ers_no_mercy:0 "Без Пощады"
+ CRY_ers_no_mercy_desc:0 ""
+ CRY_ers_defence_comitte:0 "Комитет Обороны"
+ CRY_ers_defence_comitte_desc:0 ""
+ CRY_ers_air_trainings:0 "Воздушные тренировки"
+ CRY_ers_air_trainings_desc:0 ""
+ CRY_ers_navy_trainings:0 "Наше море"
+ CRY_ers_navy_trainings_desc:0 ""
+ 
+ 
+ 
+ ##### DECISIONS 
+
+
+ ##### CONCERNS
+
+ 
+ ##### IDEAS
+ CRY_agressive_protectors:0 "Защитники нашего дома"
+ CRY_agressive_protectors_desc:0 "Мы защитим наш кристальный дом. Любой ценой!"
+ CRY_protectors:0 "Защитники нашего дома"
+ CRY_protectors_desc:0 "Мы защитим наш кристальный дом. Любой ценой!"
+ CRY_magic_artillery:0 "Переполненные кристальной энергией снаряды"
+ CRY_magic_artillery_desc:0 "Кроме того, что в этих снарядах взрывается порох, в них также высвобождается большое количество кристальной энергии, что увеличивает силу взрыва в разы."
+ CRY_decentralized_strategy:0 "Децентрализованная Армия"
+ CRY_centralized_strategy:0 "Централизованная Армия"
+ CRY_manpower_idea:0 "Партизанскые отряды"
+ CRY_dig_in_idea:0 "Кристальные окопы"
+ CRY_overharged_equipment:0 "Перегруженные магические винтовки"
+ CRY_specops_idea:0 "Спецотряд "К""
+ CRY_rubrum_complex:0 "Ультравоенный комплекс Рубрум"
+ CRY_support_equipment:0 "Новые виды военных рот"
+ CRY_crystal_state:0 "Кристальное государство"
+ CRY_crystal_state_desc:0 "На территории государства [CRY.getname] находятся самые большие запасы магических кристалов в мире. Некоторые учёные выдвигают теорию, что такое количество сосредоточения кристальной энергии повлияло на развитие местных пони, что привело к их эволюционированию в новый вид - в кристальных пони."
+ CRY_pacifism:0 "Пацифизм"
+ CRY_pacifism_desc:0 "Кристальные пони не очень воинственны по своей природе."
+ CRY_pan_ponyism:0 "Кристальный пан-понизм"
+ CRY_pan_ponyism_desc:0 "В кристальном государстве уживаются вместе кристальные пегасы, кристальные единороги и кристальные земные пони. Несмотря на то, что они считаются единым народом, три кристальных расы имеют ряд разногласий меж друг другом."
+ CRY_no_mercy_idea:0 "Война без ограничений"
+ CRY_no_mercy_idea_desc:0 "Мы будем вести войну так, как мы хотим. Для защиты кристального государства мы будем использовать любые средства и методы."
+ CRY_crystal_grenades_idea:0 "Кристальные гранаты"
+ CRY_military_industry_idea:0 "Создание госарсенала"
+ 
+ 
+ 
+ #### OOB
+ 
+ #### COSMETIC TAGS
+ 
+ #### TOOLTIPS
+
+ cry_ers_opolcheniye_tt:0 "Сформирует §Yтри дивизии ополчения§!"
+ 
+ 
+ 
+ #### Factions
+
+ #### TRAITS 
+ 
+ 
+ 
+ ####
+ unicorns_region:0 "Дистрикт кристальных единорогов"
+ earthponies_region:0 "Дистрикт кристальных земнопони"
+ pegasi_region:0"Дистрикт кристальных пегасов"
+ 
+ #### EVENTS
+ 

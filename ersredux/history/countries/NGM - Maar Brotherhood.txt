@@ -1,0 +1,69 @@
+capital = 1230
+
+add_ideas = {
+	poor_science_base
+	detached_country
+	lack_of_scientists
+	insane_idea
+	foreign_right0
+	closed_economy
+	primitive_economy
+}
+
+set_research_slots = 0
+starting_train_buffer = 2
+
+oob = "NGM_1007"
+
+recruit_character = NGM_maar_herald
+
+set_technology = {
+  griffon_race = 1
+  melee_weapons = 1
+  melee_weapons1 = 1
+}
+actually_fix_weapon_techs = yes #THIS HAS TO BE CALLED IN EVERY HISTORY FILE RIGHT AFTER MAIN set_technology!
+
+
+add_equipment_to_stockpile = {
+  type = melee_equipment_1
+  amount = 853
+  producer = NGC
+}
+
+set_popularities = {
+	democratic = 0
+	fascism = 100
+	communism = 0
+	neutrality = 0
+}
+set_politics = {
+  ruling_party = fascism
+  last_election = "1.10.10"
+  election_frequency = 36
+  elections_allowed = no
+}
+set_party_name = { 
+    ideology = neutrality 
+    long_name = NGM_heretics_party
+    name = NGM_heretics_party
+  }
+  set_party_name = { 
+    ideology = fascism
+    long_name = NGM_brotherhood_party
+    name = NGM_brotherhood_party
+  }
+  set_party_name = { 
+    ideology = communism
+    long_name = NGM_heretics_party
+    name = NGM_heretics_party
+  }
+  set_party_name = { 
+    ideology = democratic
+    long_name = NGM_heretics_party
+    name = NGM_heretics_party
+  }
+
+
+set_stability = 0.2
+set_war_support = 0.2

@@ -1,0 +1,40 @@
+division_template = {
+	name = "Prench Anti-Revanshism Rebelion"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+	}
+
+	support = {
+	}
+	priority = 0
+}
+
+units = {
+	division = {
+		name = "Prench Anti-Revanshism Rebelion"
+		location = 3534
+		division_template = "Prench Anti-Revanshism Rebelion"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Prench Anti-Revanshism Rebelion"
+		location = 3534
+		division_template = "Prench Anti-Revanshism Rebelion"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Viva la Prance"
+		location = 3534
+		division_template = "Prench Anti-Revanshism Rebelion"
+		start_experience_factor = 0.2
+	}
+}

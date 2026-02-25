@@ -1,0 +1,460 @@
+characters = {
+	LYC_queen_aurantia = {
+		name=chn_queen_aurantia
+			portraits={
+				army={				
+					small="gfx/interface/ideas/chn_queen_aurantia.dds"
+				}
+				civilian={
+					large="gfx/leaders/LYC/aurantia_basic.tga"
+				}
+			}		
+			
+		country_leader={
+			desc="POLITICS_AURANTIA_DESC"
+			ideology=ultranationalism
+			traits={ queen_aurantia little_not_ok }
+			expire="1965.1.1.1"
+			id=-1
+		}	
+	}
+	
+	LYC_funny_anglosaks = {
+		name=LYC_funny_anglosaks
+			portraits={
+				civilian={
+					large="gfx/leaders/CHN/Portrait_Changelings_Generic_land_1.tga"
+				}
+			}		
+			
+		country_leader={
+			desc="POLITICS_funny_anglosaks_DESC"
+			ideology=socialism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}	
+	}
+	
+	LYC_tyran = {
+		name=LYC_tyran
+			portraits={
+				civilian={
+					large="gfx/leaders/CHN/Portrait_Changelings_Generic_land_2.tga"
+				}
+			}		
+			
+		country_leader={
+			desc="POLITICS_tyran_DESC"
+			ideology=democratic_socialism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}	
+	}
+	
+	LYC_council = {
+		name=lyc_council
+			portraits={
+			civilian={
+				large="gfx/leaders/leader_marshal_unknown.dds"
+			}
+		}
+	}
+	
+	#### ADVISORS
+	
+	LYC_grizex={
+		name=LYC_grizex
+		portraits={
+			army={
+				small="GFX_idea_unknown_advisor_bug"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = LYC_grizex_token
+			cost = 150
+			allowed = {
+				original_tag = LYC
+			}
+			traits = { silent_workhorse }
+		}
+	}
+	
+	LYC_arcalys={
+		name=LYC_arcalys
+		portraits={
+			army={
+				small="GFX_idea_unknown_advisor_bug"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = LYC_arcalys_token
+			cost = 175
+			allowed = {
+				original_tag = LYC
+			}
+			traits = { silent_workhorse }
+		}
+	}
+	
+	LYC_minos={
+		name=LYC_minos
+		portraits={
+			army={
+				small="GFX_idea_unknown_advisor_bug"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = LYC_minos_token
+			cost = 150
+			allowed = {
+				original_tag = LYC
+			}
+			traits = { prince_of_terror }
+		}
+	}
+	
+	LYC_ixioda={
+		name=LYC_ixioda
+		portraits={
+			army={
+				small="GFX_idea_unknown_advisor_bug"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = LYC_ixioda_token
+			cost = 150
+			allowed = {
+				original_tag = LYC
+			}
+			traits = { industrial_expert }
+		}
+	}
+	
+	LYC_krast={
+		name=LYC_krast
+		portraits={
+			army={
+				small="GFX_idea_unknown_advisor_bug"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = LYC_krast_token
+			cost = 150
+			allowed = {
+				original_tag = LYC
+			}
+			traits = { war_industrialist }
+		}
+	}
+	
+	
+	#### HIGH COMMAND
+	LYC_irizoda={
+		name=LYC_irizoda
+		portraits={
+			army={
+				small="GFX_idea_unknown_advisor_bug"
+			}
+		}
+		advisor = {
+			slot = high_command
+			ledger = army
+			idea_token = LYC_irizoda_token
+			cost = 150
+			allowed = {
+				original_tag = LYC
+			}
+			traits = { army_infantry_1 }
+		}
+	}
+	LYC_malakith={
+		name=LYC_malakith
+		portraits={
+			army={
+				small="GFX_idea_unknown_advisor_bug"
+			}
+		}
+		advisor = {
+			slot = high_command
+			ledger = army
+			idea_token = LYC_malakith_token
+			cost = 150
+			allowed = {
+				original_tag = LYC
+			}
+			traits = { army_concealment_2 }
+		}
+	}
+	LYC_arantadyss={
+		name=LYC_arantadyss
+		portraits={
+			army={
+				small="GFX_idea_unknown_advisor_bug"
+			}
+		}
+		advisor = {
+			slot = high_command
+			ledger = army
+			idea_token = LYC_arantadyss_token
+			cost = 150
+			allowed = {
+				original_tag = LYC
+			}
+			traits = { army_artillery_2 }
+		}
+	}
+	LYC_furia={
+		name=LYC_furia
+		portraits={
+			army={
+				small="GFX_idea_unknown_advisor_bug"
+			}
+		}
+		advisor = {
+			slot = high_command
+			ledger = army
+			idea_token = LYC_furia_token
+			cost = 150
+			allowed = {
+				original_tag = LYC
+			}
+			traits = { army_commando_2 }
+		}
+	}
+	LYC_lucidemia={
+		name=LYC_lucidemia
+		portraits={
+			army={
+				small="GFX_idea_unknown_advisor_bug"
+			}
+		}
+		advisor = {
+			slot = high_command
+			ledger = army
+			idea_token = LYC_lucidemia_token
+			cost = 150
+			allowed = {
+				original_tag = LYC
+			}
+			traits = { alt_army_chief_morale_2 }
+		}
+	}
+	
+	#### ARMY CHIEF
+	
+	LYC_versus ={
+		name = LYC_versus
+		portraits={
+			army={
+				small="GFX_idea_unknown_advisor_bug"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = LYC_versus_token
+			cost = 150
+			allowed = {
+				original_tag = LYC
+			}
+			traits = { army_chief_offensive_1 }
+		}
+	}
+	
+	LYC_versus ={
+		name = LYC_versus
+		portraits={
+			army={
+				small="GFX_idea_unknown_advisor_bug"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = LYC_versus_token
+			cost = 150
+			allowed = {
+				original_tag = LYC
+			}
+			traits = { army_chief_offensive_1 }
+		}
+	}
+	
+	LYC_moristad ={
+		name = LYC_moristad
+		portraits={
+			army={
+				small="GFX_idea_unknown_advisor_bug"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = LYC_moristad_token
+			cost = 100
+			allowed = {
+				original_tag = LYC
+			}
+			traits = { army_chief_organizational_2 }
+		}
+	}
+	
+	### AIR CHIEFS ###
+	
+	LYC_immari ={
+		name = LYC_immari
+		portraits={
+			army={
+				small="GFX_idea_unknown_advisor_bug"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = LYC_immari_token
+			cost = 150
+			allowed = {
+				original_tag = LYC
+			}
+			traits = { air_chief_ground_support_2 }
+		}
+	}
+	
+	LYC_distord = {
+		name = LYC_distord
+		portraits={
+			army={
+				small="GFX_idea_unknown_advisor_bug"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = LYC_distord_token
+			cost = 150
+			allowed = {
+				original_tag = LYC
+			}
+			traits = {
+				alt_air_air_superiority_2
+			}
+		}	
+	}
+	
+	LYC_plakhtares = {
+		name = LYC_plakhtares
+		portraits={
+			army={
+				small="GFX_idea_unknown_advisor_bug"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = LYC_plakhtares_token
+			cost = 150
+			allowed = {
+				original_tag = LYC
+			}
+			traits = {
+				air_chief_all_weather_2
+			}
+		}	
+	}
+	
+	#### NAVY CHIEFS
+	
+	LYC_fiustad = {
+		name = LYC_plakhtares
+		portraits={
+			army={
+				small="GFX_idea_unknown_advisor_bug"
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = LYC_fiustad_token
+			cost = 150
+			allowed = {
+				original_tag = LYC
+			}
+			traits = { navy_chief_commerce_raiding_1 }
+		}
+	}
+		
+	#### GENERALS
+	
+	LYC_fon_krieger={
+		name=LYC_fon_krieger
+		portraits={
+			army={
+				large="gfx/leaders/LYC/fon_krieger.tga"
+				small="gfx/interface/ideas/Advisors/CHN/idea_Lunason.tga"
+			}
+		}
+		field_marshal={
+			desc = "KRIEGER_ARMY_DESC"
+			traits={ changeling_race_trait harsh_leader krieger_trait }
+			skill=2
+			attack_skill=4
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	
+	CHN_lunason={
+		name=CHN_lunason
+		portraits={
+			army={
+				large="gfx/leaders/CHN/Lunason.tga"
+				small="gfx/interface/ideas/Advisors/CHN/idea_Lunason.tga"
+			}
+		}
+		corps_commander={
+			traits={ trait_cautious changeling_race_trait artillery_specialist trait_mountaineer }
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			planning_skill=4
+			logistics_skill=1
+			legacy_id=-1
+		}
+		advisor = {
+			slot = theorist
+			idea_token = LYC_lunason_token
+			ledger = army
+			cost = 150
+			allowed = {
+				original_tag = LYC
+			}
+			traits = { superior_firepower_expert }
+		}
+	}
+	
+	
+	#### THEORISTS
+	
+	LYC_grazel={
+		name=LYC_grazel
+		portraits={
+			army={
+				small="GFX_idea_unknown_advisor_bug"
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = idea_lycgrazel
+			ledger = army
+			cost = 150
+			allowed = {
+				original_tag = LYC
+			}
+			traits = {
+				blitzkrieg_theorist
+			}
+		}
+	}
+}

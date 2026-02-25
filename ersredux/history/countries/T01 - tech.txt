@@ -1,0 +1,44 @@
+﻿capital = 3
+
+set_research_slots = 0
+
+set_technology = {
+	generic_race = 1
+}
+actually_fix_weapon_techs = yes #THIS HAS TO BE CALLED IN EVERY HISTORY FILE RIGHT AFTER MAIN set_technology!
+
+set_convoys = 0
+set_popularities = {
+	democratic = 0
+	fascism = 0
+	communism = 0
+	neutrality = 100
+}
+set_politics = {
+
+	ruling_party = neutrality
+	last_election = "1.1.1"
+	election_frequency = 24
+	elections_allowed = no
+}
+
+add_ideas = {
+	isolation
+	disarmed_nation
+	closed_economy
+	generic_race_idea
+	detached_country
+	proper_science_base
+	no_lack_of_scientists
+	no_poverty
+	T01_blockers
+}
+
+set_stability = 1.00
+set_war_support = 0.00
+
+recruit_character = T01_pustota
+
+set_rule = { can_join_factions = no }
+set_rule = { can_create_factions = no }
+set_country_flag = trade_laws_blocked

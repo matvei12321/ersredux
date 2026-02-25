@@ -1,0 +1,79 @@
+﻿division_template = {
+	name = "Rader Division"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+
+	support = {
+	}
+	priority = 2
+}
+
+units = {
+	division = {
+		name = "Raders"
+		location = 676
+		division_template = "Rader Division"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Raders"
+		location = 3937
+		division_template = "Rader Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Raders"
+		location = 11754
+		division_template = "Rader Division"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Raders"
+		location = 1643
+		division_template = "Rader Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Raders"
+		location = 3937
+		division_template = "Rader Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Raders"
+		location = 3937
+		division_template = "Rader Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Raders"
+		location = 3937
+		division_template = "Rader Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Raders"
+		location = 3937
+		division_template = "Rader Division"
+		start_experience_factor = 0.3
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "NGC"
+		}
+		requested_factories = 5
+		progress = 0.86
+		efficiency = 50
+	}
+}

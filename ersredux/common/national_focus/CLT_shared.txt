@@ -1,0 +1,442 @@
+
+
+
+
+shared_focus = {
+	id = CLT_e_l_huyna_1
+	icon = GFX_goal_bag_of_money_pony
+	cost = 3
+	x = 15
+	y = 0
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLT_horrors_of_the_unknown"
+		
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = CLT_e_l_huyna_2
+	icon = GFX_goal_psody_cyrus
+	prerequisite = { focus = CLT_e_l_huyna_1 }
+	cost = 3
+	relative_position_id = CLT_e_l_huyna_1
+	x = 0
+	y = 1
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLT_visit_neibghours"	
+		
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = CLT_e_l_huyna_3
+	icon = GFX_goal_big_news
+	prerequisite = { focus = CLT_e_l_huyna_2 }
+	cost = 3
+	relative_position_id = CLT_e_l_huyna_1
+	x = 0
+	y = 2
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLT_visit_neibghours"	
+		
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = CLT_e_l_huyna_4
+	icon = GFX_goal_UESR_TNO_twilight
+	prerequisite = { focus = CLT_e_l_huyna_3 }
+	cost = 3
+	relative_position_id = CLT_e_l_huyna_1
+	x = 0
+	y = 3
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLT_visit_neibghours"	
+		
+	}
+	ai_will_do = { factor = 10 }
+}
+
+
+
+
+shared_focus = {
+	id = CLT_horrors_of_the_unknown
+	icon = GFX_goal_clt_skull_animated
+	cost = 3
+	x = 8
+	y = 0
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLT_horrors_of_the_unknown"
+			add_political_power = 50
+			country_event = dodge.3
+			hidden_effect = {
+				country_event = { id = dodge.12 days = 50 }
+			}	
+	}
+	ai_will_do = { factor = 10 }
+}
+	
+shared_focus = {
+	id = CLT_visit_neibghours
+	icon = GFX_focus_indy_native_american_focus
+	prerequisite = { focus = CLT_horrors_of_the_unknown }
+	cost = 3
+	relative_position_id = CLT_horrors_of_the_unknown
+	x = 0
+	y = 1
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLT_visit_neibghours"	
+		BUF = {
+			country_event = dodge.1
+		}
+	}
+	ai_will_do = { factor = 10 }
+}
+	
+shared_focus = {
+	id = CLT_altar
+	icon = GFX_goal_clt_the_fog
+	prerequisite = { focus = CLT_visit_neibghours }
+	cost = 3
+	relative_position_id = CLT_horrors_of_the_unknown
+	x = -1
+	y = 2
+	available = {  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLT_altar"
+		country_event = dodge.4
+	}
+	ai_will_do = { factor = 10 }
+}
+	
+shared_focus = {
+	id = CLT_usefulness
+	icon = GFX_viira_outside
+	prerequisite = { focus = CLT_visit_neibghours }
+	cost = 3
+	relative_position_id = CLT_horrors_of_the_unknown
+	x = 1
+	y = 2
+	available = { }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLT_usefulness"
+		add_ideas = CLT_buffalo_slaverty
+	}
+	ai_will_do = { factor = 10 }
+}
+	
+shared_focus = {
+	id = CLT_valentine_sistem
+	icon = GFX_goal_clt_valentinepng
+	prerequisite = { focus = CLT_usefulness }
+	prerequisite = { focus = CLT_altar}
+	cost = 3
+	relative_position_id = CLT_horrors_of_the_unknown
+	x = 0
+	y = 3
+	available = { }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLT_valentine_sistem"
+		custom_effect_tooltip = CLT_valentine_system_tt
+		mark_focus_tree_layout_dirty = yes
+		set_country_flag = CLT_shizo_decisions_flag
+		add_political_power = 50
+		hidden_effect = {
+			country_event = { id = dodge.15 days = 50 }
+			country_event = { id = dodge.19 days = 100 }
+			country_event = { id = dodge.20 days = 150 }
+		}
+	}
+	ai_will_do = { factor = 10 }
+}	
+	
+shared_focus = {
+	id = CLT_god_voices
+	icon = GFX_goal_blessing
+	prerequisite = {
+		focus = CLT_valentine_sistem
+	}
+	cost = 3
+	relative_position_id = CLT_horrors_of_the_unknown
+	x = -3
+	y = 4
+	allow_branch = {
+		has_completed_focus = CLT_valentine_sistem
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLT_valentine_sistem"
+		custom_effect_tooltip = CLT_god_voices_tt
+		swap_ideas = {
+			remove_idea = CLT_cultists
+			add_idea = CLT_cultists_1
+		}
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = CLT_melting_skin
+	icon = GFX_goal_burn
+	prerequisite = {
+		focus = CLT_god_voices
+	}
+	cost = 3
+	relative_position_id = CLT_horrors_of_the_unknown
+	x = -3
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLT_valentine_sistem"
+		swap_ideas = {
+			remove_idea = CLT_buffalo_slaverty
+			add_idea = CLT_buffalo_slaverty_2
+		}
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = CLT_prepare_new_plan
+	icon = GFX_goal_skull_arrows
+	prerequisite = {
+		focus = CLT_god_voices
+	}
+	cost = 3
+	relative_position_id = CLT_god_voices
+	x = 2
+	y = 1
+	available = {
+		has_country_flag = CLT_has_plan_flag
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLT_valentine_sistem"
+		custom_effect_tooltip = CLT_god_voices_tt
+		declare_war_on = {
+			type = annex_everything
+			target = MIN
+		}
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = CLT_talk_to_citizens
+	icon = GFX_goal_make_them_suffer
+	prerequisite = {
+		focus = CLT_valentine_sistem
+	}
+	cost = 3
+	relative_position_id = CLT_horrors_of_the_unknown
+	x = 3
+	y = 4
+	allow_branch = {
+		has_completed_focus = CLT_valentine_sistem
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLT_talk_to_citizens"
+		set_country_flag = CLT_can_nationalise_capital
+		custom_effect_tooltip = CLT_can_nationalise_capital_tt
+		swap_ideas = {
+			remove_idea = CLT_no_ruling
+			add_idea = CLT_no_ruling_1
+		}
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = CLT_make_clouds_fall
+	icon = GFX_goal_bloody_pile_of_skulls
+	prerequisite = {
+		focus = CLT_talk_to_citizens
+	}
+	cost = 3
+	relative_position_id = CLT_horrors_of_the_unknown
+	x = 3
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLT_make_clouds_fall"
+		add_war_support = -0.1
+		add_to_variable = {
+			inner_phantoplasma_var = 10
+		}
+		custom_effect_tooltip = clt_plus_inner_phantoplasma_10_tt
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = CLT_destroy_priests
+	icon = GFX_goal_clt_your_children
+	prerequisite = {
+		focus = CLT_talk_to_citizens
+	}
+	cost = 3
+	relative_position_id = CLT_talk_to_citizens
+	x = -2
+	y = 1
+	available = {
+		has_country_flag = CLT_has_to_destroy_priests_flag
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLT_destroy_priests"
+		add_stability = -0.05
+		add_manpower = -500
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.1
+		}
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = CLT_next_step
+	icon = GFX_goal_valentine_torches
+	prerequisite = { focus = CLT_destroy_priests }
+	prerequisite = { focus = CLT_prepare_new_plan }
+	prerequisite = { focus =  CLT_make_clouds_fall }
+	prerequisite = { focus =  CLT_melting_skin }
+	cost = 3
+	relative_position_id = CLT_valentine_sistem
+	x = 0
+	y = 3
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLT_next_step"
+		country_event = { id = dodge.21 days = 1 }
+		add_stability = -1.0
+		add_war_support = -1.0
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = CLT_paranoyidia
+	icon = GFX_goal_clt_crawler
+	prerequisite = { focus = CLT_next_step }
+	cost = 3
+	relative_position_id = CLT_next_step
+	x = -5
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLT_next_step"
+		declare_war_on = {
+			type = annex_everything
+			target = NGC
+		}
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = CLT_gebefrinidiya
+	icon = GFX_goal_clt_screaming_dude
+	prerequisite = { focus = CLT_next_step }
+	cost = 3
+	relative_position_id = CLT_next_step
+	x = -3
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLT_next_step"
+		declare_war_on = {
+			type = annex_everything
+			target = HOR
+		}
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = CLT_katatoniya
+	icon = GFX_goal_clt_eye
+	prerequisite = { focus = CLT_next_step }
+	cost = 3
+	relative_position_id = CLT_next_step
+	x = -1
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLT_next_step"
+		declare_war_on = {
+			type = annex_everything
+			target = APL
+		}
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = CLT_rezidualiya
+	icon = GFX_goal_rape
+	prerequisite = { focus = CLT_next_step }
+	cost = 3
+	relative_position_id = CLT_next_step
+	x = 1
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLT_next_step"
+		declare_war_on = {
+			type = annex_everything
+			target = BUF
+		}
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = CLT_simplexia
+	icon = GFX_goal_clt_fetus
+	prerequisite = { focus = CLT_next_step }
+	cost = 3
+	relative_position_id = CLT_next_step
+	x = 3
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLT_next_step"
+		declare_war_on = {
+			type = annex_everything
+			target = GUA
+		}
+	}
+	ai_will_do = { factor = 10 }
+}
+
+shared_focus = {
+	id = CLT_senestopatidiya
+	icon = GFX_goal_do_drugs
+	prerequisite = { focus = CLT_next_step }
+	cost = 3
+	relative_position_id = CLT_next_step
+	x = 5
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CLT_next_step"
+		declare_war_on = {
+			type = annex_everything
+			target = ROK
+		}
+	}
+	ai_will_do = { factor = 10 }
+}

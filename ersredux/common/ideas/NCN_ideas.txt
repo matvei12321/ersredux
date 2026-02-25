@@ -1,0 +1,67 @@
+ideas = {
+	country= {
+		NCN_Verfi = { 
+
+			removal_cost = -1
+			
+			picture = NCN_construction_effort
+			allowed_civil_war = {
+				always = yes
+			}
+
+			
+			modifier = {
+			political_power_factor = 0.10
+				local_resources_factor = 0.05
+				PRODUCTION_SPEED_BUILDINGS_FACTOR = 0.15
+				industrial_capacity_factory = 0.29
+				weekly_manpower = 945
+		
+			}
+		}
+			NCN_Rabota = { 
+
+			removal_cost = -1
+			
+			picture = NCN_naval_effort
+			allowed_civil_war = {
+				always = yes
+			}
+
+			
+			modifier = {
+			NAVY_CAPITAL_SHIP_ATTACK_FACTOR = 0.1
+			NAVY_CAPITAL_SHIP_DEFENCE_FACTOR = 0.05
+			}
+			research_bonus = {
+				bb_tech = 0.1
+				shbb_tech = 0.1
+				ca_tech = 0.1
+				cl_tech = 0.1
+				bc_tech = 0.1
+				tp_tech = 0.1
+				ss_tech = 0.1
+				dd_tech = 0.1
+				cv_tech = 0.1			
+			}
+		}
+			NCN_Svoboda = { 
+
+			removal_cost = -1
+			
+			picture = NCN_queens_tower_idea 
+			allowed_civil_war = {
+				always = yes
+			}
+
+			targeted_modifier = {
+				tag = NGC
+				attack_bonus_against = 0.20
+			}
+			modifier = {
+			ai_call_ally_desire_factor = -2500
+			ai_join_ally_desire_factor = -2500
+			}
+		}
+	}
+}

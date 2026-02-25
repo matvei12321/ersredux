@@ -1,0 +1,130 @@
+spriteTypes = {
+
+    #------------------------- Anarchism ----------------------------
+	spriteType = {
+		name = "GFX_ideology_total_anarchism"
+		texturefile = "gfx/interface/ideologies/anarchism.dds"	
+	}
+	spriteType = {
+		name = "GFX_ideology_anarcho_capitalism"
+		texturefile = "gfx/interface/ideologies/anarcho_capitalism.tga"		
+	}
+	
+	#------------------------- Communism ----------------------------
+	spriteType = {
+		name = "GFX_ideology_hive_mind_communism"
+		texturefile = "gfx/interface/ideologies/hive_mind_c.tga"	
+	}
+	
+
+    #------------------------- Liberal Utopia ----------------------------
+	spriteType = {
+		name = "GFX_ideology_hive_mind_democratic"
+		texturefile = "gfx/interface/ideologies/hive_mind_d.tga"	
+	}
+	
+	#------------------------- Conrvatism Utopia ----------------------------
+	
+	
+	#------------------------- Social Utopia ----------------------------
+	
+	
+	#------------------------- Despotism ----------------------------
+	
+	
+	#------------------------- Fascism ----------------------------
+	spriteType = {
+		name = "GFX_ideology_hive_mind_fascism"
+		texturefile = "gfx/interface/ideologies/hive_mind_f.tga"	
+	}
+	
+	#------------------------- Autocracy ----------------------------
+	
+	
+	#------------------------- Liberal Utopia ----------------------------
+	
+	
+	#------------------------- Technocracy ----------------------------
+	
+	spriteType = {
+		name = "GFX_ideology_raidism"
+		texturefile = "gfx/interface/ideologies/raidism.tga"	
+	}
+	spriteType = {
+		name = "GFX_ideology_pacifism"
+		texturefile = "gfx/interface/ideologies/pacifism.tga"	
+	}
+	spriteType = {
+		name = "GFX_ideology_ordopacifism"
+		texturefile = "gfx/interface/ideologies/ordopacifism.tga"
+	}
+	spriteType = {
+		name = "GFX_ideology_hive_mind_ideology"
+		texturefile = "gfx/interface/ideologies/hive_mind_ideology.tga"
+	}
+	spriteType = {
+		name = "GFX_ideology_retrowave_satanism"
+		texturefile = "gfx/interface/ideologies/retrowave_satanism.tga"
+	}	
+	spriteType = {
+		name = "GFX_ideology_industrial_ideology"
+		texturefile = "gfx/interface/ideologies/industrial_ideology.tga"
+	}
+	spriteType = {
+		name = "GFX_ideology_neutrality_regency_council"
+		texturefile = "gfx/interface/ideologies/regency.tga"		
+	}
+	spriteType = {
+		name = "GFX_ideology_fascism_technocracy"
+		texturefile = "gfx/interface/ideologies/fascism_technocracy.tga"		
+	}
+	spriteType = {
+		name = "GFX_ideology_national_evolutionism"
+		texturefile = "gfx/interface/ideologies/national_evolutionism.dds"		
+	}
+	spriteType = {
+		name = "GFX_ideology_fundamentalism"
+		texturefile = "gfx/interface/ideologies/fundamentalism.dds"		
+	}
+	spriteType = {
+		name = "GFX_ideology_ultraviolance"
+		texturefile = "gfx/interface/ideologies/ultraviolance.tga"		
+	}
+	spriteType = {
+		name = "GFX_ideology_poltopism"
+		texturefile = "gfx/interface/ideologies/poltopism.tga"		
+	}
+	spriteType = {
+		name = "GFX_ideology_irredentism"
+		texturefile = "gfx/interface/ideologies/irredentism.tga"		
+	}
+	spriteType = {
+		name = "GFX_ideology_capital_communism"
+		texturefile = "gfx/interface/ideologies/capital_communism.tga"		
+	}
+	spriteType = {
+		name = "GFX_ideology_futurist_socialism"
+		texturefile = "gfx/interface/ideologies/futurist_socialism.tga"		
+	}
+	spriteType = {
+		name = "GFX_ideology_momentalism"
+		texturefile = "gfx/interface/ideologies/momentalism.tga"		
+	}
+	spriteType = {
+		name = "GFX_ideology_national_protectionism"
+		texturefile = "gfx/interface/ideologies/national_protectionism.tga"	
+	}
+	spriteType = {
+		name = "GFX_ideology_hive_mind_neutrality"
+		texturefile = "gfx/interface/ideologies/hive_mind_n.tga"	
+	}
+
+	
+	spriteType = {
+		name = "GFX_funny_fluttershy"
+		texturefile = "gfx/leaders/PGS/funny_fluttershy.dds"		
+	}
+	
+	
+	
+}

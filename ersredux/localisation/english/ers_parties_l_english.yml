@@ -1,0 +1,175 @@
+﻿l_english:
+ 
+ CLD_communism_party:0 ""
+ CLD_communism_party_long:0 ""
+ CLD_democratic_party:0 ""
+ CLD_democratic_party_long:0 ""
+ CLD_neutrality_party:0 ""
+ CLD_neutrality_party_long:0 ""
+ CLD_fascism_party:0 ""
+ CLD_fascism_party_long:0 ""
+ 
+ UNC_communism_party:0 "Northern Revolutionaries"
+ UNC_communist_party_long:0 "Northern Revolutionaries"
+ UNC_neutrality_party:0 "Platinum Dynasty"
+ UNC_neutrality_party_long:0 "Platinum Dynasty"
+ UNC_fascism_party:0 "UNP"
+ UNC_fascism_party_long:0 "Union of National Purification"
+ UNC_democratic_party:0 "Equestrianians"
+ UNC_democratic_party_long:0 "Equestrianians - Harmony"
+ 
+ UNP_neutrality_party:0 "TLG"
+ UNP_neutrality_party_long:0 "Temporary Local Government"
+ UNP_fascism_part:0 "UNP Cell"
+ UNP_fascism_party_long:0 "Cell of the Union of National Purification"
+ 
+ ERP_neutrality_party:0 "RAHC"
+ ERP_neutrality_party_long:0 ""Reverent admirers of the Holy Council""
+ ERP_fascism_party:0 "Right Movement"
+ ERP_fascism_party_long:0 "Right Movement"
+ ERP_democratic_party:0 "Liberal Democratic Movement"
+ ERP_democratic_party_long:0 "Liberal Democratic Movement"
+ ERP_communism_party:0 "Revolutionary Movement"
+ ERP_communism_party_long:0 "Revolutionary movement"
+ 
+ TST_neutrality_party:0 "Tribal Council"
+ TST_neutrality_party_long:0 "Tribal Council"
+ TST_fascism_party:0 "Tribal Council"
+ TST_fascism_party_long:0 "Tribal Council"
+ 
+ VRX_democratic_party:0 "Futurists"
+ VRX_democratic_party_long:0 "Futurists"
+ VRX_communism_party:0 "Оппозиция"
+ VRX_communism_party_long:0 "Оппозиция"
+ VRX_fascism_party:0 "Supporters of Argynnis"
+ VRX_fascism_party_long:0 "Supporters of Argynnis"
+ VRX_neutrality_party:0 "МПВ"
+ VRX_neutrality_party_long:0 "Монархическая Партия Вракса"
+ 
+ HRD_democratic_party:0 "Warriors of Light"
+ HRD_democratic_party_long:0 "Warriors of Light"
+ HRD_neutrality_party:0 "Warriors of Light (AF)"
+ HRD_neutrality_party_long:0 "Warriors of Light - Azazel's faction"
+ HRD_fascism_part:0 "Locked Umbrums"
+ HRD_fascism_part_long:0 "Locked Umbrums"
+ 
+ VRX_fascism_party:0 "Argynnis' Leadership"
+ VRX_fascism_party_long:0 "Argynnis' Leadership"
+ 
+ DTS_fascism_party:0 "Helvia's Leadership"
+ DTS_fascism_party_long:0 "Helvia's Leadership"
+ DTS_neutrality_party:0 "Ditrisium Mafia"
+ DTS_neutrality_party_long:0 "Ditrisium Mafia"
+ 
+ SRF_fascism_party:0 "Yharia's Leadership"
+ SRF_fascism_party_long:0 "Yharia's Leadership"
+ SRF_communism_party:0 "Арестанты"
+ SRF_communism_party_long:0 "Prisoners"
+ SRF_neutrality_party:0 "Scientific Society "Genus""
+ SRF_neutrality_party_long:0 "Scientific Society "Genus""
+ SRF_democratic_party:0 "Scientific Society "Progress""
+ SRF_democratic_party_long:0 "Scientific Society "Progress""
+ 
+ PRG_neutrality_party:0 "Dom de Shores"
+ PRG_neutrality_party_long:0 "Dom de Shores"
+ PRG_fascism_party:0 "Revanchists"
+ PRG_fascism_party_long:0 "Revanchists"
+
+ EMP_neutrality_party:0 ""
+ EMP_communism_party:0 ""
+ EMP_democratic_party:0 ""
+ EMP_fascism_party:0 ""
+ 
+ ER1_fascism_party:0 "§1Satanist Ravers§!"
+ ER1_fascism_part_long:0 "§1Satanist Ravers§!"
+ 
+ ER2_fascism_party:0 "Council of Industrialists"
+ ER2_fascism_party_long:0 "Council of Industrialists"
+ ER2_communist_party:0 "WUNDI"
+ ER2_communist_party_long:0 "Workers Union Department of Industriatika"
+ 
+ SVR_democratic_party:0 "Про-юникорнийские либералы"
+ SVR_democratic_party_long:0 "Про-юникорнийские либералы"
+ SVR_neutrality_party:0 "Династия Романовских"
+ SVR_neutrality_party_long:0 "Династия Романовских"
+ SVR_communism_party:0 "Красные моряки"
+ SVR_communism_party_long:0 "Красные моряки"
+ SVR_fascism_party:0 "ОНВ"
+ SVR_fascism_party_long:0 "Общество Национального Возвышения"
+
+ LOS_neutrality_party:0 "Exiled Monarchists"
+ LOS_neutrality_party_long:0 "Exiled Monarchists"
+ LOS_communism_party:0 "Workers' Union"
+ LOS_communism_party_long:0 "Workers' Union"
+ LOS_democratic_party:0 "Benevolent aristocracy"
+ LOS_democratic_party_long:0 "Benevolent aristocracy
+ 
+ MNH_neutrality_party:0 "Union of Trade Guilds"
+ MNH_neutrality_party_long:0 "Union of Trade Guilds"
+ MNH_democratic_party:0 "ULE"
+ MNH_democratic_party_long:0 "Union of Liberalizers of the Economy"
+ MNH_communism_party:0 "Capital-Communists"
+ MNH_communism_party_long:0 "Capital-Communists"
+ MNH_fascism_party:0 "PMCs"
+ MNH_fascism_party_long:0 "Private military corporations
+ 
+ 
+ MNT_fascism_party:0 "Council of shamans-murderers"
+ MNT_fascism_party_long:0 "Council of shamans-murderers"
+
+ YAC_communism_party:0 "The First Yak Communist Party"
+ YAC_communist_party_long:0 "The First Yak Communist Party"
+
+ NAK_neutrality_party:0 "Alternative Snow Council"
+ NAK_neutrality_party_long:0 "Alternative Snow Council"
+
+ SHA_neutrality_party:0 "Shamans of Mathan Krikhe"
+ SHA_neutrality_party_long:0 "Shamans of Mathan Krikhe"
+
+ BAD_neutrality_party:0 "Followers of Baradur"
+ BAD_neutrality_party_long:0 "Followers of Baradur"
+ 
+ ANR_neutrality_party:0 "Anarcho-theocrats"
+ ANR_neutrality_party_long:0 "Anarcho-theocrats"
+ AND_communism_party:0 ""FOD""
+ AND_communism_party_long:0 ""Freedom or Death""
+ AND_democratic_party:0 "Socialist pacifists"
+ AND_democratic_party_long:0 "Socialist pacifists"
+ AND_fascism_party:0 "ANC (§Rb§!)"
+ AND_fascism_party_long:0 "Anarchist National Communists (§RBanned§!)"
+ 
+ 
+ 
+ 
+ 
+ ###### SUBMOD - FASCIST IDEOLOGIES
+ 
+ ###### SUBMOD - NEUTRALITY IDEOLOGIES
+ neutrality_regency_council:0 "The power of the Regency Council"
+ neutrality_regency_council_desc:0 "In this country, the monarch should be the ruler, but for one reason or another, he does not sit on the throne. Instead, the regency council rules - a group of people elected by the people or simply the most influential persons of the state. At the same time, the council is considered to be ruling until the monarch re-ascends the throne."
+ 
+ ###### SUBMOD - DEMOCRATIC IDEOLOGIES
+ 
+ pacifism:0 "Pacifism"
+ pacifism_desc:0 "Pacifism is not a political ideology in many countries, and in some states with superiority it is even considered a manifestation of backwardness and cowardice. But Pegasus pacifism is a rather interesting exception. Due to the fact that for thousands of years the Pegasi have known only the brutality of fratricidal wars, the Peacemakers are trying to heal the psychological wounds in their nation.\n\nTheir main goal is to make the Pegasus nation forget the horrors of war and unjustified cruelty forever."
+ 
+ 
+ ###### SUBMOD - FASCIST IDEOLOGIES
+ 
+ ordopacifism:0 "Exopacifism"
+ ordopacifism_desc:0 "Ordopacifism is an extremely radical movement that has turned the concept of universal peace and harmony in an absolutely terrifying direction. The ideologists of ordopacifism claim that everyone who can be a threat to order and peace must be destroyed, and as long as such "pests" and "parasites" exist in the world, the inhabitants of the country and the entire state as a whole must unquestioningly follow the following rules:\n\n- Absolute obedience to the orders of the supreme leader; \n\n- Mandatory self-sacrifice of personal freedom for the sake of ensuring universal peace; \n\n- Mandatory indefinite military service, during which a soldier must kill both disabled, and mares and colts, and children and the elderly - all, if they pose a threat to peace and tranquility;\n\n Then the list goes on almost indefinitely, and all the points boil down to the fact that the country must commit total genocide of absolutely all beings who pose or may pose a threat to a peaceful and utopian society of the future,\n\nwhich opposes senseless wars and unjustified cruelty."
+ hive_mind_ideology:0 "Hive Mind"
+ 
+ hive_mind_ideology_desc:0 "Единый разум контролирует всё государство.\n\nВозможно, это и есть вершина эволюции."
+ retrowave_satanism:0 "Ретровейв-сатанизм"
+ retrowave_satanism_desc:0 "§4Услышат сотни тысяч\n\nПолюбит миллион\n\nИ завоюет мир\n\nНаш тёмный легион!§!"
+ industrial_ideology:0 "Sublime Industrialism"
+ industrial_ideology_desc:0 "Sublime industrialism exalts progress and industry to the absolute, turning the country into one huge industrial complex. The needs of civilians are ignored and met only to the extent that allows them to service the Machine and its Spirit. This ideology is not practiced anywhere in the world, but Applejack, who grew up in a family of ultraconservative priests, and later became an industrialist, elevated Machines to the level of Gods."
+ endless_hate:0 "§Black, endless hatred§!"
+ endless_hate_desc:0 "Sometimes we make mistakes. Sometimes these mistakes make us feel negative emotions. But this is fair, because it is inherent in us by nature. But if something lives with one goal - to harm and destroy, filled to the brim with malice - what is it? Madness, a load of catastrophic mistakes, or just hatred because of hatred? No one will say exactly why Umbrums live in this world and who created them.\n\n§RMaybe it's all about us?§!"
+ 
+ 
+ CHN_hive_ruling_party_long:0 "Коллективный Разум Улья"
+ CHN_hive_ruling_party:0 "Коллективный Разум Улья"
+ CHN_hive_party:0 "Нет инакомыслия"
+ 

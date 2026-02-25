@@ -1,0 +1,73 @@
+﻿l_english:
+ SE_prekrasnoe_daleko_title:0 "Equus Unification"
+ SE_prekrasnoe_daleko_desc:0 ""You will always be loved, you will always be remembered. You'll never get older."\n\n— Inscription on the grave of an unknown Equestrian soldier"
+ SE_prekrasnoe_daleko_reaction:0 "Nothing will save the little ponies"
+ 
+ SE_nuclear_title:0 "United Equus gets Nuclear Weapons"
+ SE_nuclear_desc:0 ""I'm already asleep and I see our first nuclear tests. The first polygon will be Griffenheim! Haha, a joke. It's a joke, right?"\n\n— Twilight Sparkle"
+ SE_nuclear_reaction:0 "Watch the world burn"
+ 
+ SE_dodge_city_collapse_1_title:0 "The Fate of Dodge City"
+ SE_dodge_city_collapse_1_desc:0 "Sometimes it's better not to know anything than to know at least something.\n\n- A free traveler who visited Dodge City"
+ SE_dodge_city_collapse_1_reaction:0 "Sleep well"
+ 
+ SE_anarchy_title:0 "Victory of the anarchists"
+ SE_anarchy_desc:0 "Freedom is not what you have been given. This is something that cannot be taken away from you.\n\n— Voltaire Artuet, Prench philosopher"
+ SE_anarchy_reaction:0 "Mother of Order"
+ 
+ SE_warkhan_war_title:0 "War of the Khans"
+ SE_warkhan_war_desc:0 "A real yak warrior. He will crush anyone who gets in his way, even if it costs someone's life. Or rather, especially if it costs someone's life.\n\n— Alesiy Kruzov, Northern race scientist" 
+ SE_warkhan_war_reaction:0 "I hear the drums beating..."
+ 
+ SE_little_dark_age_title:0 "Chaos in Pandoria"
+ SE_little_dark_age_desc:0 "One day we will have to answer for our deeds, and the Goddess will not be so merciful."
+ SE_little_dark_age_reaction:0 "The box has opened"
+ 
+ SE_starlight_unification_title:0 "§Severyana Unification§!"
+ SE_starlight_unification_desc:0 "I'm not talking about Heaven. Paradise is a false fantasy of religious fanatics. But OUR society is the closest of all other things in the world to what can be called Paradise. §Utopia§!.\n\n— Starlight Glimmer"
+ SE_starlight_unification_reaction:0 "Submit to the will of the People..."
+ 
+ SE_changeling_hehemony_collapse_title:0 "Collapse of the Changeling Hegemony"
+ SE_changeling_hehemony_collapse_desc:0 "Perhaps none of us will survive in the struggle for the Fatherland.\n\n— Field Marshal Trimel"
+ SE_changeling_hehemony_collapse_reaction:0 "Wir sind verloren"
+ 
+ SE_lyc_ole_war_title:0 "Lyctida's attack on Olenia"
+ SE_lyc_ole_war_desc:0 "There are no "lower" and "higher" races. It's just that some deserve to be destroyed. This. Is. Justice!\n\n— Aurantia, Queen of Lyctida"
+ SE_lyc_ole_war_reaction:0 "The quiet hive is awakening..."
+ 
+ SE_red_changelings_rise_title:0 "Восстание Рабочих"
+ SE_red_changelings_rise_desc:0 "Идёт война. И ЭТО ВОЙНА ПРОТИВ ТЕБЯ, ПРОЛЕТАРИАТ!\n\n— Голд Маффин"
+ SE_red_changelings_rise_reaction:0 "Рабочий, ты слышишь его?"
+ 
+ SE_dwtd_title:0 "The Fall of the Order"
+ SE_dwtd_desc:0 "Confession? I love playing confession. Tell me about your sins.\n\n— Father Millenian"
+ SE_dwtd_reaction:0 "Dance with the dead"
+ 
+ SE_soldat_title:0 "Unification of the Pony Peoples"
+ SE_soldat_unification_desc:0 "War is a duel of will. If you are not ready to sacrifice everything, then you have already lost.\n\n— Andreas Hurricane"
+ SE_soldat_reaction:0 "I am ready to serve my country!"
+ 
+ SE_frost_is_here_title:0 "The Frost is Here"
+ SE_frost_is_here_desc:0 "WHAT WAS, WILL BE, WHAT WILL BE, WAS.\n\n— Queen Spectre"
+ SE_frost_is_here_reaction:0 "And you will fall asleep in the hooves of the Snow Queen"
+ 
+ SE_marx_revival_title:0 "Возвращение Маркс"
+ SE_marx_revival_desc:0 "БУРЖУИ!\nЯ МАРКС!\nЯ ВЕРНУЛАСЬ!\nВАМ ВСЕМ ПИЗ-"
+ SE_marx_revival_reaction:0 "Всё идёт по плану"
+ 
+ SE_chrysalis_unification_title:0 "Объединение Ульев"
+ SE_chrysalis_unification_desc:0 "Если вы отступите — столкнётесь со смертью. Если не будете сражаться — с бесчестьем.\n\n— Королева Кризалис"
+ SE_chrysalis_unification_reaction:0 "Хайль Кризалис!"
+ 
+ 
+ SE_aurantia_unification_title:0 "Hives Unification"
+ SE_aurantia_unification_desc:0 "One philosopher said: "The principle of "An eye for an eye" will make the world blind." If this is the price of justice, then this outcome suits me.\n\n— Queen Aurantia"
+ SE_aurantia_unification_reaction:0 "Heil Aurantia, death to the Olenians!"
+ 
+ SE_olenians_extinction_title:0 "The Disappearance of Olenia"
+ SE_olenians_extinction_desc:0 ""
+ SE_olenians_extinction_reaction:0 "..."
+ 
+ SE_red_sun_title:0 "Создание Солнечной Фестралии"
+ SE_red_sun_desc:0 "Через свет я получаю силу, через силу я получаю могущество, чтобы сразить Твоих врагов, с этой мощью я надеюсь встретить день снова, но если я паду, это во имя Твоё, и под Сиянием твоим я найду покой в Твоих золотых лучах...\n\n— Молитва Нейгуа"
+ SE_red_sun_reaction:0 "Восславьте Солнце!"

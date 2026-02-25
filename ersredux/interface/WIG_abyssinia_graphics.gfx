@@ -1,0 +1,117 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_WIG_abyssinia_scripted_gui_window_background"
+		textureFile = "/gfx/interface/scripted_gui_graphics/decision_BRG_decision_puma.dds"
+	}
+	spriteType = {
+		name = "GFX_WIG_abyssinia_scripted_gui_karthin_button" 
+		textureFile = "/gfx/interface/scripted_gui_graphics/karthin_button_background.dds" 
+	}
+	spriteType = {
+		name = "GFX_WIG_abyssinia_scripted_gui_window_close_button" 
+		textureFile = "/gfx/interface/hold_button.dds" 
+	} 
+	spriteType = {
+		name = "GFX_WIG_abyssinia_scripted_gui_window_wingbardia"  
+		textureFile = "/gfx/interface/scripted_gui_graphics/karthin_wingbardia.dds"
+	} 
+	spriteType = {
+		name = "GFX_WIG_abyssinia_scripted_gui_window_falcor"   
+		textureFile = "/gfx/interface/scripted_gui_graphics/karthin_falcor.dds"
+	}
+	spriteType = {
+		name = "GFX_WIG_abyssinia_scripted_gui_window_talouse"  
+		textureFile = "/gfx/interface/scripted_gui_graphics/karthin_talouse.dds"
+	}
+	spriteType = {
+		name = "GFX_WIG_abyssinia_scripted_gui_window_talouse_annexed" 
+		textureFile = "/gfx/interface/scripted_gui_graphics/karthin_talouse_annexed.dds"
+	}
+	spriteType = {
+		name = "GFX_WIG_abyssinia_scripted_gui_window_francistria" 
+		textureFile = "/gfx/interface/scripted_gui_graphics/karthin_francistria.dds"
+	}
+	spriteType = {
+		name = "GFX_WIG_abyssinia_scripted_gui_window_francistria_annexed"  
+		textureFile = "/gfx/interface/scripted_gui_graphics/karthin_francistria_annexed.dds"
+	} 
+	spriteType = {
+		name = "GFX_WIG_abyssinia_scripted_gui_window_sicameon"  
+		textureFile = "/gfx/interface/scripted_gui_graphics/karthin_sicameon.dds"
+	}
+	spriteType = {
+		name = "GFX_WIG_abyssinia_scripted_gui_window_sicameon_annexed"  
+		textureFile = "/gfx/interface/scripted_gui_graphics/karthin_sicameon_annexed.dds"
+	}
+	spriteType = {
+		name = "GFX_WIG_abyssinia_scripted_gui_window_cyanolisia"
+		textureFile = "/gfx/interface/scripted_gui_graphics/karthin_cyanolisia.dds"
+	}
+	spriteType = {
+		name = "GFX_WIG_abyssinia_scripted_gui_window_cyanolisia_annexed"
+		textureFile = "/gfx/interface/scripted_gui_graphics/karthin_cyanolisia_annexed.dds"
+	}
+	spriteType = {
+		name = "GFX_WIG_abyssinia_scripted_gui_window_mino"  
+		textureFile = "/gfx/interface/scripted_gui_graphics/karthin_mino.dds"
+	}
+	spriteType = {
+		name = "GFX_WIG_abyssinia_scripted_gui_window_mino_annexed"  
+		textureFile = "/gfx/interface/scripted_gui_graphics/karthin_mino_annexed.dds"
+	}
+	spriteType = {
+		name = "GFX_WIG_abyssinia_scripted_gui_window_prywen" 
+		textureFile = "/gfx/interface/scripted_gui_graphics/karthin_prywen.dds"
+	}
+	spriteType = {
+		name = "GFX_WIG_abyssinia_scripted_gui_window_prywen_annexed"  
+		textureFile = "/gfx/interface/scripted_gui_graphics/karthin_prywen_annexed.dds"
+	}
+	spriteType = {
+		name = "GFX_WIG_success_scripted_gui" 
+		textureFile = "/gfx/interface/scripted_gui_graphics/WIG_success_scripted_gui.dds"
+	}
+	spriteType = {
+		name = "GFX_WIG_abyssinia_scripted_gui_Catland_drg" 
+		textureFile = "/gfx/interface/scripted_gui_graphics/Catland_drg.dds"
+	}
+	spriteType = {
+		name = "GFX_WIG_abyssinia_scripted_gui_Catland_wig" 
+		textureFile = "/gfx/interface/scripted_gui_graphics/Catland_wig.dds"
+	}	
+	spriteType = {
+		name = "GFX_WIG_abyssinia_scripted_gui_Catland_drg_selected" 
+		textureFile = "/gfx/interface/scripted_gui_graphics/Catland_drg_selected.dds"
+	}
+	spriteType = {
+		name = "GFX_WIG_abyssinia_scripted_gui_Catland_wig_selected" 
+		textureFile = "/gfx/interface/scripted_gui_graphics/Catland_wig_selected.dds"
+	}
+	spriteType = {
+		name = "GFX_WIG_abyssinia_scripted_gui_Murrsia_drg" 
+		textureFile = "/gfx/interface/scripted_gui_graphics/Murrsia_drg.dds"
+	}
+	spriteType = {
+		name = "GFX_WIG_abyssinia_scripted_Murrsia_wig"
+		textureFile = "/gfx/interface/scripted_gui_graphics/Murrsia_wig.dds"
+	}
+	spriteType = {
+		name = "GFX_WIG_abyssinia_scripted_Murrsia_drg_selected"
+		textureFile = "/gfx/interface/scripted_gui_graphics/Murrsia_wig_selected.dds"
+	}
+	spriteType = {
+		name = "GFX_WIG_abyssinia_scripted_Murrsia_wig_selected"
+		textureFile = "/gfx/interface/scripted_gui_graphics/Murrsia_wig_selected.dds"
+	}
+	progressbartype = {
+		name = "GFX_WIG_abyssinia_readiness_progressbar"
+		color = { 0.0 0.5 0.0 }
+		colortwo = { 1.0 0.0 0.0 }
+		texturefile1 = "gfx/interface/ideas/KIR/SG/KIS_progress_bar.tga"
+		texturefile2 = "gfx/interface/ideas/KIR/SG/KIS_progress_bar_bg.tga"
+		size = { x = 333 y = 33 }
+		effectFile = "gfx/FX/progress_startend.lua"
+	}
+
+}

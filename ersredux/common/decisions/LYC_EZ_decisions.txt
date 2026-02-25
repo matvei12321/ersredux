@@ -1,0 +1,394 @@
+LYC_war_against_olenians = {
+	
+	LYC_uncore_sakhara = {
+		icon = GFX_decision_olenian_skull
+		available = {
+			has_completed_focus = OLE_EZ_who_dies_first
+			
+			has_country_flag = extermination_flag
+			NOT = {
+				has_country_flag = ez_uncoring_ole_territory_flag
+			}
+		}
+		visible = {
+			tag = OLE
+		}
+		fire_only_once = yes
+		
+		highlight_states = {
+			highlight_state_targets = { state = 194 } 
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		days_remove = 75
+		complete_effect = {
+			set_country_flag = ez_uncoring_ole_territory_flag
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision LYC_uncore_sakhara"
+			clr_country_flag = ez_uncoring_ole_territory_flag
+			custom_effect_tooltip = plus_2_olenia_extermination
+			add_to_variable = {
+				global.extermination_var = 2
+			}
+			clamp_variable = {
+				var = global.extermination_var
+				min = 0
+				max = 100
+			}			
+			194 = {
+				remove_core_of = ROOT
+			}
+			207 = {
+				remove_core_of = ROOT
+			}
+			200 = {
+				remove_core_of = ROOT
+			}
+			208 = {
+				remove_core_of = ROOT
+			}
+			193 = {
+				remove_core_of = ROOT
+			}
+			196 = {
+				remove_core_of = ROOT
+			}
+			297 = {
+				remove_core_of = ROOT
+			}
+		}
+	}
+	
+	LYC_uncore_tservus = {
+		icon = GFX_decision_olenian_skull
+		available = {
+			has_completed_focus = OLE_EZ_who_dies_first
+			has_country_flag = extermination_flag
+			NOT = {
+				has_country_flag = ez_uncoring_ole_territory_flag
+			}
+		}
+		visible = {
+			tag = OLE
+		}
+		fire_only_once = yes
+		
+		highlight_states = {
+			highlight_state_targets = { state = 191 } 
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		days_remove = 75
+		complete_effect = {
+			set_country_flag = ez_uncoring_ole_territory_flag
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision LYC_uncore_sakhara"
+			clr_country_flag = ez_uncoring_ole_territory_flag
+			custom_effect_tooltip = plus_2_olenia_extermination
+			add_to_variable = {
+				global.extermination_var = 2
+			}
+			clamp_variable = {
+				var = global.extermination_var
+				min = 0
+				max = 100
+			}			
+			191 = {
+				remove_core_of = ROOT
+			}
+			198 = {
+				remove_core_of = ROOT
+			}
+			199 = {
+				remove_core_of = ROOT
+			}
+			197 = {
+				remove_core_of = ROOT
+			}
+			205 = {
+				remove_core_of = ROOT
+			}
+			192 = {
+				remove_core_of = ROOT
+			}
+			203 = {
+				remove_core_of = ROOT
+			}
+		}
+	}
+	
+	LYC_uncore_hjortland = {
+		icon = GFX_decision_olenian_skull
+		available = {
+			has_completed_focus = OLE_EZ_who_dies_first
+			has_country_flag = extermination_flag
+			NOT = {
+				has_country_flag = ez_uncoring_ole_territory_flag
+			}
+		}
+		visible = {
+			tag = OLE
+		}
+		fire_only_once = yes
+		
+		highlight_states = {
+			highlight_state_targets = { state = 76 } 
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		days_remove = 75
+		complete_effect = {
+			set_country_flag = ez_uncoring_ole_territory_flag
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision LYC_uncore_hjortland"
+			clr_country_flag = ez_uncoring_ole_territory_flag
+			custom_effect_tooltip = plus_2_olenia_extermination
+			add_to_variable = {
+				global.extermination_var = 2
+			}
+			clamp_variable = {
+				var = global.extermination_var
+				min = 0
+				max = 100
+			}
+			76 = {
+				remove_core_of = ROOT
+			}
+			189 = {
+				remove_core_of = ROOT
+			}
+			190 = {
+				remove_core_of = ROOT
+			}
+			209 = {
+				remove_core_of = ROOT
+			}
+			210 = {
+				remove_core_of = ROOT
+			}
+			202 = {
+				remove_core_of = ROOT
+			}
+			211 = {
+				remove_core_of = ROOT
+			}
+			297 = {
+				remove_core_of = ROOT
+			}
+		}
+	}
+	
+	LYC_EZ_silent_place = {
+		icon = GFX_decision_olenian_skull
+		available = {
+			has_country_flag = extermination_flag
+			
+			custom_trigger_tooltip = {
+				tooltip = extermination_var_is_100_tt
+				check_variable = {
+					global.extermination_var > 99
+				}
+			}
+		}
+		visible = {
+			tag = OLE
+		}
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 40
+		}
+		days_remove = 10
+		complete_effect = {
+			country_event = ez.6
+		}
+		
+		remove_effect = {
+			LYC = {
+				country_event = { id = lyc.36 days = 5}
+			}
+			every_owned_state = {
+				set_owner = { tag = T01 }
+				custom_effect_tooltip = delete_all_manpower_tt
+				hidden_effect = {
+					add_manpower = -500000
+					add_manpower = -500000
+					add_manpower = -500000
+					add_manpower = -500000
+					add_manpower = -500000
+					add_manpower = -500000
+					add_manpower = -500000
+					add_manpower = -500000
+					add_manpower = -500000
+					add_manpower = -500000
+				}
+			}
+			hidden_effect = {
+					every_owned_state = {
+					limit = {
+						is_owned_by = OLE
+					}
+					T01 = {
+						transfer_state = PREV
+					}
+				}
+			}
+			set_global_flag = ers_super_event_flag_olenians_extinction
+			play_song = "olenians_extinction"
+		}
+	}
+	
+	LYC_EZ_elxburg = {
+		icon = GFX_decision_olenian_town
+		available = {
+			has_country_flag = extermination_flag
+			has_completed_focus = OLE_EZ_erase_small_cities
+		}
+		visible = {
+			tag = OLE
+		}
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = { state = 299 } 
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		days_remove = 10
+		remove_effect = {
+			set_victory_points = {
+				province = 9876
+				value = 0
+			}
+			custom_effect_tooltip = plus_2_olenia_extermination
+			add_to_variable = {
+				global.extermination_var = 2
+			}
+			clamp_variable = {
+				var = global.extermination_var
+				min = 0
+				max = 100
+			}
+			296 = {
+				add_manpower = -300000
+			}
+		}
+	}
+	LYC_EZ_ishemn = {
+		icon = GFX_decision_olenian_town
+		available = {
+			has_country_flag = extermination_flag
+			has_completed_focus = OLE_EZ_erase_small_cities
+		}
+		visible = {
+			tag = OLE
+		}
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = { state = 301 } 
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		days_remove = 10
+		remove_effect = {
+			set_victory_points = {
+				province = 9834
+				value = 0
+			}
+			custom_effect_tooltip = plus_2_olenia_extermination
+			add_to_variable = {
+				global.extermination_var = 2
+			}
+			clamp_variable = {
+				var = global.extermination_var
+				min = 0
+				max = 100
+			}
+			301 = {
+				add_manpower = -100000
+			}
+		}
+	}
+	
+	LYC_EZ_feslott = {
+		icon = GFX_decision_olenian_town
+		available = {
+			has_country_flag = extermination_flag
+			has_completed_focus = OLE_EZ_erase_small_cities
+		}
+		visible = {
+			tag = OLE
+		}
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = { state = 300 } 
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		days_remove = 10
+		remove_effect = {
+			set_victory_points = {
+				province = 7118
+				value = 0
+			}
+			custom_effect_tooltip = plus_2_olenia_extermination
+			add_to_variable = {
+				global.extermination_var = 2
+			}
+			clamp_variable = {
+				var = global.extermination_var
+				min = 0
+				max = 100
+			}			
+			300 = {
+				add_manpower = -50000
+			}
+		}
+	}
+	
+	LYC_EZ_smalshtag = {
+		icon = GFX_decision_olenian_town
+		available = {
+			has_country_flag = extermination_flag
+			has_completed_focus = OLE_EZ_erase_small_cities
+		}
+		visible = {
+			tag = OLE
+		}
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = { state = 296 } 
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		days_remove = 10
+		remove_effect = {
+			set_victory_points = {
+				province = 12447
+				value = 0
+			}
+			custom_effect_tooltip = plus_2_olenia_extermination
+			add_to_variable = {
+				global.extermination_var = 2
+			}
+			clamp_variable = {
+				var = global.extermination_var
+				min = 0
+				max = 100
+			}			
+			296 = {
+				add_manpower = -100000
+			}
+		}
+	}
+	
+}

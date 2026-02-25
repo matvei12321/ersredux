@@ -1,0 +1,184 @@
+guiTypes = {
+	containerWindowType = {
+		clipping = no
+		name = "rpg_1vs1_container"
+		animation_time = 300
+		size = { 
+			width = 960 
+			height = 540 
+		}
+		orientation = CENTER
+		origo = CENTER
+		background = {
+			name = "background"
+			quadTextureSprite = "GFX_tiled_bg"
+		}
+		containerWindowType = {
+			name = "batlefield_container"
+			animation_time = 300
+			position = {
+				x = 0
+				y = -120
+			}
+			size = { 
+				width = 480 
+				height = 270
+			}
+			orientation = CENTER
+			origo = CENTER
+			background = {
+				name = "background"
+				quadTextureSprite = "GFX_tiled_bg"
+			}
+		}
+		iconType = {
+			name = "player_portrait"
+			spriteType = "GFX_CLT_valentine"
+			position = {
+				x = 418
+				y = 300
+			}
+			scale = 0.8
+		}
+		iconType = {
+			name = "HP"
+			position = {
+				x = 405
+				y = 470
+			}
+			spriteType = "GFX_life_progressbar"
+		}
+		iconType = {
+			name = "ENERGY"
+			position = {
+				x = 405
+				y = 500
+			}
+			spriteType = "GFX_stamina_progressbar"
+		}
+		buttonType = {
+			name = "LEFT_UP_ACTION"
+			quadTextureSprite = "GFX_closebutton"
+			position = {
+				x = 30
+				y = -220
+			}
+			orientation = LOWER_LEFT
+		}
+		buttonType = {
+			name = "LEFT_DOWN_ACTION"
+			quadTextureSprite = "GFX_closebutton"
+			position = {
+				x = 30
+				y = -120
+			}
+			orientation = LOWER_LEFT
+		}
+		buttonType = {
+			name = "RIGHT_UP_ACTION"
+			quadTextureSprite = "GFX_closebutton"
+			position = {
+				x = -60
+				y = -220
+			}
+			orientation = LOWER_RIGHT
+		}
+		buttonType = {
+			name = "RIGHT_DOWN_ACTION"
+			quadTextureSprite = "GFX_closebutton"
+			position = {
+				x = -60
+				y = -120
+			}
+			orientation = LOWER_RIGHT
+		}
+		buttonType = {
+			name = "clt_fight_text_1_button"
+			quadTextureSprite = "GFX_closebutton"
+			position = {
+				x = 22
+				y = 55
+			}
+			orientation = LEFT_UP
+		}
+		
+		instantTextBoxType = {
+			name = "clt_fight_text_1"
+			font = "hoi_18mbs"
+			text = "CLT_fight_nonsence_1"
+			maxWidth = 200
+			maxHeight = 48
+			format = center
+			vertical_alignment = center
+			position = {
+				x = 35
+				y = 50
+			}
+		}
+		instantTextBoxType = {
+			name = "text 1"
+			font = "hoi4_18"
+			text = "text 1"
+			maxWidth = 200
+			maxHeight = 48
+			format = center
+			vertical_alignment = center
+			position = {
+				x = 30
+				y = 120
+			}
+		}
+		instantTextBoxType = {
+			name = "text 2"
+			font = "hoi4_18"
+			text = "text 2"
+			maxWidth = 200
+			maxHeight = 48
+			format = center
+			vertical_alignment = center
+			position = {
+				x = 30
+				y = 190
+			}
+		}
+		instantTextBoxType = {
+			name = "text 3"
+			font = "hoi4_18"
+			text = "text 3"
+			maxWidth = 200
+			maxHeight = 48
+			format = center
+			vertical_alignment = center
+			position = {
+				x = 730
+				y = 50
+			}
+		}
+		instantTextBoxType = {
+			name = "text 4"
+			font = "hoi4_18"
+			text = "text 4"
+			maxWidth = 200
+			maxHeight = 48
+			format = center
+			vertical_alignment = center
+			position = {
+				x = 730
+				y = 120
+			}
+		}
+		instantTextBoxType = {
+			name = "text 5"
+			font = "hoi4_18"
+			text = "text 5"
+			maxWidth = 200
+			maxHeight = 48
+			format = center
+			vertical_alignment = center
+			position = {
+				x = 730
+				y = 190
+			}
+		}
+	}
+}

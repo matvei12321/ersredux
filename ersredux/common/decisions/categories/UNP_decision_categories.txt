@@ -1,0 +1,9 @@
+UNP_plague_cat = {
+	icon = GFX_skull_category
+	
+	allowed = {
+		original_tag = UNP
+	}
+	
+	priority = 10
+}

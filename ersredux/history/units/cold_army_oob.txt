@@ -1,0 +1,333 @@
+﻿division_template = {
+	name = "Windigo Armada"			#Infantry Division
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+		infantry = { x = 2 y = 4 }
+	}
+
+	support = {
+	}
+}
+
+units = {
+	division = {
+		name = "Windigo Armada"
+		location = 7536
+		division_template = "Windigo Armada"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Windigo Armada"
+		location = 7536
+		division_template = "Windigo Armada"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Windigo Armada"
+		location = 7536
+		division_template = "Windigo Armada"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Windigo Armada"
+		location = 7536
+		division_template = "Windigo Armada"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Windigo Armada"
+		location = 7536
+		division_template = "Windigo Armada"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Windigo Armada"
+		location = 7536
+		division_template = "Windigo Armada"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Windigo Armada"
+		location = 7536
+		division_template = "Windigo Armada"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Windigo Armada"
+		location = 7536
+		division_template = "Windigo Armada"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Windigo Armada"
+		location = 7536
+		division_template = "Windigo Armada"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Windigo Armada"
+		location = 7536
+		division_template = "Windigo Armada"
+		start_experience_factor = 0.3 
+	}
+	
+	division = {
+		name = "Windigo Armada"
+		location = 13217
+		division_template = "Windigo Armada"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Windigo Armada"
+		location = 13217
+		division_template = "Windigo Armada"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Windigo Armada"
+		location = 13217
+		division_template = "Windigo Armada"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Windigo Armada"
+		location = 13217
+		division_template = "Windigo Armada"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Windigo Armada"
+		location = 13217
+		division_template = "Windigo Armada"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Windigo Armada"
+		location = 13217
+		division_template = "Windigo Armada"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Windigo Armada"
+		location = 13217
+		division_template = "Windigo Armada"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Windigo Armada"
+		location = 13217
+		division_template = "Windigo Armada"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Windigo Armada"
+		location = 13217
+		division_template = "Windigo Armada"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Windigo Armada"
+		location = 13217
+		division_template = "Windigo Armada"
+		start_experience_factor = 0.3 
+	}
+	
+	division = {
+		name = "Windigo Armada"
+		location = 9190
+		division_template = "Windigo Armada"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Windigo Armada"
+		location = 9190
+		division_template = "Windigo Armada"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Windigo Armada"
+		location = 9190
+		division_template = "Windigo Armada"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Windigo Armada"
+		location = 9190
+		division_template = "Windigo Armada"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Windigo Armada"
+		location = 9190
+		division_template = "Windigo Armada"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Windigo Armada"
+		location = 9190
+		division_template = "Windigo Armada"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Windigo Armada"
+		location = 9190
+		division_template = "Windigo Armada"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Windigo Armada"
+		location = 9190
+		division_template = "Windigo Armada"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Windigo Armada"
+		location = 9190
+		division_template = "Windigo Armada"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Windigo Armada"
+		location = 9190
+		division_template = "Windigo Armada"
+		start_experience_factor = 0.3 
+	}
+	
+	division = {
+		name = "Windigo Armada"
+		location = 13111
+		division_template = "Windigo Armada"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Windigo Armada"
+		location = 13111
+		division_template = "Windigo Armada"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Windigo Armada"
+		location = 13111
+		division_template = "Windigo Armada"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Windigo Armada"
+		location = 13111
+		division_template = "Windigo Armada"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Windigo Armada"
+		location = 13111
+		division_template = "Windigo Armada"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Windigo Armada"
+		location = 13111
+		division_template = "Windigo Armada"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Windigo Armada"
+		location = 13111
+		division_template = "Windigo Armada"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Windigo Armada"
+		location = 13111
+		division_template = "Windigo Armada"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Windigo Armada"
+		location = 13111
+		division_template = "Windigo Armada"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Windigo Armada"
+		location = 13111
+		division_template = "Windigo Armada"
+		start_experience_factor = 0.3 
+	}
+	
+	division = {
+		name = "Windigo Armada"
+		location = 13115
+		division_template = "Windigo Armada"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Windigo Armada"
+		location = 13115
+		division_template = "Windigo Armada"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Windigo Armada"
+		location = 13115
+		division_template = "Windigo Armada"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Windigo Armada"
+		location = 13115
+		division_template = "Windigo Armada"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Windigo Armada"
+		location = 13115
+		division_template = "Windigo Armada"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Windigo Armada"
+		location = 13115
+		division_template = "Windigo Armada"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Windigo Armada"
+		location = 13115
+		division_template = "Windigo Armada"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Windigo Armada"
+		location = 13115
+		division_template = "Windigo Armada"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Windigo Armada"
+		location = 13115
+		division_template = "Windigo Armada"
+		start_experience_factor = 0.3 
+	}
+	division = {
+		name = "Windigo Armada"
+		location = 13115
+		division_template = "Windigo Armada"
+		start_experience_factor = 0.3 
+	}
+	
+	
+}

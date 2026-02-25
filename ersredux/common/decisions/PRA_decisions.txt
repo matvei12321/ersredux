@@ -1,0 +1,60 @@
+PRA_revanshists_cat = {
+	
+	PRA_revanshists_next_step = {
+		icon = GFX_decision_fire
+		available = {
+			OR = {
+				has_government = fascism
+				NOT = {
+					has_idea = PRA_revansh
+				}
+				has_civil_war = yes
+				has_government = fascism
+				OR = {
+					has_completed_focus = PRA_arrests
+					has_completed_focus = PRA_fascism_fast_4
+				}
+			}
+		}
+		activation = { tag = PRG }
+		priority = 10
+		visible = {
+			NOT = {
+				OR = {
+					has_government = fascism
+					NOT = {
+						has_idea = PRA_revansh
+					}
+					has_civil_war = yes
+				}
+			}
+		}
+		fire_only_once = no
+		days_re_enable = 1
+		is_good = no
+		days_mission_timeout = 20
+		timeout_effect = {
+			random_list = {
+				35 = { 
+					add_to_variable = { revanshists_power_var = 1 }
+					custom_effect_tooltip = pra_add_1_power_revanshist_var add_stability = -0.02 
+				}
+				35 = { 
+					add_to_variable = { revanshists_anger_var = 1 }
+					custom_effect_tooltip = pra_add_1_anger_revanshist_var add_stability = -0.02 
+				}
+				20 = { 
+					add_to_variable = { revanshists_power_var = 1 }
+					add_to_variable = { revanshists_anger_var = 1 }
+					custom_effect_tooltip = pra_add_1_anger_power_revanshist_var add_stability = -0.04 
+				}
+				10 = {
+				
+				}
+				
+			}
+		}
+		
+	}
+	
+}

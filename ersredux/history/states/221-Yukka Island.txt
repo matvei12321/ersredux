@@ -1,0 +1,26 @@
+state={
+	id=221
+	name="STATE_221"
+
+	provinces={
+		177
+	}
+
+	manpower=287748
+	state_category = small_island
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = YUK
+		add_core_of = YUK
+		
+		victory_points = { 177 15 }
+	}
+	
+	resources={
+		steel=8
+		rubber=12
+		oil=6
+		crystals = 9
+	}
+}

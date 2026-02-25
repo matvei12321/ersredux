@@ -1,0 +1,529 @@
+PGS_civil_war_cat = {
+	PGS_civil_war_time = {
+		icon = GFX_decision_fire
+		available = {
+			OR = {
+				has_completed_focus = PGS_hurricane_political_aftermath
+				has_country_flag = pgs_stop_revolution_flag
+				has_global_flag = pegasi_civil_war_flag
+			}	
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		priority = 10
+		visible = {
+			tag = PGS
+			NOT = {
+				has_global_flag = pegasi_civil_war_flag
+			}
+		}
+		activation = {
+			NOT = {
+				has_country_flag = FULL_REVOLUTION
+			}
+			NOT = {
+				has_global_flag = pegasi_civil_war_flag
+			}
+		}
+		fire_only_once = yes
+		is_good = no
+		days_mission_timeout = 250
+		
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision PGS_civil_war_time"
+			country_event = pegasi.16
+		}
+	}
+	
+	PGS_kills_decision = {
+		icon = GFX_decision_anti_communist
+		available = {
+			has_country_flag = can_do_kills
+		}
+		visible = {
+			NOT = {
+				has_government = democratic
+			}
+		}
+		
+		days_re_enable = 10
+		cost = 50
+		
+		ai_will_do = {
+			factor = 40
+		}
+		days_remove = 5
+		
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision PGS_kills_decision"
+			add_days_mission_timeout = {
+				mission = PGS_civil_war_time
+				days = 20
+			}
+			add_stability = -0.02
+			random_owned_controlled_state = {
+				add_manpower = -200
+			}
+			random_owned_controlled_state = {
+				add_manpower = -150
+			}
+			random_owned_controlled_state = {
+				add_manpower = -100
+			}
+		}
+	}
+	
+	PGS_propaganda_decision = {
+		icon = GFX_decision_megaphone
+		available = {
+			has_country_flag = can_do_propaganda
+		}
+		visible = {
+			NOT = {
+				has_government = democratic
+			}
+		}
+		
+		cost = 50
+		
+		ai_will_do = {
+			factor = 40
+		}
+		
+		days_re_enable = 10
+		
+		days_remove = 5
+		
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision PGS_propaganda_decision"
+			
+			add_popularity = {
+				ideology = communism
+				popularity = -0.01
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.01
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.01
+			}
+			
+			add_days_mission_timeout = {
+				mission = PGS_civil_war_time
+				days = 15
+			}
+		}
+	}
+	
+	PGS_reward_for_loyalty_decision = {
+		icon = GFX_decision_crossed_swords
+		available = {
+			has_country_flag = can_do_reward_for_loyalty
+		}
+		visible = {
+			NOT = {
+				has_government = democratic
+			}
+		}
+		modifier = {
+			mobilization_speed = 0.15
+		}
+		days_re_enable = 15
+		cost = 70
+		ai_will_do = {
+			factor = 40
+		}
+		days_remove = 15
+		
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision PGS_propaganda_decision"
+			
+			add_war_support = 0.03
+			add_manpower = 100
+			add_days_mission_timeout = {
+				mission = PGS_civil_war_time
+				days = 15
+			}
+		}
+	}
+
+	PGS_support_workers_decision = {
+		icon = GFX_decision_megaphone
+		available = {
+			has_country_flag = pgs_can_support_workers_flag
+		}
+		visible = {
+			has_government = democratic
+		}
+		
+		cost = 50
+		
+		ai_will_do = {
+			factor = 40
+		}
+		
+		days_re_enable = 10
+		
+		days_remove = 5
+		
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision PGS_propaganda_decision"
+			
+			175 = {
+				add_extra_state_shared_building_slots = 1
+				random_list = {
+					50 = {
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					50 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+						}
+					}
+				}
+			}
+			
+			add_days_mission_timeout = {
+				mission = PGS_civil_war_time
+				days = 25
+			}
+		}
+	}
+	
+}
+
+RAINBOW_FACTORY_cat = {
+	remove_rainbow_effect_from_neibghour = {
+		visible = {
+			any_country = {
+				is_neighbor_of = ROOT
+				NOT = {
+					OR = {
+						has_idea = bad_rainbow_factory_effect
+						has_idea = good_rainbow_factory_effect
+					}
+				}
+			}
+		}
+		priority = 10
+		days_re_enable = 0
+		cost = 200
+		target_array = neighbors
+		target_trigger = {
+			FROM = {
+				is_neighbor_of = ROOT
+				OR = {
+					has_idea = bad_rainbow_factory_effect
+					has_idea = good_rainbow_factory_effect
+				}
+			}
+		}
+		complete_effect	= {
+			log = "[GetDateText]: [Root.GetName]: Decision remove_effect_from_pandoria"
+			add_to_variable = { used_factory_cores = -1 }
+			FROM = {
+				if ={
+					limit = {
+						has_idea = bad_rainbow_factory_effect
+					}
+					remove_ideas = bad_rainbow_factory_effect
+				}
+				else_if ={
+					limit = {
+						has_idea = good_rainbow_factory_effect
+					}
+					remove_ideas = good_rainbow_factory_effect
+				}
+			}
+		}
+	}
+	
+	add_good_rainbow_effect_to_neibghour = {
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = less_then_3_factory_cores_used
+				check_variable = { used_factory_cores < 3 }
+			}
+			FROM = {
+				has_opinion = { target = ROOT value > 24 }
+			}
+		}
+		visible = {
+			any_country = {
+				NOT = { is_in_faction_with = ROOT }
+				is_neighbor_of = ROOT
+				NOT = {
+					has_idea = ERP_rainbow_factory_effect
+				}
+			}
+		}
+		priority = 9
+		days_re_enable = 0
+		cost = 200
+		target_array = neighbors
+		target_trigger = {
+			FROM = {
+				is_neighbor_of = ROOT
+				NOT = {
+					OR = {
+						has_idea = good_rainbow_factory_effect
+						has_idea = bad_rainbow_factory_effect
+					}
+				}
+			}
+		}
+		complete_effect		= {
+			log = "[GetDateText]: [Root.GetName]: Decision remove_effect_from_pandoria"
+			add_to_variable = { used_factory_cores = 1 }
+			FROM = {
+				add_ideas = good_rainbow_factory_effect
+			}
+		}
+	}
+	
+	add_bad_rainbow_effect_to_neibghour = {
+		available = {
+			
+			custom_trigger_tooltip = {
+				tooltip = less_then_3_factory_cores_used
+				check_variable = { used_factory_cores < 3 }
+			}
+			FROM = {
+				NOT = { is_in_faction_with = ROOT }
+			}
+			FROM = {
+				has_opinion = { target = ROOT value < 26 }
+			}
+		}
+		visible = {
+			any_country = {
+				NOT = { is_in_faction_with = ROOT }
+				is_neighbor_of = ROOT
+				NOT = {
+					OR = {
+						has_idea = bad_rainbow_factory_effect
+						has_idea = good_rainbow_factory_effect
+					}
+				}
+			}
+		}
+		priority = 8
+		days_re_enable = 0
+		cost = 200
+		target_array = neighbors
+		target_trigger = {
+			FROM = {
+				is_neighbor_of = ROOT
+				NOT = {
+					OR = {
+						has_idea = good_rainbow_factory_effect
+						has_idea = bad_rainbow_factory_effect
+					}
+				}
+			}
+		}
+		complete_effect		= {
+			log = "[GetDateText]: [Root.GetName]: Decision remove_effect_from_pandoria"
+			add_to_variable = { used_factory_cores = 1 }
+			FROM = {
+				add_ideas = bad_rainbow_factory_effect
+			}
+		}
+	}
+}
+
+PGS_unification = {
+	PGS_fascism_unification = {
+		available = {
+			owns_state = 59
+			owns_state = 14
+			owns_state = 66
+			owns_state = 170
+			owns_state = 175
+			owns_state = 123
+			owns_state = 40
+			owns_state = 3
+			owns_state = 75
+			owns_state = 166
+			owns_state = 153
+		}
+		icon = GFX_decision_crossed_swords
+		cost = 100
+		complete_effect	= {
+			log = "[GetDateText]: [Root.GetName]: Decision remove_effect_from_pandoria"
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				set_cosmetic_tag = PGS_army_unified
+				custom_effect_tooltip = pgs_army_superevent_tt
+				set_global_flag = eaw_super_event_flag_soldat
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = disable_superevents_flag
+						}
+					}
+					hidden_effect = {
+						sound_effect = super_event_soldat_se
+						play_song = "soldat"
+					}
+				}
+			}
+		}
+	}
+
+
+}
+
+PGS_balance_of_power_category = {
+	PGS_weaken_hurricane = {
+		icon = GFX_decision_pgs_council
+		available = {
+			
+		}
+		days_re_enable = 70
+		complete_effect	= {
+			log = "[GetDateText]: [Root.GetName]: Decision remove_effect_from_pandoria"
+			add_power_balance_value = {
+				id = pgs_balance_of_power
+				value = -0.05
+			}
+			add_political_power = 50
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = PGS_hurricane_political_aftermath
+					}
+				}
+				custom_effect_tooltip = pgs_dont_be_so_fast_bop
+			}
+		}
+	}
+	
+	PGS_strenghem_hurricane_10 = {
+		icon = GFX_decision_pgs_commander
+		available = {
+			
+		}
+		days_re_enable = 70
+		cost = 25
+		complete_effect	= {
+			log = "[GetDateText]: [Root.GetName]: Decision remove_effect_from_pandoria"
+			add_power_balance_value = {
+				id = pgs_balance_of_power
+				value = 0.1
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = PGS_hurricane_political_aftermath
+					}
+				}
+				custom_effect_tooltip = pgs_dont_be_so_fast_bop
+			}
+		}
+	}
+	
+	PGS_strenghem_hurricane_kill_for_15 = {
+		icon = GFX_decision_pgs_commander
+		available = {
+			
+		}
+		fire_only_once = yes
+		cost = 50
+		complete_effect	= {
+			log = "[GetDateText]: [Root.GetName]: Decision remove_effect_from_pandoria"
+			add_power_balance_value = {
+				id = pgs_balance_of_power
+				value = 0.15
+			}
+			add_manpower = -10
+			add_stability = -0.01
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = PGS_hurricane_political_aftermath
+					}
+				}
+				custom_effect_tooltip = pgs_dont_be_so_fast_bop
+			}
+		}
+	}
+	
+	PGS_hurricane_buy_20 = {
+		icon = GFX_decision_pgs_commander
+		available = {
+			
+		}
+		fire_only_once = yes
+		cost = 75
+		days_remove = 10
+		modifier = {
+			political_power_gain = -2
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove_effect_from_pandoria"
+			add_power_balance_value = {
+				id = pgs_balance_of_power
+				value = 0.2
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = PGS_hurricane_political_aftermath
+					}
+				}
+				custom_effect_tooltip = pgs_dont_be_so_fast_bop
+			}
+		}
+	}
+	
+	PGS_strenghem_hurricane_for_soldiers_10 = {
+		icon = GFX_decision_pgs_commander
+		available = {
+			power_balance_value = {
+				id = pgs_balance_of_power
+				value > 0.09
+			}	
+		}
+		days_re_enable = 70
+		cost = 75
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove_effect_from_pandoria"
+			add_power_balance_value = {
+				id = pgs_balance_of_power
+				value = 0.1
+			}
+			add_manpower = -10
+			army_experience = -5
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = PGS_hurricane_political_aftermath
+					}
+				}
+				custom_effect_tooltip = pgs_dont_be_so_fast_bop
+			}
+		}
+	}
+}
+
+PGS_bring_back_scientists = {
+	PGS_create_new_scientists_decision = {
+		fire_only_once = yes
+		cost = 150
+		days_remove = 100
+		remove_effect_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove_effect_from_pandoria"
+			remove_ideas = PGS_not_enough_scientists
+		}
+	}
+}

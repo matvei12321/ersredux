@@ -1,0 +1,178 @@
+
+
+music = {
+	name = "monster_grain"
+	file = "monster_grain.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "rot_und_schwarz"
+	file = "rot_und_schwarz.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "na_dalney_stantsii_soydu"
+	file = "na_dalney_stantsii_soydu.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "the_battle_is_going_again"
+	file = "the_battle_is_going_again.ogg"
+	volume = 2.0
+}
+
+music = {
+	name = "smert_luni"
+	file = "smert_luni.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "pervomai"
+	file = "pervomai.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "red_sun"
+	file = "red_sun.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "paint_it_black"
+	file = "paint_it_black.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "snow_queen"
+	file = "snow_queen.ogg"
+	volume = 0.9
+	
+}
+music = {
+	name = "ne_moya_zabota"
+	file = "ne_moya_zabota.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "matrosi_deneg_ne_berut"
+	file = "matrosi_deneg_ne_berut.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "madame_lulu"
+	file = "madame_lulu.ogg"
+	volume = 0.9
+}
+music = {
+	name = "discord"
+	file = "discord.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "Eclipse"
+	file = "eclipse.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "my_brother"
+	file = "my_brother.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "lunas_future"
+	file = "lunas_future.ogg"
+	volume = 0.9
+}
+
+
+music = {
+	name = "kak_rodnaya_mat"
+	file = "kak_rodnaya_mat.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "vernopoddanim"
+	file = "vernopoddanim.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "tri_konya"
+	file = "tri_konya.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "together"
+	file = "together_against_the_sisters.ogg"
+	volume = 0.9
+}
+	# PGS anarachocommunists
+music = {
+	name = "Tryn_trava"
+	file = "tryntrava.ogg"
+	volume = 0.7
+}
+
+music = {
+	name = "Tachanka"
+	file = "tachanka.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "Tachanka_2"
+	file = "tachanka_2.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "Sanitar"
+	file = "sanitar.ogg"
+	volume = 0.7
+}
+
+music = {
+	name = "black_znamya"
+	file = "black_znamya.ogg"
+	volume = 0.7
+}
+
+music = {
+	name = "in_our_town"
+	file = "in_our_town.ogg"
+	volume = 0.9
+}
+
+
+	# 11st century Shizoid Pony
+music = {
+	name = "Dorime"
+	file = "dorime.ogg"
+	volume = 0.9
+}
+
+	# Кузинатра из Смешариков
+music = {
+	name = "kuzinatra"
+	file = "silence.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "prekrasnoye_daleko"
+	file = "prekrasnoye_daleko.ogg"
+	volume = 0.9
+}

@@ -1,0 +1,32 @@
+state={
+	id=1242
+	name="STATE_1242"
+
+	provinces={
+		1643
+	}
+
+	manpower=807132
+	state_category = town
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = NCN
+		add_core_of = NGC
+
+		victory_points = { 1643 3 }
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+
+			1643 = {
+				naval_base = 1
+			}
+		}
+	}
+	resources = {
+		steel = 26
+	}
+
+}

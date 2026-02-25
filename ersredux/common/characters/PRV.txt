@@ -1,0 +1,15 @@
+characters={
+	PRA_Regent_Walrus={
+		name=PRA_Regent_Walrus
+		portraits={
+			civilian={
+				large="gfx/leaders/PRV/Regent_Walrus.tga"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

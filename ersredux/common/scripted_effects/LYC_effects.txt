@@ -1,0 +1,46 @@
+scripted_peace_of_LYC_and_OLE = {
+	LYC = {
+		drop_cosmetic_tag = yes 
+		country_event = lyc.19
+		
+		if = {
+			limit = {
+				has_dlc = "Together for Victory"
+			}
+			set_autonomy = {
+				target = OLE
+				autonomy_state = autonomy_satellite
+			}
+			else = {
+				puppet = OLE
+			}
+		}
+		remove_ideas = {
+			idea = LYC_total_destruction_idea
+		}
+		country_event = { id = lyc.23 days = 70 }
+	}
+
+	OLE = {
+		load_focus_tree = extermination_olenia_tree
+		set_cosmetic_tag = extermination_zone_olenia
+		set_country_flag = extermination_flag
+		set_popularities = {
+			democratic = 20
+			fascism = 35
+			communism = 20
+			neutrality = 25
+		}
+		add_ideas = OLE_EZ_ixiod_eidrich
+		add_ideas = OLE_EZ_maris_mandelis
+		add_ideas = OLE_EZ_oscar_dirlewanderer
+	}	
+	if = {
+		limit = {
+			NOT = {
+				country_exists = OLE 
+			}
+		}
+		release_puppet = OLE
+	}
+}

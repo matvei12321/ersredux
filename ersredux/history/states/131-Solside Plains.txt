@@ -1,0 +1,25 @@
+state={
+	id=131
+	name="STATE_131"
+
+	provinces={
+		277 1233 3267 6340 6589 9404 10855 11216 11355 11370 11498 13296  
+	}
+
+	manpower=274270
+	state_category=rural
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = PGS
+		add_core_of = PGS
+
+		victory_points = { 11216 3 }
+		
+		set_demilitarized_zone = yes
+
+		buildings = {
+			infrastructure = 1
+		}
+	}
+}

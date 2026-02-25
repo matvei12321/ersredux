@@ -1,0 +1,18 @@
+characters={
+	EMP_leader = {
+		name=EMP_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		
+		country_leader={
+			desc=""
+			ideology=total_anarchism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

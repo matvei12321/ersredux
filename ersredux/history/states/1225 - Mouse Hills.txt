@@ -1,0 +1,18 @@
+state={
+	id=1225
+	name="STATE_1225"
+
+	provinces={
+		521 7451 11516 7123 11106
+	}
+
+	manpower=12400
+	state_category = pastoral
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = SND
+		add_core_of = SND
+	}
+	impassable=yes
+}

@@ -1,0 +1,28 @@
+state={
+	id=1245
+	name="STATE_1245"
+
+	provinces={
+		10818 10891 1966
+	}
+
+	manpower=4269
+	state_category = town
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = NCH
+		add_core_of = NCH
+		
+		victory_points = { 10891 3 }
+		
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+		}
+	}
+	resources = {
+		steel = 26
+	}
+
+}

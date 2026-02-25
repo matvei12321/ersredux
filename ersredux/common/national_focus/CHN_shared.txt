@@ -1,0 +1,2735 @@
+
+shared_focus = {
+	id = CHN_family_problems
+	icon = GFX_goal_chn_question
+	cost = 1
+	x = 10
+	y = 0
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_family_problems"
+		add_stability = 0.01
+	}
+}
+
+shared_focus = {
+	id = CHN_helvia
+	icon = GFX_goal_helvia
+	cost = 2.9
+	prerequisite = { focus = CHN_family_problems }
+	relative_position_id = CHN_family_problems
+	x = -6
+	y = 1
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_helvia"
+		country_event = chn.1
+		DTS = {
+			country_event = chn.1
+		}
+	}
+}
+
+shared_focus = {
+	id = CHN_helvia_left
+	icon = GFX_goal_chn_man_lovesucc_shrunken
+	cost = 2.9
+	prerequisite = { focus = CHN_helvia }
+	relative_position_id = CHN_helvia
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_helvia_left"
+		add_stability = 0.025
+		add_political_power = 25
+		plus_10_hehemony_unity = yes
+	}
+}
+
+shared_focus = {
+	id = CHN_helvia_right
+	icon = GFX_goal_chn_marines
+	cost = 2.9
+	prerequisite = { focus = CHN_helvia }
+	relative_position_id = CHN_helvia
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_helvia_right"
+		navy_experience = 10
+		DTS = {
+			navy_experience = 10
+		}
+		305 = {
+			add_building_construction = {
+				type = dockyard
+				level = 1
+			}
+		}
+		312 = {
+			add_building_construction = {
+				type = dockyard
+				level = 1
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CHN_argynnis
+	icon = GFX_goal_vrax_queen
+	cost = 2.9
+	prerequisite = { focus = CHN_family_problems }
+	relative_position_id = CHN_family_problems
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_argynnis"
+		country_event = chn.2
+		VRX = {
+			country_event = chn.2
+		}
+	}
+}
+
+shared_focus = {
+	id = CHN_argynnis_left
+	icon = GFX_goal_chn_man_lovetax
+	cost = 2.9
+	prerequisite = { focus = CHN_argynnis }
+	relative_position_id = CHN_argynnis
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_argynnis_left"
+		251 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+			}
+		}
+		259 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CHN_argynnis_right
+	icon = GFX_goal_chn_96th
+	cost = 2.9
+	prerequisite = { focus = CHN_argynnis }
+	relative_position_id = CHN_argynnis
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_argynnis_right"
+		swap_ideas = {
+			remove_idea = CHN_army_reorganization
+			add_idea = ers_chn_reorganization_2
+		}
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.2
+			uses = 1
+			category = land_doctrine
+		}
+		army_experience = 10
+		VRX = {
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.2
+				uses = 1
+				category = land_doctrine
+			}
+			army_experience = 10
+		}
+	}
+}
+shared_focus = {
+	id = CHN_yharia
+	icon = GFX_goal_srf_queen
+	cost = 2.9
+	prerequisite = { focus = CHN_family_problems }
+	relative_position_id = CHN_family_problems
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 40
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_yharia"
+		country_event = chn.3
+		SRF = {
+			country_event = chn.3
+		}
+	}
+}
+
+shared_focus = {
+	id = CHN_yharia_right
+	icon = GFX_goal_chn_atom
+	cost = 2.9
+	prerequisite = { focus = CHN_yharia }
+	relative_position_id = CHN_yharia
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_yharia_right"
+		add_ideas = ers_chn_research_on_bugs
+	}
+}
+
+shared_focus = {
+	id = CHN_yharia_left
+	icon = GFX_goal_chn_man_handcuffs
+	cost = 2.9
+	prerequisite = { focus = CHN_yharia }
+	relative_position_id = CHN_yharia
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_yharia_left"
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.025
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = -0.025
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.025
+		}
+		251 = {
+			add_manpower = -1500
+		}
+		262 = {
+			add_manpower = 1500
+		}
+	}
+}
+
+shared_focus = {
+	id = CHN_aurantia
+	icon = GFX_goal_lyc_queen
+	cost = 2.9
+	prerequisite = { focus = CHN_family_problems }
+	relative_position_id = CHN_family_problems
+	x = 6
+	y = 1
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_aurantia"
+		country_event = chn.4
+		LYC = {
+			country_event = chn.4
+		}
+	}
+}
+
+shared_focus = {
+	id = CHN_aurantia_left
+	icon = GFX_goal_chn_lumber
+	cost = 2.9
+	prerequisite = { focus = CHN_aurantia }
+	relative_position_id = CHN_aurantia
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_aurantia_left"
+		251 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CHN_aurantia_right
+	icon = GFX_goal_chn_ole
+	cost = 2.9
+	prerequisite = { focus = CHN_aurantia }
+	relative_position_id = CHN_aurantia
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_aurantia_right"
+		309 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+			}
+			add_building_construction = {
+				type = bunker
+				province = 10247
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 309
+				level = 2
+				instant_build = yes
+			}
+		}
+		260 = {
+			add_building_construction = {
+				type = bunker
+				province = 11079
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CHN_invite_everyone
+	icon = GFX_goal_chn_man_bougie
+	cost = 5.8
+	prerequisite = { focus = CHN_helvia_left }
+	prerequisite = { focus = CHN_helvia_right }
+	prerequisite = { focus = CHN_aurantia_left }
+	prerequisite = { focus = CHN_aurantia_right }
+	prerequisite = { focus = CHN_argynnis_left }
+	prerequisite = { focus = CHN_argynnis_right }
+	prerequisite = { focus = CHN_yharia_left }
+	prerequisite = { focus = CHN_yharia_right }
+	relative_position_id = CHN_family_problems
+	x = 0
+	y = 3
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_invite_everyone"
+		every_country = {
+				limit = {
+					is_chn_hehemony_hive = yes
+				}
+			country_event = chn.8
+		}
+	}
+}
+
+shared_focus = {
+	id = CHN_heavy_ruling
+	icon = GFX_goal_CHN_EQS
+	cost = 0
+	prerequisite = { focus = CHN_invite_everyone }
+	relative_position_id = CHN_family_problems
+	x = 6
+	y = 4
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+	}
+	available = {
+		always = no
+	}
+	mutually_exclusive = { focus = CHN_light_ruling }
+	mutually_exclusive = { focus = CHN_evolution_revolution }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_heavy_ruling"
+		if = {
+			limit = {
+				NOT = {	has_global_flag = warcrimes_disabled }
+			}
+			add_to_variable = {
+				ROOT_warcrimes_count = 1
+			}
+			custom_effect_tooltip = plus_1_warcrimes_tt
+		}
+		add_war_support = 0.025
+		custom_effect_tooltip = CHN_heavy_ruling_tt
+	}
+}
+
+shared_focus = {
+	id = CHN_heavy_ruling_l_1
+	icon = GFX_goal_chn_cool_thing
+	cost = 5.8
+	prerequisite = { focus = CHN_heavy_ruling }
+	relative_position_id = CHN_heavy_ruling
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_heavy_ruling_l_1"
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}
+		add_ideas = ers_CHN_aurhocratic_empire
+	}
+}
+
+shared_focus = {
+	id = CHN_heavy_ruling_r_1
+	icon = GFX_goal_chn_swords
+	cost = 5.8
+	prerequisite = { focus = CHN_heavy_ruling }
+	relative_position_id = CHN_heavy_ruling
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_heavy_ruling_r_1"
+		add_war_support = 0.05
+		251 = {
+			add_extra_state_shared_building_slots = 4
+			add_building_construction = {
+				type = arms_factory
+				level = 4
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CHN_heavy_ruling_l_2
+	icon = GFX_goal_chn_queens_tower
+	cost = 5.8
+	prerequisite = { focus = CHN_heavy_ruling_l_1 }
+	prerequisite = { focus = CHN_heavy_ruling_r_1 }
+	relative_position_id = CHN_heavy_ruling
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_heavy_ruling_r_1"
+		minus_2_5_hehemony_unity = yes
+		add_ideas = ers_CHN_centre_of_hehemony_idea
+	}
+}
+
+shared_focus = {
+	id = CHN_heavy_ruling_centre_2
+	icon = GFX_goal_chn_helmet
+	cost = 5.8
+	prerequisite = { focus = CHN_heavy_ruling_l_1 }
+	prerequisite = { focus = CHN_heavy_ruling_r_1 }
+	relative_position_id = CHN_heavy_ruling
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_heavy_ruling_r_1"
+		country_event = { id = chn.11 days = 1 }
+		custom_effect_tooltip = CHN_heavy_ruling_centre_2_tt
+	}
+}
+
+shared_focus = {
+	id = CHN_heavy_ruling_r_2
+	icon = GFX_goal_chn_man_detective
+	cost = 5.8
+	prerequisite = { focus = CHN_heavy_ruling_l_1 }
+	prerequisite = { focus = CHN_heavy_ruling_r_1 }
+	relative_position_id = CHN_heavy_ruling
+	x = -2
+	y = 2
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_heavy_ruling_r_1"
+		if = {
+			limit = { has_dlc = "La Resistance" }
+			if = {
+				limit = {
+					has_intelligence_agency = no
+				}
+				create_intelligence_agency = {
+					name = "VOPS"
+					icon = GFX_intelligence_agency_logo_chn
+				}
+			}
+			add_ideas = ers_CHN_agressive_vops_idea_lar
+		}
+		else = {
+			add_ideas = ers_CHN_agressive_vops_idea
+		}
+	}
+}
+
+shared_focus = {
+	id = CHN_heavy_ruling_l_l_3
+	icon = GFX_goal_chn_enslave_pony
+	cost = 5.8
+	prerequisite = { focus = CHN_heavy_ruling_l_2 }
+	prerequisite = { focus = CHN_heavy_ruling_centre_2 }
+	prerequisite = { focus = CHN_heavy_ruling_r_2 }
+	prerequisite = { focus = CHN_ss_shtab }
+	relative_position_id = CHN_heavy_ruling
+	x = -3
+	y = 3
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_heavy_ruling_r_1"
+		army_experience = 5
+		add_ideas = ers_CHN_heavy_patriotism_idea
+		add_manpower = -17500
+	}
+}
+
+shared_focus = {
+	id = CHN_heavy_ruling_l_3
+	icon = GFX_goal_chn_crown
+	cost = 5.8
+	prerequisite = { focus = CHN_heavy_ruling_l_2 }
+	prerequisite = { focus = CHN_heavy_ruling_centre_2 }
+	prerequisite = { focus = CHN_heavy_ruling_r_2 }
+	relative_position_id = CHN_heavy_ruling
+	x = -1
+	y = 3
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_heavy_ruling_r_1"
+		minus_2_5_hehemony_unity = yes
+		add_war_support = 0.1
+		add_political_power = 100
+		259 = {
+			add_claim_by = ROOT 
+		}
+		309 = {
+			add_claim_by = ROOT 
+		}
+		252 = {
+			add_claim_by = ROOT 
+		}
+		262 = {
+			add_claim_by = ROOT 
+		}
+		316 = {
+			add_claim_by = ROOT 
+		}
+	}
+}
+
+shared_focus = {
+	id = CHN_heavy_ruling_r_3
+	icon = GFX_goal_chn_support_chrysalis
+	cost = 5.8
+	prerequisite = { focus = CHN_heavy_ruling_l_2 }
+	prerequisite = { focus = CHN_heavy_ruling_centre_2 }
+	prerequisite = { focus = CHN_heavy_ruling_r_2 }
+	relative_position_id = CHN_heavy_ruling
+	x = 1
+	y = 3
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_heavy_ruling_r_1"
+		CHN_queen_chrysalis = { set_character_name = CHN_chrysalis_vesalipolia }		
+		add_country_leader_trait = dictator
+	}
+}
+
+shared_focus = {
+	id = CHN_heavy_ruling_r_r_3
+	icon = GFX_goal_chn_strike_stg
+	cost = 5.8
+	prerequisite = { focus = CHN_heavy_ruling_l_2 }
+	prerequisite = { focus = CHN_heavy_ruling_centre_2 }
+	prerequisite = { focus = CHN_heavy_ruling_r_2 }
+	relative_position_id = CHN_heavy_ruling
+	x = 3
+	y = 3
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_heavy_ruling_r_1"
+		add_stability = 0.05
+		add_popularity = {
+			ideology = democratic 
+			popularity = -0.025
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = -0.025
+		}
+	}
+}
+
+shared_focus = {
+	id = CHN_heavy_ruling_vraks_intervention
+	icon = GFX_goal_vrx_swords
+	cost = 5.8
+	prerequisite = { focus = CHN_heavy_ruling_l_l_3 }
+	mutually_exclusive = { focus = CHN_vraks_coronation }
+	relative_position_id = CHN_heavy_ruling
+	x = -2
+	y = 4
+	will_lead_to_war_with = VRX
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+			has_global_flag = CHN_intervention_in_vraks
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = vraks_problem_solved_tt
+					VRX = {
+						has_idea = changelings_medium_puppet
+					}
+				}
+				owns_state = 259
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_heavy_ruling_r_1"
+		VRX = { 
+			country_event = { id = chn.12 days = 2 }
+		}
+	}
+}
+
+shared_focus = {
+	id = CHN_vraks_coronation
+	icon = GFX_goal_vrx_crown
+	cost = 5.8
+	prerequisite = { focus = CHN_heavy_ruling_l_3 }
+	prerequisite = { focus = CHN_heavy_ruling_r_3 }
+	mutually_exclusive = { focus = CHN_heavy_ruling_vraks_intervention }
+	relative_position_id = CHN_heavy_ruling
+	x = 0
+	y = 4
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+		OR = {
+			custom_trigger_tooltip = {
+				tooltip = vraks_problem_solved_tt
+				VRX = {
+					has_idea = changelings_medium_puppet
+				}
+			}
+			owns_state = 259
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_heavy_ruling_r_1"
+		259 = {
+			add_core_of = ROOT
+		}
+		add_country_leader_trait = queen_argynnis
+	}
+}
+
+
+
+shared_focus = {
+	id = CHN_long_swords_night
+	icon = GFX_goal_chn_man_stratocracy
+	cost = 5.8
+	prerequisite = { focus = CHN_heavy_ruling_r_3}
+	prerequisite = { focus = CHN_heavy_ruling_r_r_3}
+	relative_position_id = CHN_heavy_ruling
+	x = 2
+	y = 4
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_heavy_ruling_r_1"
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.1
+		}
+		swap_ideas = {
+			remove_idea = political_divisions
+			add_idea = political_divisions_2
+		}
+		custom_effect_tooltip = unlock_army_tt
+		custom_effect_tooltip = plus_75_warcrimes_tt
+		every_country = {
+			limit = {
+				is_chn_hehemony_hive = yes
+			}
+			every_owned_state = {
+				add_manpower = -5000
+			}
+		}	
+		if = {
+			limit = {
+				NOT = {	has_global_flag = warcrimes_disabled }
+			}
+			add_to_variable = {
+				ROOT_warcrimes_count = 75
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CHN_prepare_inner_invasion
+	icon = GFX_goal_chn_man_lovetax
+	cost = 8
+	prerequisite = { focus = CHN_heavy_ruling_vraks_intervention focus = CHN_vraks_coronation }
+	prerequisite = { focus = CHN_long_swords_night }
+	relative_position_id = CHN_heavy_ruling
+	x = 0
+	y = 5
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_heavy_ruling_r_1"
+		add_timed_idea = {
+			idea = ers_CHN_prepare_inner_invasion_idea
+			days = 365
+		}
+	}
+}
+
+shared_focus = {
+	id = CHN_prepare_invasion_dytrysium
+	icon = GFX_goal_chn_bomb_napalm
+	cost = 5.8
+	prerequisite = { focus = CHN_prepare_inner_invasion }
+	relative_position_id = CHN_heavy_ruling
+	x = -3
+	y = 6
+	will_lead_to_war_with = DTS
+	ai_will_do = {
+		factor = 40
+		modifier = {
+			DTS = {
+				is_ai = no
+			}
+			factor = 10
+		}
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_heavy_ruling_r_1"
+		DTS = {
+			country_event = chn.13
+		}
+	}
+}
+
+shared_focus = {
+	id = CHN_prepare_invasion_lyctida
+	icon = GFX_goal_chn_man_bombing
+	cost = 5.8
+	prerequisite = { focus = CHN_prepare_inner_invasion }
+	relative_position_id = CHN_heavy_ruling
+	x = -1
+	y = 6
+	will_lead_to_war_with = LYC
+	ai_will_do = {
+		factor = 40
+		modifier = {
+			LYC = {
+				is_ai = no
+			}
+			factor = 10
+		}
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_heavy_ruling_r_1"
+		LYC = {
+			country_event = chn.13
+		}
+	}
+}
+
+shared_focus = {
+	id = CHN_prepare_invasion_soryth
+	icon = GFX_goal_chn_man_bullets
+	cost = 5.8
+	prerequisite = { focus = CHN_prepare_inner_invasion }
+	relative_position_id = CHN_heavy_ruling
+	x = 1
+	y = 6
+	will_lead_to_war_with = SRF
+	ai_will_do = {
+		factor = 40
+		modifier = {
+			SRF = {
+				is_ai = no
+			}
+			factor = 10
+		}
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_heavy_ruling_r_1"
+		SRF = {
+			country_event = chn.13
+		}
+	}
+}
+
+shared_focus = {
+	id = CHN_prepare_invasion_volistad
+	icon = GFX_goal_chn_man_lotsaguns
+	cost = 5.8
+	prerequisite = { focus = CHN_prepare_inner_invasion }
+	relative_position_id = CHN_heavy_ruling
+	x = 3
+	y = 6
+	will_lead_to_war_with = VST
+	ai_will_do = {
+		factor = 40
+		modifier = {
+			VST = {
+				is_ai = no
+			}
+			factor = 10
+		}
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_heavy_ruling_r_1"
+		VST = {
+			country_event = chn.13
+		}
+	}
+}
+
+shared_focus = {
+	id = CHN_heavy_ruling_guards_on_hives
+	icon = GFX_focus_changeling_army
+	cost = 4.4
+	prerequisite = { focus = CHN_prepare_invasion_dytrysium }
+	prerequisite = { focus = CHN_prepare_invasion_lyctida }
+	prerequisite = { focus = CHN_prepare_invasion_soryth }
+	prerequisite = { focus = CHN_prepare_invasion_volistad }
+	relative_position_id = CHN_heavy_ruling
+	x = -2
+	y = 7
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+		owns_state = 251
+		owns_state = 252
+		owns_state = 262
+		owns_state = 259
+		owns_state = 316
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_light_ruling_start_integration"
+		add_stability = 0.1
+		if = {
+			limit = {
+				NOT = {	has_global_flag = warcrimes_disabled }
+			}
+			add_to_variable = {
+				ROOT_warcrimes_count = 10
+			}
+			custom_effect_tooltip = plus_10_warcrimes_tt
+		}
+	}
+}
+
+shared_focus = {
+	id = CHN_heavy_ruling_fate_of_queens
+	icon = GFX_goal_chn_question
+	cost = 4.4
+	prerequisite = { focus = CHN_prepare_invasion_dytrysium }
+	prerequisite = { focus = CHN_prepare_invasion_lyctida }
+	prerequisite = { focus = CHN_prepare_invasion_soryth }
+	prerequisite = { focus = CHN_prepare_invasion_volistad }
+	relative_position_id = CHN_heavy_ruling
+	x = 0
+	y = 7
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+		owns_state = 251
+		owns_state = 252
+		owns_state = 262
+		owns_state = 259
+		owns_state = 316
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_light_ruling_start_integration"
+		add_political_power = 100
+	}
+}
+
+shared_focus = {
+	id = CHN_heavy_ruling_destroy_hives_opposition
+	icon = GFX_goal_chn_man_office
+	cost = 4.4
+	prerequisite = { focus = CHN_prepare_invasion_dytrysium }
+	prerequisite = { focus = CHN_prepare_invasion_lyctida }
+	prerequisite = { focus = CHN_prepare_invasion_soryth }
+	prerequisite = { focus = CHN_prepare_invasion_volistad }
+	relative_position_id = CHN_heavy_ruling
+	x = 2
+	y = 7
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+		owns_state = 251
+		owns_state = 252
+		owns_state = 262
+		owns_state = 259
+		owns_state = 316
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_light_ruling_start_integration"
+		add_war_support = 0.05
+		remove_ideas = ers_thorax_diversions
+	}
+}
+
+shared_focus = {
+	id = CHN_changelingia
+	icon = GFX_goal_chn_equus
+	cost = 5.8
+	prerequisite = { focus = CHN_heavy_ruling_fate_of_queens focus = CHN_unified_hehemony }
+
+	relative_position_id = CHN_invite_everyone
+	x = 0
+	y = 9
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+		owns_state = 251
+		owns_state = 252
+		owns_state = 262
+		owns_state = 259
+		owns_state = 316
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_light_ruling_start_integration"
+		custom_effect_tooltip = unlock_changelingia_decision_tt
+	}
+}
+
+shared_focus = {
+	id = CHN_i_am_the_state
+	icon = GFX_goal_chn_chrysalis_parade
+	cost = 5.8
+	prerequisite = { focus = CHN_heavy_ruling_guards_on_hives }
+	prerequisite = { focus = CHN_heavy_ruling_fate_of_queens }
+	prerequisite = { focus = CHN_heavy_ruling_destroy_hives_opposition }
+	prerequisite = { focus = CHN_changelingia }
+	relative_position_id = CHN_invite_everyone
+	x = 6
+	y = 10
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+		owns_state = 251
+		owns_state = 252
+		owns_state = 262
+		owns_state = 259
+		owns_state = 316
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_light_ruling_start_integration"
+		add_stability = -0.1
+		add_political_power = -200
+		remove_ideas = political_divisions_2
+		if = {
+			limit = {
+				NOT = {	has_global_flag = warcrimes_disabled }
+			}
+			custom_effect_tooltip = chn_become_warcrime_queen_tt
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+shared_focus = {
+	id = CHN_light_ruling
+	icon = GFX_goal_chn_unity
+	cost = 0
+	prerequisite = { focus = CHN_invite_everyone }
+	relative_position_id = CHN_family_problems
+	x = -6
+	y = 4
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		always = no
+	}
+	mutually_exclusive = { focus = CHN_heavy_ruling }
+	mutually_exclusive = { focus = CHN_evolution_revolution }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_light_ruling"
+		plus_5_hehemony_unity = yes
+		custom_effect_tooltip = CHN_light_ruling_tt
+	}
+}
+
+shared_focus = {
+	id = CHN_queen_in_the_high_castle
+	icon = GFX_goal_chn_vesalipolis
+	cost = 5.8
+	prerequisite = { focus = CHN_light_ruling focus = CHN_heavy_ruling }
+	relative_position_id = CHN_invite_everyone
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_queen_in_the_high_castle"
+		add_political_power = 50
+		custom_effect_tooltip = unlock_queens_tower_tt
+	}
+}
+
+shared_focus = {
+	id = CHN_military_marches
+	icon = GFX_goal_chn_man_homecoming
+	cost = 5.8
+	prerequisite = { focus = CHN_queen_in_the_high_castle }
+	relative_position_id = CHN_invite_everyone
+	x = -1
+	y = 3
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_queen_in_the_high_castle"
+		remove_ideas = ers_chn_reorganization_2
+	} 
+}
+
+shared_focus = {
+	id = CHN_ss_shtab
+	icon = GFX_goal_chn_man_garrison
+	cost = 5.8
+	prerequisite = { focus = CHN_queen_in_the_high_castle }
+	relative_position_id = CHN_invite_everyone
+	x = 1
+	y = 3
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_queen_in_the_high_castle"
+		army_experience = 15
+		add_political_power = 100
+		add_popularity = {
+			ideology = communism
+			popularity = -0.03
+		}
+		319 = {
+			add_manpower = -1500
+		}
+		320 = {
+			add_manpower = -1500
+		}
+		322 = {
+			add_manpower = -1500
+		}
+		323 = {
+			add_manpower = -1500
+		}
+	}
+}
+
+shared_focus = {
+	id = CHN_light_ruling_l_1
+	icon = GFX_goal_chn_vesalipolis
+	cost = 5.8
+	prerequisite = { focus = CHN_light_ruling }
+	relative_position_id = CHN_light_ruling
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+		custom_trigger_tooltip = {
+			tooltip = hehemony_unity_is_atleast_25
+			check_variable = {
+				global.ers_chn_unity_var > 24
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_light_ruling_l_1"
+		add_ideas = ers_chn_culture_committe
+		add_political_power = 50
+	}
+}
+
+shared_focus = {
+	id = CHN_light_ruling_r_1
+	icon = GFX_goal_chn_hives
+	cost = 5.8
+	prerequisite = { focus = CHN_light_ruling }
+	relative_position_id = CHN_light_ruling
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+		custom_trigger_tooltip = {
+			tooltip = hehemony_unity_is_atleast_25
+			check_variable = {
+				global.ers_chn_unity_var > 24
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_light_ruling_r_1"
+		every_country = {
+			limit = {
+				is_chn_hehemony_hive = yes
+			}
+			add_ideas = ers_chn_state_law
+		}
+	}
+}
+
+shared_focus = {
+	id = CHN_light_ruling_l_2
+	icon = GFX_goal_chn_scroll
+	cost = 5.8
+	prerequisite = { focus = CHN_light_ruling_l_1 }
+	prerequisite = { focus = CHN_light_ruling_r_1 }
+	relative_position_id = CHN_light_ruling
+	x = -2
+	y = 2
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+		custom_trigger_tooltip = {
+			tooltip = hehemony_unity_is_atleast_35
+			check_variable = {
+				global.ers_chn_unity_var > 34
+			}
+		}
+	}
+		
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_light_ruling_l_2"
+		plus_5_hehemony_unity = yes
+		every_country = {
+			limit = {
+				is_chn_hehemony_hive = yes
+			}
+			add_ideas = ers_chn_constitution_idea
+			add_political_power = 100
+			add_stability = 0.1
+		}
+
+	}
+}
+
+shared_focus = {
+	id = CHN_light_ruling_centre_2
+	icon = GFX_goal_chn_man_crown
+	cost = 5.8
+	prerequisite = { focus = CHN_light_ruling_l_1 }
+	prerequisite = { focus = CHN_light_ruling_r_1 }
+	relative_position_id = CHN_light_ruling
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+		custom_trigger_tooltip = {
+			tooltip = hehemony_unity_is_atleast_35
+			check_variable = {
+				global.ers_chn_unity_var > 34
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_light_ruling_centre_2"
+		add_war_support = 0.1
+		add_manpower = 25000
+		custom_effect_tooltip = CHN_light_ruling_centre_2_tt
+	}
+}
+
+shared_focus = {
+	id = CHN_light_ruling_r_2
+	icon = GFX_goal_chn_industry_of_hives
+	cost = 5.8
+	prerequisite = { focus = CHN_light_ruling_l_1 }
+	prerequisite = { focus = CHN_light_ruling_r_1 }
+	relative_position_id = CHN_light_ruling
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+		custom_trigger_tooltip = {
+			tooltip = hehemony_unity_is_atleast_35
+			check_variable = {
+				global.ers_chn_unity_var > 34
+			}
+		}
+	}
+	mutually_exclusive = { focus = CHN_heavy_ruling }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_light_ruling_r_2"
+		every_country = {
+			limit = {
+				is_chn_hehemony_hive = yes
+			}
+			add_ideas = ers_chn_common_economy_idea
+		}
+		251 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+		252 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+		259 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+		262 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+		309  = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CHN_light_ruling_l_l_3
+	icon = GFX_goal_PLB_CHN_schizo
+	cost = 5.8
+	prerequisite = { focus = CHN_light_ruling_centre_2 }
+	prerequisite = { focus = CHN_light_ruling_r_2 }
+	prerequisite = { focus = CHN_light_ruling_l_2 }
+	relative_position_id = CHN_light_ruling
+	x = -3
+	y = 3
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+		custom_trigger_tooltip = {
+			tooltip = hehemony_unity_is_atleast_50
+			check_variable = {
+				global.ers_chn_unity_var > 49
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_light_ruling_l_l_3"
+		plus_5_hehemony_unity = yes
+		every_country = {
+			limit = {
+				is_chn_hehemony_hive = yes
+			}
+			add_war_support = 0.1
+		}
+	}
+}
+
+shared_focus = {
+	id = CHN_light_ruling_l_3
+	icon = GFX_goal_chn_man_mask
+	cost = 5.8
+	prerequisite = { focus = CHN_light_ruling_centre_2 }
+	prerequisite = { focus = CHN_light_ruling_r_2 }
+	prerequisite = { focus = CHN_light_ruling_l_2 }
+	relative_position_id = CHN_light_ruling
+	x = -1
+	y = 3
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+		custom_trigger_tooltip = {
+			tooltip = hehemony_unity_is_atleast_50
+			check_variable = {
+				global.ers_chn_unity_var > 49
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_light_ruling_l_3"
+		every_country = {
+			limit = {
+				is_chn_hehemony_hive = yes
+			}
+			add_ideas = ers_chn_cult_of_five
+		}
+	}
+}
+
+shared_focus = {
+	id = CHN_light_ruling_r_3
+	icon = GFX_goal_chn_man_heart
+	cost = 5.8
+	prerequisite = { focus = CHN_light_ruling_centre_2 }
+	prerequisite = { focus = CHN_light_ruling_r_2 }
+	prerequisite = { focus = CHN_light_ruling_l_2 }
+	relative_position_id = CHN_light_ruling
+	x = 1
+	y = 3
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+		custom_trigger_tooltip = {
+			tooltip = hehemony_unity_is_atleast_50
+			check_variable = {
+				global.ers_chn_unity_var > 49
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_light_ruling_r_3"
+		add_ideas = ers_great_alliance
+	}
+}
+
+shared_focus = {
+	id = CHN_light_ruling_r_r_3
+	icon = GFX_goal_chn_swords
+	cost = 5.8
+	prerequisite = { focus = CHN_light_ruling_centre_2 }
+	prerequisite = { focus = CHN_light_ruling_r_2 }
+	prerequisite = { focus = CHN_light_ruling_l_2 }
+	prerequisite = { focus = CHN_military_marches }
+	relative_position_id = CHN_light_ruling
+	x = 3
+	y = 3
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+		custom_trigger_tooltip = {
+			tooltip = hehemony_unity_is_atleast_50
+			check_variable = {
+				global.ers_chn_unity_var > 49
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_light_ruling_r_r_3"
+		army_experience = 5
+		every_country = {
+			limit = {
+				is_chn_hehemony_hive = yes
+			}
+			add_ideas = ers_chn_patriotism
+		}
+	}
+}
+
+shared_focus = {
+	id = CHN_light_ruling_start_integration
+	icon = GFX_goal_chn_man_office
+	cost = 5.8
+	prerequisite = { focus = CHN_light_ruling_l_l_3 }
+	prerequisite = { focus = CHN_light_ruling_l_3 }
+	prerequisite = { focus = CHN_light_ruling_r_3 }
+	relative_position_id = CHN_light_ruling
+	x = -2
+	y = 4
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+		custom_trigger_tooltip = {
+			tooltip = hehemony_unity_is_atleast_75
+			check_variable = {
+				global.ers_chn_unity_var > 74
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = vraks_problem_solved_tt
+			VRX = {
+				has_idea = changelings_medium_puppet
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_light_ruling_start_integration"
+		swap_ideas = {
+			remove_idea = political_divisions
+			add_idea = political_divisions_2
+		}
+		custom_effect_tooltip = unlock_army_tt
+	}
+}
+
+shared_focus = {
+	id = CHN_light_ruling_diplomacy_for_the_final_time
+	icon = GFX_goal_vrax_queen
+	cost = 5.8
+	prerequisite = { focus = CHN_light_ruling_r_3 }
+	prerequisite = { focus = CHN_light_ruling_l_3 }
+	relative_position_id = CHN_light_ruling
+	x = 0
+	y = 4
+	ai_will_do = {
+		factor = 40
+	}
+	mutually_exclusive = { focus = CHN_light_ruling_ultimatun }
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+		custom_trigger_tooltip = {
+			tooltip = hehemony_unity_is_atleast_75
+			check_variable = {
+				global.ers_chn_unity_var > 74
+			}
+		}
+		OR = {
+			custom_trigger_tooltip = {
+				tooltip = vraks_problem_solved_tt
+				VRX = {
+					has_idea = changelings_medium_puppet
+				}
+			}
+			owns_state = 259
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_light_ruling_diplomacy_for_the_final_time"
+		country_event = chn.10
+	}
+}
+
+shared_focus = {
+	id = CHN_light_ruling_ultimatun
+	icon = GFX_goal_vrx_propaganda
+	cost = 5.8
+	prerequisite = { focus = CHN_light_ruling_r_r_3 }
+	relative_position_id = CHN_light_ruling
+	x = 2
+	y = 4
+	ai_will_do = {
+		factor = 40
+	}
+	mutually_exclusive = { focus = CHN_light_ruling_diplomacy_for_the_final_time }
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+			has_global_flag = CHN_intervention_in_vraks
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = vraks_problem_solved_tt
+					VRX = {
+						has_idea = changelings_medium_puppet
+					}
+				}
+				owns_state = 259
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = hehemony_unity_is_atleast_75
+			check_variable = {
+				global.ers_chn_unity_var > 74
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_light_ruling_ultimatun"
+		VRX = {
+			country_event = { id = vrx.10 days = 2 }
+		}
+		custom_effect_tooltip = CHN_light_ruling_ultimatun_tt
+	}
+}
+
+shared_focus = {
+	id = CHN_commitee_of_unification
+	icon = GFX_goal_chn_doctrine_study
+	cost = 5.8
+	prerequisite = { focus = CHN_light_ruling_ultimatun focus = CHN_light_ruling_diplomacy_for_the_final_time }
+	prerequisite = { focus = CHN_light_ruling_start_integration }
+	relative_position_id = CHN_light_ruling
+	x = 0
+	y = 5
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+		custom_trigger_tooltip = {
+			tooltip = hehemony_unity_is_atleast_75
+			check_variable = {
+				global.ers_chn_unity_var > 74
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_commitee_of_unification"
+		add_dynamic_modifier = {
+			modifier = CHN_unification_commite_modifier
+		}
+		custom_effect_tooltip = CHN_commitee_of_unification_tt
+	}
+}
+
+shared_focus = {
+	id = CHN_invite_volistad
+	icon = GFX_goal_chn_doctrine_study
+	cost = 5.8
+	prerequisite = { focus = CHN_commitee_of_unification }
+	relative_position_id = CHN_light_ruling
+	x = -3
+	y = 6
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+		custom_trigger_tooltip = {
+			tooltip = hehemony_unity_is_atleast_70
+			check_variable = {
+				global.ers_chn_unity_var > 69
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_commitee_of_unification"
+		VST = { country_event = { id = chn.16 days = 1 } }
+	}
+}
+
+shared_focus = {
+	id = CHN_invite_soryth
+	icon = GFX_goal_chn_doctrine_study
+	cost = 5.8
+	prerequisite = { focus = CHN_commitee_of_unification }
+	relative_position_id = CHN_light_ruling
+	x = -1
+	y = 6
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+		custom_trigger_tooltip = {
+			tooltip = hehemony_unity_is_atleast_70
+			check_variable = {
+				global.ers_chn_unity_var > 69
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_commitee_of_unification"
+		SRF = { country_event = { id = chn.16 days = 1 } }
+	}
+}
+
+shared_focus = {
+	id = CHN_invite_lyctida
+	icon = GFX_goal_chn_doctrine_study
+	cost = 5.8
+	prerequisite = { focus = CHN_commitee_of_unification }
+	relative_position_id = CHN_light_ruling
+	x = 1
+	y = 6
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+		custom_trigger_tooltip = {
+			tooltip = hehemony_unity_is_atleast_70
+			check_variable = {
+				global.ers_chn_unity_var > 69
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_commitee_of_unification"
+		LYC = { country_event = { id = chn.16 days = 1 } }
+	}
+}
+
+shared_focus = {
+	id = CHN_invite_dytrisium
+	icon = GFX_goal_chn_doctrine_study
+	cost = 5.8
+	prerequisite = { focus = CHN_commitee_of_unification }
+	relative_position_id = CHN_light_ruling
+	x = 3
+	y = 6
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+		custom_trigger_tooltip = {
+			tooltip = hehemony_unity_is_atleast_70
+			check_variable = {
+				global.ers_chn_unity_var > 69
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_commitee_of_unification"
+		DTS = { country_event = { id = chn.16 days = 1 } }
+	}
+}
+
+shared_focus = {
+	id = CHN_unified_hehemony
+	icon = GFX_goal_chn_doctrine_study
+	cost = 10
+	prerequisite = { focus = CHN_invite_soryth }
+	prerequisite = { focus = CHN_invite_volistad }
+	prerequisite = { focus = CHN_invite_lyctida }
+	prerequisite = { focus = CHN_invite_dytrisium }
+	relative_position_id = CHN_light_ruling
+	x = 0
+	y = 7
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		NOT = {
+			has_global_flag = hehemony_collapsed_flag
+		}
+		custom_trigger_tooltip = {
+			tooltip = hehemony_unity_is_atleast_80
+			check_variable = {
+				global.ers_chn_unity_var > 79
+			}
+		}
+		AND = {
+			OR = {
+				VST = {
+					is_puppet_of = ROOT
+				}
+				owns_state = 316
+			}
+			OR = {
+				SRF = {
+					is_puppet_of = ROOT
+				}
+				owns_state = 262
+			}
+			OR = {
+				LYC = {
+					is_puppet_of = ROOT
+				}
+				owns_state = 309
+			}
+			OR = {
+				DTS = {
+					is_puppet_of = ROOT
+				}
+				owns_state = 252
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_commitee_of_unification"
+		annex_country = { target = DTS }
+		annex_country = { target = VST }
+		annex_country = { target = LYC }
+		annex_country = { target = SRF }
+	}
+}
+
+
+#### 
+shared_focus = {
+	id = CHN_evolution_revolution
+	icon = GFX_goal_chn_death_or_dishonour
+	cost = 1
+	prerequisite = { focus = CHN_invite_everyone }
+	x = 25
+	y = 4
+	ai_will_do = {
+		factor = 0
+	}
+	available = {
+	}
+	mutually_exclusive = { focus = CHN_heavy_ruling }
+	mutually_exclusive = { focus = CHN_light_ruling }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHN_family_problems"
+		add_political_power = -25
+		
+	}
+}
+
+
+#### Focuses Pax Crysalis ####
+
+#### Olenia ####
+
+shared_focus = {
+		id = pressure_olenia
+		icon = GFX_goal_chn_kill_the_deer
+		cost = 10.00
+		prerequisite = {
+			focus = CHN_changelingia
+		}
+		relative_position_id = CHN_changelingia
+		available = {
+			has_government = fascism
+			is_subject = no
+		}
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				date > 1010.1.1
+				factor = 2
+			}
+			modifier = {
+				date > 1011.1.1
+				factor = 5
+			}
+		}
+		x = -5
+		y = 2
+		bypass = {
+			OLE = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
+					has_war_with = ROOT
+				}
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus pressure_olenia"
+			add_war_support = 0.2
+			add_state_claim = 300
+			add_state_claim = 292
+			add_state_claim = 302
+			country_event = { id = changelings.1 days = 1 }
+			build_railway = {
+                level = 2
+				start_province = 9158
+                target_province = 10318
+                build_only_on_allied = yes
+            }
+			291 = { 
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			307 = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_named_threat = { threat = 1 name = pressure_olenia }
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ANNEXATION }
+	}
+
+shared_focus = {
+		id = offer_puppet
+		icon = GFX_goal_chn_integration_of_olenia
+		cost = 10.00
+		prerequisite = {
+			shared_focus = pressure_olenia
+		}
+		mutually_exclusive = {
+			focus = conquest
+		}
+		relative_position_id = pressure_olenia
+		will_lead_to_war_with = OLE
+		bypass = {
+			OR = {
+				any_country_with_original_tag = {
+					original_tag_to_check = OLE
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+				NOT = { country_exists = OLE }
+			}
+		}
+		available = {
+			OLE = { has_civil_war = no is_subject = no }
+			NOT = { has_war_with = OLE has_country_flag = CHN_refused_OLE_puppet }
+			has_government = fascism
+			is_subject = no
+		}
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				date > 1008.1.1
+				factor = 2
+			}
+			modifier = {
+				date > 1009.1.1
+				factor = 5
+			}
+			modifier = {
+				date > 1010.1.1
+				factor = 100
+			}
+		}
+		x = 11
+		y = 8
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus offer_puppet"
+			country_event = { id = changelings.2 } 
+			if = {
+				limit = { 
+					is_ai = yes 
+					NOT = {
+						has_idea = tot_economic_mobilisation
+						has_idea = war_economy
+					}
+				}
+				add_political_power = -150
+				add_ideas = war_economy
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+	}
+	
+	shared_focus = {
+		id = conquest
+		icon = GFX_goal_chn_conquest_of_olenia
+		cost = 10.00
+		will_lead_to_war_with = OLE
+		prerequisite = {
+			focus = pressure_olenia
+		}
+		mutually_exclusive = {
+			focus = offer_puppet
+		}
+		relative_position_id = pressure_olenia
+		available = {
+			any_country_with_original_tag = {
+				original_tag_to_check = OLE
+				exists = yes
+				NOT = {
+					is_subject_of = ROOT
+					is_in_faction_with = ROOT
+					has_non_aggression_pact_with = ROOT
+				}
+			}
+			has_government = fascism
+			is_subject = no
+		}
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				date > 1008.1.1
+				factor = 2
+			}
+			modifier = {
+				date > 1009.1.1
+				factor = 5
+			}
+			modifier = {
+				date > 1010.1.1
+				factor = 100
+			}
+		}
+		bypass = {
+			OR = {
+				has_war_with = OLE
+				NOT = {
+					country_exists = OLE
+				}
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus conquest"
+			create_wargoal = {
+				type = annex_everything
+				target = OLE
+			}
+			hidden_effect = {
+				every_country_with_original_tag = {
+					original_tag_to_check = OLE
+					ROOT = {
+						create_wargoal = {
+							type = annex_everything
+							target = PREV
+						}
+					}
+				}
+			}
+			add_named_threat = { threat = 5 name = pressure_olenia }
+			if = {
+				limit = { 
+					is_ai = yes 
+					NOT = {
+						has_idea = tot_economic_mobilisation
+						has_idea = war_economy
+					}
+				}
+				add_political_power = -150
+				add_ideas = war_economy
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
+		x = 1
+		y = 1
+
+	}
+	
+	shared_focus = {
+		id = national_resources
+		icon = GFX_goal_chn_ole
+		cost = 10.00
+		prerequisite = {
+			focus = offer_puppet
+			focus = conquest
+		}
+		relative_position_id = pressure_olenia
+		x = -1
+		y = 2
+		ai_will_do = { factor = 100 }
+		available = { owns_state = 300 owns_state = 292 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus national_resources"
+			add_resource = {
+				type = steel
+				amount = 13
+				state = 300
+			}
+			add_resource = {
+				type = steel
+				amount = 24
+				state = 292
+			}
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+	}
+	shared_focus = {
+		id = CHN_olenian_factories
+		icon = GFX_goal_chn_ole_factories
+		cost = 8
+		prerequisite = {
+			focus = offer_puppet
+			focus = conquest
+		}
+		relative_position_id = pressure_olenia
+		x = 1
+		y = 2
+		ai_will_do = { factor = 50 }
+		bypass = {
+			
+		}
+		available = {
+			OLE = {
+				OR = {
+					is_subject_of = ROOT
+					exists = no
+					has_capitulated = yes
+					has_country_flag = CHN_annexed_olenia_by_event
+				}
+			}
+			OLE = { any_cores_controlled_by_ROOT = yes }
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CHN_olenian_factories"
+			76 = {
+			    remove_building = {
+				    type = industrial_complex
+				    level = 2
+			    }
+				remove_building = {
+					type = dockyard
+					level = 2
+				}
+		    }
+			191 = {
+			    remove_building = {
+				    type = arms_factory
+				    level = 2
+			    }
+		    }
+			69 = {
+				remove_building = {
+					type = dockyard
+					level = 2
+				}
+			}
+			309 = {
+			    add_extra_state_shared_building_slots = 2
+			    add_building_construction = {
+				    type = industrial_complex
+				    level = 2
+				    instant_build = yes
+			    }
+		    }
+			259 = {
+			    add_extra_state_shared_building_slots = 2
+			    add_building_construction = {
+				    type = arms_factory
+				    level = 2
+				    instant_build = yes
+			    }
+		    }
+			304 = {
+				add_extra_state_shared_building_slots = 2
+			    add_building_construction = {
+				    type = dockyard
+				    level = 2
+				    instant_build = yes
+			    }
+			}
+			305 = {
+				add_extra_state_shared_building_slots = 2
+			    add_building_construction = {
+				    type = dockyard
+				    level = 2
+				    instant_build = yes
+			    }
+			}
+		}
+	}
+	shared_focus = {
+		id = CHN_study_olenian_magic
+		icon = GFX_goal_chn_ole_magic
+		cost = 10.00
+		prerequisite = {
+			focus = national_resources
+			focus = CHN_olenian_factories
+		}
+		relative_position_id = pressure_olenia
+		x = 0
+		y = 3
+		ai_will_do = { factor = 1200 }
+		bypass = {
+			
+		}
+		available = {
+			OLE = {
+				OR = {
+					is_subject_of = ROOT
+					exists = no
+					has_capitulated = yes
+					has_country_flag = CHN_annexed_olenia_by_event
+				}
+			}
+			OLE = { any_cores_controlled_by_ROOT = yes }
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CHN_study_olenian_magic"
+			add_tech_bonus = {
+				name = magical_tech_bonus
+				bonus = 1.0
+				uses = 1
+				technology = magical_weapons
+				technology = magical_weapons1
+			}
+			add_breakthrough_progress = {
+				specialization = specialization_magical
+				value = 0.75
+			}
+			add_tech_bonus = {
+				name = magical_tech_bonus2
+				bonus = 1.0
+				uses = 1
+				category = magical_tech
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+#### PUPPET POLAR BEARS ####
+
+shared_focus = {
+		id = CHN_polar_bear_envoy
+		icon = GFX_goal_chn_plb
+		cost = 4
+		prerequisite = {
+			focus = CHN_changelingia
+		}
+		relative_position_id = CHN_changelingia
+		available = {
+			is_subject = no
+			has_government = fascism
+			PLB = {
+				is_subject = no
+				has_war = no
+			}
+		}
+		bypass = {
+			PLB = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
+					has_war_with = ROOT
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier ={
+				add = 60
+				OR = {
+					has_completed_focus = offer_puppet
+					has_completed_focus = conquest
+				}
+				NOT = { has_war = yes }
+			}
+		}
+		x = 5
+		y = 2
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CHN_polar_bear_envoy"
+			country_event = {
+				id = changelings.44 hours = 1
+			}
+		}
+	}
+	shared_focus = {
+		id = CHN_threaten_PLB
+		icon = GFX_goal_chn_plb_threat
+		cost = 3
+		prerequisite = {
+			focus = CHN_polar_bear_envoy
+		}
+		available = {
+			is_subject = no
+			has_government = fascism
+			PLB = {
+				is_subject = no
+				has_war = no
+				has_country_flag = PLB_no_deal
+			}
+			has_country_flag = flag_CHN_negociations_ended
+			NOT = {
+				has_non_aggression_pact_with = PLB
+			}
+			if = {
+				limit = { is_ai = no }
+				divisions_in_state = { state = 323 size > 2 }
+				divisions_in_state = { state = 315 size > 2 }
+			}
+		}
+		bypass = {
+			PLB = {
+				OR = {
+					has_country_flag = PLB_deal_CHN
+					exists = no
+					is_subject_of = ROOT
+					has_war_with = ROOT
+				}
+			}
+		}
+		mutually_exclusive = { focus = CHN_attack_PLB }
+		ai_will_do = {
+			factor = 500
+		}
+		relative_position_id = CHN_polar_bear_envoy
+		x = -2
+		y = 1
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CHN_threaten_PLB"
+			set_country_flag = flag_CHN_PLB_border_wars
+			unlock_decision_tooltip = CHN_PLB_border_war
+			unlock_decision_tooltip = CHN_PLB_border_war_2
+		}
+	}
+	shared_focus = {
+		id = CHN_attack_PLB
+		icon = GFX_goal_chn_plb_strike
+		cost = 8
+		prerequisite = {
+			focus = CHN_polar_bear_envoy
+		}
+		available = {
+			is_subject = no
+			has_government = fascism
+			PLB = {
+				is_subject = no
+				has_war = no
+				has_country_flag = PLB_no_deal
+			}
+			has_country_flag = flag_CHN_negociations_ended
+			NOT = {
+				has_non_aggression_pact_with = PLB
+			}
+			if = {
+				limit = { is_ai = no }
+				divisions_in_state = { state = 323 size > 2 }
+				divisions_in_state = { state = 315 size > 2 }
+			}
+		}
+		bypass = {
+			PLB = {
+				OR = {
+					has_country_flag = PLB_deal_CHN
+					exists = no
+					is_subject_of = ROOT
+					has_war_with = ROOT
+				}
+			}
+		}
+		will_lead_to_war_with = PLB
+		mutually_exclusive = { focus = CHN_threaten_PLB }
+		ai_will_do = { factor = 0 }
+		relative_position_id = CHN_polar_bear_envoy
+		x = 2
+		y = 1
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CHN_attack_PLB"
+			add_named_threat = { threat = 5 name = threat_chn_attack_plb }
+			create_wargoal = { target = PLB type = puppet_wargoal_focus }
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+	}
+	shared_focus = {
+		id = CHN_modern_infrastructure_PLB
+		icon = GFX_goal_chn_infrastructure
+		cost = 9
+		prerequisite = {
+			focus = CHN_attack_PLB
+			focus = CHN_threaten_PLB
+		}
+		available = {
+			PLB = { is_subject_of = ROOT }
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war = no
+				add = 50
+			}
+		}
+		relative_position_id = CHN_polar_bear_envoy
+		x = 1
+		y = 2
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CHN_modern_infrastructure_PLB"
+			PLB = {
+				three_random_infrastructure = yes
+				290 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+	shared_focus = {
+		id = CHN_resources_of_PLB
+		icon = GFX_goal_chn_steel
+		cost = 9
+		prerequisite = {
+			focus = CHN_attack_PLB
+			focus = CHN_threaten_PLB
+		}
+		available = {
+			PLB = { is_subject_of = ROOT }
+		}
+		relative_position_id = CHN_polar_bear_envoy
+		x = -1
+		y = 2
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war = no
+				add = 30
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CHN_resources_of_PLB"
+			PLB = {
+				random_owned_controlled_state = {
+					add_resource = {
+						type = steel
+						amount = 10
+					}
+				}
+				random_owned_controlled_state = {
+					add_resource = {
+						type = oil
+						amount = 5
+					}
+				}
+				random_owned_controlled_state = {
+					add_resource = {
+						type = aluminium
+						amount = 5
+					}
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+	shared_focus = {
+		id = CHN_thermonuclear_research_in_PLB
+		icon = GFX_goal_chn_atom
+		cost = 9
+		prerequisite = {
+			focus = CHN_modern_infrastructure_PLB
+		}
+		prerequisite = {
+			focus = CHN_resources_of_PLB
+		}
+		available = {
+			289 = { owner = { controls_state = PREV OR = { tag = ROOT is_subject_of = ROOT } } }
+			263 = { owner = { controls_state = PREV OR = { tag = ROOT is_subject_of = ROOT } } }
+			290 = { owner = { controls_state = PREV OR = { tag = ROOT is_subject_of = ROOT } } }
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war = no
+				add = 30
+			}
+		}
+		relative_position_id = CHN_polar_bear_envoy
+		x = 0
+		y = 3
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CHN_thermonuclear_research_in_PLB"
+			if = {
+				limit = {
+					has_tech = atomic_research
+				}
+				add_breakthrough_progress = {
+					specialization = specialization_nuclear
+					value = 0.5
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = secret_bonus
+					bonus = 1.0
+					uses = 1
+					category = nuclear
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+#### Pegasus ####
+
+shared_focus = {
+		id = CHN_sunset_anarchism_plan
+		icon = GFX_goal_chn_lead_the_army
+		cost = 3
+		available = {
+			has_government = fascism
+			is_subject = no
+		}
+		x = -1
+		y = 6
+		prerequisite = { focus = CHN_thermonuclear_research_in_PLB }
+		prerequisite = { focus = CHN_study_olenian_magic }
+		relative_position_id = CHN_changelingia
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				date > 1010.1.1
+				factor = 3
+			}
+			modifier = {
+				date > 1011.1.1
+				factor = 3
+			}
+			modifier = {
+				date > 1012.1.1
+				factor = 10
+			}
+			modifier = {
+				threat > 0.4
+				factor = 10
+			}
+		}
+		bypass = {
+			OR = {
+				country_exists = ANL
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CHN_great_war_beginning"
+			create_wargoal = {
+				type = annex_everything
+				target = ANL
+				OR = {
+				has_war_with = ANL
+			    }
+			}
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+
+shared_focus = {
+		id = CHN_sunset_pegasus_plan
+		icon = GFX_goal_chn_lead_the_army
+		cost = 3
+		available = {
+			has_government = fascism
+			is_subject = no
+		}
+		x = 1
+		y = 6
+		prerequisite = { focus = CHN_thermonuclear_research_in_PLB }
+		prerequisite = { focus = CHN_study_olenian_magic }
+		relative_position_id = CHN_changelingia
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				date > 1010.1.1
+				factor = 3
+			}
+			modifier = {
+				date > 1011.1.1
+				factor = 3
+			}
+			modifier = {
+				date > 1012.1.1
+				factor = 10
+			}
+			modifier = {
+				threat > 0.4
+				factor = 10
+			}
+		}
+		bypass = {
+			OR = {
+				country_exists = PGS
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CHN_great_war_beginning"
+			create_wargoal = {
+				type = annex_everything
+				target = PGS
+			}
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	

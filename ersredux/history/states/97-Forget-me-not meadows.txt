@@ -1,0 +1,48 @@
+
+state={
+	id=97
+	name="STATE_97"
+
+	history={
+		owner = ERP
+		add_core_of = ERP
+		victory_points = {
+			6789 20 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 2
+			9752 = {
+				bunker = 1
+			}
+			9590 = {
+				bunker = 1
+			}
+			6946 = {
+				bunker = 1
+			}
+			1616 = {
+				bunker = 1
+			}
+			11276 = {
+				bunker = 2
+			}
+			11568 = {
+				bunker = 2
+			}
+			11734 = {
+				bunker = 1
+			}
+		}
+
+	}
+
+	provinces={
+		641 762 780 1616 3604 3770 6789 6946 6985 9590 9598 9752 11276 11568 11570 11628 11734 11833 
+	}
+	manpower=3491600
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

@@ -1,0 +1,54 @@
+units = {
+	division = {
+		name = "Pegasi Division"
+		location = 11515
+		division_template = "Pegasi Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Pegasi Division"
+		location = 11515
+		division_template = "Pegasi Division"
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "Pegasi Division"
+		location = 9185
+		division_template = "Pegasi Division"
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "Pegasi Division"
+		location = 9185
+		division_template = "Pegasi Division"
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "Pegasi Division"
+		location = 13097
+		division_template = "Pegasi Division"
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "Pegasi Division"
+		location = 13097
+		division_template = "Pegasi Division"
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "Pegasi Division"
+		location = 13097
+		division_template = "Pegasi Division"
+		start_experience_factor = 0.1
+	}
+	
+	
+	
+	
+	
+}

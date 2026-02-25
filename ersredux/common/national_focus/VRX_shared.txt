@@ -1,0 +1,1159 @@
+shared_focus = {  
+	id = VRX_war_queen     
+	icon = GFX_goal_vrax_queen 
+	cost = 1
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 10
+	}
+	x = 8
+	y = 0
+	completion_reward = {
+	country_event = vrx.14 
+		log = "[GetDateText]: [Root.GetName]: Focus VRX_war_queen"
+		add_political_power = 75
+		hidden_effect = {
+			add_ideas = big_science_base
+		}
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+	
+shared_focus = {
+	id = VRX_talk_to_vesalipolis_queen
+	icon = GFX_goal_chn_red_hives
+	cost = 5
+	prerequisite = { focus = VRX_war_queen }
+	available = {
+		
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	available_if_capitulated = yes
+	bypass = {
+		NOT = {
+			has_country_leader = {
+				character = VRX_queen_argynnis
+				ruling_only = yes
+			} 
+		}
+	}
+	relative_position_id = VRX_war_queen
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus VRX_talk_to_vesalipolis_queen"
+		set_country_flag = cant_lower_dependance_level_flag
+		custom_effect_tooltip = cant_lower_dependance_level_flag_tt
+	}
+	search_filters = { FOCUS_FILTER_CHANGELINGS_HEHEMONY }
+}
+
+shared_focus = {
+	id = VRX_distsiplina
+	icon = GFX_goal_vrx_propaganda
+	cost = 5
+	prerequisite = { focus = VRX_war_queen }
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = VRX_war_queen
+	x = 0
+	y = 1
+	completion_reward = {
+	add_timed_idea = {
+			idea = VRX_synthetic_armament
+			days = 240
+		}
+	country_event = vrx.18
+		log = "[GetDateText]: [Root.GetName]: Focus VRX_distsiplina"
+		add_war_support = 0.065
+		add_stability = 0.065
+	}
+	search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+	search_filters = { FOCUS_FILTER_STABILITY }
+}
+
+shared_focus = {
+	id = VRX_military_hive_status
+	icon = GFX_goal_chn_red_industry_of_hives
+	cost = 5
+	prerequisite = { focus = VRX_war_queen }
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = VRX_war_queen
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus VRX_military_hive_status"
+		259 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+				instant_build = yes
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+}
+
+shared_focus = {
+	id = VRX_talk_to_other_queens
+	icon = GFX_goal_vrx_vesalipolis
+	cost = 5
+	prerequisite = { focus = VRX_military_hive_status }
+	prerequisite = { focus = VRX_distsiplina }
+	prerequisite = { focus = VRX_talk_to_vesalipolis_queen }
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 10
+	}
+	bypass = {
+		NOT = {
+			has_country_leader = {
+				character = VRX_queen_argynnis
+				ruling_only = yes
+			} 
+		}
+	}
+	relative_position_id = VRX_war_queen
+	x = 3
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus VRX_talk_to_other_queens"
+		minus_5_hehemony_unity = yes
+	}
+	search_filters = { FOCUS_FILTER_CHANGELINGS_HEHEMONY }
+}
+
+shared_focus = {
+	id = VRX_our_struggle
+	icon = GFX_goal_chn_changeling_com
+	cost = 5
+	prerequisite = { focus = VRX_military_hive_status }
+	prerequisite = { focus = VRX_distsiplina }
+	prerequisite = { focus = VRX_talk_to_vesalipolis_queen }
+	available = {
+		
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	available_if_capitulated = yes
+	relative_position_id = VRX_war_queen
+	x = 1
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus VRX_our_struggle"
+		add_ideas = VRX_army_org
+	}
+	search_filters = { FOCUS_FILTER_ARMY_XP }
+}
+shared_focus = {
+	id = VRX_ban_local_business
+	icon = GFX_goal_vrx_hat
+	cost = 5
+	prerequisite = { focus = VRX_military_hive_status }
+	prerequisite = { focus = VRX_distsiplina }
+	prerequisite = { focus = VRX_talk_to_vesalipolis_queen }
+	available = {
+		
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	available_if_capitulated = yes
+	relative_position_id = VRX_war_queen
+	x = -1
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus VRX_ban_local_business"
+		add_ideas = VRX_no_local_business
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+}
+
+shared_focus = {
+	id = VRX_industrial_hive_status
+	icon = GFX_goal_vrx_factory
+	cost = 5
+	prerequisite = { focus = VRX_military_hive_status }
+	prerequisite = { focus = VRX_distsiplina }
+	prerequisite = { focus = VRX_talk_to_vesalipolis_queen }
+	available = {
+		
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	available_if_capitulated = yes
+	relative_position_id = VRX_war_queen
+	x = -3
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus VRX_industrial_hive_status"
+		259 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+}
+
+shared_focus = {
+	id = VRX_expand_jager_divisions
+	icon = GFX_goal_vrx_jager
+	cost = 5
+	prerequisite = { focus = VRX_industrial_hive_status }
+	prerequisite = { focus = VRX_ban_local_business }
+	prerequisite = { focus = VRX_our_struggle }
+	prerequisite = { focus = VRX_talk_to_other_queens }
+	available = {
+		
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	available_if_capitulated = yes
+	relative_position_id = VRX_war_queen
+	x = 2
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus VRX_expand_jager_divisions"
+		add_tech_bonus = {
+			name = special_forces_bonus
+			bonus = 1.0
+			uses = 2
+			category = jager_tech
+		}
+		hidden_effect = {
+			load_oob "VRX_jagers_focus"
+		}
+		custom_effect_tooltip = VRX_jagers_tt
+		add_ideas = VRX_jagers_of_vraks
+	}
+	search_filters = { FOCUS_FILTER_ARMY_XP }
+}
+
+shared_focus = {
+	id = VRX_military_hive_equipment
+	icon = GFX_goal_vrx_tank
+	cost = 5
+	prerequisite = { focus = VRX_industrial_hive_status }
+	prerequisite = { focus = VRX_ban_local_business }
+	prerequisite = { focus = VRX_our_struggle }
+	prerequisite = { focus = VRX_talk_to_other_queens }
+	available = {
+		
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	available_if_capitulated = yes
+	relative_position_id = VRX_war_queen
+	x = -2
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus VRX_military_hive_equipment"
+		add_stability = -0.05
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 5000
+			producer = VRX
+		}
+		add_equipment_to_stockpile = { 
+			type = motorized_equipment 
+			amount = 1000
+			producer = VRX
+		}
+		add_equipment_to_stockpile = { 
+			type = light_tank_chassis 
+			amount = 250
+		}
+		add_equipment_to_stockpile = { 
+			type = medium_tank_chassis 
+			amount = 100
+		}
+	}
+}
+
+shared_focus = {
+	id = VRX_next_step
+	icon = GFX_goal_vrx_swords
+	cost = 6
+	prerequisite = { focus = VRX_military_hive_equipment }
+	prerequisite = { focus = VRX_expand_jager_divisions }
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 10
+	}
+	bypass = {
+		NOT = {
+			has_country_leader = {
+				character = VRX_queen_argynnis
+				ruling_only = yes
+			} 
+		}
+	}
+	search_filters = { FOCUS_FILTER_ANNEXATION }
+	relative_position_id = VRX_war_queen
+	x = 0
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus VRX_next_step"
+		country_event = vrx.5
+	}
+}
+shared_focus = {
+	id = VRX_develop_volistad_manpower
+	icon = GFX_goal_chn_changeling_com
+	cost = 5
+	prerequisite = { focus = VRX_volistad_coronation }
+	available = { 
+		owns_state = 316
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = VRX_volistad_conqured
+	x = 2
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus VRX_develop_volistad"
+		add_manpower = 75000
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+shared_focus = {
+	id = VRX_volistad_conqured
+	icon = GFX_goal_vrx_vesalipolis
+	cost = 2
+	available = {
+		owns_state = 316
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	x = 17
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus VRX_war_queen"
+		add_political_power = 100
+		add_war_support = 0.025
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+
+shared_focus = {
+	id = VRX_volistad_destroy_regency
+	icon = GFX_goal_vrax_queen
+	cost = 5
+	prerequisite = { focus = VRX_volistad_conqured }
+	available = {
+		owns_state = 316
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = VRX_volistad_conqured
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus VRX_war_queen"
+		316 = {
+			add_manpower = -15000
+		}
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+
+shared_focus = {
+	id = VRX_volistad_delegalize_dynasty
+	icon = GFX_goal_vrx_crown
+	cost = 5
+	prerequisite = { focus = VRX_volistad_conqured }
+	available = {
+		owns_state = 316
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = VRX_volistad_conqured
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus VRX_war_queen"
+		VRX = {
+		country_event = vrx.9
+		}
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+
+shared_focus = {
+	id = VRX_volistad_coronation
+	icon = GFX_goal_vrx_tower
+	cost = 5
+	prerequisite = { focus = VRX_volistad_delegalize_dynasty }
+	prerequisite = { focus = VRX_volistad_destroy_regency }
+	available = {
+		owns_state = 316
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = VRX_volistad_conqured
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus VRX_war_queen"
+		set_victory_points = {
+			province = 11690
+			value = 7
+		}
+		316 = {
+			add_resistance = -10
+			add_compliance = 10
+		}
+		247 = {
+			add_resistance = -10
+			add_compliance = 10
+		}
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+
+shared_focus = {
+	id = VRX_develop_volistad
+	icon = GFX_goal_vrx_factory
+	cost = 5
+	prerequisite = { focus = VRX_volistad_coronation }
+	available = {
+		owns_state = 316
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = VRX_volistad_conqured
+	x = 0
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus VRX_develop_volistad"
+		316 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+			}
+			add_manpower = 10000
+		}
+		247 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+			}
+			add_manpower = 10000
+		}
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+
+
+shared_focus = {
+	id = VRX_develop_volistad_resources
+	icon = GFX_goal_vrx_gears
+	cost = 5
+	prerequisite = { focus = VRX_volistad_coronation }
+	available = {
+		owns_state = 316
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = VRX_volistad_conqured
+	x = -2
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus VRX_develop_volistad"
+		247 = {
+			add_resource = {
+				type = steel
+				amount = 10
+			}
+			add_resource = {
+				type = ubber
+				amount = 10
+			}
+			add_resource = {
+				type = oil
+				amount = 8
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+
+shared_focus = {
+	id = VRX_develop_volistad_manpower
+	icon = GFX_goal_chn_changeling_com
+	cost = 5
+	prerequisite = { focus = VRX_volistad_coronation }
+	available = {
+		owns_state = 316
+	}
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = VRX_volistad_conqured
+	x = 2
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus VRX_develop_volistad"
+		add_manpower = 75000
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+	shared_focus = {                                                   
+        id = VRX_focuss_VRX_War
+        icon = GFX_goal_vrx_tower
+		available = {
+		owns_state = 316
+	}
+        x = 20
+        y = 1
+	cost = 1
+				
+		completion_reward = {
+		add_timed_idea = {
+			idea = VRX_banksus
+			days = 120
+		}
+		country_event = vrx.17 
+		VST = {
+				transfer_state = 316
+				transfer_state = 247
+				VRX = {
+					puppet = PREV
+					if = {
+						limit = {
+							NOT = { has_dlc = "Death or Dishonor" }
+						}
+						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet end_wars = no end_civil_wars = no }
+					}
+					else = {
+						set_autonomy = { target = PREV autonomy_state = autonomy_reichskommissariat  end_wars = no end_civil_wars = no }
+					}
+				}
+              
+				set_cosmetic_tag = VRX_volistad_Arm
+				load_focus_tree = VRX_volistad_Naw
+				 set_party_name = {
+      ideology = fascism
+      long_name =  VRX_hive_Garnizon_party_long
+      name =  VRX_hive_Garnizon_party_long
+    }
+				
+				create_country_leader = {
+					name = "VRX_quisling"
+					desc = ""   
+					picture = "gfx/leaders/VRX/Lascor_Ereb.tga"
+					expire = "1965.1.1"
+					ideology = stratocracy
+					traits = { governor_of_Vrax }
+				}
+			}
+		}
+	}
+	
+	shared_focus = {
+    id = VRX_focuss_VRX_War1
+    icon = GFX_goal_vrx_bit 
+	prerequisite = { focus = VRX_focuss_VRX_War}
+    x = 2
+    y = 1
+    cost = 1
+	relative_position_id = VRX_focuss_VRX_War
+    completion_reward = {
+	country_event = vrx.22
+	VST = {
+			add_offsite_building = { type = arms_factory level = -3 }
+		}
+		add_offsite_building = { type = arms_factory level = 3 }
+	}
+}
+shared_focus = {
+    id = VRX_focuss_VRX_War2
+    icon = GFX_goal_vrx_skorost
+	prerequisite = { focus = VRX_focuss_VRX_War}
+    x = -2
+    y = 1
+    cost = 1
+	relative_position_id = VRX_focuss_VRX_War
+    completion_reward = {
+	country_event = vrx.20
+	army_experience = 10
+		add_equipment_to_stockpile = {
+			type = motorized_equipment
+			amount = 700
+		}
+		258 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+			}
+		}
+		260 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+			}
+		}
+		add_tech_bonus = {
+			name = motorized_research
+			bonus = 0.55
+			uses = 1
+			category = motorized_equipment
+		}
+	}
+}
+shared_focus = {
+    id = VRX_focuss_VRX_War3
+    icon = GFX_goal_vrx_krasnie
+	prerequisite = { focus = VRX_focuss_VRX_War}
+    x = 0
+    y = 1
+    cost = 1
+	relative_position_id = VRX_focuss_VRX_War
+    completion_reward = {
+	country_event = vrx.19
+	add_manpower = -22489
+	add_popularity = {
+			ideology = communism
+			popularity = -0.025
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.025
+		}
+	}
+}
+shared_focus = {
+    id = VRX_focuss_VRX_War4
+    icon = GFX_goal_vrx_zavog
+	prerequisite = { focus = VRX_focuss_VRX_War1}
+    x = -1
+    y = 1
+    cost = 1
+	relative_position_id = VRX_focuss_VRX_War1
+    completion_reward = {
+	swap_ideas = {
+			remove_idea = VRX_military_hive
+			add_idea = VRX_military_hive1
+		}
+	}
+}
+shared_focus = {
+    id = VRX_focuss_VRX_War5
+    icon = GFX_goal_vrx_armi
+	prerequisite = { focus = VRX_focuss_VRX_War1}
+    x = 1
+    y = 1
+    cost = 1
+	relative_position_id = VRX_focuss_VRX_War1
+    completion_reward = {
+	hidden_effect = {
+			load_oob "VRX_jagers_focus"
+		}
+		custom_effect_tooltip = VRX_jagers_tt
+		add_manpower = 15000
+		set_country_flag = VRX_new_guard_flag
+	}
+}
+shared_focus = {
+    id = VRX_focuss_VRX_War6
+    icon = GFX_goal_vrx_new
+	prerequisite = { focus = VRX_focuss_VRX_War2}
+    x = -1
+    y = 1
+    cost = 1
+	relative_position_id = VRX_focuss_VRX_War2
+    completion_reward = {
+	add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.2
+			uses = 1
+			category = land_doctrine
+		}
+		army_experience = 10
+		LYC= {
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.2
+				uses = 1
+				category = land_doctrine
+			}
+			army_experience = 10
+		}
+	}
+}
+shared_focus = {
+    id = VRX_focuss_VRX_War7
+    icon = GFX_goal_vrx_neft 
+	prerequisite = { focus = VRX_focuss_VRX_War2}
+    x = 1
+    y = 1
+    cost = 1
+	relative_position_id = VRX_focuss_VRX_War2
+    completion_reward = {
+	248 = {
+	add_resource = {
+				type = oil
+				amount = 20
+			}
+	}
+ }
+}
+shared_focus = {
+    id = VRX_focuss_VRX_War8
+    icon = GFX_goal_vrx_amnez
+	prerequisite = { focus = VRX_focuss_VRX_War3}
+    x = 0
+    y = 2
+    cost = 1
+	relative_position_id = VRX_focuss_VRX_War3
+    completion_reward = {
+	country_event = vrx.21
+	}
+}
+shared_focus = {
+    id = VRX_focuss_VRX_War9
+    icon = GFX_goal_vrx_syt
+	prerequisite = { focus = VRX_focuss_VRX_War7}
+    x = -1
+    y = 1
+    cost = 1
+	relative_position_id = VRX_focuss_VRX_War7
+    completion_reward = {
+	add_tech_bonus = {
+			name = arty_bonus
+			bonus = 1.0
+			uses = 1
+			category = artillery
+		}
+		add_tech_bonus = {
+			name = support_bonus
+			bonus = 0.5
+			uses = 1
+			category = support_tech
+		}
+	}
+}
+shared_focus = {
+    id = VRX_focuss_VRX_War10
+    icon = GFX_goal_vrx_prax
+	prerequisite = { focus = VRX_focuss_VRX_War4}
+    x = 1
+    y = 1
+    cost = 1
+	relative_position_id = VRX_focuss_VRX_War4
+    completion_reward = {
+	add_tech_bonus = {
+				name = tank_research
+				bonus = 1.0
+				uses = 1
+				category = cat_light_armor
+			}
+		add_tech_bonus = {
+			name = tank_research
+			bonus = 1.0
+			uses = 1
+			category = cat_medium_armor
+		}
+	}
+}
+shared_focus = {
+    id = VRX_focuss_VRX_War11
+    icon = GFX_goal_vrx_camolet
+	prerequisite = { focus = VRX_focuss_VRX_War9}
+    x = 1
+    y = 1
+    cost = 1
+	relative_position_id = VRX_focuss_VRX_War9
+    completion_reward = {
+	air_experience = 25
+	if = {
+            	limit = {
+             	   has_dlc = "By Blood Alone"
+            	}
+				add_tech_bonus = {
+					name = fighter_bonus
+					bonus = 0.75
+					uses = 2
+					category = light_air
+					category = medium_air
+				}
+				add_tech_bonus = {
+					name = cat_air_guns
+					bonus = 0.75
+					uses = 1
+					category = cat_air_guns
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = fighter_bonus
+					bonus = 1.0
+					uses = 2
+					category = light_fighter
+					category = cat_heavy_fighter
+				}
+			}
+		}
+	}
+shared_focus = {
+    id = VRX_focuss_VRX_War12
+    icon = GFX_goal_vrx_gaz
+	prerequisite = { focus = VRX_focuss_VRX_War10}
+    x = -1
+    y = 1
+    cost = 1
+	relative_position_id = VRX_focuss_VRX_War10
+    completion_reward = {
+	air_experience = 25
+	if = {
+            	limit = {
+            	    has_dlc = "By Blood Alone"
+            	}
+				add_tech_bonus = {
+					name = bomber_bonus
+					bonus = 1.0
+					uses = 2
+					category = medium_air
+					category = heavy_air
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = bomber_bonus
+					bonus = 1.0
+					uses = 2
+					category = tactical_bomber
+					category = cat_strategic_bomber
+				}
+			}
+		}
+	}
+shared_focus = {
+    id = VRX_focuss_VRX_War26
+    icon = GFX_goal_vrx_tractor
+	prerequisite = { focus = VRX_focuss_VRX_War8}
+    x = 0
+    y = 2
+    cost = 1
+	relative_position_id = VRX_focuss_VRX_War8 
+    completion_reward = {
+	set_cosmetic_tag = VRX_Radio
+				load_focus_tree = VRX_volistad_Naw
+				 set_party_name = {
+      ideology = fascism
+      long_name =  VRX_hive_Garnizon_party_long
+      name =  VRX_hive_Garnizon_party_long
+    }
+				
+				create_country_leader = {
+					name = "VRX_tixo"
+					desc = ""   
+					picture = "gfx/leaders/VRX/Radio_tixo.tga"
+					expire = "1965.1.1"
+					ideology = stratocracy
+					traits = {  }
+				}
+			}
+		}
+
+#Победа
+shared_focus = {
+    id = VRX_focuss_VRX_Victori
+    icon = GFX_goal_vrx1
+    x = 10
+    y = 6
+    cost = 1
+    completion_reward = {
+	custom_effect_tooltip = VRX_Victori
+	LYC = {
+				transfer_state = 304
+				transfer_state = 252
+				transfer_state = 305
+				transfer_state = 261
+				transfer_state = 306
+	}
+	VRX = {
+				transfer_state = 251
+				transfer_state = 1227
+				transfer_state = 1226
+				transfer_state = 314
+				transfer_state = 264
+				transfer_state = 262
+				transfer_state = 323
+				transfer_state = 322
+				transfer_state = 319
+				transfer_state = 249
+				transfer_state = 321
+				transfer_state = 310
+				transfer_state = 311
+				transfer_state = 315
+				transfer_state = 320
+				transfer_state = 312
+				transfer_state = 313
+	}
+}
+}
+shared_focus = {
+    id = VRX_focuss_VRX_Victori1
+    icon = GFX_goal_vrx2
+	prerequisite = { focus = VRX_focuss_VRX_Victori}
+    x = 2
+    y = 1
+    cost = 1
+	relative_position_id = VRX_focuss_VRX_Victori
+    completion_reward = {
+	add_manpower = -22489
+	add_popularity = {
+			ideology = communism
+			popularity = -0.025
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.025
+		}
+	}
+}
+shared_focus = {
+    id = VRX_focuss_VRX_Victori2
+    icon = GFX_goal_vrx3
+	prerequisite = { focus = VRX_focuss_VRX_Victori}
+    x = 0
+    y = 1
+    cost = 1
+	relative_position_id = VRX_focuss_VRX_Victori
+    completion_reward = {
+	custom_effect_tooltip = VRX_Korolews
+	}
+}
+shared_focus = {
+    id = VRX_focuss_VRX_Victori3
+    icon = GFX_goal_vrx_gears
+	prerequisite = { focus = VRX_focuss_VRX_Victori}
+    x = -2
+    y = 1
+    cost = 1
+	relative_position_id = VRX_focuss_VRX_Victori
+    completion_reward = {
+	251 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+		252 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+		259 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+		262 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+		309  = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+	}
+}
+shared_focus = {
+    id = VRX_focuss_VRX_Victori4
+    icon = GFX_goal_vrx4
+	mutually_exclusive = { focus = VRX_focuss_VRX_Victori5 } 
+	prerequisite = { focus = VRX_focuss_VRX_Victori2}
+	prerequisite = { focus = VRX_focuss_VRX_Victori1}
+    x = 1
+    y = 1
+    cost = 1
+	relative_position_id = VRX_focuss_VRX_Victori2
+    completion_reward = {
+	}
+}
+shared_focus = {
+    id = VRX_focuss_VRX_Victori5
+    icon = GFX_goal_vrx5
+	mutually_exclusive = { focus = VRX_focuss_VRX_Victori4 } 
+	prerequisite = { focus = VRX_focuss_VRX_Victori2}
+	prerequisite = { focus = VRX_focuss_VRX_Victori3}
+    x = -1
+    y = 1
+    cost = 1
+	relative_position_id = VRX_focuss_VRX_Victori2
+    completion_reward = {
+	declare_war_on = {
+			target = LYC
+			type = annex_everything
+		}
+	}
+}
+shared_focus = {
+    id = VRX_focuss_VRX_Victori6
+    icon = GFX_goal_vrx6
+	available = {
+		NOT = {
+			has_war_with = LYC
+		}
+	}
+	prerequisite = { focus = VRX_focuss_VRX_Victori5}
+	prerequisite = { focus = VRX_focuss_VRX_Victori4}
+    x = 1
+    y = 1
+    cost = 1
+	relative_position_id = VRX_focuss_VRX_Victori5
+    completion_reward = {
+	add_country_leader_trait = ers_queen_of_changelings
+	 country_event = { id = vrx.24 days = 7 }
+	}
+}
+shared_focus = {
+    id = VRX_focuss_VRX_Victori7
+    icon = GFX_goal_vrx7
+	prerequisite = { focus = VRX_focuss_VRX_Victori6}
+    x = -2
+    y = 1
+    cost = 1
+	relative_position_id = VRX_focuss_VRX_Victori6
+    completion_reward = {
+	declare_war_on = {
+			target = OLE
+			type = annex_everything
+		}
+	}
+}
+shared_focus = {
+    id = VRX_focuss_VRX_Victori8
+    icon = GFX_goal_vrx8
+	prerequisite = { focus = VRX_focuss_VRX_Victori7 focus = VRX_focuss_VRX_Victori13}
+    x = 2
+    y = 1
+    cost = 1
+	relative_position_id = VRX_focuss_VRX_Victori7
+    completion_reward = {
+	}
+}
+shared_focus = {
+    id = VRX_focuss_VRX_Victori9
+    icon = GFX_goal_vrx9
+	prerequisite = { focus = VRX_focuss_VRX_Victori7}
+    x = -1
+    y = 1
+    cost = 1
+	relative_position_id = VRX_focuss_VRX_Victori7
+    completion_reward = {
+	}
+}
+shared_focus = {
+    id = VRX_focuss_VRX_Victori10
+    icon = GFX_goal_vrx10
+	prerequisite = { focus = VRX_focuss_VRX_Victori9}
+    x = 1
+    y = 1
+    cost = 1
+	relative_position_id = VRX_focuss_VRX_Victori9
+    completion_reward = {
+	}
+}
+shared_focus = {
+    id = VRX_focuss_VRX_Victori11
+    icon = GFX_goal_vrax_queen
+	prerequisite = { focus = VRX_focuss_VRX_Victori8}
+    x = 0
+    y = 1
+    cost = 1
+	relative_position_id = VRX_focuss_VRX_Victori8
+    completion_reward = {
+	}
+}
+shared_focus = {
+    id = VRX_focuss_VRX_Victori12
+    icon = GFX_goal_vrx11
+	prerequisite = { focus = VRX_focuss_VRX_Victori11}
+    x = 0
+    y = 1
+    cost = 1
+	relative_position_id = VRX_focuss_VRX_Victori11
+    completion_reward = {
+	country_event = { id = ending.1 hours = 6 }
+	add_timed_idea = {
+			idea = ers_CHN_prepare_inner_invasion_idea
+			days = 365
+		}
+	}
+}
+shared_focus = {
+    id = VRX_focuss_VRX_Victori13
+    icon = GFX_goal_vrx13
+	prerequisite = { focus = VRX_focuss_VRX_Victori6}
+    x = 2
+    y = 1
+    cost = 1
+	relative_position_id = VRX_focuss_VRX_Victori6
+    completion_reward = {
+	declare_war_on = {
+			target = PLB
+			type = annex_everything
+		}
+	}
+}
+shared_focus = {
+    id = VRX_focuss_VRX_Victori14
+    icon = GFX_goal_vrx12
+	prerequisite = { focus = VRX_focuss_VRX_Victori13}
+    x = 1
+    y = 1
+    cost = 1
+	relative_position_id = VRX_focuss_VRX_Victori13
+    completion_reward = {
+	}
+}
+shared_focus = {
+    id = VRX_focuss_VRX_Victori15
+    icon = GFX_goal_vrx14
+	prerequisite = { focus = VRX_focuss_VRX_Victori14}
+    x = -1
+    y = 1
+    cost = 1
+	relative_position_id = VRX_focuss_VRX_Victori14
+    completion_reward = {
+	}
+}

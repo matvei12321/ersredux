@@ -1,0 +1,20 @@
+ideas = {
+	
+	country= {
+		MES_war_agaist_CHL = { 
+
+			removal_cost = -1
+			
+			picture = specops
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				stability_factor = -0.1
+				army_defence_factor = -0.1
+			}
+
+		}
+	}
+}

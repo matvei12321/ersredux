@@ -1,0 +1,18 @@
+ideas = {
+	country= {
+		YGY_Plan = { 
+
+			removal_cost = -1
+			
+			picture = arty
+			allowed_civil_war = {
+				always = yes
+			}
+
+			
+			modifier = {
+			political_power_factor = 0.10
+			}
+		}
+	}
+}

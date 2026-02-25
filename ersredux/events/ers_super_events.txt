@@ -1,0 +1,214 @@
+add_namespace = ers_superevent
+
+country_event = {
+	id = ers_superevent.1
+	hidden = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		trigger = { NOT = { has_global_flag = eaw_super_event_flag_prekrasnoye_daleko } }
+		set_global_flag = eaw_super_event_flag_prekrasnoye_daleko 
+		sound_effect = super_event_earrape_se
+		scoped_play_song = "silence_45"
+	}
+	option = {
+		trigger = { has_global_flag = eaw_super_event_flag_prekrasnoye_daleko  }
+		sound_effect = super_event_earrape_se
+		scoped_play_song = "silence_45"
+	}
+	
+	
+
+}
+
+country_event = {
+	id = ers_superevent.2
+	hidden = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		trigger = { NOT = { has_global_flag = eaw_super_event_flag_nuclear } }
+		set_global_flag = eaw_super_event_flag_nuclear
+		sound_effect = super_event_nuclear_se
+		scoped_play_song = "silence_45"
+	}
+	option = {
+		trigger = { has_global_flag = eaw_super_event_flag_nuclear }
+		sound_effect = super_event_nucleare_se
+		scoped_play_song = "silence_45"
+	}
+
+}
+
+country_event = {
+	id = ers_superevent.3
+	hidden = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		trigger = { NOT = { has_global_flag = eaw_super_event_flag_dodge_city_collapse_1 } }
+		set_global_flag = eaw_super_event_flag_dodge_city_collapse_1
+		sound_effect = super_event_dodge_city_collapse_1_se
+		scoped_play_song = "silence_45"
+	}
+	option = {
+		trigger = { has_global_flag = eaw_super_event_flag_dodge_city_collapse_1 }
+		sound_effect = super_event_dodge_city_collapse_1_se
+		scoped_play_song = "silence_45"
+	}
+
+}
+
+country_event = {
+	id = ers_superevent.4
+	hidden = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		trigger = { NOT = { has_global_flag = eaw_super_event_flag_anarchy } }
+		set_global_flag = eaw_super_event_flag_anarchy
+		sound_effect = super_event_anarchy_se
+		scoped_play_song = "silence_45"
+	}
+	option = {
+		trigger = { has_global_flag = eaw_super_event_anarchy }
+		sound_effect = super_event_anarchy_se
+		scoped_play_song = "silence_45"
+	}
+}
+
+country_event = {
+	id = ers_superevent.5
+	hidden = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		trigger = { NOT = { has_global_flag = eaw_super_event_flag_warkhan_war } }
+		set_global_flag = eaw_super_event_flag_warkhan_war
+		sound_effect = super_event_warkhan_war_se
+		scoped_play_song = "silence_45"
+	}
+	option = {
+		trigger = { has_global_flag = eaw_super_event_warkhan_war }
+		sound_effect = super_event_warkhan_war_se
+		scoped_play_song = "silence_45"
+	}
+}
+
+country_event = {
+	id = ers_superevent.6
+	hidden = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		trigger = { NOT = { has_global_flag = eaw_super_event_flag_little_dark_age } }
+		set_global_flag = eaw_super_event_flag_little_dark_age
+		sound_effect = super_event_little_dark_age_se
+		scoped_play_song = "silence_45"
+	}
+	option = {
+		trigger = { has_global_flag = eaw_super_event_little_dark_age }
+		sound_effect = super_event_little_dark_age_se
+		scoped_play_song = "silence_45"
+	}
+}
+
+country_event = {
+	id = ers_superevent.7
+	hidden = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		trigger = { NOT = { has_global_flag = eaw_super_event_flag_soldat} }
+		set_global_flag = eaw_super_event_flag_soldat
+		sound_effect = super_event_soldat_se
+		scoped_play_song = "silence_45"
+	}
+	option = {
+		trigger = { has_global_flag = eaw_super_event_soldat }
+		sound_effect = super_event_soldat_se
+		scoped_play_song = "silence_45"
+	}
+}
+
+country_event = {
+	id = ers_superevent.8
+	hidden = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		trigger = { NOT = { has_global_flag = eaw_super_event_flag_starlight_unification } }
+		set_global_flag = eaw_super_event_flag_starlight_unification
+		sound_effect = super_event_starlight_unification_se
+		scoped_play_song = "silence_45"
+	}
+	option = {
+		trigger = { has_global_flag = eaw_super_event_starlight_unification }
+		sound_effect = super_event_starlight_unification_se
+		scoped_play_song = "silence_45"
+	}
+}
+
+country_event = {
+	id = ers_superevent.9
+	hidden = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		set_global_flag = eaw_super_event_flag_changeling_hehemony_collapse
+		play_song = "changeling_hehemony_collapse"
+	}
+}
+
+
+### Frost is here
+country_event = {
+	id = ers_superevent.10
+	hidden = yes
+	is_triggered_only = yes
+	option = {
+		set_global_flag = ers_super_event_flag_frost_is_here
+		scoped_play_song = "frost_is_here"
+	}
+}
+
+
+country_event = {
+	id = ers_superevent.11
+	hidden = yes
+	is_triggered_only = yes
+	option = {
+		trigger = { NOT = { has_global_flag = ers_super_event_flag_red_changelings_rise } }
+		set_global_flag = ers_super_event_flag_red_changelings_rise
+		play_song = "red_changelings_rise"
+	}
+	option = {
+		trigger = { has_global_flag = ers_super_event_flag_frost_is_here }
+			play_song = "red_changelings_rise"
+	}
+}
+
+country_event = {
+	id = ers_superevent.12
+	hidden = yes
+	is_triggered_only = yes
+	option = {
+		set_global_flag = ers_super_event_flag_chrysalis_unification
+		scoped_play_song = "chrysalis_unifiaction"
+	}
+	
+	option = {
+		set_global_flag = ers_super_event_flag_aurantia_unification
+		scoped_play_song = "aurantia_unification"
+	}
+	
+	option = {
+		set_global_flag = ers_super_event_flag_olenians_extinction
+		play_song = "olenians_extinction"
+	}
+	option = {
+		set_global_flag = ers_super_event_flag_red_sun
+		play_song = "red_sun"
+	}
+	
+}

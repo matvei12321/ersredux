@@ -1,0 +1,93 @@
+﻿l_english:
+ 
+ ##### PARTIES
+ MNH_anarchism_party:0 "Union of Merchant Guilds"
+ MNH_anarchism_party_long:0 "Union of Merchant Guilds"
+ MNH_democratic_party:0 "SLA"
+ MNH_democratic_party_long:0 "Union of Economic Liberalizers"
+ MNH_communism_party:0 "RCP"
+ MNH_communism_party_long:0 "Workers' Capitalist Party"
+ MNH_fascism_party:0 "PMCs"
+ MNH_fascism_party_long:0 "Private military companies"
+ 
+ ##### CHARACTERS
+ 
+ MNH_mirashon:0 "Oliver Mirashon"
+ 
+ 
+ ##### NATIONAL FOCUS
+ #------main tree
+ 
+ MNH_flim:0 "Flim, the brilliant marketer"
+ MNH_flim_desc:0 "WIP"
+ MNH_flam:0 "Flem, the ruthless capitalist"
+ MNH_flam_desc:0 "WIP"
+ MNH_sponsore_pmc:0 "Sponsor Private Military Organizations"
+ MNH_sponsore_pmc_desc:0 "WIP"
+ MNH_guards_of_the_federation:0 "Federation Guard"
+ MNH_guards_of_the_federation_desc:0 "WIP"
+ MNH_raise_taxes:0 "Raise Taxes"
+ MNH_raise_taxes_desc:0 "WIP"
+ MNH_free_money:0 "Hooves Away from My Money!"
+ MNH_free_money_desc:0 "WIP"
+ MNH_weapon_privatisation:0 "Privatization Of Firearms"
+ MNH_weapon_privatisation_desc:0 "WIP"
+ MNH_war_is_our_client:0 "War Is Our Best Customer"
+ MNH_war_is_our_client_desc:0 "WIP"
+ MNH_take_and_rule:0 "Take and Conquer"
+ MNH_take_and_rule_desc:0 "WIP"
+ MNH_libertarian_spirit:0 "Libertarian Theory"
+ MNH_libertarian_spirit_desc:0 "WIP"
+ MNH_industry_privatisation:0 "Factory Privatization"
+ MNH_industry_privatisation_desc:0 "WIP"
+ MNH_joy_industry:0 "Entertainment Industry"
+ MNH_joy_industry_desc:0 "WIP"
+ MNH_fight_monopoly:0 "Fighting Unwanted Monopolies"
+ MNH_fight_monopoly_desc:0 "WIP"
+ MNH_deal:0 "Big Deal"
+ MNH_deal_desc:0 "WIP"
+ MNH_gone_wrong:0 "Turned Into A Failure"
+ MNH_gone_wrong_desc:0 "WIP"
+ MNH_rinocheck:0 "The Market Always Wins"
+ MNH_rinocheck_desc:0 "WIP"
+ 
+ 
+ 
+ ##### DECISIONS 
+ MNH_companies_cat:0 "Money and Power"
+ MNH_companies_cat_desc:0 "Power in §Y[ROOT.getnamewithflag]§! it goes to the one who has the most capital. If one of the organizations receives too many resources and is disloyal, it can bring a number of problems.\n\n£GFX_harmony_texticon SLA Loyalty : §Y[?MNH.els_loyalty]%§!\n SLA resources: §Y[?MNH.els_money]§!\The liberalizers of the economy are those entrepreneurs who are dissatisfied with the current economic policy of the Federation. They advocate reducing the brutality of capital and improving the living conditions of ordinary people.\n----------------------------\ n£GFX_evolutionary Loyalty of capital Communists : §Y[?MNH.capital_communists_loyalty]%§!\n Capital-communist resources: §Y[?MNH.capital_communists_money]§!\n SLA resources: §Y[?MNH.els_money]§!Capital Communists believe that the capital produced by the working class should be distributed equally among all, and taxes should be eliminated as such.\n----------------------------\ n£GFX_pmc_text_icon Loyalty of Military Corporations: §Y[?MNH.military_companies_loyalty]%§!\n Resources of Military Corporations: §Y[?MNH.military_companies_money]§!\n----------------------------\ n£GFX_ff_text_icon F&F (TM) Loyalty: §Y100%§!\n F&F (TM) resources: §Y[?MNH.fnf_money]§!"
+ 
+ ##### IDEAS
+ MNH_no_army:0 "Reliance on mercenaries"
+ MNH_no_army_upgraded:0 "Reliance on mercenaries"
+ MNH_no_army_tt:0 "§ Do not train, remove, or change divisions\To get divisions, you need to hire mercenaries from§! Private military corporations!"
+ MNH_money_society_idea:0 "Money Society"
+ MNH_MONEY_SOCIETY_IDE_DESC:0""
+ MNH_trading_for_buyer:0 "Payment for goods"
+ MNH_trading_for_MNH:0 "Manhattan Global Trade"
+ MNH_trading_for_MNH_desc:0 "Each successful transaction gives a bonus in the form of:\n\n§W-§!   §Y-0,50%§! §W Consumer goods factories;§!\n§W-§!   §G+0.20§! §The rise of political power;§!\n\n During §Y75 days.§!"
+ MNH_fnf_leadership:0 "Union of Merchant Guilds - informal leadership of F&F"
+ MNH_fnf_leadership_desc:0 "Merchant Guilds have not had leaders so far, at least on paper. But in fact, the leading role has long been played by the companies with the largest capital, and at the moment, this is the organization of the two richest brothers in Unicorn - F&F (TM)."
+ 
+ MNH_guards_of_federation_idea:0 "Federation Guard"
+   
+ 
+ #### OOB
+ 
+ #### COSMETIC TAGS
+ 
+ #### TOOLTIPS
+ mnh_flim_flam_tt:0 "§These two are worth each other§!."
+ mnh_minus_10_pmc_loyalty:0 "Reduce §Loyalty§! £GFX_pmc_text_icon §1party military corporations§! on §R10§!"
+ mnh_plus_5_pmc_loyalty:0 "Increase §Loyalty§! £GFX_pmc_text_icon §1party military corporations§! on §G5§!"
+ mnh_plus_500_pmc_money:0 "Increase §Resources§! £GFX_pmc_text_icon §1party military corporations§! §G500§!"
+
+ mnh_minus_500_fnf_money:0 "Reduce §Resources§! £GFX_ff_text_icon §YF&F§! on §R500§!"
+ mnh_minus_250_fnf_money:0 "Reduce §Resources§! £GFX_ff_text_icon §YF&F§! on §R250§!"
+ 
+ 
+ 
+ #### EVENTS
+ 
+ #### SCRIPTED GUI
+ 

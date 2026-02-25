@@ -1,0 +1,86 @@
+# Scripted AI desire for peace actions.
+# See documentation.info file for more detailed scripting information.
+
+peace_ai_desires = {
+
+    # 
+    thestrals_just_eat_everything = {
+        peace_action_type = { take_states }
+        enable = {
+            OR = {
+                original_tag = NEI
+                original_tag = TST
+                original_tag = PLP
+                original_tag = YKL
+                original_tag = YUK
+                original_tag = CHL
+                original_tag = RZR
+                original_tag = NIG
+                original_tag = GUA
+                original_tag = SND
+                original_tag = MES
+                original_tag = STR
+                original_tag = SLT
+		    }
+            FROM.FROM = {
+                OR = {
+                    original_tag = NEI
+                    original_tag = TST
+                    original_tag = PLP
+                    original_tag = YKL
+                    original_tag = YUK
+                    original_tag = CHL
+                    original_tag = RZR
+                    original_tag = NIG
+                    original_tag = GUA
+                    original_tag = SND
+                    original_tag = MES
+                    original_tag = STR
+                    original_tag = SLT
+		        }
+            }
+        }
+
+        ai_desire = 200
+    }
+
+    thestrals_just_eat_everything_2 = {
+        peace_action_type = { force_government liberate puppet }
+        enable = {
+            OR = {
+                original_tag = NEI
+                original_tag = TST
+                original_tag = PLP
+                original_tag = YKL
+                original_tag = YUK
+                original_tag = CHL
+                original_tag = RZR
+                original_tag = NIG
+                original_tag = GUA
+                original_tag = SND
+                original_tag = MES
+                original_tag = STR
+                original_tag = SLT
+		    }
+            FROM.FROM = {
+                OR = {
+                    original_tag = NEI
+                    original_tag = TST
+                    original_tag = PLP
+                    original_tag = YKL
+                    original_tag = YUK
+                    original_tag = CHL
+                    original_tag = RZR
+                    original_tag = NIG
+                    original_tag = GUA
+                    original_tag = SND
+                    original_tag = MES
+                    original_tag = STR
+                    original_tag = SLT
+		        }
+            }
+        }
+
+        ai_desire = -200
+    }
+}

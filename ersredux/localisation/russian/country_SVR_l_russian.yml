@@ -1,0 +1,38 @@
+﻿l_russian:
+ ### Party
+ SVR_anarchism_party:0 "§R[ЗАПРЕЩЕНО]§!"
+ SVR_anarchism_party_long:0 "Партия Анархистов"
+ SVR_socialism_party:0 "§R[ЗАПРЕЩЕНО]§!"
+ SVR_socialism_party_long:0 "Партия Утопических социализма"
+ SVR_communism_party:0 "§R[ЗАПРЕЩЕНО]§!"
+ SVR_communism_party_long:0 "Всеобщий Северянский Рабочий Союз (экономизм)"
+ SVR_neutrality_party:0 "Династия Романовских"
+ SVR_neutrality_party_long:0 "Династия Романовских"
+ SVR_social_utopia_party:0 "Партия Социалистов-Революционеров"
+ SVR_social_utopia_long:0 "Партия Социалистов-Революционеров"
+ SVR_democratic_party:0 "ПСЭ(п)"
+ SVR_democratic_party_long:0 "Партия Социал-эволюционеров (правые)"
+ SVR_conserv_utopia:0 "СЛДР"
+ SVR_conserv_utopia_long:0 "Северянская Либеберально-демократическая партия"
+ SVR_fascism_party:0 "НСЗС"
+ SVR_fascism_party_long:0 "Народный Союз Защиты Северяны"
+ 
+ ### Leader
+ SVR_Rosalie_Winter:0 "Розали Винтер"
+ SVR_ponyschtein:0 "Эдуард Поништейн"
+ SVR_chyorniy_v:0 "Виктор Чёрный"
+ SVR_leader_sovyonkov:0 "Борис Совёнков"
+ 
+ MinSVR_ponikin:0 "Поникин"
+ MinSVR_kolcok:0 "Колцок"
+ MinSVR_korenilov:0 "Коренилов"
+ MinSVR_sovyonkov:0 "Совёнков"
+ SVR_Vasiliy_Dolgokopytov-Rurikovich:0 "Василий Долгокопытов-Рюрикович"
+ SVR_Anastasiya_Romanovskaya_Ilyinskaya:0 "Анастасия Романовская-Ильинская"
+ SVR_ponyschtein:0 "Эдуард Поништейн"
+ SVR_chyorniy_v:0 "Виктор Чёрный"
+ SVR_leader_sovyonkov:0 "Борис Совёнков"
+ ### Ideas
+ 
+ ###Focus
+ 

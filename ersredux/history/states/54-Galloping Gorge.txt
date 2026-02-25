@@ -1,0 +1,33 @@
+state={
+	id=54
+	name="STATE_54"
+
+	provinces={
+		342 534 3291 3313 3378 3562 6577 6938 9579 11272
+	}
+	
+	resources = {
+		coal = 16
+	}
+
+	manpower=607915
+	state_category=rural
+	buildings_max_level_factor=1.00
+
+	history={
+		owner = PGS
+		add_core_of = PGS
+		
+		set_demilitarized_zone = yes
+
+		victory_points = { 11272 3 }
+
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	
+	resources = {
+		steel=3
+	}
+}

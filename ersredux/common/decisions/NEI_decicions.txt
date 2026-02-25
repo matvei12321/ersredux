@@ -1,0 +1,113 @@
+NEI_category_cat = {
+	NEI_start_unifying_thestrals = {
+		icon = celestia
+		available = {
+			owns_state = 30
+			has_completed_focus = NEI_Nova_Solaria
+		}
+		fire_only_once = yes
+		cost = 30
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision TRD_money_guichard"
+			add_ideas = NEI_justification_bonus_idea
+		}
+	}
+	
+	NEI_unify_thestrals = {
+		icon = celestia
+		available = {
+			owns_state = 116
+			owns_state = 30
+			owns_state = 353
+			owns_state = 25
+			owns_state = 221
+			owns_state = 33
+			owns_state = 15
+			owns_state = 32
+			owns_state = 50
+			owns_state = 84
+			owns_state = 80
+			owns_state = 113
+			owns_state = 13
+			owns_state = 31
+		}
+		fire_only_once = yes
+		cost = 100
+		days_remove = 15
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision TRD_money_guichard"
+			set_cosmetic_tag = NEI_thestrals_unified
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+	
+	NEI_trade_with_neibghours_decicison = {
+		icon = eng_trade_unions_support
+		available = {
+			has_completed_focus = NEI_Trade_With_Neibghours
+			NOT = {
+				has_country_flag = thestrals_currently_trading_flag
+			}
+			NOT = {
+				FROM = {
+					OR = {
+						tag = PLP
+						tag = RZR
+						has_war_with = ROOT
+						has_idea = closed_economy
+					}
+				}
+			}
+			FROM = {
+				has_idea = ers_thestral_race
+			}
+		}
+		target_array = neighbors
+		target_trigger = {
+			FROM = {
+				is_neighbor_of = ROOT
+				has_idea = ers_thestral_race
+			}
+		}
+		modifier = {
+			consumer_goods_factor = -0.1
+		}
+		
+		days_re_enable = 50
+		cost = 75
+		days_remove = 75
+		complete_effect = {
+			set_country_flag = thestrals_currently_trading_flag
+			FROM = {
+				add_political_power = 75
+			}
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision TRD_money_guichard"
+			clr_country_flag = thestrals_currently_trading_flag
+			if = {
+				limit = {
+					has_completed_focus = NEI_Money
+					
+				}
+				random_owned_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = NEI_Barter
+				}
+				add_equipment_to_stockpile = {
+					type = melee_equipment_0
+					amount = 250
+				}
+			}
+		}
+	}
+}

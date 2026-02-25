@@ -1,0 +1,13 @@
+focus_tree = {
+	id = extermination_olenia_tree
+	continuous_focus_position = { x = -1000 y = 1750 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 0
+			tag = OLE
+		}
+	}
+	
+	shared_focus = OLE_EZ_dawn_of_the_hope
+}

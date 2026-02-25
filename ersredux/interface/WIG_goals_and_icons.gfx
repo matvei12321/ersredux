@@ -1,0 +1,43 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_goal_WIG_soy"
+		texturefile = "gfx/interface/goals/WIG/WIG_bop_soy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_WIG_chad"
+		texturefile = "gfx/interface/goals/WIG/WIG_bop_chad.tga"
+	}	
+	
+	spriteType = {
+		name = "GFX_goal_dagger"
+		texturefile = "gfx/interface/goals/goal_dagger.tga"
+	}	
+	
+	spriteType = {
+		name = "GFX_WIG_B_purple_treaty"
+		texturefile = "gfx/interface/goals/WIG/WIG_B_purple_treaty.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_WIG_B_talouse"
+		texturefile = "gfx/interface/goals/WIG/WIG_B_talouse.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_WIG_B_francistria"
+		texturefile = "gfx/interface/goals/WIG/WIG_B_francistria.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_WIG_B_talouse_pact"
+		texturefile = "gfx/interface/goals/WIG/WIG_B_talouse_pact.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_WIG_B_francistria_pact"
+		texturefile = "gfx/interface/goals/WIG/WIG_B_francistria_pact.tga"
+	}
+	
+}

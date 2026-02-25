@@ -1,0 +1,476 @@
+﻿add_namespace = dodge
+
+country_event = {
+	id = dodge.1 
+	immediate = {log = "[Root.GetName]: event dodge.1"}
+	title = dodge.1.t
+	desc = dodge.1.d
+	
+	picture = GFX_event_billabong
+	
+	is_triggered_only = yes
+
+	option = {
+		name = dodge.1.a
+		add_stability = -0.05
+		add_manpower = -150
+		CLT = {
+			country_event = { id = dodge.2 days = 5 }
+		}
+	}
+}
+
+country_event = {
+	id = dodge.2
+	immediate = {log = "[Root.GetName]: event dodge.2"}
+	title = dodge.2.t
+	desc = dodge.2.d
+	
+	picture = GFX_event_billabong
+
+	is_triggered_only = yes
+
+	option = {
+		name = dodge.2.a 
+		add_manpower = 100
+		add_to_variable = { 
+			inner_phantoplasma_var = 5
+		}
+	}
+}
+
+country_event = {
+	id = dodge.3
+	immediate = {log = "[Root.GetName]: event dodge.3"}
+	title = dodge.3.t
+	desc = dodge.3.d
+	
+	picture = GFX_event_empty_town
+
+	is_triggered_only = yes
+
+	option = {
+		name = dodge.3.a 
+		add_to_variable = { 
+			inner_phantoplasma_var = 5
+		}
+	}
+}
+
+	
+country_event = {			#### ALTARIUM
+	id = dodge.4
+	immediate = {log = "[Root.GetName]: event dodge.4"}
+	title = dodge.4.t
+	desc = dodge.4.d
+	
+	picture = GFX_event_empty_town
+
+	is_triggered_only = yes
+
+	option = {
+		name = dodge.4.a 
+	}
+}
+
+country_event = {			#### Time reset - bad ending 1
+	id = dodge.5
+	immediate = {log = "[Root.GetName]: event dodge.5"}
+	title = dodge.5.t
+	desc = dodge.5.d
+	
+	picture = GFX_event_broken_clocks
+
+	is_triggered_only = yes
+
+	option = {
+		name = dodge.5.a 
+		custom_effect_tooltip = and_we_will_cry
+		set_global_flag = eaw_super_event_flag_dodge_city_collapse_1
+		hidden_effect = {
+			play_song = "dodge_city_collapse_1"
+		}
+		ERP = {	
+			annex_country = { target = CLT }
+		}
+	}
+}
+
+country_event = {			# $(*$#@Y@&)FM)IHJNAEH_ASDU+
+	id = dodge.6
+	immediate = {log = "[Root.GetName]: event dodge.9"}
+	title = dodge.6.t
+	desc = dodge.6.d
+	
+	picture = GFX_event_madness
+
+	is_triggered_only = yes
+
+	option = {
+		name = dodge.6.a 
+		if = {
+			limit = {
+				NOT = {
+					check_variable = {
+						CLT_eop_variable > 1
+					}
+				}
+			}
+			add_to_variable = {	
+				CLT_eop_variable = 1
+			}
+		}
+		add_to_variable = { 
+			inner_phantoplasma_var = 5
+		}
+		custom_effect_tooltip = plus_eop_variable_tt
+	}
+	option = {
+		name = dodge.6.b
+		if = {
+			limit = {
+				NOT = {
+					check_variable = {
+						CLT_eop_variable < 1
+					}
+				}
+			}
+			add_to_variable = {	
+				CLT_eop_variable = -1
+			}
+			add_to_variable = { 
+			inner_phantoplasma_var = -5
+		}
+		}
+		custom_effect_tooltip = minus_eop_variable_tt
+	}
+}
+
+country_event = {			# LOST INTRIDUCTION
+	id = dodge.7
+	immediate = {log = "[Root.GetName]: event dodge.5"}
+	title = dodge.7.t
+	desc = dodge.7.d
+	
+	picture = GFX_event_madness
+
+	is_triggered_only = yes
+
+	option = {
+		name = dodge.7.a 
+	}
+}
+
+country_event = {			# Harpies
+	id = dodge.8
+	immediate = {log = "[Root.GetName]: event dodge.8"}
+	title = dodge.8.t
+	desc = dodge.8.d
+	
+	picture = GFX_event_blurred
+
+	is_triggered_only = yes
+
+	option = {
+		name = dodge.8.a 
+		set_country_flag = CLT_has_plan_flag
+		add_to_variable = { 
+			inner_phantoplasma_var = 10
+		}
+	}
+}
+
+country_event = {			# Mai meets Valentine
+	id = dodge.9
+	immediate = {log = "[Root.GetName]: event dodge.9"}
+	title = dodge.9.t
+	desc = dodge.9.d
+	
+	picture = GFX_event_madness
+
+	is_triggered_only = yes
+
+	option = {
+		name = dodge.9.a 
+		add_to_variable = { 
+			inner_phantoplasma_var = -5
+		}
+	}
+}
+
+country_event = {			# Time will go back - bad ending 2
+	id = dodge.10
+	immediate = {log = "[Root.GetName]: event dodge.10"}
+	title = dodge.10.t
+	desc = dodge.10.d
+	
+	picture = GFX_event_broken_clocks
+
+	is_triggered_only = yes
+	
+	option = {
+		name = dodge.10.a
+		trigger = { NOT = { has_global_flag = eaw_super_event_flag_dodge_city_collapse_1 } }
+		set_global_flag = eaw_super_event_flag_dodge_city_collapse_1
+		hidden_effect = {
+			play_song = "dodge_city_collapse_1"
+		}
+		ERP = {	
+			transfer_state = 85
+			transfer_state = 22
+			transfer_state = 1213
+		}
+	}
+}
+
+country_event = {			# Shizo flashback
+	id = dodge.11
+	immediate = {log = "[Root.GetName]: event dodge.11"}
+	title = dodge.11.t
+	desc = dodge.11.d
+	
+	picture = GFX_event_madness
+
+	is_triggered_only = yes
+
+	option = {
+		name = dodge.11.a 
+		add_to_variable = { 
+			inner_phantoplasma_var = -15
+		}
+	}
+}
+
+country_event = {			# Rosa History
+	id = dodge.12
+	immediate = {log = "[Root.GetName]: event dodge.12"}
+	title = dodge.12.t
+	desc = dodge.12.d
+	
+	picture = GFX_event_wierd_tree
+
+	is_triggered_only = yes
+
+	option = {
+		name = dodge.12.a 
+		country_event = { id = dodge.13 days = 15 }
+	}
+}
+
+country_event = {			# Rosa wants to escape
+	id = dodge.13
+	immediate = {log = "[Root.GetName]: event dodge.13"}
+	title = dodge.13.t
+	desc = dodge.13.d
+	
+	picture = GFX_event_winter
+
+	is_triggered_only = yes
+
+	option = {
+		name = dodge.13.a 
+		retire_character = CLT_rosa_maledicta
+		add_manpower = -1
+		DED = {
+			add_manpower = 1
+			set_politics = {
+				ruling_party = fascism
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.5
+			}
+		}
+	}
+	
+	option = {
+		name = dodge.13.b 
+	}
+}
+
+country_event = {			# Shizo flashback
+	id = dodge.14
+	immediate = {log = "[Root.GetName]: event dodge.14"}
+	title = dodge.14.t
+	desc = dodge.14.d
+	
+	picture = GFX_event_madness
+
+	is_triggered_only = yes
+
+	option = {
+		name = dodge.14.a 
+		add_to_variable = { 
+			inner_phantoplasma_var = -15
+		}
+	}
+}
+
+country_event = {			# Damn priests are here!
+	id = dodge.15
+	immediate = {log = "[Root.GetName]: event dodge.15"}
+	title = dodge.15.t
+	desc = dodge.15.d
+	
+	picture = GFX_event_blessing
+
+	is_triggered_only = yes
+
+	option = {
+		name = dodge.15.a 
+		add_stability = 0.1
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.15
+		}
+		set_country_flag = CLT_has_to_destroy_priests_flag
+	}
+}
+
+country_event = {			# Priests won
+	id = dodge.16
+	immediate = {log = "[Root.GetName]: event dodge.16"}
+	title = dodge.16.t
+	desc = dodge.16.d
+	
+	picture = GFX_event_blessing
+
+	is_triggered_only = yes
+
+	option = {
+		hidden_effect = {
+			country_event = { id = dodge.17 days = 2 }
+		}
+		load_focus_tree = CLT_empty_focus_tree
+		name = dodge.16.a 
+		add_stability = 0.1
+		add_popularity = {
+			ideology = democratic
+			popularity = 1.0
+		}
+		set_politics = {
+			ruling_party = democratic
+		}
+		hidden_effect = {	
+			retire_character = CLT_valentine
+		}
+		if = {
+			limit = {
+				has_idea = CLT_cultists
+			}
+			remove_ideas = CLT_cultists
+		}
+		if = {
+			limit = {
+				has_idea = CLT_cultists_1
+			}
+			remove_ideas = CLT_cultists_1
+		}
+		if = {
+			limit = {
+				has_idea = CLT_no_ruling
+			}
+			remove_ideas = CLT_no_ruling
+		}
+		if = {
+			limit = {
+				has_idea = CLT_no_ruling_1
+			}
+			remove_ideas = CLT_no_ruling_1
+		}
+	}
+}
+
+country_event = {			# Priests won - bad ending 3
+	id = dodge.17
+	immediate = {log = "[Root.GetName]: event dodge.17"}
+	title = dodge.17.t
+	desc = dodge.17.d
+	
+	picture = GFX_event_blessing
+
+	is_triggered_only = yes
+	
+	option = {
+		name = dodge.17.a
+		trigger = { NOT = { has_global_flag = eaw_super_event_flag_dodge_city_collapse_1 } }
+		set_global_flag = eaw_super_event_flag_dodge_city_collapse_1
+		hidden_effect = {
+			play_song = "dodge_city_collapse_1"
+		}
+		ERP = {	
+			annex_country = { target = CLT }
+		}
+	}
+}
+
+country_event = {			# Priests lost
+	id = dodge.18
+	immediate = {log = "[Root.GetName]: event dodge.18"}
+	title = dodge.18.t
+	desc = dodge.18.d
+	
+	picture = GFX_event_wierd_tree
+
+	is_triggered_only = yes
+
+	option = {
+		name = dodge.18.a 
+		hidden_effect = {
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.6
+			}
+		}
+		add_stability = -0.05
+		add_political_power = 25
+		add_manpower = -23
+		clr_country_flag = priests_are_coming_flag
+		set_country_flag = clt_priests_are_killed_flag
+	}
+}
+
+country_event = {			# Borning black mass
+	id = dodge.19
+	immediate = {log = "[Root.GetName]: event dodge.19"}
+	title = dodge.19.t
+	desc = dodge.19.d
+	
+	picture = GFX_event_wierd_tree
+
+	is_triggered_only = yes
+
+	option = {
+		name = dodge.19.a 
+	}
+}
+
+country_event = {			# Borning black mass
+	id = dodge.20
+	immediate = {log = "[Root.GetName]: event dodge.20"}
+	title = dodge.20.t
+	desc = dodge.20.d
+	
+	picture = GFX_event_wierd_tree
+
+	is_triggered_only = yes
+
+	option = {
+		name = dodge.20.a 
+	}
+}
+
+country_event = {			# Seeing Istrid
+	id = dodge.21
+	immediate = {log = "[Root.GetName]: event dodge.21"}
+	title = dodge.21.t
+	desc = dodge.21.d
+	
+	picture = GFX_event_wierd_tree
+
+	is_triggered_only = yes
+
+	option = {
+		name = dodge.21.a 
+	}
+}
