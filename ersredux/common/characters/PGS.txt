@@ -46,6 +46,82 @@ characters = {
 		
 	}
 	
+	PGS_red_air={
+		name=PGS_red_air
+		portraits={
+			civilian={
+				large="gfx/leaders/ANR/ANR_red_air.tga"
+			}
+		}
+		country_leader={
+			desc="PGS_red_flame_desc"
+			ideology=rozenkampism
+			traits={ }
+			expire="1965.1.1.1"
+		}
+		
+	}
+	
+	PGS_gallant_grey={
+		name=PGS_gallant_grey
+		portraits={
+			army={
+				large="gfx/leaders/ANR/ANR_gallant_grey.dds"
+			}
+			civilian={
+				large="gfx/leaders/ANR/ANR_gallant_grey.dds"
+			}
+		}
+		country_leader={
+			desc="PGS_gallant_grey_desc"
+			ideology=marxism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		
+	}
+	
+	PGS_committee={
+		name=PGS_committee
+		portraits={
+			army={
+				large="gfx/leaders/PGS/committee.dds"
+			}
+			civilian={
+				large="gfx/leaders/PGS/committee.dds"
+			}
+		}
+		country_leader={
+			desc="PGS_committee_desc"
+			ideology=despotism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		
+	}
+	
+	PGS_rainbow_dash={
+		name=PGS_rainbow_dash
+		portraits={
+			army={
+				large="gfx/leaders/PGS/rainbow_dash.tga"
+			}
+			civilian={
+				large="gfx/leaders/PGS/rainbow_dash.tga"
+			}
+		}
+		country_leader={
+			desc="PGS_rainbow_dash_desc"
+			ideology=liberalism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		
+	}
+	
 	PGS_moondowner={
 		name=PGS_moondowner
 		portraits={

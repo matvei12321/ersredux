@@ -1,0 +1,20 @@
+focus_tree = {
+	id = CLD_start_focus_tree
+	continuous_focus_position = { x = 10000 y = 10 }
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CLD
+		}
+	}
+	
+	shared_focus = CLD_focus_1
+	shared_focus = CLD_focus_4
+	shared_focus = CLD_focus_5
+	shared_focus = CLD_focus_6
+	shared_focus = CLD_focus_7
+	shared_focus = CLD_focus_8
+	shared_focus = CLD_focus_9
+	shared_focus = CLD_focus_10
+}

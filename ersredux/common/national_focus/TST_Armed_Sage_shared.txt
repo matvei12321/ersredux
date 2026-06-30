@@ -1,0 +1,3866 @@
+### Политика
+
+### Армед Сейдж
+	shared_focus = {
+		id = TST_Armed_Sage_focus
+		icon = GFX_goal_Armed_Sage_0
+		cost = 3
+		allow_branch = {
+			AND = {
+				TST_trigger_Armed_Sage_start_focus_tree = yes
+				TST_trigger_humankind_extermination_committee_focus_tree = no
+			}
+		}
+		prerequisite = {
+		
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 15
+		y = 2
+		completion_reward = {
+			promote_character = TST_Armed_Sage
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+			add_stability = 0.05
+		}
+	}
+
+	shared_focus = {
+		id = TST_Armed_Sage_focus_1
+		icon = GFX_goal_Armed_Sage_1
+		relative_position_id = TST_Armed_Sage_focus
+		cost = 5
+		allow_branch = {
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		x = 1
+		y = 1
+		completion_reward = {
+			add_ideas = ers_atheism
+			remove_ideas = TST_night_vs_day_religion
+			hidden_effect = {
+				country_event = {
+					id = armed_sage.99
+					days = 200
+				}
+			}
+		}
+	}
+
+	shared_focus = {
+		id = TST_Armed_Sage_focus_2
+		icon = GFX_goal_Armed_Sage_2
+		relative_position_id = TST_Armed_Sage_focus
+		cost = 5
+		allow_branch = {
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = -1
+		y = 1
+		completion_reward = {
+			country_event = {
+				id = armed_sage.106
+				days = 1
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+			add_ideas = TST_Armed_Sage_declaration_of_equality_idea
+		}
+	}
+
+	shared_focus = {
+		id = TST_Armed_Sage_focus_3
+		icon = GFX_goal_Armed_Sage_3
+		relative_position_id = TST_Armed_Sage_focus
+		cost = 7
+		allow_branch = {
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_2
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = -1
+		y = 2
+		completion_reward = {
+			add_ideas = TST_Armed_Sage_island_of_hope_idea
+			custom_effect_tooltip = TST_Armed_Sage_focus_3_tt
+			decrease_poverty = yes
+		}
+	}
+
+	shared_focus = {
+		id = TST_Armed_Sage_focus_4
+		icon = GFX_goal_HIP_SIR_ARI_lessons_of_invasion
+		relative_position_id = TST_Armed_Sage_focus
+		cost = 5
+		allow_branch = {
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_3
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_21
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = -2
+		y = 3
+		completion_reward = {
+			decrease_illiteracy = yes
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+
+	shared_focus = {
+		id = TST_Armed_Sage_focus_5
+		icon = GFX_goal_Armed_Sage_5
+		relative_position_id = TST_Armed_Sage_focus
+		cost = 7
+		allow_branch = {
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_3
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_21
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		x = 0
+		y = 3
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.02
+			add_popularity = {
+				ideology = communism
+				popularity = 0.03
+			}
+			decrease_poverty = yes
+			custom_effect_tooltip = TST_Armed_Sage_focus_5_tt
+		}
+	}
+
+	shared_focus = {
+		id = TST_Armed_Sage_focus_6
+		icon = GFX_goal_HIP_SIR_ARI_preparations
+		relative_position_id = TST_Armed_Sage_focus
+		cost = 8
+		allow_branch = {
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_3
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_21
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 2
+		y = 3
+		completion_reward = {
+			mark_focus_tree_layout_dirty = yes
+			add_doctrine_cost_reduction = {
+				name = cat_superior_firepower
+				cost_reduction = 0.5
+				uses = 2
+				category = cat_superior_firepower
+			}
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 1
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}
+
+	shared_focus = {
+		id = TST_Armed_Sage_focus_7
+		icon = GFX_goal_HIP_SIR_ARI_eastern_frontier
+		relative_position_id = TST_Armed_Sage_focus
+		cost = 8
+		allow_branch = {
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_4
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = -3
+		y = 4
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				category = industry
+				bonus = 1
+				uses = 2
+			}
+			add_tech_bonus = {
+				name = electronics_bonus
+				category = electronics
+				bonus = 1.0
+				uses = 1
+			}
+			30 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			350 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			36 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	shared_focus = {
+		id = TST_Armed_Sage_focus_8
+		icon = GFX_goal_HIP_SIR_ARI_connect_north
+		relative_position_id = TST_Armed_Sage_focus
+		cost = 6
+		allow_branch = {
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_4
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = -1
+		y = 4
+		completion_reward = {
+			set_technology = { basic_train = 1 }
+			350 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			36 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			348 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			build_railway = {
+				level = 1
+				build_only_on_allied = no
+				controller_priority = {
+					base = 1
+					modifier = {
+						tag = TST
+						add = 2
+					}
+				}
+				fallback = yes
+				path = { 569 11525 9541 9527 10045 6418 583 3553 3444 }
+				start_province = 569
+				target_province = 3444
+			}
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				350 = {
+					add_building_construction = {
+						type = supply_node
+						level = 1
+						instant_build = yes
+						province = 10045
+					}
+				}
+			}
+		}
+	}
+
+	shared_focus = {
+		id = TST_Armed_Sage_focus_9
+		icon = GFX_goal_Armed_Sage_9
+		relative_position_id = TST_Armed_Sage_focus
+		cost = 6
+		allow_branch = {
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_7
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_8
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = -2
+		y = 5
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.02
+			}
+			add_stability = 0.02
+			decrease_poverty = yes
+		}
+	}
+
+	shared_focus = {
+		id = TST_Armed_Sage_focus_10
+		icon = GFX_goal_Armed_Sage_10
+		relative_position_id = TST_Armed_Sage_focus
+		cost = 10
+		allow_branch = {
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_7
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_8
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = -4
+		y = 5
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.03
+			}
+			add_stability = 0.05
+			increase_society_development = yes
+			decrease_poverty = yes
+		}
+	}
+
+	shared_focus = {
+		id = TST_Armed_Sage_focus_11
+		icon = GFX_goal_HIP_SIR_ARI_safety_below_waves
+		relative_position_id = TST_Armed_Sage_focus
+		cost = 8
+		allow_branch = {
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_9
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_10
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = -3
+		y = 6
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+			add_stability = 0.05
+			30 = {
+				add_victory_points = {
+					province = 569
+					value = 10
+				}
+				set_state_category = metropolis
+				add_manpower = 400000
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	shared_focus = {
+		id = TST_Armed_Sage_focus_12
+		icon = GFX_goal_Armed_Sage_12
+		relative_position_id = TST_Armed_Sage_focus
+		cost = 4
+		allow_branch = {
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_5
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		x = 0
+		y = 5
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.03
+			}
+			custom_effect_tooltip = TST_Armed_Sage_focus_12_tt
+			hidden_effect = {
+				NEI = {
+					country_event = armed_sage.80
+				}
+				SLT = {
+					country_event = armed_sage.80
+				}
+				RZR = {
+					country_event = armed_sage.80
+				}
+				
+				YKL = {
+					country_event = armed_sage.80
+				}
+				PLP = {
+					country_event = armed_sage.80
+				}
+				CHL = {
+					country_event = armed_sage.80
+				}
+				STR = {
+					country_event = armed_sage.80
+				}
+				YUK = {
+					country_event = armed_sage.80
+				}
+				MES = {
+					country_event = armed_sage.80
+				}
+				
+				SIR = {
+					country_event = armed_sage.80
+				}
+				SND = {
+					country_event = armed_sage.80
+				}
+				NIG = {
+					country_event = armed_sage.80
+				}
+				GUA = {
+					country_event = armed_sage.80
+				}
+			}
+		}
+	}
+
+	shared_focus = {
+		id = TST_Armed_Sage_focus_13
+		icon = GFX_goal_Armed_Sage_13
+		relative_position_id = TST_Armed_Sage_focus
+		cost = 5
+		allow_branch = {
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_12
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		x = -1
+		y = 6
+		completion_reward = {
+			custom_effect_tooltip = TST_Armed_Sage_focus_13_tt
+			hidden_effect = {
+				every_country = {
+						limit = {
+							has_country_flag = ayacachtli_treaty
+						}
+						THIS = {
+							random_owned_state = {
+								add_extra_state_shared_building_slots = 1
+								add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+								}
+							}
+							random_owned_state = {
+								add_extra_state_shared_building_slots = 1
+								add_building_construction = {
+								type = arms_factory
+								level = 1
+								instant_build = yes
+								}
+							}
+						}
+				}	
+			}
+		}
+	}
+
+	shared_focus = {
+		id = TST_Armed_Sage_focus_14
+		icon = GFX_goal_HIP_SIR_ARI_military_tactics
+		relative_position_id = TST_Armed_Sage_focus
+		cost = 5
+		allow_branch = {
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_12
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		x = 1
+		y = 6
+		completion_reward = {
+			custom_effect_tooltip = TST_Armed_Sage_focus_14_tt
+			hidden_effect = {
+				every_country = {
+						limit = {
+							has_country_flag = ayacachtli_treaty
+						}
+						army_experience = 10
+						THIS = {
+							TST = {
+								army_experience = 10
+							}
+						}
+				}	
+			}
+		}
+	}
+
+	shared_focus = {
+		id = TST_Armed_Sage_focus_15
+		icon = GFX_goal_HIP_SIR_ARI_motorize_armies
+		relative_position_id = TST_Armed_Sage_focus
+		cost = 5
+		allow_branch = {
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_6
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		x = 1
+		y = 4
+		completion_reward = {
+			add_tech_bonus = {
+				name = mech_bonus
+				bonus = 1.0
+				uses = 2
+				category = motorized_equipment
+			}
+		}
+	}
+
+	shared_focus = {
+		id = TST_Armed_Sage_focus_16
+		icon = GFX_goal_Armed_Sage_16
+		relative_position_id = TST_Armed_Sage_focus
+		cost = 8
+		allow_branch = {
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_6
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		x = 3
+		y = 4
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_bonus
+				bonus = 1.0
+				uses = 2
+				category = support_tech
+			}
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 1.0
+				uses = 2
+				category = artillery
+			}
+		}
+	}
+
+	shared_focus = {
+		id = TST_Armed_Sage_focus_17
+		icon = GFX_goal_Armed_Sage_17
+		relative_position_id = TST_Armed_Sage_focus
+		cost = 5
+		allow_branch = {
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_15
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_16
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		x = 2
+		y = 5
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				category = armor
+				bonus = 1.0
+				uses = 3
+			}
+		}
+	}
+
+	shared_focus = {
+		id = TST_Armed_Sage_focus_18
+		icon = GFX_goal_HIP_SIR_ARI_use_lmrd
+		relative_position_id = TST_Armed_Sage_focus
+		cost = 5
+		allow_branch = {
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_15
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_16
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		x = 4
+		y = 5
+		completion_reward = {
+			add_tech_bonus = {
+				name = chem_bonus
+				category = chemical_warfare_category
+				bonus = 1.0
+				uses = 2
+			}
+		}
+	}
+
+	shared_focus = {
+		id = TST_Armed_Sage_focus_19
+		icon = GFX_goal_HIP_SIR_ARI_bolster_garrisons
+		relative_position_id = TST_Armed_Sage_focus
+		cost = 8
+		allow_branch = {
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_17
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_18
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		x = 3
+		y = 6
+		completion_reward = {
+			add_war_support = 0.05
+			add_tech_bonus = {
+				name = race_bonus
+				bonus = 1.0
+				uses = 2
+				category = thestrals_tech
+			}
+			add_ideas = TST_Armed_Sage_modern_army_idea
+		}
+	}
+
+	shared_focus = {
+		id = TST_Armed_Sage_focus_20
+		icon = GFX_goal_Armed_Sage_20
+		relative_position_id = TST_Armed_Sage_focus
+		cost = 8
+		allow_branch = {
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_11
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_13
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_14
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_19
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		x = 0
+		y = 7
+		will_lead_to_war_with = NEI
+		will_lead_to_war_with = SLT
+		will_lead_to_war_with = RZR
+		will_lead_to_war_with = NIG
+		will_lead_to_war_with = GUA
+		will_lead_to_war_with = SND
+		will_lead_to_war_with = SIR
+		will_lead_to_war_with = CHL
+		will_lead_to_war_with = PLP
+		will_lead_to_war_with = YKL
+		will_lead_to_war_with = MES
+		will_lead_to_war_with = STR
+		will_lead_to_war_with = YUK
+		completion_reward = {
+			set_country_flag = thestralian_war
+			mark_focus_tree_layout_dirty = yes
+			create_faction = TST_ayakachtli_treaty_faction
+			every_other_country = {
+				limit = {
+					has_country_flag = ayacachtli_treaty
+				}
+				TST = {
+					puppet = {
+						target = PREV
+						end_wars = yes
+					}
+				}
+			}
+			custom_effect_tooltip = TST_Armed_Sage_focus_20_tt
+
+			hidden_effect = {
+
+				if = {
+					limit = {
+						NEI = {
+							NOT = {
+								has_country_flag = ayacachtli_treaty
+							}
+						}
+					}
+					declare_war_on = {
+						target = NEI
+						type = annex_everything
+					}
+				}
+
+				if = {
+					limit = {
+						SLT = {
+							NOT = {
+								has_country_flag = ayacachtli_treaty
+							}
+						}
+					}
+					declare_war_on = {
+						target = SLT
+						type = annex_everything
+					}
+				}
+
+				if = {
+					limit = {
+						RZR = {
+							NOT = {
+								has_country_flag = ayacachtli_treaty
+							}
+						}
+					}
+					declare_war_on = {
+						target = RZR
+						type = annex_everything
+					}
+				}
+
+				if = {
+					limit = {
+						YKL = {
+							NOT = {
+								has_country_flag = ayacachtli_treaty
+							}
+						}
+					}
+					declare_war_on = {
+						target = YKL
+						type = annex_everything
+					}
+				}
+
+				if = {
+					limit = {
+						PLP = {
+							NOT = {
+								has_country_flag = ayacachtli_treaty
+							}
+						}
+					}
+					declare_war_on = {
+						target = PLP
+						type = annex_everything
+					}
+				}
+
+				if = {
+					limit = {
+						CHL = {
+							NOT = {
+								has_country_flag = ayacachtli_treaty
+							}
+						}
+					}
+					declare_war_on = {
+						target = CHL
+						type = annex_everything
+					}
+				}
+
+				if = {
+					limit = {
+						STR = {
+							NOT = {
+								has_country_flag = ayacachtli_treaty
+							}
+						}
+					}
+					declare_war_on = {
+						target = STR
+						type = annex_everything
+					}
+				}
+
+				if = {
+					limit = {
+						YUK = {
+							NOT = {
+								has_country_flag = ayacachtli_treaty
+							}
+						}
+					}
+					declare_war_on = {
+						target = YUK
+						type = annex_everything
+					}
+				}
+
+				if = {
+					limit = {
+						MES = {
+							NOT = {
+								has_country_flag = ayacachtli_treaty
+							}
+						}
+					}
+					declare_war_on = {
+						target = MES
+						type = annex_everything
+					}
+				}
+
+				if = {
+					limit = {
+						SIR = {
+							NOT = {
+								has_country_flag = ayacachtli_treaty
+							}
+						}
+					}
+					declare_war_on = {
+						target = SIR
+						type = annex_everything
+					}
+				}
+
+				if = {
+					limit = {
+						SND = {
+							NOT = {
+								has_country_flag = ayacachtli_treaty
+							}
+						}
+					}
+					declare_war_on = {
+						target = SND
+						type = annex_everything
+					}
+				}
+
+				if = {
+					limit = {
+						NIG = {
+							NOT = {
+								has_country_flag = ayacachtli_treaty
+							}
+						}
+					}
+					declare_war_on = {
+						target = NIG
+						type = annex_everything
+					}
+				}
+
+				if = {
+					limit = {
+						GUA = {
+							NOT = {
+								has_country_flag = ayacachtli_treaty
+							}
+						}
+					}
+					declare_war_on = {
+						target = GUA
+						type = annex_everything
+					}
+				}
+
+			}
+
+		}
+	}
+
+	shared_focus = {
+		id = TST_Armed_Sage_focus_21
+		icon = GFX_goal_HIP_SIR_ARI_hippone
+		relative_position_id = TST_Armed_Sage_focus
+		cost = 7
+		allow_branch = {
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_1
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		x = 1
+		y = 2
+		completion_reward = {
+			country_event = {
+				id = armed_sage.100
+				days = 1
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.02
+			}
+			increase_society_development = yes
+		}
+	}
+
+	shared_focus = {
+		id = TST_Armed_Sage_focus_22
+		icon = GFX_goal_Armed_Sage_22
+		relative_position_id = TST_Armed_Sage_focus
+		cost = 7
+		allow_branch = {
+			 has_completed_focus = TST_Armed_Sage_focus_20
+			 NOT = {
+				TST_trigger_humankind_extermination_committee_focus_tree = yes
+			}
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_11
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_13
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		x = -2
+		y = 7
+		completion_reward = {
+			add_timed_idea = {
+				idea = TST_Armed_Sage_cultural_revival_idea
+				days = 720
+			}
+		}
+	}
+
+	shared_focus = {
+		id = TST_Armed_Sage_focus_23
+		icon = GFX_goal_Armed_Sage_23
+		relative_position_id = TST_Armed_Sage_focus
+		cost = 8
+		allow_branch = {
+			 has_completed_focus = TST_Armed_Sage_focus_20
+			 NOT = {
+				TST_trigger_humankind_extermination_committee_focus_tree = yes
+			}
+		}
+		prerequisite = {
+			focus = TST_comm_ec_11
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_11
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		x = -4
+		y = 7
+		completion_reward = {
+			350 = {
+				add_victory_points = {
+					province = 10045
+					value = 4
+				}
+				set_state_category = large_city
+				add_manpower = 100000
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			16 = {
+				add_victory_points = {
+					province = 8622
+					value = 5
+				}
+				set_state_category = large_city
+				add_manpower = 100000
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			25 = {
+				add_victory_points = {
+					province = 11987
+					value = 10
+				}
+				set_state_category = large_city
+				add_manpower = 100000
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			32 = {
+				add_victory_points = {
+					province = 9922
+					value = 8
+				}
+				set_state_category = large_city
+				add_manpower = 100000
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			80 = {
+				add_victory_points = {
+					province = 9606
+					value = 10
+				}
+				set_state_category = large_city
+				add_manpower = 100000
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			113 = {
+				add_victory_points = {
+					province = 11627
+					value = 5
+				}
+				set_state_category = large_city
+				add_manpower = 100000
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			13 = {
+				add_victory_points = {
+					province = 13011
+					value = 5
+				}
+				set_state_category = large_city
+				add_manpower = 100000
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	shared_focus = {
+		id = TST_Armed_Sage_focus_24
+		icon = GFX_goal_Armed_Sage_24
+		relative_position_id = TST_Armed_Sage_focus
+		cost = 7
+		allow_branch = {
+			 has_completed_focus = TST_Armed_Sage_focus_20
+			 NOT = {
+				TST_trigger_humankind_extermination_committee_focus_tree = yes
+			}
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_14
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_19
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		x = 2
+		y = 7
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				category = armor
+				bonus = 1
+				uses = 2
+				ahead_reduction = 1
+			}
+		}
+	}
+
+	shared_focus = {
+		id = TST_Armed_Sage_focus_25
+		icon = GFX_goal_Armed_Sage_25
+		relative_position_id = TST_Armed_Sage_focus
+		cost = 7
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_22
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_23
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		x = -3
+		y = 8
+		completion_reward = {
+			add_tech_bonus = {
+				name = hospital_research
+				bonus = 1.0
+				uses = 2
+				category = hospital_tech
+			}
+			add_ideas = TST_Armed_Sage_public_medicine_idea
+			country_event = {
+				id = armed_sage.103
+				days = 1
+			}
+			custom_effect_tooltip = TST_Armed_Sage_focus_25_tt
+		}
+	}
+
+	shared_focus = {
+		id = TST_Armed_Sage_focus_26
+		icon = GFX_goal_Armed_Sage_26
+		relative_position_id = TST_Armed_Sage_focus
+		cost = 5
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_22
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_20
+		}
+		available = {
+			has_war = no
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		x = -1
+		y = 8
+		will_lead_to_war_with = CLT
+		will_lead_to_war_with = BUF
+		will_lead_to_war_with = APL
+		will_lead_to_war_with = MIN
+		will_lead_to_war_with = HOR
+		will_lead_to_war_with = EMP
+		will_lead_to_war_with = ROK
+		will_lead_to_war_with = NGC
+		completion_reward = {
+
+			country_event = {
+				id = armed_sage.105
+				days = 1
+			}
+
+			declare_war_on = {
+				target = CLT
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = BUF
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = APL
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = MIN
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = HOR
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = EMP
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = ROK
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = NGC
+				type = annex_everything
+			}
+
+			if = {
+				limit = {
+					CLT = {
+						is_subject_of = TST
+					}
+				}
+				annex_country = {
+					target = CLT
+					transfer_troops = no
+				}
+			}
+			if = {
+				limit = {
+					BUF = {
+						is_subject_of = TST
+					}
+				}
+				annex_country = {
+					target = BUF
+					transfer_troops = yes
+				}
+			}
+			if = {
+				limit = {
+					APL = {
+						is_subject_of = TST
+					}
+				}
+				annex_country = {
+					target = APL
+					transfer_troops = yes
+				}
+			}
+			if = {
+				limit = {
+					MIN = {
+						is_subject_of = TST
+					}
+				}
+				annex_country = {
+					target = MIN
+					transfer_troops = yes
+				}
+			}
+			if = {
+				limit = {
+					HOR = {
+						is_subject_of = TST
+					}
+				}
+				annex_country = {
+					target = HOR
+					transfer_troops = yes
+				}
+			}
+			if = {
+				limit = {
+					EMP = {
+						is_subject_of = TST
+					}
+				}
+				annex_country = {
+					target = EMP
+					transfer_troops = yes
+				}
+			}
+			if = {
+				limit = {
+					ROK = {
+						is_subject_of = TST
+					}
+				}
+				annex_country = {
+					target = ROK
+					transfer_troops = yes
+				}
+			}
+			if = {
+				limit = {
+					NGC = {
+						is_subject_of = TST
+					}
+				}
+				annex_country = {
+					target = NGC
+					transfer_troops = yes
+				}
+			}
+
+			CLT = { add_to_ROOT_potential_cores = yes }
+			BUF = { add_to_ROOT_potential_cores = yes }
+			APL = { add_to_ROOT_potential_cores = yes }
+			MIN = { add_to_ROOT_potential_cores = yes }
+			HOR = { add_to_ROOT_potential_cores = yes }
+			EMP = { add_to_ROOT_potential_cores = yes }
+			ROK = { add_to_ROOT_potential_cores = yes }
+			NGC = { add_to_ROOT_potential_cores = yes }
+		}
+	}
+
+	shared_focus = {
+		id = TST_Armed_Sage_focus_27
+		icon = GFX_goal_Armed_Sage_27
+		relative_position_id = TST_Armed_Sage_focus
+		cost = 4
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_20
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_24
+		}
+		available = {
+			has_war = no
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		x = 1
+		y = 8
+		will_lead_to_war_with = ERP
+		completion_reward = {
+			declare_war_on = {
+				target = ERP
+				type = annex_everything
+			}
+			ERP = { add_to_ROOT_potential_cores = yes }
+		}
+	}
+
+	shared_focus = {
+		id = TST_Armed_Sage_focus_28
+		icon = GFX_goal_Armed_Sage_28
+		relative_position_id = TST_Armed_Sage_focus
+		cost = 7
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_25
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_26
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_27
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		x = -1
+		y = 9
+		will_lead_to_war_with = PRG 
+		will_lead_to_war_with = UNP
+		will_lead_to_war_with = UNC
+		will_lead_to_war_with = MNH
+		will_lead_to_war_with = SVR
+		completion_reward = {
+			mark_focus_tree_layout_dirty = yes
+			declare_war_on = {
+				type = annex_everything
+				target = PRG
+			}
+			declare_war_on = {
+				type = annex_everything
+				target = UNP
+			}
+			declare_war_on = {
+				type = annex_everything
+				target = UNC
+			}
+			declare_war_on = {
+				type = annex_everything
+				target = MNH
+			}
+			declare_war_on = {
+				type = annex_everything
+				target = SVR
+			}
+
+			PRG = { add_to_ROOT_potential_cores = yes }
+			UNP = { add_to_ROOT_potential_cores = yes }
+			UNC = { add_to_ROOT_potential_cores = yes }
+			MNH = { add_to_ROOT_potential_cores = yes }
+			SVR = { add_to_ROOT_potential_cores = yes }
+		}
+	}
+
+	shared_focus = {
+		id = TST_Armed_Sage_focus_29
+		icon = GFX_goal_Armed_Sage_29
+		relative_position_id = TST_Armed_Sage_focus
+		cost = 8
+		allow_branch = {
+			has_completed_focus = TST_Armed_Sage_focus_20
+			NOT = {
+				TST_trigger_humankind_extermination_committee_focus_tree = yes
+			}
+	   }
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_19
+		}
+		prerequisite = {
+			focus = TST_comm_ec_19
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		x = 4
+		y = 7
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				ahead_reduction = 1
+				uses = 2
+				category = radar_tech
+			}
+			30 = {
+				add_building_construction = {
+					type = radar_station
+					level = 5
+					instant_build = yes
+				}
+			}
+			113 = {
+				add_building_construction = {
+					type = radar_station
+					level = 5
+					instant_build = yes
+				}
+			}
+			80 = {
+				add_building_construction = {
+					type = radar_station
+					level = 5
+					instant_build = yes
+				}
+			}
+			13 = {
+				add_building_construction = {
+					type = radar_station
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	shared_focus = {
+		id = TST_Armed_Sage_focus_30
+		icon = GFX_goal_Armed_Sage_30
+		relative_position_id = TST_Armed_Sage_focus
+		cost = 7
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_24
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_29
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		x = 3
+		y = 8
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				add_tech_bonus = {
+					name = fighter_bonus
+					bonus = 3
+					uses = 1
+					ahead_reduction = 3
+					category = light_air
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = fighter_bonus
+					bonus = 3
+					uses = 1
+					ahead_reduction = 3
+					category = light_fighter
+				}
+			}
+		}
+	}
+
+	shared_focus = {
+		id = TST_Armed_Sage_focus_31
+		icon = GFX_goal_Armed_Sage_31
+		relative_position_id = TST_Armed_Sage_focus
+		cost = 7
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_26
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_27
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_30
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		x = 1
+		y = 9
+		will_lead_to_war_with = LOS
+
+		will_lead_to_war_with = PGV
+
+		will_lead_to_war_with = PGS
+		will_lead_to_war_with = ANR
+		completion_reward = {
+			mark_focus_tree_layout_dirty = yes
+			declare_war_on = {
+				target = LOS
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = PGV
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = PGS
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = ANR
+				type = annex_everything
+			}
+			LOS = { add_to_ROOT_potential_cores = yes }
+			PGV = { add_to_ROOT_potential_cores = yes }
+			PGS = { add_to_ROOT_potential_cores = yes }
+			ANR = { add_to_ROOT_potential_cores = yes }
+		}
+	}
+
+	shared_focus = {
+		id = TST_Armed_Sage_focus_32
+		icon = GFX_goal_Armed_Sage_32
+		relative_position_id = TST_Armed_Sage_focus
+		cost = 4
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_28
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_31
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		x = 0
+		y = 10
+		will_lead_to_war_with = STG
+		will_lead_to_war_with = STL
+		will_lead_to_war_with = UMF
+		will_lead_to_war_with = HRD
+		will_lead_to_war_with = CRY
+		completion_reward = {
+			declare_war_on = {
+				target = STG
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = STL
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = UMF
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = HRD
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = CRY
+				type = annex_everything
+			}
+
+			STG = { add_to_ROOT_potential_cores = yes }
+			STL = { add_to_ROOT_potential_cores = yes }
+			UMF = { add_to_ROOT_potential_cores = yes }
+			HRD = { add_to_ROOT_potential_cores = yes }
+			CRY = { add_to_ROOT_potential_cores = yes }
+		}
+	}
+
+	shared_focus = {
+		id = TST_Armed_Sage_focus_33
+		icon = GFX_goal_HIP_SIR_ARI_servitude
+		relative_position_id = TST_Armed_Sage_focus
+		cost = 7
+		allow_branch = {
+		 	OR = {
+		 		has_completed_focus = TST_Armed_Sage_focus_28
+		 		has_completed_focus = TST_Armed_Sage_focus_31
+		 	} 
+			 NOT = {
+				TST_trigger_humankind_extermination_committee_focus_tree = yes
+			}
+			
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_25
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		x = -3
+		y = 9
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+			add_stability = 0.05
+			add_ideas = TST_Armed_Sage_mass_media_idea
+		}
+	}
+
+	shared_focus = {
+		id = TST_Armed_Sage_focus_34
+		icon = GFX_goal_HIP_SIR_ARI_beneath_sand
+		relative_position_id = TST_Armed_Sage_focus
+		cost = 10
+		allow_branch = {
+			has_completed_focus = TST_Armed_Sage_focus_20
+			NOT = {
+				TST_trigger_humankind_extermination_committee_focus_tree = yes
+			}
+		}
+		prerequisite = {
+			focus = TST_comm_ec_11
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		x = -6
+		y = 7
+		completion_reward = {
+			add_tech_bonus = {
+				name = synth_bonus
+				bonus = 1.0
+				uses = 2
+				category = synth_resources
+			}
+			36 = {
+				add_resource = {
+					type = oil
+					amount = 11
+					}
+			}
+			350 = {
+				add_resource = {
+					type = oil
+					amount = 15
+					}
+			}
+			24 = {
+				add_resource = {
+					type = oil
+					amount = 20
+					}
+			}
+			25 = {
+				add_resource = {
+					type = oil
+					amount = 15
+					}
+			}
+			52 = {
+				add_resource = {
+					type = oil
+					amount = 10
+					}
+			}
+			33 = {
+				add_resource = {
+					type = oil
+					amount = 10
+					}
+			}
+			26 = {
+				add_resource = {
+					type = oil
+					amount = 15
+					}
+			}
+			15 = {
+				add_resource = {
+					type = oil
+					amount = 15
+					}
+			}
+		}
+	}
+
+	shared_focus = {
+		id = TST_Armed_Sage_focus_35
+		icon = GFX_goal_HIP_SIR_ARI_factories_on_front
+		relative_position_id = TST_Armed_Sage_focus
+		cost = 10
+		allow_branch = {
+			 has_completed_focus = TST_Armed_Sage_focus_20
+			 NOT = {
+				TST_trigger_humankind_extermination_committee_focus_tree = yes
+			}
+		}
+		prerequisite = {
+			focus = TST_comm_ec_19
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		x = 6
+		y = 7
+		completion_reward = {
+			add_tech_bonus = {
+				name = industry_bonus
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+			add_ideas = TST_Armed_Sage_modern_production_idea
+		}
+	}
+
+	shared_focus = {
+		id = TST_Armed_Sage_focus_36
+		icon = GFX_goal_Armed_Sage_36
+		relative_position_id = TST_Armed_Sage_focus
+		cost = 7
+		allow_branch = {
+			 	OR = {
+			 		has_completed_focus = TST_Armed_Sage_focus_28
+			 		has_completed_focus = TST_Armed_Sage_focus_31
+			 	} 
+				 NOT = {
+					TST_trigger_humankind_extermination_committee_focus_tree = yes
+				}
+				
+			}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_30
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		x = 3
+		y = 9
+		completion_reward = {
+			add_tech_bonus = {
+				name = secret_bonus
+				bonus = 2.0
+				uses = 2
+				ahead_reduction = 1
+				category = nuclear
+			}
+		}
+	}
+
+	shared_focus = {
+		id = TST_Armed_Sage_focus_37
+		icon = GFX_goal_Armed_Sage_37
+		relative_position_id = TST_Armed_Sage_focus
+		cost = 7
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_36
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		x = 2
+		y = 10
+		completion_reward = {
+			add_tech_bonus = {
+				name = secret_bonus
+				bonus = 2
+				uses = 2
+				ahead_reduction = 1
+				category = rocketry
+			}
+		}
+	}
+
+	shared_focus = {
+		id = TST_Armed_Sage_focus_38
+		icon = GFX_goal_Armed_Sage_38
+		relative_position_id = TST_Armed_Sage_focus
+		cost = 7
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_33
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		x = -2
+		y = 10
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 100
+		}
+	}
+
+	shared_focus = {
+		id = TST_Armed_Sage_focus_100
+		icon = GFX_goal_Armed_Sage_100
+		relative_position_id = TST_Armed_Sage_focus
+		cost = 5
+		allow_branch = {
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_38
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_32
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_37
+		}
+		available = {
+			TST_equestria_united = yes
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 0
+		y = 11
+		completion_reward = {
+			if = {
+				limit = {
+					TST_equestria_united = yes
+				}
+				custom_effect_tooltip = TST_Armed_Sage_focus_100_tt
+			}
+			hidden_effect = {
+				transfer_state = 55
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Маша Норушкина
+shared_focus = {
+	id = TST_Masha_Norushkina_focus
+	icon = GFX_goal_Masha_Norushkina_0
+	relative_position_id = TST_Armed_Sage_focus
+	cost = 3
+	allow_branch = {
+		AND = {
+			TST_trigger_Armed_Sage_start_focus_tree = yes
+		}
+	}
+	prerequisite = {
+	}
+	available = {
+	}
+	mutually_exclusive = {
+		focus = TST_Armed_Sage_focus
+	}
+	ai_will_do = {
+		factor = 5
+	}
+	x = 50
+	y = 0
+	completion_reward = {
+		promote_character = TST_masha_norushkina
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+		add_war_support = 0.05
+	}
+}
+	
+
+
+
+
+
+
+
+	### Фокусы Норушкиной
+
+	shared_focus = {
+		id = TST_Masha_Norushkina_focus_1
+		icon = GFX_goal_Masha_Norushkina_1
+		relative_position_id = TST_Masha_Norushkina_focus
+		cost = 7
+		prerequisite = {
+			focus = TST_Masha_Norushkina_focus
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = -1
+		y = 1
+		completion_reward = {
+			add_ideas = BAL_arbeit_macht_frei
+	
+		
+		}
+	}
+
+	shared_focus = {
+		id = TST_Masha_Norushkina_focus_2
+		icon = GFX_goal_Masha_Norushkina_2
+		relative_position_id = TST_Masha_Norushkina_focus
+		cost = 7
+		prerequisite = {
+			focus = TST_Masha_Norushkina_focus
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 1
+		y = 1
+		completion_reward = {
+			add_manpower = 15000
+			add_war_support = 0.05
+			add_ideas = RCT_patriotism
+		}
+	}
+
+	shared_focus = {
+		id = TST_Masha_Norushkina_focus_3
+		icon = GFX_goal_Masha_Norushkina_3
+		relative_position_id = TST_Masha_Norushkina_focus
+		cost = 7
+		prerequisite = {
+			focus = TST_Masha_Norushkina_focus_1
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = -1
+		y = 2
+		completion_reward = {
+			add_threat = 2
+			remove_ideas = TST_river_caravans
+			30 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+	
+		
+		}
+	}
+
+	shared_focus = {
+		id = TST_Masha_Norushkina_focus_4
+		icon = GFX_goal_Masha_Norushkina_4
+		relative_position_id = TST_Masha_Norushkina_focus
+		cost = 7
+		prerequisite = {
+			focus = TST_Masha_Norushkina_focus_2
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 1
+		y = 2
+		completion_reward = {
+			add_ideas = BAL_military_commissars_idea
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+		
+		}
+	}
+
+	shared_focus = {
+		id = TST_Masha_Norushkina_focus_5
+		icon = GFX_goal_UESR_TNO_deconstruct_markets
+		relative_position_id = TST_Masha_Norushkina_focus
+		cost = 7
+		prerequisite = {
+			focus = TST_Masha_Norushkina_focus_3
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = -2
+		y = 3
+		completion_reward = {
+			add_ideas = closed_economy
+	
+		
+		}
+	}
+
+	shared_focus = {
+		id = TST_Masha_Norushkina_focus_6
+		icon = GFX_goal_UESR_TNO_left_unity
+		relative_position_id = TST_Masha_Norushkina_focus
+		cost = 7
+		prerequisite = {
+			focus = TST_Masha_Norushkina_focus_3
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 0
+		y = 3
+		completion_reward = {
+			add_war_support = 0.05
+			add_ideas = war_economy
+	
+		
+		}
+	}
+
+	shared_focus = {
+		id = TST_Masha_Norushkina_focus_7
+		icon = GFX_goal_Masha_Norushkina_7
+		relative_position_id = TST_Masha_Norushkina_focus
+		cost = 7
+		prerequisite = {
+			focus = TST_Masha_Norushkina_focus_4
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 2
+		y = 3
+		completion_reward = {
+			add_ideas = ARA_guerilla_warfare_idea
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = cat_mass_assault
+			}
+		}
+	}
+
+	shared_focus = {
+		id = TST_Masha_Norushkina_focus_8
+		icon = GFX_goal_UESR_TNO_justice
+		relative_position_id = TST_Masha_Norushkina_focus
+		cost = 7
+		prerequisite = {
+			focus = TST_Masha_Norushkina_focus_5
+		}
+		prerequisite = {
+			focus = TST_Masha_Norushkina_focus_6
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = -1
+		y = 4
+		completion_reward = {
+			add_war_support = 0.05
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+			add_ideas = extensive_conscription
+		}
+	}
+
+	shared_focus = {
+		id = TST_Masha_Norushkina_focus_9
+		icon = GFX_goal_Masha_Norushkina_9
+		relative_position_id = TST_Masha_Norushkina_focus
+		cost = 7
+		prerequisite = {
+			focus = TST_Masha_Norushkina_focus_7
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 1
+		y = 4
+		completion_reward = {
+			add_ideas = BAL_single_culture_idea
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+		}
+	}
+
+	shared_focus = {
+		id = TST_Masha_Norushkina_focus_10
+		icon = GFX_goal_UESR_TNO_moonspeakers
+		relative_position_id = TST_Masha_Norushkina_focus
+		cost = 10
+		prerequisite = {
+			focus = TST_Masha_Norushkina_focus_8
+		}
+		prerequisite = {
+			focus = TST_Masha_Norushkina_focus_9
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		will_lead_to_war_with = NEI
+		will_lead_to_war_with = SLT
+		will_lead_to_war_with = RZR
+		will_lead_to_war_with = NIG
+		will_lead_to_war_with = GUA
+		will_lead_to_war_with = SND
+		will_lead_to_war_with = SIR
+		will_lead_to_war_with = CHL
+		will_lead_to_war_with = PLP
+		will_lead_to_war_with = YKL
+		will_lead_to_war_with = MES
+		will_lead_to_war_with = STR
+		will_lead_to_war_with = YUK
+
+		x = 0
+		y = 5
+		completion_reward = {
+			set_country_flag = thestralian_war
+			declare_war_on = {
+                target = NEI
+                type = annex_everything
+            }
+			declare_war_on = {
+                target = SLT
+                type = annex_everything
+            }
+			declare_war_on = {
+                target = RZR
+                type = annex_everything
+            }
+			declare_war_on = {
+                target = NIG
+                type = annex_everything
+            }
+			declare_war_on = {
+                target = GUA
+                type = annex_everything
+            }
+			declare_war_on = {
+                target = SND
+                type = annex_everything
+            }
+			declare_war_on = {
+                target = SIR
+                type = annex_everything
+            }
+			declare_war_on = {
+                target = CHL
+                type = annex_everything
+            }
+			declare_war_on = {
+                target = PLP
+                type = annex_everything
+            }
+			declare_war_on = {
+                target = YKL
+                type = annex_everything
+            }
+			declare_war_on = {
+                target = MES
+                type = annex_everything
+            }
+			declare_war_on = {
+                target = STR
+                type = annex_everything
+            }
+			declare_war_on = {
+                target = YUK
+                type = annex_everything
+            }
+		}
+	}
+
+	shared_focus = {
+		id = TST_Masha_Norushkina_focus_11
+		icon = GFX_goal_generic_lau_camp
+		relative_position_id = TST_Masha_Norushkina_focus
+		cost = 7
+		prerequisite = {
+			focus = TST_Masha_Norushkina_focus_10
+		}
+		available = {
+			AND = {
+				controls_state = 16
+				controls_state = 88
+				controls_state = 352
+				controls_state = 24
+			}
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+
+		x = -2
+		y = 6
+		completion_reward = {
+			NEI = { add_to_ROOT_potential_cores = yes }
+			16 = {
+				add_manpower = -50000
+			}
+			88 = {
+				add_manpower = -20000
+			}
+			352 = {
+				add_manpower = -20000
+			}
+			24 = {
+				add_manpower = -20000
+			}
+		}
+	}
+
+	shared_focus = {
+		id = TST_Masha_Norushkina_focus_12
+		icon = GFX_goal_socialist_bats
+		relative_position_id = TST_Masha_Norushkina_focus
+		cost = 7
+		prerequisite = {
+			focus = TST_Masha_Norushkina_focus_11
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+
+		x = -2
+		y = 7
+		completion_reward = {
+			PLP = { add_to_ROOT_potential_cores = yes }
+			YKL = { add_to_ROOT_potential_cores = yes }
+			SLT = { add_to_ROOT_potential_cores = yes }
+		}
+	}
+
+	shared_focus = {
+		id = TST_Masha_Norushkina_focus_13
+		icon = GFX_goal_ideology_totalist
+		relative_position_id = TST_Masha_Norushkina_focus
+		cost = 7
+		prerequisite = {
+			focus = TST_Masha_Norushkina_focus_12
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+
+		x = -3
+		y = 8
+		completion_reward = {
+			
+		}
+	}
+
+	shared_focus = {
+		id = TST_Masha_Norushkina_focus_14
+		icon = GFX_goal_LEC_monkey
+		relative_position_id = TST_Masha_Norushkina_focus
+		cost = 7
+		prerequisite = {
+			focus = TST_Masha_Norushkina_focus_13
+		}
+		available = {
+			AND = {
+				controls_state = 13
+				controls_state = 113
+			}
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+
+		x = -3
+		y = 9
+		completion_reward = {
+			RZR = { add_to_ROOT_potential_cores = yes }
+			NIG = { add_to_ROOT_potential_cores = yes }
+			SND = { add_to_ROOT_potential_cores = yes }
+			13 = {
+				add_manpower = -200000
+			}
+			113 = {
+				add_manpower = -200000
+			}
+		}
+	}
+
+	shared_focus = {
+		id = TST_Masha_Norushkina_focus_15
+		icon = GFX_goal_ideology_totalist
+		relative_position_id = TST_Masha_Norushkina_focus
+		cost = 7
+		prerequisite = {
+			focus = TST_Masha_Norushkina_focus_10
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+
+		x = 0
+		y = 6
+		completion_reward = {
+			
+		}
+	}
+
+	shared_focus = {
+		id = TST_Masha_Norushkina_focus_16
+		icon = GFX_ZAR_Our_Desert
+		relative_position_id = TST_Masha_Norushkina_focus
+		cost = 10
+		prerequisite = {
+			focus = TST_Masha_Norushkina_focus_15
+		}
+		available = {
+			has_war = no
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		will_lead_to_war_with = CLT
+		will_lead_to_war_with = BUF
+		will_lead_to_war_with = APL
+		will_lead_to_war_with = MIN
+		will_lead_to_war_with = HOR
+		will_lead_to_war_with = EMP
+		will_lead_to_war_with = ROK
+		will_lead_to_war_with = NGC
+		x = 0
+		y = 7
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = CLT
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = BUF
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = APL
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = MIN
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = HOR
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = EMP
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = ROK
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = NGC
+			}
+		}
+	}
+
+	shared_focus = {
+		id = TST_Masha_Norushkina_focus_17
+		icon = GFX_goal_ideology_totalist
+		relative_position_id = TST_Masha_Norushkina_focus
+		cost = 7
+		prerequisite = {
+			focus = TST_Masha_Norushkina_focus_10
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+
+		x = 2
+		y = 6
+		completion_reward = {
+			
+		}
+	}
+
+	shared_focus = {
+		id = TST_Masha_Norushkina_focus_18
+		icon = GFX_goal_ideology_totalist
+		relative_position_id = TST_Masha_Norushkina_focus
+		cost = 8
+		prerequisite = {
+			focus = TST_Masha_Norushkina_focus_17
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 2
+		y = 7
+		completion_reward = {
+		}
+	}
+
+	shared_focus = {
+		id = TST_Masha_Norushkina_focus_19
+		icon = GFX_goal_ideology_totalist
+		relative_position_id = TST_Masha_Norushkina_focus
+		cost = 7
+		prerequisite = {
+			focus = TST_Masha_Norushkina_focus_16
+		}
+		prerequisite = {
+			focus = TST_Masha_Norushkina_focus_18
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+
+		x = 1
+		y = 8
+		completion_reward = {
+			
+		}
+	}
+
+	shared_focus = {
+		id = TST_Masha_Norushkina_focus_20
+		icon = GFX_goal_ideology_totalist
+		relative_position_id = TST_Masha_Norushkina_focus
+		cost = 7
+		prerequisite = {
+			focus = TST_Masha_Norushkina_focus_10
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+
+		x = -1
+		y = 8
+		completion_reward = {
+			
+		}
+	}
+
+	shared_focus = {
+		id = TST_Masha_Norushkina_focus_21
+		icon = GFX_goal_stg_worst_case
+		relative_position_id = TST_Masha_Norushkina_focus
+		cost = 5
+		prerequisite = {
+			focus = TST_Masha_Norushkina_focus_20
+		}
+		prerequisite = {
+			focus = TST_Masha_Norushkina_focus_19
+		}
+		available = {
+		}
+		mutually_exclusive = {
+			focus = TST_Masha_Norushkina_focus_22
+		}
+		ai_will_do = {
+			factor = 5
+		}
+
+		x = -1
+		y = 9
+		completion_reward = {
+			add_war_support = 0.05
+			add_political_power = 50
+			custom_effect_tooltip =  TST_Masha_Norushkina_focus_21_tt
+		}
+	}
+
+	shared_focus = {
+		id = TST_Masha_Norushkina_focus_22
+		icon = GFX_focus_stg_cooperation_pony_griffon
+		relative_position_id = TST_Masha_Norushkina_focus
+		cost = 5
+		prerequisite = {
+			focus = TST_Masha_Norushkina_focus_20
+		}
+		prerequisite = {
+			focus = TST_Masha_Norushkina_focus_19
+		}
+		available = {
+			STG = {
+				has_country_leader = {
+					character = STG_sinister_serov
+					ruling_only = yes
+				}
+			}
+		}
+		mutually_exclusive = {
+			focus = TST_Masha_Norushkina_focus_21
+		}
+		ai_will_do = {
+			factor = 5
+		}
+
+		x = 1
+		y = 9
+		completion_reward = {
+			create_faction = TST_Masha_faction
+			TST = { add_to_faction = STG }
+		}
+	}
+
+	shared_focus = {
+		id = TST_Masha_Norushkina_focus_23
+		icon = GFX_goal_UESR_TNO_holding_hooves
+		relative_position_id = TST_Masha_Norushkina_focus
+		cost = 7
+		prerequisite = {
+			focus = TST_Masha_Norushkina_focus_20
+		}
+		prerequisite = {
+			focus = TST_Masha_Norushkina_focus_14
+		}
+		prerequisite = {
+			focus = TST_Masha_Norushkina_focus_19
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+
+		x = -2
+		y = 10
+		completion_reward = {
+			
+		}
+	}
+
+	shared_focus = {
+		id = TST_Masha_Norushkina_focus_24
+		icon = GFX_goal_UESR_TNO_final_uni
+		relative_position_id = TST_Masha_Norushkina_focus
+		cost = 10
+		prerequisite = {
+			focus = TST_Masha_Norushkina_focus_21
+			focus = TST_Masha_Norushkina_focus_22
+		}
+		prerequisite = {
+			focus = TST_Masha_Norushkina_focus_23
+		}
+		available = {
+			has_war = no
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		will_lead_to_war_with = PRG
+		will_lead_to_war_with = UNP
+		will_lead_to_war_with = UNC
+		will_lead_to_war_with = MNH
+		will_lead_to_war_with = SVR
+		x = 0
+		y = 11
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = PRG
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = UNP
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = UNC
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = MNH
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = SVR
+			}
+			if = {
+				limit = {
+					has_completed_focus = TST_Masha_Norushkina_focus_21
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = STG
+				}
+			}
+		}
+	}
+
+	shared_focus = {
+		id = TST_Masha_Norushkina_focus_25
+		icon = GFX_goal_WNG_COM_army
+		relative_position_id = TST_Masha_Norushkina_focus
+		cost = 8
+		prerequisite = {
+			focus = TST_Masha_Norushkina_focus_22
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+
+		x = 1
+		y = 10
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 0.5
+				uses = 2
+				category = armor
+			}
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+	### Экономика
+	shared_focus = {
+		id = TST_comm_ec_1
+		icon = GFX_goal_socialist_union
+		relative_position_id = TST_Armed_Sage_focus
+		cost = 8
+		allow_branch = {
+			TST_trigger_Armed_Sage_start_focus_tree = yes
+		}
+		prerequisite = {
+			focus = TST_Masha_Norushkina_focus
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 30
+		y = 1
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.02
+			}
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+			
+			increase_society_development = yes
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				hidden_effect = {
+					set_technology = { basic_train = 1 }
+			add_equipment_to_stockpile = {
+				type = train_equipment_1
+				amount = 10
+			}
+					division_template = {
+						name = "Katzenkaisergarde"
+		
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+							infantry = { x = 2 y = 0 }
+							artillery_brigade = { x = 3 y = 0 }
+							artillery_brigade = { x = 3 y = 1 }
+						}
+						support = {
+							artillery = { x = 0 y = 0 }
+							engineer = { x = 0 y = 1 }
+						}
+					}
+					random_owned_controlled_state = {
+						limit = {
+							ROOT = { has_full_control_of_state = PREV }
+							impassable = no
+						}
+						create_unit = {
+							division = "division_template = \"Katzenkaisergarde\" start_experience_factor = 1.0 start_equipment_factor = 1.0"
+							count = 5
+							owner = ROOT
+						}
+					}
+					if = {
+						limit = { is_ai = yes }
+						random_owned_controlled_state = {
+							limit = {
+								ROOT = { has_full_control_of_state = PREV }
+								impassable = no
+							}
+							create_unit = {
+								division = "division_template = \"Katzenkaisergarde\" start_experience_factor = 1.0 start_equipment_factor = 1.0"
+								count = 24
+								owner = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	shared_focus = {
+		id = TST_comm_ec_2
+		icon = GFX_goal_silver_reserve
+		relative_position_id = TST_comm_ec_1
+		cost = 7
+		prerequisite = {
+			focus = TST_comm_ec_4
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 0
+		y = 2
+		completion_reward = {
+			30 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_resource = {
+				type = steel
+				amount = 30
+				}
+			}
+		}
+	}
+
+	shared_focus = {
+		id = TST_comm_ec_3
+		icon = GFX_goal_Armed_Sage_8
+		relative_position_id = TST_Armed_Sage_focus
+		cost = 7
+		allow_branch = {
+			 has_completed_focus = TST_Armed_Sage_focus_6
+			 NOT = {
+				TST_trigger_humankind_extermination_committee_focus_tree = yes
+			}
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_6
+		}
+		available = {
+			has_completed_focus = TST_Armed_Sage_focus_7
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 6
+		y = 4
+		completion_reward = {
+			set_technology = {
+				magical_weapons = 1
+			}
+			add_ideas = TST_Armed_Sage_project_alpha_idea
+		}
+	}
+
+
+	shared_focus = {
+		id = TST_comm_ec_4
+		icon = GFX_goal_industry_stg
+		relative_position_id = TST_comm_ec_1
+		cost = 7
+		prerequisite = {
+			focus = TST_comm_ec_1
+		}
+		available = {
+			NOT = {
+				has_completed_focus = TST_Armed_Sage_focus
+			}
+		}
+		bypass = {
+			has_completed_focus = TST_Armed_Sage_focus_7
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 0
+		y = 1
+		completion_reward = {
+			custom_effect_tooltip = TST_comm_ec_4_tt
+			if = {
+				limit = {
+					has_completed_focus = TST_Masha_Norushkina_focus
+				}
+				30 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+				350 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			else_if = {
+				custom_effect_tooltip = TST_comm_ec_4_alt_tt
+			}
+		}
+	}
+
+	shared_focus = {
+		id = TST_comm_ec_5
+		icon = GFX_goal_HIP_SIR_ARI_scientifids
+		relative_position_id = TST_Armed_Sage_focus
+		cost = 7
+		allow_branch = {
+			has_completed_focus = TST_Armed_Sage_focus_4
+			NOT = {
+				TST_trigger_humankind_extermination_committee_focus_tree = yes
+			}
+		}
+		prerequisite = {
+			focus = TST_Armed_Sage_focus_4
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = -6
+		y = 4
+		completion_reward = {
+			decrease_illiteracy = yes
+			add_ideas = big_science_base
+			add_research_slot = 1
+		}
+	}
+
+	shared_focus = {
+		id = TST_comm_ec_6
+		icon = GFX_goal_stg_propaganda
+		relative_position_id = TST_comm_ec_1
+		cost = 7
+		prerequisite = {
+			focus = TST_comm_ec_4
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 2
+		y = 2
+		completion_reward = {
+			add_tech_bonus = {
+				name = electronics_bonus
+				category = electronics
+				bonus = 1.0
+				uses = 2
+				ahead_reduction = 2
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = TST_comm_ec_7
+		icon = GFX_goal_HOL_military_union
+		relative_position_id = TST_comm_ec_1
+		cost = 7
+		prerequisite = {
+			focus = TST_comm_ec_1
+		}
+		available = {
+			OR = {
+				has_completed_focus = TST_Masha_Norushkina_focus
+				AND = {
+					has_completed_focus = TST_Armed_Sage_focus_6
+					has_completed_focus = TST_Armed_Sage_focus_7
+				}
+			}
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 3
+		y = 1
+		completion_reward = {
+			custom_effect_tooltip = TST_comm_ec_4_tt
+			if = {
+				limit = {
+					has_completed_focus = TST_Masha_Norushkina_focus
+				}
+				add_ideas = BAK_focus_on_mass_production_2_idea
+				add_tech_bonus = {
+					name = infantry_weapons_bonus
+					bonus = 1
+					uses = 1
+					category = infantry_weapons
+				}
+			}
+			else = {
+				add_ideas = BAK_focus_on_mass_production_idea
+				add_tech_bonus = {
+					name = infantry_weapons_bonus
+					bonus = 1
+					uses = 2
+					category = infantry_weapons
+				}
+			}
+		}
+	}
+
+	shared_focus = {
+		id = TST_comm_ec_8
+		icon = GFX_goal_national_artillery
+		relative_position_id = TST_comm_ec_1
+		cost = 7
+		prerequisite = {
+			focus = TST_comm_ec_7
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 6
+		y = 2
+		completion_reward = {
+			custom_effect_tooltip = TST_comm_ec_4_tt
+			if = {
+				limit = { 
+					has_completed_focus = TST_Valeriy_Stablein_focus
+				}
+				add_tech_bonus = {
+					name = infantry_weapons_bonus
+					bonus = 1.0
+					uses = 2
+					category = artillery
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = infantry_weapons_bonus
+					bonus = 0.75
+					uses = 2
+					category = artillery
+				}
+			}
+			
+		}
+	}
+
+	shared_focus = {
+		id = TST_comm_ec_10
+		icon = GFX_goal_HIP_SIR_ARI_war_in_sky
+		relative_position_id = TST_Armed_Sage_focus
+		cost = 8
+		prerequisite = {
+			focus = TST_comm_ec_3
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 6
+		y = 5
+		completion_reward = {
+			30 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				add_tech_bonus = {
+					name = fighter_bonus
+					bonus = 0.5
+					uses = 4
+					category = light_air
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = fighter_bonus
+					bonus = 0.5
+					uses = 4
+					category = light_fighter
+				}
+			}
+			add_doctrine_cost_reduction = {
+				name = air_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = air_doctrine
+			}
+		}
+	}
+
+	shared_focus = {
+		id = TST_comm_ec_11
+		icon = GFX_goal_Armed_Sage_7
+		relative_position_id = TST_comm_ec_5
+		cost = 7
+		prerequisite = {
+			focus = TST_comm_ec_12
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 1
+		y = 2
+		completion_reward = {
+			add_ideas = TST_Armed_Sage_tamers_of_nature_idea
+			country_event = {
+				id = armed_sage.102
+				days = 1
+			}
+			custom_effect_tooltip = TST_comm_ec_11_tt
+		}
+	}
+
+	shared_focus = {
+		id = TST_comm_ec_12
+		icon = GFX_goal_Armed_Sage_4
+		relative_position_id = TST_comm_ec_5
+		cost = 8
+		prerequisite = {
+			focus = TST_comm_ec_5
+		}
+		available = {
+			TST_thestralia_united = yes
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 0
+		y = 1
+		completion_reward = {
+			increase_society_development = yes
+			add_ideas = proper_science_base
+			add_research_slot = 1
+		}
+	}
+
+	shared_focus = {
+		id = TST_comm_ec_13
+		icon = GFX_goal_Armed_Sage_6
+		relative_position_id = TST_comm_ec_5
+		cost = 5
+		prerequisite = {
+			focus = TST_comm_ec_12
+		}
+		available = {
+			num_of_factories > 150
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = -1
+		y = 2
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	shared_focus = {
+		id = TST_comm_ec_14
+		icon = GFX_goal_oil_derrick
+		relative_position_id = TST_comm_ec_1
+		cost = 7
+		prerequisite = {
+			focus = TST_comm_ec_2
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 1
+		y = 3
+		completion_reward = {
+			add_tech_bonus = {
+				name = synth_bonus
+				bonus = 1.0
+				uses = 2
+				category = synth_resources
+			}
+			350 = {
+				add_resource = {
+					type = oil
+					amount = 12
+					}
+			}
+		}
+	}
+
+	shared_focus = {
+		id = TST_comm_ec_15
+		icon = GFX_goal_radio
+		relative_position_id = TST_comm_ec_1
+		cost = 7
+		prerequisite = {
+			focus = TST_comm_ec_7
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 4
+		y = 2
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_bonus
+				bonus = 1.0
+				uses = 2
+				category = support_tech
+			}
+		}
+	}
+
+	shared_focus = {
+		id = TST_comm_ec_16
+		icon = GFX_goal_generic_army_motorized
+		relative_position_id = TST_comm_ec_1
+		cost = 7
+		prerequisite = {
+			focus = TST_comm_ec_15
+		}
+		available = {
+			NOT = {
+				has_completed_focus = TST_Armed_Sage_focus
+			}
+		}
+		bypass = {
+			has_completed_focus = TST_Armed_Sage_focus_17
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 3
+		y = 3
+		completion_reward = {
+			custom_effect_tooltip = TST_comm_ec_16_tt
+			add_tech_bonus = {
+				name = mech_bonus
+				bonus = 1.0
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+
+	shared_focus = {
+		id = TST_comm_ec_17
+		icon = GFX_goal_TRO_Prioritise_Troop_Mechanisation
+		relative_position_id = TST_comm_ec_1
+		cost = 7
+		prerequisite = {
+			focus = TST_comm_ec_16
+		}
+		prerequisite = {
+			focus = TST_comm_ec_14
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 2
+		y = 4
+		completion_reward = {
+			add_tech_bonus = {
+				name = mech_bonus
+				bonus = 1.0
+				uses = 2
+				category = cat_mechanized_equipment
+			}
+		}
+	}
+
+	shared_focus = {
+		id = TST_comm_ec_18
+		icon = GFX_goal_Armed_Sage_11
+		relative_position_id = TST_Armed_Sage_focus
+		cost = 7
+		prerequisite = {
+			focus = TST_comm_ec_10
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 7
+		y = 6
+		completion_reward = {
+			if = {
+            	limit = {
+	                has_dlc = "By Blood Alone"
+            	}
+				set_technology = {
+					aa_lmg = 1
+					engines_1 = 1
+				}
+				add_tech_bonus = {
+					name = medium_air
+					bonus = 1
+					uses = 1
+					category = medium_air
+				}
+				add_tech_bonus = {
+					name = heavy_air
+					bonus = 1
+					uses = 1
+					category = heavy_air
+				}
+				add_tech_bonus = {
+					name = cat_air_guns
+					bonus = 1
+					uses = 1
+					category = cat_air_guns
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = fighter_bonus
+					bonus = 1.0
+					uses = 1
+					category = cat_heavy_fighter
+				}
+				add_tech_bonus = {
+					name = tactical_bomber
+					bonus = 1.0
+					uses = 2
+					category = tactical_bomber
+					category = cat_strategic_bomber
+				}
+			}
+		}
+	}
+
+	shared_focus = {
+		id = TST_comm_ec_19
+		icon = GFX_goal_Armed_Sage_14
+		relative_position_id = TST_Armed_Sage_focus
+		cost = 7
+		prerequisite = {
+			focus = TST_comm_ec_10
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 5
+		y = 6
+		completion_reward = {
+			add_tech_bonus = {
+				name = electronics_bonus
+				category = electronics
+				bonus = 1.0
+				uses = 2
+				ahead_reduction = 2
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	### Комитет
+
+	shared_focus = {
+		id = TST_committee_focus_1
+		icon = GFX_goal_Armed_Sage_101
+		relative_position_id = TST_Armed_Sage_focus
+		cost = 2.9
+		allow_branch = {
+			TST_trigger_humankind_extermination_committee_focus_tree = yes
+		}
+		prerequisite = {
+		}
+		available = {
+			always = no
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		x = -6
+		y = 0
+		completion_reward = {
+			#####mark_focus_tree_layout_dirty = yes
+			custom_effect_tooltip = TST_committee_focus_1_tt
+			custom_effect_tooltip = TST_committee_focus_1_alt_tt
+		}
+	}
+
+	shared_focus = {
+		id = TST_committee_focus_2
+		icon = GFX_goal_Armed_Sage_102
+		relative_position_id = TST_committee_focus_1
+		cost = 2.9
+		allow_branch = {
+			has_completed_focus = TST_committee_focus_2
+		}
+		prerequisite = {
+			focus = TST_committee_focus_1
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		x = 0
+		y = 1
+		completion_reward = {
+			#####mark_focus_tree_layout_dirty = yes
+			country_event = {
+				id = armed_sage.502
+				days = 1
+			}
+		}
+	}
+
+	shared_focus = {
+		id = TST_committee_focus_3
+		icon = GFX_goal_Armed_Sage_103
+		relative_position_id = TST_committee_focus_1
+		cost = 2.9
+		allow_branch = {
+			###has_completed_focus = TST_committee_focus_2
+		}
+		prerequisite = {
+			focus = TST_committee_focus_2
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		x = 0
+		y = 2
+		completion_reward = {
+			#####mark_focus_tree_layout_dirty = yes
+		}
+	}
+
+	shared_focus = {
+		id = TST_committee_focus_4
+		icon = GFX_goal_Armed_Sage_104
+		relative_position_id = TST_committee_focus_1
+		cost = 2.9
+		allow_branch = {
+			###has_completed_focus = TST_committee_focus_3
+		}
+		prerequisite = {
+			focus = TST_committee_focus_3
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		x = 0
+		y = 3
+		completion_reward = {
+			#####mark_focus_tree_layout_dirty = yes
+			set_variable = {
+				var = TST_oblivion_stage
+				value = 1
+			}
+		}
+	}

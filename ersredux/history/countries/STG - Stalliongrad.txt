@@ -69,9 +69,9 @@ set_politics = {
 
 
 add_ideas = {
-    severe_famine
+    STG_internal_party_resistance
+	severe_famine
 	incomplete_industrialization
-	STG_time_of_troubles_idea
 
 	outdated_industry
 	poverty4

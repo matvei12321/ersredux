@@ -3,7 +3,7 @@ characters = {
 		name=UNC_king_platinum
 		portraits={
 			civilian={
-				large="gfx/leaders/leader_unknown.dds"
+				large="gfx/leaders/UNC/king_platinum.dds"
 			}
 		}
 		country_leader={
@@ -16,11 +16,11 @@ characters = {
 		gender = male
 	}
 	
-	UNC_unknown_leader_of_unp = {
-		name=UNC_unknown_leader_of_unp
+	UNC_Gutriosa = {
+		name=UNC_Gutriosa
 		portraits={
 			civilian={
-				large="gfx/leaders/leader_unknown.dds"
+				large="gfx/leaders/UNC/Gutriosa.dds"
 			}
 		}
 		country_leader={

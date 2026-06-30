@@ -14,6 +14,7 @@ recruit_character = UNC_twilight
 recruit_character = UNC_rarity
 recruit_character = UNC_tesla
 recruit_character = UNC_trixie
+recruit_character = UNC_Gutriosa
 
 # Field Marshals and Corps Commanders
 recruit_character = UNC_field_marshal_1

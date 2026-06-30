@@ -1,0 +1,127 @@
+﻿l_english:
+
+ ###Parties
+ 
+ TST_neutrality_party:0 "Regency Council"
+ TST_communism_party:0 "Peasant resistance"
+ TST_democratic_party:0 "Peasant resistance"
+ TST_fascism_party:0 "Regency Council"
+
+ ###Traits
+ 
+ TST_regent_leader:0 "Head of the Regency Council"
+
+ ###Characters
+ 
+ TST_Miron:0 "Regent Miron I"
+ TST_Miron_desc:0 "Miron was well-off from his very birth, indeed, what else could the life of a thestral born into a family of the Ayakachtli nobility be? The social status of his family allowed him to receive a good religious education by the standards of his relatives, which allowed him to become one of the members of the regency council at a more mature age. After the death of Ocelotos I, who was a close friend of his family, Myron was easily able to become the new head of the regency council, while at the same time taking on the problems left by the previous regent."
+ 
+ TST_Sirius:0 "The Holy Regent Sirius"
+ 
+ ###Ideas
+ 
+ TST_low_peasant_discontent_idea:0 "Weak peasant resistance"
+
+ TST_medium_peasant_discontent_idea:0 "Moderate peasant resistance"
+
+ TST_strong_peasant_discontent_idea:0 "Strong peasant resistance"
+
+ TST_serfdom_idea_1:0 "Serfdom"
+
+ TST_readjustment_of_economy:0 "Economy readjustment"
+
+ TST_progressive_tax_idea:0 "Progressive taxes"
+ 
+
+ ###Focus
+
+ TST_200_years_of_regency:0 "Bicentennial of the Regency"
+TST_200_years_of_regency_desc:0 "WIP"
+ 
+ TST_listen_to_the_peasants:0 "Listen to the peasants"
+TST_listen_to_the_peasants_desc:0 "WIP"
+
+TST_listen_to_the_nobility:0 "Listen to the nobility"
+TST_listen_to_the_nobility_desc:0 "WIP"
+ 
+ TST_listen_to_the_clergy:0 "Listen to the clergy"
+TST_listen_to_the_clergy_desc:0 "WIP"
+
+TST_1:0 "Liberate the People's Will"
+TST_1_desc:0 "WIP"
+
+TST_2:0 "Progressive Tax"
+TST_2_desc:0 "WIP"
+
+TST_3:0 "Abolish serfdom"
+TST_3_desc:0 "WIP"
+ 
+ TST_4:0 "Give the nobles privileges"
+TST_4_desc:0 "WIP"
+
+TST_5:0 "Working day standards"
+TST_5_desc:0 "WIP"
+
+TST_6:0 "Select People's Representatives"
+TST_6_desc:0 "WIP"
+
+TST_7:0 "Limit the power of the Church"
+TST_7_desc:0 "WIP"
+
+TST_8:0 "Encourage trading activity"
+TST_8_desc:0 "WIP"
+ 
+ TST_9:0 "Bribe the landlords"
+TST_9_desc:0 "WIP"
+ 
+ TST_10:0 "Church schools for peasants"
+TST_10_desc:0 "WIP"
+
+TST_11:0 "No nobles in power!"
+TST_11_desc:0 "WIP"
+
+TST_12:0 "Waste more serfdom"
+TST_12_desc:0 "WIP"
+ 
+ TST_13:0 "Grant privileges to the church"
+TST_13_desc:0 "WIP"
+
+TST_14:0 "Folk Preachers"
+TST_14_desc:0 "WIP"
+ 
+ TST_15:0 "Council of Archbishops"
+TST_15_desc:0 "WIP"
+
+TST_16:0 "More believers among the nobility"
+TST_16_desc:0 "WIP"
+
+TST_17:0 "Enter weekly Sermon"
+TST_17_desc:0 "WIP"
+
+TST_18:0 "Reduce Church Tax"
+TST_18_desc:0 "WIP"
+
+###Events
+
+tst.1.t:0 "Solar spies"
+tst.1.d:0 "Today in the area of Tonalcintli, we noticed a group of spies from the solar thestrals"
+tst.1.a:0 "Surround."
+tst.1.b:0 "Release."
+
+tst.2.t:0 "Tenochtitlan"
+tst.2.d:0 "The news from Tenochtitlan is very bad because they are unhappy with our actions with their spy groups and in return they demand to give the city to Tonalcinelli or declare war on us"
+tst.2.a:0 "Not to give."
+tst.2.b:0 "To give."
+
+tst.4.t:0 "defeat of Tenochtitlan"
+ tst.4.d:0 "The news from Tenochtitlan is very bad, as our troops were unable to recapture it from the Neiguan army and some fled from the front and some were captured."
+tst.4.a:0 "Accept defeat."
+tst.4.b:0 "Protest."
+
+tst.9.t:0 "Warning"
+ tst.9.d:0 "Hello, player!\n\nThe country is under active development.\n\n At the moment, only 1 path is available, but at the moment most of the story events are missing.\n\nThe country is suitable for those who usually do not read the events during the passage.Have a good game!"
+tst.9.a:0 "Good."
+
+tst.10.t:0 "Anniversary"
+ tst.10.d:0 "Our great regency has been triumphant and ruling for two hundred years, even though it is not an official state holiday, members of the ruling elite have a tradition of gathering on this day and getting drunk until they turn blue, and then there's the anniversary!\n\n— Uh-hey! Myron!.. Why don't you drink? You don't have to worry that someone will judge you! — one of the members of the entourage said drunkenly, already swaying from side to side from the amount of alcohol he had drunk.\n\n— I don't feel like drinking, you know, we have too many problems in our country to just ignore them by throwing the holidays! — The young regent said decisively. He was well aware of the existing problem of peasant uprisings, but in the process of this drunkenness, he began to notice another, no less serious: the irresponsible behavior of his entourage. But these are, for a moment, representatives of ancient clans and the spiritual elite!He sat with a thoughtful frown until the end of the event."
+tst.10.a:0""Problems need to be solved.""

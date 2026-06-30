@@ -102,13 +102,13 @@ if = {
 
 set_convoys = 600
 set_popularities = {
-	fascism = 60
+	alternative_right = 60
 	communism = 7
 	democratic = 8
 	neutrality = 25
 }
 set_politics = {
-	ruling_party = fascism
+	ruling_party = alternative_right
 	last_election = "1000.10.10"
 	election_frequency = 36
 	elections_allowed = no

@@ -11,8 +11,8 @@ state={
 	buildings_max_level_factor=3.00
 
 	history={
-		owner = PRV
-		add_core_of = PRV
+		owner = BDD
+		add_core_of = BDD
 
 		victory_points = { 1010 10 }
 

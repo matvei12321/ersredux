@@ -1,0 +1,434 @@
+﻿l_english:
+
+### TRAITS
+
+ TST_progressive_leader:0 "Progressive leader"    
+
+ armed_sage_trait:0 "Eccentric genius"
+ armed_sage_trait_desc:0 "§0"I am awaiting atonement for the mistakes of the past.."§!"
+
+### DEBUG
+
+ STG_armed_sage_deas:0 "Kill Armed Sage"
+
+### Decisions
+
+ TST_expedition_category:0 "Special solutions"
+
+ Soc_thestralia:0 "Socialist decisions"
+ 
+ Soc_thestralia_create:0 "Unite the Southeast"
+ 
+ Soc_equestria_create:0 "Unite Equestria"
+ 
+ Soc_thestralia_drg:0 "Return to Cuetzpalliztli"
+ 
+ TST_nature_taming_category:0 "Urbanization of regions"
+ 
+ nature_taming_decision:0 "Urbanize [FROM.GetName]"
+ 
+ TST_integrate_NEI:0 "Integrate [NEI.GetName]"
+ TST_integrate_YKL:0 "Integrate [YKL.GetName]"
+ TST_integrate_PLP:0 "Integrate [PLP.GetName]"
+ TST_integrate_YUK:0 "Integrate [YUK.GetName]"
+ TST_integrate_STR:0 "Integrate [STR.GetName]"
+ TST_integrate_CHL:0 "Integrate [CHL.GetName]"
+ TST_integrate_MES:0 "Integrate [MES.GetName]"
+ TST_integrate_SIR:0 "Integrate [SIR.GetName]"
+ TST_integrate_GUA:0 "Integrate [GUA.GetName]"
+ TST_integrate_SND:0 "Integrate [SND.GetName]"
+ TST_integrate_NIG:0 "Integrate [NIG.GetName]"
+ TST_integrate_RZR:0 "Integrate [RZR.GetName]"
+ TST_integrate_SLT:0 "Integrate [SLT.GetName]"
+ 
+ TST_expedition:0 "Mount Everhoe Expedition"
+ TST_expedition_tt:0 "§0The consequences are unknown..§!"
+
+### COSMETIC TAGS
+
+ TST_Armed_Sage_rev_army:0 "Republic of Ajakachtli"
+ TST_Armed_Sage_rev_army_DEF:0 "Republic of Ajakachtli"
+
+ TST_Armed_Sage_thestralia:0 "South Soviet Socialist Republic"
+ TST_Armed_Sage_thestralia_DEF:0 "South Soviet Socialist Republic"
+
+ TST_Armed_Sage_equestria:0 Equestrian Union
+ TST_Armed_Sage_equestria_DEF:0 Equestrian Union
+
+ Armed_Sage_space_children:0 "Children of Space"
+ Armed_Sage_space_children_DEF:0 "Children of Space"
+
+ ERP_space_children:0 "The Cleared Land of Pandora"
+ ERP_space_children_DEF:0 "The Purified Land of Pandoria"
+ 
+ BUF_space_children:0 "Redeemed Sands of the Southwest"
+ ERP_space_children_DEF:0 "Redeemed Sands of the Southwest"
+
+### CHARACTERS
+
+ TST_Armed_Sage:0 "Armed Sage"
+
+ TST_Stul:0 "The Silent Enlightener"
+ 
+### Parties
+
+ TST_Armed_Sage_party_long:0 "Communist Party of Thestralia"
+ TST_Armed_Sage_party:0 "KPF"
+
+ TST_CPE_party_long:0 "Communist Party of Equestria"
+ TST_CPE_party:0 "KPE"
+
+### TOOLTIPS
+
+ Armed_Sage_neigua_ustupki_tt:0"§ The national spirit will be removed when Neigua integration is completed. At the end of integration, the level of EACHR! the region of Neigua will be promoted.§!"
+
+ Armed_Sage_project_oblivion_tt:0 "§G Completion§! this §Focus§! will open the decision_icon_small §Solutions§!, which will allow us to start developing §0 black hole generator§!.\n\n"
+ Armed_Sage_silence_tt:0 "§G Completion§! this §Focus§! will cause irreversible consequences!, followed by a reckoning!.\n\n"
+ 
+ TST_thestralia_united_tt:0 "§HUgo-The East is united.§!"
+ TST_equestria_united_tt:0 "§Equestria is united.§!"
+ TST_thestralia_urbanized_tt:0 "The Southeast is urbanized.!"
+ Armed_Sage_equestria_united_trigger_tt:0 "§Sequestration§! it has been formed."
+ 
+ 
+ ### IDEAS
+ 
+ TST_Armed_Sage_declaration_of_equality_idea:0 "Civil Rights"
+
+TST_Armed_Sage_island_of_hope_idea:0 "Island of Hope"
+TST_Armed_Sage_island_of_hope_idea_desc:0 "Although few people have heard of us, there are already creatures who know about us as a free harbor open to all. This helps us attract, albeit a small, but stable stream of those who want to join the cause of building our socialist state."
+TST_Armed_Sage_island_of_hope_idea1:0 "Island of Hope"
+ TST_Armed_Sage_island_of_hope_idea1_desc:0 "Although few people have heard of us, there are already creatures who know about us as a free harbor open to all. This helps us attract, albeit a small, but stable stream of those who want to join the cause of building our socialist state."
+ 
+ TST_Armed_Sage_modern_army_idea:0 "New Red Army"
+ TST_Armed_Sage_modern_army_idea_desc:0 "Having been expelled from the Northerners, our officers were in the same headquarters with them not so long ago. We used our knowledge to create a new red army in the jungle, even better than the one that remained in the far north."
+
+TST_Armed_Sage_tamers_of_nature_idea:0 "Tamers of Nature"
+ TST_Armed_Sage_tamers_of_nature_idea_desc:0 "It's no longer the terrain that dictates how we live, but ourselves! Nature is forced to adapt to our desires, while we can safely clear out entire squares of previously impenetrable jungles for the sake of crops, railway tracks and houses for our citizens. There is no area left for us that we cannot inhabit."
+
+TST_Armed_Sage_project_alpha_idea:0 "Alpha Project"
+ TST_Armed_Sage_project_alpha_idea_desc:0 "Our army has been completely re-equipped with a new generation of magic rifles. Much more stable and easier to operate than their earlier counterparts, these rifles have performed well both in trials and on the battlefield."
+
+TST_Armed_Sage_cultural_revival_idea:0 "Cultural Renaissance"
+ TST_Armed_Sage_cultural_revival_idea_desc:0 "Under the new, socialist course, the Thestral culture has experienced significant development, moving much further away from bizarre tribal rituals, gaining popularity even abroad. The youth of the world listen to our music, our films end up at festivals, our paintings appear in galleries, and our books appear at universities."
+
+TST_Armed_Sage_public_medicine_idea:0 "Public Medicine"
+ TST_Armed_Sage_public_medicine_idea_desc:0 "A lot of people talked about it, but we were the first to really do it. It is in our country that every citizen can receive absolutely free medical care of any complexity, regardless of financial status or hierarchy in society. And significant investments from the state allow our medicine to remain the most advanced in the world."
+
+TST_Armed_Sage_mass_media_idea:0 "Mass media"
+ TST_Armed_Sage_mass_media_idea_desc:0 "By skillfully combining entertainment, educational and propaganda content, we were able to create TV channels and radio stations interesting to a wide variety of groups of the population, both in our country and abroad."
+ 
+ TST_Armed_Sage_modern_production_idea:0 "Modern production"
+ TST_Armed_Sage_modern_production_idea_desc:0" Dozens of meters of conveyor belts, the latest machines that reduce the number of workers required for each task, allow us to create a continuous production cycle in which raw materials go through all stages to the finished product within a single factory. This greatly facilitates our logistics and increases the volume of our products."
+ 
+### EVENTS
+
+ armed_sage_news.1.t:0 "The Ayakachtli Massacre!"
+armed_sage_news.1.d:0 "[This.GetNewspaperHeader]There were disturbing rumors throughout southern Equus that a major peasant uprising had taken place in Ayakatchli. Angry thestrals stormed into the city and killed both large landowners and ordinary residents.According to the information received, the President and the entire ruling elite were brutally torn apart.\n\n It is said that the Communists took over power from among the exiled northern officers of the thestrals, little is known about their goals, but according to rumors, everything is heading towards an inevitable power struggle."
+ armed_sage_news.1.a:0 "The south of Equus is not getting safer."
+ 
+ armed_sage_news.2.t:0 "Unification of the South-East"
+ armed_sage_news.2.d:0 "[This.GetNewspaperHeader]Today, quite shocking news has arrived from the territories of the South-East of Equus. For the first time in many decades, all the Thestral tribes were united into one single state. Previously, there was evidence that each of them hated each other, ready to declare war and conquer the enemy if the enemy weakened. But recent reports prove that the Ajakachtli Socialists were able to capture and unite all the warring tribes under their socialist banner. Now, on the territory of all the tribes lies a state with incredible potential and economic power, it is the second successful socialist state in the world. The whole world and the world press are holding their breath, watching the rise of a new power."
+armed_sage_news.2.a:0 "The Great Hegemon is awakening!"
+
+ armed_sage.1.t:0 "The Mysterious Wizard"
+ armed_sage.1.d:0 "This morning, guards discovered on the outskirts of the settlement of Ayakachtli a mysterious stranger of feminine appearance, dressed in unusual clothes never seen before in our lands, in addition, when trying to detain him, he used fire magic using his wand and called the patrolmen "savages". He stated that he did not want to harm anyone and just wanted to find a new home."
+armed_sage.1.a:0 "He could be useful."
+armed_sage.1.b:0 "A sorcerer has no place among us!"
+
+armed_sage.2.t:0 "Sweets to the people"
+ armed_sage.2.d:0 "A recently announced wizard began to treat the inhabitants of Ayakachtli with previously unknown sweet bliss, mashing out some of his fairy tales. This is clearly not good."
+armed_sage.2.a:0 "He's clearly up to something..."
+
+armed_sage.9.t:0 "Mutiny"
+ armed_sage.9.d:0 "It was another quiet day for the young young regent, he is carefully preparing for the upcoming performance. He was interrupted when he heard the whistling of bullets outside the window, which was becoming more frequent. An armed peasant revolt began.The guards could not cope with the surging crowd of angry and armed peasants. Eventually, the mob caught up with Myron, brutally killing him.A few minutes later, the leaders of the uprising, Armed Sage and Masha Norushkina, arrived at the scene.\n\n— Damn idiots! There was an order! Take him alive! You! All of you! You will be court-martialed!  Norushkina shouted furiously, already swinging to strike, but was stopped.\n\n— General, do not stoop to this level. I couldn't get him alive, even if it's really not that critical. In any case, this is a victory for us, although not as grandiose as it could be.\n\n— Yes, I'm sorry, Comrade Sage,— the mare said, calming down."
+armed_sage.9.a:0 "Glory to the revolution!"
+
+armed_sage.10.t:0 "Dissatisfaction with reforms"
+armed_sage.10.d:0 "The conservative part of the population refuses to accept our religious reforms. What should we do?"
+ armed_sage.10.a:0 "Maybe the changes should be smoother."
+armed_sage.10.b:0 "I don't care! Arrest them!"
+armed_sage.10.c:0"§Dead people don't tell tales.§!"
+
+armed_sage.25.t:0 "We won the border conflict."
+armed_sage.25.d:0 "WIP"
+armed_sage.25.a:0 "WIP"
+
+armed_sage.26.t:0 "We lost in the border conflict."
+armed_sage.26.d:0 "WIP"
+armed_sage.26.a:0 "WIP"
+
+armed_sage.50.t:0 "Solarian Resistance"
+ armed_sage.50.d:0 "We are experiencing certain difficulties in retaining the lands of Neigua. The most radical of the solarians are staging sabotage, a fairly serious part of the local population supports them."
+armed_sage.50.a:0 "They do not understand what they are abandoning, they need to spend more energy on the development of the region."
+armed_sage.50.b:0 "Anyone who harbors the rebels must be punished!"
+armed_sage.50.c:0 "§r Set fire to a couple of villages, it will quickly straighten their brains.§!"
+
+armed_sage.81.t:0 "The state [FROM.getName] has accepted our offer."
+armed_sage.81.d:0 "WIP"
+armed_sage.81.a:0 "Excellent!"
+ 
+ armed_sage.82.t:0 "The state [FROM.getName] refused our offer."
+armed_sage.82.d:0 "WIP"
+armed_sage.82.a:0 "Sad."
+
+armed_sage.99.t:0 "My disturbing thoughts"
+ armed_sage.99.d:0 ""Day 3706 since the escape."\n\n"My dear diary, I wish I could tell you how everything is getting better, but to put it mildly, I am becoming more and more disappointed in my own citizens every day. Realizing that many of them were natives yesterday doesn't really help me come to terms with what's happening. I would really like to give them something they've never had: morality, happiness, and a sense of self-security. I don't want to become a tyrant in the eyes of these people, and I don't want to be a hero either, but I guess I'll have to become someone anyway."\n\n"While I had the opportunity, I decided to distract myself by dozing off for literally half an hour, my nightmares continue to visit me, I continue to feel guilty, even though my mind tells me that I could not do anything. All these innocently killed ponies for one-time entertainment, mutilated for the sake of someone else's lust, it seems that justice will not follow. Never."\n\n"For the rest of the day, I couldn't stop thinking about this dream. Those freaks won't get punished. They won't get it. What can I do for this? "Oblivion." It sounded good in my head, but not really. I'll think about the name again, though, what's the difference? It's just a silly fantasy.""
+armed_sage.99.a:0 ""I hope I find peace of mind.""
+ 
+ armed_sage.100.t:0 "The first changes"
+ armed_sage.100.d:0 "Life in the southeast wasn't particularly luxurious, but no one ever complained much, including Shadow Wing. He was a simple farmer who grew mangoes, corn, and other types of grain and herb crops every year. The thestral didn't earn much, but he had enough to eat, and sometimes he even indulged in a delicious drink at a local bar. That's how Shadow Wing would have lived his whole life, working in the field every day, using hand tools, until one day the mysterious Armed Sage came to power. Shadow Wing has never been particularly interested in politics, and why would a farmer know anything about it? But politics soon came to his house by itself. Waking up early in the morning from an incomprehensible noise, the thestral jumped out of bed and ran out of the house, and then flew into the air and went in search of the source of the sound. He didn't have to fly for long, as he quickly discovered several bulky metal monsters that were rolling along the ramp towards his village. Shadow Wing landed right in front of the rolling column and another thestral in a construction uniform came out to meet him.\n\n— In the name of Metztli, what else is this?  Shadow asked indignantly, pointing at the strange car.\n\n— Oh, that? It's a tractor, sir. According to the latest government decree, we need to supply new types of agricultural machinery to the villages.Shadow Wing tried to open his mouth, but he was immediately interrupted by the team leader, who was also dressed in a construction uniform.\n\n— I know, I know, you don't need all sorts of "incomprehensible iron monsters" and tips on how to farm better, but believe me, these very "iron monsters" will make your life much easier. Just give us a chance to show the principle of operation of this machine," the boss said in a quiet but quite confident voice. It was clear from his tired eyes that he had already introduced such conversations more than once, so Shadow Wing decided not to bicker and stepped aside, allowing the column to continue on its way."
+armed_sage.100.a:0"— But I still don't trust these things yet!"
+
+armed_sage.101.t:0 "Fruits of labor"
+ armed_sage.101.d:0 "Shadow Wing was lying on top of closed boxes, each of which was filled to the brim with mango, wheat and corn. Sunglasses hung from his nose, while the thestral himself sipped mango juice from a straw, looking at his vast cultivated land. The tractor really made his life better, with its help, the thestral performed its work many times faster, more productively and more efficiently, allowing him to earn much more profit. The boxes he was currently lying on were going to be shipped to the city soon, and then his products would be sold out at the local market.\n\n— I must admit, — Shadow Wing said, letting the straw out of his mouth, — this industrialization of yours is really useful. I've never had so much profit before.\n\n— You know, if I got paid every time I hear this, I would have been able to buy a whole mansion in some suburb a long time ago," Knight Storm, the same team leader who taught Shadow Wing how to use a tractor and other new technologies, said with a smile on his face. He was covered in black oil and overalls, as he had just finished repairing one of the tractors, "okay, it's time for me and the team to leave, there is no work waiting.Shadow Wing jumped up from the boxes and landed in front of Night Storm, extending his hoof to him.\n\n— Good luck, friend. And this...Well, thanks for everything. I rarely say this word, but I'm really grateful to you. Come to our village at any time! We will always be glad.\n\n— I'll definitely come by sometime, though, by that time, your village may have already turned into a full-fledged city, but you're not afraid of changes now, right?  The boss joked, shaking Tom's hoof.\n\After Night Storm and his entire team left the village, Shadow Wing continued to look at the fruits of his labor and truly rejoice at the changes that had taken place."
+armed_sage.101.a:0"- Wait, was he really joking?"
+ 
+
+ 
+ ### IDEAS
+ 
+
+ 
+ ### FOCUSES
+
+ ###Armed Focus
+ 
+ TST_Armed_Sage_focus:0 "Armed Sage Gambit"
+TST_Armed_Sage_focus_desc:0 "Is not without problems, but we did it. Although our conditions are far from ideal now, with a visionary in power, our vision extends far beyond our territories. Armed Sage will lead all ponies into the future!"
+
+TST_Armed_Sage_focus_1:0 "The fight against primitivism"
+ TST_Armed_Sage_focus_1_desc:0 "We cannot move into the future if our own population is stuck in the past. It will take many days, but we will do everything to ensure that the local thestrals put aside their primitive tribal beliefs as soon as possible and start moving into the future."
+
+TST_Armed_Sage_focus_2:0 "Bill of Rights"
+TST_Armed_Sage_focus_2_desc:0 "Order and law should reign in the country, citizens are very willing to serve their country if it guarantees them freedom and security."
+
+TST_Armed_Sage_focus_3:0 "Island of Hope"
+ TST_Armed_Sage_focus_3_desc:0 "Lately, the world has become an increasingly insane and violent place, nothing more than a crooked mirror of itself. It's at a moment like this that it's nice to know that there's still hope in the world. We will become the calmest island in the middle of the tsunami, which will welcome anyone who wants to escape from the madness of the outside world. And, we can only hope that many people will want to take advantage of this opportunity."
+TST_Armed_Sage_focus_3_tt:0 "§0 The effect will weaken as our territories expand.§!"
+
+TST_Armed_Sage_focus_4:0 "School in every village"
+ TST_Armed_Sage_focus_4_desc:0 "Children are our future, so as a forward-looking regime, we must provide them with everything they need. The creation of a system of junior and secondary schools will make it possible to spread free education in any, even the most remote areas of our country, and the teaching profession will become one of the most honorable in the new society."
+
+TST_Armed_Sage_focus_5:0 "Progressive Government"
+ TST_Armed_Sage_focus_5_desc:0 "Unfortunately, even our former socialist comrades could not leave racial prejudice, even for them, class equality is "not for everyone." We will not follow this path, in our state, no matter how remote it is for an ordinary pony, it will be open to anyone who wants to escape from the horrors of this world. Representatives of any race will be able to enter our new government, without any restrictions."
+TST_Armed_Sage_focus_5_tt:0 "§0 Solutions for the integration of the lands of the South-East will be available.§!"
+
+TST_Armed_Sage_focus_6:0 "Modern methods of war"
+ TST_Armed_Sage_focus_6_desc:0 "If we want the revolution to win, we cannot rely on the old tribal militia. It may be difficult to change the priority to mechanized and tank units, but this will give us the necessary advantage over our enemies."
+
+TST_Armed_Sage_focus_7:0 "Industrial Revolution"
+ TST_Armed_Sage_focus_7_desc:0 "Forced industrialization is two words that this country needs. If we want to reach the level of other countries, then factories and plants must grow one by one, and the number of workers must grow every day. If you miss even one day in this race, the losses will be too great to even think about the possibility of allowing them."
+
+TST_Armed_Sage_focus_8:0 "Railway network"
+ TST_Armed_Sage_focus_8_desc:0 "Someone says it's impossible, but we say we'll do it! It may be difficult and difficult to create a railway network through the impenetrable jungle, but it will connect our country together like never before. What could be a better indicator of progress than being able to cover a route in a few hours that previously could take several weeks?"
+
+TST_Armed_Sage_focus_9:0 "New farming methods"
+ TST_Armed_Sage_focus_9_desc:0 "As more and more ponies move to the cities, our fields and plantations are experiencing a reduction in the number of working hooves. However, this is not a significant problem - by immediately implementing mechanization and the latest agricultural methods, we can significantly increase food production in ever-expanding crops for our rapidly growing population."
+
+TST_Armed_Sage_focus_10:0 "Rethinking everyday life"
+ TST_Armed_Sage_focus_10_desc:0 "Once upon a time, local ponies lived in shacks and engaged in hunting, gathering, or, in a better case, primitive farming. Now they have access to a variety of food, clean and new clothes, large houses and other amenities of the modern world. Of course, the process of adapting to such changes will not be the fastest, but we will be able to create a comfortable enough environment in cities so that in this generation the thestrals would become no worse than any other modern pony."
+
+TST_Armed_Sage_focus_11:0 "Pearl of the Southeast"
+ TST_Armed_Sage_focus_11_desc:0" With herculean efforts, but there is little left of the old yacht. Now it is the largest city in the ENTIRE south - a sparkling modern metropolis, a gateway to the future and home to millions of living beings. Now anyone who looks at the beating heart of our state will realize that they are no longer dealing with savages, but with a nation capable of lighting the torch of progress even in the darkest and most dangerous place! And that's just a small part of what we're going to do."
+
+TST_Armed_Sage_focus_12:0 "Ajax Agreement"
+ TST_Armed_Sage_focus_12_desc:0 "We have no purpose in waging a senseless war with anyone who disagrees with us. The local tribes suffered from the grip of the imperialist colonialists no less than ordinary proletarians. This is also saying that our forces are at least... They are too modest to unite them all under one banner by force. Even if they don't fully understand our ideology, we will give a clear and understandable goal for our common future to any tribes who are willing to agree to join our cause."
+ TST_Armed_Sage_focus_12_tt:0 "§0 Our neighbors will be offered cooperation in exchange for some concessions.§!"
+
+TST_Armed_Sage_focus_13:0 "Economic assistance"
+TST_Armed_Sage_focus_13_desc:0 "Although we were able to significantly develop our territories, having long gone beyond the tribal level, our new allies did not have such luxury. We will not be able to fully integrate them into our level of development in a short time, but with the help of significant economic and humanitarian assistance, we will try to give them a platform for their own development as much as possible."
+ TST_Armed_Sage_focus_13_tt:0 "§0 Every member of the Achtla Treaty will receive §Y1 factory§!§0 and §G1 military factory§!§0.§!"
+
+TST_Armed_Sage_focus_14:0 "Joint military training"
+ TST_Armed_Sage_focus_14_desc:0 "In alliances like ours, the combat capability of the weakest nation will hit the entire alliance as a whole. We will also try to reform their armies through joint exercises, minimal standardization and modernization of uniforms, and the introduction of a simplified hierarchy and discipline. Presumably, as a result, the armies of the allied tribes will be able to reach the quality level of the standard Red Army militia."
+ TST_Armed_Sage_focus_14_tt:0 "§0 Every member of the Achtla Treaty will receive §!£army_experience 10 §Army experience§!§0.§!\n§0 For each member of the Treaty of Ajakachtli, we will receive §!£army_experience 10 §Army Experience§!§0.§!"
+
+TST_Armed_Sage_focus_15:0 "Southern Automobile Industry"
+ TST_Armed_Sage_focus_15_desc:0 "The new Century has made carrying all the equipment on sleds pulled by soldiers themselves obsolete at best and primitive at worst. We will invest significant resources in the development of machine-building plants in the south to provide our army and citizens with enough vehicles to cover all the needs of our logistics."
+
+TST_Armed_Sage_focus_16:0 "Support Companies"
+ TST_Armed_Sage_focus_16_desc:0 "The army is as strong as its rear is strong. By studying the experience of other countries, we will be able to gain more knowledge in order to better integrate auxiliary divisions into our army."
+
+TST_Armed_Sage_focus_17:0 "Steel Monsters"
+ TST_Armed_Sage_focus_17_desc:0 "From their first appearance on the battlefield, tanks still inspire animal terror in the hearts of any soldier who sees them on the enemy's side. The design bureau will be tasked with creating a tank design that will be simple enough for our production facilities, but still capable of fighting on equal terms with similar enemy vehicles."
+
+TST_Armed_Sage_focus_18:0 "Modern Chemistry"
+ TST_Armed_Sage_focus_18_desc:0 "The second vital industry for war, after metallurgy, is chemical. It creates toxic substances such as chlorine, phosgene, mustard gas and many others. She is also responsible for gunpowder, cellulose, and even dyes, without which no army can survive. That is why the expansion of the modern chemical industry will be high on the list of industrialization priorities."
+
+TST_Armed_Sage_focus_19:0 "Ready for battle!"
+ TST_Armed_Sage_focus_19_desc:0 "It's hard to imagine what kind of path we've come - from tribal warriors with spears and militia with rusty guns to professional soldiers and armored vehicles! Step by step, we were moving towards a modern army capable of facing any enemy on equal terms. Our successes will forever go down in the history books, and our enemies will remember our losses with a tremor in their hearts!"
+ 
+ TST_Armed_Sage_focus_20:0 "Unification War"
+TST_Armed_Sage_focus_20_desc:0 "The South is a dangerous place. Colonizers, bandits, cultists. This is something we CANNOT do right now, however, we already have enough forces to capture those local Thestral tribes who refused to join us voluntarily. We can only hope that we will get enough from this to go further. Today we will unite the thestrals so that tomorrow we can do this with all the ponies."
+TST_Armed_Sage_focus_20_tt:0 "§0 War will be declared on all the countries of the Southeast that are not part of the Treaty of Ajakachtli."
+ TST_ayakachtli_treaty_faction:0 "Ajax Agreement"
+
+TST_Armed_Sage_focus_21:0 "The first step towards industrialization"
+TST_Armed_Sage_focus_21_desc:0 "The lands of the South-east are not famous for their industrial capacities. To put it mildly. In fact, our lands are full of impenetrable jungles, there are no normal railway tracks as such. If we want to assert our power on the continent, we need to take the first important steps towards industrialization."
+
+TST_Armed_Sage_focus_22:0 "Cultural Revolution"
+ TST_Armed_Sage_focus_22_desc:0 "Old customs are forgotten, useless superstitions are thrown into the landfill! Now we can safely declare the creation of a modern southern pony, imbued with our culture at all levels. And new music, cinema and literature only help to consolidate new values in the minds of all our residents, as well as attract significant attention to it on the world stage."
+ 
+ TST_Armed_Sage_focus_23:0 "Megacities in the middle of the jungle"
+ TST_Armed_Sage_focus_23_desc:0 "The urbanization program is yielding positive results. Although not as majestic as our capital, many cities have followed a similar path, turning, with our active assistance, into large megacities filled with life, attracting more and more creatures that we can only accommodate."
+
+TST_Armed_Sage_focus_24:0 "Modern armored vehicles"
+ TST_Armed_Sage_focus_24_desc:0 "With the expansion of our industrial capabilities, we can finally stop asking, "What can we do?" and completely abandon any compromises in the design. We will further study all the information about the tanks of other countries that we can gather in order to use our advanced technologies to create machines that surpass in everything what anyone can find who is ready to challenge us."
+
+TST_Armed_Sage_focus_25:0 "Public medicine"
+ TST_Armed_Sage_focus_25_desc:0 "The right to life is the right of every being. Our citizens should not die from the common cold or suffer from pain just because they do not have money for high-quality medicine. We will open public hospitals across the country, providing citizens with free medicine."
+TST_Armed_Sage_focus_25_tt:0 "§0 We will be immune to the effects of the plague from Philadelphia.§!"
+ 
+ TST_Armed_Sage_focus_26:0 "Punish the bandits"
+ TST_Armed_Sage_focus_26_desc:0 "To the west of us lie lands where complete lawlessness reigns, not to mention the existence of frankly absurd and tyrannical regimes. We have consolidated our positions in the southeast and now we can safely move on, and the west will be our first goal on the way to the full unification of the pony lands."
+ 
+ TST_Armed_Sage_focus_27:0 "Crush the chauvinism of Pandoria"
+ TST_Armed_Sage_focus_27_desc:0 "They say that once upon a time, when the rest of the world was experiencing the era of feudalism, Earth ponies lived in one of the first republics. Whether this is true or not, Pandoria is now nothing more than the birthplace of chauvinism, whose inhabitants have voluntarily blinded themselves to religious dogmatism. Whether they want it or not, we will make them see the light."
+
+TST_Armed_Sage_focus_28:0 "The Heart of the capitalist World"
+ TST_Armed_Sage_focus_28_desc:0 "Unicorns and griffins are surprisingly similar to each other. Greedy, arrogant, grumpy. It is not surprising how similar Unicornia and the Herzland Empire are in their decadence. And even if we can't do anything about the latter, Unicornia and its vassals will fall under the onslaught of progress. We will forge the essence of unicorns, making them like other ponies."
+ 
+ TST_Armed_Sage_focus_29:0 "Radar equipment"
+ TST_Armed_Sage_focus_29_desc:0 "As research has shown, radars are much more effective and many times cheaper than permanent air or ground patrols trying to intercept information about enemy air patrols. We will pay attention to further improving radar technologies and fully covering our country with a radar grid sufficient to remove all "gray areas" in our sky."
+
+TST_Armed_Sage_focus_30:0 "Experimental aviation"
+ TST_Armed_Sage_focus_30_desc:0 "New advances in the study of jet-powered aircraft suggest that they can be better than our current propeller designs in every way. Less sensitive to fuel quality, capable of gaining high altitude and even breaking the sound barrier. It will become a real miracle weapon for our aviation, if only we can put them into truly mass production."
+
+TST_Armed_Sage_focus_31:0 "From heaven to earth"
+ TST_Armed_Sage_focus_31_desc:0 "Pegasi are historically an army fused with the state. Every Pegasus is a warrior, every politician is an officer or a general. Some will ask if there is any point in integrating such a race into our society, especially on equal terms with others. But Armed Sage knows that it's the only way. This time, we will be the liberators who will break the chains of militarism from the Pegasi..."
+
+TST_Armed_Sage_focus_32:0 "Endgame"
+ TST_Armed_Sage_focus_32_desc:0 "House. How much he means to everyone and how hard it is to lose him. The memory of exile is still fresh in too many of us, as is anger towards those traitors who drove us south. But now the real revolutionaries have returned home, and with them the REAL continuation of the teachings of Marx, the last bets are off, the ponies of Equus will become one, we have been moving towards this for too long."
+
+TST_Armed_Sage_focus_33:0 "Media"
+ TST_Armed_Sage_focus_33_desc:0" Radio, TV. Once we didn't even know about them, but now we have done everything to ensure that every resident has each of these devices. And centralized and structured broadcasting has made it possible to perfectly calculate everything that ponies consume with their help, of course, in order to further improve our society. They say our foreign broadcast networks are widely popular, despite all attempts to ban them as "enemy voices."
+ 
+ TST_Armed_Sage_focus_34:0 "Black Gold"
+TST_Armed_Sage_focus_34_desc:0 "The modern world cannot exist without oil, fuel is only the most obvious use of it. Because in order to feed the machine of progress with raw materials for fuels, polymers and synthetics, we must exploit every deposit we find. Once hidden behind the impregnable grip of the wild, the local reserves are so rich that we will not be able to squeeze them to the drop for a very long time."
+ 
+ TST_Armed_Sage_focus_35:0 "Production automation"
+ TST_Armed_Sage_focus_35_desc:0 "The creation of the assembly line made it possible to reduce the time to create a conventional car from a month to just a little more than one week. We need to build on this success and introduce more and more modern automation methods from production, thus catching up with the world leaders in terms of the number of products produced."
+
+TST_Armed_Sage_focus_36:0 "Socialist Atom"
+ TST_Armed_Sage_focus_36_desc:0 "We did it! Our scientists have come close to successfully splitting an atom, and at the same time, the exorbitant amounts of energy released during this process. This opens up new, almost limitless possibilities for us, both in civilian and military applications. Others can try to repeat our success, but at the moment, only we hold in our hooves the key to the most ultimate weapon against any, even the most powerful empire. The final race has begun."
+
+TST_Armed_Sage_focus_37:0 "Rocket Technologies"
+ TST_Armed_Sage_focus_37_desc:0 "By studying rocket engines better, we were able to make a breakthrough in guided missiles. Their range has become phenomenal, allowing them to be sent anywhere in our world, or even beyond. This allowed us to deliver scientific equipment to the farthest corners of space. And our ultimate weapon can reach anyone who dares to threaten our utopia. Now we can reach EVERYONE."
+
+TST_Armed_Sage_focus_38:0 "Popularization of science"
+ TST_Armed_Sage_focus_38_desc:0 "Now the heroes for children will not be knights and mighty wars, but brilliant pioneer scientists. Having built our culture around the excellence of science, we make every effort to instill in every pony from childhood the maximum interest in this field. Not everyone can become a great scientist, but we will do everything to ensure that everyone has deep respect and gratitude for everyone who has succeeded."
+
+TST_Armed_Sage_focus_100:0 "Hail Equestria!"
+ TST_Armed_Sage_focus_100_desc:0 "Incredible. It is unthinkable... It's incomprehensible.Many historians of the future will call it nothing less than a miracle. From a handful of tribes and refugees from a distant, rejected country, the Ayakachtli ponies were able to do something that everyone else had not even thought of for thousands of years - unite all the pony races under a single banner, under a single name...\Equestria... The land of all ponies. And its leader, visionary, messiah, the one who made it all possible is Armed Sage."
+TST_Armed_Sage_focus_100_tt:0 "§0 Thank you for playing!§!"
+ 
+ ###Focus Mashki
+ 
+ TST_Masha_Norushkina_focus:0 "Masha Norushkina"
+
+TST_Masha_Norushkina_focus_1:0 "Labor camps"
+TST_Masha_Norushkina_focus_1_desc:0 "From now on, there is no place for confessors, nobles and the like in our country, now there is a slightly different purpose for them..."
+
+TST_Masha_Norushkina_focus_2:0 "Patriotic appeal"
+
+TST_Masha_Norushkina_focus_3:0 " Plunder the caravans"
+ TST_Masha_Norushkina_focus_3_desc:0 "Several trade routes pass through our territories, although they bring some benefits to our economy, at the same time, merchants brainwash our citizens with their stupid ideas."
+
+TST_Masha_Norushkina_focus_4:0 "Political commissars"
+
+TST_Masha_Norushkina_focus_5:0 "Autarky policy"
+
+TST_Masha_Norushkina_focus_6:0 "Work for victory"
+
+TST_Masha_Norushkina_focus_7 :0 "Guerrilla tactics"
+ 
+ TST_Masha_Norushkina_focus_8:0 "Proletarian Militia"
+
+TST_Masha_Norushkina_focus_9:0 "United under the moon"
+ 
+ TST_Masha_Norushkina_focus_10:0 "Fire in the Southeast"
+
+TST_Masha_Norushkina_focus_11:0 "Camps for loyalists"
+
+TST_Masha_Norushkina_focus_12:0 "Redemption for revisionists"
+
+TST_Masha_Norushkina_focus_14:0 "Finish off the savages"
+ 
+ TST_Masha_Norushkina_focus_16:0 "Gaze to the Southwest"
+
+TST_Masha_Norushkina_focus_21:0 "Old grudges are not forgotten"
+TST_Masha_Norushkina_focus_21_tt:0 "§R may lead to war in the future.§!"
+
+TST_Masha_Norushkina_focus_22:0 "Our Northern comrades"
+
+TST_Masha_Norushkina_focus_23:0 "South Soviet Republic"
+ 
+ TST_Masha_Norushkina_focus_24:0 "Retribution Plan"
+TST_Masha_Norushkina_focus_24_desc:0 "For many years, the monarchists of Unicorn treated us and our relatives with contempt, considering us savages. Many of our kind died in Unicorn slavery. It's time for retribution."
+
+TST_Masha_Norushkina_focus_25:0 "Import of Northern technologies"
+ 
+ TST_comm_ec_1:0 "The first step towards industrialization"
+
+TST_comm_ec_2:0 "Foundry Facilities"
+
+TST_comm_ec_3:0 "Alpha Project"
+ TST_comm_ec_3_desc:0 "The development of infantry weapons of a new era. By creating a magic rifle to replace old powder rifles, we will not only modernize our army, but also make it the most modern in the world. Even if its production can be many times more expensive than any other standard weapons of other armies, our natural reserves of crystals should more than cover production."
+
+TST_comm_ec_4:0 "Modern manufactories"
+TST_comm_ec_4_tt:0 "§G The effect will change depending on the selected leader.§!"
+TST_comm_ec_4_alt_tt:0 "§The uFocus can be skipped when taking the focus "Industrial Revolution"§!"
+ 
+ TST_comm_ec_5:0 "Foreign specialists"
+TST_comm_ec_5_desc:0 "You can't rely on yourself to make up for hundreds of years of progress. In order to develop, we need significant outside help, which is now not so difficult to obtain. As an island of stability in the raging sea of modern madness, we attract the widest contingent of professionals in our field. of all races, from all over the world. By cordially opening the doors to these specialists and providing them with work, we will gain knowledge that can accelerate our modernization for decades."
+
+TST_comm_ec_6:0 "Radio engineering"
+ 
+ TST_comm_ec_7:0 "Mass production of weapons"
+
+TST_comm_ec_8:0 "Heavy artillery"
+ 
+ TST_comm_ec_9:0 "Public food"
+ 
+ TST_comm_ec_10:0 "Iron Eagles"
+TST_comm_ec_10_desc:0 "The experience of past conflicts has proven one thing - air control gives an undeniable advantage to soldiers on the ground. The creation of light-engine aircraft will be the easiest solution for our industry. to increase our presence in the air as soon as possible."
+
+TST_comm_ec_11:0 "Taming Nature"
+ TST_comm_ec_11_desc:0 "Our nature is truly beautiful, but it is also inconvenient. The green jungle hinders our further development, it is difficult for us to lay new railway tracks, build new cities and connect existing ones. Whether we want to or not. but we will have to go to extreme measures and start fighting against nature for the sake of our revolution and our prosperity."
+TST_comm_ec_11_tt:0 "§0 Solutions for raising the level of the regions will be open.§!\n\R NOTE:§! §0 A certain amount of infrastructure is required to upgrade for the appropriate level of the region.§!"
+ 
+ TST_comm_ec_12:0 "Southeastern Scientific Community"
+TST_comm_ec_12_desc:0 "Beings from the outside consider the population of these parts to be poor both intellectually and physically. But, of course, this is not the case, the land here is rich in talents no less than others. Having found the most sparkling nuggets among the local minds, we will unite them into a single organization, allowing us to calmly exchange ideas among ourselves and serve for the benefit of the common homeland. Real talents, regardless of their origin, will lead us into the future."
+
+TST_comm_ec_13:0 "Southern University"
+ TST_comm_ec_13_desc:0 "The time has come to take care of the fate of higher education. Having found enough resources, we can finally build a monstrous university in Ayakachtli, surpassing even the most ancient and prestigious institutions of Timbaktu and Yale. It is here that all beings will be able to receive the best available education in any field on an equal footing, and its countless departments will be able to train an army of specialists ready to serve our state."
+
+TST_comm_ec_14:0 "Black Gold"
+
+TST_comm_ec_15:0 "Additional equipment"
+ 
+ TST_comm_ec_16:0 "New vehicles"
+TST_comm_ec_16_tt:0 "§uFocus can be skipped when taking focus "Southern Automobile Industry"§!"
+
+TST_comm_ec_17:0 "Experimental mechanization"
+ 
+ TST_comm_ec_18:0 "Heavy and medium aircraft"
+TST_comm_ec_18_desc:0 "The Zeppelin is a fairly simple and in some ways even primitive aircraft. However, the simplicity of their design makes them more preferable against the background of more complex multi-engine aircraft, which is crucial in our industry."
+
+TST_comm_ec_19:0 "Advanced Electronics"
+ TST_comm_ec_19_desc:0 "It is difficult to overestimate the importance of computing technologies. By devoting resources to the design and commissioning of more and more new electrical devices, we will not only be able to develop our basic "working tools" but also significantly improve the lives of both our soldiers and ordinary citizens alike."
+ 
+ ###The Committee
+ 
+ TST_committee_focus_1:0 "§Notation§!"
+TST_committee_focus_1_desc:0 "§H"... you're ready to go all the way, aren't you?"§!"
+ TST_committee_focus_1_tt:0 "The event will occur §Notation§!."
+ TST_committee_focus_1_alt_tt:0".RFocus is not available in this version of the mod. Wait for updates.§!"
+
+TST_committee_focus_2:0 "§The time is going backwards§!"
+TST_committee_focus_2_desc:0"§H"You have nothing to fear if you have nothing to hide, but you should be afraid if something is being hidden from you."§!"
+
+TST_committee_focus_3:0"§The goal becomes clear§!"
+
+TST_committee_focus_4:0"§The Oblivion project§!"

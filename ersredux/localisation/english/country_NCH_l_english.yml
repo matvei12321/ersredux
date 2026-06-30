@@ -1,0 +1,105 @@
+﻿l_english:
+
+ NGC_the_chair:0 "Chair"
+ NGC_the_chair1:0 "Chair"
+ NGC_the_chair2:0 "Chair"
+ NGC_the_chair3:0 "Chair"
+ NGC_the_chair4:0 "Chair"
+ NGC_the_chair5:0 "Chair"
+ 
+ 
+ 
+ 
+ NGC_Elizabeth_Green:0 "Elizabeth Green"
+ NGC_Elizabeth_Green_desc:0 "They say if you stare into the dark for too long, you can see other people's eyes...\n\n§Elizabeth Green§! She not only put an end to Rechka's spies, but also launched a counteroffensive. Under her leadership, Greencleave was able to gain loyal pawns in the River Federation who voluntarily lobby for the interests of the small state. At the same time, at home, any opposition is nipped in the bud, leaving only loyalty and loyalty to the queen. "
+ NCH_baron_of_terror:0 "Head of the Black Wing §! " 
+ 
+ NGC_ambassadorS:0  "" 
+ NGC_ambassadorS_desc:0 "§ Unlike mortals,§! §R We have enough time for boring waiting§!"
+ NCH_ambassador:0 "§DPoS§! " 
+ 
+ NCH_Soviet:0 " Or"
+ NCH_Soviet_desc:0 "" 
+ NCH_economist:0 "Treasurer of the council"
+
+
+ NCH_minister_of_defense:0 "Minister of Defense"
+ NCH_armaments_organizer:0 "Minister of Military Industry"
+
+ NCH_royal_dictator:0 "Council Power"
+ NCH_royal_dictator_desc:0 "At the moment, the Queen has more important things to do than pathetic bureaucratic problems. Temporarily, the power is in the hooves of the council" 
+ OIREN_POLITICS_DESC:0 "What is a Greencliff without a queen? We can safely imagine a state without a capital, an army, or a history. But it is impossible to imagine our small island without the queen."
+
+ NCH_Advice_NC:0 "Where is Oiren? "
+ NCH_Advice_NC_desc:0 "The silly rumors about Oiren's death are just lies (although the fact that she hasn't been seen for a year makes you wonder"
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ #Партии нач
+ NCH_neutrality_NAME_LONG:0 "----Centre----"
+ NCH_neutrality_NAME_SHORT:0 "----Centre----" 
+
+ NCH_fascism_NAME_LONG:0 "§R----Cleared----§!" 
+ NCH_fascism_NAME_SHORT:0 "§R----Cleared----§!"
+
+ NCH_communism_NAME_LONG:0 "§R----Forbidden----§!"
+ NCH_communism_NAME_SHORT:0 "§R----Forbidden----§!"
+
+ NCH_democratic_NAME_LONG:0 "§R----Traitors§----!"
+ NCH_democratic_NAME_SHORT:0 "§R----Traitors----§!"
+ 
+ 
+NCH_Dream_idea:0 "In memory of 724"
+NCH_Turnip_idea:0 "Turnip Genocide"
+NCH_Fish_idea:0 "The War for Fish"
+NCH_Cult_of_the_Lamb:0 "Ancient beliefs"
+NCH_Cult_of_the_Lamb_desc:0 "§4 Sins,§! § Fears,§! § Poverty,§!§ Enlightenment,§!§As many pastors,§! § The four faiths, §! §Dodna koroleva§!   \n\n\Dayan, take a step towards your destiny! Do it and finally clear the Greencleave of lies!"
+
+### GOVERNMENT ###
+ Treaty_of_Greencliffe:0 "Greencliff"
+ 
+ #LEADERS
+ NCH_queen_gytha:0 "Queen Gita"
+ NCH_feilean_of_clann_leamhan:0 "Phelan of the Leamhan Clan"
+ NCH_oiren_of_oir:0 "Oiren of Oire"
+ NCH_queen_oiren:0 "Queen Oiren"
+ NCH_cader_sclerite:0 "Cader Sclerite"
+
+ #GENERALS
+ NCH_feilean:0 "Feilean"
+ NCH_airann:0 "Airann"
+ NCH_garran_of_leamhan:0 "Garran of Leamhan"
+
+ #ADVISORS
+ NCH_navy_chief_1:0 "Admiral Poitgills"
+ NCH_navy_chief_2:0 "Admiral Fallon"
+
+ #DESIGNERS
+ NCH_KLA:0 "KLAA AG"
+ NCH_generic_tank_manufacturer:0 "Bureau on Ngluishtan"
+
+ NCH_motorised:0 "Bureau on Ngluishtan"
+
+ longchlois:0 Lonkhlois Blossomport
+ NCH_freemare:0 "Avtomashiny FM LLC"
+
+ NCH_greda:0 "SpO GredaBlosmport"
+ NCH_reichswaffen:0 "JSC Reichswaffen"
+ NCH_waffenhauser:0 "OK Greencliffe"
+
+ NCH_generic_light_aircraft_manufacturer:0 "Whatever the hell"
+ NCH_generic_medium_aircraft_manufacturer:0 "CNIH"
+ NCH_generic_heavy_aircraft_manufacturer:0 "Serdland MóA"
+ NCH_generic_naval_aircraft_manufacturer:0 "CAdA"
+
+ NCH_generic_infantry_equipment_manufacturer:0 "Lohann Lidad"
+
+ NCH_generic_industrial_concern:0 "Industrial Company"
+ NCH_generic_electronics_concern:0 "Electronics Company"

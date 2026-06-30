@@ -92,6 +92,20 @@ ideas = {
 				factor = 0
 			}
 		}
+		crystalponies_race = {
+			default = yes
+			allowed = {
+				is_crystalponies_race = yes
+			}
+			visible = {
+				has_idea = crystalponies_race
+			}
+			removal_cost = -1
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 0
+			}
+		}
 		
 
 

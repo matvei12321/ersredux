@@ -11,8 +11,10 @@ state={
 	buildings_max_level_factor=1.00
 
 	history={
-		owner = FIR
-		add_core_of = FIR
+		owner = SVF
+		add_core_of = SVF
+		
+		set_demilitarized_zone = yes
 
 		victory_points = { 8210 15 }
 

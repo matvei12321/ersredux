@@ -29,6 +29,22 @@ characters={
 		
 	}
 	
+	ANR_red_air={
+		name=PGS_red_air
+		portraits={
+			civilian={
+				large="gfx/leaders/ANR/ANR_red_air.tga"
+			}
+		}
+		country_leader={
+			desc="PGS_red_flame_desc"
+			ideology=rozenkampism
+			traits={ }
+			expire="1965.1.1.1"
+		}
+		
+	}
+	
 	ANR_liria={
 		name=ANR_liria
 		portraits={

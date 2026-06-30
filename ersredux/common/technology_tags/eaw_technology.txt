@@ -5,6 +5,7 @@ technology_categories = {
 	earth_pony_tech
 	pegasi_tech
 	unicorn_tech
+	crystalpony_tech
 	magical_tech
 	race_tech
 	infiltrator_tech

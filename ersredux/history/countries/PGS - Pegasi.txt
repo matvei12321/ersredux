@@ -31,8 +31,11 @@ recruit_character = PGS_kaylo_nestor
 
 recruit_character = PGS_hurrikane
 recruit_character = PGS_still_will
+recruit_character = PGS_rainbow_dash
 recruit_character = PGS_fluttershy
-
+recruit_character = PGS_red_air
+recruit_character = PGS_gallant_grey
+recruit_character = PGS_gallant_grey
 
 # Political power
 
@@ -136,7 +139,8 @@ set_politics = {
 
 set_popularities = {
 	neutrality = 4
-	democratic = 11
+	democratic = 1
+	conserv_utopia = 10
 	fascism = 49
 	communism = 36
 }

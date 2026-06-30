@@ -1,0 +1,75 @@
+﻿l_english:
+
+ ##### NATIONAL FOCUS
+ CLD_focus_1:0 "dark sky of the polar winter"
+ CLD_focus_1_desc:0 "\n \ n§we will hold on to the shard of broken life§!"
+ CLD_focus_2:0 "ice peak"
+ CLD_focus_2_desc:0 " \n \ n§CI even when there is nothing left...§!"
+ CLD_focus_3:0 "shard of broken glass"
+ CLD_focus_3_desc:0 ""
+ CLD_focus_4:0 "from the world of ice mirrors"
+ CLD_focus_4_desc:0 ""
+ CLD_focus_5:0 "inside it is your winter"
+ CLD_focus_5_desc:0 ""
+ CLD_focus_6:0 "he will take you to the Astral"
+ CLD_focus_6_desc:0 ""
+ CLD_focus_7:0 ""
+ CLD_focus_7_desc:0 ""
+ CLD_focus_8:0 ""
+ CLD_focus_8_desc:0 ""
+ CLD_focus_9:0 ""
+ CLD_focus_9_desc:0""
+ CLD_focus_10:0 ""
+ CLD_focus_10_desc:0 ""
+ 
+ #### EVENTS
+ cld.1.t: 0 "What is it?"
+ cld.1.d:0 "yx] oxxu' #qrwt =x] qj[n ,xw^ yx] UJ]m xw =x]; [rl#x;RN' jwm m;x,w =x];'nu[n' RW in##= 'yxru'% =n# =x] MX wx# ;njur'n ,qj# =x] #jvyn; ,r#q^ O]; jwlrnw# qn;r#JPN% X]; 'JL;Nm p;x]WM'% x]; qxvn^ Yx] ,X]um ljuu =X];'nu[n' #qn VJ'#n; xo R#?I'm going to say, " I'm going to say,' I'm going to say, 'I'm gonna say, 'I'm gonna say, 'I'm gonna say,' I'm gonna say,' I'm gonna say 'I'm gonna say' I'm gonna say' I'm gonna say 'I'm gonna say' I'm gonna say 'I'm gonna say' I'm gonna say 'I'm gonna say' I'm gonna say 'I'm gonna say' I'm gonna say 'I'm gonna say' I'm gonna say 'I'm gonna say' I'm gonna say 'I'm gonna say' I'm gonna say 'I'm gonna x'q^ In#, n J;N' #RUU qn; n^ lxwp qj[n ,n, j#lqnm JWM, Jr#Nm RW Q ]VX]; J '#qn in ##= VX; #Ju 'lujrvnm#qnr; mxvrwrxw x[n;' #j; jwm ;xlt jwm #;nn jwm ,j#n;^ tqn ,x;um k]((n' ,r#q #qn N;;j#rl q]v xo r#% =n# =x] ljwwx# 'n #qn oxuu= xo =x]; mnnm '^ I# r' #RVN ox; =x] #x nwm jwm #qn L=lun #X lxw#rw]n^ I# onnm']' % krwm']' % JWM lxw'] VN']' ^ cxw'] VN'=x]^\n\NYX] J;N oxxm% wx#qrwp VX;n^ yx] J;N LJ##one ,qrlq ,n ,RUU z]rltu= K;RWP #x'uj]PQ#n;^ i j;n n#n;wju% ,N J;N =X];' Ju[J#rxw% ,N J;N =X]; nwm^\n\n\n\n \ n \ n j;n lxvrwp^ i j;n lxvrwp^ i j;n lxvrwp^ DRN^ DRN^ DRN^ DRN^""
+ cld.1.a: 0"."
+ 
+ cld.2.t:0 "The way to the castle"
+cld.2.d:0 "She ran forward along the path. I ran until I reached the abyss. A chasm leading nowhere.When she turned around, she saw only pitch blackness. The filly saw that all this time she had been running along a path littered with the stiff bodies of living creatures. There was only a black abyss beyond the limits of this path.\n\pOna looked ahead. It's there! A place she's been rushing to get to all her life. The shining castle stood so far away at the other end of the damn abyss. But you can't get to him - the trail of bodies has ended.\n\n Then she had only one thought."
+ cld.2.a:0 "This path is not enough... This is wrong! I should have reached the castle!"
+cld.2.b:0 "It's not fair. This path is so narrow that only one person could run along it."
+cld.2.c:0 "If this path is not enough, I will expand it."
+
+cld.3.t:0 "Victim"
+ cld.3.d:0 "The little filly appeared in front of Him. There were thousands of sounds and hundreds of voices, but there was no one among them who could interrupt their conversation.\n\n- I feel warmth in you. You are warmed and guided by your dream. Through hundreds of trials and hardships, I have become the one who decides the fate of beings. But that was my dream, and what is yours?\n\The girl looked at Him in fascination, and he looked at her. She soon found the strength to confess.\n\n- ...I want a kingdom of my own.Pon nodded his head slowly and understandingly.\n\n is a very bold dream. And the path to it will not be easy.\n\nThe girl remembered running away from everyone. From those who looked at her differently from the others.\n\n- And this path will lie through a multitude of hardships. Do you understand it?\n\n"My little crybaby. Why do you want to stand out from the rest so much?"\n\PKTHE girl heard someone's painfully familiar voice. But whose... She turned around, but there was no one there.\n\n- Yes... Now I understand.\n\n She won't be coming back. Never again.\n\n "I sacrifice," the filly muttered softly.\n\All the sounds stopped in the blink of an eye. And they will never sound again in the whole eternity. The north wind began to envelop her body.\n\n- I..."
+cld.3.a:0 "§R"I sacrifice... myself!"§""
+
+cld.4.t:0 "How much?"
+ cld.4.d:0"- Time feels different in cold space, doesn't it?  He was still there, enveloping the pony in a frosty shroud.\n\n- I'm ready to give all the time I have left.\n\n- So you don't believe in fate? Things may go differently than you plan, and you may not even know about it.\n\n- My goal is everything that is important in the world.\n\n- Don't you care about the aspirations of others? How much are you willing to sacrifice on your way to the castle?\n\n- I'm not going to kill. I will be a wise ruler.\n\pOn moved the filly to another place. They ended up where she ended up physically. The entrance to the ice cave was already covered with snow, but there was a small hill next to the entrance. Under this hill was the already frozen body of a small blue unicorn with a snow-white mane.\n\n- You've already killed yourself along the way. If your determination has allowed you to do this, then what's to stop you from getting rid of others?\n\The bottle did not respond. When she reached the mound of snow, she dug up the body. His eyes were looking straight at her.\n\n- My name is #F!S9 Gjvv/. You're a #F too!S9 Gjvv/.?\n\n- Yes, I am the one who is called #F!S9 Gjvv/.. And you're coming with me.She laid the body on her back. Meanwhile, He looked at her in silence, and when the pony was ready to leave, He finally brought them back."
+cld.4.a:0 "No one will die in my way."
+
+cld.5.t:0 "..."
+cld.5.d:0 "..."
+cld.5.a:0 "..."
+
+cld.6.t:0 "..."
+cld.6.d:0 "..."
+cld.6.a:0 "..."
+
+cld.7.t:0 "..."
+cld.7.d:0 "..."
+cld.7.a:0 "..."
+
+cld.8.t:0 "..."
+cld.8.d:0 "..."
+cld.8.a:0 "..."
+
+cld.9.t:0 "..."
+cld.9.d:0 "..."
+cld.9.a:0 "..."
+
+cld.10.t:0 "..."
+cld.10.d:0 "..."
+cld.10.a:0 "..."
+
+cld.11.t:0 "..."
+cld.11.d:0 "..."
+cld.11.a:0 "..."
+
+cld.12.t:0 "The last living being"
+ cld.12.d:0 "When the storm started in your native Rouen, you did not flee the city like many others. With a group of brave unicorns, you stayed in the city, deciding that you can wait out the storm. It seemed to you that nothing abnormal is expected - after all, spring will surely come. You set up a small shelter with a campfire and supplies, wrapped yourself in fur gear, but your survival soon turned into a nightmare. The temperature was dropping dramatically every day.\n\There were seven of them. Elysia disappeared first. She got tired of enduring the frozen and hungry Tartarus and went into the storm without returning.\n\ The way Marcel died. Lying on a frozen bed, he confessed his love to Eliana, which greatly touched her. Then he fell asleep and never woke up again.\n\nThe weather was getting worse. One day you saw some spirits flying over the shelter. The Olgimsky brothers froze to death when one creature looked at them. Then the spirits moved on.\n\nThe fire has not been lit for a week. There are three left. All that kept you from dying was your spell. With it, you could keep the temperature in the shelter at least forty degrees below zero.\n\nThe collapse happened. A thick layer of snow has covered all of you. In this snowy grave, the two remaining unicorns drifted away from you, and most likely died at the same moment. But you were able to concentrate the heat on your body and stay under the snow. However, you can't move or even open your eyes in this position.You don't know how many days you spent in a snow grave. You don't think about how to escape anymore. You're thinking about how to survive. That spring is coming.\n\nThe snow above you is getting heavier by the minute. You want to fall asleep and not wake up.But some part of you still believes that spring will come one day."
+ cld.12.a:0 "Fight!"
+cld.12.b:0 "Stop breathing..."

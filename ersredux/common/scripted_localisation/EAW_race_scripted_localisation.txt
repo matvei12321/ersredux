@@ -76,6 +76,13 @@ defined_text = { # Country
 		localization_key = earthponie_race_type
 	}
 	
+	text = {
+		trigger = {
+			is_crystalponies_race = yes
+		}
+		localization_key = crystalponies_race_type
+	}
+	
 	
 	
 	

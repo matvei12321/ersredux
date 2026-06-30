@@ -1,0 +1,39 @@
+focus_tree = {
+	id = TST_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = TST
+		}
+	}
+	continuous_focus_position = { x = 700 y = 2500 }
+	default = no
+	
+	shared_focus = TST_200_years_of_regency
+	shared_focus = TST_listen_to_the_peasants
+	shared_focus = TST_listen_to_the_nobility
+	shared_focus = TST_listen_to_the_clergy
+	shared_focus = TST_1
+	shared_focus = TST_2
+	shared_focus = TST_3
+	shared_focus = TST_4
+	shared_focus = TST_5
+	shared_focus = TST_6
+	shared_focus = TST_7
+	shared_focus = TST_8
+	shared_focus = TST_9
+	shared_focus = TST_10
+	shared_focus = TST_11
+	shared_focus = TST_12
+	shared_focus = TST_13
+	shared_focus = TST_14
+	shared_focus = TST_15
+	shared_focus = TST_16
+	shared_focus = TST_17
+	shared_focus = TST_18
+
+	shared_focus = TST_Armed_Sage_focus
+	shared_focus = TST_committee_focus_1
+
+}

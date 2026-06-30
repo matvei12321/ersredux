@@ -1,9 +1,9 @@
 ideas = {
 	country = {
 
-		STG_time_of_troubles_idea = {
+		STG_internal_party_resistance = {
 			removal_cost = -1
-			picture = STG_red_flag
+			picture = STG_internal_party_resistance
 			allowed = {
 				always = no
 			}
@@ -12,9 +12,9 @@ ideas = {
 				political_power_factor = -0.35
 				drift_defence_factor = -0.1
 				surrender_limit = -0.05
-				popular_socialism_drift = 0.02
-				revisionist_socialism_drift = 0.02
-				accelerationism_drift = 0.02
+				anarchism_drift = 0.02
+				socialism_drift = 0.02
+				social_utopia_drift = 0.02
 			}
 		}
 }

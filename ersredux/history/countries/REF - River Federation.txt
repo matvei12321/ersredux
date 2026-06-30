@@ -128,8 +128,11 @@ activate_advisor = REF_Estern
 recruit_character = REF_Ulf_Indor
 
 create_faction = river_coalition_union
+add_to_faction = REF
 add_to_faction = KAZ
 add_to_faction = OLV
+add_to_faction = KSR
+
 set_rule = {
 	can_generate_female_aces = yes
 	can_generate_female_unit_leaders  = yes

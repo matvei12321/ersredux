@@ -7,27 +7,33 @@ bookmarks = {
 		default_country = "YAC"
 		default = yes
 		
+		filters = { label }
+		label_order = { CSS_EquestriaFilter CSS_GriffoniaFilter CSS_ZebricaFilter }
 
+		sort_unplayed_first = no            # defaults to yes: countries with unplayed content are listed first
+		include_majors_in_minor_list = no   # defaults to yes: when a filter is active, majors also show in the mini list
+		apply_filter_to_majors = yes        # defaults to no: when yes, the major row also respects the filter (only majors matching it are shown)
 		
-		"HRZ"={
-			history = "ers_HRZ_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-				HRZ_communst_problem 
-				HRZ_trade_contract_for_HRZ 
-				HRZ_out_industry 
-				
-			}
-			focuses = {
-			HRZ_Grover_vii
-			HRZ_raut
-			HRZ_go_to_Aquila
-			}
-		}
+		# Jump to (use Ctrl+F):
+		# (1) Equus
+		# (2) Griffonia
+		# (3) Zebrica
+
+		# (1) Equus
+		#  /$$$$$$$$  /$$$$$$  /$$   /$$ /$$   /$$  /$$$$$$ 
+		# | $$_____/ /$$__  $$| $$  | $$| $$  | $$ /$$__  $$
+		# | $$      | $$  \ $$| $$  | $$| $$  | $$| $$  \__/
+		# | $$$$$   | $$  | $$| $$  | $$| $$  | $$|  $$$$$$ 
+		# | $$__/   | $$  | $$| $$  | $$| $$  | $$ \____  $$
+		# | $$      | $$/$$ $$| $$  | $$| $$  | $$ /$$  \ $$
+		# | $$$$$$$$|  $$$$$$/|  $$$$$$/|  $$$$$$/|  $$$$$$/
+		# |________/ \____ $$$ \______/  \______/  \______/ 
+		# 
 		
 		"PGS"={
 			history = "PGS_GATHERING_STORM_DESC"
 			ideology = fascism
+			label = { CSS_EquestriaFilter }
 			ideas = {
 				PGS_dead_monarchy
 				PGS_workers
@@ -41,10 +47,11 @@ bookmarks = {
 			}
 		}
 		
-						"CHN"={
+		"CHN"={
 			
 			history = "ers_CHN_GATHERING_STORM_DESC"
 			ideology = fascism
+			label = { CSS_EquestriaFilter }
 			ideas = {
 				political_divisions
 				CHN_army_reorganization
@@ -61,6 +68,7 @@ bookmarks = {
 		"LYC"={
 			history = "LYC_GATHERING_STORM_DESC"
 			ideology = fascism
+			label = { CSS_EquestriaFilter }
 			ideas = {
 				LYC_social_problems_ignored
 				LYC_industrial_hive
@@ -73,9 +81,10 @@ bookmarks = {
 			}
 		}
 		
-			"TST"={
+		"TST"={
 			history = "ers_TST_GATHERING_STORM_DESC"
 			ideology = neutrality
+			label = { CSS_EquestriaFilter }
 			ideas = {
 			TST_river_caravans
 			TST_night_vs_day_religion
@@ -88,15 +97,132 @@ bookmarks = {
 			}
 		}
 		
-				"---"={
-			history = "RANDOM_GATHERING_STORM_DESC"
+		"UNC"={
+			minor = yes
+			history = "UNC_GATHERING_STORM_DESC"
+			ideology = neutrality
+			label = { CSS_EquestriaFilter }
+			ideas = {
+				UNC_monarchy
+				UNC_intelligents
+				UNC_workers
+			}
+			focuses = {
+				
+			}
 		}
+		
+		#"---"={
+		#	history = "OTHER_GATHERING_STORM_DESC"
+		#}
+		
+		
+		# (2) Griffonia
+		#   /$$$$$$  /$$$$$$$  /$$$$$$ /$$$$$$$$ /$$$$$$$$ /$$$$$$  /$$   /$$ /$$$$$$  /$$$$$$ 
+		#  /$$__  $$| $$__  $$|_  $$_/| $$_____/| $$_____//$$__  $$| $$$ | $$|_  $$_/ /$$__  $$
+		# | $$  \__/| $$  \ $$  | $$  | $$      | $$     | $$  \ $$| $$$$| $$  | $$  | $$  \ $$
+		# | $$ /$$$$| $$$$$$$/  | $$  | $$$$$   | $$$$$  | $$  | $$| $$ $$ $$  | $$  | $$$$$$$$
+		# | $$|_  $$| $$__  $$  | $$  | $$__/   | $$__/  | $$  | $$| $$  $$$$  | $$  | $$__  $$
+		# | $$  \ $$| $$  \ $$  | $$  | $$      | $$     | $$  | $$| $$\  $$$  | $$  | $$  | $$
+		# |  $$$$$$/| $$  | $$ /$$$$$$| $$      | $$     |  $$$$$$/| $$ \  $$ /$$$$$$| $$  | $$
+		#  \______/ |__/  |__/|______/|__/      |__/      \______/ |__/  \__/|______/|__/  |__/
+		
+		
+		"HRZ"={
+			history = "ers_HRZ_GATHERING_STORM_DESC"
+			ideology = neutrality
+			label = { CSS_GriffoniaFilter }
+			ideas = {
+				HRZ_communst_problem 
+				HRZ_trade_contract_for_HRZ 
+				HRZ_out_industry 
+				
+			}
+			focuses = {
+			HRZ_Grover_vii
+			HRZ_raut
+			HRZ_go_to_Aquila
+			}
+		}
+		
+		#"---"={
+		#	history = "OTHER_GATHERING_STORM_DESC"
+		#}
+		
+		# (3) Zebrica
+		#  /$$$$$$$$ /$$$$$$$$ /$$$$$$$  /$$$$$$$  /$$$$$$  /$$$$$$   /$$$$$$ 
+		# |_____ $$ | $$_____/| $$__  $$| $$__  $$|_  $$_/ /$$__  $$ /$$__  $$
+		#      /$$/ | $$      | $$  \ $$| $$  \ $$  | $$  | $$  \__/| $$  \ $$
+		#     /$$/  | $$$$$   | $$$$$$$ | $$$$$$$/  | $$  | $$      | $$$$$$$$
+		#    /$$/   | $$__/   | $$__  $$| $$__  $$  | $$  | $$      | $$__  $$
+		#   /$$/    | $$      | $$  \ $$| $$  \ $$  | $$  | $$    $$| $$  | $$
+		#  /$$$$$$$$| $$$$$$$$| $$$$$$$/| $$  | $$ /$$$$$$|  $$$$$$/| $$  | $$
+		# |________/|________/|_______/ |__/  |__/|______/ \______/ |__/  |__/
+
+		"HIP"={
+			history = "HIP_GATHERING_STORM_DESC"
+			ideology = democratic
+			label = { CSS_ZebricaFilter }
+			ideas = {
+				HIP_divided_society_5
+				HIP_royal_line_of_novo
+			}
+			focuses = {
+				HIP_harmony_above_all
+				HIP_hippogriffia_first
+				HIP_the_triumphant_revolution
+			}
+		}
+		"CTH"={
+			history = "CTH_GATHERING_STORM_DESC"
+			ideology = fascism
+			label = { CSS_ZebricaFilter }
+			ideas = {
+				CTH_political_instability
+				CTH_army_of_merceneries
+			}
+			focuses = {
+				CTH_one_sufrit_above_all
+				CTH_battlecry_of_freedom
+				CTH_form_the_junta
+			}
+		}
+		
+		"STO"={
+			history = "CTH_GATHERING_STORM_DESC"
+			ideology = fascism
+			label = { CSS_ZebricaFilter }
+			ideas = {
+				STO_big_economy
+				STO_big_army_problems
+				STO_high_locals_resistance
+			}
+			focuses = {
+			}
+		}
+		
+		#"---"={
+		#	history = "OTHER_GATHERING_STORM_DESC"
+		#}
 
 		# minors ####
+		
+		# (1) Equus
+		#  /$$$$$$$$  /$$$$$$  /$$   /$$ /$$   /$$  /$$$$$$ 
+		# | $$_____/ /$$__  $$| $$  | $$| $$  | $$ /$$__  $$
+		# | $$      | $$  \ $$| $$  | $$| $$  | $$| $$  \__/
+		# | $$$$$   | $$  | $$| $$  | $$| $$  | $$|  $$$$$$ 
+		# | $$__/   | $$  | $$| $$  | $$| $$  | $$ \____  $$
+		# | $$      | $$/$$ $$| $$  | $$| $$  | $$ /$$  \ $$
+		# | $$$$$$$$|  $$$$$$/|  $$$$$$/|  $$$$$$/|  $$$$$$/
+		# |________/ \____ $$$ \______/  \______/  \______/ 
+		# 
+		
 		"ERP"={
 		minor = yes
 			history = "ERP_GATHERING_STORM_DESC"
 			ideology = neutrality
+			label = { CSS_EquestriaFilter }
 			ideas = {
 				ERP_religion_crysis
 				ERP_overpopulation
@@ -108,7 +234,7 @@ bookmarks = {
 				ERP_fascism_final
 			}
 		}
-				"YAC"={
+		"YAC"={
 				minor = yes
 			history = "ers_YAK_GATHERING_STORM_DESC"
 			ideology = communism
@@ -128,6 +254,7 @@ bookmarks = {
 			minor = yes
 			history = "NEI_GATHERING_STORM_DESC"
 			ideology = fascism
+			label = { CSS_EquestriaFilter }
 			ideas = {
 				NEI_people_of_the_sun
 				NEI_priests_of_day_sent
@@ -140,24 +267,11 @@ bookmarks = {
 			}
 		}
 		
-		"UNC"={
-			minor = yes
-			history = "UNC_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-				UNC_monarchy
-				UNC_intelligents
-				UNC_workers
-			}
-			focuses = {
-				
-			}
-		}
-		
 		"ROK"={
 			minor = yes
 			history = "ROK_GATHERING_STORM_DESC"
 			ideology = fascism
+			label = { CSS_EquestriaFilter }
 			ideas = {
 				ROK_gunfighting
 				ROK_migration
@@ -173,6 +287,7 @@ bookmarks = {
 			minor = yes
 			history = "ers_CRY_GATHERING_STORM_DESC"
 			ideology = democratic
+			label = { CSS_EquestriaFilter }
 			ideas = {
 				CRY_crystal_state
 				CRY_pacifism
@@ -188,6 +303,7 @@ bookmarks = {
 			minor = yes
 			history = "PRA_GATHERING_STORM_DESC"
 			ideology = neutrality
+			label = { CSS_EquestriaFilter }
 			ideas = {
 				PRG_shors_idea
 				PRG_grimmler_idea
@@ -204,6 +320,7 @@ bookmarks = {
 			minor = yes
 			history = "VRX_GATHERING_STORM_DESC"
 			ideology = fascism
+			label = { CSS_EquestriaFilter }
 			ideas = {
 				VRX_military_hive
 				changelings_low_puppet
@@ -219,6 +336,7 @@ bookmarks = {
 			minor = yes
 			history = "LOS_GATHERING_STORM_DESC"
 			ideology = democratic
+			label = { CSS_EquestriaFilter }
 			ideas = {
 				LOS_petty_army
 				LOS_national_republicans
@@ -234,6 +352,7 @@ bookmarks = {
 			minor = yes
 			history = "STL_GATHERING_STORM_DESC"
 			ideology = communism
+			label = { CSS_EquestriaFilter }
 			ideas = {
 				STL_ers_equality
 			}
@@ -247,6 +366,7 @@ bookmarks = {
 			minor = yes
 			history = "CLT_GATHERING_STORM_DESC"
 			ideology = fascism
+			label = { CSS_EquestriaFilter }
 			ideas = {
 				CLT_cultists
 				CLT_no_ruling
@@ -260,6 +380,7 @@ bookmarks = {
 			minor = yes
 			history = "UNP_GATHERING_STORM_DESC"
 			ideology = neutrality
+			label = { CSS_EquestriaFilter }
 			ideas = {
 				UNP_plague
 			}
@@ -273,6 +394,7 @@ bookmarks = {
 			minor = yes
 			history = "MNH_GATHERING_STORM_DESC"
 			ideology = neutrality
+			label = { CSS_EquestriaFilter }
 			ideas = {
 				MNH_money_society_idea
 				MNH_fnf_leadership
@@ -286,6 +408,7 @@ bookmarks = {
 			minor = yes
 			history = "MNH_GATHERING_STORM_DESC"
 			ideology = communism
+			label = { CSS_EquestriaFilter }
 			ideas = {
 			    severe_famine
 				incomplete_industrialization
@@ -300,6 +423,7 @@ bookmarks = {
 			minor = yes
 			history = "MNH_GATHERING_STORM_DESC"
 			ideology = neutrality
+			label = { CSS_EquestriaFilter }
 			ideas = {
 				SVR_belaya_armiya
 				SVR_chorniy_baron
@@ -314,6 +438,7 @@ bookmarks = {
 			minor = yes
 			history = "MNH_GATHERING_STORM_DESC"
 			ideology = neutrality
+			label = { CSS_EquestriaFilter }
 			ideas = {
 			}
 			focuses = {

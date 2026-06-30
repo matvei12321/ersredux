@@ -1281,3 +1281,15 @@ FLC = {
 	color = rgb { 118 118 149 }
 	color_ui = rgb { 118 118 149 }
 }
+BDD = {
+	color = rgb { 208 147 57 }
+	color_ui = rgb { 208 147 57 }
+}
+KSR = {
+	color = rgb { 134 137 213 }
+	color_ui = rgb { 134 137 213 }
+}
+SVF = {
+	color = rgb { 146 161 33 }
+	color_ui = rgb { 146 161 33 }
+}

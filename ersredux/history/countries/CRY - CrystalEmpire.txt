@@ -6,10 +6,7 @@ set_research_slots = 3
 starting_train_buffer = 1
 
 set_technology = {
-	pony_race = 1
-	earthpony_race = 1
-	unicorn_race = 1
-	pegasi_race = 1
+	crystalpony_race = 1
 	melee_weapons = 1
 	melee_weapons1 = 1
 	pre_gw_artillery = 1

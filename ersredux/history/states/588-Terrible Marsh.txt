@@ -11,8 +11,8 @@ state={
 	buildings_max_level_factor=1.00
 
 	history={
-		owner = PRV
-		add_core_of = PRV
+		owner = BDD
+		add_core_of = BDD
 	}
 
 	resources={

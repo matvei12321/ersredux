@@ -1,6 +1,8 @@
 ﻿l_english:
 
  ##### PARTIES
+ UNC_alternative_right_party:0 "Schwesternschaft"
+ UNC_alternative_right_party_long:0 "Schwesternschaft"
 
  ##### CHARACTERS
  UNC_king_platinum:0 "King Ernest Platinum"
@@ -14,6 +16,7 @@
  UNC_trixie:0 "Trixis Le la moon"
  UNC_trixie_desc:0 ""It's not a good idea to bother the Great Trixis, the heiress of the mighty Le la Moon family. But if that's the king's will, then so be it, I'll do a couple of things for him.""
  UNC_victoria_ouren:0 "Victoria Ouren"
+ UNC_Gutriosa:0 "Gutriosa"
  
  UNC_field_marshal_1:0 "Shining Armor"
  UNC_field_marshal_2:0 "Marie Greytalon"

@@ -448,11 +448,15 @@ set_autonomy = {
 		autonomy_state = autonomy_dominion
 	}
 set_autonomy = {
-		target = PRV
+		target = BDD
 		autonomy_state = autonomy_dominion
 	}
 set_autonomy = {
 		target = FRO
+		autonomy_state = autonomy_dominion
+	}
+set_autonomy = {
+		target = SVF
 		autonomy_state = autonomy_dominion
 	}
 create_faction = imperial_federation

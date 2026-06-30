@@ -1,6 +1,8 @@
 ﻿l_russian:
 
  ##### PARTIES
+ UNC_alternative_right_party:0 "Западный союз"
+ UNC_alternative_right_party_long:0 "Западный союз"
 
  ##### CHARACTERS
  UNC_king_platinum:0 "Король Эрнест Платинум"
@@ -14,6 +16,7 @@
  UNC_trixie:0 "Триксис Ле-ла-мун"
  UNC_trixie_desc:0 ""Это совсем не дело - беспокоить Великую Триксис, наследницу могучего рода Ле-ла-мун. Но если такова воля короля, то так уж и быть, я сделаю ради него пару дел"."
  UNC_victoria_ouren:0 "Виктория Оурен"
+ UNC_Gutriosa:0 "Гутриоса"
  
  UNC_field_marshal_1:0 "Шайнинг Армор"
  UNC_field_marshal_2:0 "Мари Грейталон"

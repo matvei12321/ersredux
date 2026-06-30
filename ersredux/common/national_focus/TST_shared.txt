@@ -1,0 +1,748 @@
+### Политика
+
+### 200 лет регентства
+	shared_focus = {
+		id = TST_200_years_of_regency
+		icon = GFX_goal_BAT_Strike_Against_Political_Radicalism
+		cost = 5
+		allow_branch = {
+			AND = {
+				TST_trigger_start_focus_tree = yes
+			}
+		}
+		prerequisite = {
+		
+		}
+		available = {
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 14
+		y = 1
+		completion_reward = {
+		
+			country_event = {
+				id = tst.10
+				days = 1
+			}
+			add_political_power = 50
+			mark_focus_tree_layout_dirty = yes
+			
+		
+		}
+	}
+	
+### Выслушать крестьян
+	shared_focus = {
+		id = TST_listen_to_the_peasants
+		icon = GFX_BAT_The_Principle_Of_Cultural_Rejuvenation
+		relative_position_id = TST_200_years_of_regency
+		cost = 2
+		allow_branch = {
+			TST_trigger_start_focus_tree = yes
+		}
+		prerequisite = {
+		}
+		available = {
+			AND = {
+				has_completed_focus = TST_200_years_of_regency
+				NOT = {
+					AND = {
+						has_completed_focus = TST_listen_to_the_nobility
+						has_completed_focus = TST_listen_to_the_clergy
+					}
+				}
+			}
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = -5
+		y = 7
+		completion_reward = {
+		
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+
+		}
+	}
+	
+### Выслушать дворянство
+	shared_focus = {
+		id = TST_listen_to_the_nobility
+		icon = GFX_BAT_Aristocratic_Darwinism
+		relative_position_id = TST_200_years_of_regency
+		cost = 2
+		allow_branch = {
+			TST_trigger_start_focus_tree = yes
+		}
+		prerequisite = {
+		}
+		available = {
+			AND = {
+				has_completed_focus = TST_200_years_of_regency
+				NOT = {
+					AND = {
+						has_completed_focus = TST_listen_to_the_peasants
+						has_completed_focus = TST_listen_to_the_clergy
+					}
+				}
+			}
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 0
+		y = 2
+		completion_reward = {
+		
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.025
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.025
+			}
+
+		}
+	}
+	
+### Выслушать духовенство
+	shared_focus = {
+		id = TST_listen_to_the_clergy
+		icon = GFX_goal_BAT_The_Hierocratic_Model
+		relative_position_id = TST_200_years_of_regency
+		cost = 2
+		allow_branch = {
+			TST_trigger_start_focus_tree = yes
+		}
+		prerequisite = {
+		}
+		available = {
+			AND = {
+				has_completed_focus = TST_200_years_of_regency
+				NOT = {
+					AND = {
+						has_completed_focus = TST_listen_to_the_peasants
+						has_completed_focus = TST_listen_to_the_nobility
+					}
+				}
+			}
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 5
+		y = 7
+		completion_reward = {
+		
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.025
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.025
+			}
+
+		}
+	}
+	
+	### Освободить народную волю
+	shared_focus = {
+		id = TST_1
+		icon = GFX_goal_BAT_COM_rehablaw
+		relative_position_id = TST_200_years_of_regency
+		cost = 4
+		allow_branch = {
+			TST_trigger_start_focus_tree = yes
+		}
+		prerequisite = {
+		}
+		available = {
+			AND = {
+				has_completed_focus = TST_listen_to_the_peasants
+				count_triggers = {
+					amount = 2
+					has_completed_focus = TST_listen_to_the_peasants
+					has_completed_focus = TST_listen_to_the_nobility
+					has_completed_focus = TST_listen_to_the_clergy
+				}
+			}
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = -4
+		y = 6
+		completion_reward = {
+			TST_reduce_peasant_discontent = yes
+		}
+	}
+	
+	### Прогрессивный налог
+	shared_focus = {
+		id = TST_2
+		icon = GFX_BAT_demmeadow
+		relative_position_id = TST_200_years_of_regency
+		cost = 4
+		allow_branch = {
+			TST_trigger_start_focus_tree = yes
+		}
+		prerequisite = {
+		}
+		available = {
+			AND = {
+				has_completed_focus = TST_1
+				has_completed_focus = TST_4
+				has_completed_focus = TST_5
+				has_completed_focus = TST_9
+			}
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = -3
+		y = 5
+		completion_reward = {
+			add_ideas = TST_progressive_tax_idea
+		}
+	}
+	
+	### Отменить крепостничество
+	shared_focus = {
+		id = TST_3
+		icon = GFX_BAT_The_Peoples_Assembly
+		relative_position_id = TST_200_years_of_regency
+		cost = 4
+		allow_branch = {
+			TST_trigger_start_focus_tree = yes
+		}
+		prerequisite = {
+		}
+		available = {
+			AND = {
+				has_completed_focus = TST_1
+				has_completed_focus = TST_4
+				has_completed_focus = TST_5
+				has_completed_focus = TST_9
+			}
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = -2
+		y = 4
+		completion_reward = {
+			TST_reduce_peasant_discontent = yes
+		}
+	}
+	
+	### Дать дворянам привелегии
+	shared_focus = {
+		id = TST_4
+		icon = GFX_goal_BAT_fighting_on_the_homefront
+		relative_position_id = TST_200_years_of_regency
+		cost = 4
+		allow_branch = {
+			TST_trigger_start_focus_tree = yes
+		}
+		prerequisite = {
+		}
+		available = {
+			AND = {
+				has_completed_focus = TST_listen_to_the_nobility
+				count_triggers = {
+					amount = 2
+					has_completed_focus = TST_listen_to_the_peasants
+					has_completed_focus = TST_listen_to_the_nobility
+					has_completed_focus = TST_listen_to_the_clergy
+				}
+			}
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = -1
+		y = 3
+		completion_reward = {
+			TST_increase_peasant_discontent = yes
+		}
+	}
+	
+	### Нормы рабочего дня
+	shared_focus = {
+		id = TST_5
+		icon = GFX_BAT_A_Titan_Of_Industry_And_Productivity
+		relative_position_id = TST_200_years_of_regency
+		cost = 4
+		allow_branch = {
+			TST_trigger_start_focus_tree = yes
+		}
+		prerequisite = {
+		}
+		available = {
+			AND = {
+				has_completed_focus = TST_listen_to_the_peasants
+				count_triggers = {
+					amount = 2
+					has_completed_focus = TST_listen_to_the_peasants
+					has_completed_focus = TST_listen_to_the_nobility
+					has_completed_focus = TST_listen_to_the_clergy
+				}
+			}
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = -3	
+		y = 7
+		completion_reward = {
+			TST_reduce_peasant_discontent = yes
+			add_timed_idea = {
+			idea = TST_readjustment_of_economy
+			days = 365
+			}
+		}
+	}
+	
+	### Отобрать народных представителей
+	shared_focus = {
+		id = TST_6
+		icon = GFX_BAT_demtorch
+		relative_position_id = TST_200_years_of_regency
+		cost = 4
+		allow_branch = {
+			TST_trigger_start_focus_tree = yes
+		}
+		prerequisite = {
+		}
+		available = {
+			OR = {
+				AND = {
+					has_completed_focus = TST_2
+					has_completed_focus = TST_3
+				}
+				AND = {
+					has_completed_focus = TST_10
+					has_completed_focus = TST_14
+				}
+			}
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = -2
+		y = 6
+		completion_reward = {
+			TST_reduce_peasant_discontent = yes
+		}
+	}
+	
+	### Органичить власть церкви
+	shared_focus = {
+		id = TST_7
+		icon = GFX_goal_BAT_Temporal_Authority
+		relative_position_id = TST_200_years_of_regency
+		cost = 4
+		allow_branch = {
+			TST_trigger_start_focus_tree = yes
+		}
+		prerequisite = {
+		}
+		available = {
+			AND = {
+				has_completed_focus = TST_6
+				has_completed_focus = TST_8
+			}
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = -1
+		y = 5
+		completion_reward = {
+
+		}
+	}
+	
+	### Поощрять торговую деятельность
+	shared_focus = {
+		id = TST_8
+		icon = GFX_goal_BAT_cashcrop
+		relative_position_id = TST_200_years_of_regency
+		cost = 4
+		allow_branch = {
+			TST_trigger_start_focus_tree = yes
+		}
+		prerequisite = {
+		}
+		available = {
+			OR = {
+				AND = {
+					has_completed_focus = TST_2
+					has_completed_focus = TST_3
+				}
+				AND = {
+					has_completed_focus = TST_13
+					has_completed_focus = TST_16
+				}
+			}
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 0
+		y = 4
+		completion_reward = {
+
+		}
+	}
+	
+	### Выслушать дворянство
+	shared_focus = {
+		id = TST_9
+		icon = GFX_goal_BAT_literal_jizya
+		relative_position_id = TST_200_years_of_regency
+		cost = 4
+		allow_branch = {
+			TST_trigger_start_focus_tree = yes
+		}
+		prerequisite = {
+		}
+		available = {
+			AND = {
+				has_completed_focus = TST_listen_to_the_nobility
+				count_triggers = {
+					amount = 2
+					has_completed_focus = TST_listen_to_the_peasants
+					has_completed_focus = TST_listen_to_the_nobility
+					has_completed_focus = TST_listen_to_the_clergy
+				}
+			}
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 1
+		y = 3
+		completion_reward = {
+
+		}
+	}
+	
+	### Церковные школы для крестьян
+	shared_focus = {
+		id = TST_10
+		icon = GFX_goal_BAT_Federalise_School_Districts
+		relative_position_id = TST_200_years_of_regency
+		cost = 4
+		allow_branch = {
+			TST_trigger_start_focus_tree = yes
+		}
+		prerequisite = {
+		}
+		available = {
+			AND = {
+				has_completed_focus = TST_1
+				has_completed_focus = TST_5
+				has_completed_focus = TST_17
+				has_completed_focus = TST_18
+			}
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = -1
+		y = 7
+		completion_reward = {
+
+		}
+	}
+	
+	### Выслушать дворянство
+	shared_focus = {
+		id = TST_11
+		icon = GFX_goal_BAT_Naturalisation_Policies
+		relative_position_id = TST_200_years_of_regency
+		cost = 4
+		allow_branch = {
+			TST_trigger_start_focus_tree = yes
+		}
+		prerequisite = {
+		}
+		available = {
+			AND = {
+				has_completed_focus = TST_6
+				has_completed_focus = TST_15
+			}
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 0
+		y = 6
+		completion_reward = {
+
+		}
+	}
+	
+	### Ужесточить крепостничество
+	shared_focus = {
+		id = TST_12
+		icon = GFX_goal_BAT_Delegalise_Miscegenation
+		relative_position_id = TST_200_years_of_regency
+		cost = 4
+		allow_branch = {
+			TST_trigger_start_focus_tree = yes
+		}
+		prerequisite = {
+		}
+		available = {
+			AND = {
+				has_completed_focus = TST_8
+				has_completed_focus = TST_15
+			}
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 1
+		y = 5
+		completion_reward = {
+
+		}
+	}
+	
+	### Одарить церковь привелегиями
+	shared_focus = {
+		id = TST_13
+		icon = GFX_goal_BAT_The_Ecumenical_Presidency
+		relative_position_id = TST_200_years_of_regency
+		cost = 4
+		allow_branch = {
+			TST_trigger_start_focus_tree = yes
+		}
+		prerequisite = {
+		}
+		available = {
+			AND = {
+				has_completed_focus = TST_4
+				has_completed_focus = TST_9
+				has_completed_focus = TST_17
+				has_completed_focus = TST_18
+			}
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 2
+		y = 4
+		completion_reward = {
+			TST_increase_peasant_discontent = yes
+		}
+	}
+	
+	### Народные проповедники
+	shared_focus = {
+		id = TST_14
+		icon = GFX_goal_BAT_COM_pray
+		relative_position_id = TST_200_years_of_regency
+		cost = 4
+		allow_branch = {
+			TST_trigger_start_focus_tree = yes
+		}
+		prerequisite = {
+		}
+		available = {
+			AND = {
+				has_completed_focus = TST_1
+				has_completed_focus = TST_5
+				has_completed_focus = TST_17
+				has_completed_focus = TST_18
+			}
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 1
+		y = 7
+		completion_reward = {
+
+		}
+	}
+	
+	### Совет архиепископов
+	shared_focus = {
+		id = TST_15
+		icon = GFX_goal_BAT_COM_family
+		relative_position_id = TST_200_years_of_regency
+		cost = 4
+		allow_branch = {
+			TST_trigger_start_focus_tree = yes
+		}
+		prerequisite = {
+		}
+		available = {
+			OR = {
+				AND = {
+					has_completed_focus = TST_10
+					has_completed_focus = TST_14
+				}
+				AND = {
+					has_completed_focus = TST_13
+					has_completed_focus = TST_16
+				}
+			}
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 2
+		y = 6
+		completion_reward = {
+
+		}
+	}
+	
+	### Больше верующих среди знати
+	shared_focus = {
+		id = TST_16
+		icon = GFX_BAT_A_Shining_Beacon_Of_Prosperity
+		relative_position_id = TST_200_years_of_regency
+		cost = 4
+		allow_branch = {
+			TST_trigger_start_focus_tree = yes
+		}
+		prerequisite = {
+		}
+		available = {
+			AND = {
+				has_completed_focus = TST_4
+				has_completed_focus = TST_9
+				has_completed_focus = TST_17
+				has_completed_focus = TST_18
+			}
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 3
+		y = 5
+		completion_reward = {
+
+		}
+	}
+	
+	### Ввести еженедельную проповедь
+	shared_focus = {
+		id = TST_17
+		icon = GFX_goal_BAT_COM_moonbook
+		relative_position_id = TST_200_years_of_regency
+		cost = 4
+		allow_branch = {
+			TST_trigger_start_focus_tree = yes
+		}
+		prerequisite = {
+		}
+		available = {
+			AND = {
+				has_completed_focus = TST_listen_to_the_clergy
+				count_triggers = {
+					amount = 2
+					has_completed_focus = TST_listen_to_the_peasants
+					has_completed_focus = TST_listen_to_the_nobility
+					has_completed_focus = TST_listen_to_the_clergy
+				}
+			}
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 3
+		y = 7
+		completion_reward = {
+
+		}
+	}
+	
+	### Уменьшить церковный налог
+	shared_focus = {
+		id = TST_18
+		icon = GFX_goal_BAT_Maintain_Clerical_Autonomy
+		relative_position_id = TST_200_years_of_regency
+		cost = 4
+		allow_branch = {
+			TST_trigger_start_focus_tree = yes
+		}
+		prerequisite = {
+		}
+		available = {
+			AND = {
+				has_completed_focus = TST_listen_to_the_clergy
+				count_triggers = {
+					amount = 2
+					has_completed_focus = TST_listen_to_the_peasants
+					has_completed_focus = TST_listen_to_the_nobility
+					has_completed_focus = TST_listen_to_the_clergy
+				}
+			}
+		}
+		mutually_exclusive = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 4
+		y = 6
+		completion_reward = {
+
+		}
+	}
+	

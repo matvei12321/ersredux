@@ -1,6 +1,16 @@
 ﻿l_english:
  #loading text replacement
  
+ anarchism:0 "§OAnarchism§!"
+ anarchism_noun:0 "§OAnarchism§!"
+ anarchism_desc:0 "Anarchic regime"
+ communism:0 "§RMarxism-Stallionism§!"
+ communism_noun:0 "§RMarxism-Stallionism§!"
+ communism_desc:0 " Socialist regime"
+ democratic_socialism:0 "§RДемократический социализм§!"
+ democratic_socialism_noun:0 "§RДемократический социализм§!"
+ democratic_socialism_desc:0 "Демократический социалистический режим"
+ 
  democratic:0 "§CLiberal Utopianism§!"
  democratic_noun:0 "§CLiberal Utopianism§!"
  democratic_desc:0 "Liberal Utopian Regime"
@@ -11,21 +21,16 @@
  social_utopia_noun:0 "§9Social Utopia§!"
  social_utopia_desc:0 "Social Utopia Regime"
  
- fascism:0 "§Superiority§!"
- fascism_noun:0 "§Superiority§!"
- fascism_desc:0 "1Superiority Regime"
  
- communism:0 "§RCommunism§!"
- communism_noun:0 "§RCommunism§!"
- communism_desc:0 "Socialist Regime"
- 
- neutrality:0 "§gAutocracy§!"
- neutrality_noun:0 "§gAutocracy§!"
- neutrality_desc:0 "gAutocracy Regime"
- 
- anarchism:0 "§OAnarchism§!"
- anarchism_noun:0 "§OAnarchism§!"
- anarchism_desc:0 "Anarchic regime"
+ neutrality:0 "§gAuthoritarian§!"
+ neutrality_noun:0 "§gAuthoritarian§!"
+ neutrality_desc:0 "Authoritarian Regime"
+ fascism:0 "§1Autocracy§!"
+ fascism_noun:0 "§1Autocracy§!"
+ fascism_desc:0 "Autocracy Regime"
+ alternative_right:0 "§Alternative Right§!"
+ alternative_right_noun:0 "§Alternative Right§!"
+ alternative_right_desc:0 "1Alternative Right Regime"
  
  HIP_neutrality_party:0 "Aris Defense Committee"
  HIP_neutrality_party_long:0 "Aris Defense Committee"
@@ -68,6 +73,70 @@
  
  ################################################################3
  
+#Anarchism
+ anarchism:0 "Anarchism"
+ anarchism_desc:0 "§YAnarchism§! is a rejection of all authority. It advocates the division of society into self-governing collectives instead of a single centralized state."
+ 
+ anarchist_communism:0 "Anarcho-communism"
+ anarchist_communism_desc:0 "For §Yanarcho-communists§!, communism is a classless society without a state. They dislike the idea of ​​a transitional socialist state, and advocate a society based on voluntary ties and mutual aid."
+ 
+#Alternative Left
+ alternative_left:0 "Alt-Left"
+ alternative_left_desc:0 "§Alt-Left§! ideologies promote a direction for socialism in the world, emphasisisng the role of the leaders as the core ideal of the nation, while ambadoning or even denial the Marksist-Stallionist ideas of proletarian democracy and a classless society. They often use nationalist and militarist rhetoric and policies."
+ 
+ juche:0 "Ultratyrannical Socialism"
+ juche_desc:0 "The ideology of §Yultratyrannical Socialism§! is the belief that the masses cannot regulate themselves, but must be ruled by a "Great Leader" who is the inspiration of the working class. The Great Leader is flawless and never makes mistakes, is always benevolent, and always rules the masses wisely. The army is the greatest of all institutions, ruled by the Great Leader."
+ 
+ oligarchical_collectivism:0 "Oligarchic Collectivism"
+ oligarchical_collectivism_desc:0 "The political theory of §Yoligarchy Collectivism§! was developed by the Socialist Party of the New Mareland, also known as MARESOC. This ideology seeks to realize communist ideals by placing the means of production in the hands of a select group of bureaucrats who manage them on behalf of the people. This bureaucracy is a rigid hierarchical and meritocratic structure, in which deviation from the ideology of the party is not tolerated. In oligarchic collectivism, there is no concept of past or future, there is only the present, and all social achievements are based solely on adherence to the purity of the ideas of the party. The only goal of oligarchic collectivism is power."
+ 
+ equalism:0 "Equalism"
+ equalism_desc:0 "Based on the original ideas of Starlight Glimmer, §Yequalism§! seeks to reform society by reducing everyone to a single value. When society is the same for everyone, then it will find itself in a true utopia. After all, you won't have nightmares if you never dream."
+ 
+ rozenkampism:0 "Rosenkampism"
+ rozenkampism_desc:0 "A radical populist, anti-capitalist and nationalist ideology. §YRosenkampism§! seeks to create a strong, all-encompassing state to achieve national revolution and eliminate both the capitalist bourgeoisie and any foreign elements that dilute the "purity" of the nation and its people."
+ 
+ poltopism:0 "Pollopism"
+ pollopism_desc:0 "A rather eclectic mix where radical leftist ideas (like Marxism) are bizarrely intertwined with extreme nationalism and voluntarist, sometimes cruel practical steps"
+ 
+ gold_muffinism:0 "Gold Muffinism"
+ gold_muffinism_desc:0 "an ultra-left variant of syndicalism, a political and economic doctrine based on the ideas of national unity, social justice and solidarity of all working strata of society."
+ 
+#Marxism Stallionism
+ marxism:0 "Marxism"
+ marxism_desc:0 "§YMarxists§! rely on the teachings of the political activist Caramel Marx. Class struggle and the need to move to a society based on public ownership of the means of production characterize this ideology. Marxist societies claim to fight the capitalist exploitation of the working class, usually through a centrally planned economy. If democracy is present in a Marxist state, it is usually defective, since it only allows political activity to other socialist parties or groups."
+ 
+ leninism:0 "Vanguard socialism"
+ leninism_desc:0 "§YVanguard socialism§! seeks to create a socialist state with a vanguard party leading the revolution, with the primary goal of overthrowing capitalist society. The party controls the entire system, and there is open debate when making decisions. This form of communism includes elections of party leaders."
+ 
+ stalinism:0 "Stallionism"
+ stalinism_desc:0 "The ideology of §Ystallionism§! uses and develops Marxist-Equestrian socialist policies. It emphasizes the importance of rapid industrialization and collectivization, as well as the need to create a strong and authoritarian socialist state to eliminate any counter-revolutionary elements. The name of this ideology is based on the harsh, but probably necessary policies of Steel Stallion, who led the Winter Revolution against the Equestrian monarchy."
+ 
+ anti_revisionism:0 "Anti-revisionism"
+ anti_revisionism_desc:0 "§YAnti-revisionism§! is a reaction to the many ideologies that claim to be the successors of Marxism, and seeks to adhere to the core tenets of the original revolutionary theory. It generally opposes the incorporation of capitalist economic elements into socialist systems, and is hostile to communist states that deviate from orthodox Marxism, considering them to be "state capitalist" and "social imperialist". This hostility complicates interactions between anti-revisionists and other Marxist movements."
+ 
+ dengism:0 "Market socialism"
+ dengism_desc:0 "Like other varieties of socialism, market socialism supports public or shared ownership, but at the same time preserves the competitive system of the free market. Some private companies are also allowed to exist, but on condition that most of the enterprise remains in collective ownership, as well as with certain economic planning. Profits are either transferred to the state or distributed to employees or the general public."
+ 
+ socialist_monarchism:0 "Socialist Monarchism"
+ socialist_monarchism_desc:0 "§YSocialist Monarchism§! is a strange system that combines a socialist economy with a hereditary head of state such as emperor, king, or queen. Many more orthodox Marxists condemn such states and do not consider them to be truly socialist, pointing to the conservative and inegalitarian nature of the monarchy, as well as the fact that most of these states arose as a result of reforms rather than revolution."
+ 
+ technosocialism:0 "Socialist futurism"
+ technosocialism_desc:0 "Many socialists have written about the civilizational transformation that will occur after the construction of a true post-deficit communism. Regimes that belong to socialist futurism are not waiting for this transformation, but are actively working to achieve this goal right now. Socialist futurists combine the ideas of technocracy, communism, optimistic dreams of the future and social engineering, which is why they usually take an even more revolutionary position on culture than other socialists."
+ 
+#Democratic Socialism
+ democratic_socialism:0 "Democratic Socialism"
+ democratic_socialism_desc:0 "§YDemocratic Socialism§! is a left-wing ideology that seeks to preserve democratic institutions while abolishing private property, as it believes capitalism is incompatible with true freedom and equality."
+ 
+ syndicalism:0 "Syndicalism"
+ syndicalism_desc:0 "§YSyndicalism§! is a left-wing ideology that advocates self-organization by local workers and the advancement of socialism through strikes. Their ultimate goal is to replace the central state with a "federation" of trade unions and other social organizations. It is distinct from Marxism, and often battles with it for dominance on the left. Where Marxism tends to see a strong state as necessary to advance workers' interests, syndicalism sees it as another form of tyranny, and argues that any significant change must come through direct popular action."
+ 
+ primitive_communism:0 "Agrarian Socialism"
+ primitive_communism_desc:0 "§YAgrarian Socialism§! advocates the construction of a peaceful, traditional, rural society, where property is collectively owned by all villagers and all important decisions are made by peasant councils. Certain forms of agrarian socialism may also emerge in less developed societies."
+ 
+ religious_socialism:0 "Religious Socialism"
+ religious_socialism_desc:0 "§YTheocratic Socialism§! is based on religious values. It views capitalism as idolatry and a sin that contradicts the teachings of religious leaders. According to proponents of this ideology, the gods wanted all living beings to be equal and not to oppress each other."
+ 
  harmonic_constitutionalism:0 "Democratic Monarchism"
  harmonic_constitutionalism_desc:0 "§YDemocratic Monarchism§! is a utopian ideology that combines republican and monarchical elements. The most common example is a constitutional monarchy. The monarch plays a limited role and controls a democratically elected parliament. But this ideology is often not very balanced. For example, if it leans too much towards republicanism, it becomes a ceremonial monarchy."
  liberalism:0 "Utopian Republicanism"
@@ -80,37 +149,6 @@
  harmonic_libertarianism_desc:0 "§YUtopian Libertarianism§! is a philosophy that holds liberty as a key principle and seeks to protect the rights of individual citizens in accordance with utopian ideals. The state governs the country in partnership with the people through a democratic form of government."
  harmonic_magocracy:0 "Utopian Magocracy"
  harmonic_magocracy_desc:0 "§YMagocracy§! is a regime of spellcasters, often unicorns. In this regime, magical talent is the most valuable trait among the population. In a magocracy, a peasant with magical ability can quickly become a member of the upper class of society. In a utopian magocracy, the rule of the mages is very benevolent, and they act as caretakers of the common people."
- 
- marxism:0 "Marxism"
- marxism_desc:0 "§YMarxists§! rely on the teachings of the political activist Caramel Marx. Class struggle and the need to move to a society based on public ownership of the means of production characterize this ideology. Marxist societies claim to fight the capitalist exploitation of the working class, usually through a centrally planned economy. If democracy is present in a Marxist state, it is usually defective, since it only allows political activity to other socialist parties or groups."
- leninism:0 "Novosocialism"
- leninism_desc:0 "§YNovosocialism§! seeks to create a socialist state with a vanguard party leading the revolution, with the primary goal of overthrowing capitalist society. The party controls the entire system, and there is open debate when making decisions. This form of communism includes elections of party leaders."
- stalinism:0 "Stallionism"
- stalinism_desc:0 "The ideology of §Ystallionism§! uses and develops Marxist-Equestrian socialist policies. It emphasizes the importance of rapid industrialization and collectivization, as well as the need to create a strong and authoritarian socialist state to eliminate any counter-revolutionary elements. The name of this ideology is based on the harsh, but probably necessary policies of Steel Stallion, who led the Winter Revolution against the Equestrian monarchy."
- anti_revisionism:0 "Anti-revisionism"
- anti_revisionism_desc:0 "§YAnti-revisionism§! is a reaction to the many ideologies that claim to be the successors of Marxism, and seeks to adhere to the core tenets of the original revolutionary theory. It generally opposes the incorporation of capitalist economic elements into socialist systems, and is hostile to communist states that deviate from orthodox Marxism, considering them to be "state capitalist" and "social imperialist". This hostility complicates interactions between anti-revisionists and other Marxist movements."
- anarchist_communism:0 "Anarcho-communism"
- anarchist_communism_desc:0 "For §Yanarcho-communists§!, communism is a classless society without a state. They dislike the idea of ​​a transitional socialist state, and advocate a society based on voluntary ties and mutual aid."
- primitive_communism:0 "Agrarian Socialism"
- primitive_communism_desc:0 "§YAgrarian Socialism§! advocates the construction of a peaceful, traditional, rural society, where property is collectively owned by all villagers and all important decisions are made by peasant councils. Certain forms of agrarian socialism may also emerge in less developed societies."
- oligarchical_collectivism:0 "Oligarchic Collectivism"
- oligarchical_collectivism_desc:0 "The political theory of §Yoligarchy Collectivism§! was developed by the Socialist Party of the New Mareland, also known as MARESOC. This ideology seeks to realize communist ideals by placing the means of production in the hands of a select group of bureaucrats who manage them on behalf of the people. This bureaucracy is a rigid hierarchical and meritocratic structure, in which deviation from the ideology of the party is not tolerated. In oligarchic collectivism, there is no concept of past or future, there is only the present, and all social achievements are based solely on adherence to the purity of the ideas of the party. The only goal of oligarchic collectivism is power."
- equalism:0 "Equalism"
- equalism_desc:0 "Based on the original ideas of Starlight Glimmer, §Yequalism§! seeks to reform society by reducing everyone to a single value. When society is the same for everyone, then it will find itself in a true utopia. After all, you won't have nightmares if you never dream."
- rozenkampism:0 "Rosenkampism"
- rozenkampism_desc:0 "A radical populist, anti-capitalist and nationalist ideology. §YRosenkampism§! seeks to create a strong, all-encompassing state to achieve national revolution and eliminate both the capitalist bourgeoisie and any foreign elements that dilute the "purity" of the nation and its people."
- democratic_socialism:0 "Democratic Socialism"
- democratic_socialism_desc:0 "§YDemocratic Socialism§! is a left-wing ideology that seeks to preserve democratic institutions while abolishing private property, as it believes capitalism is incompatible with true freedom and equality."
- syndicalism:0 "Syndicalism"
- syndicalism_desc:0 "§YSyndicalism§! is a left-wing ideology that advocates self-organization by local workers and the advancement of socialism through strikes. Their ultimate goal is to replace the central state with a "federation" of trade unions and other social organizations. It is distinct from Marxism, and often battles with it for dominance on the left. Where Marxism tends to see a strong state as necessary to advance workers' interests, syndicalism sees it as another form of tyranny, and argues that any significant change must come through direct popular action."
- socialist_monarchism:0 "Socialist Monarchism"
- socialist_monarchism_desc:0 "§YSocialist Monarchism§! is a strange system that combines a socialist economy with a hereditary head of state such as emperor, king, or queen. Many more orthodox Marxists condemn such states and do not consider them to be truly socialist, pointing to the conservative and inegalitarian nature of the monarchy, as well as the fact that most of these states arose as a result of reforms rather than revolution."
- religious_socialism:0 "Religious Socialism"
- religious_socialism_desc:0 "§YTheocratic Socialism§! is based on religious values. It views capitalism as idolatry and a sin that contradicts the teachings of religious leaders. According to proponents of this ideology, the gods wanted all living beings to be equal and not to oppress each other."
- juche:0 "Ultratyrannical Socialism"
- juche_desc:0 "The ideology of §Yultratyrannical Socialism§! is the belief that the masses cannot regulate themselves, but must be ruled by a "Great Leader" who is the inspiration of the working class. The Great Leader is flawless and never makes mistakes, is always benevolent, and always rules the masses wisely. The army is the greatest of all institutions, ruled by the Great Leader."
- dengism:0 "Pragmasocialism"
- dengism_desc:0 "§YPragmasocialism§! describes the construction of "developing socialism" - socialism that is only developing and not ready for final construction. Pragmasocialism puts pragmatism above all else and considers an open market economy vital for modernization and economic growth, while maintaining the primacy of the ruling party. Its opponents call this ideology a blatant form of state capitalism and are confident that pragmasocialism cannot be considered true socialism."
  
  nazism:0 "Autocracy"
  nazism_desc:0 "In an §Yautocracy§!, one individual (often a monarch) wields absolute power. An autocratic state often has great success in suppressing dissident and rebellious ideas. Autocrats typically seek to increase their personal power and wealth through expansionist policies."
@@ -150,8 +188,6 @@
  esotericism_desc:0 "While most authoritarian governments seek power primarily for its own sake, the same cannot be said of esoteric authoritarians. This ideology is not a specific political movement; it is a classification of governments that wish to establish a national cult in their country. They are fanatically loyal to a set of mystical and perhaps even insane ideals. Their views are so radical that it is difficult to imagine how such beings managed to come to power in the first place."
  surveillance_state:0 "Surveillance State"
  surveillance_state_desc:0 "While nearly all supremacist regimes monitor their populations, surveillance states take surveillance to new heights. They seek to catalog every personal relationship, every business transaction, and ultimately every thought of their subjects in order to maximize efficiency and preempt threats. The paranoia of leaders quickly spreads to all levels of society, since anyone can be an informant. But is it really paranoia if you're actually being watched?"
- celestial_cult:0 "Celestial Cult"
- celestial_cult_desc:0 "For a thousand years, the immortal alicorns ruled Equestria. With their magic, wisdom, and incredible experience accumulated over thousands of years, they ensured harmony in Equestria and allowed the little ponies to live freely, ignoring the dangers of the world. However, this also increased Equestria's dependence on the princesses. After their disappearance, Equestria was left without leadership. But some still believe that the princesses are out there somewhere, and that one day they will return and boldly lead Equestria forward. All these rumors, theories, hypotheses, and misconceptions have fallen upon the new princess of Equestria, and now the Celestia Regent, Twilight Sparkle. \n\nThe former home of the ponies, the birthplace of the magic of friendship, has become something else entirely. Now it is held together by fear, nostalgia, and a fierce hatred for all potential enemies Celestia and her little ponies. The Celestia cult's sole purpose is to hasten the return of the alicorns to Equestria. To this end, the regent and her followers are willing to mobilize all of Equestria's resources to hasten Celestia's return. They hope that the princess will return once the regent and her ponies have learned enough lessons in friendship to prove themselves worthy of her favor.\n\nThe Celestia cult's followers are willing to systematically eliminate any opposition to their vision of Equestria in general and Celestia in particular. They also force friendship on everyone and build grandiose monuments to "friendship," "harmony," or Celestia. Their system of surveillance and brutal punishment is inspired by, if not copied from, a very marginal group in New Mareland.\n\nHowever, the long-term stability of this regime is unclear. With each day that passes without Celestia's return, the cult, its followers, and even Celestia herself The regent is becoming increasingly desperate. They fear that very soon there will be no Equestria to which Celestia can return."
  
  despotism:0 "Despotism"
  despotism_desc:0 "§YDespotism§! is an ancient form of government in which all absolute power is wielded by a single individual, usually a hereditary monarch. However, the ruler's policies are usually moderate and conservative, as the leader seeks to maintain the status quo."
@@ -159,8 +195,6 @@
  oligarchism_desc:0 "§YOligarchy§! is a form of government in which absolute power is wielded by a small group of privileged individuals, such as aristocrats, merchants, or chieftains. They care for little other than maintaining their own power and prestige."
  centrism:0 "Centrism"
  centrism_desc:1 "Centrists avoid both the political extremes of the left and right, promoting moderate and pragmatic reforms aimed at compromise. While centrists are often found in republics, they are also common in constitutional monarchies."
- anarchism:0 "Anarchism"
- anarchism_desc:0 "§YAnarchism§! is a rejection of all authority. It advocates the division of society into self-governing collectives instead of a single centralized state."
  technocracy:0 "Technocracy"
  technocracy_desc:0 "§YTechnocracy§! is a system of government in which decision makers are selected based on their expertise, preferably scientific or technical. While this is the opposite of democracy, it does not necessarily mean the elimination of elected representatives. But leaders are judged by their expertise, not their political affiliation. A technocratic government attempts to use the scientific method to solve social problems, and uses logic and calculation to find the most rational solution to any problem based on the information available."
  libertarianism:0 "Libertarianism"

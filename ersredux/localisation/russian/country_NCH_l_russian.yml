@@ -1,0 +1,103 @@
+﻿l_russian:
+
+ NGC_the_chair:0 "Стул"
+ NGC_the_chair1:0 "Стул"
+ NGC_the_chair2:0 "Стул"
+ NGC_the_chair3:0 "Стул"
+ NGC_the_chair4:0 "Стул"
+ NGC_the_chair5:0 "Стул"
+ 
+ 
+ 
+ 
+ NGC_Elizabeth_Green:0 "Элизабет Грин" 
+ NGC_Elizabeth_Green_desc:0 "Говорят если слишком долго глядеть в темноту, то можно увидеть чужие взгляды...\n\n§FЭлизабет Грин§! не только положила конец шпионам Речки, но и перешла в контрнаступление. Под её руководством Гринклив смог заполучить лояльные пешки в Речной Федерации которые добровольно лобируют интересы маленького государства. В тоже время, на родине любая оппозиция уничтожается в самом зародыше, оставляя лишь лояльность и верность королеве " 
+ NCH_baron_of_terror:0 "Руководитель §FЧерного крыла§! " 
+ 
+ NGC_ambassadorS:0  "" 
+ NGC_ambassadorS_desc:0 "§PВ отличие от смертных,§! §Rу нас достаточно времени для скучного ожидания§!" 
+ NCH_ambassador:0 "§DПосол§! " 
+ 
+ NCH_Soviet:0  "Зили" 
+ NCH_Soviet_desc:0 "" 
+ NCH_economist:0  "казначей совета" 
+ 
+ 
+ NCH_minister_of_defense:0  "Министр обороны" 
+ NCH_armaments_organizer:0 "Министр военпрома"
+ 
+ NCH_royal_dictator:0 "Власть совета" 
+ NCH_royal_dictator_desc:0 "На данный момент у королевы есть более важные дела чем жалкие бюрократические проблемы. Временно власть находится в копытах совета" 
+ OIREN_POLITICS_DESC:0 "Что есть Гринклиф без королевы? Мы можем спокойно представить себе государство без столицы, армии, истории. Но представить наш маленький остров без королевы- невозможно." 
+ 
+ NCH_Advice_NC:0 "Где же Ойрен? "
+ NCH_Advice_NC_desc:0 "Глупые слухи об смерти Ойрен является лишь ложью (хотя то что её не видели целый год, заставляет задуматься"
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ #Партии нач
+ NCH_neutrality_NAME_LONG:0 "----Центр----"
+ NCH_neutrality_NAME_SHORT:0 "----Центр----" 
+
+ NCH_fascism_NAME_LONG:0 "§R----Зачищено----§!" 
+ NCH_fascism_NAME_SHORT:0 "§R----Зачищено----§!"
+
+ NCH_communism_NAME_LONG:0 "§R----Запрещено----§!"
+ NCH_communism_NAME_SHORT:0 "§R----Запрещено----§!"
+
+ NCH_democratic_NAME_LONG:0 "§R----Предатели§----!"
+ NCH_democratic_NAME_SHORT:0 "§R----Предатели----§!"
+ 
+ 
+NCH_Dream_idea:0 "В память о 724"
+NCH_Turnip_idea:0 "Репный геноцид"
+NCH_Fish_idea:0 "Война за рыбу"
+NCH_Cult_of_the_Lamb:0 "Древнии верования"
+NCH_Cult_of_the_Lamb_desc:0 "§4Грехи,§! §WСтрахи,§! §tВерность,§!§GПросветление,§!§AСотни пастырей,§! §Pчетыре веры,§! §gодна королева§!   \n\n§gНу же Ойрен, сделай же шаг к своей судьбе! Сделай и наконец-то очистити Гринклив от лжи!"
+ ### GOVERNMENT ###
+ Treaty_of_Greencliffe:0 "Гринклиф"
+ #LEADERS
+ NCH_queen_gytha:0 "Королева Гита"
+ NCH_feilean_of_clann_leamhan:0 "Фелан из Клана Леамхана"
+ NCH_oiren_of_oir:0 "Ойрен из Ойра"
+ NCH_queen_oiren:0 "Королева Ойрен"
+ NCH_cader_sclerite:0 "Кейдер Склерит"
+
+ #GENERALS
+ NCH_feilean:0 "Фейлеан"
+ NCH_airann:0 "Эйранн"
+ NCH_garran_of_leamhan:0 "Гарран из Леамхана"
+
+ #ADVISORS
+ NCH_navy_chief_1:0 "Адмирал Пойтгилс"
+ NCH_navy_chief_2:0 "Адмирал Фаллон"
+
+ #DESIGNERS
+ NCH_KLA:0 "KLAA AG"
+ NCH_generic_tank_manufacturer:0 "Бюро на нГлюиштан"
+ 
+ NCH_motorised:0 "Бюро на нГлюиштан"
+
+ longchlois:0 "Лонкхлойс Блосмпорт"
+ NCH_freemare:0 "ООО Автомашины ФМ"
+
+ NCH_greda:0 "СпО ГредаБлосмпорт"
+ NCH_reichswaffen:0 "ОАО Рейхсваффен"
+ NCH_waffenhauser:0 "ОК Гринклиф"
+
+ NCH_generic_light_aircraft_manufacturer:0 "Ойфиг на Эйтлиохт"
+ NCH_generic_medium_aircraft_manufacturer:0 "CNIH"
+ NCH_generic_heavy_aircraft_manufacturer:0 "Сердланн MóA"
+ NCH_generic_naval_aircraft_manufacturer:0 "CAdA"
+
+ NCH_generic_infantry_equipment_manufacturer:0 "Лоханн Лидад"
+
+ NCH_generic_industrial_concern:0 "Промышленная компания"
+ NCH_generic_electronics_concern:0 "Компания электроники"
