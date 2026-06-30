@@ -9,52 +9,53 @@
 
 ideologies = {
      
-	communism = {
+	alternative_right = {
 		types = {
-
-			
-			marxism = {
+			alternative_right_ideology = {
 			}
-			leninism = {
-			}
-			stalinism = {
-			}
-			anti_revisionism = {
+			ultranationalism = {
 				can_be_randomly_selected = no
 			}
-			socialist_monarchism = {
+			neofeudalism = {
 				can_be_randomly_selected = no
 			}
-			dengism = {
+			fundamentalism = {
+				can_be_randomly_selected = no
+			}
+			reformisten = {
 				can_be_randomly_selected = no
 			}
 		}
 
 		dynamic_faction_names = {
-			"FACTION_NAME_COMMUNISM_1"
-			"FACTION_NAME_COMMUNISM_2"
-			"FACTION_NAME_COMMUNISM_3"
-			"FACTION_NAME_COMMUNISM_4"
-			"FACTION_NAME_COMMUNISM_5"
+			
 		}
-		color = { 160 00 00 }
+
+		color = { 0 0 0 }
+
+		war_impact_on_world_tension = 1.0			#evil!
+		faction_impact_on_world_tension = 1.0
+
 		rules = {
-			can_force_government = yes
-			can_send_volunteers = yes
-			can_puppet = yes
+			can_force_government = no
+			can_send_volunteers = no
+			can_puppet = no
 		}
-		can_collaborate = yes
-		war_impact_on_world_tension = 0.25    #change
-		faction_impact_on_world_tension = 0.1 #change
+
+		can_collaborate = no
+
 		modifiers = {
-			civilian_intel_to_others = 20.0
+			justify_war_goal_when_in_major_war_time = -0.80
+			civilian_intel_to_others = 15.0
 			army_intel_to_others = 10.0
-			navy_intel_to_others = 20.0
-			airforce_intel_to_others = 2
+			navy_intel_to_others = 10.0
+			airforce_intel_to_others = 10.0
+			hidden_modifier = { join_faction_tension = -0.1 }
+			embargo_cost_factor = 1
+			lend_lease_tension = 0.50
 		}
-		can_host_government_in_exile = no		
-		faction_modifiers = {}
-		can_be_boosted = yes
-		ai_communist = yes
+
+		ai_fascist = yes # uses the fascist AI behaviour
+		ai_ideology_wanted_units_factor = 1.65
 	}
 }

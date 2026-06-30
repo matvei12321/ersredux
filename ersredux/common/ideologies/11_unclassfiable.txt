@@ -9,48 +9,44 @@
 
 ideologies = {
      
-	anarchism = {
+	unclassifiable = {
 		types = {
-			anarchism_ideology = {
+			unclassifiable_ideology = {
 			}
-			anarchist_communism = {} 
-			anarcho_capitalism = {
-			}
-			total_anarchism  = {
+			esotericism = {
 				can_be_randomly_selected = no
 			}
 		}
 
 		dynamic_faction_names = {
-			"FACTION_NAME_ANARCHISM_1"
-			"FACTION_NAME_ANARCHISM_2"
-			"FACTION_NAME_ANARCHISM_3"
-			"FACTION_NAME_ANARCHISM_4"
-			"FACTION_NAME_ANARCHISM_5"
+			
 		}
-		
-		color = { 164 148 110 }
 
-		war_impact_on_world_tension = 1.0
-		faction_impact_on_world_tension = 0.5
+		color = { 255 255 255 }
+
+		war_impact_on_world_tension = 1.0			#evil!
+		faction_impact_on_world_tension = 1.0
 
 		rules = {
 			can_force_government = no
-			can_send_volunteers = yes
-			can_puppet = yes
-			can_guarantee_other_ideologies = yes
+			can_send_volunteers = no
+			can_puppet = no
 		}
 
+		can_collaborate = no
+
 		modifiers = {
-			generate_wargoal_tension = 0.15
-			civilian_intel_to_others = 10.0
+			justify_war_goal_when_in_major_war_time = -0.80
+			civilian_intel_to_others = 15.0
 			army_intel_to_others = 10.0
 			navy_intel_to_others = 10.0
 			airforce_intel_to_others = 10.0
+			hidden_modifier = { join_faction_tension = -0.1 }
+			embargo_cost_factor = 1
+			lend_lease_tension = 0.50
 		}
 
+		ai_fascist = yes # uses the fascist AI behaviour
 		ai_ideology_wanted_units_factor = 1.65
-
-		ai_communist = yes # uses the commie AI behaviour
 	}
 }

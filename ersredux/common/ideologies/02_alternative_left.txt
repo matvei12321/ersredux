@@ -9,52 +9,55 @@
 
 ideologies = {
      
-	communism = {
+	alternative_left = {
 		types = {
-
-			
-			marxism = {
+			alternative_left_ideology = {
 			}
-			leninism = {
-			}
-			stalinism = {
-			}
-			anti_revisionism = {
+			juche = {
 				can_be_randomly_selected = no
 			}
-			socialist_monarchism = {
+			oligarchical_collectivism = {
 				can_be_randomly_selected = no
 			}
-			dengism = {
+			equalism = {
+				can_be_randomly_selected = no
+			}
+			rozenkampism = {
+				can_be_randomly_selected = no
+			}
+			poltopism = {
+				can_be_randomly_selected = no
+			}
+			gold_muffinism = {
 				can_be_randomly_selected = no
 			}
 		}
-
+		
 		dynamic_faction_names = {
-			"FACTION_NAME_COMMUNISM_1"
-			"FACTION_NAME_COMMUNISM_2"
-			"FACTION_NAME_COMMUNISM_3"
-			"FACTION_NAME_COMMUNISM_4"
-			"FACTION_NAME_COMMUNISM_5"
 		}
-		color = { 160 00 00 }
+
+		color = { 67 00 00 }
+
+		war_impact_on_world_tension = 1.0
+		faction_impact_on_world_tension = 0.5
+
 		rules = {
-			can_force_government = yes
+			can_force_government = no
 			can_send_volunteers = yes
 			can_puppet = yes
+			can_guarantee_other_ideologies = yes
 		}
-		can_collaborate = yes
-		war_impact_on_world_tension = 0.25    #change
-		faction_impact_on_world_tension = 0.1 #change
+
 		modifiers = {
-			civilian_intel_to_others = 20.0
+			generate_wargoal_tension = 0.15
+			civilian_intel_to_others = 10.0
 			army_intel_to_others = 10.0
-			navy_intel_to_others = 20.0
-			airforce_intel_to_others = 2
+			navy_intel_to_others = 10.0
+			airforce_intel_to_others = 10.0
 		}
-		can_host_government_in_exile = no		
-		faction_modifiers = {}
-		can_be_boosted = yes
-		ai_communist = yes
+
+		ai_ideology_wanted_units_factor = 1.65
+
+		ai_communist = yes # uses the commie AI behaviour
 	}
 }
